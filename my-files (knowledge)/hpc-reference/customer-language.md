@@ -207,3 +207,10 @@ are real, and here's the guy who checked.* Lean into demonstration — timers on
 - Verbatim positive reviews (pull from reviews.io)
 - What people say in comments *after* the price objection is answered — does the propane math land?
 - Any recorded sales calls?
+
+
+---
+
+## Related
+
+[how-we-sound](../../my-business%20%28context%29/how-we-sound.md) · [our-clients](../../my-business%20%28context%29/our-clients.md) · [competitors](competitors.md) · [content-engine](../../my-workflows%20%28automations%29/playbooks/content-engine.md)

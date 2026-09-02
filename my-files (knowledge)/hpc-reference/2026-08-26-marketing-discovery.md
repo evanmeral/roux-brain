@@ -628,3 +628,10 @@ since March. Aluminum on LTL. **Root-cause packaging/carrier review warranted.**
 - [x] Commercial channel — Tier 3 inbound-only; Stephen owns the sales conversation
 - [ ] TikTok / channel expansion appetite
 - [x] Past campaign learnings — Q13
+
+
+---
+
+## Related
+
+[who-we-are](../../my-business%20%28context%29/who-we-are.md) · [our-clients](../../my-business%20%28context%29/our-clients.md) · [what-weve-tried](what-weve-tried.md) · [open-questions](open-questions.md) · [metrics-and-goals](metrics-and-goals.md)

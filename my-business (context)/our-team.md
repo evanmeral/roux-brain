@@ -97,3 +97,10 @@ Both read the reports. Write for a **numerate co-owner**:
 - Never present platform-reported revenue as actual revenue.
 - Robert asks for **per-product economics from landed BOM**, not blended estimates.
 - Expect scrutiny, and welcome it — on 2026-08-28 he corrected the CAC model and was right.
+
+
+---
+
+## Related
+
+[who-we-are](who-we-are.md) · [channels-and-accounts](../my-files%20%28knowledge%29/hpc-reference/channels-and-accounts.md) · [paid-media (the lane table)](../my-workflows%20%28automations%29/playbooks/paid-media.md) · [affiliates-influencers](../my-files%20%28knowledge%29/hpc-reference/affiliates-influencers.md)

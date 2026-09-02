@@ -77,3 +77,10 @@ Never more than ~2–4/month. Get consent properly (TCPA).
 - Creator collabs with email capture
 - At checkout + post-purchase
 - In-box card with QR → the first-boil guide
+
+
+---
+
+## Related
+
+[our-team (this lane is Biljana's)](../../my-business%20%28context%29/our-team.md) · [Board](../../my-desk%20%28now%29/BOARD.md)

@@ -197,3 +197,10 @@ Still **no direct connector** for the three systems that matter most:
 - **Google side is connected; Microsoft is not** — HPC runs on Google.
 - The `hpc-scoreboard-report` skill runs from **paired Meta + Google CSV exports**, not live connectors.
 - Raw exports live in `my-work (outputs)/internal/reports/raw/`.
+
+
+---
+
+## Related
+
+[Board](../my-desk%20%28now%29/BOARD.md) · [channels-and-accounts](../my-files%20%28knowledge%29/hpc-reference/channels-and-accounts.md) · [automation-roadmap](../my-workflows%20%28automations%29/playbooks/automation-roadmap.md) · [our-team](../my-business%20%28context%29/our-team.md)

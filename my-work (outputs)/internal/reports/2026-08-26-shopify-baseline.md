@@ -197,3 +197,10 @@ Margins are healthier than feared. Core cookers, fryers, and Boil Boss accessori
 - Return reasons / freight damage rate → **Evan**
 - Cost-per-item is still missing on ~13% of August sales → **Evan** (ROUX will not edit Shopify)
 - Meta + Google actuals, split at the 2026-07-12 vendor handover → **ROUX, next pull**
+
+
+---
+
+## Related
+
+[Board](../../../my-desk%20%28now%29/BOARD.md) · [metrics-and-goals](../../../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [what-we-sell](../../../my-business%20%28context%29/what-we-sell.md)

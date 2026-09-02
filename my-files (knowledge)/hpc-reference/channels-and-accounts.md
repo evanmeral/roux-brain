@@ -113,3 +113,10 @@ IntentWave run an **identity pixel** on the site and sync audiences into Meta au
 
 ⚠️ **4,000 is a lookalike *seed*, not a big retargeting pool.** Budget must be sized to audience size
 or frequency spikes. **Check the real pool size in Meta → Audiences before setting any retargeting budget.**
+
+
+---
+
+## Related
+
+[paid-media](../../my-workflows%20%28automations%29/playbooks/paid-media.md) · [content-engine](../../my-workflows%20%28automations%29/playbooks/content-engine.md) · [connected-apps](../../my-connections%20%28MCP%29/connected-apps.md) · [our-team](../../my-business%20%28context%29/our-team.md)

@@ -120,3 +120,10 @@ Acknowledge the pre-packaging checklist and that transit damage happens, then pr
 ### Powered cooker vs. pot + separate burner
 
 **Powered Cooker** is the staple: legs welded to the pot bottom, burner on a triangular plate bolted to the legs, burners swap by bolt — including to a 10" banjo for slow-cook/frying, or natural gas (80 QT+). **Pot + separate Boil Boss burner** gives one detachable burner across multiple pot sizes and uses ~50% less propane. Powered = grab-and-go for one size; separate burner = flexibility across sizes.
+
+
+---
+
+## Related
+
+[_IMPORT-NOTES — read before quoting any of this](_IMPORT-NOTES.md) · [what-we-sell](../../../my-business%20%28context%29/what-we-sell.md)

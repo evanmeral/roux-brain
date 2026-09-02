@@ -37,3 +37,10 @@
 23. **Is `Tailgater` worth testing as a position?** 31 products already tagged; never tried.
 24. **Custom-logo / corporate-gift channel** — 22 products support it, zero marketing. Worth a test?
 25. **Is there an exit/valuation horizon** shaping brand-building vs. direct-response mix? → Jay
+
+
+---
+
+## Related
+
+[marketing-discovery](2026-08-26-marketing-discovery.md) · [what-we-sell](../../my-business%20%28context%29/what-we-sell.md) · [metrics-and-goals](metrics-and-goals.md) · [Board](../../my-desk%20%28now%29/BOARD.md)

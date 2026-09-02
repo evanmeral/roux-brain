@@ -33,3 +33,10 @@
 ---
 
 **Note:** these are existing HPC tutorial videos. Worth knowing they exist before commissioning Garrett to shoot something that already exists.
+
+
+---
+
+## Related
+
+[_IMPORT-NOTES — read before quoting any of this](_IMPORT-NOTES.md) · [content-engine](../../../my-workflows%20%28automations%29/playbooks/content-engine.md)

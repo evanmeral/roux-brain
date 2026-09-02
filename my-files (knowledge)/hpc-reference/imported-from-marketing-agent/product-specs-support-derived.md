@@ -152,3 +152,10 @@ To increase PSI, loosen the nut toward the black handle. Fully loosening to the 
 
 ### Stock & restock
 *(source file truncated here — content incomplete)*
+
+
+---
+
+## Related
+
+[_IMPORT-NOTES — read before quoting any of this](_IMPORT-NOTES.md) · [what-we-sell](../../../my-business%20%28context%29/what-we-sell.md)

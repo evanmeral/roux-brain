@@ -84,3 +84,10 @@ can't identify. Every campaign starts from zero because none of them left a usab
 - Which email campaigns have performed (Biljana / Klaviyo)
 - What Coalition's SEO work has produced over 2+ years
 - Any promos or discounts run and their results
+
+
+---
+
+## Related
+
+[metrics-and-goals](metrics-and-goals.md) · [paid-media](../../my-workflows%20%28automations%29/playbooks/paid-media.md) · [content-engine](../../my-workflows%20%28automations%29/playbooks/content-engine.md) · [Board](../../my-desk%20%28now%29/BOARD.md)

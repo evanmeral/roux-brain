@@ -180,3 +180,10 @@ on LTL freight is exactly where that shows up. **Worth a root-cause look at pack
 | 4 | **Unique discount code per creator.** $51,603 of free product with no attribution. | **Evan / ROUX** |
 | 5 | **Re-baseline Nov–Feb planning** on corrected numbers. December is ~$178K, not $525K. | **ROUX** |
 | 6 | **Keep consumer discounting where it is.** ~$56K/yr on $2.88M is disciplined, and customers buy on quality anyway. | — |
+
+
+---
+
+## Related
+
+[Board](../../../my-desk%20%28now%29/BOARD.md) · [what-we-sell](../../../my-business%20%28context%29/what-we-sell.md) · [metrics-and-goals](../../../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md)

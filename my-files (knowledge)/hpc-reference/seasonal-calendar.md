@@ -79,3 +79,10 @@ quarter, which is exactly what Evan rejected.
 - LSU + Saints home game schedule (tailgate content hooks)
 - Local festival calendar: Breaux Bridge Crawfish Festival, French Quarter Fest, Jazz Fest, Louisiana Seafood Festival
 - Shipping cutoffs for Christmas
+
+
+---
+
+## Related
+
+[metrics-and-goals](metrics-and-goals.md) · [content-engine](../../my-workflows%20%28automations%29/playbooks/content-engine.md) · [what-we-sell](../../my-business%20%28context%29/what-we-sell.md) · [paid-media](../../my-workflows%20%28automations%29/playbooks/paid-media.md)

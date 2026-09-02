@@ -44,3 +44,10 @@
 - Hours: **Mon–Fri 6:30am–3:00pm Central** (Jay-confirmed 6/12)
 - **Customer financing** available for larger purchases via a partner
 - Discounts: **military & first responder**; rewards program (points); **$15 off** newsletter signup; sale + scratch-and-dent clearance ⚠️ *conflicts — see import notes*
+
+
+---
+
+## Related
+
+[_IMPORT-NOTES — read before quoting any of this](_IMPORT-NOTES.md) · [what-we-sell](../../../my-business%20%28context%29/what-we-sell.md)

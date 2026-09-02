@@ -39,3 +39,10 @@
 - Their review volume + sentiment on Amazon
 - Their SEO footprint vs. ours (run `marketing:seo-audit`)
 - Retail shelf presence in Academy / Rouses / local hardware
+
+
+---
+
+## Related
+
+[what-we-sell](../../my-business%20%28context%29/what-we-sell.md) · [customer-language](customer-language.md) · [who-we-are](../../my-business%20%28context%29/who-we-are.md) · [metrics-and-goals](metrics-and-goals.md)

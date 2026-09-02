@@ -99,3 +99,10 @@ Use the `schedule` skill / scheduled tasks.
 3. [ ] Run `grill me` against `my-files (knowledge)/hpc-reference/open-questions.md`
 4. [ ] Schedule the Monday scoreboard task
 5. [ ] Build `hpc-content-batch` skill
+
+
+---
+
+## Related
+
+[connected-apps](../../my-connections%20%28MCP%29/connected-apps.md) · [weekly-operating-rhythm](weekly-operating-rhythm.md) · [Board](../../my-desk%20%28now%29/BOARD.md) · [channels-and-accounts](../../my-files%20%28knowledge%29/hpc-reference/channels-and-accounts.md)

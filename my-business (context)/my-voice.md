@@ -139,3 +139,10 @@ Check every draft against this list before showing it.
 ## When drafting to someone he's emailed before
 
 **Read a few of his past emails to that specific person first and match that thread.** This profile is the fallback. His real history with a person is the gold standard — the register shifts noticeably between Jay, Caroline, Garrett, and a creator, and the past thread will show it better than this file can.
+
+
+---
+
+## Related
+
+[how-we-sound (the brand's voice, not Evan's)](how-we-sound.md) · [our-team](our-team.md)

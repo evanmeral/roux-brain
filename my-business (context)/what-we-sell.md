@@ -254,3 +254,10 @@ Detail: `my-files (knowledge)/hpc-reference/seasonal-calendar.md`.
 - Which SKUs are actually **profitable after freight**? Still the #1 gap.
 - How are the two July 2026 bundles performing? Measure before proposing a third.
 - Is the RENTAL trailer a promotable program or a one-off?
+
+
+---
+
+## Related
+
+[who-we-are](who-we-are.md) · [our-clients](our-clients.md) · [metrics-and-goals](../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [customer-language](../my-files%20%28knowledge%29/hpc-reference/customer-language.md) · [competitors](../my-files%20%28knowledge%29/hpc-reference/competitors.md) · [seasonal-calendar](../my-files%20%28knowledge%29/hpc-reference/seasonal-calendar.md) · [product-reference (imported, unverified)](../my-files%20%28knowledge%29/hpc-reference/imported-from-marketing-agent/product-reference.md) · [Board](../my-desk%20%28now%29/BOARD.md)

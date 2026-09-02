@@ -230,3 +230,10 @@ Jay. That's the owner-level artifact. Keep it simple, keep it honest.
 - Organic reach + saves on IG/FB (saves predict purchase intent in this category)
 - Branded search volume (proxy for brand demand — Google Ads search terms report)
 - Add-to-cart rate on hero SKUs
+
+
+---
+
+## Related
+
+[Board](../../my-desk%20%28now%29/BOARD.md) · [paid-media](../../my-workflows%20%28automations%29/playbooks/paid-media.md) · [cac-model-v2](../../my-work%20%28outputs%29/internal/reports/2026-08-28-cac-model-v2.md) · [what-we-sell](../../my-business%20%28context%29/what-we-sell.md) · [seasonal-calendar](seasonal-calendar.md)

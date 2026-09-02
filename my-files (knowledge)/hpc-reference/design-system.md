@@ -85,3 +85,10 @@ keep type out of top 250px / bottom 340px) · 1200×628.
 
 **Evan's direction (2026-08-27):** colors and fonts are a starting point, not a constraint — deviate
 when the creative is stronger for it.
+
+
+---
+
+## Related
+
+[how-we-sound](../../my-business%20%28context%29/how-we-sound.md) · [content-engine](../../my-workflows%20%28automations%29/playbooks/content-engine.md) · [what-we-sell](../../my-business%20%28context%29/what-we-sell.md)

@@ -152,3 +152,10 @@ ROUX has made no changes to either account.
 - **Was the Meta budget cut deliberate**, or a side effect of the agency exit? → **Evan**
 - **Google conversion value is 46% modeled.** Worth asking Coalition how conversions are configured. → **Evan / Coalition**
 - **The second Google account** ("Google Ads account," 624-239-8327, *Setup in progress*) — what is it? → **Evan**
+
+
+---
+
+## Related
+
+[paid-media](../../../my-workflows%20%28automations%29/playbooks/paid-media.md) · [metrics-and-goals](../../../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [meta-actuals](2026-08-28-meta-actuals.md)

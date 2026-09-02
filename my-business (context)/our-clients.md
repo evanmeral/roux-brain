@@ -173,3 +173,10 @@ Ultimate Boiling Bundle · Platinum Boiling Bundle · Gift Card · Scratch & Den
 - Commercial: $200–$300 Southeast business, ~$300 Southeast residential, $250–$350 North business, **$350–$500 North residential with lift gate.** Stephen qualifies residential vs. business early, so this is handled.
 
 ⛔ **Free-shipping-in-price test was DECLINED by Jay (2026-08-26).** Consumer shipping stays as-is. Do not re-propose unprompted.
+
+
+---
+
+## Related
+
+[what-we-sell](what-we-sell.md) · [customer-language](../my-files%20%28knowledge%29/hpc-reference/customer-language.md) · [seasonal-calendar](../my-files%20%28knowledge%29/hpc-reference/seasonal-calendar.md) · [affiliates-influencers](../my-files%20%28knowledge%29/hpc-reference/affiliates-influencers.md) · [how-we-sound](how-we-sound.md)

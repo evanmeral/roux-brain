@@ -83,3 +83,10 @@ Nothing below existed anywhere else in this brain:
 ## 📹 Worth acting on
 
 **HPC already has 18 tutorial videos and a full user manual.** Garrett is engaged at $500/video, or $2,500 for 8. **Check this library before commissioning anything instructional** — the how-to material largely exists. Garrett's value is lifestyle and brand film, not re-shooting "how to adjust a banjo burner."
+
+
+---
+
+## Related
+
+[what-we-sell (settles the conflicts)](../../../my-business%20%28context%29/what-we-sell.md) · [product-reference](product-reference.md) · [faq-and-company-facts](faq-and-company-facts.md) · [tutorial-video-library](tutorial-video-library.md)

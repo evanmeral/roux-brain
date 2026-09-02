@@ -118,3 +118,10 @@ $2,500–$3,875 with a long cycle. Don't optimize for purchase.
 - [ ] 2–3 new creatives into testing
 - [ ] Check search terms report for waste + new keyword ideas
 - [ ] Check Meta Ad Library for competitor moves
+
+
+---
+
+## Related
+
+[Board](../../my-desk%20%28now%29/BOARD.md) · [metrics-and-goals](../../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [cac-model-v2](../../my-work%20%28outputs%29/internal/reports/2026-08-28-cac-model-v2.md) · [our-team (who owns which lane)](../../my-business%20%28context%29/our-team.md) · [channels-and-accounts](../../my-files%20%28knowledge%29/hpc-reference/channels-and-accounts.md) · [what-weve-tried](../../my-files%20%28knowledge%29/hpc-reference/what-weve-tried.md)

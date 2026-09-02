@@ -124,3 +124,10 @@ That's the whole company. Jay Meral built HPC around it in Covington, Robert bro
 ## Future note
 
 Atlas is currently the brain for **HPC marketing**. Evan intends to start other businesses later and use this same brain for them. When that happens, keep HPC context scoped clearly so a second business doesn't inherit HPC's rules by accident.
+
+
+---
+
+## Related
+
+[what-we-sell](what-we-sell.md) · [our-team](our-team.md) · [how-we-sound](how-we-sound.md) · [competitors](../my-files%20%28knowledge%29/hpc-reference/competitors.md) · [seasonal-calendar](../my-files%20%28knowledge%29/hpc-reference/seasonal-calendar.md) · [Board](../my-desk%20%28now%29/BOARD.md)

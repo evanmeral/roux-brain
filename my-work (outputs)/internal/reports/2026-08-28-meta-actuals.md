@@ -128,3 +128,10 @@ until the CAC ceilings are real.
 ## Still needed
 - **Google monthly ad spend** — one number. Without it blended MER can't be computed. *(Parked by Evan; revisit.)*
 - Landed BOM, monthly overhead, target margin — Jay's Excel sheet
+
+
+---
+
+## Related
+
+[Board](../../../my-desk%20%28now%29/BOARD.md) · [metrics-and-goals](../../../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [paid-media](../../../my-workflows%20%28automations%29/playbooks/paid-media.md)

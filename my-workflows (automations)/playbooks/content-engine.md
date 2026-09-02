@@ -79,3 +79,10 @@ batch; Evan approves and schedules in one sitting instead of daily interruptions
 - 4–5 posts/week per primary channel (IG, FB)
 - 2 YouTube uploads/month
 - Daily TikTok once launched (that's the price of admission there)
+
+
+---
+
+## Related
+
+[how-we-sound](../../my-business%20%28context%29/how-we-sound.md) · [customer-language](../../my-files%20%28knowledge%29/hpc-reference/customer-language.md) · [seasonal-calendar](../../my-files%20%28knowledge%29/hpc-reference/seasonal-calendar.md) · [design-system](../../my-files%20%28knowledge%29/hpc-reference/design-system.md) · [affiliates-influencers](../../my-files%20%28knowledge%29/hpc-reference/affiliates-influencers.md) · [channels-and-accounts](../../my-files%20%28knowledge%29/hpc-reference/channels-and-accounts.md)

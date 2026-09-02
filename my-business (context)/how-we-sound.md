@@ -150,3 +150,10 @@ Shop the 7-minute boil · Get your rig before season · Build your setup · See 
 ## Spelling and register
 
 American spelling throughout (US business). Simple language, short sentences, no jargon unless the audience expects it. Lists for dense information, prose for explanation.
+
+
+---
+
+## Related
+
+[my-voice (Evan's own writing)](my-voice.md) · [customer-language](../my-files%20%28knowledge%29/hpc-reference/customer-language.md) · [our-clients](our-clients.md) · [content-engine](../my-workflows%20%28automations%29/playbooks/content-engine.md) · [design-system](../my-files%20%28knowledge%29/hpc-reference/design-system.md)

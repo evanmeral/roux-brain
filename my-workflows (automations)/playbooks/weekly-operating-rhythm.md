@@ -41,3 +41,10 @@ The default cadence. ROUX should proactively drive this, not wait to be asked.
 
 ## ROUX's standing prompt to itself
 > What is the single highest-leverage thing I could hand Evan this week that he isn't asking for?
+
+
+---
+
+## Related
+
+[Board](../../my-desk%20%28now%29/BOARD.md) · [paid-media](paid-media.md) · [content-engine](content-engine.md) · [metrics-and-goals](../../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [automation-roadmap](automation-roadmap.md)
