@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+._*
+
+# Obsidian — per-machine UI state, churns on every pane move
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Everything else is tracked on purpose, assets included.

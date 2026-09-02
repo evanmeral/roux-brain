@@ -1,0 +1,256 @@
+# What We Sell
+
+**Last updated:** 2026.09.01
+**Price source:** `highperformancecookers.com/products.json`, pulled 2026-08-26 → raw JSON at `my-files (knowledge)/hpc-reference/research/2026-08-26-shopify-catalog.json`
+**Priority tiers set by Evan 2026-09-01** (these supersede the 2026-08-26 tiers).
+
+> ⚠️ **Never quote a price that isn't in this file.** Re-pull the JSON before any promo — prices are 6+ days old as of writing.
+
+---
+
+## ⭐ The spine of the catalog: Powered vs. Performance
+
+**Every pot we sell comes in two forms.** Get this right in every piece of copy.
+
+| | **POWERED** | **PERFORMANCE** |
+|---|---|---|
+| What's welded to it | **Tunnel tubes + the burner**, mounted to the pot as one piece | **Tunnel tubes only** |
+| What the customer needs | Nothing. It *is* the rig. | Their own burner — **our Boil Boss Triple Jet (BB-TJB) preferred** |
+| Buyer | Wants a complete rig, one purchase, done | Already has a burner, or wants to build around a better one |
+| Price | Higher (120 QT Powered $715–$805) | Lower (120 QT Performance $532–$580) |
+
+**Both carry the Tunnel Tube technology.** The speed comes from the tubes on the pot bottom, not the burner — so a Performance pot on a customer's existing burner still delivers the speed and the fuel savings. That's a ~$180 cheaper entry point into the technology, and an obvious upgrade path: Performance pot → add BB-TJB ($425) → full rig. Two transactions instead of one lost sale.
+
+## Setup types (the PDP configurator)
+1. **Stock Pot Only** · 2. **Pot + Separate Burner** · 3. **Welded**
+Most price ranges below reflect this choice plus size and options.
+
+---
+
+# ⭐ MARKETING PRIORITY TIERS
+
+## TIER 1 — push hard
+
+### 1A. The main push: **Performance pots + Boil Boss Triple Jet Burner**
+
+The lead offer. Sell the Performance pot paired with the BB-TJB.
+
+| Product | Price |
+|---|---|
+| 80 QT Performance Seafood Pot | $477–$525 |
+| 100 QT Performance Seafood Pot | $502–$550 |
+| 120 QT Performance Seafood Pot | $532–$580 |
+| **Boil Boss Triple Jet Burner (BB-TJB)** | **$425** |
+| Electronic Ignition (add-on) | $250 |
+
+> **Push 80 / 100 / 120 QT.** ✅ *Corrected by Evan 2026-09-01:* the BB-TJB **does fit a 60 QT and it works — it just isn't perfect, so there's no need to push that combo.** It is not incompatible; it is simply not the pairing to lead with. The 40, 30 and 18 QT are out of this push.
+
+**Already built for this:** the **Platinum Boiling Bundle** ($737–$940, saves $100) is exactly Performance Pot + Triple Jet + Electronic Ignition. It's the packaged version of the main push — lead with it.
+
+### 1B. Powered pots — the small sizes, their own push
+
+Complete rigs, lower ticket, lower friction. A separate campaign from 1A, not a footnote to it.
+
+| Product | Price |
+|---|---|
+| **18 QT Fish Fryer / Brazier Powered Pot** | $285–$340 |
+| 30 QT Turkey Fryer Powered Pot (drain valve, lid, rack) | $395–$462.50 |
+| 30 QT Powered Pot (drain valve, basket, lid) | $435–$475 |
+| **40 QT Powered Sauce Cooker** | $289.99–$309.99 |
+| **60 QT Powered Cooker** | $515–$535 |
+| 60 QT Dual Turkey Fryer Pot | $495–$505 |
+
+> ⚠️ **60 QT Powered — discount discipline.** List margin is healthy (47.8%) but it's discounted at 21.8%, roughly 5× the 18 QT, dragging realized margin to ~29%. Decide its role deliberately. Detail: `my-work (outputs)/internal/reports/2026-08-26-discount-audit.md`.
+
+### 1C. Boil Boss line, bundles, and the entry price point
+
+| Product | Price |
+|---|---|
+| Boil Boss Cooling Ring | $55.99–$74.99 |
+| Boil Boss Thermo Paddle | $69.99 |
+| Boil Boss Combo (Ring + Paddle) | $122.50 |
+| **Boil Boss Ultimate Combo** (+2 free 4lb seasoning) | **$129.98** |
+| Foundation Boil Seasoning 20 lb Bulk | $67.46 |
+| Seasoning | $5.99–$17.99 |
+| TJB Centering Brackets (set of 3) | $35 |
+| **Ultimate Boiling Bundle** — Pot, Burner, Cooling Ring, Thermo Paddle | $846.98–$1,049.98 (saves $120) |
+| **Scratch & Dent** — 6 SKUs, ~30% off | $185.50–$607.75 |
+
+Scratch & Dent is a **margin-safe entry price point** — it lets a price-sensitive buyer into the brand without discounting the main line.
+
+---
+
+## TIER 2 — the year-round line
+
+These carry the off-season. See the year-round mandate below.
+
+### Steamers — units AND trays *(reversed 2026-09-01: units are now a push)*
+
+| Product | Price |
+|---|---|
+| **28 QT Powered Rack Steamer** (1 tray) — consumer | $1,325 |
+| **100 QT / Commercial Powered Rack Steamer** (3 trays) | $1,525–$1,725 |
+
+*Historically low volume; Evan reversed the "do not market" call on 2026-09-01. Both the consumer 28 QT and the commercial 100 QT get pushed.* **Tier 2 confirmed by Evan, 2026-09-01** — steaming is genuinely non-seasonal, so they belong with the year-round line rather than in the Tier 1 season push.
+
+**Trays remain the highest-certainty AOV lever in the business** — they attach to pot sales.
+
+| Tray | Price |
+|---|---|
+| Fixed basket-bottom insert — 30 QT | $24.99 |
+| Fixed — 60 QT | $27.99 |
+| Fixed — 80 or 100 QT | $53.99 |
+| Fixed — 120 QT | $59.99 |
+| **Adjustable shelf — 80 or 100 QT** | **$119.99** |
+| **Adjustable shelf — 120 QT** | **$159.99** |
+| Commercial Basket — Steamer Shelf | $175–$210 |
+
+Fixed trays exist for every pot size sold; adjustable shelves for 80/100/120 QT.
+
+### ⭐ The frying line — the 18 QT, the 4-Way and the 40 QT
+*Added by Evan, 2026-09-02.* These three belong together in copy. Two facts govern them:
+
+**1. The frying stat is 350° in under 5 minutes.**
+When the subject is **frying**, lead with temperature, not boil time. "Rolling boil in about 7
+minutes" is the *boiling* stat and belongs on pots. These three get to **350° in under 5 minutes**.
+They still deliver **up to 75% less propane** — run both, temperature first.
+
+**2. Leg extensions ($119) fit these three products and nothing else.**
+The **18 QT Fish Fryer**, the **4-Way Fryer / Pasta Cooker** and the **40 QT** are the only products
+in the catalog that take **Cooker Leg Extensions**. Never imply the legs fit a product outside this
+list, and never sell the legs against a pot that can't take them.
+
+> Commercially this is the attach story. During the Labor Day 2026 promo, legs-only orders ran about
+> **$100**; orders where the legs came attached to a cooker ran about **$460** (Shopify, Sept 1–2).
+> Put the legs next to a cooker, not on their own.
+
+### The non-seasonal cookers
+
+| Product | Price |
+|---|---|
+| **4-Way Fryer / Pasta Cooker** | $277.99–$299.99 |
+| **4-Way 20 QT Fryer** | $379.99–$396.99 |
+| 40 QT Sauce Stock Pot | $258–$276 |
+| 30 QT Performance Seafood/Stock Pot | $335 |
+| 60 QT Performance Seafood/Stock Pot | $395 |
+| 18 QT Fish Fryer (non-powered) | $220–$265 |
+| 18 QT Basket & Notched Lid | $61 |
+
+**Pasta and sauce cookers are explicitly non-seasonal** and get little marketing attention. Clearest existing answer to the year-round mandate.
+
+### Burner modules
+
+| Product | Price |
+|---|---|
+| Single Jet Burner Module | $62 |
+| Double Jet Burner Module — 80 QT, 250K BTU | $89 |
+| 3 Jet Burner Module — 375K BTU | $109 |
+| **6" Banjo Burner Module** | $74 |
+| **10" Banjo Burner Module — 200K BTU** | $139 |
+| 32-Tip MultiJet **Natural Gas** — 160K BTU | $142 |
+| Commercial Burner Modules | $210–$730 |
+| Replacement Burner Tubes | $7.99–$14.99 |
+
+### Consumables, merch, accessories
+
+Zydeco Fire Hot Sauce $5.95 · Seasoning Dust $6.95 · Combo Pack $11.99 · Seafood Boil Bags $9.50–$15.50 · Tees $22 · Hats $20–$42 · Cups & Bottles $24.99–$34.99 · **Gift Card $25–$500**
+
+Skimmers $9.99–$19.99 · Paddles $19.99–$85 · Scoop $14.99 · Basket Buddy $10.50–$15.99 · Replacement Baskets $35–$120 · Replacement Lids $18.50–$34.75 · Regulators $25.99–$78 · Hose $19.99–$34.99 · Wind Shield $21 · Fry Thermometers $15.99–$18.99 · **Cooker Leg Extensions $119** · Add a Custom Logo $75
+
+---
+
+## TIER 3 — inbound only, no ad spend
+
+**We sell these and they make money. We just let people come to us.**
+
+### Commercial
+| Product | Price |
+|---|---|
+| 60 Gallon Commercial Seafood Cooker | $2,699–$3,099 |
+| 80 Gallon Commercial Seafood Boiler | $2,550–$3,750 |
+| 100 Gallon Commercial Seafood Boiler | $2,850–$4,199 |
+| 120 Gallon Commercial Seafood Boiler | $3,175–$4,875 |
+| 140 Gallon Commercial Seafood Boiler | $3,875–$5,775 |
+| **Crawcuzzi — Automatic Crawfish Cleaner** | $2,465–$4,595 |
+| Gantry Lift System | $785–$3,215 |
+| Crawfish Sorting Table | $550 |
+| Crawfish Serving Trough | $134.99–$314.99 |
+| Cajun Cleaner | $118.95 |
+| **Pull-Behind Trailer Pkg — 60 Gal** | **$7,299** ← highest ticket |
+| Custom Cooking Trailer | Quote |
+| **RENTAL — Crawfish Boil Trailer Package** | $385–$600 |
+| 40 Gal / 160 QT Powered Cooker (Flip Basket) | $2,145–$2,279 |
+
+> ⚖️ **Warranty on the commercial line: 2 years.** Confirmed by Evan, 2026-09-01. **All commercial boiling products carry the full 2-year warranty** (parts and labor, defects under normal use) — the same full warranty every HPC product carries.
+> ⛔ **They do NOT carry the 5-year.** The 5-year is *limited*, *residential use only*, and *120 QT or smaller* — it covers Tunnel Tube pot bottoms, powered cooker stands and welds, with the owner paying labor and shipping. Every product in the table above is a commercial unit above that size.
+> **Never put a 5-year claim on commercial creative, and never let a sitewide ad imply the 5-year covers the whole catalog.**
+> Source: highperformancecookers.com/pages/warranty-information, verified 2026-09-01.
+
+
+### Standing discount codes ✅ confirmed by Evan, 2026-09-01
+
+| Code | Channel | Value |
+|---|---|---|
+| Email sign-up | Newsletter opt-in | **10% off** — *recently switched from the old $15 flat code. The $15 figure is retired; never quote it.* |
+| SMS sign-up | SMS opt-in | **$25 off** |
+
+**Both can be used.** They are two separate opt-ins and a customer can hold and use both.
+
+⚠️ Unverified: an older imported note claimed the $25 requires a registered account and a $125+ minimum order. **Not confirmed by Evan — do not state those conditions without checking.**
+
+Also live: military / first-responder discount (5% per imported notes, percentage unconfirmed), rewards points program, financing, gift cards, scratch-and-dent clearance.
+
+### Resale lines *(we're a dealer — real revenue, no marketing)*
+| Product | Price | Note |
+|---|---|---|
+| **Navimow Robotic Lawn Mowers** (I / X / X430 + accessories) | $149.99–$4,999 | *Moved to Tier 3 on 2026-09-01.* We sell them and they make money. Don't market; handle inbound. |
+| **Rugged Road Coolers** — 25/45/65/85/115 | $249.99–$494.99 | We are a dealer for them. Not a priority, but we do sell them. |
+| Rugged Ice Packs | $24.99 | Same |
+
+### Dealer / wholesale
+Real, but **Jay's lane.** We're open to dealers who are genuinely willing, but we're not chasing them — most won't pay full price up front, and **we don't do consignment on dealer orders.** No marketing investment. Route inbound to Jay.
+
+---
+
+## TIER 4 — ⛔ do not market, do not sell
+
+| Product | Price | Why |
+|---|---|---|
+| **Predator Gas Grills w/ ETC Technology** | $3,800–$4,350 | A third party sells and fulfills these through our storefront and handles everything. Not our wheelhouse. Disregard entirely. |
+| Predator Gas Grills — Side Burner | $1,200–$1,750 | Same |
+
+---
+
+## 📅 The year-round mandate *(Evan, 2026-09-01)*
+
+Our demand is calendar-driven: **Jan–May crawfish season** is the primary revenue window (peaking around Mardi Gras, Lent, Easter), **November** is secondary (turkey fryers + BFCM), August is the deadest month.
+
+**That is true, but it is not the plan.** We do not want to be a business that only works five months a year. The mandate is to **become a year-round business** — growing June–October with real product sales, not by shifting peak revenue around.
+
+**What that means in practice:**
+- Tier 2 is the off-season engine: fryers, pasta and sauce cookers, banjo burners, steamers, consumables, merch.
+- The **18 QT fish fryer** is the proven off-season workhorse — #2 SKU for the year and #1 in August.
+- Launch campaigns **3–6 weeks ahead** of each demand window.
+- Treat August as content-production and creator-seeding build month so assets are ready for January.
+- ⛔ **Don't re-propose a "Season Pass" presale.** It pulls peak revenue forward instead of growing the off-season. Wrong direction.
+
+Detail: `my-files (knowledge)/hpc-reference/seasonal-calendar.md`.
+
+---
+
+## Tag taxonomy (collections, ad audiences, email segments)
+
+`Accessory` 54 · `no-wholesale` 45 · **`Tailgater` 31** · `Seafood` 30 · **`Custom Logo Available` 22** · `Commercial` 19 · `Featured` 19 · `Powered` 19 · `Crawfish` 18 · `Fryer` 15 · `Steamer` 13 · `Sale` 11 · `Burner` 10 · `Stock Pot` 9 · `Non Powered` 8 · `Low Country Boil` 7 · `Turkey` 7 · `Robotic Mower` 6 · `Damaged`/`Scratch` 6 · `Ice Chest` 6 · `Seasoning` 5 · `Dealer Marketing` 5 · `Bundle` 4 · `Fish Fryer` 4
+
+- **`Tailgater` (31 products) is not an intentional position.** Origin unknown. Untested hypothesis, not existing strategy — but worth testing given fall/game-day demand and the year-round mandate.
+- **`Custom Logo Available` on 22 products + "Add a Custom Logo" ($75)** = a corporate/team/gift channel that appears entirely unmarketed.
+
+## Discontinued
+- **40 QT boiling pot** — sat between two sizes, nobody bought it.
+- **40 QT fixed steamer insert** — retired with it.
+- *(The 40 QT Sauce Cooker and 40 QT Sauce Stock Pot are a different line and remain live.)*
+
+## Open questions
+- Which SKUs are actually **profitable after freight**? Still the #1 gap.
+- How are the two July 2026 bundles performing? Measure before proposing a third.
+- Is the RENTAL trailer a promotable program or a one-off?

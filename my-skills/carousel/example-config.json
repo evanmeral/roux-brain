@@ -1,0 +1,79 @@
+{
+  "_comment": "The real Labor Day 2026 carousel, as shipped. Copy this, change the values. Every text field takes inline HTML: <br> <b> <em> &middot; &deg; &mdash; &rsquo;",
+
+  "name": "laborday-2026",
+  "kicker": "LABOR DAY",
+  "kickerSub": "SEPT 1&ndash;8",
+
+  "cover": {
+    "photo": "18qt-frying-wings-1.jpeg",
+    "position": "38% 30%",
+    "brightness": ".72",
+    "size": 84,
+    "headline": "Crawfish season<br>ended in May.",
+    "accent": "We build a lot more<br>than boilers.",
+    "sub": "Here&rsquo;s what else comes out of the shop."
+  },
+
+  "frames": [
+    {
+      "slug": "18qt",
+      "cutout": "18qt - pwd.png",
+      "eyebrow": "18 QT FISH FRYER",
+      "headline": "Fish fry season<br>never closes.",
+      "sub": "Fish, soft-shell crab, hushpuppies,<br>beignets, fries, wings, okra.",
+      "stats": ["<b>350&deg;</b> IN UNDER 5 MINUTES", "UP TO <b>75%</b> LESS PROPANE"],
+      "tag": "FITS LEG EXTENSIONS &middot; 30% OFF THIS WEEK",
+      "nudge": [25.7, -2.9]
+    },
+    {
+      "slug": "4way",
+      "cutout": "4-way fryer - pwd.png",
+      "eyebrow": "4-WAY FRYER / PASTA COOKER",
+      "headline": "Four baskets.<br>One burner.",
+      "sub": "Pasta, fries, wings &mdash; four different<br>things going at the same time.",
+      "stats": ["<b>350&deg;</b> IN UNDER 5 MINUTES", "UP TO <b>75%</b> LESS PROPANE"],
+      "tag": "FITS LEG EXTENSIONS &middot; 30% OFF THIS WEEK",
+      "nudge": [-2.1, -3.2]
+    },
+    {
+      "slug": "sauce",
+      "cutout": "40qt sauce pot - pwd.png",
+      "eyebrow": "40 QT SAUCE COOKER",
+      "headline": "Sauce one day.<br>Fish fry the next.",
+      "sub": "Forty quarts for a long simmer, or<br>a full basket of fish at 350&deg;.",
+      "stats": ["<b>350&deg;</b> IN UNDER 5 MINUTES", "UP TO <b>75%</b> LESS PROPANE"],
+      "tag": "FITS LEG EXTENSIONS &middot; 30% OFF THIS WEEK",
+      "nudge": [-59.5, 26.0]
+    },
+    {
+      "slug": "steamer",
+      "cutout": "28qt steamer.png",
+      "eyebrow": "28 QT POWERED RACK STEAMER",
+      "headline": "Steam it<br>instead.",
+      "sub": "Steam a full rack instead of<br>boiling off forty quarts of water.",
+      "stats": ["HAND-WELDED TUNNEL TUBES", "BUILT IN COVINGTON, LOUISIANA"],
+      "nudge": [-6.5, 22.2]
+    },
+    {
+      "slug": "leg-extensions",
+      "cutout": "18qt pwd on leg extensions.png",
+      "eyebrow": "COOKER LEG EXTENSIONS",
+      "headline": "Quit hunching<br>over the pot.",
+      "sub": "Raises the cooker to a working<br>height. Easier on your back, all day.",
+      "stats": ["<s>$119</s> <b>$83.30</b> THIS WEEK"],
+      "tag": "FITS THE 18 QT &middot; 4-WAY &middot; 40 QT",
+      "boxHeight": 480,
+      "nudge": [7.5, 0]
+    }
+  ],
+
+  "cta": {
+    "photo": "TunnelTubeBottom-BlueFlame.jpeg",
+    "headline": "All of it,<br><em>10% off.</em>",
+    "sub": "Labor Day sale runs through Sept 8.",
+    "codes": ["LABORDAY10-26", "<b>LABORDAY30-LEGS</b>"],
+    "note": "BOTH CODES WORK ON ONE ORDER",
+    "foot": "BUILT IN COVINGTON, LOUISIANA<br>MOST ORDERS SHIP IN 1&ndash;2 BUSINESS DAYS"
+  }
+}

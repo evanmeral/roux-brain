@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand.css">
+<style>
+/* MOBILE-FIRST TYPE SCALE @1080w — feed shows ~415px wide, so divide by ~2.6.
+   Floor for anything that must be read: 30px. Codes: 42px+. */
+html,body{width:1080px;height:1350px}
+.ad{background:var(--cream);padding:20px}
+.frame{position:relative;height:100%;border:8px solid var(--navy);border-radius:4px;
+  padding:38px 46px 0;display:flex;flex-direction:column;overflow:hidden}
+.frame:before{content:"";position:absolute;inset:15px;border:3px solid var(--flag-red);border-radius:2px;pointer-events:none}
+.top{position:relative;z-index:3;text-align:center;flex:none}
+.kick{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:34px;color:var(--navy);
+  letter-spacing:.2em}
+.kick i{font-style:normal;color:var(--flag-red)}
+.big{font-weight:900;font-size:184px;line-height:.78;color:var(--flag-red);letter-spacing:-.05em;margin-top:16px}
+.sw{font-weight:900;font-size:68px;color:var(--navy);letter-spacing:.01em;margin-top:8px}
+.mid{position:relative;flex:1 1 auto;min-height:0;display:flex;align-items:center;justify-content:center;z-index:2}
+.shadow{filter:drop-shadow(0 24px 32px rgba(0,0,0,.28))}
+.burst{position:absolute;left:6px;top:470px;width:228px;height:228px;z-index:4;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  background:var(--navy);color:#fff;border-radius:50%;transform:rotate(-8deg);
+  box-shadow:0 14px 28px rgba(0,0,0,.3);border:5px solid var(--cream)}
+.burst .p{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:66px;line-height:.9;color:#FF6478}
+.burst .t{font-weight:800;font-size:22px;line-height:1.15;margin-top:8px}
+.bar{position:relative;z-index:3;flex:none;background:var(--flag-red);color:#fff;border-radius:8px;
+  padding:18px;text-align:center;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:32px;
+  letter-spacing:.06em;margin-bottom:16px}
+.codes{position:relative;z-index:3;flex:none;display:flex;gap:14px;margin-bottom:20px}
+.chip{flex:1;background:var(--navy);color:#fff;border-radius:8px;padding:18px 6px;text-align:center}
+.chip .k{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:40px;letter-spacing:-.02em}
+.chip .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:24px;color:#FF6478;
+  letter-spacing:.06em;margin-top:10px}
+.foot{position:relative;z-index:3;flex:none;display:flex;align-items:center;justify-content:space-between;
+  padding-bottom:26px}
+.logo{width:112px;position:relative;top:auto;left:auto;right:auto}
+.fdate{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:32px;color:var(--navy);letter-spacing:.06em}
+</style></head>
+<body><div class="ad"><div class="frame">
+  <div class="burst"><div class="p">30%</div><div class="t">OFF LEG<br>EXTENSIONS</div></div>
+  <div class="top">
+    <div class="kick"><i>★</i> LABOR DAY SALE <i>★</i></div>
+    <div class="big">10% OFF</div>
+    <div class="sw">SITEWIDE</div>
+  </div>
+  <div class="mid"><div class="pbox shadow" style="width:345px;height:560px"><img src="../../../../assets/product-cutouts/18qt pwd on leg extensions.png" style="width:792px;left:-222px;top:-248px"></div></div>
+  <div class="bar">USE BOTH CODES AT CHECKOUT</div>
+  <div class="codes">
+    <div class="chip"><div class="k">LABORDAY10-26</div><div class="v">10% OFF SITEWIDE</div></div>
+    <div class="chip"><div class="k">LABORDAY30-LEGS</div><div class="v">30% OFF LEGS</div></div>
+  </div>
+  <div class="foot">
+    <img class="logo" src="../../../../assets/brand-refs/HPC-ShieldLogo-Black.png">
+    <div class="fdate">SEPT 1–8</div>
+  </div>
+</div></div></body></html>

@@ -1,0 +1,34 @@
+LABOR DAY 2026 — META UPLOAD PACK
+=================================
+10 images = 4 ads. Each ad uses 3 sizes (except AD-C, which is feed only).
+
+STEP 1 — UPLOAD ALL 10
+  Ads Manager > Media Library > Upload > select all 10 files.
+  That's it for this step. No ads, no campaign setup.
+
+STEP 2 — BUILD 4 ADS (not 10)
+  In each ad, use "Edit placements > Customize by placement" to attach the sizes:
+     FEED-4x5   -> Facebook Feed + Instagram Feed
+     SQUARE-1x1 -> Marketplace, Explore, anywhere square
+     STORY-9x16 -> Instagram/Facebook Stories + Reels
+
+  AD-A  Vintage            -> campaign: BPM_TOF_Manual          -> START SEPT 1
+  AD-B  HPC Dark           -> campaign: 18qt-TOF-Prospecting    -> START SEPT 1
+  AD-C  Multi-product      -> NEW retargeting campaign          -> START SEPT 1
+  AD-D  Final Days         -> BOTH TOF campaigns                -> START SEPT 5  <-- NOT Sept 1
+
+STEP 3 — ON SEPT 5
+  Turn AD-A and AD-B OFF when AD-D goes live.
+  Don't run "10% OFF SITEWIDE" next to "FINAL DAYS" - it wastes the deadline.
+
+STEP 4 — ON SEPT 9
+  Pause all four. Swap evergreen creative back in. Remove the announcement bar.
+
+AD COPY
+  Primary text, headlines, descriptions, CTAs and destination URLs for all four ads
+  are in: ad-copy.txt (this folder)
+
+CODES ON ALL CREATIVE
+  LABORDAY10-26    10% off sitewide
+  LABORDAY30-LEGS  30% off leg extensions
+  They stack. Manual entry at checkout. Sept 1-8.

@@ -1,0 +1,67 @@
+/* HPC Ad Creative — shared brand system
+   Sources: Shopify theme settings + live landing page code. See context/design-system.md */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap');
+
+:root{
+  --accent:#F69329;      /* HPC orange — primary */
+  --accent-dk:#E13418;   /* flame red */
+  --gold:#FFA41C;
+  --ink:#1A1918;         /* near-black (theme text #222222) */
+  --ink-2:#282727;
+  --white:#FFFFFF;
+  --offwhite:#F3F6F6;
+  --border:#ECEFEF;
+  --muted:#726F6C;
+  --flame:linear-gradient(135deg,#FFA41C 0%,#F69329 42%,#E13418 100%);
+  --char:radial-gradient(120% 90% at 50% 0%,#2E2B29 0%,#131211 65%,#0A0908 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+html,body{width:100%;height:100%;overflow:hidden}
+body{font-family:'Poppins',system-ui,-apple-system,Helvetica,sans-serif;color:var(--ink)}
+
+.ad{position:relative;width:100%;height:100%;overflow:hidden;display:flex;flex-direction:column}
+.bg-dark{background:var(--char)}
+.bg-flame{background:var(--flame)}
+.bg-light{background:var(--offwhite)}
+
+/* mono eyebrow — HPC signature */
+.eyebrow{font-family:'JetBrains Mono',monospace;font-weight:700;text-transform:uppercase;
+  letter-spacing:.16em;font-size:.78em;line-height:1}
+.hl{font-weight:800;letter-spacing:-.025em;line-height:.96}
+.sub{font-weight:500;line-height:1.35;opacity:.92}
+
+.badge{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:#fff;
+  font-family:'JetBrains Mono',monospace;font-weight:800;text-transform:uppercase;
+  letter-spacing:.12em;padding:.55em 1.05em;border-radius:6px}
+.cta{display:inline-block;background:var(--accent);color:#fff;font-weight:700;
+  padding:.78em 1.6em;border-radius:8px;letter-spacing:-.01em}
+.cta-ghost{display:inline-block;border:2px solid rgba(255,255,255,.85);color:#fff;font-weight:700;
+  padding:.72em 1.5em;border-radius:8px}
+
+.prod{position:absolute;object-fit:contain;filter:drop-shadow(0 40px 60px rgba(0,0,0,.45))}
+.prod-light{filter:drop-shadow(0 34px 46px rgba(0,0,0,.22))}
+
+/* warm floor glow behind product on dark */
+.glow{position:absolute;border-radius:50%;
+  background:radial-gradient(circle,rgba(246,147,41,.55) 0%,rgba(225,52,24,.18) 45%,transparent 70%);
+  filter:blur(40px)}
+
+.legal{font-family:'JetBrains Mono',monospace;font-weight:500;letter-spacing:.06em;opacity:.55}
+.rule{height:3px;width:64px;background:var(--accent);border-radius:2px}
+
+/* --- logo (RULE: always present unless deliberately omitted) --- */
+.logo{position:absolute;object-fit:contain;z-index:6}
+.logo-dark-bg{filter:drop-shadow(0 0 22px rgba(255,255,255,.22))}
+
+/* --- product box: crops a cutout to its visible bounds so the PRODUCT centres,
+   not the transparent canvas. Generate with `python3 prod.py <file> <width>`. --- */
+.pbox{position:relative;overflow:hidden;flex:none}
+.pbox img{position:absolute;max-width:none}
+
+/* --- Americana palette: holiday/seasonal use (Labor Day, 4th of July, Memorial Day) --- */
+:root{
+  --navy:#0E2748; --navy-dk:#081A31; --flag-red:#C8102E; --flag-red-dk:#9B0C23;
+  --cream:#F7F3E9; --star:rgba(255,255,255,.16);
+}
+.stars-bg{background-image:radial-gradient(circle at 50% 50%, var(--star) 1.6px, transparent 1.7px);
+  background-size:44px 44px}

@@ -1,0 +1,2225 @@
+{
+ "pulled": "2026-08-26",
+ "source": "https://highperformancecookers.com/products.json",
+ "count": 122,
+ "products": [
+  {
+   "title": "Navimow Mow Gate",
+   "handle": "navimow-mow-gate",
+   "type": "",
+   "tags": [
+    "no-wholesale",
+    "Robotic Mower"
+   ],
+   "published": "2026-08-19T17:00:18-05:00",
+   "variants": 1,
+   "prices": [
+    "449.99"
+   ]
+  },
+  {
+   "title": "Navimow X430 Series Robotic Lawn Mower",
+   "handle": "navimow-x430-series-robotic-lawn-mower",
+   "type": "Robot Mower",
+   "tags": [
+    "no-wholesale",
+    "Robotic Mower"
+   ],
+   "published": "2026-08-19T16:36:10-05:00",
+   "variants": 2,
+   "prices": [
+    "2499.00",
+    "2999.00"
+   ]
+  },
+  {
+   "title": "Boil Boss - Foundation Boil Seasoning - 20 lb Bulk (5 - 4lb bags) 25% Savings",
+   "handle": "boil-boss-foundation-boil-seasoning-20-lb-bulk-5-4lb-bags-25-savings",
+   "type": "",
+   "tags": [
+    "Sale-Nodiscount"
+   ],
+   "published": "2026-08-06T10:15:15-05:00",
+   "variants": 2,
+   "prices": [
+    "67.46"
+   ]
+  },
+  {
+   "title": "Custom Cooking Trailer",
+   "handle": "custom-cooking-trailer",
+   "type": "Cooking Trailers",
+   "tags": [
+    "catering",
+    "Commercial",
+    "cooking trailer",
+    "crawfish boiler",
+    "custom trailer",
+    "mobile cooker",
+    "Trailer"
+   ],
+   "published": "2026-07-15T12:56:00-05:00",
+   "variants": 1,
+   "prices": [
+    "0.00"
+   ]
+  },
+  {
+   "title": "Platinum Boiling Bundle - Performance Stock Pot with Triple Jet Burner and Electronic Ignition ($100 Savings)",
+   "handle": "platinum-boiling-bundle-performance-stock-pot-with-triple-jet-burner-and-electronic-ignition",
+   "type": "",
+   "tags": [
+    "Boil Boss",
+    "Bundle",
+    "bundle-pot-burner",
+    "Crawfish",
+    "Featured",
+    "no-wholesale",
+    "Powered",
+    "Sale",
+    "Sale-NoDiscount",
+    "Seafood",
+    "Tailgater"
+   ],
+   "published": "2026-07-13T16:02:22-05:00",
+   "variants": 16,
+   "prices": [
+    "737.00",
+    "755.00",
+    "765.00",
+    "785.00",
+    "837.00",
+    "855.00",
+    "862.00",
+    "865.00",
+    "880.00",
+    "885.00",
+    "890.00",
+    "892.00",
+    "910.00",
+    "920.00",
+    "940.00"
+   ]
+  },
+  {
+   "title": "Ultimate Boiling Bundle - Pot, Burner, Cooling Ring & Therm Paddle ($120 Savings)",
+   "handle": "ultimate-boiling-bundle-pot-burner-cooling-ring-therm-paddle-150-savings",
+   "type": "",
+   "tags": [
+    "Boil Boss",
+    "Bundle",
+    "bundle-pot-burner",
+    "Burner",
+    "Crawfish",
+    "no-wholesale",
+    "Powered",
+    "Sale",
+    "Sale-NoDiscount",
+    "Seafood",
+    "Stock Pot",
+    "Tailgater"
+   ],
+   "published": "2026-07-13T15:53:20-05:00",
+   "variants": 64,
+   "prices": [
+    "1001.98",
+    "1019.98",
+    "1029.98",
+    "1049.98",
+    "846.98",
+    "864.98",
+    "874.98",
+    "894.98",
+    "946.98",
+    "964.98",
+    "971.98",
+    "974.98",
+    "989.98",
+    "994.98",
+    "999.98"
+   ]
+  },
+  {
+   "title": "Commercial Burner Modules",
+   "handle": "commercial-burners",
+   "type": "",
+   "tags": [
+    "Commercial",
+    "no-wholesale"
+   ],
+   "published": "2026-06-11T11:41:45-05:00",
+   "variants": 10,
+   "prices": [
+    "210.00",
+    "250.00",
+    "300.00",
+    "335.00",
+    "345.00",
+    "400.00",
+    "445.00",
+    "630.00",
+    "730.00"
+   ]
+  },
+  {
+   "title": "30 Qt Powered Pot With Drain Valve, Basket & Lid",
+   "handle": "30-qt-powered-pot-with-drain-valve-basket-lid",
+   "type": "Home & Garden",
+   "tags": [
+    "Custom Logo Available",
+    "Featured",
+    "Fryer",
+    "Low Country Boil",
+    "Powered",
+    "Seafood",
+    "Steamer",
+    "Tailgater",
+    "Turkey"
+   ],
+   "published": "2026-05-20T12:49:45-05:00",
+   "variants": 3,
+   "prices": [
+    "435.00",
+    "455.00",
+    "475.00"
+   ]
+  },
+  {
+   "title": "40 / 60 Gallon Lid Support Brackets",
+   "handle": "40-gallon-lid-support-bracket",
+   "type": "",
+   "tags": [
+    "Accessory",
+    "Commercial",
+    "no-wholesale"
+   ],
+   "published": "2026-04-22T09:49:14-05:00",
+   "variants": 2,
+   "prices": [
+    "46.00",
+    "58.00"
+   ]
+  },
+  {
+   "title": "Zydeco Fire Combo Pack",
+   "handle": "zydeco-fire-combo-pack",
+   "type": "",
+   "tags": [
+    "no-wholesale",
+    "Seasoning"
+   ],
+   "published": "2026-03-24T16:28:26-05:00",
+   "variants": 1,
+   "prices": [
+    "11.99"
+   ]
+  },
+  {
+   "title": "Zydeco Fire Hot Sauce",
+   "handle": "zydeco-fire-hot-sauce",
+   "type": "Home & Garden",
+   "tags": [
+    "no-wholesale",
+    "Seasoning"
+   ],
+   "published": "2026-03-24T16:23:43-05:00",
+   "variants": 1,
+   "prices": [
+    "5.95"
+   ]
+  },
+  {
+   "title": "Zydeco Fire Seasoning Dust",
+   "handle": "zydeco-fire-seasoning-dust",
+   "type": "Home & Garden",
+   "tags": [
+    "no-wholesale",
+    "Seasoning"
+   ],
+   "published": "2026-03-24T16:16:19-05:00",
+   "variants": 1,
+   "prices": [
+    "6.95"
+   ]
+  },
+  {
+   "title": "Stainless Steel Deep Fryer Thermometers - 12 inch and 5 inch - HP Cookers",
+   "handle": "stainless-steel-fry-thermometer-5-in-12-in-hp-cookers",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2026-03-12T07:22:34-05:00",
+   "variants": 2,
+   "prices": [
+    "15.99",
+    "18.99"
+   ]
+  },
+  {
+   "title": "Replacement BoilBoss Ring Bracket (Set of 3)",
+   "handle": "replacement-boilboss-ring-bracket",
+   "type": "",
+   "tags": [
+    "Accessory",
+    "no-wholesale"
+   ],
+   "published": "2026-02-24T13:20:53-06:00",
+   "variants": 4,
+   "prices": [
+    "0.00"
+   ]
+  },
+  {
+   "title": "Performance Boiling Pots (60QT to 120QT)",
+   "handle": "performance-seafood-boiling-pots",
+   "type": "Home & Garden",
+   "tags": [
+    "Boil Boss"
+   ],
+   "published": "2026-01-19T13:51:01-06:00",
+   "variants": 14,
+   "prices": [
+    "377.00",
+    "395.00",
+    "477.00",
+    "495.00",
+    "502.00",
+    "505.00",
+    "520.00",
+    "525.00",
+    "530.00",
+    "532.00",
+    "550.00",
+    "560.00",
+    "580.00"
+   ]
+  },
+  {
+   "title": "Boil Boss Triple Jet Burner (Centering Brackets - Set of 3)",
+   "handle": "boil-boss-tjb-cb",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Burner"
+   ],
+   "published": "2025-11-18T11:09:29-06:00",
+   "variants": 1,
+   "prices": [
+    "35.00"
+   ]
+  },
+  {
+   "title": "Grey Shrimp Tee",
+   "handle": "classic-grey-shrimp-tee",
+   "type": "T-shirt",
+   "tags": [
+    "Tees"
+   ],
+   "published": "2025-11-11T09:57:18-06:00",
+   "variants": 8,
+   "prices": [
+    "22.00"
+   ]
+  },
+  {
+   "title": "Light Blue Fish Tee",
+   "handle": "classic-blue-fish-tee",
+   "type": "T-shirt",
+   "tags": [
+    "Tees"
+   ],
+   "published": "2025-11-11T09:57:13-06:00",
+   "variants": 4,
+   "prices": [
+    "22.00"
+   ]
+  },
+  {
+   "title": "Original Hats",
+   "handle": "classic-hats",
+   "type": "",
+   "tags": [
+    "Hat"
+   ],
+   "published": "2025-11-11T09:57:08-06:00",
+   "variants": 3,
+   "prices": [
+    "20.00"
+   ]
+  },
+  {
+   "title": "Trucker Hat",
+   "handle": "hat",
+   "type": "",
+   "tags": [
+    "Hat"
+   ],
+   "published": "2025-11-11T09:57:02-06:00",
+   "variants": 1,
+   "prices": [
+    "20.00"
+   ]
+  },
+  {
+   "title": "Short Sleeve Crawfish Tee",
+   "handle": "boilboss-tees",
+   "type": "T-shirt",
+   "tags": [
+    "Tees"
+   ],
+   "published": "2025-11-11T09:56:52-06:00",
+   "variants": 8,
+   "prices": [
+    "22.00"
+   ]
+  },
+  {
+   "title": "Boil Boss Triple Jet Burner",
+   "handle": "boil-boss-triple-jet-burner",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Burner"
+   ],
+   "published": "2025-09-25T22:56:23-05:00",
+   "variants": 1,
+   "prices": [
+    "425.00"
+   ]
+  },
+  {
+   "title": "18 Qt Fish Fryer / Brazier Pot - SCRATCH & DENT",
+   "handle": "18-qt-fish-fryer-brazier-powered-pot-scratch-dent-30-off",
+   "type": "Home & Garden",
+   "tags": [
+    "Damaged",
+    "no-wholesale",
+    "Sale",
+    "Scratch"
+   ],
+   "published": "2025-08-19T11:11:13-05:00",
+   "variants": 4,
+   "prices": [
+    "185.50",
+    "225.25",
+    "238.00",
+    "289.00"
+   ]
+  },
+  {
+   "title": "80 Qt Cooker - SCRATCH & DENT",
+   "handle": "80-qt-powered-seafood-cooker-scratch-dent-30-off",
+   "type": "Home & Garden",
+   "tags": [
+    "Damaged",
+    "no-wholesale",
+    "Sale",
+    "Scratch"
+   ],
+   "published": "2025-08-19T11:04:03-05:00",
+   "variants": 4,
+   "prices": [
+    "346.50",
+    "420.75",
+    "441.00",
+    "535.50"
+   ]
+  },
+  {
+   "title": "60 Qt Cooker - SCRATCH & DENT",
+   "handle": "60-qt-powered-cooker-scratch-dent-30-off",
+   "type": "Home & Garden",
+   "tags": [
+    "Damaged",
+    "no-wholesale",
+    "Sale",
+    "Scratch"
+   ],
+   "published": "2025-08-19T10:57:07-05:00",
+   "variants": 4,
+   "prices": [
+    "276.50",
+    "335.75",
+    "367.50",
+    "446.25"
+   ]
+  },
+  {
+   "title": "30 Qt Cooker - SCRATCH & DENT",
+   "handle": "30-qt-turkey-fryer-pot-with-drain-valve-basket-lid-turkey-rack-scratch-dent-30-off",
+   "type": "Home & Garden",
+   "tags": [
+    "Damaged",
+    "Fryer",
+    "no-wholesale",
+    "Sale",
+    "Scratch"
+   ],
+   "published": "2025-08-19T10:04:49-05:00",
+   "variants": 4,
+   "prices": [
+    "234.50",
+    "284.75",
+    "332.50",
+    "403.75"
+   ]
+  },
+  {
+   "title": "100 QT Cooker - SCRATCH & DENT",
+   "handle": "100-qt-powered-seafood-cooker-scratch-dent-15-off-copy",
+   "type": "Home & Garden",
+   "tags": [
+    "Damaged",
+    "no-wholesale",
+    "Sale",
+    "Scratch"
+   ],
+   "published": "2025-08-19T09:56:22-05:00",
+   "variants": 4,
+   "prices": [
+    "364.00",
+    "442.00",
+    "469.00",
+    "569.50"
+   ]
+  },
+  {
+   "title": "120 Qt Cooker - SCRATCH & DENT",
+   "handle": "120-quart-powered-seafood-crawfish-cooker-scratch-dent-30-off",
+   "type": "Home & Garden",
+   "tags": [
+    "Damaged",
+    "no-wholesale",
+    "Sale",
+    "Scratch"
+   ],
+   "published": "2025-08-19T09:51:32-05:00",
+   "variants": 4,
+   "prices": [
+    "406.00",
+    "493.00",
+    "500.50",
+    "607.75"
+   ]
+  },
+  {
+   "title": "Navimow X Series Robotic Lawn Mower",
+   "handle": "navimow-i330-robotic-lawn-mower-1-acre",
+   "type": "Robot Mower",
+   "tags": [
+    "no-wholesale",
+    "Robotic Mower"
+   ],
+   "published": "2025-06-02T11:51:28-05:00",
+   "variants": 4,
+   "prices": [
+    "2299.00",
+    "2799.00",
+    "3499.00",
+    "4999.00"
+   ]
+  },
+  {
+   "title": "Navimow Access+",
+   "handle": "navimow-access",
+   "type": "",
+   "tags": [
+    "no-wholesale",
+    "Robotic Mower"
+   ],
+   "published": "2025-05-24T14:48:09-05:00",
+   "variants": 1,
+   "prices": [
+    "149.99"
+   ]
+  },
+  {
+   "title": "Navimow Garage",
+   "handle": "navimow-garage",
+   "type": "",
+   "tags": [
+    "no-wholesale",
+    "Robotic Mower"
+   ],
+   "published": "2025-05-24T14:45:07-05:00",
+   "variants": 4,
+   "prices": [
+    "199.99",
+    "249.99",
+    "299.99",
+    "349.99"
+   ]
+  },
+  {
+   "title": "Navimow I Series Robotic Lawn Mower",
+   "handle": "navimow-i110",
+   "type": "Robot Mower",
+   "tags": [
+    "no-wholesale",
+    "Robotic Mower"
+   ],
+   "published": "2025-05-24T14:40:02-05:00",
+   "variants": 4,
+   "prices": [
+    "1099.00",
+    "1299.00",
+    "1599.00",
+    "799.00"
+   ]
+  },
+  {
+   "title": "Boil Boss Ultimate Combo - 2 Free 4lb Bags of Seasoning",
+   "handle": "boil-boss-ultimate-combo",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Bundle",
+    "no-wholesale",
+    "Sale",
+    "Seasoning"
+   ],
+   "published": "2025-04-15T17:07:41-05:00",
+   "variants": 8,
+   "prices": [
+    "129.98"
+   ]
+  },
+  {
+   "title": "Boil Boss Combo - Cooling Ring & Thermo Paddle",
+   "handle": "boil-boss-combo-cooling-ring-thermo-paddle-1",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Bundle",
+    "no-wholesale",
+    "Sale"
+   ],
+   "published": "2025-04-15T16:53:49-05:00",
+   "variants": 4,
+   "prices": [
+    "122.50"
+   ]
+  },
+  {
+   "title": "Predator Gas Grills - Side Burner",
+   "handle": "predator-gas-grills-side-burner",
+   "type": "Home & Garden",
+   "tags": [
+    "BBQ Grill",
+    "no-wholesale"
+   ],
+   "published": "2025-03-31T17:33:28-05:00",
+   "variants": 2,
+   "prices": [
+    "1200.00",
+    "1750.00"
+   ]
+  },
+  {
+   "title": "New Predator Gas Grills With ETC Technology",
+   "handle": "the-predator-bbq-grill",
+   "type": "Home & Garden",
+   "tags": [
+    "BBQ Grill",
+    "no-wholesale"
+   ],
+   "published": "2025-01-28T12:38:41-06:00",
+   "variants": 4,
+   "prices": [
+    "3800.00",
+    "4050.00",
+    "4100.00",
+    "4350.00"
+   ]
+  },
+  {
+   "title": "Rugged Road 115 - High Performance Cooler",
+   "handle": "rugged-road-115-high-performance-cooler",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Ice Chest",
+    "no-wholesale"
+   ],
+   "published": "2024-10-27T12:03:17-05:00",
+   "variants": 4,
+   "prices": [
+    "494.99"
+   ]
+  },
+  {
+   "title": "Rugged Road 25 - High Performance Cooler",
+   "handle": "rugged-road-25-high-performance-cooler",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Ice Chest",
+    "no-wholesale"
+   ],
+   "published": "2024-10-25T13:53:56-05:00",
+   "variants": 4,
+   "prices": [
+    "249.99"
+   ]
+  },
+  {
+   "title": "18 QT Fish Fryer / Brazier Pot",
+   "handle": "18-qt-fish-fryer-brazier-pot",
+   "type": "Home & Garden",
+   "tags": [
+    "Brazier",
+    "Custom Logo Available",
+    "Fish Fryer",
+    "Fryer",
+    "Non Powered",
+    "preorder-enabled",
+    "Stock Pot",
+    "Tailgater"
+   ],
+   "published": "2024-06-27T14:28:08-05:00",
+   "variants": 4,
+   "prices": [
+    "220.00",
+    "235.00",
+    "250.00",
+    "265.00"
+   ]
+  },
+  {
+   "title": "20\" Heavy Duty Chrome Plated Wire Mesh Skimmer",
+   "handle": "20-heavy-duty-chrome-plated-wire-mesh-skimmer",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2024-04-15T14:29:50-05:00",
+   "variants": 1,
+   "prices": [
+    "9.99"
+   ]
+  },
+  {
+   "title": "Commercial Duty 0 to 30 Psi PLATINUM Propane Regulator",
+   "handle": "commercial-duty-0-to-30-psi-platinum-propane-regulator",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Regulators"
+   ],
+   "published": "2024-04-03T10:30:02-05:00",
+   "variants": 1,
+   "prices": [
+    "78.00"
+   ]
+  },
+  {
+   "title": "58OZ Cast Aluminum Scoop",
+   "handle": "58oz-cast-aluminum-scoop",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2024-03-13T09:26:13-05:00",
+   "variants": 1,
+   "prices": [
+    "14.99"
+   ]
+  },
+  {
+   "title": "Cooker Leg Extensions for Outdoor Gas Cookers",
+   "handle": "leg-extensions",
+   "type": "Home & Garden",
+   "tags": [
+    "Accessory",
+    "Fish Fryer",
+    "Fryer",
+    "Pasta",
+    "Powered",
+    "Tailgater"
+   ],
+   "published": "2024-03-12T13:50:02-05:00",
+   "variants": 1,
+   "prices": [
+    "119.00"
+   ]
+  },
+  {
+   "title": "30 QT Performance Seafood/Stock Pot",
+   "handle": "30-qt-performance-seafood-stock-pot",
+   "type": "Home & Garden",
+   "tags": [
+    "Custom Logo Available",
+    "Fryer",
+    "Non Powered",
+    "Sale",
+    "Seafood",
+    "Stock Pot",
+    "Tailgater",
+    "Turkey"
+   ],
+   "published": "2024-02-16T08:22:53-06:00",
+   "variants": 1,
+   "prices": [
+    "335.00"
+   ]
+  },
+  {
+   "title": "RENTAL - Crawfish Boil Trailer Package",
+   "handle": "rental-crawfish-boil-trailer-package",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "no-wholesale",
+    "Powered",
+    "Rental",
+    "Seafood",
+    "Tailgater",
+    "Trailer"
+   ],
+   "published": "2024-01-29T10:33:25-06:00",
+   "variants": 2,
+   "prices": [
+    "385.00",
+    "600.00"
+   ]
+  },
+  {
+   "title": "Pull Behind Trailer Package - 60 Gallon High Performance Commercial Seafood Cooker",
+   "handle": "pull-behind-trailer-60-gallon-high-performance-commercial-seafood-boiler",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "Custom Logo Available",
+    "Featured",
+    "no-wholesale",
+    "Powered",
+    "Seafood",
+    "Tailgater",
+    "Trailer"
+   ],
+   "published": "2024-01-22T13:39:57-06:00",
+   "variants": 1,
+   "prices": [
+    "7299.00"
+   ]
+  },
+  {
+   "title": "HP Cookers 20 OZ Cup",
+   "handle": "hp-cookers-20-oz-bottle",
+   "type": "",
+   "tags": [
+    "Accessory",
+    "Apparel",
+    "Cup",
+    "Tailgater"
+   ],
+   "published": "2024-01-18T13:23:32-06:00",
+   "variants": 1,
+   "prices": [
+    "24.99"
+   ]
+  },
+  {
+   "title": "HP Cookers 32 OZ Cup",
+   "handle": "hp-cookers-32-oz-cup",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Apparel",
+    "Cup",
+    "Tailgater"
+   ],
+   "published": "2024-01-18T13:22:52-06:00",
+   "variants": 1,
+   "prices": [
+    "29.99"
+   ]
+  },
+  {
+   "title": "HP Cookers 36 OZ Bottle",
+   "handle": "hp-cookers-36-oz-bottle",
+   "type": "",
+   "tags": [
+    "Accessory",
+    "Apparel",
+    "Bottle",
+    "Tailgater"
+   ],
+   "published": "2024-01-18T13:21:30-06:00",
+   "variants": 1,
+   "prices": [
+    "34.99"
+   ]
+  },
+  {
+   "title": "21\" Spiral Wire Mesh Skimmer",
+   "handle": "9-spiral-wire-mesh-skimmer",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2023-12-11T14:16:14-06:00",
+   "variants": 1,
+   "prices": [
+    "13.99"
+   ]
+  },
+  {
+   "title": "Crawcuzzi Basket Chute",
+   "handle": "60-gallon-crawcuzzi-basket-chute",
+   "type": "Home & Garden",
+   "tags": [
+    "Accessory",
+    "Commercial",
+    "no-wholesale"
+   ],
+   "published": "2023-12-07T18:25:23-06:00",
+   "variants": 2,
+   "prices": [
+    "115.00",
+    "85.00"
+   ]
+  },
+  {
+   "title": "18 QT Basket & Notched Lid",
+   "handle": "18-qt-basket",
+   "type": "Home & Garden",
+   "tags": [
+    "Accessory",
+    "Fish Fryer"
+   ],
+   "published": "2023-11-13T10:17:41-06:00",
+   "variants": 1,
+   "prices": [
+    "61.00"
+   ]
+  },
+  {
+   "title": "30 Qt Turkey Fryer Powered Pot With Drain Valve, Lid & Turkey Rack",
+   "handle": "30-qt-turkey-fryer-pot-with-drain-valve-lid-turkey-rack",
+   "type": "Home & Garden",
+   "tags": [
+    "Custom Logo Available",
+    "Featured",
+    "Fryer",
+    "Low Country Boil",
+    "Powered",
+    "Seafood",
+    "Steamer",
+    "Tailgater",
+    "Turkey"
+   ],
+   "published": "2023-10-25T16:24:46-05:00",
+   "variants": 3,
+   "prices": [
+    "395.00",
+    "442.50",
+    "462.50"
+   ]
+  },
+  {
+   "title": "Shipping Protection",
+   "handle": "navidium-shipping-protection",
+   "type": "Shipping Protection",
+   "tags": [
+    "no-wholesale",
+    "nvd-hidden"
+   ],
+   "published": "2023-10-25T06:27:15-05:00",
+   "variants": 100,
+   "prices": [
+    "0.75",
+    "1.50",
+    "10.50",
+    "11.25",
+    "12.00",
+    "12.75",
+    "13.50",
+    "14.25",
+    "15.00",
+    "15.75",
+    "16.50",
+    "17.25",
+    "18.00",
+    "18.75",
+    "19.50",
+    "2.00",
+    "2.25",
+    "20.25",
+    "21.00",
+    "21.75",
+    "22.50",
+    "23.25",
+    "24.00",
+    "24.75",
+    "25.50",
+    "26.25",
+    "27.00",
+    "27.75",
+    "28.50",
+    "29.25",
+    "3.00",
+    "3.75",
+    "30.00",
+    "30.75",
+    "31.50",
+    "32.25",
+    "33.00",
+    "33.75",
+    "34.50",
+    "35.25",
+    "36.00",
+    "36.75",
+    "37.50",
+    "38.25",
+    "39.00",
+    "39.75",
+    "4.50",
+    "40.50",
+    "41.25",
+    "42.00",
+    "42.75",
+    "43.50",
+    "44.25",
+    "45.00",
+    "45.75",
+    "46.50",
+    "47.25",
+    "48.00",
+    "48.75",
+    "49.50",
+    "5.25",
+    "50.25",
+    "51.00",
+    "51.75",
+    "52.50",
+    "53.25",
+    "54.00",
+    "54.75",
+    "55.50",
+    "56.25",
+    "57.00",
+    "57.75",
+    "58.50",
+    "59.25",
+    "6.00",
+    "6.75",
+    "60.00",
+    "60.75",
+    "61.50",
+    "62.25",
+    "63.00",
+    "63.75",
+    "64.50",
+    "65.25",
+    "66.00",
+    "66.75",
+    "67.50",
+    "68.25",
+    "69.00",
+    "69.75",
+    "7.50",
+    "70.50",
+    "71.25",
+    "72.00",
+    "72.75",
+    "73.50",
+    "74.25",
+    "8.25",
+    "9.00",
+    "9.75"
+   ]
+  },
+  {
+   "title": "HP Cookers Logo Hat",
+   "handle": "hpc-logo-hat",
+   "type": "",
+   "tags": [
+    "Accessory",
+    "Apparel",
+    "Hat",
+    "Tailgater"
+   ],
+   "published": "2023-10-02T11:41:50-05:00",
+   "variants": 4,
+   "prices": [
+    "40.00",
+    "42.00"
+   ]
+  },
+  {
+   "title": "Replacement Lids",
+   "handle": "replacement-lid",
+   "type": "",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2023-06-05T18:22:11-05:00",
+   "variants": 8,
+   "prices": [
+    "18.50",
+    "21.25",
+    "24.00",
+    "25.00",
+    "26.00",
+    "30.50",
+    "32.00",
+    "34.75"
+   ]
+  },
+  {
+   "title": "Cajun Cleaner",
+   "handle": "cajun-cleaner",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Crawfish Cleaner"
+   ],
+   "published": "2023-04-17T10:11:17-05:00",
+   "variants": 6,
+   "prices": [
+    "118.95"
+   ]
+  },
+  {
+   "title": "Boil Boss Seasoning",
+   "handle": "boil-boss-seasoning",
+   "type": "Accessory",
+   "tags": [
+    "Seasoning"
+   ],
+   "published": "2023-03-13T19:04:53-05:00",
+   "variants": 4,
+   "prices": [
+    "17.99",
+    "5.99"
+   ]
+  },
+  {
+   "title": "Boil Boss Cooling Ring",
+   "handle": "boil-boss-cooling-ring",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2023-03-13T11:49:35-05:00",
+   "variants": 12,
+   "prices": [
+    "55.99",
+    "59.99",
+    "74.99"
+   ]
+  },
+  {
+   "title": "Boil Boss Thermo Paddle",
+   "handle": "boil-boss-paddle",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2023-03-13T10:38:55-05:00",
+   "variants": 1,
+   "prices": [
+    "69.99"
+   ]
+  },
+  {
+   "title": "Basket Buddy",
+   "handle": "basket-buddy",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2023-03-09T10:34:49-06:00",
+   "variants": 2,
+   "prices": [
+    "10.50",
+    "15.99"
+   ]
+  },
+  {
+   "title": "Seafood Boil Bags",
+   "handle": "boil-bag",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2023-03-08T13:21:30-06:00",
+   "variants": 2,
+   "prices": [
+    "15.50",
+    "9.50"
+   ]
+  },
+  {
+   "title": "Add a Custom Logo",
+   "handle": "add-a-custom-logo",
+   "type": "Home & Garden",
+   "tags": [
+    "Accessory",
+    "Commercial",
+    "Custom Logo Available",
+    "no-wholesale"
+   ],
+   "published": "2023-02-22T13:08:10-06:00",
+   "variants": 1,
+   "prices": [
+    "75.00"
+   ]
+  },
+  {
+   "title": "Crawfish Sorting Table",
+   "handle": "crawfish-sorting-table",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "no-wholesale"
+   ],
+   "published": "2023-02-16T15:50:00-06:00",
+   "variants": 1,
+   "prices": [
+    "550.00"
+   ]
+  },
+  {
+   "title": "Gantry Lift System",
+   "handle": "gantry-lift-system",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "no-wholesale"
+   ],
+   "published": "2023-02-16T15:17:36-06:00",
+   "variants": 6,
+   "prices": [
+    "1325.00",
+    "1725.00",
+    "2215.00",
+    "2825.00",
+    "3215.00",
+    "785.00"
+   ]
+  },
+  {
+   "title": "60 Gallon Lid Dump Guide Rails",
+   "handle": "dump-lid-guide-rails",
+   "type": "Home & Garden",
+   "tags": [
+    "Accessory",
+    "Commercial",
+    "no-wholesale"
+   ],
+   "published": "2023-02-16T14:09:45-06:00",
+   "variants": 1,
+   "prices": [
+    "75.00"
+   ]
+  },
+  {
+   "title": "Rugged Ice Packs",
+   "handle": "rugged-ice-packs",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Ice Chest",
+    "no-wholesale"
+   ],
+   "published": "2022-12-14T12:54:27-06:00",
+   "variants": 1,
+   "prices": [
+    "24.99"
+   ]
+  },
+  {
+   "title": "Rugged Road 45 - High Performance Cooler",
+   "handle": "rugged-road-45-high-performance-cooler",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Ice Chest",
+    "no-wholesale"
+   ],
+   "published": "2022-12-14T12:31:29-06:00",
+   "variants": 4,
+   "prices": [
+    "324.99"
+   ]
+  },
+  {
+   "title": "Rugged Road 85 - High Performance Cooler",
+   "handle": "rugged-road-85-high-performance-cooler",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Ice Chest",
+    "no-wholesale"
+   ],
+   "published": "2022-12-14T12:06:32-06:00",
+   "variants": 4,
+   "prices": [
+    "424.99"
+   ]
+  },
+  {
+   "title": "Rugged Road 65 - High Performance Cooler",
+   "handle": "rugged-road-high-performance-cooler",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Ice Chest",
+    "no-wholesale"
+   ],
+   "published": "2022-12-14T11:33:04-06:00",
+   "variants": 4,
+   "prices": [
+    "374.99"
+   ]
+  },
+  {
+   "title": "100 QT Powered Rack Steamer",
+   "handle": "100-qt-powered-rack-seafood-steamer",
+   "type": "Home & Garden",
+   "tags": [
+    "Custom Logo Available",
+    "Featured",
+    "Powered",
+    "Seafood",
+    "Steamer",
+    "Tailgater"
+   ],
+   "published": "2022-12-07T14:24:58-06:00",
+   "variants": 2,
+   "prices": [
+    "1525.00",
+    "1725.00"
+   ]
+  },
+  {
+   "title": "Table Top Signs",
+   "handle": "table-top-displays",
+   "type": "",
+   "tags": [
+    "Dealer Marketing"
+   ],
+   "published": "2022-11-08T14:22:16-06:00",
+   "variants": 1,
+   "prices": [
+    "0.01"
+   ]
+  },
+  {
+   "title": "Foam Boards",
+   "handle": "foam-boards",
+   "type": "",
+   "tags": [
+    "Dealer Marketing"
+   ],
+   "published": "2022-11-08T14:12:32-06:00",
+   "variants": 2,
+   "prices": [
+    "0.01"
+   ]
+  },
+  {
+   "title": "Self Standing Floor Pop Up Display",
+   "handle": "self-standing-floor-pop-up-display",
+   "type": "",
+   "tags": [
+    "Dealer Marketing"
+   ],
+   "published": "2022-11-08T12:41:02-06:00",
+   "variants": 1,
+   "prices": [
+    "0.01"
+   ]
+  },
+  {
+   "title": "Banners",
+   "handle": "banner",
+   "type": "",
+   "tags": [
+    "Dealer Marketing"
+   ],
+   "published": "2022-11-08T11:52:51-06:00",
+   "variants": 2,
+   "prices": [
+    "0.00",
+    "0.01"
+   ]
+  },
+  {
+   "title": "Cooker Selection Chart",
+   "handle": "cooker-selection-chart",
+   "type": "",
+   "tags": [
+    "Dealer Marketing"
+   ],
+   "published": "2022-11-08T10:36:29-06:00",
+   "variants": 2,
+   "prices": [
+    "0.00"
+   ]
+  },
+  {
+   "title": "100 QT Powered Seafood Cooker",
+   "handle": "100-qt-powered-seafood-cooker",
+   "type": "Home & Garden",
+   "tags": [
+    "Crawfish",
+    "Custom Logo Available",
+    "Featured",
+    "Low Country Boil",
+    "Powered",
+    "Seafood",
+    "Steamer",
+    "Tailgater"
+   ],
+   "published": "2022-11-07T08:51:33-06:00",
+   "variants": 9,
+   "prices": [
+    "670.00",
+    "680.00",
+    "700.00",
+    "710.00",
+    "725.00",
+    "735.00",
+    "740.00",
+    "755.00"
+   ]
+  },
+  {
+   "title": "100 QT Performance Seafood Pot",
+   "handle": "100-qt-stock-pot",
+   "type": "Home & Garden",
+   "tags": [
+    "Custom Logo Available",
+    "Non Powered",
+    "preorder-enabled",
+    "Seafood",
+    "Stock Pot",
+    "Tailgater"
+   ],
+   "published": "2022-11-07T08:48:48-06:00",
+   "variants": 4,
+   "prices": [
+    "502.00",
+    "520.00",
+    "530.00",
+    "550.00"
+   ]
+  },
+  {
+   "title": "Replacement Burner Tube for Burner Modules",
+   "handle": "burner-tube-replacements",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Burner",
+    "Burner Tube",
+    "no-wholesale"
+   ],
+   "published": "2022-11-02T13:18:29-05:00",
+   "variants": 2,
+   "prices": [
+    "14.99",
+    "7.99"
+   ]
+  },
+  {
+   "title": "Commercial Basket - Steamer Shelf",
+   "handle": "commercial-steamer-basket-insert",
+   "type": "Home & Garden",
+   "tags": [
+    "Accessory",
+    "Inserts",
+    "no-wholesale",
+    "Steamer"
+   ],
+   "published": "2022-10-31T09:34:20-05:00",
+   "variants": 4,
+   "prices": [
+    "175.00",
+    "190.00",
+    "195.00",
+    "210.00"
+   ]
+  },
+  {
+   "title": "Wind Shield",
+   "handle": "wind-shield",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2022-10-07T11:56:34-05:00",
+   "variants": 1,
+   "prices": [
+    "21.00"
+   ]
+  },
+  {
+   "title": "4-Way Fryer / Pasta Cooker",
+   "handle": "4-way-fryer-pasta-cooker-1",
+   "type": "Home & Garden",
+   "tags": [
+    "Chicken Wings",
+    "Fryer",
+    "Non Powered",
+    "Pasta",
+    "Seafood",
+    "Stock Pot",
+    "Tailgater"
+   ],
+   "published": "2022-06-06T11:27:22-05:00",
+   "variants": 2,
+   "prices": [
+    "277.99",
+    "299.99"
+   ]
+  },
+  {
+   "title": "40 QT Sauce Stock Pot",
+   "handle": "40-qt-sauce-stock-pot",
+   "type": "Home & Garden",
+   "tags": [
+    "Chilli",
+    "Fryer",
+    "Gumbo",
+    "Non Powered",
+    "Sauce Pot",
+    "Seafood",
+    "Slow Cooker",
+    "Soup",
+    "Stock Pot",
+    "Tailgater"
+   ],
+   "published": "2022-03-09T15:31:06-06:00",
+   "variants": 2,
+   "prices": [
+    "258.00",
+    "276.00"
+   ]
+  },
+  {
+   "title": "Commercial Cooker Metal Wheels (Set of 2)",
+   "handle": "commercial-cooker-metal-wheels",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "Seafood"
+   ],
+   "published": "2022-02-02T16:50:58-06:00",
+   "variants": 1,
+   "prices": [
+    "250.00"
+   ]
+  },
+  {
+   "title": "Crawfish Serving Trough",
+   "handle": "crawfish-serving-trough",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Custom Logo Available"
+   ],
+   "published": "2022-02-02T12:17:53-06:00",
+   "variants": 4,
+   "prices": [
+    "134.99",
+    "209.99",
+    "239.99",
+    "314.99"
+   ]
+  },
+  {
+   "title": "120 Gallon High Performance Commercial Seafood Boiler",
+   "handle": "120-gallon-high-performance-commercial-seafood-boiler",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "no-wholesale",
+    "Seafood"
+   ],
+   "published": "2022-01-19T11:28:12-06:00",
+   "variants": 6,
+   "prices": [
+    "3175.00",
+    "4175.00",
+    "4875.00"
+   ]
+  },
+  {
+   "title": "Crawcuzzi - Automatic Crawfish Cleaner",
+   "handle": "crawfish-jacuzzi-automatica-crawfish-cleaner",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "Crawfish Cleaner",
+    "Featured"
+   ],
+   "published": "2022-01-10T14:22:28-06:00",
+   "variants": 7,
+   "prices": [
+    "2465.00",
+    "2850.00",
+    "3150.00",
+    "3599.00",
+    "3999.00",
+    "4275.00",
+    "4595.00"
+   ]
+  },
+  {
+   "title": "Electronic Ignition",
+   "handle": "electronic-ignition",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Commercial",
+    "no-wholesale"
+   ],
+   "published": "2022-01-03T12:52:41-06:00",
+   "variants": 1,
+   "prices": [
+    "250.00"
+   ]
+  },
+  {
+   "title": "80 Gallon High Performance Commercial Seafood Boiler",
+   "handle": "80-gallon-high-performance-commercial-seafood-boiler",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "no-wholesale",
+    "Seafood"
+   ],
+   "published": "2022-01-03T11:05:02-06:00",
+   "variants": 4,
+   "prices": [
+    "2550.00",
+    "2650.00",
+    "3650.00",
+    "3750.00"
+   ]
+  },
+  {
+   "title": "140 Gallon High Performance Commercial Seafood Boiler",
+   "handle": "140-gallon-high-performance-commercial-seafood-boiler",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "no-wholesale",
+    "Seafood"
+   ],
+   "published": "2022-01-03T11:04:54-06:00",
+   "variants": 6,
+   "prices": [
+    "3875.00",
+    "3975.00",
+    "4875.00",
+    "4975.00",
+    "5675.00",
+    "5775.00"
+   ]
+  },
+  {
+   "title": "Double Jet Burner Module - 80 QT - 250K BTU (High Speed Boiling)",
+   "handle": "double-jet-burner-module-250k-btu-high-speed-boiling",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Burner"
+   ],
+   "published": "2021-08-16T12:08:08-05:00",
+   "variants": 1,
+   "prices": [
+    "89.00"
+   ]
+  },
+  {
+   "title": "40 Gallon / 160 Quart Powered Seafood/Crawfish Cooker (Flip Basket)",
+   "handle": "40-gallon-160-quart-powered-seafood-crawfish-cooker-flip-basket",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "Custom Logo Available",
+    "Featured",
+    "Low Country Boil",
+    "Powered",
+    "Seafood",
+    "Steamer"
+   ],
+   "published": "2021-07-09T15:49:07-05:00",
+   "variants": 4,
+   "prices": [
+    "2145.00",
+    "2175.00",
+    "2245.00",
+    "2279.00"
+   ]
+  },
+  {
+   "title": "80 QT Powered Seafood Cooker",
+   "handle": "80-qt-powered-seafood-cooker",
+   "type": "Home & Garden",
+   "tags": [
+    "Crawfish",
+    "Custom Logo Available",
+    "Featured",
+    "Low Country Boil",
+    "Powered",
+    "Seafood",
+    "Steamer",
+    "Tailgater"
+   ],
+   "published": "2021-05-19T18:38:44-05:00",
+   "variants": 9,
+   "prices": [
+    "630.00",
+    "640.00",
+    "655.00",
+    "660.00",
+    "665.00",
+    "675.00",
+    "685.00",
+    "695.00"
+   ]
+  },
+  {
+   "title": "80 QT Performance Seafood Pot",
+   "handle": "80-qt-performance-seafood-pot",
+   "type": "Home & Garden",
+   "tags": [
+    "Custom Logo Available",
+    "Non Powered",
+    "preorder-enabled",
+    "Seafood",
+    "Stock Pot",
+    "Tailgater"
+   ],
+   "published": "2021-05-19T18:20:08-05:00",
+   "variants": 4,
+   "prices": [
+    "477.00",
+    "495.00",
+    "505.00",
+    "525.00"
+   ]
+  },
+  {
+   "title": "HPC Heavy Duty Aluminum Paddle",
+   "handle": "hpc-heavy-duty-aluminum-paddle",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Custom Logo Available"
+   ],
+   "published": "2021-05-12T15:33:49-05:00",
+   "variants": 1,
+   "prices": [
+    "85.00"
+   ]
+  },
+  {
+   "title": "100 Gallon High Performance Commercial Seafood Boiler",
+   "handle": "100-gallon-high-performance-commercial-seafood-cooker",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "Featured",
+    "no-wholesale",
+    "Seafood"
+   ],
+   "published": "2021-02-18T17:05:03-06:00",
+   "variants": 7,
+   "prices": [
+    "2850.00",
+    "2950.00",
+    "3100.00",
+    "3200.00",
+    "3850.00",
+    "3950.00",
+    "4199.00"
+   ]
+  },
+  {
+   "title": "36\" Stainless Steel Paddle",
+   "handle": "36-stainless-steel-paddle",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2021-01-19T13:36:21-06:00",
+   "variants": 1,
+   "prices": [
+    "21.99"
+   ]
+  },
+  {
+   "title": "Bayou Classic WOODEN Cajun Stir Paddle",
+   "handle": "wooden-cajun-stir-paddle",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2021-01-19T13:01:39-06:00",
+   "variants": 1,
+   "prices": [
+    "19.99"
+   ]
+  },
+  {
+   "title": "Bayou Classic Perforated Aluminum Skimmer",
+   "handle": "bayou-classic-perforated-aluminum-skimmer",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2021-01-19T12:56:34-06:00",
+   "variants": 1,
+   "prices": [
+    "19.99"
+   ]
+  },
+  {
+   "title": "Bayou Classic Stainless Steel Brew Paddle with Bottle Opener",
+   "handle": "bayou-classic-stainless-steel-brew-paddle",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2021-01-19T12:53:45-06:00",
+   "variants": 1,
+   "prices": [
+    "9.99"
+   ]
+  },
+  {
+   "title": "Extra length Premium Regulator Hose",
+   "handle": "extra-length-regulator-hose",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Regulators"
+   ],
+   "published": "2021-01-07T14:12:43-06:00",
+   "variants": 3,
+   "prices": [
+    "19.99",
+    "29.99",
+    "34.99"
+   ]
+  },
+  {
+   "title": "28 QT Powered Rack Seafood Steamer",
+   "handle": "28-qt-powered-rack-steamer",
+   "type": "Home & Garden",
+   "tags": [
+    "Custom Logo Available",
+    "Featured",
+    "Powered",
+    "Seafood",
+    "Steamer",
+    "Tailgater"
+   ],
+   "published": "2021-01-04T13:46:38-06:00",
+   "variants": 1,
+   "prices": [
+    "1325.00"
+   ]
+  },
+  {
+   "title": "60 Gallon High Performance Commercial Seafood Cooker",
+   "handle": "60-gallon-high-performance-commercial-seafood-cooker",
+   "type": "Home & Garden",
+   "tags": [
+    "Commercial",
+    "Crawfish",
+    "Custom Logo Available",
+    "Featured",
+    "Powered",
+    "Seafood",
+    "Tailgater"
+   ],
+   "published": "2020-12-02T11:37:52-06:00",
+   "variants": 6,
+   "prices": [
+    "2699.00",
+    "2799.00",
+    "2999.00",
+    "3099.00"
+   ]
+  },
+  {
+   "title": "Replacement Baskets",
+   "handle": "replacement-baskets",
+   "type": "Accessory",
+   "tags": [
+    "Accessory"
+   ],
+   "published": "2020-11-18T12:34:40-06:00",
+   "variants": 7,
+   "prices": [
+    "105.00",
+    "120.00",
+    "35.00",
+    "40.00",
+    "55.00",
+    "70.00",
+    "95.00"
+   ]
+  },
+  {
+   "title": "120 QT Performance Seafood Pot",
+   "handle": "120-qt-performance-seafood-pot",
+   "type": "Home & Garden",
+   "tags": [
+    "Custom Logo Available",
+    "Featured",
+    "Non Powered",
+    "preorder-enabled",
+    "Seafood",
+    "Stock Pot",
+    "Tailgater"
+   ],
+   "published": "2020-11-09T21:47:21-06:00",
+   "variants": 4,
+   "prices": [
+    "532.00",
+    "550.00",
+    "560.00",
+    "580.00"
+   ]
+  },
+  {
+   "title": "18 QT Fish Fryer / Brazier Powered Pot",
+   "handle": "18-qt-fish-fryer",
+   "type": "Home & Garden",
+   "tags": [
+    "Brazier",
+    "Custom Logo Available",
+    "Featured",
+    "Fish Fryer",
+    "Fryer",
+    "Powered",
+    "Seafood",
+    "Servers",
+    "Tailgater"
+   ],
+   "published": "2020-11-06T09:59:47-06:00",
+   "variants": 4,
+   "prices": [
+    "285.00",
+    "300.00",
+    "325.00",
+    "340.00"
+   ]
+  },
+  {
+   "title": "4-Way 20 QT Fryer",
+   "handle": "4-way-fryer-pasta-cooker",
+   "type": "Home & Garden",
+   "tags": [
+    "Chicken Wings",
+    "Featured",
+    "Fryer",
+    "Pasta",
+    "Powered",
+    "Seafood",
+    "Steamer",
+    "Tailgater"
+   ],
+   "published": "2020-11-06T09:49:15-06:00",
+   "variants": 2,
+   "prices": [
+    "379.99",
+    "396.99"
+   ]
+  },
+  {
+   "title": "40 QT Powered Sauce Cooker",
+   "handle": "40-qt-sauce-cooker",
+   "type": "Home & Garden",
+   "tags": [
+    "Chilli",
+    "Featured",
+    "Fryer",
+    "Gumbo",
+    "Powered",
+    "Sauce Pot",
+    "Seafood",
+    "Slow Cooker",
+    "Soup",
+    "Steamer",
+    "Tailgater"
+   ],
+   "published": "2020-11-06T09:36:38-06:00",
+   "variants": 2,
+   "prices": [
+    "289.99",
+    "309.99"
+   ]
+  },
+  {
+   "title": "0 to 10 PSI Propane Regulator w/ 6' Stainless Steel Braided Hose",
+   "handle": "0-to-10-psi-propane-regulator",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Regulators"
+   ],
+   "published": "2020-11-06T09:20:44-06:00",
+   "variants": 1,
+   "prices": [
+    "25.99"
+   ]
+  },
+  {
+   "title": "0 to 30 PSI Propane Regulator w/6' Stainless Steel Braided Hose",
+   "handle": "0-to-30-psi-propane-platinum-regulator-for-the-120-quart-pot",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Regulators"
+   ],
+   "published": "2020-11-06T09:19:58-06:00",
+   "variants": 1,
+   "prices": [
+    "25.99"
+   ]
+  },
+  {
+   "title": "Turkey Fryer Racks",
+   "handle": "turkey-fryer-rack",
+   "type": "Home & Garden",
+   "tags": [
+    "Accessory",
+    "Fryer",
+    "Rack",
+    "Tailgater",
+    "Turkey"
+   ],
+   "published": "2020-11-06T09:09:28-06:00",
+   "variants": 3,
+   "prices": [
+    "25.00",
+    "59.95",
+    "65.00"
+   ]
+  },
+  {
+   "title": "60 QT Performance Seafood/Stock Pot",
+   "handle": "60-qt-stock-pot-1",
+   "type": "Home & Garden",
+   "tags": [
+    "Custom Logo Available",
+    "Fryer",
+    "Non Powered",
+    "Seafood",
+    "Stock Pot",
+    "Tailgater",
+    "Turkey"
+   ],
+   "published": "2020-11-06T07:52:21-06:00",
+   "variants": 1,
+   "prices": [
+    "395.00"
+   ]
+  },
+  {
+   "title": "60 Qt Dual Turkey Fryer Pot With Drain Valve / Lid & Turkey Rack",
+   "handle": "60-qt-dual-turkey-fryer",
+   "type": "Home & Garden",
+   "tags": [
+    "Custom Logo Available",
+    "Featured",
+    "Fryer",
+    "Powered",
+    "Seafood",
+    "Tailgater",
+    "Turkey"
+   ],
+   "published": "2020-11-06T07:51:34-06:00",
+   "variants": 2,
+   "prices": [
+    "495.00",
+    "505.00"
+   ]
+  },
+  {
+   "title": "Single Jet Burner Module (Boiling)",
+   "handle": "single-jet-burner-module",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Burner"
+   ],
+   "published": "2020-11-06T07:33:42-06:00",
+   "variants": 1,
+   "prices": [
+    "62.00"
+   ]
+  },
+  {
+   "title": "60 QT Powered Cooker",
+   "handle": "60-qt-performance-cooker",
+   "type": "Home & Garden",
+   "tags": [
+    "Crawfish",
+    "Custom Logo Available",
+    "Featured",
+    "Fryer",
+    "Low Country Boil",
+    "Powered",
+    "Seafood",
+    "Steamer",
+    "Tailgater",
+    "Turkey"
+   ],
+   "published": "2020-11-05T16:44:38-06:00",
+   "variants": 4,
+   "prices": [
+    "515.00",
+    "525.00",
+    "535.00"
+   ]
+  },
+  {
+   "title": "6\" Banjo Burner Module (Cooking & Frying)",
+   "handle": "6-banjo-burner-module-55k-btu",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Burner",
+    "Chilli",
+    "Gumbo",
+    "Slow Cooker",
+    "Soup"
+   ],
+   "published": "2020-11-04T00:20:03-06:00",
+   "variants": 1,
+   "prices": [
+    "74.00"
+   ]
+  },
+  {
+   "title": "10\" Banjo Burner Module - 200K BTU (Cooking & Frying)",
+   "handle": "10-banjo-burner-module-200k-btu",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Burner"
+   ],
+   "published": "2020-11-04T00:13:36-06:00",
+   "variants": 1,
+   "prices": [
+    "139.00"
+   ]
+  },
+  {
+   "title": "32 Tip MultiJet Natural Gas Burner Module - 160K BTU",
+   "handle": "32-tip-multijet-natural-gas-burner-module-160k-btu",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Burner",
+    "Natural Gas"
+   ],
+   "published": "2020-11-04T00:04:24-06:00",
+   "variants": 1,
+   "prices": [
+    "142.00"
+   ]
+  },
+  {
+   "title": "3 Jet Burner Module - 375K BTU (High Speed Boiling)",
+   "handle": "triple-jet-burner-module-375k-btu",
+   "type": "Accessory",
+   "tags": [
+    "Accessory",
+    "Burner"
+   ],
+   "published": "2020-11-03T23:59:20-06:00",
+   "variants": 1,
+   "prices": [
+    "109.00"
+   ]
+  },
+  {
+   "title": "Steamer Basket Inserts",
+   "handle": "120-qt-steamer-basket-insert",
+   "type": "Home & Garden",
+   "tags": [
+    "Accessory",
+    "Inserts",
+    "Steamer"
+   ],
+   "published": "2020-11-03T23:41:03-06:00",
+   "variants": 7,
+   "prices": [
+    "119.99",
+    "159.99",
+    "24.99",
+    "27.99",
+    "53.99",
+    "59.99"
+   ]
+  },
+  {
+   "title": "120 Quart Powered Seafood/Crawfish Cooker",
+   "handle": "120-qt-powered-seafood-crawfish-cooker",
+   "type": "Home & Garden",
+   "tags": [
+    "Crawfish",
+    "Custom Logo Available",
+    "Featured",
+    "Low Country Boil",
+    "Powered",
+    "Seafood",
+    "Steamer",
+    "Tailgater"
+   ],
+   "published": "2020-10-26T15:25:00-05:00",
+   "variants": 9,
+   "prices": [
+    "715.00",
+    "725.00",
+    "735.00",
+    "745.00",
+    "765.00",
+    "775.00",
+    "785.00",
+    "805.00"
+   ]
+  },
+  {
+   "title": "Gift Card",
+   "handle": "high-performance-cookers-gift-card",
+   "type": "Gift Cards",
+   "tags": [
+    "Gift Card"
+   ],
+   "published": "2020-10-22T18:08:31-05:00",
+   "variants": 5,
+   "prices": [
+    "100.00",
+    "25.00",
+    "250.00",
+    "50.00",
+    "500.00"
+   ]
+  }
+ ]
+}
