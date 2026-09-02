@@ -11,7 +11,7 @@
 
 Codes `LABORDAY10-26` (10% sitewide) + `LABORDAY30-LEGS` (30% legs). **They stack.
 Manual entry.** Both confirmed active in Shopify 2026-09-02; expire Sept 9 04:59 UTC.
-Master docs → [2026-09-labor-day/](../my-work%20(outputs)/content/ads/2026-09-labor-day/)
+Master docs → [2026-09-labor-day/](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/)
 
 - ✅ Organic V2 posted by Evan 2026-09-02 — 7-frame carousel, leg-extension feed post, countdown stories.
 - 📣 **Watch comments.** Price objections are coming; 15 scripts are already written → `ORGANIC-PACK-V2/COMMENT-AND-DM-REPLIES.md`
@@ -70,13 +70,13 @@ Also live: Louisiana Outdoor Expo Mar 19–21 ($900). ⛔ Nov 11 Cater-Event Exp
 - **Never put a 5-year claim on steamer or commercial creative.** The commercial line (80–140 Gallon, up to $5,775) is above the 120 QT size cap *and* sold to commercial buyers. It fails on both grounds. All commercial products carry the full 2-year.
 - ✅ **The Labor Day ads need no warranty edit. Do not re-raise this.** Checked twice, resolved 2026-09-01.
 - **Coalition's "Revenue Up 199.03% YoY"** (July 2026 report) is **unverified against Shopify.** Do not repeat it to Jay or Robert until reconciled. Coalition only ran Google from 7/20, so most of that July was BM Digital's.
-- **Never quote a price that is not in** [what-we-sell.md](../my-business%20(context)/what-we-sell.md).
+- **Never quote a price that is not in** [what-we-sell.md](../my-business%20%28context%29/what-we-sell.md).
 
 ---
 
 ## 📊 Numbers at a glance
 
-Source of truth → [metrics-and-goals.md](../my-files%20(knowledge)/hpc-reference/metrics-and-goals.md).
+Source of truth → [metrics-and-goals.md](../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md).
 These are a cached view. Never cite from here without checking the date.
 
 | Figure | Value | Source · date |
