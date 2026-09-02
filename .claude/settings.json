@@ -18,7 +18,32 @@
       "Write(.claude/agents/**)",
       "Bash(mkdir:*)",
       "Bash(ls:*)",
-      "Bash(pwd)"
+      "Bash(pwd)",
+      "Read(//Users/evanmeral/Desktop/Atlas-AI-Brain/**)",
+      "Read(//Users/evanmeral/Desktop/HPC/**)",
+      "Bash(./build.sh:*)",
+      "Bash(./build-set.sh:*)",
+      "Bash(./build-carousel.sh:*)",
+      "Bash(./approve.sh:*)",
+      "Bash(python3 prod.py:*)",
+      "Bash(python3 carousel.py:*)",
+      "Bash(python3 check-centering.py:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(diff:*)",
+      "Bash(du:*)",
+      "Bash(cd:*)",
+      "Bash(echo:*)"
     ],
     "deny": [
       "Read(.env*)",
@@ -36,7 +61,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo '{\"systemMessage\": \"Heads up: run /wrap to save anything worth keeping from this session.\"}'"
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" 2>/dev/null && [ -n \"$(git status --porcelain 2>/dev/null)\" ] && echo '{\"systemMessage\": \"Unsaved changes in the brain. Run /wrap to update the board and commit.\"}' || true"
           }
         ]
       }
