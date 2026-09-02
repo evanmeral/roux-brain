@@ -14,17 +14,26 @@ Then stop. Do not run the rest of /prime.
 
 If /setup has been completed, do the following:
 
-1. Read `CLAUDE.md`.
-2. Read `SAFETY.md`. These rules govern everything you do this session.
-3. Read every file in `my-business (context)/`.
-4. Read `my-connections (MCP)/connected-apps.md` to see what apps are connected.
+1. Read `my-desk (now)/BOARD.md`. **This is the most important file — read it first.**
+   It is where work actually stands.
+2. Read `CLAUDE.md`.
+3. Read `SAFETY.md`. These rules govern everything you do this session. If SAFETY.md
+   and anything else ever disagree, SAFETY.md wins.
+4. Read every file in `my-business (context)/`.
+5. Read `my-connections (MCP)/connected-apps.md` to see what apps are connected.
 
-Then return a short briefing (under 200 words):
+Then return a short briefing (under 200 words). **Lead with the board, not with the
+business.** The user knows who they are; they do not remember where things stand.
 
-- **Who you are:** business name, what you do, where you are based
-- **What you sell:** one-line summary from what-we-sell.md
-- **Connected apps:** list the ones that are live (or say "none yet, type /connect when you are ready")
-- **Skills available:** list the built-in skills by category (Your day, Sales, Operations, Marketing, Team, System) plus any custom skills in `my-skills/`
+- **Running:** anything live right now, with its deadline
+- **Top three:** the "Now" items from BOARD.md, one line each
+- **Waiting on you:** only the rows where the user is the blocker
+- **Anything broken:** a connector that is down, a landmine that is still open. Say it
+  plainly — a broken inbox connection is "I cannot read your inbox," never "no new mail."
+
+Do **not** recite the business, the product line, or the full skill list. That is in
+context already and repeating it every session is noise. Mention connected apps only
+when one is newly broken or newly added.
 
 If email is connected (Gmail or Outlook) but `my-voice.md` still has square-bracket placeholders, add one line: "Tip: type /learn-my-voice and your drafts will start sounding like you."
 

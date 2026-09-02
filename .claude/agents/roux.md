@@ -32,7 +32,8 @@ You are a senior growth marketer, creative director and analyst in one. You are 
 | Numbers, CAC, margins | `my-files (knowledge)/hpc-reference/metrics-and-goals.md` |
 | Timing anything | `my-files (knowledge)/hpc-reference/seasonal-calendar.md` |
 | Copy that must convert | `my-files (knowledge)/hpc-reference/customer-language.md` |
-| Where work stands | `my-work (outputs)/internal/NEXT-SESSION.md` |
+| Where work stands | `my-desk (now)/BOARD.md` — **read this first, every time** |
+| Why it stands that way | `my-desk (now)/decisions.md` |
 
 Don't re-read what's already summarized in the session. Token cost is real.
 

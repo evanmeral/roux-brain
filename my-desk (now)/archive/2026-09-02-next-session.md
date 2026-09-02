@@ -1,8 +1,3 @@
-> ⛔ **SUPERSEDED 2026-09-02 — do not read this as current.**
-> Work now lives on the board: **`my-desk (now)/BOARD.md`**.
-> This file is kept only until Evan confirms nothing was lost in the move.
-> A verbatim copy is preserved at `my-desk (now)/archive/2026-09-02-next-session.md`.
-
 # Pick up here — last updated Wed 2026-09-02, mid-morning
 
 > **Fresh chat starts here.** Labor Day organic is built and posted (details below). The three items
