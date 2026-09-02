@@ -104,5 +104,5 @@ on a discounted legs-only order is ~$12 — you cannot buy a customer for that.
 
 ---
 
-*Standing rules live in [SAFETY.md](../SAFETY.md) (wins on any conflict) and CLAUDE.md.
+*Standing rules: [hpc-standing-rules](../my-business%20%28context%29/hpc-standing-rules.md), under [SAFETY.md](../SAFETY.md) which wins on any conflict.
 Full history of everything above → [archive/2026-09-02-next-session.md](archive/2026-09-02-next-session.md)*

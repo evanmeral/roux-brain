@@ -227,7 +227,7 @@ touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress; LABEL=$(s
 **"How do I delete a skill I do not want?"**
 - "Tell me which one and I will remove it for you."
 - Delete the folder from my-skills/ and the matching file from .claude/commands/.
-- Update CLAUDE.md to remove it from the skills list.
+- Update `my-files (knowledge)/how-this-brain-works.md` to remove it from the skills list.
 
 ### Data and privacy
 

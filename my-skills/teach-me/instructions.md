@@ -102,7 +102,7 @@ This file must exist or the command will not work.
 
 ## Step 4: Update CLAUDE.md
 
-Add the new skill to the "What you can ask for" section in `CLAUDE.md`:
+Add the new skill to the "What you can ask for" section in `my-files (knowledge)/how-this-brain-works.md`:
 
 ```markdown
 | /skill-name | What it does |

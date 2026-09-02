@@ -107,13 +107,13 @@ Write these five files using everything you have learned. Write naturally. Turn 
 
 Leave `my-business (context)/my-voice.md` alone. That one gets built later by /learn-my-voice, from their real sent emails.
 
-Update CLAUDE.md top-of-file header and Brand Rules section:
+Update the CLAUDE.md top-of-file header, and the Brand rules section in `my-business (context)/hpc-standing-rules.md`:
 - Replace `[Your business name]` with their actual business name (appears twice: header and Brand Rules)
 - Replace `[Today's date]` with today's date in yyyy.mm.dd format
 - Replace `[Your website URL]` with their website (or "n/a" if none)
 - Replace `[Describe your brand look and feel]` with a one-line aesthetic description pulled from how-we-sound.md
 
-Leave no placeholders behind. Read CLAUDE.md after editing to confirm no square-bracket templates remain.
+Leave no placeholders behind. Re-read both files after editing to confirm no square-bracket templates remain.
 
 After writing all files, say:
 

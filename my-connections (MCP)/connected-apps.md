@@ -49,7 +49,7 @@ When two systems disagree, this is the order:
 |---|---|---|
 | **Orders, revenue, product mix, customers** | **Shopify** | Connected 2026-09-01. Never use Meta's or Google's reported revenue |
 | **Inventory / stock levels** | **Digit** (once connected) | ⚠️ **Overrides Shopify on inventory.** Until Digit is live, treat Shopify stock counts as indicative only — do not raise stock issues off Shopify numbers alone |
-| **Overhead, landed cost, COGS** | **Digit** (expected) | This is what the CAC *ceiling* has been blocked on. See NEXT-SESSION.md — the ceiling is PROVISIONAL until real overhead lands |
+| **Overhead, landed cost, COGS** | **Digit** (expected) | This is what the CAC *ceiling* has been blocked on. See `my-desk (now)/BOARD.md` — the ceiling is PROVISIONAL until real overhead lands |
 | **Ad spend** | Meta / Google platforms | No connector. CSV export only |
 | **Warranty, product claims** | `highperformancecookers.com/pages/warranty-information` | Verified 2026-09-01 |
 
@@ -111,7 +111,7 @@ This is the same shape as the Venon problem Evan closed on 2026-08-26. **Evan's 
 
 **Its knowledge lives on** in `my-files (knowledge)/hpc-reference/imported-from-marketing-agent/` — four files, extracted before deletion. **Read the `_IMPORT-NOTES.md` there before quoting any of it**; content is unverified except the warranty, and several conflicts are logged (three since settled by Evan).
 
-**If a replacement is ever built:** give it the CLAUDE.md non-negotiables in its own knowledge base, and do not let it publish unsupervised. The failure mode was instruction-following over rule-following, which produces copy that sounds right and is wrong.
+**If a replacement is ever built:** give it the non-negotiables from `my-business (context)/hpc-standing-rules.md` in its own knowledge base, and do not let it publish unsupervised. The failure mode was instruction-following over rule-following, which produces copy that sounds right and is wrong.
 
 ## 🐙 GitHub
 
@@ -153,7 +153,7 @@ When two systems disagree, this is the order:
 |---|---|---|
 | **Orders, revenue, product mix, customers** | **Shopify** | Connected 2026-09-01. Never use Meta's or Google's reported revenue |
 | **Inventory / stock levels** | **Digit** (once connected) | ⚠️ **Overrides Shopify on inventory.** Until Digit is live, treat Shopify stock counts as indicative only — do not raise stock issues off Shopify numbers alone |
-| **Overhead, landed cost, COGS** | **Digit** (expected) | This is what the CAC *ceiling* has been blocked on. See NEXT-SESSION.md — the ceiling is PROVISIONAL until real overhead lands |
+| **Overhead, landed cost, COGS** | **Digit** (expected) | This is what the CAC *ceiling* has been blocked on. See `my-desk (now)/BOARD.md` — the ceiling is PROVISIONAL until real overhead lands |
 | **Ad spend** | Meta / Google platforms | No connector. CSV export only |
 | **Warranty, product claims** | `highperformancecookers.com/pages/warranty-information` | Verified 2026-09-01 |
 

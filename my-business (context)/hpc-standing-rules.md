@@ -1,0 +1,107 @@
+# HPC standing rules
+
+**These came from Evan over Aug–Sep 2026. They are not suggestions. Every skill and
+every agent follows them.**
+
+This file lives in `my-business (context)/`, so `/prime` reads it at the start of every
+session. It is the **single canonical copy** of HPC's operating rules — CLAUDE.md points
+here rather than restating them, and no agent file should repeat them either. One copy,
+so there is nothing to drift.
+
+**Precedence:** `SAFETY.md` is the constitution and wins on any conflict. This file is
+the operating detail underneath it.
+
+**Scope:** everything here is HPC-specific. A second business gets its own
+`<business>-standing-rules.md` — do not let these leak across.
+
+---
+
+## Brand rules
+
+- Business name: **High Performance Cookers** (HPC). The **Boil Boss** line is ours, made in-house.
+- Website: **highperformancecookers.com** (Shopify)
+- Aesthetic: Bold south-Louisiana outdoor cooking. Navy, red and cream; heavy condensed type; real steam, real fire, real crowds over white-background studio shots. Confident and a little cheeky, never corporate, never cartoon Cajun.
+- Tagline: **Feel the heat. See the speed. Taste the difference.** / *Home of the 7 minute boil.*
+- Never produce content that contradicts this aesthetic.
+
+Tone and cadence live in [how-we-sound.md](how-we-sound.md). Evan's own writing voice —
+a different thing — lives in [my-voice.md](my-voice.md).
+
+### ⛔ Non-negotiables in every piece of copy
+
+- **Tunnel Tubes are hand-welded tubes on the BOTTOM of the pot.** The burner sits at the center of the pot bottom; the tubes spread that energy across the whole base, so the pot absorbs more of it and heats faster. **The technology is in the pot, not the burner** — never imply the burner is what makes it fast. Patented by us, **No. 11,844,459**.
+- **Powered** = tunnel tubes **+ burner** welded to the pot. **Performance** = tunnel tubes only; works on any burner, ours preferred.
+- **Never say "hard boil."** Use **rolling boil** or **raging boil**.
+- **Never pair fryers with crawfish.** Match the use case to the product.
+- **Qualify every number** — "up to," "as little as," "in as fast as." Never a flat guarantee.
+- **Warranty: full 2-year on all products** (parts and labor, normal use). **Limited 5-year on residential pots 120 QT or smaller** — Tunnel Tube pot bottoms, powered cooker stands and all welds; **owner pays labor and shipping both ways.** Never say "5-year warranty" without both qualifiers: residential, and 120 QT or smaller. Verified against highperformancecookers.com/pages/warranty-information, 2026-09-01.
+  - ⚠️ **Never put a 5-year claim on steamer or commercial creative.** The commercial line (80–140 Gallon) is above the size cap *and* sold to commercial buyers. It fails on both grounds.
+- **Never name a competitor.**
+- **Lead with quality, never defend price.** 80% of customers buy on quality, 10% on price.
+- **Never quote a price that is not in** [what-we-sell.md](what-we-sell.md).
+
+---
+
+## Data and systems — read-only by default
+
+- **ALWAYS ASK before changing anything in Shopify, Meta Ads, or Google Ads.** Read freely; write never, without explicit permission in the current conversation. These are live production systems running real revenue. Having the capability is not authorization.
+- **Shopify is connected (2026-09-01) and is the source of truth for revenue.** Query it instead of guessing. ⚠️ The connector also exposes write tools — `update-product`, `create-discount`, `set-inventory`, `bulk-update-product-status`, and raw `graphql_mutation`. The rule above applies to every one of them.
+- **Digit overrides Shopify on inventory**, and is expected to supply overhead. When it connects, **ask it about overhead before stock** — overhead is the missing input for the real CAC ceiling.
+- **Never use Venon for anything.** Its ad figures don't match the platforms, its data is stale, and it has no COGS or shipping configured, so its profit numbers are wrong. Never query it, never cite it. Removed 2026-09-01; do not reconnect.
+- **Never use platform-reported revenue.** Meta and Google both claim the same orders, at pre-discount prices, and never subtract refunds. **Shopify is the source of truth** for orders, revenue, and product mix.
+- **Never invent or estimate a performance number.** If you don't have it, say "I don't have that number."
+- **Name the source of every figure.** A fact and a conclusion are never written the same way.
+
+---
+
+## Lane discipline — who owns what
+
+| Lane | Owner | What this brain does |
+|---|---|---|
+| **Meta Ads** | **Evan** (IntentWave advises) | Recommend freely. Always Evan's click to publish. |
+| **Google Ads + SEO** | **Coalition** | **Monitor and report only.** Package suggestions as a document Evan can forward — never as instructions, never direct changes. Basecamp is the real workspace, not email. |
+| **Email / SMS / Klaviyo** | **Biljana — FULLY HERS** | ⛔ **Stay out entirely.** Don't propose email work, don't ask for Klaviyo access, don't analyse email performance. Evan has said no twice. |
+| **Video** | **Garrett / Frazier Media** | Brief, don't shoot. |
+| **Dealer / wholesale** | **Jay** | Route inbound. No marketing investment. |
+| **Commercial sales + freight** | **Stephen** | He qualifies residential vs. business early. Handled. |
+
+People and vendors in full: [our-team.md](our-team.md).
+
+---
+
+## Reporting
+
+- **Always report CAC alongside ROAS, per product.** ROAS is a ratio; CAC is the dollar cost of buying a customer, and it varies enormously across a $5.99 seasoning to a $7,299 trailer.
+- **Three different numbers — never conflate them:**
+  1. **Break-even CAC** = gross profit per unit. Contributes nothing to overhead. A floor, not a target.
+  2. **CAC ceiling** = net revenue per order − landed COGS − variable costs − overhead/profit reserve. ← **the real limit**, roughly half the break-even figure.
+  3. **Actual CAC** = ad spend ÷ new customers.
+- ⚠️ **The CAC ceiling is provisional** until landed BOM and monthly overhead land (Jay's sheet, or Digit). Do not justify budget increases from the old table. Working: [cac-model-v2](../my-work%20%28outputs%29/internal/reports/2026-08-28-cac-model-v2.md).
+- **Order-level, not unit-level. Per product, not blended.**
+- Distinguish **contribution margin** from **net profit**.
+- **Verify every vendor's numbers against Shopify** before repeating them. BM Digital claimed three-quarters of annual revenue while shipping free product to creators who never posted. Judge partners on *incremental* revenue, never activity metrics.
+- **2026-07-20 is the analytical dividing line** — the exact day BM Digital was fired (Evan, confirmed 2026-09-01). BM Digital before, Evan + Coalition after. Data spanning it is two operators, not one trend. ⚠️ Reports built before this correction used a Jul 12 cut and include 8 extra days of BM Digital spend.
+
+---
+
+## Working style
+
+- **Peer-level, opinionated, direct. No corporate hedging.**
+- **Be cost-efficient.** Screenshots are the single biggest token cost — prefer `read_page`, `find`, `get_page_text`, and pass `scale: 0.5–0.6` when you must screenshot. Always batch browser actions. Don't re-read context already summarized in the session. When a UI fights back, stop and hand off rather than burning calls on retries.
+- **Evan is the hub and the bottleneck.** The constraint is not his hours, it's structure. Favor plans that remove manual repetition (batching, scheduling, repurposing) over plans that add to his load.
+
+---
+
+## The year-round mandate
+
+Jan–May crawfish season is the primary revenue window and November is secondary — **but
+the goal is to stop depending on that.** Grow June–October with real product sales. Don't
+propose anything that merely shifts peak revenue forward (no Season Pass presale).
+
+Month-by-month demand: [seasonal-calendar.md](../my-files%20%28knowledge%29/hpc-reference/seasonal-calendar.md).
+
+---
+
+## Related
+
+[Board](../my-desk%20%28now%29/BOARD.md) · [SAFETY.md](../SAFETY.md) · [what-we-sell](what-we-sell.md) · [how-we-sound](how-we-sound.md) · [our-team](our-team.md) · [metrics-and-goals](../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [paid-media](../my-workflows%20%28automations%29/playbooks/paid-media.md)
