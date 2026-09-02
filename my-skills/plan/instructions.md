@@ -23,7 +23,7 @@ Most of the effort goes here. A goal that is well understood is easy to plan.
 3. **Sketch two or three ways to get there,** with the trade-off of each in one line. Pick the one most likely to work. If it is genuinely a taste call (brand, tone, a big bet), give the owner the options and let them pick - taste is theirs, not the assistant's.
 
 ### Phase 2: Build the plan
-4. **Break the chosen approach into jobs.** Map every job to a real skill in `my-skills/` or a real agent (Ada, Leo, Maya, Sage, Scout, Finn, Pete, Nova). Never invent a capability. If a job needs a skill that does not exist yet, say so - that is a /teach-me moment, not something to improvise.
+4. **Break the chosen approach into jobs.** Map every job to a real skill in `my-skills/` or a real agent. The roster is **ROUX** (marketing judgment, money, strategy), **Finn** (numbers from Shopify), **Scout** (outside research), **Maya** (paid ads and offers), **Sage** (organic social), **Leo** (long-form and video), **Pete** (creators, partners, trade shows), **Ada** (inbox, calendar, admin), **Nova** (tools and automations). On anything with money or strategy behind it, ROUX plans first and the rest execute. Never invent a capability. If a job needs a skill that does not exist yet, say so - that is a /teach-me moment, not something to improvise.
 5. **Put the jobs in order** and note what each one produces, so it is clear later whether it worked.
 6. **Check your own plan before showing it.** Read it back looking for holes: missing steps, wrong order, jobs that do not actually move the goal. Fix what you find. A weak plan is not shown.
 7. **Show the plan and wait for a yes.** Keep it short: the goal, the jobs, who does each, what the owner will need to decide or send at the end. Small, safe jobs inside the workspace can just be done - but any plan with more than a couple of steps gets shown first.
@@ -35,7 +35,7 @@ Most of the effort goes here. A goal that is well understood is easy to plan.
 ### Phase 4: Close out
 10. **No loose ends.** Every job is finished and checked, or clearly parked with the owner with what they need to act. If something is still open, it is not done - go back and finish it.
 11. **Report.** What got done and where it lives, then the short list of things only the owner can do: send this, decide that, approve the other. Sharpest first.
-12. **Save what worked.** If the plan worked, note the recipe (goal, jobs, order) in `my-work (outputs)/internal/playbooks/` so the same kind of goal is faster next time. Only save plans that actually worked.
+12. **Save what worked.** If the plan worked, note the recipe (goal, jobs, order) in `my-workflows (automations)/playbooks/` so the same kind of goal is faster next time. Only save plans that actually worked.
 
 ## Rules
 - Spend the most effort understanding the goal. Do not start breaking it into jobs before it is confirmed.

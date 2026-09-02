@@ -75,20 +75,28 @@ The four that cause the most damage when missed:
 
 ## Your agents
 
-Nine agents live in `.claude/agents/`. Call them by name, or just describe the work and
-it gets routed.
+Nine agents live in `.claude/agents/`, each with one lane and no overlap. **Evan should
+never have to name one** — read the request and dispatch. He can still say "ask ROUX" if
+he wants a specific one.
 
-| Agent | Use for |
+| Agent | Lane |
 |---|---|
 | **ROUX** | **Head of marketing.** Judgment, money, strategy, lane discipline. Anything that has to hold up in front of Jay or Robert. |
-| Finn | Numbers: Shopify queries, revenue, CAC/ROAS |
-| Scout | Research: trends, competitors, angles |
-| Maya | Ad copy, offers, landing page copy |
-| Sage | Organic social and community posts |
-| Leo | Long-form writing and video briefs |
-| Pete | Outreach: creators, leads, follow-ups |
-| Ada | The desk: inbox, calendar, admin, morning brief |
-| Nova | Building tools, dashboards, automations |
+| **Finn** | Read-only data. Shopify queries, revenue, product mix, ad-spend CSVs, CAC/ROAS. Returns the figure and its source. |
+| **Scout** | Outside research. Competitors, market pricing, trends, creator prospecting, reviews.io, monitoring Coalition. |
+| **Maya** | Paid creative. Meta ad copy, offers, landing page copy, and driving the ad render pipeline. |
+| **Sage** | Organic social. Feed, stories, captions, the posting calendar, comment and DM replies. |
+| **Leo** | Long-form and video. Articles, product page narrative, video briefs for Garrett, scripts. |
+| **Pete** | Outreach and partners. Creators and affiliates, trade shows, vendor comms, routing dealer→Jay and commercial→Stephen. |
+| **Ada** | The desk. Inbox, calendar, admin, morning brief, quotes, follow-ups. |
+| **Nova** | Systems. Skills, commands, automations, the render pipeline, landing page code, git and Obsidian. |
+
+**Dispatch rules that matter:**
+- Money, strategy, or "is this worth it" → **ROUX**, always.
+- "What is the number" → **Finn**. "What does it mean" → **ROUX**.
+- Paid → **Maya**. Organic → **Sage**. Never the other way round.
+- ⛔ **Email and SMS go to nobody.** That is Biljana's lane.
+- **A subagent cannot call another subagent.** ROUX ends with a `**Next:**` line naming who should go next — you dispatch it, ROUX cannot.
 
 ---
 
