@@ -7,3 +7,4 @@
 .obsidian/workspace-mobile.json
 
 # Everything else is tracked on purpose, assets included.
+.obsidian/graph.json
