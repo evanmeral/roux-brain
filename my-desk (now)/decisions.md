@@ -11,6 +11,21 @@
 
 ## 2026-09
 
+**Leave the 4 live Labor Day Meta ads unchanged through Sept 8, including the weaker
+duplicate ad** — ROUX, 2026-09-03. One ad ("Copy," $91.64/purchase) is clearly weaker
+than its sibling ($34.38/purchase), but pausing or restructuring mid-flight resets
+Meta's learning phase for all of them. With 5 days left in an 8-day sale, the reset
+costs more than trimming the weak ad would save. Revisit after Sept 8, not before.
+
+**Clean Jul 20–Sep 2 Meta pull ($9,285.94 spend, ~180 purchases, $51.59 CPP, ~8.16
+ROAS) replaces the flagged Jul 12–Aug 28 figure ($62.53 CPP, 6.91 ROAS) as the number
+of record** — 2026-09-03. The old figure blended 8 days of BM Digital agency spend
+(fired Jul 20, ~$1,036/day) into the in-house number (~$236/day); the new pull starts
+the window at the actual handover date. Confirms the contamination theory — cleared
+to share with Jay or Robert with the caveats on [BOARD.md](BOARD.md) attached (Meta's
+own attribution, pre-refund, blends new/returning, mixed attribution windows across
+the two campaigns).
+
 **Keep all nine agents, rewrite each with a non-overlapping lane** — Evan, 2026-09-02.
 Pruning was on the table (evidence: none of the eight template agents has ever produced
 a work product). Evan chose specificity over deletion — overlap is the disease, and

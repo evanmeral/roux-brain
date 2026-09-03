@@ -1,4 +1,4 @@
-# Board — 2026-09-02
+# Board — 2026-09-03
 
 > The one page. What is live, what is next, what is waiting, what not to ship.
 > **Rewritten in place at every `/wrap` — never appended.** Hard cap: 120 lines.
@@ -7,7 +7,7 @@
 
 ---
 
-## 🟢 Running — Labor Day sale, day 2 of 8. Ends Tue Sept 8, 11:59pm CT
+## 🟢 Running — Labor Day sale, day 3 of 8. Ends Tue Sept 8, 11:59pm CT
 
 Codes `LABORDAY10-26` (10% sitewide) + `LABORDAY30-LEGS` (30% legs). **They stack.
 Manual entry.** Both confirmed active in Shopify 2026-09-02; expire Sept 9 04:59 UTC.
@@ -16,28 +16,26 @@ Master docs → [2026-09-labor-day/](../my-work%20%28outputs%29/content/ads/2026
 - ✅ Organic V2 posted by Evan 2026-09-02 — 7-frame carousel, leg-extension feed post, countdown stories.
 - 📣 **Watch comments.** Price objections are coming; 15 scripts are already written → `ORGANIC-PACK-V2/COMMENT-AND-DM-REPLIES.md`
 - 📅 **Still to post (V1 pack):** `09_SEP06_STORY` · `10_SEP07_FEED` (Labor Day — **no sale pitch**, HPC is closed) · `11_SEP07_STORY` · `12_SEP08_STORY` (post morning **and** ~6pm)
-- 🔴 **The 4 Meta ads are not built.** ROUX failed 3× in the UI — duplicating an ad locks its format; must use `+ Create` → Single image or video. Evan is building them from `META-BUILD-GUIDE.md` (tested click path).
+- ✅ **The 4 Meta ads are built and live**, confirmed 2026-09-03 (`HP Cookers ADs` account, inside `BPM_TOF_Manual`). Sept 1–2: $463.07 spent, 13 purchases, $35.62/purchase blended — too early to call a winner. One ad is a weaker duplicate ("Copy," $91.64/purchase vs $34.38) from the earlier failed UI builds — **leave alone through Sept 8**, a mid-sale pause resets Meta's learning for a savings too small to matter. Fix the naming/build process after the sale (Nova).
 
 ---
 
 ## 🔺 Now — top three
 
-**1. Re-pull Meta actuals from 2026-07-20, not Jul 12.**
-July 20 is the exact day BM Digital was fired (Evan, confirmed 2026-09-01). Every
-"in-house" figure on record was cut at Jul 12, so it carries **8 days of BM Digital
-spend** at ~$1,036/day vs Evan's ~$236/day. The $62.53 CPP and 6.91 ROAS may be
-materially wrong. → **Blocks anything going to Jay or Robert.**
-
-**2. Write the one-page creator brief.**
+**1. Write the one-page creator brief.** ⏰ **Evan: revisit this after the Labor Day
+sale wraps Sept 8** — flagged 2026-09-03 so it doesn't get lost in sale focus.
 ~17 creators on UpPromote (5% commission, free product for a couple posts a month).
 At least one signed up, asked what content would help, and was told *"im honestly not
 fully sure what we would have you do."* Willing people idle for want of direction.
 ⛔ Paid content is discontinued — do not offer it.
 
-**3. Sign up for NOLA Home & Garden, Feb 19–21 2027.**
+**2. Sign up for NOLA Home & Garden, Feb 19–21 2027.**
 $1,850 for the 10×10 corner, 33% deposit, ACH avoids the 3.5% card fee. No deadline
 but placement worsens with time. Sheet: `HPC Trade Shows - 2027` (Drive).
 Also live: Louisiana Outdoor Expo Mar 19–21 ($900). ⛔ Nov 11 Cater-Event Expo is a **no**.
+
+*(Demoted off Now: the Jul 20 Meta re-pull — done this session, see Numbers below and
+[decisions.md](decisions.md).)*
 
 ---
 
@@ -45,7 +43,6 @@ Also live: Louisiana Outdoor Expo Mar 19–21 ($900). ⛔ Nov 11 Cater-Event Exp
 
 | Who | What | Since |
 |---|---|---|
-| **Evan** | Build the 4 Meta ads from `META-BUILD-GUIDE.md` | 2026-08-31 |
 | **Evan** | Confirm Garrett's 18 QT video (`~/Desktop/Home Fryer .mp4`), watch once for claims risk, ask for a 15–20s cut | 2026-09-01 |
 | **Evan** | Decide: make the hardcoded warranty badge a variable (see Landmines) | 2026-09-01 |
 | **Jay** | Excel with landed BOM + monthly overhead — unblocks the real CAC ceiling. May be superseded by Digit. | 2026-08-28 |
@@ -81,16 +78,22 @@ These are a cached view. Never cite from here without checking the date.
 
 | Figure | Value | Source · date |
 |---|---|---|
-| Meta, post-handover | $11,318 spend · 181 purchases · **$62.53 CPP · 6.91 ROAS** | Meta CSV, Jul 12–Aug 28 ⚠️ **under revision — see Now #1** |
-| BM Digital era | $198,895 · $104.52 CPP · 5.91 ROAS · $1,036/day | Meta CSV, to 2026-07-20 |
+| **Sale so far, Sept 1–2** | **38 orders · $15,076 net · AOV $412** · $2,366 discounts | Shopify, 2026-09-02 |
+| Week before the sale, Aug 24–30 | 54 orders · $20,711 net · AOV $385 | Shopify, 2026-09-02 |
+| Week before that, Aug 17–23 | 72 orders · $28,325 net | Shopify, 2026-09-02 |
+| Meta, post-handover (clean) | $9,285.94 spend · ~180 purchases · **$51.59 CPP · ~8.16 ROAS** | Meta Ads Manager, Jul 20–Sep 2, 2026-09-03. Meta-attributed, not Shopify-verified; includes ~$463 of Sept 1-2 sale spend |
 | Shopify net sales, 13 mo | **$2,884,025** | Shopify, 2026-08-26 |
-| Aug gross margin · AOV | 44.5% · ~$452 | Robert, via Shopify, 2026-08 |
+| Aug gross margin | 44.5% | Robert, via Shopify, 2026-08 |
 | Break-even blended ROAS | ~2.4 | `paid-media.md`, 2026-08-26 |
-| Labor Day, Sept 1 → 2 8am | 27 orders · 10 used `LABORDAY30-LEGS` | Shopify, 2026-09-02. Two days, no baseline — an observation, not a read. |
 
-**The lever on legs:** ~half the legs orders are legs-only at ~$100, vs ~$460 when
-legs ride along with a cooker. The *attach* is the lever, not the legs. Allowable CAC
-on a discounted legs-only order is ~$12 — you cannot buy a customer for that.
+**The sale is running ~2.5× the prior week's daily rate** — $7,538/day net vs $2,959/day
+across Aug 24–30. Two days, no prior-year baseline: an observation, not a performance read.
+
+**Three things in the sale mix worth a look** (Shopify, Sept 1–2):
+- **The biggest revenue line is commercial.** 40 Gallon / 160 QT Powered Cooker — 2 orders, $3,887. Above the 120 QT warranty cap, and Stephen's lane. ⛔ Never a 5-year claim on it.
+- **A Navimow X430 sold for $2,207** — Tier 3, inbound-only, not marketed at all.
+- **Legs confirm the attach thesis.** 12 of 38 orders carried leg extensions but only $869 total — ~$72 each after the 30%. The attach is the lever, never the legs. Allowable CAC on a legs-only order is ~$12; you cannot buy a customer for that.
+- Returning-customer rate **48.6%** (19 new, 18 returning) — roughly half this sale is the existing list.
 
 ---
 
