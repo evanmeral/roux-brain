@@ -13,17 +13,16 @@ Codes `LABORDAY10-26` (10% sitewide) + `LABORDAY30-LEGS` (30% legs). **They stac
 Manual entry.** Both confirmed active in Shopify 2026-09-02; expire Sept 9 04:59 UTC.
 Master docs → [2026-09-labor-day/](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/)
 
-- ✅ Organic V2 posted by Evan 2026-09-02 — 7-frame carousel, leg-extension feed post, countdown stories.
-- 📣 **Watch comments.** Price objections are coming; 15 scripts are already written → `ORGANIC-PACK-V2/COMMENT-AND-DM-REPLIES.md`
-- 📅 **Still to post (V1 pack):** `09_SEP06_STORY` · `10_SEP07_FEED` (Labor Day — **no sale pitch**, HPC is closed) · `11_SEP07_STORY` · `12_SEP08_STORY` (post morning **and** ~6pm)
-- ✅ **The 4 Meta ads are built and live**, confirmed 2026-09-03 (`HP Cookers ADs` account, inside `BPM_TOF_Manual`). Sept 1–2: $463.07 spent, 13 purchases, $35.62/purchase blended — too early to call a winner. One ad is a weaker duplicate ("Copy," $91.64/purchase vs $34.38) from the earlier failed UI builds — **leave alone through Sept 8**, a mid-sale pause resets Meta's learning for a savings too small to matter. Fix the naming/build process after the sale (Nova).
+- ✅ **All content for the sale is built and queued. Nothing left to create.** Organic V1 and V2 posted/scheduled by Evan; V3 accessory carousel ready for the Sun Sept 6 feed slot.
+- 📣 **Watch comments.** Price objections are coming; 15 scripts already written → `ORGANIC-PACK-V2/COMMENT-AND-DM-REPLIES.md`
+- ⚠️ `10_SEP07_FEED` is Labor Day itself — **no sale pitch**, HPC is closed.
+- ✅ **The 4 Meta ads are live**, confirmed 2026-09-03 (`HP Cookers ADs`, inside `BPM_TOF_Manual`). Sept 1–2: $463.07 spent, 13 purchases, $35.62/purchase blended — too early to call a winner. One weaker duplicate ("Copy," $91.64/purchase) **stays untouched through Sept 8** — a mid-sale pause resets Meta's learning. Fix the naming/build process after the sale (Nova).
 
 ---
 
 ## 🔺 Now — top three
 
-**1. Write the one-page creator brief.** ⏰ **Evan: revisit this after the Labor Day
-sale wraps Sept 8** — flagged 2026-09-03 so it doesn't get lost in sale focus.
+**1. Write the one-page creator brief.** ⏰ **Evan: revisit after the sale wraps Sept 8.**
 ~17 creators on UpPromote (5% commission, free product for a couple posts a month).
 At least one signed up, asked what content would help, and was told *"im honestly not
 fully sure what we would have you do."* Willing people idle for want of direction.
@@ -34,8 +33,11 @@ $1,850 for the 10×10 corner, 33% deposit, ACH avoids the 3.5% card fee. No dead
 but placement worsens with time. Sheet: `HPC Trade Shows - 2027` (Drive).
 Also live: Louisiana Outdoor Expo Mar 19–21 ($900). ⛔ Nov 11 Cater-Event Expo is a **no**.
 
-*(Demoted off Now: the Jul 20 Meta re-pull — done this session, see Numbers below and
-[decisions.md](decisions.md).)*
+**3. ⏸️ Showroom product cards — format approved, batch ON HOLD.**
+Evan approved the 30 QT pair 2026-09-03 and said hold the full batch "for now." The
+format, the print setup and the two pre-flight checks are documented; resuming is a
+green light away, no re-design needed. Suggested start order: 120 QT, then 18 QT.
+→ [showroom-cards/](../my-work%20%28outputs%29/content/other/showroom-cards/)
 
 ---
 
@@ -43,6 +45,7 @@ Also live: Louisiana Outdoor Expo Mar 19–21 ($900). ⛔ Nov 11 Cater-Event Exp
 
 | Who | What | Since |
 |---|---|---|
+| **Evan** | Green light to run the showroom-card batch across the catalog | 2026-09-03 |
 | **Evan** | Confirm Garrett's 18 QT video (`~/Desktop/Home Fryer .mp4`), watch once for claims risk, ask for a 15–20s cut | 2026-09-01 |
 | **Evan** | Decide: make the hardcoded warranty badge a variable (see Landmines) | 2026-09-01 |
 | **Jay** | Excel with landed BOM + monthly overhead — unblocks the real CAC ceiling. May be superseded by Digit. | 2026-08-28 |
@@ -56,7 +59,7 @@ Also live: Louisiana Outdoor Expo Mar 19–21 ($900). ⛔ Nov 11 Cater-Event Exp
 - **CAC ceilings are provisional.** Robert's correction: the figure on record is gross profit per unit — a *break-even line*, not a spending ceiling. Working: `internal/reports/2026-08-28-cac-model-v2.md`
 - **Google Ads + SEO** — Coalition's lane. Monitor and report only; suggestions go to Evan as a document to forward, never as direct changes. Basecamp is the real workspace.
 - **Email / SMS / Klaviyo** — Biljana's, entirely. Evan has declined access twice.
-- **After Sept 8:** post-mortem Sept 9 · the June–October off-season plan (the real +$500K project) · weekly scoreboard cadence.
+- **After Sept 8:** post-mortem Sept 9 · the June–October off-season plan (the real +$500K project) · weekly scoreboard cadence · **two `what-we-sell.md` fixes for Nova** — the 40 QT fixed steamer insert is filed as discontinued but is live at $27.99 with 10 on hand, and the BB-TJB carries a compare-at price identical to its price ($425 struck through next to $425 on the PDP). Found by Finn 2026-09-03.
 
 ---
 
@@ -65,6 +68,8 @@ Also live: Louisiana Outdoor Expo Mar 19–21 ($900). ⛔ Nov 11 Cater-Event Exp
 - 🔴 **`yeti-1x1.html` line 37 hardcodes `5-YR RESIDENTIAL WARRANTY`.** Every ad rendered from that template carries the claim regardless of product. Safe on pots; **false on a steamer or a commercial boiler.** Not changed — awaiting Evan.
   → `my-skills/hpc-ad-creative/work/creative/templates/yeti-1x1.html`
 - **Never put a 5-year claim on steamer or commercial creative.** The commercial line (80–140 Gallon, up to $5,775) is above the 120 QT size cap *and* sold to commercial buyers. It fails on both grounds. All commercial products carry the full 2-year.
+- 🆕 **Showroom cards carry no warranty line at all** — deliberate, 2026-09-03. Saying nothing is safe; saying "5-year warranty" short is not. If one is ever added it needs **both** qualifiers: residential, and 120 QT or smaller.
+- 🆕 **Showroom cards carry no price date, and a printed card cannot be recalled.** Re-pull `products.json` and re-render before every print run; pull old cards off the floor when a price moves.
 - ✅ **The Labor Day ads need no warranty edit. Do not re-raise this.** Checked twice, resolved 2026-09-01.
 - **Coalition's "Revenue Up 199.03% YoY"** (July 2026 report) is **unverified against Shopify.** Do not repeat it to Jay or Robert until reconciled. Coalition only ran Google from 7/20, so most of that July was BM Digital's.
 - **Never quote a price that is not in** [what-we-sell.md](../my-business%20%28context%29/what-we-sell.md).
@@ -91,7 +96,6 @@ across Aug 24–30. Two days, no prior-year baseline: an observation, not a perf
 
 **Three things in the sale mix worth a look** (Shopify, Sept 1–2):
 - **The biggest revenue line is commercial.** 40 Gallon / 160 QT Powered Cooker — 2 orders, $3,887. Above the 120 QT warranty cap, and Stephen's lane. ⛔ Never a 5-year claim on it.
-- **A Navimow X430 sold for $2,207** — Tier 3, inbound-only, not marketed at all.
 - **Legs confirm the attach thesis.** 12 of 38 orders carried leg extensions but only $869 total — ~$72 each after the 30%. The attach is the lever, never the legs. Allowable CAC on a legs-only order is ~$12; you cannot buy a customer for that.
 - Returning-customer rate **48.6%** (19 new, 18 returning) — roughly half this sale is the existing list.
 
@@ -108,4 +112,4 @@ across Aug 24–30. Two days, no prior-year baseline: an observation, not a perf
 ---
 
 *Standing rules: [hpc-standing-rules](../my-business%20%28context%29/hpc-standing-rules.md), under [SAFETY.md](../SAFETY.md) which wins on any conflict.
-Full history of everything above → [archive/2026-09-02-next-session.md](archive/2026-09-02-next-session.md)*
+Full history → [archive/](archive/)*

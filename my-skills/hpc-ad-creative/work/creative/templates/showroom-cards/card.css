@@ -1,0 +1,77 @@
+/* HPC Showroom Product Card — landscape 1650x1275 = 5.5in x 4.25in at 300dpi.
+   Sized for FOUR CARDS TO A SHEET (landscape Letter, 2x2). Every type size below is
+   chosen in POINTS ON PAPER, not pixels: at 300dpi, 1pt = 4.167px. Body copy is 11pt.
+   Product sits in the BOTTOM-LEFT corner; nothing overlaps it. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+html,body{width:100%;height:100%;overflow:hidden;background:#fff}
+body{font-family:'Poppins',system-ui,sans-serif;color:#1A1918}
+
+:root{
+  --accent:#F69329; --accent-dk:#E13418; --ink:#1A1918; --ink-2:#332F2D;
+  --muted:#6E6A66; --line:#E0E4E4;
+}
+
+.card{position:relative;width:1650px;height:1275px;background:#fff;
+  border:5px solid var(--ink);overflow:hidden;
+  padding:30px 40px 24px;display:flex;flex-direction:column}
+.card::after{content:'';position:absolute;left:0;right:0;bottom:0;height:10px;background:var(--accent)}
+
+/* ---------- header ---------- */
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:28px}
+.tag{display:inline-block;background:var(--ink);color:#fff;font-family:'JetBrains Mono',monospace;
+  font-weight:800;font-size:29px;letter-spacing:.18em;padding:10px 18px;border-radius:5px}   /* 7pt */
+.tag.perf{background:var(--accent)}
+.logo{height:132px;object-fit:contain;flex:none;margin-top:-6px}
+
+h1{font-size:106px;font-weight:800;letter-spacing:-.032em;line-height:.96;margin-top:20px}   /* 27pt */
+h1 .qt{color:var(--accent)}
+.deck{font-size:45px;font-weight:600;color:var(--ink-2);line-height:1.25;margin-top:12px}    /* 10.8pt */
+.rule{height:7px;width:100px;background:var(--accent);border-radius:4px;margin-top:15px}
+
+/* ---------- features: 11pt, two columns, one line each ---------- */
+.feats{display:grid;grid-template-columns:1fr 1fr;column-gap:44px;row-gap:20px;margin-top:20px}
+.feat{display:flex;align-items:flex-start;gap:14px;font-size:44px;font-weight:500;
+  color:var(--ink-2);line-height:1.16}                                                        /* 11pt */
+.feat b{font-weight:800;color:var(--ink)}
+.dot{width:16px;height:16px;border-radius:50%;background:var(--accent);flex:none;margin-top:16px}
+
+.chips{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px}
+.chips .lbl{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:28px;
+  letter-spacing:.14em;color:var(--muted);margin-right:2px}
+.chip{border:2px solid var(--line);background:#FAFBFB;border-radius:999px;
+  padding:9px 20px;font-size:36px;font-weight:600;color:var(--ink-2)}                         /* 8.6pt */
+
+/* ---------- bottom band: product corner + pricing ---------- */
+/* Fixed band height so every card in the set lines up and the price panel always
+   fills it, however many rows that product has. */
+.bottom{margin-top:auto;flex:none;height:612px;display:flex;align-items:flex-end;gap:38px}
+.prodcol{width:540px;flex:none;align-self:stretch;display:flex;align-items:flex-end;justify-content:center}
+/* Short, wide cutouts leave a lot of air above them when bottom-aligned. Add `mid` to
+   centre the product in the band instead. Tall cutouts (most Powered rigs) stay bottom-
+   aligned so they sit in the corner. */
+.prodcol.mid{align-items:center}
+.pbox{position:relative;overflow:hidden;flex:none;
+  filter:drop-shadow(0 18px 24px rgba(0,0,0,.20))}
+.pbox img{position:absolute;max-width:none}
+
+.pricecol{flex:1;align-self:stretch;display:flex;flex-direction:column}
+
+.prices{flex:1;border:3px solid var(--ink);border-radius:10px;overflow:hidden;
+  display:flex;flex-direction:column}
+.prices h2{background:var(--ink);color:#fff;font-family:'JetBrains Mono',monospace;font-weight:800;
+  font-size:29px;letter-spacing:.18em;padding:13px 22px;flex:none}                             /* 7pt */
+.prow{flex:1;display:flex;align-items:center;justify-content:space-between;gap:26px;
+  padding:12px 22px;border-top:2px solid var(--line)}
+.prow:first-of-type{border-top:none}
+.prow .what{font-size:46px;font-weight:700;line-height:1.12}                                  /* 12pt */
+.prow .what small{display:block;font-size:34px;font-weight:500;color:var(--muted);margin-top:5px} /* 8.4pt */
+.prow .amt{font-size:80px;font-weight:800;letter-spacing:-.02em;white-space:nowrap}           /* 21pt */
+.prow.hero{background:#FFF6EC}
+.prow.hero .amt{color:var(--accent-dk)}
+
+.addons{flex:none;margin-top:16px;font-size:37px;font-weight:600;color:var(--ink-2);
+  line-height:1.28}                                                                           /* 8.9pt */
+.addons b{display:block;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:28px;
+  letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-bottom:6px}

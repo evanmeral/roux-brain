@@ -115,6 +115,11 @@ When the subject is **frying**, lead with temperature, not boil time. "Rolling b
 minutes" is the *boiling* stat and belongs on pots. These three get to **350° in under 5 minutes**.
 They still deliver **up to 75% less propane** — run both, temperature first.
 
+> **On every OTHER pot, the frying figure is 350° in under 10 minutes.** Set by Evan
+> 2026-09-03 for the 30 QT showroom cards. A general-purpose pot on a 6" banjo burner does
+> not fry as fast as a purpose-built fryer, so **the 5-minute stat is scoped to the three
+> products named above and nowhere else.** Use 10 minutes on pots.
+
 **2. Leg extensions ($119) fit these three products and nothing else.**
 The **18 QT Fish Fryer**, the **4-Way Fryer / Pasta Cooker** and the **40 QT** are the only products
 in the catalog that take **Cooker Leg Extensions**. Never imply the legs fit a product outside this

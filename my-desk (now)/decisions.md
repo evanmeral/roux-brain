@@ -11,6 +11,28 @@
 
 ## 2026-09
 
+**Showroom card format locked — 5.5 in x 4.25 in at 300 dpi, four to a LANDSCAPE page**
+— Evan, 2026-09-03. Approved on the 30 QT Powered/Performance pair after three passes.
+The size is not cosmetic: four landscape cards only fit on a landscape Letter page, and
+type had to be set in points-on-paper (body 10-11 pt) rather than pixels. Product sits
+bottom-left, all type runs full width above and right of it, the price block fills the
+bottom-right. Format + print setup + two pre-flight checks documented in
+[showroom-cards/README.md](../my-work%20%28outputs%29/content/other/showroom-cards/README.md).
+**Full catalog batch held by Evan** the same day — format is settled, only the go-ahead
+is missing.
+
+**Showroom cards carry no warranty line and no price date** — Evan, 2026-09-03. Evan asked
+for all fine print removed. Saying nothing about the warranty is the safe state (the risk
+has always been a *shortened* 5-year claim, never silence). The cost is that a printed card
+cannot be recalled when a price moves — so re-pull and re-render before every print run.
+
+**Card claim wording: "rolling boil in under 7 minutes" and "fry oil to 350 degrees in
+under 10 minutes"** — Evan, 2026-09-03. The boil line is firmer than the house
+"as fast as / up to" rule but is verbatim the live 30 QT PDP copy. The frying figure is
+Evan's, and is deliberately *more conservative* than the documented "350 in under 5 minutes"
+— that 5-minute stat belongs only to the 18 QT Fish Fryer, the 4-Way and the 40 QT. Filed
+into [what-we-sell.md](../my-business%20%28context%29/what-we-sell.md).
+
 **Leave the 4 live Labor Day Meta ads unchanged through Sept 8, including the weaker
 duplicate ad** — ROUX, 2026-09-03. One ad ("Copy," $91.64/purchase) is clearly weaker
 than its sibling ($34.38/purchase), but pausing or restructuring mid-flight resets
