@@ -67,7 +67,9 @@ h1 .qt{color:var(--accent)}
 .prow:first-of-type{border-top:none}
 .prow .what{font-size:46px;font-weight:700;line-height:1.12}                                  /* 12pt */
 .prow .what small{display:block;font-size:34px;font-weight:500;color:var(--muted);margin-top:5px} /* 8.4pt */
-.prow .amt{font-size:80px;font-weight:800;letter-spacing:-.02em;white-space:nowrap}           /* 21pt */
+.prow .amt{font-size:80px;font-weight:800;letter-spacing:-.02em;white-space:nowrap}
+/* for a row whose amount is a pair, e.g. "+$10 / +$30" — the full size overruns the row */
+.prow .amt.two{font-size:52px}           /* 21pt */
 .prow.hero{background:#FFF6EC}
 .prow.hero .amt{color:var(--accent-dk)}
 

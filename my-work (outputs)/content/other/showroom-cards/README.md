@@ -34,12 +34,41 @@ when bottom-aligned; add `mid` to the product column (`<div class="prodcol mid">
 the product in the band instead. The 30 QT Performance uses `mid`; the 30 QT Powered does not.
 Judge it per product from the render, not from the cutout's dimensions.
 
-## Cards built
+## Cards built — 12
 
 | Card | File | Prices |
 |---|---|---|
+| 18 QT Powered Fryer | `18qt-powered.png` | $285–$340 |
+| 18 QT Performance Fryer | `18qt-performance.png` | $220–$265 |
 | 30 QT Powered Pot | `30qt-powered.png` | $435 / $455 / $475 |
-| 30 QT Performance Pot | `30qt-performance.png` | $335 (+ $435 cross-reference to the Powered) |
+| 30 QT Performance Pot | `30qt-performance.png` | $335 ⚠️ see *Open questions* |
+| 30 QT Turkey Fryer | `30qt-turkey-powered.png` | $395 / $442.50 / $462.50 |
+| 40 QT Sauce Cooker | `40qt-powered.png` | $289.99 / $309.99 |
+| 4-Way Fryer / Pasta Cooker | `4way-powered.png` | $379.99 / $396.99 |
+| 60 QT Powered Cooker | `60qt-powered.png` | $515 / $525 / +$10 |
+| 60 QT Dual Turkey Fryer | `60qt-dual-turkey-powered.png` | $495 / $505 |
+| 80 QT Powered Cooker | `80qt-powered.png` | $630 / $655 / +$10–$30 |
+| 100 QT Powered Cooker | `100qt-powered.png` | $670 / $700 / +$10–$30 |
+| 120 QT Powered Cooker | `120qt-powered.png` | $715 / $735 / +$10–$30 |
+
+**Cards are generated, not hand-written.** All content lives in one table in
+`templates/showroom-cards/make-cards.py`; edit there and re-run. It refuses to build a
+card whose copy would overflow — see *Rebuild*.
+
+## Open questions blocking the rest of the batch
+
+1. ⚠️ **What does a Performance boiling pot actually ship with?** The 30/60/80/100/120 QT
+   Performance PDPs never say, and their variants only choose a drain valve — unlike the
+   Powered SKUs, which encode the basket (`PW30-VLV075-SBI`). The **30 QT Performance card
+   already says "Pot, Basket & Lid"** and that is unverified. Do not print it until Jay or
+   Robert confirms. Blocks the 60 and 80 QT Performance cards too.
+2. ⚠️ **Turkey rack fitment contradicts itself on the live site.** The variant is named
+   "Single Upright (30 QT or larger)" but the PDP body says it "fits our 40 or 50 QT pots."
+   Blocks the combined turkey-rack card.
+3. **Photos needed:** 100 QT Performance · 120 QT Performance · 6" Banjo module ·
+   **Boil Boss Cooling Ring** and **Thermo Paddle** (only lifestyle shots exist, no cutouts).
+4. **Naming, set by Evan 2026-09-08:** "Fryer", never "Fish Fryer / Brazier". Both 4-Way
+   products are "4-Way Fryer / Pasta Cooker". The 40 Gallon is "40 Gallon", never "160 QT".
 
 ## Where the numbers came from
 
@@ -80,10 +109,16 @@ in stock on 2026-09-03; availability moves too fast for print.
 ## Rebuild
 
 ```
-cd "my-skills/hpc-ad-creative/work/creative"
-./build.sh templates/showroom-cards/30qt-powered.html 1650x1275 drafts/showroom/30qt-powered.png
-./build.sh templates/showroom-cards/30qt-performance.html 1650x1275 drafts/showroom/30qt-performance.png
+cd "my-skills/hpc-ad-creative/work/creative/templates/showroom-cards"
+python3 make-cards.py            # every card
+python3 make-cards.py 80qt       # just the ones matching
 ```
+
+`make-cards.py` asserts a character budget on the deck, each feature, the add-later line
+and both halves of every price row **before** it writes anything, because the card
+overflows silently otherwise. The price-row budget scales with how wide the amount
+renders — a 7-character `$379.99` leaves far less label room than `$435`. If an assert
+fires, shorten the words. **Never shorten a price to fit: $34.75 is not $35.**
 
 **Two checks before any card ships — the card silently overflows otherwise.**
 
