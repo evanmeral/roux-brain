@@ -11,6 +11,37 @@
 
 ## 2026-09
 
+**The live warranty page governs — it is what the customer sees** — Evan, 2026-09-08.
+Settles a wobble: Evan restated the warranty as "5-year for all consumer pots, 2-year for the
+big commercial pots." Checked against the live page, which reads **"LIMITED FIVE YEAR WARRANTY
+— FOR RESIDENTIAL USE ONLY (120 Quarts or smaller)"** plus a **full two-year on everything**.
+So the 2-year is universal, not commercial-only, and **the 120 QT size cap is real** — "all
+consumer pots" would wrongly include the 160 QT. Evan's ruling: the page wins because it is
+what a customer can read. **The `5-YR RESIDENTIAL WARRANTY` badge is approved** on 18/80/120 QT
+creative; it was only ever blocked because `yeti-1x1.html` hardcodes it template-wide and would
+carry it onto a steamer or commercial boiler.
+
+**`hpc-dark-evergreen` locked, all three sizes** — Evan, 2026-09-08. Pot lifted 40px on the
+9:16. 80px was tried first and collided with the propane chip — 40 is the clean maximum without
+moving the chip or rescaling the product. ⚠️ Maya's later render pass overwrote it; restored and
+re-verified the same session.
+
+**Labor Day ads stay live overnight Sept 8→9** — Evan, 2026-09-08. Switching them off before
+bed was offered (~$60 of spend against a dead code between midnight and 6:30am) and **declined**
+— he does not expect meaningful overnight volume. Takedown happens at 6:30–7am. Do not re-raise.
+
+**The always-on discount codes are welcome codes, and they do not stack** — Evan, 2026-09-08.
+`FANDF`, `HPCWS`, `TEXT25`, `COOK25` and the rest have no end date **by design** — they are the
+email/SMS signup rewards. **A customer using a live sale code cannot also use one**; it is one
+or the other. Closes a proposed audit before the November promo. No action needed.
+
+**Sale comms were already handled; Stephen's commercial 10% is standing, not sale-tied** —
+Evan, 2026-09-08. Coalition, Stephen and Biljana all knew the sale ends tonight, so no
+end-of-sale notifications were needed. **Stephen has an ongoing go-ahead to give 10% off on
+commercial orders over the phone** — that authority does not expire with the Labor Day sale.
+**Popups are Biljana's and she is handling them.**
+
+
 **Paid Meta static ads ship 1:1, 9:16 and 1.91:1 — 4:5 is organic only** — Evan, 2026-09-08.
 Replaces the earlier `{1x1, 4x5, 9x16}` set. The old set had no horizontal, so right column,
 Search and Audience Network had no correctly-shaped asset. 4:5 comes out because its job is

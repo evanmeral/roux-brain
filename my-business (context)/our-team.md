@@ -66,7 +66,7 @@ This is the most important operating rule in this file. Two parties operating th
 | **Email / SMS / Klaviyo** | **Biljana — FULLY HERS** | ⛔ **Stay out entirely.** Do not propose email work, do not ask for Klaviyo access, do not analyse email performance. Evan has said no twice. `playbooks/email-sms.md` is reference only. |
 | **Video** | **Garrett / Frazier Media** | Brief, don't shoot. |
 | **Dealer / wholesale** | **Jay** | Route inbound to him. No marketing investment. |
-| **Commercial sales + freight** | **Stephen** | He qualifies residential vs. business early so freight isn't a surprise. No fix needed there. |
+| **Commercial sales + freight** | **Stephen** | He qualifies residential vs. business early so freight isn't a surprise. No fix needed there. ⭐ **He holds a standing go-ahead to give 10% off on commercial orders taken over the phone** — approved by Jay, and **not tied to any sale.** It does not expire when a promo ends. *(Evan, 2026-09-08.)* |
 | **Showroom floor + printed collateral** | **Alexis** | Print it, name it plainly and hand it over — don't route floor printing to Evan. Product facts on anything she gets must be sourced: she reads them out to walk-ins. |
 
 ---

@@ -240,6 +240,14 @@ Skimmers $9.99–$19.99 · Paddles $19.99–$85 · Scoop $14.99 · Basket Buddy 
 
 **Both can be used.** They are two separate opt-ins and a customer can hold and use both.
 
+⛔ **But a welcome code cannot be combined with a live sale code** — it is one or the other.
+✅ Evan, 2026-09-08. Confirmed while auditing the always-on codes after Labor Day: `FANDF`,
+`HPCWS`, `DELAYSHIPMARK`, `TEXT25`, `COOK25`, `CART25` and the rest have **no end date by
+design** because they are these signup rewards. A customer who stacked `LABORDAY10-26` with
+`LABORDAY30-LEGS` could not also apply a welcome code. **So the standing codes do not erode a
+promo, and there is nothing to disable before one.** *(Codes themselves read from Shopify,
+2026-09-08.)*
+
 ⚠️ Unverified: an older imported note claimed the $25 requires a registered account and a $125+ minimum order. **Not confirmed by Evan — do not state those conditions without checking.**
 
 Also live: military / first-responder discount (5% per imported notes, percentage unconfirmed), rewards points program, financing, gift cards, scratch-and-dent clearance.
