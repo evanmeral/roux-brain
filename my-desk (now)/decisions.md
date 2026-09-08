@@ -11,6 +11,29 @@
 
 ## 2026-09
 
+**BB-TJB fitment wording narrowed to "PAIRS WITH 60 QT AND UP"** — Evan, 2026-09-08.
+The V3 carousel's frame 2 originally read "pairs with ANY Performance pot." Nothing
+documents that: `what-we-sell.md` confirms the Triple Jet fits a 60 QT (works, just isn't
+the pairing to lead with) and pushes 80/100/120, but says nothing about the 30 or 40 QT
+Performance pots fitting. Evan chose 60-and-up over the narrower 80/100/120 — wider net,
+still inside what is documented. **Fitment is now a standing landmine on the board:** never
+widen a fitment line past `what-we-sell.md`, same failure mode as the leg-extension fitment
+catch in V2.
+
+**Burner modules dropped from the V3 carousel; Thermo Paddle in their place** — Evan,
+2026-09-08. He did not want to push burner modules in this piece. Frames 3 and 4 now run as
+a ladder — paddle alone at $69.99, then the Ultimate Combo at $129.98 with the Cooling Ring
+and two free 4 lb seasoning bags. **No dollar saving is stated on either frame**, because the
+Cooling Ring is a price range ($55.99–$74.99) and no single subtraction against $129.98 is
+true. Superseded burner-module template and renders parked, not deleted.
+
+**V3 carousel ships despite two backordered SKUs** — Evan, 2026-09-08. It points at the
+adjustable shelf ($119.99, 1 unit) and the 10" Banjo ($139, 0 on hand); both oversell to
+backorder. Ship-as-is, because backorders are already the accepted store-wide condition —
+the oversold-SKU question was deliberately parked 2026-09-01 and singling out one creative
+would re-litigate it. **The obligation that comes with it:** if comments or DMs ask about
+delivery on those two, the honest answer is backorder, not in stock.
+
 **Showroom card format locked — 5.5 in x 4.25 in at 300 dpi, four to a LANDSCAPE page**
 — Evan, 2026-09-03. Approved on the 30 QT Powered/Performance pair after three passes.
 The size is not cosmetic: four landscape cards only fit on a landscape Letter page, and

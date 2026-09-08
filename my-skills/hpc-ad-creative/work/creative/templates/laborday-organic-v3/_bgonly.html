@@ -45,21 +45,19 @@ html,body{width:1080px;height:1920px}
 
 /* --- the payload: the codes, and the fact that you have to type them --- */
 .panel{position:absolute;left:64px;right:64px;top:1330px;z-index:5}
-/* deliberately NOT var(--flame): white on that gradient's #FFA41C end measures 2.12:1.
-   Deep flame red holds 3.36:1 minimum across the whole bar at 31px bold. */
-.bar{background:linear-gradient(135deg,#E13418 0%,#B3260F 100%);
-  color:#fff;border-radius:10px 10px 0 0;padding:20px;text-align:center;
+.bar{background:var(--flame);color:#fff;border-radius:10px 10px 0 0;padding:20px;text-align:center;
   font-family:'JetBrains Mono',monospace;font-weight:800;font-size:31px;letter-spacing:.07em}
 .chips{display:flex;gap:0;border:2px solid rgba(255,255,255,.22);border-top:0;
   border-radius:0 0 10px 10px;background:rgba(255,255,255,.06);overflow:hidden}
 .chip{flex:1;padding:24px 10px 26px;text-align:center}
 .chip+.chip{border-left:2px solid rgba(255,255,255,.22)}
-.chip .k{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:40px;color:#fff;
+.chip .k{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:34px;color:#fff;
   letter-spacing:-.01em}
-.chip .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:22px;color:var(--gold);
+.chip .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:21px;color:var(--gold);
   letter-spacing:.05em;margin-top:12px}
 .note{text-align:center;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:23px;
   letter-spacing:.13em;color:rgba(255,255,255,.6);margin-top:22px}
+.mid,.panel,.logo{visibility:hidden}
 </style></head>
 <body><div class="ad">
   <div class="band"><div class="blur"></div>
@@ -78,7 +76,7 @@ html,body{width:1080px;height:1920px}
   </div>
 
   <div class="panel">
-    <div class="bar">THEY STACK ON ONE ORDER</div>
+    <div class="bar">ENTER BOTH &middot; THEY STACK</div>
     <div class="chips">
       <div class="chip"><div class="k">LABORDAY10-26</div><div class="v">10% OFF SITEWIDE</div></div>
       <div class="chip"><div class="k">LABORDAY30-LEGS</div><div class="v">30% OFF LEG EXTENSIONS</div></div>

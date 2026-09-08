@@ -84,6 +84,21 @@ Complete rigs, lower ticket, lower friction. A separate campaign from 1A, not a 
 
 Scratch & Dent is a **margin-safe entry price point** — it lets a price-sensitive buyer into the brand without discounting the main line.
 
+✅ **Verified against live Shopify 2026-09-08** (Finn, Admin API): BB-TJB $425 · Thermo
+Paddle $69.99 (195 on hand) · Ultimate Combo $129.98 (all 8 colorways, 198 on hand) ·
+Centering Brackets $35 · burner modules $62 / $89 / $109 / $74 / $139.
+
+> **The Boil Boss ladder, and the middle rung to watch.** Paddle $69.99 + Cooling Ring
+> $59.99 = **$129.98 exactly** — the Ultimate Combo price, so its two 4 lb seasoning bags
+> ($35.98) are genuinely free, and its $165.96 compare-at is honest. **But the plain Boil
+> Boss Combo at $122.50 sits between them** — ring + paddle, no seasoning, $7.48 cheaper.
+> Any creative pointing at the Ultimate Combo has to survive a customer finding that one.
+> It does — $7.48 buys $35.98 of seasoning — but never write copy that implies $129.98 is
+> the only ring-plus-paddle option.
+
+⚠️ **BB-TJB has a `compareAtPrice` equal to its own price ($425 vs $425)**, which can render
+a struck-through $425 next to $425 on the PDP. Cosmetic, found 2026-09-08, not yet fixed.
+
 ---
 
 ## TIER 2 — the year-round line
@@ -118,6 +133,11 @@ These carry the off-season. See the year-round mandate below.
 | Commercial Basket — Steamer Shelf | $175–$210 |
 
 Fixed trays exist for every pot size sold; adjustable shelves for 80/100/120 QT.
+
+✅ **Every tray price above verified against live Shopify 2026-09-08** (Finn, Shopify Admin
+API — full variant list, not a sample). ⚠️ **Stock at that date:** adjustable shelf 80/100 QT
+was down to **1 unit**, and the 60 QT and 120 QT fixed inserts were negative. All oversell to
+backorder, so they keep taking orders — do not describe them as in stock without re-checking.
 
 ### ⭐ The frying line — the 18 QT, the 4-Way and the 40 QT
 *Added by Evan, 2026-09-02.* These three belong together in copy. Two facts govern them:
@@ -264,7 +284,10 @@ Detail: `my-files (knowledge)/hpc-reference/seasonal-calendar.md`.
 
 ## Discontinued
 - **40 QT boiling pot** — sat between two sizes, nobody bought it.
-- **40 QT fixed steamer insert** — retired with it.
+- ~~**40 QT fixed steamer insert** — retired with it.~~ ❌ **This entry was wrong.** Checked
+  against live Shopify 2026-09-08 (Finn, Admin API): the 40 QT fixed steamer insert is
+  **ACTIVE at $27.99 with 10 on hand**, published to the Online Store. It is sellable — do
+  not tell a customer it is discontinued.
 - *(The 40 QT Sauce Cooker and 40 QT Sauce Stock Pot are a different line and remain live.)*
 
 ## Open questions

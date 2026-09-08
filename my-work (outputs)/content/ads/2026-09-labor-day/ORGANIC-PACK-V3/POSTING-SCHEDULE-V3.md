@@ -1,16 +1,19 @@
 # Labor Day — Organic Pack V3
-**Built Thu 2026-09-03.** Adds one post to V1 + V2, does not replace either. Instagram + Facebook.
+**Built Tue 2026-09-08.** Adds one post to V1 + V2, does not replace either. Instagram + Facebook.
 
-> **Why a V3.** Sunday Sept 6 currently only has a Story queued
-> (`../ORGANIC-PACK/09_SEP06_STORY_two-days-left.png`). V2's carousel already spent its seven frames
-> on the fryer, 4-way pasta cooker, sauce cooker, steamer and leg extensions — the *other pots*. It
-> never got to the gear that isn't a pot at all: burners, brackets, trays, the Boil Boss line. This
-> carousel is that post. It's also the last Feed slot before the sale's tone changes — Monday is
-> Labor Day itself (no sale pitch, HPC is closed) and Tuesday is last-call stories only.
+> **Why a V3.** V2's carousel already spent its seven frames on the fryer, 4-way pasta cooker,
+> sauce cooker, steamer and leg extensions — the *other pots*. It never got to the gear that isn't
+> a pot at all: burners, brackets, trays, the Boil Boss line. This carousel is that post, and the
+> one piece in the whole sale aimed at someone who already owns an HPC rig.
+
+> ⚠️ **Posting record.** Scoped and built for the **Sun Sept 6** feed slot, which was empty. It was
+> actually built and posted on **Tue Sept 8**, the final day of the sale — the session that made it
+> was working from a stale board date. No harm: the carousel carries no day-specific copy and reads
+> as last-call. Noted so the timeline isn't misread later. Posted to IG + FB by Evan, 2026-09-08.
 
 ---
 
-## Post: Sun Sept 6 — FEED CAROUSEL ⭐
+## Post: posted Tue Sept 8 (built for the Sun Sept 6 slot) — FEED CAROUSEL ⭐
 **Seven frames, in order. 1080×1350.**
 
 ```
@@ -64,9 +67,9 @@ extensions played in V2's frame 6.
 | 2 | `CAROUSEL_2-triple-jet-burner.png` | Boil Boss Triple Jet Burner (BB-TJB), $425 | The flagship burner and the Tier 1A pairing partner for the Performance pots we push. Bluetooth ignition is real, specific, and demo-friendly — content-engine idea #11 ("light the burner from across the yard") backs this up. Fitment on the frame reads **"pairs with 60 QT and up"** — see the claims note below. |
 | 3 | `CAROUSEL_3-thermo-paddle.png` | Boil Boss Thermo Paddle, $69.99 | **Rung one of the ladder into frame 4.** Sold on its own, the cheapest way into the Boil Boss line. Uses the lifestyle photo (`assets/lifestyle/BB-paddle-lifestyle.png`) in a rounded panel rather than a cutout — there is no paddle cutout in the library, and pulling the paddle out of the combo shot would have made frames 3 and 4 look like the same picture twice. |
 | 4 | `CAROUSEL_4-ultimate-combo.png` | Boil Boss Ultimate Combo (Ring + Paddle + 2 free 4lb seasoning), $129.98 | **Rung two.** The overlap with frame 3 is deliberate: same paddle, now with the Cooling Ring and two free bags of seasoning. Frame 3 ends on "or take the combo on the next card →" so the pair reads as a step up rather than a repeat. **No dollar saving is stated** — the Cooling Ring is a price range ($55.99–$74.99), so no single subtraction is true, and a wrong one would be worse than none. |
-| 5 | `CAROUSEL_5-steamer-trays.png` | Steamer trays — fixed inserts from $24.99, adjustable shelves from $119.99 | Genuinely new: V2's steamer frame was the 28 QT steamer *unit* ($1,325). This is the tray/insert accessory, a different SKU family entirely, and per `what-we-sell.md` "the highest-certainty AOV lever in the business." Shot swapped to Evan's `80qt-steamer-tray.png` on 2026-09-03. |
+| 5 | `CAROUSEL_5-steamer-trays.png` | Steamer trays — fixed inserts from $24.99, adjustable shelves from $119.99 | Genuinely new: V2's steamer frame was the 28 QT steamer *unit* ($1,325). This is the tray/insert accessory, a different SKU family entirely, and per `what-we-sell.md` "the highest-certainty AOV lever in the business." Shot swapped to Evan's `80qt-steamer-tray.png` on 2026-09-08. |
 | 6 | `CAROUSEL_6-centering-brackets.png` | TJB Centering Brackets (set of 3), $35 | Cheapest, most impulse-friendly item in the set. Placed second-to-last on purpose, same role legs played in V2's carousel — the low-friction add before the offer card closes it. |
-| 7 | `CAROUSEL_7-cta.png` | — | Offer close. Background is the welding shot (`Welder-welding-tunneltubes.png`) — swapped 2026-09-03 so this carousel doesn't repeat V2's CTA frame. Ties the offer back to the hand-welded tubes, which is the thing all this gear hangs off. |
+| 7 | `CAROUSEL_7-cta.png` | — | Offer close. Background is the welding shot (`Welder-welding-tunneltubes.png`) — swapped 2026-09-08 so this carousel doesn't repeat V2's CTA frame. Ties the offer back to the hand-welded tubes, which is the thing all this gear hangs off. |
 
 **What's deliberately not in this carousel:** the fryer, 4-way pasta cooker, sauce cooker, 28 QT
 steamer unit, and leg extensions — all covered in V2's carousel and its standalone legs post. Legs
@@ -91,14 +94,14 @@ so keeping them out avoids any accidental fitment implication.
 - **Every price matches `what-we-sell.md` exactly:** BB-TJB $425 · Thermo Paddle $69.99 · Ultimate
   Combo $129.98 · steamer trays $24.99–$119.99 (stated as "from," true low end for each category) ·
   centering brackets $35. ✅ **All but the paddle also verified live — see the verified note below.**
-- **⚠️ Fitment wording narrowed 2026-09-03, after review.** Frame 2's stat line originally read
+- **⚠️ Fitment wording narrowed 2026-09-08, after review.** Frame 2's stat line originally read
   "PAIRS WITH ANY PERFORMANCE POT." That is a fitment claim nothing in the business files supports:
   `what-we-sell.md` documents that the BB-TJB **does fit a 60 QT and works** (it just isn't the
   pairing to lead with) and that **80 / 100 / 120 QT is the push** — it says nothing at all about the
   30 QT or 40 QT Performance pots fitting. The line now reads **"PAIRS WITH 60 QT AND UP."** Evan
   chose that over the narrower 80/100/120 option; both are defensible, and 60-and-up is consistent
   with everything documented. Frame re-rendered and re-measured after the change. ✅
-- **$69.99 on frame 3 — verified.** Came back matching live Shopify on 2026-09-03 (195 on hand, no
+- **$69.99 on frame 3 — verified.** Came back matching live Shopify on 2026-09-08 (195 on hand, no
   compare-at price). The provisional flag is cleared; **every price on this carousel is now verified
   against live Shopify.** ✅
 - **No dollar saving claimed between frames 3 and 4.** Paddle $69.99 + Cooling Ring $55.99–$74.99
@@ -113,9 +116,9 @@ so keeping them out avoids any accidental fitment implication.
 
 ---
 
-## Revision — 2026-09-03, after Evan's review
+## Revision — 2026-09-08, after Evan's review
 
-Two rounds of changes on 2026-09-03. **Round two (final)** was: frame 2 unlocked for the drop-shadow
+Two rounds of changes on 2026-09-08. **Round two (final)** was: frame 2 unlocked for the drop-shadow
 fix only, and frame 7 brightened from `.50` to `.86` so the welding actually reads — both detailed
 in their sections below. **Round one** was the five changes here.
 
@@ -206,16 +209,16 @@ longer cut off. **Scoped deliberately, not fixed in `brand.css`:** that file is 
 already-approved renders and with every other template, so a system-wide change is Nova's call
 after the sale.
 
-✅ **Frame 2 now carries the fix too** — Evan unlocked the frame for this one change on 2026-09-03.
+✅ **Frame 2 now carries the fix too** — Evan unlocked the frame for this one change on 2026-09-08.
 All five product frames are consistent; no frame in the swipe has a clipped shadow. Frame 2's copy,
 image, size and nudge are otherwise untouched, and its centering measured identically before and
 after (+19.0 / −21.0), which is the check that nothing else shifted.
 
 ---
 
-## ✅ Verified — prices, 2026-09-03
+## ✅ Verified — prices, 2026-09-08
 
-**All ten prices in this carousel were checked against live Shopify on 2026-09-03. Every one
+**All ten prices in this carousel were checked against live Shopify on 2026-09-08. Every one
 matched.** The frames were built from `what-we-sell.md` (itself a 2026-08-26 catalog pull, which
 that file flags as needing a re-pull before any promo) — this closes that gap.
 
@@ -223,12 +226,12 @@ that file flags as needing a re-pull before any promo) — this closes that gap.
 |---|---|---|
 | 2 | BB-TJB $425 | ✅ match |
 | 3 | ~~Single Jet $62 · Double Jet $89 · 3 Jet $109 · 6" Banjo $74 · 10" Banjo $139~~ | ✅ all five matched — **but this frame was replaced; no module price ships now** |
-| 3 *(new)* | **Boil Boss Thermo Paddle $69.99** | ✅ match — checked 2026-09-03, **195 on hand, no compare-at price** |
+| 3 *(new)* | **Boil Boss Thermo Paddle $69.99** | ✅ match — checked 2026-09-08, **195 on hand, no compare-at price** |
 | 4 | Boil Boss Ultimate Combo $129.98 | ✅ match |
 | 5 | Fixed inserts from $24.99 · adjustable shelves from $119.99 | ✅ both match |
 | 6 | TJB Centering Brackets $35 | ✅ match |
 
-**Source: Shopify Admin API, 2026-09-03.**
+**Source: Shopify Admin API, 2026-09-08.**
 
 The two availability notes below both concern the **burner modules and shelves**. The 10" Banjo no
 longer appears anywhere on this carousel (frame 3 was replaced), so that one is now moot for this

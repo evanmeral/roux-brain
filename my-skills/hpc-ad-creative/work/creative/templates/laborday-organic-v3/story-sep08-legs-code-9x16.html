@@ -1,0 +1,59 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand.css">
+<style>
+html,body{width:1080px;height:1920px}
+.ad{position:relative;overflow:hidden;background:var(--char)}
+
+.logo{width:152px;top:250px;left:50%;transform:translateX(-50%)}
+
+.glow{width:760px;height:400px;left:160px;top:432px;z-index:1}
+/* stage: product sits in its own band, well clear of the copy below (rule 5) */
+.stage{position:absolute;left:0;right:0;top:408px;height:430px;z-index:2;
+  display:flex;align-items:center;justify-content:center}
+.shadow{filter:drop-shadow(0 26px 40px rgba(0,0,0,.62))}
+.pbox{overflow:visible}
+
+.mid{position:absolute;left:64px;right:64px;top:872px;z-index:5;text-align:center}
+.pill{display:inline-flex;align-items:center;gap:16px;
+  border:2px solid rgba(246,147,41,.75);border-radius:999px;padding:15px 30px;
+  background:rgba(246,147,41,.12)}
+.pill .dot{width:16px;height:16px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 20px rgba(246,147,41,.95)}
+.pill .t{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:27px;
+  letter-spacing:.13em;color:var(--accent)}
+
+.hl{color:#fff;font-weight:900;font-size:162px;line-height:.85;letter-spacing:-.055em;
+  margin-top:30px;text-shadow:0 8px 40px rgba(0,0,0,.75)}
+.rule{width:120px;height:5px;background:var(--accent);border-radius:3px;margin:36px auto 0}
+.sub{color:var(--gold);font-size:44px;font-weight:800;line-height:1.26;margin-top:34px}
+.sub span{display:block;color:rgba(255,255,255,.8);font-size:34px;font-weight:500;margin-top:14px}
+
+.panel{position:absolute;left:64px;right:64px;top:1424px;z-index:5}
+.chip{border:2px dashed rgba(255,255,255,.4);border-radius:10px;
+  background:rgba(255,255,255,.06);padding:24px 10px 26px;text-align:center}
+.chip .k{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:52px;color:#fff;
+  letter-spacing:-.01em}
+.chip .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:24px;color:var(--gold);
+  letter-spacing:.06em;margin-top:12px}
+.note{text-align:center;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:23px;
+  letter-spacing:.11em;color:var(--gold);margin-top:24px}
+.note span{display:block;color:rgba(255,255,255,.55);font-size:21px;letter-spacing:.09em;margin-top:12px}
+</style></head>
+<body><div class="ad bg-dark">
+  <img class="logo" src="../../../../assets/brand-refs/HPC-ShieldLogo-White.png">
+  <div class="glow"></div>
+  <div class="stage">
+    <div class="pbox shadow" style="width:392px;height:430px"><img src="../../../../assets/product-cutouts/leg extensions_.png" style="width:538px;left:-72px;top:-54px"></div>
+  </div>
+
+  <div class="mid">
+    <div class="pill"><span class="dot"></span><span class="t">LEG EXTENSIONS &middot; 30% OFF</span></div>
+    <div class="hl">TYPE THE<br>CODE.</div>
+    <div class="rule"></div>
+    <div class="sub">It won&rsquo;t come off on its own.</div>
+  </div>
+
+  <div class="panel">
+    <div class="chip"><div class="k">LABORDAY30-LEGS</div><div class="v">30% OFF LEG EXTENSIONS</div></div>
+    <div class="note">ENDS 11:59 PM CT TONIGHT<span>STACKS WITH LABORDAY10-26 FOR 10% OFF SITEWIDE</span></div>
+  </div>
+</div></body></html>
