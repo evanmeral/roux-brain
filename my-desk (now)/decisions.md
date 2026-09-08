@@ -11,6 +11,13 @@
 
 ## 2026-09
 
+**`120qt-rolling-boil` copy is correct as written — the pot is on a Triple Jet Burner** —
+Evan, 2026-09-08. Closes a flag raised the same day: *"Tunnel Tube technology is in the pot —
+so it works on any burner you already own"* was read as Performance copy over a Powered
+product shot. **It is not.** The pot in that photo is sitting on HPC's own Triple Jet Burner,
+which is exactly the claim — the tubes are in the pot, the burner is separate and swappable.
+Ship all three sizes. Do not re-raise.
+
 **Stop escalating warranty wording — read the live page and write from it** — Evan,
 2026-09-08. *"No reason to keep bringing up the warranty stuff, as we've already fixed it.
 Just go off of the warranty page on the website. No need to ask me. I will check everything
