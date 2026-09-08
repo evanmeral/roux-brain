@@ -55,7 +55,6 @@ would have you do."* Willing people idle for want of direction.
 | Who | What | Since |
 |---|---|---|
 | **Evan** | Post the 6pm final-hours story; kill six ads Wed 7am | 2026-09-08 |
-| **Evan** | **Drag the 31 card PNGs into the Drive folder** — the connector takes bytes inline, 18 MB of base64. Folder + printing guide are there, files are not. Local folder opened. | 2026-09-08 |
 | **Evan** | Confirm Garrett's 18 QT video (`~/Desktop/Home Fryer .mp4`), watch for claims risk, ask for a 15–20s cut | 2026-09-01 |
 | **Evan** | Decide: make the hardcoded warranty badge a variable (see Landmines) | 2026-09-01 |
 | **Jay** | Landed BOM + monthly overhead. Now also needs **landed cost per leg extension** — the ~$50.58 threshold that decides whether the 30% legs code paid | 2026-08-28 |
