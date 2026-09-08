@@ -1,0 +1,85 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand.css">
+<style>
+html,body{width:1080px;height:1920px}
+.ad{position:relative;overflow:hidden;background:var(--char)}
+
+/* --- photo band: landscape shot in a 9:16. Blurred cover copy underneath,
+       sharp copy on top at reduced scale, both feathered top+bottom. --- */
+.band{position:absolute;left:0;right:0;top:0;height:790px;overflow:hidden;
+  -webkit-mask-image:linear-gradient(180deg,#000 0%,#000 46%,transparent 96%);
+          mask-image:linear-gradient(180deg,#000 0%,#000 46%,transparent 96%)}
+.band .blur{position:absolute;inset:0;
+  background:url('../../../../assets/lifestyle/pwd-burner-lit.png') center/cover no-repeat;
+  filter:blur(46px) brightness(.30) saturate(.85);transform:scale(1.12)}
+/* sharp copy, sized so the burner flame lands at ~(540, 470) — clear of the logo,
+   and wide enough that the radiating tube array still reads as hardware */
+.band .sharp{position:absolute;width:1500px;left:-210px;top:110px;
+  filter:brightness(.72) saturate(1.08) contrast(1.14);
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 22%);
+          mask-image:linear-gradient(180deg,transparent 0,#000 22%)}
+/* darken behind the logo so the white shield reads on light metal */
+.bandtop{position:absolute;left:0;right:0;top:0;height:430px;z-index:3;
+  background:linear-gradient(180deg,rgba(8,7,6,.88) 0%,rgba(8,7,6,.46) 62%,transparent 100%)}
+.bandfade{position:absolute;left:0;right:0;top:430px;height:340px;z-index:3;
+  background:linear-gradient(180deg,transparent,rgba(10,9,8,.86) 74%,#131211 100%)}
+
+.logo{width:152px;top:250px;left:50%;transform:translateX(-50%)}
+
+.mid{position:absolute;left:64px;right:64px;top:686px;z-index:5;text-align:center}
+
+/* live-style countdown pill — the visual signature of this story */
+.pill{display:inline-flex;align-items:center;gap:16px;
+  border:2px solid rgba(246,147,41,.75);border-radius:999px;padding:15px 30px;
+  background:rgba(246,147,41,.12)}
+.pill .dot{width:16px;height:16px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 20px rgba(246,147,41,.95)}
+.pill .t{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:28px;
+  letter-spacing:.15em;color:var(--accent)}
+
+.hl{color:#fff;font-weight:900;font-size:172px;line-height:.84;letter-spacing:-.055em;
+  margin-top:34px;text-shadow:0 8px 40px rgba(0,0,0,.75)}
+.rule{width:120px;height:5px;background:var(--accent);border-radius:3px;margin:40px auto 0}
+.sub{color:#fff;font-size:44px;font-weight:700;line-height:1.28;margin-top:38px}
+.sub b{color:var(--gold);font-weight:800}
+.sub span{display:block;color:rgba(255,255,255,.78);font-size:35px;font-weight:500;margin-top:14px}
+
+/* --- the payload: the codes, and the fact that you have to type them --- */
+.panel{position:absolute;left:64px;right:64px;top:1330px;z-index:5}
+.bar{background:var(--flame);color:#fff;border-radius:10px 10px 0 0;padding:20px;text-align:center;
+  font-family:'JetBrains Mono',monospace;font-weight:800;font-size:31px;letter-spacing:.07em}
+.chips{display:flex;gap:0;border:2px solid rgba(255,255,255,.22);border-top:0;
+  border-radius:0 0 10px 10px;background:rgba(255,255,255,.06);overflow:hidden}
+.chip{flex:1;padding:24px 10px 26px;text-align:center}
+.chip+.chip{border-left:2px solid rgba(255,255,255,.22)}
+.chip .k{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:34px;color:#fff;
+  letter-spacing:-.01em}
+.chip .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:21px;color:var(--gold);
+  letter-spacing:.05em;margin-top:12px}
+.note{text-align:center;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:23px;
+  letter-spacing:.13em;color:rgba(255,255,255,.6);margin-top:22px}
+</style></head>
+<body><div class="ad">
+  <div class="band"><div class="blur"></div>
+    <img class="sharp" src="../../../../assets/lifestyle/pwd-burner-lit.png"></div>
+  <div class="bandtop"></div>
+  <div class="bandfade"></div>
+
+  <img class="logo" src="../../../../assets/brand-refs/HPC-ShieldLogo-White.png">
+
+  <div class="mid">
+    <div class="pill"><span class="dot"></span><span class="t">ENDS 11:59 PM CT</span></div>
+    <div class="hl">FINAL<br>HOURS.</div>
+    <div class="rule"></div>
+    <div class="sub"><b>Type both codes at checkout.</b>
+      <span>They don&rsquo;t apply on their own.</span></div>
+  </div>
+
+  <div class="panel">
+    <div class="bar">ENTER BOTH &middot; THEY STACK</div>
+    <div class="chips">
+      <div class="chip"><div class="k">LABORDAY10-26</div><div class="v">10% OFF SITEWIDE</div></div>
+      <div class="chip"><div class="k">LABORDAY30-LEGS</div><div class="v">30% OFF LEG EXTENSIONS</div></div>
+    </div>
+    <div class="note">TUESDAY, SEPT 8 &middot; BUILT IN LOUISIANA</div>
+  </div>
+</div></body></html>
