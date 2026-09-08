@@ -73,6 +73,18 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 | Meta `18qt-TOF-Prospecting` | Jul 12–Aug 24 | $924 | 15 | **$61.63** | ✅ well under the $131 ceiling |
 | Meta `BPM_TOF_Manual` (mixed SKUs) | Jul 12–Aug 24 | $8,639 | 157 | **$55.03** | ✅ blended |
 | Google account (all campaigns) | Jul 20–Aug 20 | $17,436 | 191 | **$91.28** | ⚠️ over the ceiling for anything under ~$200 retail |
+| Meta `18qt-TOF-Prospecting` | **Sep 1–7** | $321.40 | 16 | **$20.09** | ✅ freq 1.90, real headroom |
+| Meta `BPM_TOF_Manual` (Labor Day) | **Sep 1–7** | $1,094.29 | 37 | **$29.58** | ⚠️ freq **5.05** on 15,033 reach |
+
+> **Sept 1–7 2026, Labor Day.** Meta total **$1,415.69 · 53 claimed purchases · $26.71 CPP**
+> (Ads Manager, pulled 2026-09-08 — platform-attributed, not revenue). Against Shopify's **57 new
+> customers**, **actual CAC = $24.84** — ⚠️ **a floor, not a cost: no Google spend is in it.**
+> Break-even CAC that week was ~$142.86 (net $321.03/order × 44.5%).
+> ⛔ Shopify net ÷ Meta spend = 23.8× — **never present that as ROAS.** It credits Meta with
+> commercial freight, the Navimow line, Biljana's email and Coalition's Google.
+> **The finding was allocation, not creative:** $949 of $1,094 went to the vintage treatment at
+> $33.00–$38.79 CPP while the dark treatment ran $19.76 on $138. That gap rests on 7 purchases —
+> a hypothesis, not proof. → [analysis](../../my-desk%20%28now%29/archive/2026-09-08-labor-day-sale-analysis.md)
 
 > ⚠️ **Google's $91.28 cost/conversion exceeds the allowable CAC for every accessory and both 18 QT
 > fryers at a discount.** Fine when it's selling $500–$800 cookers; a problem if it's selling
@@ -90,6 +102,21 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 | #2 product (12 mo) | **18 QT Fish Fryer Powered — $293,194** | Shopify |
 | Commercial line (12 mo) | ~$342,011 (~11.9%) | Shopify |
 | Aug YoY growth | **+345%** ($19,763 → $87,938) | Shopify |
+| **Labor Day sale, Sep 1–7 2026** | **105 orders · $33,708 net · AOV $321.03** · $4,363 discounts | Shopify, 2026-09-08 |
+| — residential core (ex-commercial, ex-Navimow) | **$24,892 · +31.8% YoY** — a floor | Shopify, 2026-09-08 |
+| — prior year, Sep 1–7 2025 (also a sale) | 58 orders · $24,514 net · core $18,887 | Shopify, 2026-09-08 |
+
+> **⚠️ AOV is net ÷ orders throughout.** Shopify's own `average_order_value` field does not
+> reconcile to gross, net, or total ÷ orders — it was checked on 2026-09-08 and could not be tied
+> to any of them. Older AOV figures in this brain used that field and are not comparable.
+>
+> **Two cautions on the Labor Day figures.** ① **Sept 8 is excluded** — the sale's deadline day,
+> normally the second spike, so these understate it. Re-pull Sept 1–8 complete. ② **Sept 1–7 2025
+> was also a sale** (LABOR15, SMS25, HIGH10/HIGH15), so YoY is sale-vs-sale, and it predates the
+> 2026-07-20 BM Digital line — two operators, not one trend.
+>
+> **The AOV is the warning, not the revenue.** $321.03 is the lowest of the four windows compared
+> and 24% below the prior-year Labor Day on the same mechanic, while orders nearly doubled.
 
 ## ✅ Two anomalies SOLVED (2026-08-26) — one Lowe's dealer order
 **$496,320 gross booked Dec 2025 at 30% dealer+rep discount, fully reversed Feb 2026.** It explains
