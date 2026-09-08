@@ -55,7 +55,7 @@ would have you do."* Willing people idle for want of direction.
 | Who | What | Since |
 |---|---|---|
 | **Evan** | Post the 6pm final-hours story; kill six ads Wed 7am | 2026-09-08 |
-| **Evan** | Green light to run the showroom-card batch across the catalog | 2026-09-03 |
+| **Evan** | **Drag the 31 card PNGs into the Drive folder** — the connector takes bytes inline, 18 MB of base64. Folder + printing guide are there, files are not. Local folder opened. | 2026-09-08 |
 | **Evan** | Confirm Garrett's 18 QT video (`~/Desktop/Home Fryer .mp4`), watch for claims risk, ask for a 15–20s cut | 2026-09-01 |
 | **Evan** | Decide: make the hardcoded warranty badge a variable (see Landmines) | 2026-09-01 |
 | **Jay** | Landed BOM + monthly overhead. Now also needs **landed cost per leg extension** — the ~$50.58 threshold that decides whether the 30% legs code paid | 2026-08-28 |
@@ -68,10 +68,10 @@ would have you do."* Willing people idle for want of direction.
 
 - **Oversold SKUs / negative inventory.** Parked by Evan 2026-09-01. **Digit** becomes source of truth for inventory *and* overhead. When it connects, **ask about overhead before stock**.
 - **CAC ceilings are provisional.** The figure on record is gross profit per unit — a *break-even line*, not a spending ceiling. Working: `internal/reports/2026-08-28-cac-model-v2.md`
-- **Showroom product cards** — format approved 2026-09-03, batch on hold at Evan's word. No re-design needed; suggested order 120 QT, then 18 QT. → [showroom-cards/](../my-work%20%28outputs%29/content/other/showroom-cards/)
+- ✅ **Showroom product cards — DONE, all 31.** Cookers, steamers, the 40 Gallon, burners and accessories. Generated from one table with a render-measuring gate, exported with print-ready names, handed to **Alexis** via [Drive](https://drive.google.com/drive/folders/1SasUL1WDa6enxvaAE78o_XrGQ5Cjvxr0) with a printing guide. → [showroom-cards/](../my-work%20%28outputs%29/content/other/showroom-cards/) · [what came off the board](archive/2026-09-08-showroom-cards-complete.md)
 - **Lanes:** Google Ads + SEO is Coalition's — monitor and report only, Basecamp is the workspace. **Email / SMS / Klaviyo is Biljana's**, entirely; Evan has declined access twice.
 - ✅ **NOLA Home & Garden Show, Feb 19–21 2027 — BOOKED AND PAID IN FULL.** Evan, 2026-09-08. **$1,700, standard 10×10 — not a corner.** Directory description submitted (Evan's own edit of the long version). 🔥 **No propane in the exhibit hall** — the booth cannot boil, so the demo has to be video with a running clock. → [trade-shows](../my-work%20%28outputs%29/content/other/trade-shows/README.md). ⛔ Louisiana Outdoor Expo and the Nov 11 Cater-Event Expo are both a **no**.
-- **Nova's queue:** ad naming/build process · **missing-end-date pre-launch checklist line** (this sale's gap) · `laborday-hpc-dark/9x16.html` flame bar at **2.12:1 contrast** on the best-performing creative · two `what-we-sell.md` fixes (40 QT fixed steamer insert filed discontinued but live at $27.99, 10 on hand; BB-TJB compare-at identical to price).
+- **Nova's queue:** ad naming/build process · **missing-end-date pre-launch checklist line** (this sale's gap) · `laborday-hpc-dark/9x16.html` flame bar at **2.12:1 contrast** on the best-performing creative · two `what-we-sell.md` fixes (40 QT fixed steamer insert filed discontinued but live at $27.99, 10 on hand; BB-TJB compare-at identical to price) · **`Performance Boiling Pots (60QT to 120QT)` is a duplicate listing** of the four individual Performance pots — same sizes, same options, identical prices, not a bundle (found 2026-09-08).
 - **After the post-mortem:** June–October off-season plan (the real +$500K project) · weekly scoreboard cadence · retargeting (`retargeting-proposal-for-jay.md` — the sale's browsers go cold in ~2 weeks).
 
 ---
@@ -80,7 +80,7 @@ would have you do."* Willing people idle for want of direction.
 
 - 🔴 **`yeti-1x1.html` line 37 hardcodes `5-YR RESIDENTIAL WARRANTY`** — every ad from that template carries it regardless of product. Safe on pots; **false on a steamer or commercial boiler.** Awaiting Evan. → `my-skills/hpc-ad-creative/work/creative/templates/yeti-1x1.html`
 - **Never a 5-year claim on steamer or commercial creative** — the 80–140 Gallon line is above the 120 QT cap *and* sold to commercial buyers. Same for the **160 QT Powered Cooker**, the sale's biggest revenue line ($5,817, 3 orders, Stephen's lane).
-- **Showroom cards carry no warranty line and no price date** — deliberate, 2026-09-03. A printed card cannot be recalled; re-pull `products.json` before every print run.
+- **Showroom cards carry no warranty line and no price date** — deliberate, 2026-09-03. **31 of them go on the floor.** A printed card cannot be recalled and a stale price is invisible; re-pull `products.json` before every print run, and Alexis has been told to pull a card the moment its price moves.
 - ⛔ **Do not repeat the 30%-off-legs mechanic in November** until landed cost per leg extension exists. Below ~$50.58 it paid for itself; above, it lost money on higher volume.
 - ⛔ **Never show Shopify net ÷ Meta spend (23.8×) as ROAS.** It credits Meta with commercial freight, a lawn mower, Biljana's email and Coalition's Google.
 - **Coalition's "Revenue Up 199.03% YoY"** (July 2026) is **unverified against Shopify.** Do not repeat it to Jay or Robert. Coalition only ran Google from 7/20.

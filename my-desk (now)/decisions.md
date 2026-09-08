@@ -11,6 +11,32 @@
 
 ## 2026-09
 
+**A Performance pot ships with the basket, the lid AND the drain valve — every size**
+— Evan, 2026-09-08. The Performance PDPs never say what is in the box and their variants
+only choose a valve, so the claim looked unsourced and the 30 QT Performance card was held
+back from print. Confirmed now and filed in
+[what-we-sell.md](../my-business%20%28context%29/what-we-sell.md). The only thing a
+Performance pot lacks against a Powered is the welded burner and stand. Unblocked the
+60/80/100/120 QT Performance cards.
+
+**Turkey rack fitment comes from Evan, not the product page** — Evan, 2026-09-08. The live
+PDP body contradicts its own variant names ("40 or 50 QT" vs "30 QT or larger"). The truth:
+**Single Upright ($25)** fries one bird and is built for the **30 QT Turkey Fryer** — usable
+in a 60 QT for a single turkey; **Dual Rack ($59.95)** fits the **60 QT** perfectly.
+**Ignore the page body.** Filed in what-we-sell.md.
+
+**Showroom card naming, set by Evan 2026-09-08** — "**Fryer**", never "Fish Fryer /
+Brazier". Both 4-Way products are "**4-Way Fryer / Pasta Cooker**"; the POWERED/PERFORMANCE
+tag distinguishes them. The 40 Gallon is "**40 Gallon**", never "160 QT". The 40 QT Sauce
+Stock Pot gets no card. Commercial boilers above the 40 Gallon get no cards — no photos.
+
+**All 31 showroom cards built and handed to Alexis** — 2026-09-08. Batches 1–3 complete:
+10 Powered cookers, 7 Performance, 2 steamers + the 40 Gallon, 6 burners, 5 accessories.
+Cards are generated from one data table with a gate that measures the rendered card, not a
+character budget — character counts proved a poor proxy for width and let a clipped price
+row through. Every claim traces to that product's own PDP, what-we-sell.md, or a figure
+Evan set. Detail → [archive/2026-09-08-showroom-cards-complete.md](archive/2026-09-08-showroom-cards-complete.md)
+
 **The live NOLA directory copy is now on file, verbatim** — Evan supplied it 2026-09-08,
 closing the gap logged earlier the same day. 134 words. → [description](../my-work%20%28outputs%29/content/other/trade-shows/2027-02-nola-home-garden-description.md)
 Three things in his edit are worth not re-opening: **"come by the booth and check it out for

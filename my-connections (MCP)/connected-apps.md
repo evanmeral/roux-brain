@@ -25,6 +25,7 @@
   - **Fix:** connect Google Calendar for `evan@highperformancecookers.com`. Until then, the calendar half of `/morning-brief` is unreliable.
 - **✅ Draft saving works.** A 2026-09-01 check found a draft missing and wrongly concluded the connector was broken. Evan had deleted it himself after doing the task. **Lesson: a missing draft is not proof of a broken connector — ask before writing a fault into this file.**
 - **Slack is the real HPC workspace** — `#general` was created by Jay Meral.
+- ⚠️ **Google Drive cannot carry large binaries.** `create_file` takes the file's bytes **inline as base64**, so every uploaded byte passes through the conversation. Found 2026-09-08 handing off the showroom cards: 31 print-resolution PNGs are 13.8 MB → **18.4 MB of base64 (~4.6M tokens)**; a single card is ~196k. Folders, Google Docs and text files are fine and cheap. **For image or print deliverables: create the folder, put a text guide in it, and have Evan drag the files in.** There is no local Drive mount on this Mac and no `rclone`/`gdrive` CLI.
 - **Google Drive holds video assets**, including `raw footage/8-19-26 commercial boiler/` (a 374 MB MP4 from the ~19 Aug commercial-boiler shoot). Garrett's footage is likely here — check Drive before asking him to re-send anything.
 - **Canva has an HPC Brand Kit** already set up.
 
