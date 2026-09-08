@@ -42,6 +42,8 @@ def pbox(fname, nudge=(0, 0), force_mid=False):
 
 
 POWERED, PERF = "POWERED &nbsp;·&nbsp; COMPLETE RIG", "PERFORMANCE &nbsp;·&nbsp; POT ONLY"
+STEAMER = "STEAMER &nbsp;·&nbsp; BUILT TO ORDER"
+COMMERCIAL = "COMMERCIAL &nbsp;·&nbsp; SPECIAL ORDER"
 
 P = [
  dict(key="18qt-powered", tag=POWERED, cut="18qt - pwd.png", h1=('18 QT', 'Powered Fryer'),
@@ -210,6 +212,77 @@ P = [
          ("Without the drain valve", "subtract $18", "$477", 0),
          ("Bigger drain valve", "1\" gate · 1-1/2\" gate valve", "+$10 / +$30", 0, 1)],
    add="Steamer insert $53.99 &nbsp;·&nbsp; Basket $95 &nbsp;·&nbsp; Lid $30.50"),
+ dict(key="100qt-performance", tag=PERF, cut="100-120qt - perf.png", h1=('100 QT', 'Performance Pot'),
+   h1size=96,
+   deck="The same Tunnel Tube pot, no burner. Runs on the burner you own.",
+   src="100 QT Performance PDP · contents confirmed by Evan 2026-09-08 (basket+lid+valve)",
+   feats=["Rolling boil in <b>under 7 minutes</b>", "Back to a boil in <b>90 seconds</b>",
+          "Nearly <b>3× the cooking surface</b>", "Uses <b>up to 75% less propane</b>",
+          "<b>4mm aluminum</b>, twice as thick", "Basket, lid and valve <b>included</b>"],
+   chips=["Crawfish", "Crabs", "Shrimp", "Lobster", "Steaming"],
+   rows=[("Pot, Basket &amp; Lid", "3/4\" gate valve · no burner", "$520", 1),
+         ("Without the drain valve", "subtract $18", "$502", 0),
+         ("Bigger drain valve", "1\" gate · 1-1/2\" gate valve", "+$10 / +$30", 0, 1)],
+   add="Steamer insert $53.99 &nbsp;·&nbsp; Basket $105 &nbsp;·&nbsp; Lid $32"),
+
+ dict(key="120qt-performance", tag=PERF, cut="100-120qt - perf.png", h1=('120 QT', 'Performance Pot'),
+   h1size=96,
+   deck="The same Tunnel Tube pot, no burner. Runs on the burner you own.",
+   src="120 QT Performance PDP · contents confirmed by Evan 2026-09-08 (basket+lid+valve)",
+   feats=["Rolling boil in <b>about 6.5 min</b>", "Back to a boil in <b>90 seconds</b>",
+          "Nearly <b>3× the cooking surface</b>", "Uses <b>up to 75% less propane</b>",
+          "<b>4mm aluminum</b>, twice as thick", "Basket, lid and valve <b>included</b>"],
+   chips=["Crawfish", "Crabs", "Shrimp", "Lobster", "Steaming"],
+   rows=[("Pot, Basket &amp; Lid", "3/4\" gate valve · no burner", "$550", 1),
+         ("Without the drain valve", "subtract $18", "$532", 0),
+         ("Bigger drain valve", "1\" gate · 1-1/2\" gate valve", "+$10 / +$30", 0, 1)],
+   add="Steamer insert $59.99 &nbsp;·&nbsp; Basket $120 &nbsp;·&nbsp; Lid $34.75"),
+ dict(key="4way-performance", tag=PERF, cut="4-way fryer - perf.png",
+   h1=('4-Way', 'Fryer / Pasta Cooker'), h1size=86, mid=True,
+   deck="Four sections, one pot. No burner — runs on the one you own.",
+   src="4-Way non-powered PDP (multi-use fryer/pasta) · what-we-sell 350-in-5 frying trio",
+   feats=["<b>Four separate sections</b>", "Fry oil to <b>350° in under 5 min</b>",
+          "Uses <b>up to 75% less propane</b>", "<b>4mm aluminum</b>, twice as thick",
+          "Takes <b>Cooker Leg Extensions</b>", "<b>1/4\" drain valve</b> option"],
+   chips=["Wings", "Pasta", "Fish", "Shrimp", "Fries"],
+   rows=[("Pot, no drain valve", "no burner — runs on yours", "$277.99", 1),
+         ("Add a 1/4\" valve", "drain it without lifting it", "$299.99", 0)],
+   add="Leg extensions $119 &nbsp;·&nbsp; Fryer thermometer $15.99"),
+
+ dict(key="28qt-steamer", tag=STEAMER, cut="28qt steamer.png", h1=('28 QT', 'Rack Steamer'),
+   deck="Burner, stand and hinged lid built in. One large steaming rack.",
+   src="28 QT Steamer PDP (rack 15.5x21, 20-35 oysters or 6-10 crab legs, 10-day lead time)",
+   feats=["One rack, <b>15.5\" × 21\"</b>", "Holds <b>20–35 small oysters</b>",
+          "Or <b>6–10 king crab legs</b>", "Or <b>several pounds of shrimp</b>",
+          "<b>Hinged lid</b> and built-in stand", "<b>Burner and stand</b> built in"],
+   chips=["Shrimp", "Crabs", "Oysters", "Tamales", "Veggies"],
+   rows=[("Steamer, one rack", "burner · hinged lid · built-in stand", "$1,325", 1),
+         ("Step up to the 100 QT", "two racks instead of one", "$1,525", 0)],
+   add_label="Lead time", add="Built to order &nbsp;·&nbsp; allow about 10 days"),
+
+ dict(key="100qt-steamer", tag=STEAMER, cut="100qt steamer_.png", h1=('100 QT', 'Rack Steamer'),
+   deck="Burner, stand and hinged lid built in. Two or three racks.",
+   src="100 QT Steamer PDP (racks 15.5x21, per-rack capacity, 2-week lead, freight quoted)",
+   feats=["Racks are <b>15.5\" × 21\"</b> each", "Each holds <b>20–35 oysters</b>",
+          "Or <b>6–10 king crab legs</b>", "Or <b>several pounds of shrimp</b>",
+          "<b>Hinged lid</b> and built-in stand", "<b>Burner and stand</b> built in"],
+   chips=["Shrimp", "Crabs", "Oysters", "Tamales", "Veggies"],
+   rows=[("Two racks", "burner · hinged lid · built-in stand", "$1,525", 1),
+         ("Three racks", "add $200", "$1,725", 0)],
+   add_label="Lead time", add="Built to order &nbsp;·&nbsp; allow about 2 weeks"),
+
+ dict(key="40gallon-powered", tag=COMMERCIAL, cut="40gal - propane_.png",
+   h1=('40 Gallon', 'Flip Basket'),
+   deck="Built-in flip basket, lid and stand. Boils in a third the time.",
+   src="40 Gallon PDP (3x surface, 1/3 the time, flip basket, 2in valve, special order)",
+   feats=["Nearly <b>3× the cooking surface</b>", "Boils in about <b>1/3 the time</b>",
+          "<b>Flip basket</b> built in", "<b>2\" drain valve</b> standard",
+          "Lid, stand and burner <b>included</b>", "<b>Special order</b> — call to buy"],
+   chips=["Crawfish", "Crabs", "Shrimp", "Boiling", "Steaming"],
+   rows=[("Triple Jet Burner", "standard build · 2\" drain valve", "$2,145", 1),
+         ("10\" Banjo Burner instead", "for cooking and frying", "$2,175", 0),
+         ("Natural gas", "Triple Jet · MultiJet", "$2,245 / $2,279", 0, 1)],
+   add_label="To order", add="Call 985-260-1505 &nbsp;·&nbsp; special order"),
 ]
 
 TPL = """<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="card.css"></head>
@@ -247,7 +320,7 @@ TPL = """<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet"
         <h2>WHAT IT COSTS</h2>
 {rows}
       </div>
-      <div class="addons"><b>Add later</b>{add}</div>
+      <div class="addons"><b>{add_label}</b>{add}</div>
     </div>
   </div>
 
@@ -302,7 +375,7 @@ for p in P:
             f'          <div class="what">{what}\n            <small>{sm}</small></div>\n'
             f'          <div class="amt{" two" if two and two[0] else ""}">{amt}</div>\n        </div>'
             for what, sm, amt, hero, *two in p["rows"]),
-        add=p["add"])
+        add=p["add"], add_label=p.get("add_label", "Add later"))
     open(os.path.join(HERE, p["key"] + ".html"), "w").write(html)
     built.append(p["key"])
 
