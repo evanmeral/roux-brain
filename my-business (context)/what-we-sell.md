@@ -51,6 +51,13 @@ The lead offer. Sell the Performance pot paired with the BB-TJB.
 
 > **Push 80 / 100 / 120 QT.** ✅ *Corrected by Evan 2026-09-01:* the BB-TJB **does fit a 60 QT and it works — it just isn't perfect, so there's no need to push that combo.** It is not incompatible; it is simply not the pairing to lead with. The 40, 30 and 18 QT are out of this push.
 
+⚠️ **What creative may claim: "pairs with 60 QT and up." Nothing wider.** Set by Evan
+2026-09-08 after a V3 carousel frame read *"pairs with ANY Performance pot"* — nothing
+documents the BB-TJB fitting the 30 or 40 QT Performance pots. "Out of this push" above is a
+**marketing** statement, not a fitment one; do not read it as evidence either way. Same
+failure mode as the leg-extension fitment catch — **a fitment line is a claim, never a
+flourish, and it is never widened past what this file documents.** → [decisions.md](../my-desk%20%28now%29/decisions.md)
+
 **Already built for this:** the **Platinum Boiling Bundle** ($737–$940, saves $100) is exactly Performance Pot + Triple Jet + Electronic Ignition. It's the packaged version of the main push — lead with it.
 
 ### 1B. Powered pots — the small sizes, their own push
