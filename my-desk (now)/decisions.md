@@ -11,6 +11,33 @@
 
 ## 2026-09
 
+**Louisiana Outdoor Expo, Mar 19–21 2027 ($900) — declined** — Evan, 2026-09-08.
+Closes the item that had been sitting open since 2026-09-03. Do not re-raise it. HPC's only
+booked 2027 show is NOLA Home & Garden.
+
+**Corrections to the NOLA Home & Garden booking, same day** — Evan, 2026-09-08. Two figures
+recorded earlier that day were wrong and are corrected here rather than by rewriting them:
+**the booth cost $1,700, not $1,850, and it is a standard 10×10, not a corner** — $1,850 was
+the corner price and we did not get a corner. One open side instead of two; that is a booth
+layout constraint, not just a saving.
+
+**🔥 Propane is not allowed in the NOLA Home & Garden exhibit hall** — confirmed by Evan with
+the show, 2026-09-08. This answers the open risk logged earlier today and it answers it the
+bad way: **HPC cannot boil at this booth.** The strongest thing the company can do in front of
+a stranger — a clock on a pot hitting a rolling boil in about seven minutes — is unavailable
+for three days in front of a New Orleans homeowner audience. Consequences already filed in
+[trade-shows/README.md](../my-work%20%28outputs%29/content/other/trade-shows/README.md): the
+demo becomes video with a legible running clock, the hands-on moment becomes an upturned pot
+with the welded tubes exposed, and **the high-res tunnel-tube image already on order from
+Garrett stops being a nice-to-have** — for a booth that cannot demo, that image is the demo.
+
+**Evan edited the submitted description himself; the brain's copy is not the live text** —
+2026-09-08. He pasted the long version and adjusted it, including removing the *"watch a pot
+come up, and time it yourself"* line once propane was ruled out. The drafts on file have been
+corrected for the propane constraint, but **what is publicly published is Evan's wording and
+the brain does not have it.** Ask him to paste it in before anyone treats the file as the
+published copy.
+
 **NOLA Home & Garden Show Feb 19–21 2027 booked and paid in full** — Evan, by phone,
 2026-09-08. $1,850 for the 10×10 corner. This closes a board item that had been open since
 2026-09-03 as "no deadline but placement worsens with time" — the placement argument won.

@@ -61,7 +61,6 @@ would have you do."* Willing people idle for want of direction.
 | **Jay** | Landed BOM + monthly overhead. Now also needs **landed cost per leg extension** — the ~$50.58 threshold that decides whether the 30% legs code paid | 2026-08-28 |
 | **Coalition** | Reply on Cater + Event, Mar 22–25 | — |
 | **Garrett** | High-res tunnel-tube-in-action still. The library's only one is **640×323** — HPC's best differentiator, no usable image | 2026-09-08 |
-| **Evan** | Confirm NOLA Home & Garden allows a **live flame demo** in the hall. The submitted description says *"watch a pot come up, and time it yourself"* — if propane is barred, that copy needs revising before the directory prints | 2026-09-08 |
 
 ---
 
@@ -71,7 +70,7 @@ would have you do."* Willing people idle for want of direction.
 - **CAC ceilings are provisional.** The figure on record is gross profit per unit — a *break-even line*, not a spending ceiling. Working: `internal/reports/2026-08-28-cac-model-v2.md`
 - **Showroom product cards** — format approved 2026-09-03, batch on hold at Evan's word. No re-design needed; suggested order 120 QT, then 18 QT. → [showroom-cards/](../my-work%20%28outputs%29/content/other/showroom-cards/)
 - **Lanes:** Google Ads + SEO is Coalition's — monitor and report only, Basecamp is the workspace. **Email / SMS / Klaviyo is Biljana's**, entirely; Evan has declined access twice.
-- ✅ **NOLA Home & Garden Show, Feb 19–21 2027 — BOOKED AND PAID IN FULL.** Evan confirmed by phone 2026-09-08. 10×10 corner, $1,850. Public directory description **submitted — the long version** → [description](../my-work%20%28outputs%29/content/other/trade-shows/2027-02-nola-home-garden-description.md). Nothing to do until the exhibitor kit lands (shield logo **not** the circle, booth contact, categories, photos, COI). ⛔ Nov 11 Cater-Event Expo is still a **no**.
+- ✅ **NOLA Home & Garden Show, Feb 19–21 2027 — BOOKED AND PAID IN FULL.** Evan, 2026-09-08. **$1,700, standard 10×10 — not a corner.** Directory description submitted (Evan's own edit of the long version). 🔥 **No propane in the exhibit hall** — the booth cannot boil, so the demo has to be video with a running clock. → [trade-shows](../my-work%20%28outputs%29/content/other/trade-shows/README.md). ⛔ Louisiana Outdoor Expo and the Nov 11 Cater-Event Expo are both a **no**.
 - **Nova's queue:** ad naming/build process · **missing-end-date pre-launch checklist line** (this sale's gap) · `laborday-hpc-dark/9x16.html` flame bar at **2.12:1 contrast** on the best-performing creative · two `what-we-sell.md` fixes (40 QT fixed steamer insert filed discontinued but live at $27.99, 10 on hand; BB-TJB compare-at identical to price).
 - **After the post-mortem:** June–October off-season plan (the real +$500K project) · weekly scoreboard cadence · retargeting (`retargeting-proposal-for-jay.md` — the sale's browsers go cold in ~2 weeks).
 

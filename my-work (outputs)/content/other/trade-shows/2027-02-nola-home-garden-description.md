@@ -1,46 +1,42 @@
 # Exhibitor Directory Description — New Orleans Home & Garden Show
 
 **Show:** New Orleans Home & Garden Show, Feb 19–21 2027
-**Booth:** 10×10 corner
+**Booth:** standard 10×10 (not a corner) · $1,700, paid in full
 **Field:** public exhibitor page / directory blurb
 **Written:** 2026-09-08 · Pete
-**Status:** ✅ **SUBMITTED — the LONG version (#3) is the one that went on the public page.**
-Evan confirmed by phone 2026-09-08: signed up, **paid in full**, booth confirmed for Feb 19 2027.
-The Short and Medium versions below are kept as fallbacks if the directory ever caps the field.
+**Status:** ✅ **SUBMITTED.** Evan pasted the long version (#3) and **edited it himself** before
+it went on the public page. Booth booked and paid — **$1,700, standard 10×10, not a corner.**
 
-> ⚠️ **One thing to check before the directory prints.** The submitted copy ends *"Come by the
-> booth, watch a pot come up, and time it yourself."* That is a public promise of a live demo.
-> Many indoor home shows bar open flame and propane in the hall. **Confirm with the show what is
-> allowed at a 10×10 indoor booth.** If a live boil is not permitted, this line has to change —
-> a video loop with a running clock is the honest substitute, and it still carries the hook.
+> ⚠️ **The live public text is Evan's edit, not what is written below.** He changed the
+> demo line because **propane is not allowed in the exhibit hall**, plus other fixes.
+> **Ask Evan to paste the submitted text in here** so this file matches what is actually
+> published. Until then, treat everything below as the draft it came from.
 
-Audience: New Orleans-area homeowners skimming a directory in February, front of
-crawfish season. Mostly residential backyard cooks. Most have not heard of us. The
-blurb has two jobs — say what we make, and give a reason to walk to the booth.
-
-Three lengths of the same description. Pick whichever fits the form's character cap.
+> 🔥 **No propane in the hall — the booth cannot boil.** Every "come watch it boil" line in
+> the drafts below is therefore dead copy. Corrected in the versions below; kept visible so
+> the reason is on record. Booth implications → [trade-shows README](README.md).
 
 ---
 
-## 1. Short — 41 words / **234 characters**
+## 1. Short — 40 words / **225 characters**
 
-High Performance Cookers builds outdoor cookers, boil pots and burners in Covington, about 45 minutes up the road. Our patented hand-welded Tunnel Tubes put a pot at a rolling boil in as fast as about 7 minutes. Come time it yourself.
-
----
-
-## 2. Medium — 81 words / **447 characters** *(most likely fit)*
-
-High Performance Cookers builds outdoor cookers, boil pots and burners in Covington, about 45 minutes up the road. The speed is not in the burner. It is in our patented Tunnel Tubes, hand-welded across the bottom of every pot so the heat spreads out instead of hammering one spot. Rolling boil in as fast as about 7 minutes. About 90-second recovery when the next sack goes in. Up to 75% less propane. Come stand at the booth and time it yourself.
+High Performance Cookers builds outdoor cookers, boil pots and burners in Covington, about 45 minutes up the road. Our patented hand-welded Tunnel Tubes put a pot at a rolling boil in as fast as about 7 minutes. Come see how.
 
 ---
 
-## 3. Long — 146 words / **798 characters** *(with paragraph breaks; 794 if pasted as one block)*
+## 2. Medium — 82 words / **446 characters**
+
+High Performance Cookers builds outdoor cookers, boil pots and burners in Covington, about 45 minutes up the road. The speed is not in the burner. It is in our patented Tunnel Tubes, hand-welded across the bottom of every pot so the heat spreads out instead of hammering one spot. Rolling boil in as fast as about 7 minutes. About 90-second recovery when the next sack goes in. Up to 75% less propane. Come by the booth and put your hands on one.
+
+---
+
+## 3. Long — 151 words / **816 characters** *(with paragraph breaks; 813 pasted as one block)*
 
 High Performance Cookers builds outdoor cookers, boil pots, burners and fish fryers in Covington, about 45 minutes up the road. Made in USA by a team of about twelve who weld the pots, pack the freight and answer the phone themselves.
 
 The speed is not in the burner. It is in the Tunnel Tubes, tubes we hand-weld across the bottom of every pot so the burner's heat spreads over the whole bottom instead of hammering one spot. Patent No. 11,844,459. That gets you a rolling boil in as fast as about 7 minutes, about 90-second recovery when the next sack goes in, and up to 75% less propane. The pots are 4mm aluminum, built to last generations with good care.
 
-Crawfish season is on. Come by the booth, watch a pot come up, and time it yourself.
+Crawfish season is on. Come by the booth, turn a pot over, and put your hands on the tubes that do it.
 
 Feel the heat. See the speed. Taste the difference.
 

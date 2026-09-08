@@ -133,15 +133,23 @@ Live sheet: **`HPC Trade Shows - 2027`** (Google Drive, Evan's). This is the sou
 
 | Show | Date | Price | Booth | Status |
 |---|---|---|---|---|
-| **NOLA Home & Garden** — Caesars Superdome | **Feb 19–21, 2027** | $1,850 | 10x10 corner | Not signed up yet; Evan plans to |
-| **Louisiana Outdoor Expo** | **Mar 19–21, 2027** | $900 | 10x10 | Planned |
+| **NOLA Home & Garden** — Caesars Superdome | **Feb 19–21, 2027** | **$1,700** | standard 10x10 | ✅ **Booked and paid in full** (Evan, 2026-09-08). Directory description submitted. |
+| **Louisiana Outdoor Expo** | **Mar 19–21, 2027** | $900 | 10x10 | ⛔ **No** — declined by Evan, 2026-09-08 |
 | **Cater + Event** (Coalition-sourced) | **Mar 22–25, 2027** | — | — | Waiting to hear back |
 
-Booking terms for NOLA H&G: 33% deposit to secure, 3.5% card fee (free via ACH/E-check), no deadline while booths remain — but earlier booking gets better placement. Contact: Corey DesRoches, (504) 835-6383.
+Contact: Corey DesRoches, (504) 835-6383. *(The $1,850 / corner-booth figure recorded earlier
+was the corner price — we did not get a corner. Corrected by Evan, 2026-09-08.)*
+
+### 🔥 No propane in the NOLA exhibit hall
+Confirmed by Evan with the show, 2026-09-08. **HPC cannot boil at this booth.** The demo has to
+be **video with a legible running clock**, and the hands-on moment becomes an upturned pot with
+the welded tunnel tubes exposed — which needs no flame and lands the fact most often mis-stated
+about HPC, that the technology is in the pot. Full booth implications →
+[trade-shows](../my-work%20%28outputs%29/content/other/trade-shows/README.md).
 
 ⛔ **The Cater-Event Expo on Nov 11, 2026 is a no.** Coalition surfaced it; Evan declined. Don't re-propose it.
 
-**Why this matters:** these land in **February and March — the peak of crawfish season**, in front of exactly the Backyard Boil Host and Cook Team segments. A live 7-minute boil is the highest-fidelity demonstration this brand has, and it cannot be replicated in an ad.
+**Why this matters:** NOLA H&G lands in **February — Mardi Gras and the season ramp**, in front of exactly the Backyard Boil Host segment, 45 minutes from the Covington shop. ⚠️ **But the argument that used to justify trade shows does not apply here.** A live 7-minute boil is the highest-fidelity demonstration this brand has, and the hall bars propane — so this show has to be won on the pot in people's hands and a clock on a screen, not on steam.
 
 ## ✅ Already shipped — do NOT re-propose
 Ultimate Boiling Bundle · Platinum Boiling Bundle · Gift Card · Scratch & Dent line · Boil Boss Ultimate Combo.
