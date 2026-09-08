@@ -4,17 +4,58 @@
 **Booth:** standard 10×10 (not a corner) · $1,700, paid in full
 **Field:** public exhibitor page / directory blurb
 **Written:** 2026-09-08 · Pete
-**Status:** ✅ **SUBMITTED.** Evan pasted the long version (#3) and **edited it himself** before
-it went on the public page. Booth booked and paid — **$1,700, standard 10×10, not a corner.**
+**Status:** ✅ **LIVE.** The text below is what Evan actually submitted, in his words,
+supplied 2026-09-08. Booth booked and paid — **$1,700, standard 10×10, not a corner.**
+🔥 **No propane in the exhibit hall** → [trade-shows README](README.md).
 
-> ⚠️ **The live public text is Evan's edit, not what is written below.** He changed the
-> demo line because **propane is not allowed in the exhibit hall**, plus other fixes.
-> **Ask Evan to paste the submitted text in here** so this file matches what is actually
-> published. Until then, treat everything below as the draft it came from.
+---
 
-> 🔥 **No propane in the hall — the booth cannot boil.** Every "come watch it boil" line in
-> the drafts below is therefore dead copy. Corrected in the versions below; kept visible so
-> the reason is on record. Booth implications → [trade-shows README](README.md).
+# ⭐ PUBLISHED — the live directory copy
+
+**134 words · 740 characters** (with paragraph breaks; 738 as one block).
+**Verbatim. Do not edit this block.** If the listing changes, replace it and say who changed it.
+
+> At High Performance Cookers we build outdoor cookers, boil pots, burners and fryers. All of
+> our products are made and hand-welded right here in south Louisiana. The speed is not in the
+> burner. It's in our patented tunnel tube technology, tubes we hand-weld across the bottom of
+> every pot so the burner's heat spreads over the whole bottom instead of hammering one spot.
+> Our pots get you to a rolling boil in under 7 minutes, with about a 90-second recovery once
+> the next sack goes in, all while saving you up to 75% less propane per boil. All of our pots
+> are 4mm aluminum, built to last generations with good care.
+>
+> Crawfish season is on. Come by the booth and check it out for yourself.
+>
+> Feel the heat. See the speed. Taste the difference.
+
+## What Evan changed, and what it commits us to
+
+Recorded so nobody "corrects" the live copy back toward the draft.
+
+- **"Come by the booth and check it out for yourself"** replaces the draft's *"watch a pot come
+  up, and time it yourself."* This is the propane fix, and it is the right one — it still pulls
+  people to the booth without promising a boil we cannot deliver in that hall.
+- **"right here in south Louisiana"** replaces the draft's *"in Covington, about 45 minutes up
+  the road."* Evan's call. Regional rather than proximity-specific.
+- **The patent number and the team of twelve are out.** "Patented tunnel tube technology" carries
+  the claim without No. 11,844,459. Fine for a directory blurb; **both belong on booth signage**,
+  where there is room and where the specific number does more work than the word "patented."
+- **"rolling boil in under 7 minutes"** — firmer than the house *"as fast as / up to"* rule, and
+  **consistent with what Evan already approved for the showroom cards on 2026-09-03**: it is
+  verbatim the live 30 QT PDP copy. Not a new exception, the same one. Everything else in the
+  paragraph stays qualified — *"about a 90-second recovery," "up to 75% less propane."*
+- **No warranty line, no show special.** Both deliberate, both survived his edit.
+
+⚠️ **One wobble, for next time, not worth chasing now.** *"saving you up to 75% less propane"*
+doubles the comparison — saving *and* less. *"using up to 75% less propane"* is the clean form.
+It is live, the meaning reads fine to a visitor, and it is not worth a resubmission.
+
+## The booth still has to answer the claim
+
+The blurb promises speed to people who will arrive skeptical — reviews show that plainly, two
+customers volunteered *"it worked like advertised."* **The hall bars propane, so the booth cannot
+settle it with a pot.** What has to carry it instead: **video with a legible running clock**, and
+**an upturned pot people can put their hands on** so the tubes are a physical fact rather than a
+sentence. Detail → [trade-shows README](README.md).
 
 ---
 

@@ -11,6 +11,20 @@
 
 ## 2026-09
 
+**The live NOLA directory copy is now on file, verbatim** — Evan supplied it 2026-09-08,
+closing the gap logged earlier the same day. 134 words. → [description](../my-work%20%28outputs%29/content/other/trade-shows/2027-02-nola-home-garden-description.md)
+Three things in his edit are worth not re-opening: **"come by the booth and check it out for
+yourself"** is the propane fix and it holds; **"right here in south Louisiana"** replaces the
+draft's Covington-and-45-minutes, his call; and **the patent number and the team of twelve are
+out of the blurb** — they belong on booth signage, where the specific number does more work than
+the word "patented."
+
+**"Rolling boil in under 7 minutes" is not a new exception** — 2026-09-08. The live blurb states
+it flat rather than the house *"as fast as."* This is **the same call Evan already made for the
+showroom cards on 2026-09-03**, on the same grounds: it is verbatim the live 30 QT PDP copy.
+Everything else in the paragraph stays qualified. Treat the two as one standing position, not two
+separate lapses, and do not "fix" it back.
+
 **Louisiana Outdoor Expo, Mar 19–21 2027 ($900) — declined** — Evan, 2026-09-08.
 Closes the item that had been sitting open since 2026-09-03. Do not re-raise it. HPC's only
 booked 2027 show is NOLA Home & Garden.
