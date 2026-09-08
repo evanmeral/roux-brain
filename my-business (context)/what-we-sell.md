@@ -19,6 +19,12 @@
 | Buyer | Wants a complete rig, one purchase, done | Already has a burner, or wants to build around a better one |
 | Price | Higher (120 QT Powered $715–$805) | Lower (120 QT Performance $532–$580) |
 
+> ✅ **A Performance pot ships with the basket, the lid AND the drain valve.** Confirmed by
+> Evan 2026-09-08. The product pages do not say this — the Performance PDPs are silent on
+> what is in the box and the variants only choose a valve size, which is why it looked
+> unverified. It is verified now: **basket + lid + drain valve, every size.** The only
+> thing a Performance pot lacks versus a Powered is the welded burner and stand.
+
 **Both carry the Tunnel Tube technology.** The speed comes from the tubes on the pot bottom, not the burner — so a Performance pot on a customer's existing burner still delivers the speed and the fuel savings. That's a ~$180 cheaper entry point into the technology, and an obvious upgrade path: Performance pot → add BB-TJB ($425) → full rig. Two transactions instead of one lost sale.
 
 ## Setup types (the PDP configurator)
@@ -92,6 +98,12 @@ These carry the off-season. See the year-round mandate below.
 | **100 QT / Commercial Powered Rack Steamer** (3 trays) | $1,525–$1,725 |
 
 *Historically low volume; Evan reversed the "do not market" call on 2026-09-01. Both the consumer 28 QT and the commercial 100 QT get pushed.* **Tier 2 confirmed by Evan, 2026-09-01** — steaming is genuinely non-seasonal, so they belong with the year-round line rather than in the Tier 1 season push.
+
+> ⚠️ **Turkey rack fitment — go by this, not by the product page.** Set by Evan 2026-09-08;
+> the PDP body contradicts its own variant names, so **ignore the page body.**
+> **Single Upright ($25)** fries one turkey and is built for the **30 QT Turkey Fryer**. It
+> will work in a 60 QT if you only want one bird. **Dual Rack ($59.95)** fries two and fits
+> the **60 QT** perfectly.
 
 **Trays remain the highest-certainty AOV lever in the business** — they attach to pot sales.
 
