@@ -1,7 +1,7 @@
 # Our Team
 
 **Last updated:** 2026.09.08
-**Source:** HPC-MKTG knowledge base (2026-08-26), Evan's corrections (2026-09-01), Alexis added by Evan (2026-09-08).
+**Source:** HPC-MKTG knowledge base (2026-08-26), Evan's corrections (2026-09-01), Alexis Vegas added by Evan (2026-09-08).
 
 ---
 
@@ -13,7 +13,7 @@
 | **Robert** | **Co-owner**, product designer | Creator of the **Boil Boss** line — HPC absorbed Boil Boss and now manufactures it in-house. Designs new products. **Reads the marketing reports closely and numerately.** |
 | **Evan Meral** | **Lead marketer** — the operator of this brain | Sole day-to-day marketing operator. Runs Meta ads himself, does all social posting manually, handles design by default. |
 | **Stephen** | Manager of the **commercial product section** + **commercial shipping/receiving lead** | Talks commercial buyers through what they're getting and how it ships, so freight is never a checkout surprise on LTL orders. Also runs commercial shipping and receiving. |
-| **Alexis** | **Front desk assistant** | Answers the phones, tidies the showroom, answers questions for walk-ins, and picks up the small jobs around the shop. *(Evan, 2026-09-08.)* **She is the first person a walk-in talks to and the only one standing in the showroom all day** — so anything printed for the floor goes to her, and she is the one who will notice when a card no longer matches the shelf. Owns printing and placing the 31 [showroom cards](../my-work%20%28outputs%29/content/other/showroom-cards/). Surname and email not yet on record. |
+| **Alexis Vegas** | **Front desk assistant** | Answers the phones, tidies the showroom, answers questions for walk-ins, and picks up the small jobs around the shop. *(Evan, 2026-09-08.)* **She is the first person a walk-in talks to and the only one standing in the showroom all day** — so anything printed for the floor goes to her, and she is the one who will notice when a card no longer matches the shelf. Owns printing and placing the 31 [showroom cards](../my-work%20%28outputs%29/content/other/showroom-cards/). `alexis@highperformancecookers.com` |
 | **Todd Tunstall** | Original creator of the Tunnel Tube technology | Historical/story credit. |
 
 **About twelve people total** do everything — welding tunnel tubes by hand, packing freight, answering the phone. *"A small team of 12 that do everything. No big corporate entity here."* That line is a genuine trust asset — use it.
@@ -51,7 +51,7 @@
 
 - **Evan: `evan@highperformancecookers.com`** — the canonical address, and the one he types out in full. `evan@hpcookers.com` appears to route to the same mailbox (Basecamp uses it), but **always write the full one**.
 - **Robert: `robert@lapeyre.dev`** — the address to send to. He also appears as `robert@theboilboss.com`; **ignore that one.**
-- Jay: `jay@highperformancecookers.com` · Stephen: `stephen@highperformancecookers.com`
+- Jay: `jay@highperformancecookers.com` · Stephen: `stephen@highperformancecookers.com` · Alexis: `alexis@highperformancecookers.com`
 
 ---
 
