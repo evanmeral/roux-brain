@@ -11,6 +11,24 @@
 
 ## 2026-09
 
+**NOLA Home & Garden Show Feb 19–21 2027 booked and paid in full** — Evan, by phone,
+2026-09-08. $1,850 for the 10×10 corner. This closes a board item that had been open since
+2026-09-03 as "no deadline but placement worsens with time" — the placement argument won.
+**It is HPC's first fixed 2027 date and it lands in February, the Mardi Gras / season-ramp
+month**, in front of a New Orleans homeowner audience 45 minutes from the Covington shop.
+⛔ The Nov 11 Cater-Event Expo remains a no; that has not changed.
+
+**The long (146-word) version of the exhibitor description is the public copy** — Evan,
+2026-09-08. Three lengths were written against an unknown character cap; Evan used the
+longest. Deliberate choices inside it, so they are not re-litigated later: **no warranty
+line at all** (it cannot carry both required qualifiers — residential, 120 QT or smaller —
+at that length, and a shortened 5-year claim is false), **no discount or show special**
+(pricing is a ROUX call, not a copy one), fryers appear only as *fish fryers* and never near
+crawfish, and every performance number is qualified. **Open risk:** the copy promises
+*"watch a pot come up, and time it yourself"* — a live demo. Whether an indoor 10×10 booth
+may run propane is unconfirmed, and if it may not, the line must be revised before the
+directory prints. → [description](../my-work%20%28outputs%29/content/other/trade-shows/2027-02-nola-home-garden-description.md)
+
 **BB-TJB fitment wording narrowed to "PAIRS WITH 60 QT AND UP"** — Evan, 2026-09-08.
 The V3 carousel's frame 2 originally read "pairs with ANY Performance pot." Nothing
 documents that: `what-we-sell.md` confirms the Triple Jet fits a 60 QT (works, just isn't
@@ -130,3 +148,27 @@ Navimow and Rugged Road are Tier 3 inbound-only. Only Predator grills are do-not
 The affiliate program stays (UpPromote, 5% commission, free product). Judge partners on
 *incremental* revenue, never activity metrics — BM Digital claimed three-quarters of
 annual revenue while shipping free product to creators who never posted.
+
+**Paid Meta static ads ship 1:1, 9:16 and 1.91:1 — 4:5 is organic only** — Evan, 2026-09-08.
+Replaces the earlier `{1x1, 4x5, 9x16}` set. The old set had no horizontal, so right column,
+Search and Audience Network had no correctly-shaped asset. 4:5 comes out because its job is
+feed posts and carousels. `build-set.sh` now builds the three paid sizes and **exits non-zero
+if any is missing**, so an incomplete set cannot ship quietly; `--with-4x5` for organic builds.
+
+**Add new ads, never replace creative on a live ad** — Evan, 2026-09-08, acted on.
+Meta counts a creative change as a significant edit, so the ad resets into learning either
+way — replacing also discards the original's social proof and takes a converting ad offline.
+Two final-hours ads (`LaborDay_C_FinalHours_Sept8`, `LaborDay_D_TunnelTube_Sept8`) were
+published as duplicates of `LaborDay_B_HPCDark_Sept1-8` with nothing paused.
+
+**Concept C ran on the sale's last night rather than being held** — Evan, 2026-09-08.
+The hold argument was "a quality argument needs frequency and time." It did not survive his
+push-back: learning-phase cost only matters if the ad has a future, and every ad in that set
+was being switched off at midnight. Frequency 5.05 argued *for* fresh creative that night.
+
+**The Labor Day sale worked — +31.8% on residential core, YoY** — established 2026-09-08.
+An earlier "roughly flat" read stripped lumpy commercial and non-cooker lines from the sale
+week but not from the baseline, which itself carried 23.0% commercial. Corrected, the lift is
+real and is a floor. **The soft spot is AOV at $321.03**, the lowest of four windows and 24%
+below the prior-year week on the same mechanic.
+→ `archive/2026-09-08-labor-day-sale-analysis.md`

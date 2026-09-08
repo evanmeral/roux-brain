@@ -4,7 +4,15 @@
 **Booth:** 10×10 corner
 **Field:** public exhibitor page / directory blurb
 **Written:** 2026-09-08 · Pete
-**Status:** draft — Evan to approve before it goes on the form
+**Status:** ✅ **SUBMITTED — the LONG version (#3) is the one that went on the public page.**
+Evan confirmed by phone 2026-09-08: signed up, **paid in full**, booth confirmed for Feb 19 2027.
+The Short and Medium versions below are kept as fallbacks if the directory ever caps the field.
+
+> ⚠️ **One thing to check before the directory prints.** The submitted copy ends *"Come by the
+> booth, watch a pot come up, and time it yourself."* That is a public promise of a live demo.
+> Many indoor home shows bar open flame and propane in the hall. **Confirm with the show what is
+> allowed at a 10×10 indoor booth.** If a live boil is not permitted, this line has to change —
+> a video loop with a running clock is the honest substitute, and it still carries the hook.
 
 Audience: New Orleans-area homeowners skimming a directory in February, front of
 crawfish season. Mostly residential backyard cooks. Most have not heard of us. The

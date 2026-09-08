@@ -35,7 +35,7 @@ JAN  FEB  MAR  APR  MAY  JUN  JUL  AUG  SEP  OCT  NOV  DEC
 |---|---|---|---|
 | **Nov–Dec (prior yr)** | Turkey fry + gifting | Gift guide, Ultimate Combo as gift, **Season Pass presale** | Nov 1 |
 | **January** | Season opens. Buyers replacing/upgrading rigs. | **Biggest acquisition push of the year.** "Get your rig before season." | Dec 26 |
-| **February** | **Mardi Gras** + season ramping | Parade-day boils, crowd math, fast shipping urgency | Jan 10 |
+| **February** | **Mardi Gras** + season ramping. **📍 NOLA Home & Garden Show, Feb 19–21 2027** — booked and paid, 10×10 corner (Evan, 2026-09-08) | Parade-day boils, crowd math, fast shipping urgency. Show year: booth assets and staffing want a January start | Jan 10 |
 | **March** | **Lent — Fridays = fish fries.** Crawfish peak. | Fryer push (18 QT) + crawfish cookers running parallel | Feb 1 |
 | **April** | **Easter + peak crawfish.** Highest-volume month. | Max budget. Bundles. Fast shipping. | Mar 1 |
 | **May** | **Memorial Day** + season tail | "Last big boils of the season" + graduation parties | Apr 10 |

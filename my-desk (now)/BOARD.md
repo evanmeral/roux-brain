@@ -7,40 +7,46 @@
 
 ---
 
-## 🟢 Running — Labor Day sale, **FINAL DAY**. Ends tonight, Tue Sept 8, 11:59pm CT
+## 🟢 Running — Labor Day sale, FINAL DAY. Ends tonight Tue Sept 8, 11:59pm CT
 
-Codes `LABORDAY10-26` (10% sitewide) + `LABORDAY30-LEGS` (30% legs). **They stack.
-Manual entry.** Confirmed active in Shopify 2026-09-02; expire Sept 9 04:59 UTC.
-Master docs → [2026-09-labor-day/](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/)
+Codes `LABORDAY10-26` (10% sitewide) + `LABORDAY30-LEGS` (30% legs). **They stack. Manual entry.**
+Re-verified ACTIVE in Shopify 2026-09-08, `endsAt 2026-09-09T04:59:59Z` — they expire on their own.
+Masters → [2026-09-labor-day/](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/)
 
-- ✅ **All content is posted. Nothing left to create or schedule.** V1 and V2 packs ran their course. The V3 accessory carousel went up on IG + FB today. Two stories scheduled 5pm tonight are the final posts of the sale.
-- 📣 **Comments and DMs are the only live job left.** Last day drives the most price pushback; 15 reply scripts already written → `ORGANIC-PACK-V2/COMMENT-AND-DM-REPLIES.md`
-- ⚠️ **Two SKUs the V3 carousel points at are backorder, not in stock** — adjustable shelf $119.99 (1 unit) and 10" Banjo $139 (0). Ship-as-is was Evan's call; if asked about delivery, say backorder plainly.
-- ⏰ **After midnight:** confirm both codes actually deactivated, and that no live creative, bio link or site banner still promises the sale.
-- **Meta:** 4 ads live in `HP Cookers ADs` / `BPM_TOF_Manual`. The weak duplicate ("Copy," $91.64/purchase vs $34.38) was held untouched so a mid-sale pause wouldn't reset learning — **that hold expires tonight; it can be paused from tomorrow.** Naming/build process still needs fixing (Nova).
+- 📱 **Final-hours story, 6pm.** `13_SEP08-eve_STORY_final-hours.png` (+ optional frame 2) in
+  `ORGANIC-PACK-V3/`. Countdown sticker to midnight, link sticker **"SHOP BEFORE 11:59"**. Re-post frame 1 ~9:30pm.
+- 📣 **Six Meta ads live**, not four. The four originals plus `LaborDay_C_FinalHours_Sept8`
+  and `LaborDay_D_TunnelTube_Sept8`, published 2026-09-08 as duplicates of
+  `LaborDay_B_HPCDark_Sept1-8` with nothing paused.
+
+### 🔴 Wednesday 7am — the only real exposure
+
+**All six ads are `Ends: Ongoing`**, each carrying a `10% OFF` badge against a dead code.
+Nothing turns them off automatically. ① **Switch off all six.** ② Check
+`18qt-TOF-Prospecting` creative for sale references — leave it running if clean ($20.09 CPP,
+cheapest in the account). ③ **Sweep the site** — announcement bar, popups, PDP badges, cart drawer.
 
 ---
 
 ## 🔺 Now — top three
 
-**1. Sale post-mortem — tomorrow, Sept 9.** Needs a fresh pull: Sept 1–8 revenue, orders
-and AOV against the prior week · full-window Meta spend and CPP · usage split between the
-two codes · whether the legs-attach thesis held past the first two days.
-⚠️ **Nothing in Numbers below covers the back half of the sale — do not reuse it.**
-Finn pulls, ROUX reads it.
+**1. Post-mortem, Sept 9.** Most of it is answered → [analysis](archive/2026-09-08-labor-day-sale-analysis.md).
+**The sale worked: +31.8% on residential core YoY, a floor.** Two questions left: did it
+*acquire or harvest* (44.9% returning), and the daily CPP/CPM/CTR curve on both campaigns to
+settle fatigue vs ordinary decay. **First re-pull Sept 1–8 complete** — every figure excludes
+deadline day.
 
-**2. Write the one-page creator brief.** ⏰ **Now due — parked until the sale wrapped.**
-~17 creators on UpPromote (5% commission, free product for a couple posts a month).
-At least one signed up, asked what content would help, and was told *"im honestly not
-fully sure what we would have you do."* Willing people idle for want of direction.
+**2. ⭐ `18qt-TOF-Prospecting` is the off-season engine and nobody was watching it.**
+$20.09 CPP, frequency 1.90, ~$46/day — beating the flagship sale campaign by 32%. 18 QT was
+the #2 revenue line ($4,924, 16 units) and is a **fish fryer**, not seasonal. Garrett's 18 QT
+video has sat unwatched since Sept 1. Scale ≤20% every 3 days; stop if trailing-7-day CPP
+passes ~$30 or frequency crosses 2.5. ⚠️ **Not past step one without landed BOM for the 18 QT.**
+
+**3. Write the one-page creator brief.** ⏰ Evan said revisit after the sale.
+~17 creators on UpPromote (5% commission, free product for a couple posts a month). One
+signed up, asked what content would help, and was told *"im honestly not fully sure what we
+would have you do."* Willing people idle for want of direction.
 ⛔ Paid content is discontinued — do not offer it.
-
-**3. Sign up for NOLA Home & Garden, Feb 19–21 2027.**
-$1,850 for the 10×10 corner, 33% deposit, ACH avoids the 3.5% card fee. No deadline
-but placement worsens with time. Sheet: `HPC Trade Shows - 2027` (Drive).
-Also live: Louisiana Outdoor Expo Mar 19–21 ($900). ⛔ Nov 11 Cater-Event Expo is a **no**.
-
-*Demoted from Now: **showroom product cards** → Parked. Held by Evan since 2026-09-03; a job waiting on a green light is parked, not urgent.*
 
 ---
 
@@ -48,71 +54,65 @@ Also live: Louisiana Outdoor Expo Mar 19–21 ($900). ⛔ Nov 11 Cater-Event Exp
 
 | Who | What | Since |
 |---|---|---|
+| **Evan** | Post the 6pm final-hours story; kill six ads Wed 7am | 2026-09-08 |
 | **Evan** | Green light to run the showroom-card batch across the catalog | 2026-09-03 |
-| **Evan** | Confirm Garrett's 18 QT video (`~/Desktop/Home Fryer .mp4`), watch once for claims risk, ask for a 15–20s cut | 2026-09-01 |
+| **Evan** | Confirm Garrett's 18 QT video (`~/Desktop/Home Fryer .mp4`), watch for claims risk, ask for a 15–20s cut | 2026-09-01 |
 | **Evan** | Decide: make the hardcoded warranty badge a variable (see Landmines) | 2026-09-01 |
-| **Jay** | Excel with landed BOM + monthly overhead — unblocks the real CAC ceiling. May be superseded by Digit. | 2026-08-28 |
+| **Jay** | Landed BOM + monthly overhead. Now also needs **landed cost per leg extension** — the ~$50.58 threshold that decides whether the 30% legs code paid | 2026-08-28 |
 | **Coalition** | Reply on Cater + Event, Mar 22–25 | — |
+| **Garrett** | High-res tunnel-tube-in-action still. The library's only one is **640×323** — HPC's best differentiator, no usable image | 2026-09-08 |
+| **Evan** | Confirm NOLA Home & Garden allows a **live flame demo** in the hall. The submitted description says *"watch a pot come up, and time it yourself"* — if propane is barred, that copy needs revising before the directory prints | 2026-09-08 |
 
 ---
 
 ## ⏸️ Parked — deliberately, do not re-raise
 
-- **Showroom product cards.** Format approved (30 QT pair, 2026-09-03), full batch held by Evan "for now." Print setup and both pre-flight checks are documented — resuming needs a green light, not a re-design. Start order: 120 QT, then 18 QT. → [showroom-cards/](../my-work%20%28outputs%29/content/other/showroom-cards/)
-- **Oversold SKUs / negative inventory.** Parked by Evan 2026-09-01. **Digit** becomes the source of truth for inventory *and* overhead. When it connects, **ask it about overhead before stock** — that is what unblocks the CAC ceiling.
-- **CAC ceilings are provisional.** Robert's correction: the figure on record is gross profit per unit — a *break-even line*, not a spending ceiling. Working: `internal/reports/2026-08-28-cac-model-v2.md`
-- **Google Ads + SEO** — Coalition's lane. Monitor and report only; suggestions go to Evan as a document to forward, never as direct changes. Basecamp is the real workspace.
-- **Email / SMS / Klaviyo** — Biljana's, entirely. Evan has declined access twice.
-- **Three fixes for Nova, after the sale** (found 2026-09-03): `brand.css` sets `.pbox{overflow:hidden}`, clipping every product's drop-shadow into a faint rectangle across *all* creative from those templates — worked around in the V3 templates only, shared file deliberately untouched mid-sale · the 40 QT fixed steamer insert is filed as discontinued in `what-we-sell.md` but is live at $27.99 · the BB-TJB carries a compare-at price identical to its price.
-- **After the post-mortem:** the June–October off-season plan (the real +$500K project) · weekly scoreboard cadence.
+- **Oversold SKUs / negative inventory.** Parked by Evan 2026-09-01. **Digit** becomes source of truth for inventory *and* overhead. When it connects, **ask about overhead before stock**.
+- **CAC ceilings are provisional.** The figure on record is gross profit per unit — a *break-even line*, not a spending ceiling. Working: `internal/reports/2026-08-28-cac-model-v2.md`
+- **Showroom product cards** — format approved 2026-09-03, batch on hold at Evan's word. No re-design needed; suggested order 120 QT, then 18 QT. → [showroom-cards/](../my-work%20%28outputs%29/content/other/showroom-cards/)
+- **Lanes:** Google Ads + SEO is Coalition's — monitor and report only, Basecamp is the workspace. **Email / SMS / Klaviyo is Biljana's**, entirely; Evan has declined access twice.
+- ✅ **NOLA Home & Garden Show, Feb 19–21 2027 — BOOKED AND PAID IN FULL.** Evan confirmed by phone 2026-09-08. 10×10 corner, $1,850. Public directory description **submitted — the long version** → [description](../my-work%20%28outputs%29/content/other/trade-shows/2027-02-nola-home-garden-description.md). Nothing to do until the exhibitor kit lands (shield logo **not** the circle, booth contact, categories, photos, COI). ⛔ Nov 11 Cater-Event Expo is still a **no**.
+- **Nova's queue:** ad naming/build process · **missing-end-date pre-launch checklist line** (this sale's gap) · `laborday-hpc-dark/9x16.html` flame bar at **2.12:1 contrast** on the best-performing creative · two `what-we-sell.md` fixes (40 QT fixed steamer insert filed discontinued but live at $27.99, 10 on hand; BB-TJB compare-at identical to price).
+- **After the post-mortem:** June–October off-season plan (the real +$500K project) · weekly scoreboard cadence · retargeting (`retargeting-proposal-for-jay.md` — the sale's browsers go cold in ~2 weeks).
 
 ---
 
 ## ⛔ Landmines — do not ship these
 
-- 🔴 **`yeti-1x1.html` line 37 hardcodes `5-YR RESIDENTIAL WARRANTY`.** Every ad rendered from that template carries the claim regardless of product. Safe on pots; **false on a steamer or a commercial boiler.** Not changed — awaiting Evan.
-  → `my-skills/hpc-ad-creative/work/creative/templates/yeti-1x1.html`
-- **Never put a 5-year claim on steamer or commercial creative.** The commercial line (80–140 Gallon, up to $5,775) is above the 120 QT size cap *and* sold to commercial buyers. It fails on both grounds. All commercial products carry the full 2-year.
-- **Fitment is a claim, not a flourish.** Leg extensions fit the 18 QT, 4-Way and 40 QT only. The BB-TJB is documented for **60 QT and up** — "any Performance pot" was caught in V3 review 2026-09-03 and narrowed. Never widen a fitment line past what `what-we-sell.md` documents.
-- **Showroom cards carry no warranty line at all** — deliberate, 2026-09-03. Saying nothing is safe; saying "5-year warranty" short is not. If one is ever added it needs **both** qualifiers: residential, and 120 QT or smaller.
-- **Showroom cards carry no price date, and a printed card cannot be recalled.** Re-pull `products.json` and re-render before every print run; pull old cards off the floor when a price moves.
-- ✅ **The Labor Day ads need no warranty edit. Do not re-raise this.** Checked twice, resolved 2026-09-01.
-- **Coalition's "Revenue Up 199.03% YoY"** (July 2026 report) is **unverified against Shopify.** Do not repeat it to Jay or Robert until reconciled. Coalition only ran Google from 7/20, so most of that July was BM Digital's.
-- **Never quote a price that is not in** [what-we-sell.md](../my-business%20%28context%29/what-we-sell.md).
+- 🔴 **`yeti-1x1.html` line 37 hardcodes `5-YR RESIDENTIAL WARRANTY`** — every ad from that template carries it regardless of product. Safe on pots; **false on a steamer or commercial boiler.** Awaiting Evan. → `my-skills/hpc-ad-creative/work/creative/templates/yeti-1x1.html`
+- **Never a 5-year claim on steamer or commercial creative** — the 80–140 Gallon line is above the 120 QT cap *and* sold to commercial buyers. Same for the **160 QT Powered Cooker**, the sale's biggest revenue line ($5,817, 3 orders, Stephen's lane).
+- **Showroom cards carry no warranty line and no price date** — deliberate, 2026-09-03. A printed card cannot be recalled; re-pull `products.json` before every print run.
+- ⛔ **Do not repeat the 30%-off-legs mechanic in November** until landed cost per leg extension exists. Below ~$50.58 it paid for itself; above, it lost money on higher volume.
+- ⛔ **Never show Shopify net ÷ Meta spend (23.8×) as ROAS.** It credits Meta with commercial freight, a lawn mower, Biljana's email and Coalition's Google.
+- **Coalition's "Revenue Up 199.03% YoY"** (July 2026) is **unverified against Shopify.** Do not repeat it to Jay or Robert. Coalition only ran Google from 7/20.
+- **Never quote a price not in** [what-we-sell.md](../my-business%20%28context%29/what-we-sell.md).
 
 ---
 
 ## 📊 Numbers at a glance
 
 Source of truth → [metrics-and-goals.md](../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md).
-🔄 **UNDER REVISION — every sale figure below stops at Sept 2–3 and misses the back half
-of the sale. Do not cite any of it until the Sept 9 post-mortem replaces it.**
+A cached view. Never cite from here without checking the date.
+**AOV is net ÷ orders throughout** — Shopify's `average_order_value` field does not reconcile.
 
 | Figure | Value | Source · date |
 |---|---|---|
-| Sale, **Sept 1–2 only** | 38 orders · $15,076 net · AOV $412 · $2,366 discounts | Shopify, 2026-09-02 |
-| Week before the sale, Aug 24–30 | 54 orders · $20,711 net · AOV $385 | Shopify, 2026-09-02 |
-| Week before that, Aug 17–23 | 72 orders · $28,325 net | Shopify, 2026-09-02 |
-| Meta, post-handover (clean) | $9,285.94 spend · ~180 purchases · $51.59 CPP · ~8.16 ROAS | Meta Ads Manager, Jul 20–Sep 2, read 2026-09-03. Meta-attributed, not Shopify-verified |
-| Shopify net sales, 13 mo | **$2,884,025** | Shopify, 2026-08-26 |
-| Aug gross margin | 44.5% | Robert, via Shopify, 2026-08 |
+| **Sale, Sept 1–7** | **105 orders · $33,708 net · AOV $321.03** · $4,363 discounts · commercial $5,817 (17.3%) | Shopify, 2026-09-08 |
+| — residential core | **$24,892 · +31.8% YoY** (a floor) | Shopify, 2026-09-08 |
+| Sept 1–7 **2025** (also a sale) | 58 orders · $24,514 net · core $18,887 | Shopify, 2026-09-08 |
+| **Meta, Sept 1–7** | **$1,415.69 spend · 53 claimed purchases · $26.71 CPP** | Ads Manager, 2026-09-08 |
+| Actual CAC · break-even CAC | **$24.84** ⚠️ a floor, no Google spend · ~$142.86 | Derived at 44.5%, 2026-09-08 |
+| Shopify net sales, 13 mo · Aug margin | $2,884,025 · 44.5% | Shopify 2026-08-26 · Robert 2026-08 |
 | Break-even blended ROAS | ~2.4 | `paid-media.md`, 2026-08-26 |
 
-**Observations from the first two days only** — not a performance read, no prior-year baseline:
-- Ran ~2.5× the prior week's daily rate ($7,538/day vs $2,959/day). **Two days out of eight.**
-- **Biggest revenue line was commercial** — 40 Gallon / 160 QT Powered, 2 orders, $3,887. Stephen's lane. ⛔ Never a 5-year claim on it.
-- **Legs confirmed the attach thesis.** 12 of 38 orders carried legs but only $869 total — ~$72 each. The attach is the lever, never the legs; allowable CAC on a legs-only order is ~$12.
-- Returning-customer rate **48.6%** (19 new, 18 returning) — roughly half the sale was the existing list.
+**Three reads for November:** ① The sale worked, but **AOV is the warning** — lowest of four windows, 24% below last Labor Day on the same mechanic. ROUX: no sitewide % discount before November. ② **$949 of $1,094 in Meta went to the treatment that lost** — an allocation failure, not a creative one. ③ **46.7% of orders used no code**; manual entry leaks. Next promo uses Shopify **automatic discounts**.
 
 ---
 
 ## 🧭 Map
 
-**Playbooks** — [weekly rhythm](../my-workflows%20%28automations%29/playbooks/weekly-operating-rhythm.md) · [paid media](../my-workflows%20%28automations%29/playbooks/paid-media.md) · [content engine](../my-workflows%20%28automations%29/playbooks/content-engine.md) · [automation roadmap](../my-workflows%20%28automations%29/playbooks/automation-roadmap.md)
-
-**The business** — [who we are](../my-business%20%28context%29/who-we-are.md) · [what we sell](../my-business%20%28context%29/what-we-sell.md) · [our clients](../my-business%20%28context%29/our-clients.md) · [our team](../my-business%20%28context%29/our-team.md) · [how we sound](../my-business%20%28context%29/how-we-sound.md)
-
-**Reference** — [metrics & goals](../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [seasonal calendar](../my-files%20%28knowledge%29/hpc-reference/seasonal-calendar.md) · [customer language](../my-files%20%28knowledge%29/hpc-reference/customer-language.md) · [competitors](../my-files%20%28knowledge%29/hpc-reference/competitors.md) · [what we've tried](../my-files%20%28knowledge%29/hpc-reference/what-weve-tried.md) · [connected apps](../my-connections%20%28MCP%29/connected-apps.md)
+- **Playbooks** — [weekly rhythm](../my-workflows%20%28automations%29/playbooks/weekly-operating-rhythm.md) · [paid media](../my-workflows%20%28automations%29/playbooks/paid-media.md) · [content engine](../my-workflows%20%28automations%29/playbooks/content-engine.md) · [automation roadmap](../my-workflows%20%28automations%29/playbooks/automation-roadmap.md)
+- **The business** — [who we are](../my-business%20%28context%29/who-we-are.md) · [what we sell](../my-business%20%28context%29/what-we-sell.md) · [our clients](../my-business%20%28context%29/our-clients.md) · [our team](../my-business%20%28context%29/our-team.md) · [how we sound](../my-business%20%28context%29/how-we-sound.md) · [metrics & goals](../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [seasonal calendar](../my-files%20%28knowledge%29/hpc-reference/seasonal-calendar.md) · [customer language](../my-files%20%28knowledge%29/hpc-reference/customer-language.md) · [competitors](../my-files%20%28knowledge%29/hpc-reference/competitors.md) · [what we've tried](../my-files%20%28knowledge%29/hpc-reference/what-weve-tried.md) · [connected apps](../my-connections%20%28MCP%29/connected-apps.md)
 
 ---
 

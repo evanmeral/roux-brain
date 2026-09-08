@@ -65,11 +65,28 @@ over-shoots the correction. Measure the actual render.
 
 ### All three Meta sizes, always
 
-Evan's standing request. Organise as `templates/<concept>/{1x1,4x5,9x16}.html`, then:
+**Paid Meta — every static ad ships in these three, no exceptions.**
+*Set by Evan 2026-09-08, replacing the earlier `{1x1,4x5,9x16}` set.*
+
+| Ratio | Pixels | Placements |
+|---|---|---|
+| **1:1** | 1080×1080 | Feed, Marketplace, Explore |
+| **9:16** | 1080×1920 | Stories, Reels |
+| **1.91:1** | 1200×628 | Right column, Search, Audience Network |
+
+⚠️ **4:5 (1080×1350) is an organic size, not a paid one.** Evan's call, 2026-09-08 — it stays
+in the rotation for feed posts and carousels, and comes out of every paid set. Do not ship it
+as part of a Meta ad build.
+
+Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
 
 ```bash
 ./build-set.sh <concept>
 ```
+
+> **All three sizes of one concept go into ONE ad**, mapped with Meta's placement
+> customization — never three separate ads, which splits the budget three ways and puts every
+> one of them into learning.
 
 ---
 
