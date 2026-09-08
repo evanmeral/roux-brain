@@ -43,6 +43,7 @@ def pbox(fname, nudge=(0, 0), force_mid=False):
 
 POWERED, PERF = "POWERED &nbsp;·&nbsp; COMPLETE RIG", "PERFORMANCE &nbsp;·&nbsp; POT ONLY"
 STEAMER = "STEAMER &nbsp;·&nbsp; BUILT TO ORDER"
+MODULE = "BURNER MODULE &nbsp;·&nbsp; BOLTS ON"
 COMMERCIAL = "COMMERCIAL &nbsp;·&nbsp; SPECIAL ORDER"
 
 P = [
@@ -283,6 +284,140 @@ P = [
          ("10\" Banjo Burner instead", "for cooking and frying", "$2,175", 0),
          ("Natural gas", "Triple Jet · MultiJet", "$2,245 / $2,279", 0, 1)],
    add_label="To order", add="Call 985-260-1505 &nbsp;·&nbsp; special order"),
+ dict(key="triple-jet-burner", tag="BOIL BOSS &nbsp;·&nbsp; STANDALONE BURNER",
+   cut="Boilboss TJB.png", h1=('Triple', 'Jet Burner'),
+   deck="The standalone burner. Goes under the Performance pot you own.",
+   src="Boil Boss Triple Jet PDP (patent-pending ignition, regulator+hose, remote ignition, stainless)",
+   feats=["<b>Patent-pending</b> ignition", "<b>Remote ignition</b> — no matches",
+          "<b>Regulator and hose</b> included", "<b>Stainless steel</b> build",
+          "Designed for <b>seafood boils</b>", "Pairs with <b>80–120 QT</b> pots"],
+   chips=["Crawfish", "Crabs", "Shrimp", "Boiling"],
+   rows=[("Triple Jet Burner", "regulator, hose and remote ignition", "$425", 1),
+         ("Platinum Bundle", "pot + burner + ignition", "from $737", 0)],
+   add="Centering brackets $35 &nbsp;·&nbsp; set of 3"),
+
+ dict(key="module-single-jet", tag=MODULE, cut="single jet burner module.png",
+   h1=('125K', 'BTU Single Jet'), chips_label="FITS",
+   deck="Swap your burner plate. Single jet, built for boiling.",
+   src="Single Jet Module PDP (125K BTU, fits 50 & 60 QT Powered, no leg assembly)",
+   feats=["<b>125,000 BTU</b>", "Built for <b>boiling</b>",
+          "Swaps in with <b>three bolts</b>", "Uses your <b>existing regulator</b>",
+          "Makes one cooker <b>multi-use</b>", "<b>No leg assembly</b> — module only"],
+   chips=["50 QT Powered", "60 QT Powered"],
+   rows=[("Single Jet Burner Module", "125K BTU · boiling", "$62", 1),
+         ("Or the 6\" Banjo module", "same pots · cooking and frying", "$74", 0)],
+   add_label="Note", add="Fits 50 and 60 QT Powered Cookers only"),
+
+ dict(key="module-double-jet", tag=MODULE, cut="double jet burner module.png",
+   h1=('250K', 'BTU Double Jet'), chips_label="FITS",
+   deck="Swap your burner plate. Double jet, for high-speed boiling.",
+   src="Double Jet Module PDP (250K BTU, 80 QT ONLY, 30 qt of water in 5-6 min)",
+   feats=["<b>250,000 BTU</b>", "<b>30 quarts</b> of water in 5–6 min",
+          "Swaps in with <b>three bolts</b>", "Uses your <b>existing regulator</b>",
+          "Makes one cooker <b>multi-use</b>", "<b>No leg assembly</b> — module only"],
+   chips=["80 QT Powered"],
+   rows=[("Double Jet Burner Module", "250K BTU · high-speed boiling", "$89", 1),
+         ("Or the 10\" Banjo module", "same pot · cooking and frying", "$139", 0)],
+   add_label="Note", add="Fits 80 QT Powered Cookers only"),
+
+ dict(key="module-triple-jet", tag=MODULE, cut="triple jet burner module.png",
+   h1=('375K', 'BTU Triple Jet'), chips_label="FITS",
+   deck="Swap your burner plate. Three jets, our fastest boiling module.",
+   src="3 Jet Module PDP (375K BTU, 100/120 QT ONLY, 15 gallons in 5-6 min)",
+   feats=["<b>375,000 BTU</b>", "<b>15 gallons</b> of water in 5–6 min",
+          "Swaps in with <b>three bolts</b>", "Uses your <b>existing regulator</b>",
+          "Makes one cooker <b>multi-use</b>", "<b>No leg assembly</b> — module only"],
+   chips=["100 QT Powered", "120 QT Powered"],
+   rows=[("3 Jet Burner Module", "375K BTU · high-speed boiling", "$109", 1),
+         ("Or the 10\" Banjo module", "same pots · cooking and frying", "$139", 0)],
+   add_label="Note", add="Fits 100 and 120 QT Powered Cookers only"),
+
+ dict(key="module-6in-banjo", tag=MODULE, cut="6inch banjo burner.png",
+   h1=('55K', 'BTU 6" Banjo'), chips_label="FITS", mid=True,
+   deck="Swap your burner plate. Turns a boiling pot into a fryer.",
+   src="6in Banjo Module PDP (55K BTU, fits 18-60 QT Powered, three bolts, same regulator)",
+   feats=["<b>55,000 BTU</b>", "For <b>cooking and frying</b>",
+          "Swaps in with <b>three bolts</b>", "Uses your <b>existing regulator</b>",
+          "Makes one cooker <b>multi-use</b>", "<b>No leg assembly</b> — module only"],
+   chips=["18 QT", "30 QT", "40 QT", "60 QT Powered"],
+   rows=[("6\" Banjo Burner Module", "55K BTU · cooking and frying", "$74", 1),
+         ("Or the Single Jet module", "50 and 60 QT · boiling", "$62", 0)],
+   add_label="Note", add="Fits 18 QT through 60 QT Powered Cookers"),
+
+ dict(key="module-10in-banjo", tag=MODULE, cut="10inch banjo burner.png",
+   h1=('200K', 'BTU 10" Banjo'), chips_label="FITS", mid=True,
+   deck="Swap your burner plate. Wide flame for cooking and frying.",
+   src="10in Banjo Module PDP (200K BTU, fits 80/100/120 QT Powered, same regulator)",
+   feats=["<b>200,000 BTU</b>", "For <b>cooking and frying</b>",
+          "Swaps in with <b>three bolts</b>", "Uses your <b>existing regulator</b>",
+          "Makes one cooker <b>multi-use</b>", "<b>No leg assembly</b> — module only"],
+   chips=["80 QT", "100 QT", "120 QT Powered"],
+   rows=[("10\" Banjo Burner Module", "200K BTU · cooking and frying", "$139", 1),
+         ("Or a jet module", "80 QT $89 · 100 and 120 QT $109", "boiling", 0, 1)],
+   add_label="Note", add="Fits 80, 100 and 120 QT Powered Cookers"),
+
+ dict(key="cooling-ring", tag="BOIL BOSS &nbsp;·&nbsp; STOPS OVERCOOKING",
+   cut="boilboss cooling ring.png", h1=('Cooling', 'Ring'),
+   deck="Cools your boil to 150° in under five minutes. No ice needed.",
+   src="Cooling Ring PDP (150F in under 5 min, garden hose, 360 coverage, rotating brackets)",
+   feats=["Down to <b>150°F</b> in under 5 min", "<b>No ice</b> — no diluted recipe",
+          "Runs off a <b>garden hose</b>", "<b>360°</b> of water coverage",
+          "Makes seafood <b>easier to peel</b>", "<b>Rotating brackets</b> grip the pot"],
+   chips=["Crawfish", "Shrimp", "Crabs"],
+   rows=[("Standard — 60 to 120 QT", "four colors", "$59.99", 1),
+         ("Small — 60 QT and under", "red", "$55.99", 0),
+         ("Large — 120 to 200 QT", "red", "$74.99", 0)],
+   add="Combo with the Thermo Paddle $122.50"),
+
+ dict(key="thermo-paddle", tag="BOIL BOSS &nbsp;·&nbsp; READS TEMPERATURE",
+   cut="boilboss thermo paddle.png", h1=('Thermo', 'Paddle'),
+   deck="Stir and read the temperature at once. 36 inches long.",
+   src="Thermo Paddle PDP (36x4in, 150-160F soak target, pairs with the cooling ring)",
+   feats=["Reads the <b>soak temperature</b>", "Target is <b>150–160°F</b>",
+          "<b>36\" × 4\"</b> — reaches the bottom", "No <b>guesswork</b> on the soak",
+          "Stops <b>mushy</b> seafood", "Pairs with the <b>Cooling Ring</b>"],
+   chips=["Crawfish", "Shrimp", "Crabs"],
+   rows=[("Thermo Paddle", "36\" × 4\" · reads to the bottom", "$69.99", 1),
+         ("Combo with the Ring", "ring and paddle together", "$122.50", 0)],
+   add="Ultimate Combo $129.98 &nbsp;·&nbsp; adds seasoning"),
+
+ dict(key="leg-extensions", tag="ACCESSORY &nbsp;·&nbsp; THREE PRODUCTS ONLY",
+   cut="leg extensions_.png", h1=('Cooker', 'Leg Extensions'), h1size=92, chips_label="FITS",
+   deck="Raises your cooker to about 41 inches. Bolts to the feet.",
+   src="Leg Extensions PDP (30in, ~41in finished, bolts to existing feet, 3 products only)",
+   feats=["<b>30 inches</b> of extra height", "Finished height about <b>41\"</b>",
+          "Bolts to the <b>existing feet</b>", "Self-standing from <b>ground level</b>",
+          "<b>Premium materials</b> throughout", "Fits <b>three products only</b>"],
+   chips=["18 QT Fryer", "40 QT Sauce", "4-Way Fryer"],
+   rows=[("Cooker Leg Extensions", "30\" · bolts to the existing feet", "$119", 1),
+         ("On the 18 QT Fryer", "also 40 QT Sauce and 4-Way", "from $285", 0)],
+   add_label="Note", add="Will not fit any other cooker we sell"),
+
+ dict(key="steamer-inserts", tag="ACCESSORY &nbsp;·&nbsp; EVERY POT SIZE",
+   cut="small steamer plate.png", h1=('Steamer', 'Rack Inserts'), chips_label="FITS",
+   deck="Turns a boiling pot into a steamer. A plate, not a basket.",
+   src="Steamer Basket Inserts PDP (round plate, standard sits 3in up, adjustable rides on rods)",
+   feats=["A round <b>plate</b> for your basket", "Standard sits <b>3\" above</b> the base",
+          "Fill <b>3 inches of water</b>", "<b>Adjustable</b> version on rods",
+          "Set the <b>height you want</b>", "Made for <b>every pot size</b>"],
+   chips=["30 QT", "40 QT", "60 QT", "80/100 QT", "120 QT"],
+   rows=[("Standard, small", "30 QT · 40 and 60 QT", "$24.99 / $27.99", 1, 1),
+         ("Standard, large", "80 or 100 QT · 120 QT", "$53.99 / $59.99", 0, 1),
+         ("Adjustable shelf", "80 or 100 QT · 120 QT", "$119.99 / $159.99", 0, 1)],
+   add_label="Note", add="A plate that sits in the basket, not a basket"),
+
+ dict(key="turkey-racks", tag="ACCESSORY &nbsp;·&nbsp; THREE RACKS",
+   cut="single turkey fryer rack.png", h1=('Turkey', 'Fryer Racks'), chips_label="FITS",
+   deck="Custom built with a lift hook handle. Three racks, three jobs.",
+   src="Turkey Fryer Racks PDP for dimensions; FITMENT per Evan 2026-09-08, NOT the page body",
+   feats=["<b>Lift hook handle</b> on each", "<b>Dual</b> fries two turkeys at once",
+          "Dual fits the <b>60 QT</b> perfectly", "<b>Single Upright</b> fries one bird",
+          "Upright suits the <b>30 QT Fryer</b>", "<b>Single Flat</b> lays the bird down"],
+   chips=["30 QT Turkey Fryer", "60 QT Dual", "40 QT and up"],
+   rows=[("Single Upright", "one turkey, standing", "$25", 1),
+         ("Dual Turkey Rack", "two at once · fits the 60 QT", "$59.95", 0),
+         ("Single Flat", "one turkey, lying flat", "$65", 0)],
+   add_label="Note", add="Dual 16\" high &nbsp;·&nbsp; Upright 14.5\" high"),
 ]
 
 TPL = """<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="card.css"></head>
@@ -306,7 +441,7 @@ TPL = """<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet"
   </div>
 
   <div class="chips">
-    <span class="lbl">GOOD FOR</span>
+    <span class="lbl">{chips_label}</span>
 {chips}
   </div>
 
@@ -369,7 +504,7 @@ for p in P:
         feats="\n".join(f'    <div class="feat"><i class="dot"></i><span>{f}</span></div>'
                         for f in p["feats"]),
         chips="\n".join(f'    <span class="chip">{c}</span>' for c in p["chips"]),
-        mid=mid, pbox=box,
+        chips_label=p.get("chips_label", "GOOD FOR"), mid=mid, pbox=box,
         rows="\n".join(
             f'        <div class="prow{" hero" if hero else ""}">\n'
             f'          <div class="what">{what}\n            <small>{sm}</small></div>\n'

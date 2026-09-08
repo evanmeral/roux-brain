@@ -6,7 +6,7 @@ Why this exists: this machine has no Pillow, and several product cutouts arrive 
 that were flattened onto black when they were exported — the alpha channel is gone, so
 they would print as a black rectangle on a white card.
 
-  python3 pngtool.py key   <in.png> <out.png>   # black background -> transparent
+  python3 pngtool.py key   <in.png> <out.png> [black|white]   # background -> alpha
   python3 pngtool.py bbox  <file.png> [...]     # visible bounds, as _bboxes.json entries
 
 `key` only recovers a cutout when the product has no genuinely black parts. Check the
@@ -72,31 +72,37 @@ def write_rgba(path, w, h, px):
         + chunk(b"IEND", b""))
 
 
-def key_black(src, dst, hard=22, soft=62):
-    """Make near-black transparent, ramping between `hard` and `soft` so JPEG ringing at
-    the product edge fades out instead of leaving a hard dark fringe."""
+def key_flat(src, dst, bg="black", hard=22, soft=62):
+    """Make a flat background transparent, ramping between `hard` and `soft` so JPEG
+    ringing at the product edge fades out instead of leaving a hard fringe.
+
+    A white background matters as much as a black one here: .pbox applies a drop-shadow
+    filter, and an opaque white rectangle casts a rectangular shadow on the card."""
     w, h, ch, px = read_png(src)
     out = bytearray(w * h * 4)
     punched = 0
     for i in range(w * h):
         j = i * ch
         r, g, b = px[j], px[j + 1], px[j + 2]
-        lum = max(r, g, b)
-        if lum <= hard:
+        d = 255 - min(r, g, b) if bg == "white" else max(r, g, b)
+        if d <= hard:
             a = 0; punched += 1
-        elif lum >= soft:
+        elif d >= soft:
             a = 255
         else:
-            a = int(255 * (lum - hard) / (soft - hard))
+            a = int(255 * (d - hard) / (soft - hard))
         out[i * 4:i * 4 + 4] = bytes((r, g, b, a))
     write_rgba(dst, w, h, out)
-    print(f"{os.path.basename(dst)}  {w}x{h}  {100*punched/(w*h):.1f}% keyed out")
+    print(f"{os.path.basename(dst)}  {w}x{h}  {100*punched/(w*h):.1f}% keyed out ({bg} bg)")
 
 
-def bbox(path):
+def bbox(path, alpha=120):
+    """Visible bounds. `alpha` is deliberately high, not 1: several cutouts carry a soft
+    drop shadow baked into the alpha channel, and counting it as "product" inflates the box
+    so the product renders smaller and off-centre. 120 keeps the shadow out."""
     w, h, ch, px = read_png(path)
     if ch == 4:
-        vis = lambda j: px[j + 3] > 16
+        vis = lambda j: px[j + 3] > alpha
     else:
         k = (px[0], px[1], px[2])                      # background sampled at 0,0
         vis = lambda j: abs(px[j]-k[0]) + abs(px[j+1]-k[1]) + abs(px[j+2]-k[2]) > 36
@@ -115,7 +121,7 @@ def bbox(path):
 
 cmd = sys.argv[1]
 if cmd == "key":
-    key_black(sys.argv[2], sys.argv[3])
+    key_flat(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else "black")
 elif cmd == "bbox":
     print(json.dumps({os.path.basename(p): bbox(p) for p in sys.argv[2:]}, indent=1))
 else:

@@ -34,41 +34,54 @@ when bottom-aligned; add `mid` to the product column (`<div class="prodcol mid">
 the product in the band instead. The 30 QT Performance uses `mid`; the 30 QT Powered does not.
 Judge it per product from the render, not from the cutout's dimensions.
 
-## Cards built — 12
+## Cards built — 31
 
-| Card | File | Prices |
-|---|---|---|
-| 18 QT Powered Fryer | `18qt-powered.png` | $285–$340 |
-| 18 QT Performance Fryer | `18qt-performance.png` | $220–$265 |
-| 30 QT Powered Pot | `30qt-powered.png` | $435 / $455 / $475 |
-| 30 QT Performance Pot | `30qt-performance.png` | $335 ⚠️ see *Open questions* |
-| 30 QT Turkey Fryer | `30qt-turkey-powered.png` | $395 / $442.50 / $462.50 |
-| 40 QT Sauce Cooker | `40qt-powered.png` | $289.99 / $309.99 |
-| 4-Way Fryer / Pasta Cooker | `4way-powered.png` | $379.99 / $396.99 |
-| 60 QT Powered Cooker | `60qt-powered.png` | $515 / $525 / +$10 |
-| 60 QT Dual Turkey Fryer | `60qt-dual-turkey-powered.png` | $495 / $505 |
-| 80 QT Powered Cooker | `80qt-powered.png` | $630 / $655 / +$10–$30 |
-| 100 QT Powered Cooker | `100qt-powered.png` | $670 / $700 / +$10–$30 |
-| 120 QT Powered Cooker | `120qt-powered.png` | $715 / $735 / +$10–$30 |
+**Cookers, Powered** (10) — 18 QT Fryer · 30 QT Pot · 30 QT Turkey Fryer · 40 QT Sauce
+Cooker · 4-Way Fryer/Pasta Cooker · 60 QT Cooker · 60 QT Dual Turkey Fryer · 80 QT ·
+100 QT · 120 QT
+
+**Cookers, Performance** (7) — 18 QT Fryer · 30 QT · 4-Way Fryer/Pasta Cooker · 60 QT ·
+80 QT · 100 QT · 120 QT
+
+**Steamers and commercial** (3) — 28 QT Rack Steamer · 100 QT Rack Steamer ·
+40 Gallon Flip Basket
+
+**Burners** (6) — Boil Boss Triple Jet · 125K Single Jet · 250K Double Jet ·
+375K Triple Jet · 55K 6" Banjo · 200K 10" Banjo
+
+**Accessories** (5) — Cooling Ring · Thermo Paddle · Cooker Leg Extensions ·
+Steamer Rack Inserts (one card, all 7 sizes) · Turkey Fryer Racks (one card, all 3)
 
 **Cards are generated, not hand-written.** All content lives in one table in
 `templates/showroom-cards/make-cards.py`; edit there and re-run. It refuses to build a
-card whose copy would overflow — see *Rebuild*.
+card whose copy would overflow, and verifies the rendered result — see *Rebuild*.
 
-## Open questions blocking the rest of the batch
+## Naming and content rules set by Evan
 
-1. ⚠️ **What does a Performance boiling pot actually ship with?** The 30/60/80/100/120 QT
-   Performance PDPs never say, and their variants only choose a drain valve — unlike the
-   Powered SKUs, which encode the basket (`PW30-VLV075-SBI`). The **30 QT Performance card
-   already says "Pot, Basket & Lid"** and that is unverified. Do not print it until Jay or
-   Robert confirms. Blocks the 60 and 80 QT Performance cards too.
-2. ⚠️ **Turkey rack fitment contradicts itself on the live site.** The variant is named
-   "Single Upright (30 QT or larger)" but the PDP body says it "fits our 40 or 50 QT pots."
-   Blocks the combined turkey-rack card.
-3. **Photos needed:** 100 QT Performance · 120 QT Performance · 6" Banjo module ·
-   **Boil Boss Cooling Ring** and **Thermo Paddle** (only lifestyle shots exist, no cutouts).
-4. **Naming, set by Evan 2026-09-08:** "Fryer", never "Fish Fryer / Brazier". Both 4-Way
-   products are "4-Way Fryer / Pasta Cooker". The 40 Gallon is "40 Gallon", never "160 QT".
+- **"Fryer"**, never "Fish Fryer / Brazier". Both 4-Way products are
+  **"4-Way Fryer / Pasta Cooker"** — the POWERED/PERFORMANCE tag tells them apart.
+- The 40 Gallon is **"40 Gallon"**, never "160 QT".
+- A **Performance pot ships with basket, lid and drain valve** (2026-09-08).
+- **Turkey rack fitment comes from Evan, not the product page** — the page body is wrong.
+  Single Upright is built for the 30 QT Turkey Fryer; Dual fits the 60 QT.
+- The bottom line is not always add-ons: steamers show **LEAD TIME**, the 40 Gallon shows
+  **TO ORDER** with the phone number, burner modules show fitment as a **NOTE**.
+
+## Product photos
+
+Cutouts live in `my-skills/hpc-ad-creative/assets/product-cutouts/`, named to match the
+existing convention (`100-120qt - perf.png`, `6inch banjo burner.png`). Bounds are
+measured into `_bboxes.json` with `pngtool.py bbox`.
+
+⚠️ **Export cutouts as PNG, not JPEG.** JPEG has no alpha channel, so a cutout saved that
+way arrives flattened onto its background — black or white — and would print as a solid
+rectangle. `pngtool.py key` can recover one *only* when the product has no genuinely
+black (or white) parts; a black knob or fitting is indistinguishable from a black
+background and gets punched out with it.
+
+⚠️ **Bounds are measured at alpha > 120, not > 1.** Several cutouts carry a soft drop
+shadow baked into the alpha channel; counting it as product inflates the box and renders
+the product smaller and off-centre.
 
 ## Where the numbers came from
 
