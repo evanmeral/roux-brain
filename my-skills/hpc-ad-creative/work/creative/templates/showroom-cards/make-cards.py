@@ -357,7 +357,7 @@ P = [
    add_label="Note", add="Fits 80, 100 and 120 QT Powered Cookers"),
 
  dict(key="cooling-ring", tag="BOIL BOSS &nbsp;·&nbsp; STOPS OVERCOOKING",
-   cut="boilboss cooling ring.png", h1=('Cooling', 'Ring'),
+   cut="boilboss cooling ring.png", h1=('Cooling', 'Ring'), mid=True,
    deck="Cools your boil to 150° in under five minutes. No ice needed.",
    src="Cooling Ring PDP (150F in under 5 min, garden hose, 360 coverage, rotating brackets)",
    feats=["Down to <b>150°F</b> in under 5 min", "<b>No ice</b> — no diluted recipe",
