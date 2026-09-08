@@ -47,7 +47,6 @@
 |---|---|---|
 | **Evan** | Upload the 4 evergreen PNGs to the Meta media library — **only he can put files into Meta**; without it Wednesday has nothing to switch on | 2026-09-08 |
 | **Evan** | Review the 12 unreviewed drafts; decide the BOM-gate override | 2026-09-08 |
-| **Evan** | Decide: make the hardcoded warranty badge a variable (see Landmines) | 2026-09-01 |
 | **Evan** | Ask Garrett for a 15–20s cut of the 18 QT video | 2026-09-01 |
 | **Jay** | **Landed BOM + monthly overhead — now the highest-value unblock in the business.** Gates the 18 QT ladder *and* the ~$50.58 legs threshold | 2026-08-28 |
 | **Coalition** | Reply on Cater + Event, Mar 22–25 | — |
@@ -71,8 +70,7 @@
 
 ## ⛔ Landmines — do not ship these
 
-- 🔴 **`yeti-1x1.html` line 37 hardcodes `5-YR RESIDENTIAL WARRANTY`** — every ad from that template carries it regardless of product. **Awaiting Evan.** ⚠️ Live consequence: **`80qt-buy-cheap-twice` now carries two different warranty wordings across one placement set** — the approved 1:1 has the short form, the new 9:16 and 1.91:1 have the fully-qualified `5-YR LIMITED · RESIDENTIAL · 120 QT & SMALLER`. Nothing false (all ≤120 QT); unify before publish. → `templates/80qt-buy-cheap-twice/1x1.html:37`
-- **The live warranty page governs — it is what the customer sees.** Evan, 2026-09-08. Verbatim: *"LIMITED FIVE YEAR WARRANTY — FOR RESIDENTIAL USE ONLY (120 Quarts or smaller)"*, plus a **full 2-year on everything** (not commercial-only). **The size cap is the constraint, not the phrasing.** ⛔ Never a 5-year claim on the **160 QT**, the **80–140 Gallon** line, or any **steamer**.
+- **Warranty: read the live page and write from it. Do not ask Evan about wording again** — Evan, 2026-09-08. → `highperformancecookers.com/pages/warranty-information`. **Full 2-year on everything; limited 5-year residential, 120 QT or smaller.** ⛔ The only hard line left: **never a 5-year claim on the 160 QT, the 80–140 Gallon line, or any steamer** — and `yeti-1x1.html` hardcodes one at line 37, so nothing built from that template may point at those. Making it a variable is **Nova's job, not a question for Evan.**
 - 🔴 **`120qt-rolling-boil` contradicts itself on Powered vs Performance — all three sizes.** Copy reads *"Tunnel Tube technology is in the pot — so it works on any burner you already own."* That is the **Performance** claim. The product pictured is a **Powered** cooker, burner welded on. The tunnel-tube half is right and is HPC's best line; the "any burner you already own" clause is what breaks. Fix = drop the clause, or swap the shot to a Performance pot. **Do not publish until resolved.** Found 2026-09-08.
 - ⛔ **`2026-08-27_laborday-vintage_multi-product_1080x1350_v1.png` is NOT evergreen.** Checked 2026-09-08 — carries "LABOR DAY SALE", "10% OFF EVERYTHING", both codes and "SEPT 1–8". It was flagged as a retargeting candidate; it cannot be used.
 - ⛔ **Do not repeat the 30%-off-legs mechanic in November** until landed cost per leg extension exists. Below ~$50.58 it paid for itself; above, it lost money on higher volume.

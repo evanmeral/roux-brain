@@ -11,6 +11,14 @@
 
 ## 2026-09
 
+**Stop escalating warranty wording — read the live page and write from it** — Evan,
+2026-09-08. *"No reason to keep bringing up the warranty stuff, as we've already fixed it.
+Just go off of the warranty page on the website. No need to ask me. I will check everything
+that is done, so I will see if there's something wrong."* Supersedes the same-day entry below
+that treated the page-vs-summary gap as an open question — it is closed. The page is the
+source; **making `yeti-1x1.html`'s hardcoded badge a variable is Nova's task, not a decision
+to put back to Evan.** The size cap still binds on steamer, commercial and the 160 QT.
+
 **The live warranty page governs — it is what the customer sees** — Evan, 2026-09-08.
 Settles a wobble: Evan restated the warranty as "5-year for all consumer pots, 2-year for the
 big commercial pots." Checked against the live page, which reads **"LIMITED FIVE YEAR WARRANTY
