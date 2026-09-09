@@ -7,33 +7,41 @@
 
 ---
 
-## 🟢 Running — Labor Day sale ENDED 11:59pm CT Tue Sept 8. Wednesday is the takedown.
+## 🟢 Running — 🔴 IntentWave call TODAY, Wed Sept 9, 1:00pm. Jay and Peter attending.
 
-**Both codes expire on their own** — `endsAt 2026-09-09T04:59:59Z`, verified in Shopify 2026-09-08. Nothing to switch off there. Re-pull final redemptions after expiry; running counts were **`LABORDAY10-26` 49 · `LABORDAY30-LEGS` 23**.
+**Prep doc → `my-work (outputs)/internal/2026-09-09-intentwave-meeting-prep.md`** (ROUX) ·
+[their meeting notes on file](../my-work%20%28outputs%29/internal/2026-09-09-intentwave-meeting-notes.md)
 
-**📋 Open these first Wednesday:** [wind-down sheet](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-wind-down.md) (takedown, site sweep, what to capture) · [Meta off-season plan](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-meta-offseason-plan.md) (what goes live, budgets, gates)
+**Jay has said the campaign budget is Evan's call.** Dalton asked him to bring a figure.
 
-### 🔴 Wednesday 7am — order of operations
+✅ **Labor Day takedown DONE** — all **seven** ads off (3× Vintage in `BPM_TOF_Manual`; HPC Dark, Final Hours, Tunnel Tube in `18qt-TOF-Prospecting`). Both codes expired on their own. Still to do off-Meta: **announcement bar blocks 2/3/4**, incognito sweep, **feed-post captions**, and re-pull final redemption counts. → [wind-down sheet](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-wind-down.md)
 
-1. **List every ad in `BPM_TOF_Manual`, Active filter cleared — BEFORE switching anything off.** All six live there. If nothing evergreen survived, killing them takes ~$156/day and 77% of Meta spend to zero. 30 seconds answers it.
-2. Six ads **off** — toggle the *ads*, not the ad sets. **Never delete** (destroys post-mortem history).
-3. Evergreen ads **on** — one live ad minimum per ad set. **Re-enable a paused ad over building new** (keeps social proof). Creative in `library/`, copy + verified URLs + campaign routing → [evergreen-ad-copy](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md).
-4. `LAL 1% Purchasers` widened **1% → 1–3%** — the fix for frequency 5.05, done inside the same learning reset.
-5. **Retargeting campaign live, $30/day**, purchasers excluded. The sale's browser pool is the warmest until January and decays now.
-6. **18 QT video ad live** — ✅ Evan cleared the video 2026-09-08. Evergreen copy already written, no code, no extra budget.
-7. `18qt-TOF-Prospecting` verified clean, then **untouched 7 days** — it is the control.
-8. **Site:** hide announcement-bar blocks 2/3/4, **keep block 1** (bar collapses if all four go). Then incognito sweep + test the dead code at checkout.
-9. **Organic:** edit captions on every Sept 1–8 feed post naming a code. **Edit, don't delete** — deleting throws away reach and social proof.
+### 📡 What is actually live — read from Ads Manager 2026-09-09 (Aug 10–Sep 8 window)
 
-**Budget: hold flat ~$202/day + $30 retargeting. First raise Sept 16 at the earliest.** Expect CPP to rise once the discount is gone — normalization, not failure.
+⚠️ **This supersedes every older Meta figure on this board.**
+
+**`BPM_TOF_Manual` — never went dark. Six live VIDEO ads across all three active ad sets.**
+
+| Ad | Purchases | CPP | Ad set |
+|---|---|---|---|
+| Video_Jay 30qt (turkey) Fryer Demo | 13 | **$19.41** | $62/day |
+| Video_Jay 18qt Fryer Demo | 30 | $43.04 | $60/day |
+| BPM Tailgate Video | 20 | $57.07 | $62/day |
+| Video_UGC/Review18qt Fryer | 15 | $64.89 | $42/day |
+| Video_UGC/Review18qt Fryer | 2 | $9.46 ⚠️ tiny sample | $60/day |
+| Video_ 30qt (turkey) Fryer Time Lapse | 0 | — | $42/day |
+
+⭐ **This campaign runs on video, not statics.** The Labor Day statics were an overlay on a video campaign that never stopped. **Where the five new statics go is now an open decision, not a given** — ROUX is settling it.
+
+**`18qt-TOF-Prospecting`** — still **$50/day**, ramp never happened. Four live ads, all *Learning limited*: `18qt-001` **$14.53** · `18qt-004` $45.76 · `18qt-003` $72.11 · `18qt-002` $74.72.
 
 ---
 
 ## 🔺 Now — top three
 
-**1. Post-mortem, Sept 9.** Most of it is answered → [analysis](archive/2026-09-08-labor-day-sale-analysis.md). **The sale worked: +31.8% on residential core YoY, a floor.** Two questions left, both needing data pulled while already in the tools: **(a) Sept 8 itself** — every figure on file excludes deadline day; **(b) the daily CPP/CPM/CTR curve** for `BPM_TOF_Manual` with `18qt` as control — the test that separates fatigue from ordinary decay. Do not name a cause before running it.
+**1. Post-mortem — 🔴 two of its foundations just broke.** The Shopify side stands: **+31.8% on residential core YoY, a floor.** The Meta side does not. ① **`18qt-TOF-Prospecting` ran Labor Day creative** (HPC Dark, 8 purchases, $22.33) — so it is **not** the clean no-offer control, and the fatigue-vs-decay test as designed cannot run. ② **The Sept 1–7 ad-level table is unreliable** — it credited four ads with 99.4% of `BPM_TOF_Manual`'s spend while six video ads were demonstrably also running; it was almost certainly filtered to "labor" ads. **Re-pull ad-level Sept 1–8 before any Meta conclusion is repeated to Jay.**
 
-**2. ⭐ `18qt-TOF-Prospecting` is the off-season engine.** $20.09 CPP, frequency 1.90 — beating the flagship sale campaign by 32%. 18 QT is a **fish fryer**, not seasonal. Ladder: ≤20% every 3 days, gates CPP ≤$30 and frequency ≤2.5. ⚠️ **ROUX recommends going past step one without the landed BOM** (3.1× headroom against the ~$63 provisional ceiling). **That overrides a board note and is Evan's call — still open.**
+**2. `18qt-TOF-Prospecting` — still the cheapest acquisition, but the claim is weaker than the board said.** Its $20.09 sale-week CPP was earned **with a discount running in it**, so "cheap without an offer" is unproven. 30-day CPP is **$40.56**. `18qt-001` alone runs **$14.53**. 18 QT is a **fish fryer**, not seasonal, and that part still holds. Ladder: ≤20% every 3 days, gates CPP ≤$30 and frequency ≤2.5. ⚠️ **ROUX recommends going past step one without the landed BOM** (3.1× headroom against the ~$63 provisional ceiling). **That overrides a board note and is Evan's call — still open.**
 
 **3. The June–October off-season plan** — the real +$500K project, and now unblocked. The relaunch gives it a live testbed: five fresh concepts, a retargeting campaign, and a control campaign that stays untouched. **Starts after the post-mortem**, and the post-mortem is one data pull away.
 
