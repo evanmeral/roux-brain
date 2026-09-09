@@ -22,14 +22,7 @@
 
 **`BPM_TOF_Manual` — never went dark. Six live VIDEO ads across all three active ad sets.**
 
-| Ad | Purchases | CPP | Ad set |
-|---|---|---|---|
-| Video_Jay 30qt (turkey) Fryer Demo | 13 | **$19.41** | $62/day |
-| Video_Jay 18qt Fryer Demo | 30 | $43.04 | $60/day |
-| BPM Tailgate Video | 20 | $57.07 | $62/day |
-| Video_UGC/Review18qt Fryer | 15 | $64.89 | $42/day |
-
-*(Plus a 2nd `Video_UGC/Review18qt` at $9.46 on 2 purchases — too small to read — and `Video_30qt Time Lapse`, no purchases.)*
+**Best three:** `Video_Jay 30qt (turkey) Fryer Demo` **$19.41** (13) · `Video_Jay 18qt Fryer Demo` $43.04 (30) · `BPM Tailgate Video` $57.07 (20). Also live: `Video_UGC/Review18qt` $64.89 (15), a 2nd copy of it at $9.46 on 2 purchases (unreadable), and `Video_30qt Time Lapse` at zero. Full table → [meeting prep](../my-work%20%28outputs%29/internal/2026-09-09-intentwave-meeting-prep.md).
 
 ⭐ **This campaign runs on video, not statics.** The Labor Day statics were an overlay on a video campaign that never stopped. **Where the five new statics go is now an open decision, not a given** — ROUX is settling it.
 
