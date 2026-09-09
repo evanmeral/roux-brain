@@ -28,8 +28,8 @@
 | Video_Jay 18qt Fryer Demo | 30 | $43.04 | $60/day |
 | BPM Tailgate Video | 20 | $57.07 | $62/day |
 | Video_UGC/Review18qt Fryer | 15 | $64.89 | $42/day |
-| Video_UGC/Review18qt Fryer | 2 | $9.46 ⚠️ tiny sample | $60/day |
-| Video_ 30qt (turkey) Fryer Time Lapse | 0 | — | $42/day |
+
+*(Plus a second `Video_UGC/Review18qt Fryer` at $9.46 on 2 purchases — too small to read — and `Video_ 30qt (turkey) Fryer Time Lapse` with no purchases.)*
 
 ⭐ **This campaign runs on video, not statics.** The Labor Day statics were an overlay on a video campaign that never stopped. **Where the five new statics go is now an open decision, not a given** — ROUX is settling it.
 
@@ -97,7 +97,11 @@ A cached view. Never cite from here without checking the date.
 
 | Figure | Value | Source · date |
 |---|---|---|
-| **Sale, Sept 1–7** ⚠️ excludes Sept 8 | **105 orders · $33,708 net · AOV $321.03** · $4,363 discounts · commercial $5,817 | Shopify, 2026-09-08 |
+| ⭐ **Sale, Sept 1–8 — COMPLETE window** | **126 orders · $41,100.84 net · AOV $326.20** · 69 new customers | Shopify, **verified twice 2026-09-09** |
+| **Sept 1–8 2025** (also a sale) | **63 orders · $26,144.22 net · AOV $414.99** | Shopify, verified 2026-09-09 |
+| **YoY, like-for-like 8 days** | **orders +100.0% · net +57.2% · AOV −21.4%** | Derived, 2026-09-09 |
+| **Sept 8 alone** (deadline day) | **21 orders · $7,445.75** — 2nd-best day of the sale | Shopify, 2026-09-09 |
+| Sale, Sept 1–7 *(partial, superseded)* | 105 orders · $33,708 net · residential core **+31.8% YoY** | Shopify, 2026-09-08 |
 | — residential core | **$24,892 · +31.8% YoY** (a floor) | Shopify, 2026-09-08 |
 | **Meta, Sept 1–7** | **$1,415.69 · 53 claimed purchases · $26.71 CPP · ~$202/day** | Ads Manager, 2026-09-08 |
 | — `BPM_TOF_Manual` | $1,094.29 · 37 · $29.58 CPP · **frequency 5.05** | Ads Manager, 2026-09-08 |
@@ -107,7 +111,7 @@ A cached view. Never cite from here without checking the date.
 | Shopify net sales, 13 mo · Aug margin | $2,884,025 · 44.5% | Shopify 2026-08-26 · Robert 2026-08 |
 | Break-even blended ROAS | ~2.4 | `paid-media.md`, 2026-08-26 |
 
-**Three reads for November:** ① The sale worked, but **AOV is the warning.** ② **$949 of $1,094 in Meta went to the treatment that lost** — an allocation failure, not a creative one. ③ **46.7% of orders used no code**; manual entry leaks. Next promo uses Shopify **automatic discounts**.
+**Three reads for November:** ① The sale worked — **orders doubled YoY** — but **AOV is the warning, and the complete data makes it stronger: −21.4% on the same mechanic.** ⭐ **Deadline day was the 2nd-best day of the sale — build November around a deadline.** ② ⏸️ **SUSPENDED, not retracted: "$949 of $1,094 went to the treatment that lost."** It rests on the ad-level table that was filtered wrong. **Do not repeat it until Finn re-pulls Sept 1–8 reconciled to campaign total spend.** ③ **46.7% of orders used no code**; manual entry leaks. Next promo uses Shopify **automatic discounts**.
 
 ---
 
