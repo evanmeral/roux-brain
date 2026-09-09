@@ -12,7 +12,7 @@
 > five. Rolling boil only. No crawfish on either fryer. Every 5-year mention carries both
 > qualifiers, and none sits on a steamer, the 160 QT, or the Gallon line.
 >
-> ⚠️ **Settle the note at the bottom before pasting concept 4.**
+> ✅ Concept 4 is confirmed a **Performance** pot on a Triple Jet — its URL is correct as written.
 
 ---
 
@@ -205,20 +205,11 @@ changes the shape of the main push, not just the ad.
 
 ---
 
-## ⚠️ The one thing to settle — concept 4's product identity
+## ✅ Settled — concept 4 is a Performance pot
 
-**The copy and the filename disagree about which pot is in that photo, and it decides the URL.**
+**Evan, 2026-09-08:** it is a **120 QT Performance pot on a Boil Boss Triple Jet Burner.**
 
-- The **file** is named `2026-09-08_120qt-powered_rolling-boil_*` — inherited from the Aug 27
-  original, which called it Powered.
-- The **copy** sends it to the **120 QT Performance** pot, because the frame says *"works on
-  any burner you already own"* and Evan confirmed 2026-09-08 that the pot is sitting on a
-  **separate** Boil Boss Triple Jet Burner.
-
-Both cannot be right. **Powered** = tunnel tubes **+ burner welded to the pot**;
-**Performance** = tunnel tubes only, works on any burner. A separate Triple Jet under it means
-the pot is a **Performance** — which makes the copy right and the filename a stale label.
-
-**Evan settles it by looking at the render.** If it is a Performance pot, the library files
-should be renamed `120qt-performance_rolling-boil` and the URL above is correct as written. If
-it is Powered, the *"any burner you already own"* line has to come off the image before it runs.
+Performance = tunnel tubes only, burner separate and swappable — which is exactly why
+*"works on any burner you already own"* is correct on that frame. **The URL above is right as
+written.** The library files were named `120qt-powered_rolling-boil` from the Aug 27 build;
+they were **renamed to `120qt-performance_rolling-boil` on 2026-09-08.** Nothing else changes.

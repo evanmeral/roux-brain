@@ -5,7 +5,7 @@ Drafts live in `../drafts/` and are **not** archived until Evan approves or edit
 
 | File | Date | Product | Angle | Size | Channel | Notes |
 |---|---|---|---|---|---|---|
-| `2026-08-27_120qt-powered_rolling-boil_1080x1350_v1.png` | 2026-08-27 | 120qt-powered | rolling-boil | 1080x1350 | meta | Approved by Evan 2026-08-27. Timer/proof angle, white shield on dark. |
+| `2026-08-27_120qt-performance_rolling-boil_1080x1350_v1.png` | 2026-08-27 | 120qt-performance | rolling-boil | 1080x1350 | meta | Approved by Evan 2026-08-27. Timer/proof angle, white shield on dark. |
 | `2026-08-27_120qt-powered_crowd-math_1080x1920_v1.png` | 2026-08-27 | 120qt-powered | crowd-math | 1080x1920 | meta | Approved by Evan 2026-08-27. Story format, spec-sheet stats. |
 | `2026-08-27_18qt-fryer_fry-it-all_1080x1350_v1.png` | 2026-08-27 | 18qt-fryer | fry-it-all | 1080x1350 | meta | Approved by Evan 2026-08-27. Off-season/year-round angle, real customer verbatim. |
 | `2026-08-27_80qt-powered_buy-cheap-twice_1080x1080_v1.png` | 2026-08-27 | 80qt-powered | buy-cheap-twice | 1080x1080 | meta | Approved by Evan 2026-08-27. Price-objection angle, Yeti frame. |
@@ -26,9 +26,9 @@ Drafts live in `../drafts/` and are **not** archived until Evan approves or edit
 | `2026-09-08_80qt-powered_buy-cheap-twice_1200x628_v1.png` | 2026-09-08 | 80qt-powered | buy-cheap-twice | 1200x628 | meta | Approved by Evan 2026-09-08. Carries the fully-qualified warranty line; the Aug 27 1:1 still carries the short form via `yeti-1x1.html`'s hardcode. |
 | `2026-09-08_120qt-powered_crowd-math_1080x1080_v1.png` | 2026-09-08 | 120qt-powered | crowd-math | 1080x1080 | meta | Approved by Evan 2026-09-08. |
 | `2026-09-08_120qt-powered_crowd-math_1200x628_v1.png` | 2026-09-08 | 120qt-powered | crowd-math | 1200x628 | meta | Approved by Evan 2026-09-08. |
-| `2026-09-08_120qt-powered_rolling-boil_1080x1080_v1.png` | 2026-09-08 | 120qt-powered | rolling-boil | 1080x1080 | meta | Approved by Evan 2026-09-08. ⭐ **The pot sits on a Boil Boss Triple Jet Burner** — that is why *"works on any burner you already own"* is correct here and not a Powered/Performance slip. Confirmed by Evan; do not re-flag. |
-| `2026-09-08_120qt-powered_rolling-boil_1080x1920_v1.png` | 2026-09-08 | 120qt-powered | rolling-boil | 1080x1920 | meta | Approved by Evan 2026-09-08. |
-| `2026-09-08_120qt-powered_rolling-boil_1200x628_v1.png` | 2026-09-08 | 120qt-powered | rolling-boil | 1200x628 | meta | Approved by Evan 2026-09-08. Product offset off-centre deliberately to clear the shield logo. |
+| `2026-09-08_120qt-performance_rolling-boil_1080x1080_v1.png` | 2026-09-08 | 120qt-performance | rolling-boil | 1080x1080 | meta | Approved by Evan 2026-09-08. ⭐ **120 QT PERFORMANCE pot on a Boil Boss Triple Jet Burner** — confirmed by Evan 2026-09-08, and the files were renamed from `120qt-powered` that day. Performance = tunnel tubes only, burner separate, which is exactly why *"works on any burner you already own"* is correct here. Destination is the Performance PDP, not the Powered. Do not re-flag. |
+| `2026-09-08_120qt-performance_rolling-boil_1080x1920_v1.png` | 2026-09-08 | 120qt-performance | rolling-boil | 1080x1920 | meta | Approved by Evan 2026-09-08. |
+| `2026-09-08_120qt-performance_rolling-boil_1200x628_v1.png` | 2026-09-08 | 120qt-performance | rolling-boil | 1200x628 | meta | Approved by Evan 2026-09-08. Product offset off-centre deliberately to clear the shield logo. |
 | `2026-09-08_18qt-fryer_fry-it-all_1080x1080_v1.png` | 2026-09-08 | 18qt-fryer | fry-it-all | 1080x1080 | meta | Approved by Evan 2026-09-08. Carries Kendall's verified-buyer verbatim. |
 | `2026-09-08_18qt-fryer_fry-it-all_1080x1920_v1.png` | 2026-09-08 | 18qt-fryer | fry-it-all | 1080x1920 | meta | Approved by Evan 2026-09-08. |
 | `2026-09-08_18qt-fryer_fry-it-all_1200x628_v1.png` | 2026-09-08 | 18qt-fryer | fry-it-all | 1200x628 | meta | Approved by Evan 2026-09-08. Product offset deliberately — the fryer's long handle ran into the shield. |

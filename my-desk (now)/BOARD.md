@@ -33,7 +33,7 @@
 
 **1. ✅ Ad creative DONE — 15 statics approved and in `library/`, copy written.**
 Five concepts × {1:1, 9:16, 1.91:1}. Ad copy → [2026-09-09-evergreen-ad-copy.md](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md) — primary text, headline, description, verified URL and campaign for each. **Every handle and price re-checked against Shopify 2026-09-08.**
-⚠️ **One open question, 30 seconds to settle:** `120qt-rolling-boil` is filed as **Powered** but the copy sends it to the **Performance** pot, because the frame says *"works on any burner you already own"* and the pot sits on a separate Triple Jet. A separate burner means Performance. **Look at the render and settle it — it decides the destination URL.**
+✅ **`120qt-rolling-boil` settled** — it is a **120 QT Performance** pot on a Boil Boss Triple Jet Burner (Evan, 2026-09-08). Library files renamed `120qt-performance_rolling-boil`; the copy's Performance PDP destination is correct.
 
 **2. Post-mortem, Sept 9.** Most of it is answered → [analysis](archive/2026-09-08-labor-day-sale-analysis.md). **The sale worked: +31.8% on residential core YoY, a floor.** Two questions left, both needing data pulled while already in the tools: **(a) Sept 8 itself** — every figure on file excludes deadline day; **(b) the daily CPP/CPM/CTR curve** for `BPM_TOF_Manual` with `18qt` as control — the test that separates fatigue from ordinary decay. Do not name a cause before running it.
 
