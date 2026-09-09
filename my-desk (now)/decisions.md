@@ -11,6 +11,38 @@
 
 ## 2026-09
 
+**The new IntentWave campaign: $100/day, live Fri Sept 11, 1% lookalike, no detailed
+targeting** — Evan, 2026-09-09. Built in draft and left unpublished for the 1pm review.
+**$100 is the most that fits under the $350/day ceiling** ($214 current caps + $30 retargeting
++ $100 = $344) and it is the bottom of Dalton's $100–150 range; **$150 would breach the
+ceiling.** Kept at **1%** rather than the 3% originally proposed — a 1% US lookalike is ~2
+million people, so the "it will fatigue fast" argument for 3% was weak. **No detailed
+targeting layered on:** the lookalike is the targeting, interests would narrow an already
+narrow pool and starve delivery, and under Advantage+ they would be suggestions rather than
+hard limits anyway. Minimum age 24, advertiser High Performance Cookers LLC, location United
+States (a lookalike now inherits geography from the ad set — Meta removed location from
+lookalike creation).
+
+**Ad 2 points at the Platinum Boiling Bundle, and version B of its copy is dropped** — Evan,
+2026-09-09. The image shows the Performance pot **on** a Triple Jet burner, so a bundle page
+matches what the viewer sees better than either product page and removes a click. ⛔ **Version
+B is incompatible with that destination** — it opens *"you only need the pot"* and quotes the
+pot and burner separately, which argues against a bundle and quotes prices the bundle does not
+carry. **Version A only.** Ad 3 points at Evan's own 18 QT landing page rather than the PDP.
+
+**The five new statics do NOT go into `BPM_TOF_Manual`** — 2026-09-09, after reading the live
+account. That campaign runs on **video**: six video ads were live throughout the sale and never
+stopped, three of them under $45 CPP. Dropping untested statics into a video ad set takes
+exploration budget out of proven delivery and returns a test that cannot be read, because
+intra-ad-set allocation is not a fair split. Three statics went to the new IW campaign; the two
+objection-handlers are held for retargeting.
+
+**Reports to Jay and Robert are drafted, not sent** — 2026-09-09. Two plain-language write-ups
+(sale results + Meta overview, and the new campaign plan) with every figure re-verified against
+Shopify. **Deliberately omitted rather than estimated:** actual CAC (no Google spend feed),
+which creative won (the ad-level table was filtered wrong), and the new-vs-returning split
+(covers Sept 1–7 only). Each omission is stated in the report with its reason.
+
 **The rolling-boil creative is a 120 QT PERFORMANCE pot, not Powered — files renamed** —
 Evan, 2026-09-08. It is a 120 QT Performance pot sitting on a Boil Boss Triple Jet Burner.
 Performance = tunnel tubes only, burner separate and swappable, which is precisely why the

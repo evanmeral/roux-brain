@@ -102,7 +102,11 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 | #2 product (12 mo) | **18 QT Fish Fryer Powered — $293,194** | Shopify |
 | Commercial line (12 mo) | ~$342,011 (~11.9%) | Shopify |
 | Aug YoY growth | **+345%** ($19,763 → $87,938) | Shopify |
-| **Labor Day sale, Sep 1–7 2026** | **105 orders · $33,708 net · AOV $321.03** · $4,363 discounts | Shopify, 2026-09-08 |
+| ⭐ **Labor Day sale, Sep 1–8 2026 — COMPLETE** | **126 orders · $41,100.84 net · AOV $326.20** | Shopify, **verified twice 2026-09-09** |
+| **Sep 1–8 2025** (also a Labor Day sale) | **63 orders · $26,144.22 net · AOV $414.99** | Shopify, verified 2026-09-09 |
+| **Aug 24–31 2026** — 8 days, no sale | **65 orders · $25,130.04 net · AOV $386.62** | Shopify, verified 2026-09-09 |
+| **Sep 8 2026 alone** — deadline day | **21 orders · $7,198.24** — 17.5% of the sale in 24 hours | Shopify, verified 2026-09-09 |
+| Labor Day sale, Sep 1–7 2026 *(partial, superseded)* | 105 orders · $33,708 net · AOV $321.03 · $4,363 discounts | Shopify, 2026-09-08 |
 | — residential core (ex-commercial, ex-Navimow) | **$24,892 · +31.8% YoY** — a floor | Shopify, 2026-09-08 |
 | — prior year, Sep 1–7 2025 (also a sale) | 58 orders · $24,514 net · core $18,887 | Shopify, 2026-09-08 |
 
@@ -110,8 +114,19 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 > reconcile to gross, net, or total ÷ orders — it was checked on 2026-09-08 and could not be tied
 > to any of them. Older AOV figures in this brain used that field and are not comparable.
 >
-> **Two cautions on the Labor Day figures.** ① **Sept 8 is excluded** — the sale's deadline day,
-> normally the second spike, so these understate it. Re-pull Sept 1–8 complete. ② **Sept 1–7 2025
+> ✅ **Sept 8 has now been pulled** (2026-09-09) and the complete window is above. It was the
+> **biggest single day of the sale** — 21 orders and $7,198.24, 17.5% of the total in the final
+> 24 hours as the codes expired. **The deadline outperformed the discount.**
+>
+> **The AOV warning survives the fuller data and gets stronger:** −21.4% year over year and
+> −15.6% against the eight no-sale days immediately before. **Two Labor Days running on the
+> same mechanic.** Keep the deadline, drop the sitewide percentage.
+>
+> ⚠️ **Still not on file, and not to be invented:** actual CAC for the full window (no Sept 8
+> Meta spend captured, no Google Ads feed — any figure would be understated) · the
+> new-vs-returning split for Sept 1–8 (the 57/44/98 figure covers **Sept 1–7 only**).
+>
+> **One caution remains.** ① **Sept 1–7 2025
 > was also a sale** (LABOR15, SMS25, HIGH10/HIGH15), so YoY is sale-vs-sale, and it predates the
 > 2026-07-20 BM Digital line — two operators, not one trend.
 >
