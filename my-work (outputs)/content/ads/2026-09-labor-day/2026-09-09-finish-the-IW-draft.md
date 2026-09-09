@@ -1,5 +1,6 @@
 # Finishing the IntentWave draft campaign — step by step
-**Wed Sept 9, 2026.** About five minutes. **Do not publish** — this is for review at 1pm.
+**Wed Sept 9, 2026.** **Do not publish** — this is for review at 1pm.
+**Remaining: budget, minimum age, creative.** Steps 4 and 5 are done.
 
 > Already done and saved in the account:
 > **Campaign** `IW Lookalike 1% - Cold Prospecting - Sept 2026 (DRAFT)`, Sales objective ·
@@ -49,13 +50,14 @@ bigger number.
 
 ---
 
-## STEP 4 · Schedule
+## STEP 4 · Schedule — ✅ DONE
 
-**Start date: Tuesday Sept 16.** Leave the end date empty.
+**Set to Fri Sept 11, 6:30am PDT.** No end date. Evan's call, 2026-09-09.
 
-⚠️ **Do not start it today.** Sept 9–15 is the only clean, no-discount measurement week you
-will get — a new campaign launching into it adds a variable that makes the whole week
-unreadable. This is also what you tell Dalton if he pushes to go live today.
+ROUX had proposed Sept 16 to protect a clean no-discount measurement week. Evan moved it
+earlier and that holds up: a separate campaign with its own audience and exclusions does not
+corrupt `BPM_TOF_Manual`'s own numbers — it adds some account-level noise and auction
+competition, in exchange for five extra days of learning. **Do not re-raise Sept 16.**
 
 ---
 
@@ -143,8 +145,9 @@ You want to walk into the meeting with something to show, not something already 
 people in the US. It's the tighter, higher-intent build and the conventional first step.
 Widening to 3% later is a one-click edit.
 
-**"Why not launch today?"** Sept 9–15 is the only clean no-discount week available to measure
-the post-sale baseline. One week of patience buys a readable number.
+**"Why Friday and not today?"** The ads need review time, and Friday gives a clean start to a
+full week. The measurement caveat is worth saying out loud: this campaign overlaps the first
+no-discount week, so account-level numbers for Sept 9–15 carry a new variable.
 
 **"What's the budget?"** $100/day, and the ceiling is $350/day total Meta until Jay's landed
 BOM lands. **The CAC ceilings on file are provisional — nobody in the room, us included, gets
