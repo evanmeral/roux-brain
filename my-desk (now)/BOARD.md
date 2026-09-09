@@ -29,7 +29,7 @@
 | BPM Tailgate Video | 20 | $57.07 | $62/day |
 | Video_UGC/Review18qt Fryer | 15 | $64.89 | $42/day |
 
-*(Plus a second `Video_UGC/Review18qt Fryer` at $9.46 on 2 purchases — too small to read — and `Video_ 30qt (turkey) Fryer Time Lapse` with no purchases.)*
+*(Plus a 2nd `Video_UGC/Review18qt` at $9.46 on 2 purchases — too small to read — and `Video_30qt Time Lapse`, no purchases.)*
 
 ⭐ **This campaign runs on video, not statics.** The Labor Day statics were an overlay on a video campaign that never stopped. **Where the five new statics go is now an open decision, not a given** — ROUX is settling it.
 
@@ -71,7 +71,7 @@
 - **CAC ceilings are provisional.** The figure on record is gross profit per unit — a *break-even line*, not a spending ceiling. → `internal/reports/2026-08-28-cac-model-v2.md`
 - **Lanes:** Google Ads + SEO is Coalition's — monitor and report only, Basecamp is the workspace. **Email / SMS / Klaviyo is Biljana's**, entirely.
 - ✅ **NOLA Home & Garden Show, Feb 19–21 2027 — BOOKED AND PAID.** $1,700, standard 10×10. Directory copy live and on file verbatim. 🔥 **No propane in the exhibit hall** — the demo has to be video with a running clock. → [trade-shows](../my-work%20%28outputs%29/content/other/trade-shows/README.md). ⛔ Louisiana Outdoor Expo and the Nov 11 Cater-Event Expo are both a **no**.
-- **Nova's queue:** ad naming/build process · **missing-end-date pre-launch checklist line** (this sale's gap, would have made Wednesday unnecessary) · **`.claude/agents/maya.md` still lists 1080×1350 in the PAID set — stale, will keep reintroducing 4:5** · `check-centering.py` has a hardcoded `BAND = (200, 660)` that suits carousels only and misread a frame this session; needs `--x`/`--band` · two `what-we-sell.md` fixes (40 QT fixed steamer insert filed discontinued but live at $27.99; BB-TJB compare-at identical to price) · **`Performance Boiling Pots (60QT to 120QT)` is a duplicate listing** of the four individual pots · **`Commercial Cookers On Sale` collection has 0 products** and is linked from the homepage FAQ.
+- **Nova's queue:** ad naming/build process · **missing-end-date pre-launch checklist line** (this sale's gap, would have made Wednesday unnecessary) · **`.claude/agents/maya.md` still lists 1080×1350 in the PAID set — stale, will keep reintroducing 4:5** · `check-centering.py` has a hardcoded `BAND = (200, 660)` that suits carousels only and misread a frame this session; needs `--x`/`--band` · two `what-we-sell.md` fixes · `Performance Boiling Pots (60QT to 120QT)` is a duplicate listing · `Commercial Cookers On Sale` has 0 products but is linked from the homepage FAQ.
 - **After the post-mortem:** June–October off-season plan (the real +$500K project) · weekly scoreboard cadence.
 
 ---
@@ -99,9 +99,8 @@ A cached view. Never cite from here without checking the date.
 |---|---|---|
 | ⭐ **Sale, Sept 1–8 — COMPLETE window** | **126 orders · $41,100.84 net · AOV $326.20** · 69 new customers | Shopify, **verified twice 2026-09-09** |
 | **Sept 1–8 2025** (also a sale) | **63 orders · $26,144.22 net · AOV $414.99** | Shopify, verified 2026-09-09 |
-| **YoY, like-for-like 8 days** | **orders +100.0% · net +57.2% · AOV −21.4%** | Derived, 2026-09-09 |
+| **YoY, like-for-like 8 days** | **orders +100.0% · net +57.2% · AOV −21.4%** · residential core +31.8% (Sept 1–7) | Derived, 2026-09-09 |
 | **Sept 8 alone** (deadline day) | **21 orders · $7,445.75** — 2nd-best day of the sale | Shopify, 2026-09-09 |
-| Sale, Sept 1–7 *(partial, superseded)* | 105 orders · $33,708 net · residential core **+31.8% YoY** | Shopify, 2026-09-08 |
 | — residential core | **$24,892 · +31.8% YoY** (a floor) | Shopify, 2026-09-08 |
 | **Meta, Sept 1–7** | **$1,415.69 · 53 claimed purchases · $26.71 CPP · ~$202/day** | Ads Manager, 2026-09-08 |
 | — `BPM_TOF_Manual` | $1,094.29 · 37 · $29.58 CPP · **frequency 5.05** | Ads Manager, 2026-09-08 |
