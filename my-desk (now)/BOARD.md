@@ -31,7 +31,9 @@
 
 ## 🔺 Now — top three
 
-**1. Ad creative — 15 renders done, awaiting Evan's review.** Five evergreen concepts × {1:1, 9:16, 1.91:1} in `my-skills/hpc-ad-creative/work/creative/drafts/`. ✅ **`hpc-dark-evergreen` LOCKED** (pot lifted 40px on the 9:16; 80px collided with the propane chip). ⏳ Unreviewed: `80qt-buy-cheap-twice` · `120qt-crowd-math` · `120qt-rolling-boil` · `18qt-fry-it-all`. **Look hardest at the 1.91:1s — no precedent existed.** Nothing moves to `library/` until Evan approves the batch.
+**1. ✅ Ad creative DONE — 15 statics approved and in `library/`, copy written.**
+Five concepts × {1:1, 9:16, 1.91:1}. Ad copy → [2026-09-09-evergreen-ad-copy.md](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md) — primary text, headline, description, verified URL and campaign for each. **Every handle and price re-checked against Shopify 2026-09-08.**
+⚠️ **One open question, 30 seconds to settle:** `120qt-rolling-boil` is filed as **Powered** but the copy sends it to the **Performance** pot, because the frame says *"works on any burner you already own"* and the pot sits on a separate Triple Jet. A separate burner means Performance. **Look at the render and settle it — it decides the destination URL.**
 
 **2. Post-mortem, Sept 9.** Most of it is answered → [analysis](archive/2026-09-08-labor-day-sale-analysis.md). **The sale worked: +31.8% on residential core YoY, a floor.** Two questions left, both needing data pulled while already in the tools: **(a) Sept 8 itself** — every figure on file excludes deadline day; **(b) the daily CPP/CPM/CTR curve** for `BPM_TOF_Manual` with `18qt` as control — the test that separates fatigue from ordinary decay. Do not name a cause before running it.
 
