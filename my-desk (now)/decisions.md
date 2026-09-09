@@ -37,7 +37,13 @@ exploration budget out of proven delivery and returns a test that cannot be read
 intra-ad-set allocation is not a fair split. Three statics went to the new IW campaign; the two
 objection-handlers are held for retargeting.
 
-**Reports to Jay and Robert are drafted, not sent** — 2026-09-09. Two plain-language write-ups
+**Reports to Jay and Robert — SENT 2026-09-09.** *(Supersedes the "drafted, not sent" status
+below, which was true at the time of writing.)* The owners now hold these figures, so anything
+we report later has to reconcile to them: **126 orders · $41,100.84 net · AOV $326.20**, both
+comparison windows, and the three things we explicitly told them we do not have. If a later
+pull contradicts any of it, we correct it to them directly rather than quietly restating.
+
+**Reports to Jay and Robert were drafted, then reviewed by Evan before sending** — 2026-09-09. Two plain-language write-ups
 (sale results + Meta overview, and the new campaign plan) with every figure re-verified against
 Shopify. **Deliberately omitted rather than estimated:** actual CAC (no Google spend feed),
 which creative won (the ad-level table was filtered wrong), and the new-vs-returning split

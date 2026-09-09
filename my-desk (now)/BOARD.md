@@ -49,7 +49,6 @@
 
 | Who | What | Since |
 |---|---|---|
-| **Evan** | **Send the Jay/Robert email** — drafted in Gmail, awaiting his review | 2026-09-09 |
 | **Evan** | Finish the Sept 1–8 feed-post captions naming a dead code, then re-pull final redemption counts on both | 2026-09-09 |
 | **Evan** | Decide the BOM-gate override (Now #3) | 2026-09-08 |
 | **Evan** | Ask Garrett for a 15–20s cut of the 18 QT video (67s version cleared) | 2026-09-01 |
@@ -61,6 +60,7 @@
 
 ## ⏸️ Parked — deliberately, do not re-raise
 
+- ✅ **Jay and Robert are briefed as of 2026-09-09.** Evan sent the sale results + Meta overview and the new-campaign plan. **Future reporting must stay consistent with what they now hold:** 126 orders / $41,100.84 / AOV $326.20, both comparison windows, and the three figures we told them we do *not* have (actual CAC, which creative won, the new-vs-returning split). → [reports](../my-work%20%28outputs%29/internal/reports/)
 - ✅ **Closed by Evan 2026-09-08:** sale comms — everyone already knew, nothing to send · **popups are Biljana's** · **the always-on codes are welcome codes** for email/SMS signups and **cannot combine with a live sale**, so no audit is needed.
 - **June–October off-season plan** — the real +$500K project. Starts after the post-mortem.
 - **Creator brief.** ~17 idle creators on UpPromote. ⛔ Paid content is discontinued.
