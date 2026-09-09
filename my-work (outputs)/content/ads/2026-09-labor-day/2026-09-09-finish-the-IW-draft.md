@@ -59,27 +59,49 @@ unreadable. This is also what you tell Dalton if he pushes to go live today.
 
 ---
 
-## STEP 5 · Audience — the part that matters most
+## STEP 5 · Audience — ✅ DONE 2026-09-09
 
-**Include:**
-- `Lookalike (1%) - IW - LA Audience`
+**Estimated audience size went from 217,800,000 to 2,300,000 – 2,800,000.** All three
+exclusions are in as hard **Controls** — *"We won't reach people beyond these settings, even
+with Advantage+ on."*
 
-**Exclude — all three:**
-- `Website Visitors 30D (All)`
-- `Past Purchase L90 via Pixel Data`
-- `Dealer Buyers (EXCLUSION)`
+### ⚠️ The ad set has NO audience picker, and that is not a bug
 
-**Why the exclusions are not optional.** `Website Visitors 30D (All)` is the pool your own
-retargeting campaign will use. If this campaign can also reach those people, the two bid
-against each other in the same auction — you pay more for both, and neither result can be
-read cleanly afterward. The purchaser and dealer exclusions stop you paying to advertise to
-people who already bought or who buy at wholesale.
+This is an **Advantage+ Sales Campaign** and Meta removes the audience selector by design.
+There is no toggle to turn it off — "Show more settings" at campaign level only exposes a
+spending limit. The Audience card gives you *Controls* (hard limits) and *Suggest an audience*
+(a hint Meta may ignore). Neither lets you set a real inclusion with exclusions.
 
-**Age / gender / location:** leave at default for now. Location matters more than usual here —
-Meta removed location from lookalike creation, so the lookalike takes its geography from
-**this ad set**. Default is United States, which is what you want.
+### The way through: build a Saved Audience, then pull it in
 
----
+The **Saved Audience builder has a link the ad set doesn't** — that link is the whole trick.
+
+1. **Ads Manager → Audiences → Create audience → Saved audience**
+2. Click **"Switch to original audience options"** — bottom left of the dialog
+3. Name it, then under **Custom audiences** add `Lookalike (1%) - IW - LA Audience`
+4. Click **Add exclusions** → add `Website Visitors 30D (All)`, `Past Purchase L90 via Pixel
+   Data`, `Dealer Buyers (EXCLUSION)`
+5. **Create saved audience**
+6. Ad set → Audience → **"Use a saved audience"** → select it
+
+**Built as:** `IW LAL 1% - Cold - excl. retargeting, purchasers, dealers`
+
+### Two traps in that flow
+
+- ⛔ **Never press Escape in these dialogs.** It closes and discards everything with no
+  warning. Cost one full rebuild.
+- **The layout shifts down after every pick.** Click directly into the next field; select-all
+  grabs the whole page instead of the field.
+
+### Two things the copy-in does that you should know about
+
+- **Meta says "a new audience has been created based on your saved audience."** That is a
+  translation, not a failure — an Advantage+ ad set can't reference a saved-audience object,
+  so Meta copies the settings in. The exclusions carry, and the 215-million drop in estimated
+  size is the lookalike doing its job.
+- ⚠️ **It overwrites the ad set's minimum age** with whatever the saved audience carries. Ours
+  carried the default 18, which wiped Evan's 24. **The saved audience still says 18** — fix it
+  before reusing it, or the next ad set inherits the wrong floor.
 
 ## STEP 6 · Placements
 
