@@ -11,6 +11,23 @@
 
 ## 2026-09
 
+**The rolling-boil creative is a 120 QT PERFORMANCE pot, not Powered — files renamed** —
+Evan, 2026-09-08. It is a 120 QT Performance pot sitting on a Boil Boss Triple Jet Burner.
+Performance = tunnel tubes only, burner separate and swappable, which is precisely why the
+frame's *"works on any burner you already own"* line is correct. Four library files renamed
+from `120qt-powered_rolling-boil` to `120qt-performance_rolling-boil`, including the Aug 27
+4:5 original that carried the same wrong label. **The ad points at the Performance PDP**
+(`120-qt-performance-seafood-pot`, $532–$580, verified in Shopify 2026-09-08), not the Powered
+one. `120qt-crowd-math` keeps its `powered` label — that one does show a welded burner.
+
+**The evergreen creative batch is approved — 15 statics, five concepts, three paid sizes** —
+Evan, 2026-09-08. Moved into `library/` with a log entry each. The 80 QT 9:16 took three
+passes: pot scaled up ~1.6× total, the panel glow extended to the foot (it ran 600px inside an
+800px panel, which read as a cut-off background), and **top and bottom margins evened at
+~160px** — which puts the logo inside the Story top safe zone, deliberately and on Evan's call.
+Ad copy for all five → [evergreen-ad-copy](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md),
+every destination handle and both quoted prices verified against Shopify.
+
 **`120qt-rolling-boil` copy is correct as written — the pot is on a Triple Jet Burner** —
 Evan, 2026-09-08. Closes a flag raised the same day: *"Tunnel Tube technology is in the pot —
 so it works on any burner you already own"* was read as Performance copy over a Powered

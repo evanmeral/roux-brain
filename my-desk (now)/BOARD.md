@@ -17,7 +17,7 @@
 
 1. **List every ad in `BPM_TOF_Manual`, Active filter cleared — BEFORE switching anything off.** All six live there. If nothing evergreen survived, killing them takes ~$156/day and 77% of Meta spend to zero. 30 seconds answers it.
 2. Six ads **off** — toggle the *ads*, not the ad sets. **Never delete** (destroys post-mortem history).
-3. Evergreen ads **on** — one live ad minimum per ad set. **Re-enable a paused ad over building new** (keeps social proof).
+3. Evergreen ads **on** — one live ad minimum per ad set. **Re-enable a paused ad over building new** (keeps social proof). Creative in `library/`, copy + verified URLs + campaign routing → [evergreen-ad-copy](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md).
 4. `LAL 1% Purchasers` widened **1% → 1–3%** — the fix for frequency 5.05, done inside the same learning reset.
 5. **Retargeting campaign live, $30/day**, purchasers excluded. The sale's browser pool is the warmest until January and decays now.
 6. **18 QT video ad live** — ✅ Evan cleared the video 2026-09-08. Evergreen copy already written, no code, no extra budget.
@@ -31,15 +31,13 @@
 
 ## 🔺 Now — top three
 
-**1. ✅ Ad creative DONE — 15 statics approved and in `library/`, copy written.**
-Five concepts × {1:1, 9:16, 1.91:1}. Ad copy → [2026-09-09-evergreen-ad-copy.md](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md) — primary text, headline, description, verified URL and campaign for each. **Every handle and price re-checked against Shopify 2026-09-08.**
-✅ **`120qt-rolling-boil` settled** — it is a **120 QT Performance** pot on a Boil Boss Triple Jet Burner (Evan, 2026-09-08). Library files renamed `120qt-performance_rolling-boil`; the copy's Performance PDP destination is correct.
+**1. Post-mortem, Sept 9.** Most of it is answered → [analysis](archive/2026-09-08-labor-day-sale-analysis.md). **The sale worked: +31.8% on residential core YoY, a floor.** Two questions left, both needing data pulled while already in the tools: **(a) Sept 8 itself** — every figure on file excludes deadline day; **(b) the daily CPP/CPM/CTR curve** for `BPM_TOF_Manual` with `18qt` as control — the test that separates fatigue from ordinary decay. Do not name a cause before running it.
 
-**2. Post-mortem, Sept 9.** Most of it is answered → [analysis](archive/2026-09-08-labor-day-sale-analysis.md). **The sale worked: +31.8% on residential core YoY, a floor.** Two questions left, both needing data pulled while already in the tools: **(a) Sept 8 itself** — every figure on file excludes deadline day; **(b) the daily CPP/CPM/CTR curve** for `BPM_TOF_Manual` with `18qt` as control — the test that separates fatigue from ordinary decay. Do not name a cause before running it.
+**2. ⭐ `18qt-TOF-Prospecting` is the off-season engine.** $20.09 CPP, frequency 1.90 — beating the flagship sale campaign by 32%. 18 QT is a **fish fryer**, not seasonal. Ladder: ≤20% every 3 days, gates CPP ≤$30 and frequency ≤2.5. ⚠️ **ROUX recommends going past step one without the landed BOM** (3.1× headroom against the ~$63 provisional ceiling). **That overrides a board note and is Evan's call — still open.**
 
-**3. ⭐ `18qt-TOF-Prospecting` is the off-season engine.** $20.09 CPP, frequency 1.90 — beating the flagship sale campaign by 32%. 18 QT is a **fish fryer**, not seasonal. Ladder: ≤20% every 3 days, gates CPP ≤$30 and frequency ≤2.5. ⚠️ **ROUX recommends going past step one without the landed BOM** (3.1× headroom against the ~$63 provisional ceiling). **That overrides a board note and is Evan's call — still open.**
+**3. The June–October off-season plan** — the real +$500K project, and now unblocked. The relaunch gives it a live testbed: five fresh concepts, a retargeting campaign, and a control campaign that stays untouched. **Starts after the post-mortem**, and the post-mortem is one data pull away.
 
-*Demoted: the creator brief → Parked. It has been "after the sale" for two weeks and the post-sale week is committed to the relaunch.*
+*Demoted: ad creative. **Done** — 15 statics approved and in `library/`, copy written and verified. It lives in Running until Wednesday's paste, then it is finished work.*
 
 ---
 
@@ -48,8 +46,8 @@ Five concepts × {1:1, 9:16, 1.91:1}. Ad copy → [2026-09-09-evergreen-ad-copy.
 | Who | What | Since |
 |---|---|---|
 | **Evan** | Upload the 4 evergreen PNGs to the Meta media library — **only he can put files into Meta**; without it Wednesday has nothing to switch on | 2026-09-08 |
-| **Evan** | Review the 12 unreviewed drafts; decide the BOM-gate override | 2026-09-08 |
-| **Evan** | Ask Garrett for a 15–20s cut of the 18 QT video | 2026-09-01 |
+| **Evan** | Decide the BOM-gate override — whether the 18 QT ladder runs past step one without Jay's landed cost | 2026-09-08 |
+| **Evan** | Ask Garrett for a 15–20s cut of the 18 QT video (the 67s version is watched and cleared) | 2026-09-01 |
 | **Jay** | **Landed BOM + monthly overhead — now the highest-value unblock in the business.** Gates the 18 QT ladder *and* the ~$50.58 legs threshold | 2026-08-28 |
 | **Coalition** | Reply on Cater + Event, Mar 22–25 | — |
 | **Garrett** | High-res tunnel-tube-in-action still. Library's only one is **640×323** — HPC's best differentiator, no usable image | 2026-09-08 |
