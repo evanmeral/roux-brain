@@ -26,7 +26,7 @@ is the control and stays frozen for seven days. **Both are routed elsewhere.**
 | `hpc-dark-evergreen` | `BPM_TOF_Manual`, cold prospecting | Spec-led creative needs volume to read, and it can't go in the frozen control. |
 | `80qt-buy-cheap-twice` | **New retargeting** | An objection-killer. The objection only exists in someone who already saw a price. |
 | `120qt-crowd-math` | `BPM_TOF_Manual`, broad cold | Crowd math is the widest cold hook we have, and it qualifies the big-pot buyer without a price in it. |
-| `120qt-rolling-boil` | `BPM_TOF_Manual`, third ad set | Flagship claim, highest-intent hook we own. Deserves the workhorse budget. |
+| `120qt-performance_rolling-boil` | `BPM_TOF_Manual`, third ad set | Flagship claim, highest-intent hook we own. Deserves the workhorse budget. |
 | `18qt-fry-it-all` | **New retargeting** | Someone who viewed the 18 QT and didn't buy is usually stuck on "is this only a fish fryer." Both versions answer that. |
 
 ---
@@ -120,7 +120,7 @@ Full 2-year warranty on everything, and a limited 5-year on residential pots 120
 
 ---
 
-# 4 · `120qt-rolling-boil` — 120 QT on the Boil Boss Triple Jet
+# 4 · `120qt-performance_rolling-boil` — 120 QT **Performance** pot on a Boil Boss Triple Jet
 **URL (both versions):** `https://highperformancecookers.com/products/120-qt-performance-seafood-pot` · **CTA:** Shop Now
 
 Both variants point at the same page deliberately — the frame's own line is *"works on any
