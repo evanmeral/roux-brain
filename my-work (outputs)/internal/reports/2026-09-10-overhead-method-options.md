@@ -374,3 +374,12 @@ $1,632,600.87.
 - **$676k of marketing is well past what 20% net allows.** As described, 20% leaves ~$222,996/yr (~$304,596 if the overhead's $6,800/mo agencies sit inside the $152k agency fees). Under the other reading, 20% isn't reachable even at $0 marketing, and net at $0 marketing would be ~16.9%.
 - **The biggest controllable line is marketing, not the fryer and not the overhead method.** Re-testing the $676k against the incremental rule is the next ROUX job. Google ($206k) is Coalition's lane: monitor and suggest only.
 - **The per-product ceilings stand.** Shopify landed cost matches P&L COGS.
+
+---
+
+## Addendum: P&L revenue (2026-09-10, later)
+- **Fact (Jay):** P&L revenue for the last 365 days was **$4.3M booked**. A $393k expense came from double-booking a Lowe's order, so **real revenue is ~$3.9M**.
+- **The previous addendum's reading is ruled out.** With ~$3.9M of revenue, the 46% sits **after** card fees and freight, as Jay described. That reading used Shopify's $3.14M as the P&L revenue.
+- **Derived, on 46% of ~$3.9M:** overhead is 15.2% and marketing 17.3% of revenue. Net is **~13.5%** if the other expenses were one-time. 20% net leaves **~$421,220/yr** for all marketing (~$502,820 if the agencies are double-counted). Actual marketing was $676k, **~$254,780 over**.
+- **If the 46% was worked on the $4.3M booked:** the real margin is ~40.6%, net ~8.0% if the others were one-time, and the room is ~$209,000. **Asked Jay which.**
+- **Unreconciled:** P&L revenue ~$3.9M vs Shopify net sales + shipping $3,144,599 for the same window. That's a ~$760k gap while COGS matches within 1.4%. Parked for ROUX and Finn.

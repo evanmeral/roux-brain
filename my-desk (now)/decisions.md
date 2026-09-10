@@ -11,6 +11,21 @@
 
 ## 2026-09
 
+**P&L revenue: $4.3M booked, ~$3.9M real; the 46% holds as after fees and freight** — Jay,
+2026-09-10. Revenue for the last 365 days was **$4.3M booked**. A **$393k** expense came from
+double-booking a Lowe's order, so **real revenue is ~$3.9M**. **This rules out the reading
+logged below** that the 46% sits before card fees and freight. That reading came from using
+Shopify's $3.14M as the P&L revenue. **Derived, on 46% of $3.9M:**
+- 20% net leaves **~$421,220/yr** for all marketing (~$502,820 if the overhead's agencies sit inside
+  the $152k). **This replaces the ~$223k** in the text Jay was sent.
+- Marketing ran **~$254,780 over**.
+- Net comes to **~13.5%** if the other expenses were one-time, as Jay says.
+**Still open:**
+- **Whether the 46% was worked on $4.3M or $3.9M.** On $4.3M, the real margin is ~40.6% and the room
+  is ~$209,000. Asked Jay.
+- **P&L revenue (~$3.9M) vs Shopify net sales plus shipping ($3.14M): a ~$760k gap**, while COGS matches
+  within 1.4%. Parked for ROUX and Finn.
+
 **Shopify prices always win; the brain was matched to them** — Evan, 2026-09-10. "Those
 Shopify prices are always correct." Nova brought `what-we-sell.md` into line with Finn's
 2026-09-10 variant pull: 5 prices corrected, 30 active products added, non-merchandise left

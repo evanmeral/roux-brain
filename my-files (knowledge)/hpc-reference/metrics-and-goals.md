@@ -9,7 +9,7 @@
 > Full report: `my-work (outputs)/internal/reports/2026-08-26-shopify-baseline.md`
 
 ## 🎯 Break-even ROAS = **~2.4 blended** (use 2.2–2.5 on core SKUs)
-> ⚠️ **Under revision, 2026-09-10.** It's built on the 44.5% August margin, whose order-line costs predate Jay's cost review. The margin of record is **46%** (Jay, P&L, 365 days). No new break-even until P&L revenue settles whether that 46% is before or after card fees and freight. → `internal/reports/2026-09-10-overhead-method-options.md`
+> ⚠️ **Under revision, 2026-09-10.** It's built on the 44.5% August margin, whose order-line costs predate Jay's cost review. The margin of record is **46%** (Jay, P&L, 365 days). It's after card fees and freight, on ~$3.9M real revenue. Still open: whether it was worked on the $4.3M booked (real margin ~40.6%) or the $3.9M. → `internal/reports/2026-09-10-overhead-method-options.md`
 August 2026: $87,938 net sales · $42,384 COGS · **44.5% gross margin.** Freight excluded — the
 customer pays it. Core cookers, fryers, and Boil Boss accessories all run 43–49%.
 **Outlier: 60 QT Powered Cooker at 28.9% (break-even 3.9) — investigate before advertising it.**
@@ -101,7 +101,7 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 | Discounts, 13 mo | −$411,877 (10.8%) — **over half is dealer/wholesale, not consumer promo** | Shopify |
 | Returns, 13 mo | −$521,426 (13.7%) — **−$174,002 (4.9%) excluding the Lowe's reversal** | Shopify |
 | Gross margin (Aug 2026) | **44.5%** ⚠️ stale: order-line costs predate Jay's cost review | Shopify |
-| ⭐ **P&L, last 365 days** (to 2026-09-09) | Margin before overhead + ads **46%** (described as after card fees + shipping cost; unconfirmed) · net profit **−5%** · COGS **$1.68M** | Jay, from the P&L, 2026-09-10 |
+| ⭐ **P&L, last 365 days** (to 2026-09-09) | Revenue **$4.3M booked, ~$3.9M real** ($393k expense from a double-booked Lowe's order) · margin before overhead + ads **46%**, after card fees + shipping cost · net profit **−5%** · COGS **$1.68M**. ⚠️ Unconfirmed whether the 46% was worked on $4.3M (real margin ~40.6%) or $3.9M | Jay, from the P&L, 2026-09-10 |
 | Marketing, last 365 days | **$676k**: Google $206k · Meta $258k · agency fees $152k · other advertising/marketing $56k · affiliates ~$4k | Jay, P&L, 2026-09-10 |
 | Overhead | **~$49,550/mo, steady year-round** (agencies $6,800 · software $7,000 · non-build payroll $20,000 · rent $9,750 · insurance $1,000 · misc $5,000). Ad spend not included. A rough estimate | Jay, 2026-09-09/10 |
 | Shopify, 2025-09-10 → 2026-09-09 | Net sales $2,902,399.16 · shipping charged $242,199.97 · taxes $95,575.15 · 6,442 orders | ShopifyQL, 2026-09-10 |
