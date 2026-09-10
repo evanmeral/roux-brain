@@ -9,6 +9,7 @@
 > Full report: `my-work (outputs)/internal/reports/2026-08-26-shopify-baseline.md`
 
 ## 🎯 Break-even ROAS = **~2.4 blended** (use 2.2–2.5 on core SKUs)
+> ⚠️ **Under revision, 2026-09-10.** It's built on the 44.5% August margin, whose order-line costs predate Jay's cost review. The margin of record is **46%** (Jay, P&L, 365 days). No new break-even until P&L revenue settles whether that 46% is before or after card fees and freight. → `internal/reports/2026-09-10-overhead-method-options.md`
 August 2026: $87,938 net sales · $42,384 COGS · **44.5% gross margin.** Freight excluded — the
 customer pays it. Core cookers, fryers, and Boil Boss accessories all run 43–49%.
 **Outlier: 60 QT Powered Cooker at 28.9% (break-even 3.9) — investigate before advertising it.**
@@ -27,6 +28,8 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 
 ## 🎯 CAC — always report this alongside ROAS (Evan, 2026-08-27)
 
+> 🚨 **SUPERSEDED AGAIN, 2026-09-10:** real landed cost, $49,550/mo overhead, and a 20% net target → `internal/reports/2026-09-10-cac-ceilings-v3.md` + `2026-09-10-overhead-method-options.md`. ROUX recommends the incremental rule: no overhead in ad ceilings, each ad leaves ≥20% of the order after ad cost, 20% checked monthly at business level. **Don't use the tables below.**
+>
 > 🚨 **SUPERSEDED IN PART — see `my-work (outputs)/internal/reports/2026-08-28-cac-model-v2.md`.**
 > Robert (co-owner) correctly identified that the "allowable CAC" below is **gross profit per unit**,
 > i.e. the point at which an order contributes **nothing** to overhead. It is a **break-even line,
@@ -97,7 +100,12 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 | Gross sales, 13 mo | $3,817,328 | Shopify |
 | Discounts, 13 mo | −$411,877 (10.8%) — **over half is dealer/wholesale, not consumer promo** | Shopify |
 | Returns, 13 mo | −$521,426 (13.7%) — **−$174,002 (4.9%) excluding the Lowe's reversal** | Shopify |
-| Gross margin (Aug 2026) | **44.5%** | Shopify |
+| Gross margin (Aug 2026) | **44.5%** ⚠️ stale: order-line costs predate Jay's cost review | Shopify |
+| ⭐ **P&L, last 365 days** (to 2026-09-09) | Margin before overhead + ads **46%** (described as after card fees + shipping cost; unconfirmed) · net profit **−5%** · COGS **$1.68M** | Jay, from the P&L, 2026-09-10 |
+| Marketing, last 365 days | **$676k**: Google $206k · Meta $258k · agency fees $152k · other advertising/marketing $56k · affiliates ~$4k | Jay, P&L, 2026-09-10 |
+| Overhead | **~$49,550/mo, steady year-round** (agencies $6,800 · software $7,000 · non-build payroll $20,000 · rent $9,750 · insurance $1,000 · misc $5,000). Ad spend not included. A rough estimate | Jay, 2026-09-09/10 |
+| Shopify, 2025-09-10 → 2026-09-09 | Net sales $2,902,399.16 · shipping charged $242,199.97 · taxes $95,575.15 · 6,442 orders | ShopifyQL, 2026-09-10 |
+| Landed cost check | Shopify current `unitCost` on 12 months of paid orders ≈ $1.66M vs P&L COGS $1.68M: **within 1.4%** *(derived)* | Finn Pull D + Jay, 2026-09-10 |
 | #1 product (12 mo) | 120 QT Powered — $492,671 | Shopify |
 | #2 product (12 mo) | **18 QT Fish Fryer Powered — $293,194** | Shopify |
 | Commercial line (12 mo) | ~$342,011 (~11.9%) | Shopify |
@@ -161,6 +169,7 @@ is dealer/wholesale. Detail: `my-work (outputs)/internal/reports/2026-08-26-disc
    → Still a real cost. Worth confirming **carrier damage claims are being filed**, since that money
    is recoverable and currently shows up as pure margin loss.
 2. **What happened with the Lowe's deal?** A $496K reversal is a business question, not a marketing one.
+   *Finn, 2026-09-10:* order #12354 was booked 2025-12-29 and shipped, but never paid. It was cancelled 2026-02-12 and all 704 units were restocked. Freight on it isn't in Shopify. Only $347,424 of February's returns is Lowe's.
 3. **Influencer giveaways cost $51,603 at retail** across three 100%-off codes, with zero attribution.
    ⚠️ **True cost is understated in Shopify** — Evan confirmed (2026-08-28) that free influencer
    product is why some orders show no cost recorded. At ~55% COGS the real cost is **roughly $28K
@@ -171,9 +180,9 @@ is dealer/wholesale. Detail: `my-work (outputs)/internal/reports/2026-08-26-disc
 | Revenue | Shopify net sales | **$2.88M** (13 mo) | $3.5M+ |
 | Blended CAC | Total ad spend ÷ new customers | <!-- TBD --> | <!-- TBD --> |
 | Blended ROAS | Revenue ÷ total ad spend | <!-- TBD --> | <!-- TBD --> |
-| MER | Total revenue ÷ total ad spend | <!-- TBD --> | <!-- TBD --> |
+| MER | Total revenue ÷ total ad spend | **6.26** on Google + Meta ($464k) · **4.29** on all $676k marketing *(derived: Shopify net $2.90M, 365 days, 2026-09-10)* | <!-- TBD --> |
 | AOV | Net sales ÷ orders | <!-- TBD --> | <!-- TBD --> |
-| Gross margin | (Net sales − COGS) ÷ net sales | **44.5%** (Aug 2026) | maintain 44%+ |
+| Gross margin | (Net sales − COGS) ÷ net sales | **46%** P&L, 365 days (Jay, 2026-09-10) ⚠️ basis unconfirmed · 44.5% Aug is stale | maintain 44%+ |
 | Discount rate | Discounts ÷ gross sales | **10.8%** (13 mo) | keep under 10% |
 | Return rate | Returns ÷ gross sales | **8.2%** (Aug, rising) | reduce |
 | Contribution margin | Rev − COGS − shipping − fees − ad spend | <!-- TBD --> | <!-- TBD --> |
@@ -238,7 +247,7 @@ COGS:
 **⚠️ Illustrative only — not HPC numbers.** Replace the moment real COGS is known.
 
 Still required:
-- **COGS per SKU** ← the last missing input. ROUX will check whether Shopify's "Cost per item" field is populated.
+- ✅ **COGS per SKU:** Shopify `unitCost` is landed cost, confirmed by Jay 2026-09-10, and matches P&L COGS within ~1.4%.
 - Payment processing % (readable from Shopify Payments payouts)
 - Return / freight-damage rate (aluminum pots on LTL — real risk, unquantified)
 

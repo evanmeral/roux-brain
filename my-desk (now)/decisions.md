@@ -11,6 +11,31 @@
 
 ## 2026-09
 
+**Shopify prices always win; the brain was matched to them** — Evan, 2026-09-10. "Those
+Shopify prices are always correct." Nova brought `what-we-sell.md` into line with Finn's
+2026-09-10 variant pull: 5 prices corrected, 30 active products added, non-merchandise left
+out. Two reference files were fixed the same way. Dated records were left as written. Any
+brain price that disagrees with Shopify is the brain's error. No live or approved creative
+carries a wrong price.
+
+**The P&L's full year: net −5%, marketing $676k** — Jay, 2026-09-10, from HPC's P&L, last
+365 days. **Net profit −5%.** Jay says part of that was unforeseen, one-time expenses he is
+already fixing. **Advertising and marketing $676k:** Google $206k · Meta $258k · agency fees
+$152k · other advertising and marketing $56k · affiliate commissions ~$4k. **COGS $1.68M.**
+Second source for Meta: the Jan–Aug Meta CSVs total $210,213.94, which fits $258k for the year.
+**Derived** (P&L revenue taken as Shopify net sales plus shipping charged, $3,144,599):
+- 46% margin less ~$595k overhead less $676k marketing would be **+5.6%**. The books say −5%.
+  That's **~$333,146** of expense outside the overhead and marketing lines.
+- **Card fees (~$95,914, assumed 2.9% + $0.30) plus freight-out (≈ the $242,200 customers
+  paid) come to ~$338,114**, almost exactly the gap. (Revenue − COGS) ÷ revenue = 46.6%.
+  **So the 46% matches margin *before* card fees and freight**, even though it was described as after them.
+  **Not confirmed.** If it holds, most of the −5% recurs and isn't one-time. P&L total revenue settles it.
+- **Marketing against 20% net:** taking the 46% as described, 20% net leaves ~$222,996/yr for all
+  marketing (~$304,596 if the $6,800/mo agencies in overhead sit inside the $152k). If
+  the 46% is before fees and freight, 20% net can't be reached even at $0 marketing. **In every
+  reading, $676k is well past what 20% net allows.**
+→ `internal/reports/2026-09-10-overhead-method-options.md`, final addendum
+
 **The IW lookalike launches Fri Sept 11 as scheduled, keeps the 18 QT ad, and gets tracking
 tags on the new campaign only** — Evan, 2026-09-10, with Jay's go-ahead. No wait for
 IntentWave's review. The 18 QT fryer ad stays in and its share of purchases is watched —

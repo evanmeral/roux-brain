@@ -11,7 +11,7 @@
 - **40 Qt Pots:** DISCONTINUED — lack of demand (30 and 60 cover the use cases). Scratch-and-dent only
 - **60 Qt Pot:** just under 1 sack of crawfish. 1" gate valve and single jet burner options. Includes 0-10 PSI regulator and boiling accessories (not turkey frying setup)
 - **80 Qt Pot:** original price $477 ✅ *matches Shopify*. Natural gas option (32-Tip Multi-Jet NG, 160K BTU). Sits 5.5" from burner tube tops to pot bottom
-- **100 Qt Pot:** price $517 ⚠️ *stale — Shopify shows $502–$550*. Taller than 80 qt. NG option. 5.5" clearance
+- **100 Qt Pot:** price $502–$550 *(Shopify, 2026-09-10; the imported $517 was stale)*. Taller than 80 qt. NG option. 5.5" clearance
 - **120 Qt Pot:** ✅ **2 sacks = 64–76 lb** (Evan, 2026-09-01). *The "~40 lbs" figure originally in this file was **wrong** and has been corrected.* NG option. 5.5" clearance. 3/4" drain valves. May hold excessive oil volume for single turkey frying
 - **40 Gallon (160 Qt) Cooker:** max ~2.5 sacks / ~80 lbs crawfish. NG version uses three 100K BTU jet burners (300K total). Dump basket that dumps down the lid
 - **60 Gallon Pot:** dump basket option; lid dump guide rails (pre-drilled for customer installation)
@@ -40,7 +40,7 @@
 ## Baskets & accessories
 
 - 40 Qt and 60 Qt Steamer Basket Inserts available
-- **Square Lift Basket for 60 Gallon Pot: $1,025**
+- **Square Lift Basket for 60 Gallon Pot: $1,199** *(Shopify "60 Gallon Square Basket", 2026-09-10; the imported $1,025 was stale)*
 - **Basket Buddy** (draining aid): `/products/basket-buddy`
 - Baskets designed to fill pots as much as possible. Most users drop a paddle in the side of the pot to hold the basket for draining
 - **20" Skimmer** works for both fryer and boiler

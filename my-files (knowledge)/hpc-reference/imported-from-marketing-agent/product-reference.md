@@ -83,7 +83,7 @@ OUTDOOR USE ONLY (never indoors/garage/enclosed) · Never light without water/oi
 
 - **Warranty:** 2-year full on all products + 5-year LIMITED on residential pots ≤120 QT. **NOT covered:** commercial misuse of residential products, negligence, cosmetic damage, jet-burner-for-frying, unapproved accessories. Claims → support@hpcookers.com / 985-260-1505
 - **Returns:** 30-day window — contact support to initiate; never promise a refund, share policy + escalate. Damaged on arrival → sales@highperformancecookers.com immediately
-- **Discounts:** Military/first-responder 5% (needs registered account); the $25 code needs (1) registered account AND (2) order ≥$125; financing + gift cards available. Custom logo on square cookers + paddles, ~$30–$75
+- **Discounts:** Military/first-responder 5% (needs registered account); the $25 code needs (1) registered account AND (2) order ≥$125; financing + gift cards available. Custom logo on square cookers + paddles, $75 *(Shopify "Add a Custom Logo", 2026-09-10; the imported ~$30 low end has no Shopify match)*
 
 ## Answers HPC's team actually gives
 
