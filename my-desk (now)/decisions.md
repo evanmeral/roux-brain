@@ -11,6 +11,113 @@
 
 ## 2026-09
 
+**The IW lookalike launches Fri Sept 11 as scheduled, keeps the 18 QT ad, and gets tracking
+tags on the new campaign only** — Evan, 2026-09-10, with Jay's go-ahead. No wait for
+IntentWave's review. The 18 QT fryer ad stays in and its share of purchases is watched —
+ROUX's call in `cac-ceilings-v3` §6b. URL tracking tags go on the three new ads only;
+`BPM_TOF_Manual` and `18qt-TOF-Prospecting` are not touched. → `internal/2026-09-10-intentwave-call-2-recap.md`
+
+**IntentWave is input, not a work queue** — Evan, 2026-09-10. They advise for free; their
+meeting notes are shared for context and ideas (e.g. bundling), not to generate questions or
+tasks for them. Decisions are made in-house. Figures said on calls are spitballing — Jay has
+read everything and is in the loop, so no correction campaign is needed.
+
+**Bundles: no discount codes, mainly HPC product, stock is not a constraint** — Evan,
+2026-09-10. A bundle's discount is built into its price, so no code applies on top. Outside
+add-on items are fine if they help sales, but not a sourcing project for a single item.
+Stock is fine; Digit connects in a few weeks. **ROUX to build a tailgate / Thanksgiving
+bundle plan** — IntentWave's idea, ours to use.
+
+**46% is the margin of record for the monthly whole-business check** — Jay, 2026-09-10.
+It comes from HPC's P&L for the last 365 days and is **after credit card fees and after
+shipping cost**. Shipping charged to customers is in revenue and the shipping cost is
+deducted. Landed cost rose "slightly" during the year, and Jay chose to stay with the
+365-day figure. **Per-product ad ceilings stay on current Shopify landed cost**, because the
+next unit sold costs today's price. **Still open:** the P&L's 46% (after fees) and Shopify's
+42.1% (before fees) sit roughly 6–7 points apart once card fees are put back, which is more
+than a slight cost rise explains on its own. Asked Jay for P&L total COGS, total
+advertising and net profit % to settle it.
+
+**Jay is the source for every number and answer from the owners, not Robert** — Evan,
+2026-09-10. Jay can pull P&L figures himself. Robert raised the CAC framing (2026-08-28),
+but questions no longer route to him. Anything that says "ask Robert" or "Robert's P&L"
+now means Jay.
+
+**P&L margin before overhead and advertising: 46%, last 365 days** — Jay, 2026-09-10, from
+HPC's P&L. **That's 3.9 points above** the 42.1% gross profit derived from Shopify at current
+landed cost (Finn, Pull D). **The cause isn't known yet.** Candidates: the P&L books
+actual cost at time of sale while Pull D costs every order at today's price; the P&L
+revenue may include shipping charged; the 46% may be before card fees. **It reverses
+Pull D's verdict:** 20% net is reachable with zero ad spend, where before it was out
+of reach. **Still under 20% after the known Meta spend in every case** (at most 13.3–17.9%,
+derived). → `internal/reports/2026-09-10-overhead-method-options.md`, P&L addendum
+
+**CAC ceilings v3 replace the provisional ones; ROUX withdraws the 18 QT override** —
+ROUX, 2026-09-10, arithmetic spot-checked by Claude. Built on confirmed landed cost,
+$97.49 overhead per order and a 20% net target, **one unit at full price**: the floor for a
+full-price order, not the order-level figure. **The 18 QT fryer's ceiling is −$26 alone and
+$15–18 with legs**, against a $128–141 break-even. ROUX withdraws its recommendation to go
+past step one on the ladder and says hold at $50/day. **$350/day holds**, but as a real limit
+now, not a placeholder. **The ⛔ on 30%-off legs stays**, now for a different reason: at
+$48.90 landed it was a wash at best. ⚠️ **Correction to what Jay was told:** the 2026-09-10
+text said per-order allocation "raises the ceiling on the accessories". **It lowers it.** That
+line came from v2, which had it backwards. Per-order allocation raises high-ticket ceilings
+and lowers low-ticket ones. It is the difference between the 18 QT at −$26 (per order) and
++$12 (revenue share). **Two calls are Jay's:** whether he still wants per-order now that he
+knows the real trade, and whether off-season lines may run capped spend between the ceiling
+and break-even. → `internal/reports/2026-09-10-cac-ceilings-v3.md`
+
+**✅ Shopify costs confirmed accurate, including the exact-50% ones — doubt resolved** —
+Jay via Evan, 2026-09-10. Resolves the ⚠️ entry directly below. Jay reviewed **every**
+item and changed only the costs that were off, so an old `updatedAt` means "checked and
+already right", not "never looked at". The **114 variants at exactly 50% of price are
+intentional and accurate.** Current Shopify `unitCost` is the landed cost for the CAC
+ceiling table. ROUX building it now. → `internal/reports/2026-09-10-landed-cost-by-variant.md`
+
+**⚠️ "Shopify cost-per-item is landed cost" is back in doubt — do not build ceilings on it
+yet** — Finn, 2026-09-10; spot-checked by Claude against Shopify the same day. Qualifies the
+2026-09-09 entry below; does not reverse it. Of 594 active variants, **455 (77%) have an
+inventory item last modified before 2026-08-30**. **126** changed in one batch on Sun
+2026-08-30, 5:46–6:34 pm Central, and **13** between Aug 31 and Sept 7 (`InventoryItem.updatedAt`).
+**114 variants are set to exactly 50.0% of price**, all last modified before Aug 30. Among
+them: the $285 18 QT Powered base (PWFRBR, $142.50) and 23 of 41 commercial units. Untouched
+since before the window: the Triple Jet ($215.50, Aug 6) and leg extensions ($48.90, Aug 27).
+**Two readings fit the timestamps:** Jay only got through part of the catalog, or he reviewed
+all of it and changed only the costs that were wrong. The exact-50% pattern argues against
+the second for those 114. **Asked Jay which it is.** ROUX holds the ceiling table until he
+answers. → `internal/reports/2026-09-10-landed-cost-by-variant.md`
+
+**Overhead is steady year-round — $594,600/yr** — Jay, 2026-09-10, by text. The ~$49,550/mo
+is the same every month; payroll does not rise in crawfish season. So annual overhead is
+$49,550 × 12 = **$594,600**, and the **~$97.49 per order** (÷ 6,099 paid orders, trailing 12
+months) stands. That was the last input the CAC ceiling needed from Jay. Denominator choice
+(all paid orders, all channels) remains ROUX's proposal; Jay has not objected or confirmed it.
+
+**Overhead is allocated per order; ad spend is not in the $50K; freight is recovered from
+the customer** — Jay, 2026-09-10, by text. **Ad spend is not inside the ~$49,550/mo overhead**,
+so ads are subtracted once, as CAC — no double-count. **Outbound freight is paid by the
+customer** on both consumer and commercial orders, so it is not a cost in the ceiling.
+**Overhead goes per order, not as a flat % of revenue**, so high-ticket items don't carry six
+times a fryer's overhead. Denominator **proposed, not yet confirmed:** trailing 12 months, all
+paid orders across all channels — **6,099 orders, ~$97.49 per order** (Finn, Shopify, 2026-09-10).
+A full year rather than month by month, because orders swing from 190 (Sep) to 1,080 (Mar).
+Still open: whether the $49,550 is steady year-round. → `internal/reports/2026-09-10-orders-for-overhead-allocation.md`
+
+**The two blocking CAC inputs landed — Shopify cost-per-item is landed cost, overhead is
+~$50K/mo, and the 20% target is net after overhead** — Jay, 2026-09-09, by text. Answers
+all three questions open since 2026-08-28. **Shopify "cost per item" holds landed cost**
+(part + tariffs + inbound freight); Jay updated it the week of 2026-09-01 and states it is
+now accurate. **Monthly overhead ~$50,000 rough**, itemised as agencies $6,800 · software
+$7,000 · payroll $20,000 (excludes product-build labor, which is already inside landed
+cost) · rent $9,750 · insurance $1,000 · misc $5,000 — **which sums to $49,550, not
+$50,000**; treat $49,550 as the stated figure and the whole thing as an estimate, not an
+audited number. **The 20% target is net profit after overhead**, not contribution.
+⚠️ **Two consequences.** (1) Cost-per-item changed the week of Sept 1, so **every margin
+computed before then is stale — including the 44.5% August blended margin.** Re-pull before
+reusing it. (2) The ceilings stay provisional until it is confirmed that **ad spend is not
+already inside the $50K** — subtracting it as overhead and again as CAC would double-count
+it. → `internal/reports/2026-08-28-cac-model-v2.md`
+
 **The new IntentWave campaign: $100/day, live Fri Sept 11, 1% lookalike, no detailed
 targeting** — Evan, 2026-09-09. Built in draft and left unpublished for the 1pm review.
 **$100 is the most that fits under the $350/day ceiling** ($214 current caps + $30 retargeting

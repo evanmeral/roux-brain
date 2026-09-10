@@ -1,10 +1,10 @@
 # What We Sell
 
-**Last updated:** 2026.09.01
-**Price source:** `highperformancecookers.com/products.json`, pulled 2026-08-26 → raw JSON at `my-files (knowledge)/hpc-reference/research/2026-08-26-shopify-catalog.json`
+**Last updated:** 2026.09.10
+**Price source:** Prices verified against Shopify, 2026-09-10 (Finn's variant pull) → [2026-09-10-landed-cost-by-variant.md](../my-work%20%28outputs%29/internal/reports/2026-09-10-landed-cost-by-variant.md), all 594 active variants, **price field, not compare-at**. Evan, 2026-09-10: *the Shopify prices are always correct.* Earlier source: `products.json`, pulled 2026-08-26 → `my-files (knowledge)/hpc-reference/research/2026-08-26-shopify-catalog.json`.
 **Priority tiers set by Evan 2026-09-01** (these supersede the 2026-08-26 tiers).
 
-> ⚠️ **Never quote a price that isn't in this file.** Re-pull the JSON before any promo — prices are 6+ days old as of writing.
+> ⚠️ **Never quote a price that isn't in this file.** Re-check Shopify before any promo — these prices are as of 2026-09-10.
 
 ---
 
@@ -49,6 +49,12 @@ The lead offer. Sell the Performance pot paired with the BB-TJB.
 | **Boil Boss Triple Jet Burner (BB-TJB)** | **$425** |
 | Electronic Ignition (add-on) | $250 |
 
+> ⚠️ **Duplicate listing, not a separate product.** Shopify also carries **Performance Boiling Pots
+> (60QT to 120QT)**: 14 active variants, $377–$580. Its 80, 100 and 120 QT variants carry the same
+> prices as the three pages above. Its 60 QT variants are **$377** (no valve) and **$395** (3/4" gate
+> valve); the standalone 60 QT Performance page (Tier 2) is $395 only. Cleaning up the listing is on
+> Nova's queue and needs a Shopify change. *(Finn's pull, 2026-09-10.)*
+
 > **Push 80 / 100 / 120 QT.** ✅ *Corrected by Evan 2026-09-01:* the BB-TJB **does fit a 60 QT and it works — it just isn't perfect, so there's no need to push that combo.** It is not incompatible; it is simply not the pairing to lead with. The 40, 30 and 18 QT are out of this push.
 
 ⚠️ **What creative may claim: "pairs with 60 QT and up." Nothing wider.** Set by Evan
@@ -75,6 +81,15 @@ Complete rigs, lower ticket, lower friction. A separate campaign from 1A, not a 
 
 > ⚠️ **60 QT Powered — discount discipline.** List margin is healthy (47.8%) but it's discounted at 21.8%, roughly 5× the 18 QT, dragging realized margin to ~29%. Decide its role deliberately. Detail: `my-work (outputs)/internal/reports/2026-08-26-discount-audit.md`.
 
+**The large Powered pots — price reference.** *Added 2026-09-10 from Finn's pull; the 80 and 100 QT
+had no price in this file. Tier not set by Evan. These are not part of the small-size 1B push.*
+
+| Product | Price |
+|---|---|
+| 80 QT Powered Seafood Cooker | $630–$695 |
+| 100 QT Powered Seafood Cooker | $670–$755 |
+| 120 QT Powered Seafood/Crawfish Cooker | $715–$805 |
+
 ### 1C. Boil Boss line, bundles, and the entry price point
 
 | Product | Price |
@@ -87,9 +102,22 @@ Complete rigs, lower ticket, lower friction. A separate campaign from 1A, not a 
 | Seasoning | $5.99–$17.99 |
 | TJB Centering Brackets (set of 3) | $35 |
 | **Ultimate Boiling Bundle** — Pot, Burner, Cooling Ring, Thermo Paddle | $846.98–$1,049.98 (saves $120) |
-| **Scratch & Dent** — 6 SKUs, ~30% off | $185.50–$607.75 |
+| **Scratch & Dent** — 6 products, 15% or 30% off (by size below) | $185.50–$607.75 |
 
 Scratch & Dent is a **margin-safe entry price point** — it lets a price-sensitive buyer into the brand without discounting the main line.
+
+⛔ **Bundles take no discount codes.** The discount is built into the bundle price, so no code — welcome, sale or any other — applies on top. Example: the **Ultimate Boiling Bundle** discounts the Cooling Ring and Thermo Paddle for buying the Performance Pot and Boil Boss burner together. *(Evan, 2026-09-10.)* New bundles are **mainly HPC product**; an outside add-on item is fine if it helps sales, but don't build a sourcing project around one item *(Evan, 2026-09-10)*.
+
+| Scratch & Dent product | Price | Variants |
+|---|---|---|
+| 18 QT Fish Fryer / Brazier Pot | $185.50–$289.00 | Performance or Powered · 15% or 30% off |
+| 30 QT Cooker | $234.50–$403.75 | same |
+| 60 QT Cooker | $276.50–$446.25 | same |
+| 80 QT Cooker | $346.50–$535.50 | same |
+| 100 QT Cooker | $364.00–$569.50 | same |
+| 120 QT Cooker | $406.00–$607.75 | same |
+
+*Scratch & Dent prices: Finn's pull, 2026-09-10.*
 
 ✅ **Verified against live Shopify 2026-09-08** (Finn, Admin API): BB-TJB $425 · Thermo
 Paddle $69.99 (195 on hand) · Ultimate Combo $129.98 (all 8 colorways, 198 on hand) ·
@@ -126,6 +154,8 @@ These carry the off-season. See the year-round mandate below.
 > **Single Upright ($25)** fries one turkey and is built for the **30 QT Turkey Fryer**. It
 > will work in a 60 QT if you only want one bird. **Dual Rack ($59.95)** fries two and fits
 > the **60 QT** perfectly.
+> **Shopify lists a third rack: Single Flat, $65** (variant label *"40 QT or larger"*). Evan's
+> note does not cover it; the only fitment on file for it is that Shopify label. *(Finn's pull, 2026-09-10.)*
 
 **Trays remain the highest-certainty AOV lever in the business** — they attach to pot sales.
 
@@ -199,7 +229,7 @@ list, and never sell the legs against a pot that can't take them.
 
 Zydeco Fire Hot Sauce $5.95 · Seasoning Dust $6.95 · Combo Pack $11.99 · Seafood Boil Bags $9.50–$15.50 · Tees $22 · Hats $20–$42 · Cups & Bottles $24.99–$34.99 · **Gift Card $25–$500**
 
-Skimmers $9.99–$19.99 · Paddles $19.99–$85 · Scoop $14.99 · Basket Buddy $10.50–$15.99 · Replacement Baskets $35–$120 · Replacement Lids $18.50–$34.75 · Regulators $25.99–$78 · Hose $19.99–$34.99 · Wind Shield $21 · Fry Thermometers $15.99–$18.99 · **Cooker Leg Extensions $119** · Add a Custom Logo $75
+Skimmers $9.99–$19.99 · Paddles $9.99–$85 · Scoop $14.99 · Basket Buddy $10.50–$15.99 · Replacement Baskets $35–$120 · Replacement Lids $18.50–$34.75 · Regulators $25.99–$78 · Hose $19.99–$34.99 · Wind Shield $21 · Fry Thermometers $15.99–$18.99 · Turkey Fryer Racks $25–$65 · **Cooker Leg Extensions $119** · Add a Custom Logo $75
 
 ---
 
@@ -218,18 +248,66 @@ Skimmers $9.99–$19.99 · Paddles $19.99–$85 · Scoop $14.99 · Basket Buddy 
 | **Crawcuzzi — Automatic Crawfish Cleaner** | $2,465–$4,595 |
 | Gantry Lift System | $785–$3,215 |
 | Crawfish Sorting Table | $550 |
+| Crawfish Dusting Table *(not in the 2026-08-26 storefront pull)* | $575 |
 | Crawfish Serving Trough | $134.99–$314.99 |
 | Cajun Cleaner | $118.95 |
 | **Pull-Behind Trailer Pkg — 60 Gal** | **$7,299** ← highest ticket |
 | Custom Cooking Trailer | Quote |
 | **RENTAL — Crawfish Boil Trailer Package** | $385–$600 |
 | 40 Gal / 160 QT Powered Cooker (Flip Basket) | $2,145–$2,279 |
+| 4-Basket Fryer / Boiler *(placed here by price; no tags on file; not in the 2026-08-26 storefront pull)* | $2,000 |
+
+**Commercial parts and add-ons** — *added 2026-09-10 from Finn's pull. Rows without ✓ were not in the
+2026-08-26 storefront pull, so they may not be on the Online Store. Not checked.*
+
+| Product | Price |
+|---|---|
+| Extra Commercial Baskets (60 to 140 Gal) | $875–$2,425 |
+| 40 Gallon Basket | $510 |
+| 60 Gallon Basket | $650 |
+| 60 Gallon Square Basket | $1,199 |
+| 80 Gallon Basket | $1,399 |
+| 80 Gallon Quad Basket (4 per set) | $2,499 |
+| 100 Gallon Basket | $1,499 |
+| 120 Gallon Basket (single, or dual 2 × 60) | $1,650–$2,199 |
+| 140 Gallon Basket | $1,799 |
+| 140 Gallon Dual Basket (per set) | $2,575 |
+| 40 Gallon Lid | $250 |
+| 60 Gallon Lid | $275 |
+| 80 Gallon Lid | $300 |
+| 100 Gallon Lid | $325 |
+| 120 Gallon Lid | $275 |
+| 140 Gallon Lid | $295 |
+| 40 Gallon Cleaner Cover | $250 |
+| 40 / 60 Gallon Lid Support Brackets ✓ | $46–$58 |
+| 60 Gallon Lid Dump Guide Rails ✓ | $75 |
+| Crawcuzzi Basket Chute ✓ | $85–$115 |
+| Commercial Cooker Metal Wheels (set of 2) ✓ | $250 |
+| Commercial Cooker Leg Extensions | $165 |
+
+> **Commercial Cooker Leg Extensions ($165) is a separate Shopify product from the $119 Cooker Leg
+> Extensions.** The three-product fitment rule in Tier 2 is about the $119 legs. Nothing on file says
+> what the $165 legs fit.
 
 > ⚖️ **Warranty on the commercial line: 2 years.** Confirmed by Evan, 2026-09-01. **All commercial boiling products carry the full 2-year warranty** (parts and labor, defects under normal use) — the same full warranty every HPC product carries.
 > ⛔ **They do NOT carry the 5-year.** The 5-year is *limited*, *residential use only*, and *120 QT or smaller* — it covers Tunnel Tube pot bottoms, powered cooker stands and welds, with the owner paying labor and shipping. Every product in the table above is a commercial unit above that size.
 > **Never put a 5-year claim on commercial creative, and never let a sitewide ad imply the 5-year covers the whole catalog.**
 > Source: highperformancecookers.com/pages/warranty-information, verified 2026-09-01.
 
+
+### Tunnel Tube retrofits and upgrades
+*Added 2026-09-10 from Finn's pull. Tier not set by Evan. Placed in Tier 3 because most variants
+are commercial sizes. None were in the 2026-08-26 storefront pull.*
+
+| Product | Price |
+|---|---|
+| Install Tunnel Tube Bottom | $225 (120 QT or smaller) · $450 (60 gal) · $875 (100 gal) · $1,100 (140 gal) |
+| WD 150 - TT Upgrade | $1,520–$1,810 (without / with base) |
+| WD 150 TT & Bottom Upgrade | $2,260–$2,550 (without / with base) |
+| WD 150 TT & Basket Upgrade | $2,900–$3,190 (without / with base) |
+
+> "WD 150" is Shopify's product title. Nothing on file says what it refers to. Check before it
+> goes in any copy.
 
 ### Standing discount codes ✅ confirmed by Evan, 2026-09-01
 
@@ -241,6 +319,7 @@ Skimmers $9.99–$19.99 · Paddles $19.99–$85 · Scoop $14.99 · Basket Buddy 
 **Both can be used.** They are two separate opt-ins and a customer can hold and use both.
 
 ⛔ **But a welcome code cannot be combined with a live sale code** — it is one or the other.
+⛔ **No code of any kind applies to a bundle** — its discount is built in. See §1C. *(Evan, 2026-09-10.)*
 ✅ Evan, 2026-09-08. Confirmed while auditing the always-on codes after Labor Day: `FANDF`,
 `HPCWS`, `DELAYSHIPMARK`, `TEXT25`, `COOK25`, `CART25` and the rest have **no end date by
 design** because they are these signup rewards. A customer who stacked `LABORDAY10-26` with
@@ -268,8 +347,8 @@ Real, but **Jay's lane.** We're open to dealers who are genuinely willing, but w
 
 | Product | Price | Why |
 |---|---|---|
-| **Predator Gas Grills w/ ETC Technology** | $3,800–$4,350 | A third party sells and fulfills these through our storefront and handles everything. Not our wheelhouse. Disregard entirely. |
-| Predator Gas Grills — Side Burner | $1,200–$1,750 | Same |
+| **Predator Gas Grills w/ ETC Technology** | **Not an active Shopify product on 2026-09-10** *(was $3,800–$4,350 in the 2026-08-26 storefront pull)* | A third party sells and fulfills these through our storefront and handles everything. Not our wheelhouse. Disregard entirely. |
+| Predator Gas Grills — Side Burner | **Not active on 2026-09-10** *(was $1,200–$1,750 on 2026-08-26)* | Same |
 
 ---
 
@@ -304,6 +383,15 @@ Detail: `my-files (knowledge)/hpc-reference/seasonal-calendar.md`.
   **ACTIVE at $27.99 with 10 on hand**, published to the Online Store. It is sellable — do
   not tell a customer it is discontinued.
 - *(The 40 QT Sauce Cooker and 40 QT Sauce Stock Pot are a different line and remain live.)*
+
+## Active in Shopify, deliberately not priced here
+*Finn's pull, 2026-09-10. Not merchandise, or $0 / $0.01 placeholders. Not for use in copy.*
+
+- **Fees and services:** Shipping Protection (100 variants) · Return Shipping · Freight · Custom Labor · Repair Work · Custom Product · Custom Cooking Trailer ($0 in Shopify; kept above as *Quote*)
+- **Marketing materials ($0 to $0.01):** Banners · Foam Boards · Table Top Signs · Self Standing Floor Pop Up Display · Cooker Selection Chart
+- **$0 replacement parts:** Boil Boss Ignitor Replacement · Boil Boss Remote Replacement · Boil Boss Thermometer Replacement · Replacement BoilBoss Ring Bracket (set of 3)
+- **Accident Prevention:** not among the 152 active products on 2026-09-10.
+- **Duplicate:** Performance Boiling Pots (60QT to 120QT). Noted under Tier 1A, not listed as its own product.
 
 ## Open questions
 - Which SKUs are actually **profitable after freight**? Still the #1 gap.

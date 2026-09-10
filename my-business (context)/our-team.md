@@ -9,8 +9,8 @@
 
 | Person | Role | What you need to know |
 |---|---|---|
-| **Jay Meral** | Founder / owner | The audience for top-level CAC/ROAS reporting. Owns the dealer/wholesale lane. Keep his artifacts simple and honest. |
-| **Robert** | **Co-owner**, product designer | Creator of the **Boil Boss** line — HPC absorbed Boil Boss and now manufactures it in-house. Designs new products. **Reads the marketing reports closely and numerately.** |
+| **Jay Meral** | Founder / owner | The audience for top-level CAC/ROAS reporting. Owns the dealer/wholesale lane. Keep his artifacts simple and honest. **The person to ask for any number or answer from the owners: P&L, costs, overhead, margins** (Evan, 2026-09-10). |
+| **Robert** | **Co-owner**, product designer | Creator of the **Boil Boss** line — HPC absorbed Boil Boss and now manufactures it in-house. Designs new products. **Reads the marketing reports closely and numerately.** Raised the CAC/overhead framing (2026-08-28). **Don't route questions to him; ask Jay** (Evan, 2026-09-10). |
 | **Evan Meral** | **Lead marketer** — the operator of this brain | Sole day-to-day marketing operator. Runs Meta ads himself, does all social posting manually, handles design by default. |
 | **Stephen** | Manager of the **commercial product section** + **commercial shipping/receiving lead** | Talks commercial buyers through what they're getting and how it ships, so freight is never a checkout surprise on LTL orders. Also runs commercial shipping and receiving. |
 | **Alexis Vegas** | **Front desk assistant** | Answers the phones, tidies the showroom, answers questions for walk-ins, and picks up the small jobs around the shop. *(Evan, 2026-09-08.)* **She is the first person a walk-in talks to and the only one standing in the showroom all day** — so anything printed for the floor goes to her, and she is the one who will notice when a card no longer matches the shelf. Owns printing and placing the 31 [showroom cards](../my-work%20%28outputs%29/content/other/showroom-cards/). `alexis@highperformancecookers.com` |
@@ -44,6 +44,10 @@
 - **Charles Robertson**, **Guillermo Aguirre**, **Justin LePatourel** (built the new site).
 
 **IntentWave / Persistent.id** — **Dalton MacKinnon** (books the Meta reviews), plus Mike, Tommy and Teresa. They run recurring Meta review calls and an email sync.
+- **Peter Damato** — `peter@persistent.id`. Senior; pushes strategy (bundles, margins, sports partnerships). Floated a paid, incentive-based spend-management proposal 2026-09-09 — **Jay agreed to nothing** (Evan, 2026-09-10). *Not HPC staff — earlier notes assumed he was.*
+- **Loni Polk** — `loni@persistent.id`. Reviews ad data and attribution; reviewing the IW draft campaign from Evan's screenshots. Has contacts at **On3** (college sports media).
+- **Teresa McDaniel** — `teresa@persistent.id`. Sends the calendar invites.
+- *(Source: invite and Motion recaps, Gmail, 2026-09-10.)*
 
 **Biljana** — reachable at her personal Gmail. Still fully her lane; this is contact info only.
 
