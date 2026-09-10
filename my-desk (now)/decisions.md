@@ -11,6 +11,17 @@
 
 ## 2026-09
 
+**Real margin of record: ~40.6%, not 46%** — Jay, 2026-09-10: the 46% was worked on the
+**$4.3M booked** revenue. That revenue includes the $393k double-booked Lowe's order, which
+had no real sale behind it. **Derived** (assuming that entry carried no cost of goods):
+- Real margin = (46% × $4.3M − $393k) ÷ ~$3.9M ≈ **40.6%**. This replaces 46% as the margin for the
+  monthly whole-business check.
+- 20% net leaves **~$209,000/yr for all marketing** (~$290,600 if the overhead's agencies sit inside
+  the $152k). **This replaces the ~$421k logged just below.** Marketing ran **~$467,000 over**.
+- The P&L's −5% implies **~$529,400** of other expense beyond overhead, marketing and the Lowe's
+  entry. Jay says it was one-time. **If so, a normal year nets ~8.0%.**
+- Per-product ad ceilings are unaffected, since they run on landed cost per product.
+
 **P&L revenue: $4.3M booked, ~$3.9M real; the 46% holds as after fees and freight** — Jay,
 2026-09-10. Revenue for the last 365 days was **$4.3M booked**. A **$393k** expense came from
 double-booking a Lowe's order, so **real revenue is ~$3.9M**. **This rules out the reading

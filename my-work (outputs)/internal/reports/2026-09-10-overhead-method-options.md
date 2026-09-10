@@ -383,3 +383,5 @@ $1,632,600.87.
 - **Derived, on 46% of ~$3.9M:** overhead is 15.2% and marketing 17.3% of revenue. Net is **~13.5%** if the other expenses were one-time. 20% net leaves **~$421,220/yr** for all marketing (~$502,820 if the agencies are double-counted). Actual marketing was $676k, **~$254,780 over**.
 - **If the 46% was worked on the $4.3M booked:** the real margin is ~40.6%, net ~8.0% if the others were one-time, and the room is ~$209,000. **Asked Jay which.**
 - **Unreconciled:** P&L revenue ~$3.9M vs Shopify net sales + shipping $3,144,599 for the same window. That's a ~$760k gap while COGS matches within 1.4%. Parked for ROUX and Finn.
+
+**Settled (Jay, 2026-09-10):** the 46% was worked on the **$4.3M booked** revenue. Real margin ≈ **40.6%** of ~$3.9M *(derived; assumes the double-booked $393k carried no COGS)*. At 20% net that leaves **~$209,000/yr** of marketing room (~$290,600 if agencies are double-counted), against $676k spent. Normal-year net is **~8.0%** if the ~$529,400 of other expense was one-time.
