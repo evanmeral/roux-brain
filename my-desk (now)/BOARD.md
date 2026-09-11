@@ -1,4 +1,4 @@
-# Board — 2026-09-11
+# Board — 2026-09-11 (evening)
 
 > The one page. What is live, what is next, what is waiting, what not to ship.
 > **Rewritten in place at every `/wrap` — never appended.** Hard cap: 120 lines.
@@ -9,38 +9,37 @@
 
 ## 🟢 Running
 
-### 🟢 IW lookalike — **published Fri Sept 11 by Evan**, starts 6:30am PDT
+### 🟢 IW lookalike — **live since Fri Sept 11**, ad set *Learning* (Finn, 09:07 CDT)
 
 **`IW Lookalike 1% - Cold Prospecting - Sept 2026`** · ad set `IW LAL 1% - Cold Prospecting`
 
 | | |
 |---|---|
 | Audience | Lookalike off `IW - LA Audience` — **2.3–2.8M**, US, 24+ · excludes 30D visitors · 90D purchasers · dealers *(hard Controls)* |
-| Budget | **$100/day** — takes committed caps to $344 of the $350 ceiling |
+| Budget | **$100/day** CBO |
 | Ads | `120qt-crowd-math` · `120qt-performance_rolling-boil` (Platinum Bundle) · `hpc-dark-evergreen` (18 QT → Evan's landing page) |
-| Tracking | **Tags on all 3** → [tag spec](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-10-iw-tracking-tags.md) · **Shop destination off** on all 3 |
+| Tracking | **Tags on all 3** → [tag spec](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-10-iw-tracking-tags.md) · **Shop destination off on all 3** (`crowd-math` checked by Evan, 2026-09-11) |
 
-- ✅ **Read-only checks, 2026-09-11:** before publish, the exact tag string on all 3, age 24, "Maximize number of conversions" on Purchase, $100, no end date, the three exclusions. At 8:23 CDT: campaign + ad set **Scheduled** · `crowd-math` **Scheduled** (passed review) · the other two **Processing** · nothing left in "Review and publish". Shop confirmed off on screen for `hpc-dark-evergreen` and `performance`; **`crowd-math` published before it could be re-read** — only readable by opening a live ad's editor, which queues drafts.
-- **Next:** confirm all 3 show Active · **first Shopify read of tagged orders (Finn) ~Mon Sept 14** — match `utm_campaign` = the campaign name, compare to Meta's claimed purchases. ⛔ Skip Meta's "Apply now" suggestions (Maximize value · show products). After any publish, check "Review and publish" reads zero — the first click today published 1 of 3 ads. → [how it was built](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-finish-the-IW-draft.md) · [ad copy](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md)
-- ⚠️ **The lookalike sits under "Suggest an audience," not Controls** *(Finn, 2026-09-10)*. Only age, US and the exclusions are hard; Advantage+ can reach past the lookalike. So the test is "Advantage+ seeded with IW's list," not "IW's 2.3–2.8M." Advantage+ Sales offers no hard inclusion.
-- **18 QT ad stays in — ROUX's call.** Under the incremental rule (Now #1) its ceiling is **~$73 per real order**, so it no longer drags the campaign; it counts toward the **25% cap on low-ticket lines** *(overhead-method-options §6a, §8)*. **Watch its share of purchases.**
+- **Next: first Shopify read of tagged orders (Finn) ~Mon Sept 14.** Match `utm_campaign` to the campaign name and compare with Meta's claimed purchases. ⛔ Skip Meta's "Apply now" suggestions (Maximize value · show products). After any publish, check "Review and publish" reads zero. → [how it was built](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-finish-the-IW-draft.md) · [ad copy](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md)
+- ⚠️ **The lookalike sits under "Suggest an audience," not Controls** *(Finn, 2026-09-10)*. Only age, US and the exclusions are hard, so the test is "Advantage+ seeded with IW's list," not "IW's 2.3–2.8M."
+- **18 QT ad stays in (ROUX's call).** Incremental ceiling ~$73 per real order; it counts toward the **25% cap on low-ticket lines**. **Watch its share of purchases.**
+- 🟢 **Coalition and IntentWave are read-only advisors on Meta.** No setting or attribution changes during this test (Evan, 2026-09-11).
 
-### 📡 Also live — `BPM_TOF_Manual` + `18qt-TOF-Prospecting`
+### 📡 Also live — `BPM_TOF_Manual` ($164/day) + `18qt-TOF-Prospecting` ($50/day CBO)
 
-**30-day Meta spend $6,400.87** (Aug 10–Sep 8): BPM $4,899.88 · 18qt $1,500.99 *(Ads Manager, read 2026-09-10, ties to the cent)*. BPM runs on **video** — best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay 18qt Demo` $43.04 (30). `18qt-TOF` at **$50/day**, all *Learning limited*; `18qt-001` **$14.53**. *(CPP on Meta's own count, read 2026-09-09.)*
+**30-day Meta spend $6,400.87** (Aug 10–Sep 8): BPM $4,899.88 · 18qt $1,500.99 *(Ads Manager, 2026-09-10)*. BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay 18qt Demo` $43.04 (30). `18qt-TOF` is *Learning limited*. *(CPP on Meta's own count, 2026-09-09.)* **BPM stays at $164; Jay's +25% is not applied** (Evan, 2026-09-11).
 
 ---
 
 ## 🔺 Now — top three
 
-**1. ROUX: rebuild the marketing budget around 20% net.** Jay's P&L, last 365 days *(2026-09-10)*: **net −5%** · marketing **$676k** (Google $206k · Meta $258k · agency fees $152k · other $56k · affiliates ~$4k) · margin before overhead and ads **46% of $4.3M booked**, which is **~40.6% of ~$3.9M real revenue** once the $393k double-booked Lowe's order is taken out · overhead ~$49,550/mo. At the real margin, 20% net leaves **~$209k/yr for all marketing** (~$291k if the overhead's $6,800/mo agencies sit inside the $152k) *(derived)*. We spent $676k, **~$467k over**. If the other ~$529k of expense was one-time, as Jay says, a normal year nets **~8%**. **Build on today's run-rate, not the year:** Meta spent **$6,401** in the last 30 days, so most of its $258k came before BM Digital was let go (2026-07-20). **Apply the incremental rule:** no overhead in the ad ceiling; each ad must leave ≥20% of the order after product, fees and the ad; the whole business is checked monthly against the real margin *(ROUX's recommendation; Jay hasn't formally adopted it)*. Google is Coalition's — **suggestions only**. ⛔ Email is Biljana's. → [overhead method + P&L](../my-work%20%28outputs%29/internal/reports/2026-09-10-overhead-method-options.md)
+**1. Bundles: get Jay's re-OK, fix the codes, then Evan builds. The tailgate kit goes live Sep 25.** Jay approved the plan 2026-09-11: turkey 30 QT at **$469**, a **60 QT two-bird kit**, every code skips bundles except military/first-responder, the kits are **evergreen**, the turkey push stops at the **Mon Nov 23** ship cutoff, and **Evan builds**. Evan changed the tailgate contents after approval (18 QT fryer · legs · **5"** thermometer · skimmer; no wind shield), so **ROUX recommends $465** (was $479, which would now save only $5.98) and **$519** for the 60 QT. Both need Jay's re-OK. ROUX's answer to Jay: **Welcome10 stays off bundles.** ⚠️ **Code fix first:** most codes are whole-order discounts, which Shopify can't scope to a collection, so they have to be **recreated**. → [plan](../my-work%20%28outputs%29/internal/2026-09-11-tailgate-thanksgiving-bundles-plan.md) · [Jay one-pager](../my-work%20%28outputs%29/internal/2026-09-11-bundles-for-jay.md) · [code fix](../my-work%20%28outputs%29/internal/2026-09-11-bundle-discount-code-fix.md)
 
-**2. Build the retargeting campaign. It decays daily.** $30/day against **7,200–8,500** 30-day site visitors. Creative held: `80qt-buy-cheap-twice` + `18qt-fry-it-all`; purpose-built objection statics from Maya Sept 16–22. **Stop rules:** frequency >3.5 cut · CPP >$60 after 4 days pause · under $40 it is working. Its audience must stay excluded from the IW campaign.
-⚠️ **The 30D pool is likely padded until ~Sept 27** by a bot-like spike on **Aug 28** — Shopify 14,169 sessions vs ~2,000 normal, 94% direct, 7 checkouts *(Finn, 2026-09-10; cause untested)*. Whether it reached Meta's audience is untested. **A second Meta pixel also fires on the site** (`491960645999331`, owner unknown) — check it in Events Manager before reading retargeting results.
+**2. ROUX: rebuild the marketing budget around 20% net.** Jay's P&L, last 365 days *(2026-09-10)*: net **−5%** · marketing **$676k** (Google $206k · Meta $258k · agency fees $152k · other $56k · affiliates ~$4k) · real margin **~40.6% of ~$3.9M** · overhead ~$49,550/mo. 20% net leaves **~$209k/yr for all marketing** *(derived)*, so we were **~$467k over**. **Build on today's run-rate:** Meta spent $6,401 in the last 30 days. **Incremental rule:** no overhead in the ad ceiling; each ad leaves ≥20% of the order after product, fees and the ad *(ROUX's recommendation; Jay hasn't adopted it)*. Google is Coalition's (suggestions only). ⛔ Email is Biljana's. → [overhead method + P&L](../my-work%20%28outputs%29/internal/reports/2026-09-10-overhead-method-options.md)
 
-**3. ROUX: tailgate + Thanksgiving bundle plan.** IntentWave's idea, ours to use. Attach is where the margin is — real 18 QT orders carry **$210.18** gross profit vs **$142.50** for the unit alone *(order-level-pulls, Jun–Aug)*. Rules: **no discount code on a bundle** (discount built in) · mainly HPC product; an outside add-on only if it helps sales · stock is not a constraint · never pair fryers with crawfish. Jay's 30 QT turkey demo is the best ad in the account.
+**3. Garrett: book the 8-pack and shoot the turkey demo first.** The turkey video has to be **live Oct 1**, so it shoots **Sept 14–18** (Sept 21–23 at the latest). Slate, ranked: 30 QT turkey demo (Jay) · 7-minute clock, 120 QT · "buy it once" · tailgate 18 QT + 60 QT · team of 12 · 18 QT fry-it-all · pasta/sauce · 28 QT steamer. $2,500 for 8 is new money (the Aug 19 buy was 2 videos, $1,000). The 15–20s 18 QT cut is already delivered. Meta formats only. → [call prep](../my-work%20%28outputs%29/internal/2026-09-11-garrett-call-prep.md)
 
-*Demoted: the Sept 1–8 Meta ad-level re-pull → Parked. It only unblocks "which Labor Day creative won"; the marketing-budget rebuild outranks it.*
+*Demoted: retargeting → Parked. Evan approved the plan and is holding the launch.*
 
 ---
 
@@ -48,46 +47,48 @@
 
 | Who | What | Since |
 |---|---|---|
-| **Evan** | Finish the Sept 1–8 feed-post captions naming a dead code, then re-pull final redemption counts on both | 2026-09-09 |
-| **Evan** | **Book Garrett:** 15–20s cut of the 18 QT video, and plan **6 new videos** modelled on the winning demos. $500 each or **$2,500 for 8** | 2026-09-01 |
-| **Coalition** | Reply on Cater + Event, Mar 22–25 | — |
+| **Jay** | **Re-OK tailgate $465 + 60 QT $519** · Welcome10 off bundles · OK to switch off the live BM Digital codes · still open: early-Nov 2025 promo? · fix Platinum's compare-at? · adopt the incremental rule? → [one-pager](../my-work%20%28outputs%29/internal/2026-09-11-bundles-for-jay.md) | 2026-09-11 |
+| **Jay** | **Confirm "Made in USA" before it runs in paid ads.** On the Sept 10 IW call he said the SBA loan is to make pots, baskets and lids here "instead of importing from China" (see decisions.md) | 2026-09-11 |
+| **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
+| **Evan** | **Code fix** (recreate the whole-order codes so they skip bundles; military + first-responder exempt; Biljana's email/SMS codes are hers), then **build the 3 kits** | 2026-09-11 |
+| **Evan** | Set the Garrett call time | 2026-09-01 |
+| **Coalition** | Google Ads copy spreadsheet (Connor). Evan passes it to the brain to mine · Cater + Event reply, Mar 22–25 | 2026-09-10 |
 | **Garrett** | High-res tunnel-tube-in-action still. Library's only one is **640×323** | 2026-09-08 |
 
 ---
 
 ## ⏸️ Parked — deliberately, do not re-raise
 
-- ✅ **Jay and Robert briefed 2026-09-09** (sale results + new-campaign plan). Future reporting stays consistent with what they hold: 126 orders / $41,100.84 / AOV $326.20, and the three figures we said we do *not* have. **Owner numbers come from Jay, not Robert** — one text with every essential question (Evan, 2026-09-10).
-- ✅ **Closed by Evan 2026-09-08:** sale comms · **popups are Biljana's** · always-on codes are welcome codes and **cannot combine with a live sale**.
-- **IntentWave is advisory, not a work queue** (Evan, 2026-09-10). Their ideas, parked: **On3** sports partnership (Loni's contacts — Pete's lane, no seeded product without a signed deliverable) · Peter's paid spend-management proposal — **Jay agreed to nothing** · Labor Day extension — floated only · 24-buyer modelled audience (below Meta's 100 minimum). → [call 1](../my-work%20%28outputs%29/internal/2026-09-10-intentwave-recap-review.md) · [call 2](../my-work%20%28outputs%29/internal/2026-09-10-intentwave-call-2-recap.md)
-- **CAC ceilings: v3 + overhead method (2026-09-10).** Landed cost = Shopify `unitCost` (confirmed by Jay; matches P&L COGS within 1.4%). Per-order overhead gave the 18 QT a ~$2 ceiling; the incremental rule gives ~$73. **18 QT ladder reopened under that rule with the same gates** — at Meta's $40.56 it fails the $30 gate, so **hold `18qt-TOF` at $50/day. $350/day holds.** → [v3](../my-work%20%28outputs%29/internal/reports/2026-09-10-cac-ceilings-v3.md) · [archive](archive/2026-09-10-cac-inputs-close-out.md)
-- **Sept 1–8 Meta ad-level re-pull (Finn)** — old table filtered to "labor" ads; must reconcile to campaign spend. Matching orders to the older campaigns needs their **numeric campaign IDs** from Ads Manager (Meta UTMs carry IDs: 24 Meta-tagged orders vs 155 claimed, Aug 10–Sep 8). *Demoted 2026-09-10.*
-- **June–October off-season plan** — the real +$500K project. Starts after the post-mortem.
-- **Creator brief.** ~17 idle creators on UpPromote. ⛔ Paid content is discontinued.
-- **Digit connects in a few weeks** (Evan, 2026-09-10). Stock is fine — don't gate plans on inventory.
-- **Lanes:** Google Ads + SEO is Coalition's, monitor only. **Email / SMS / Klaviyo is Biljana's** — IntentWave's Tommy is reviewing her abandoner flows with her; theirs, we stay out.
-- ✅ **NOLA Home & Garden Show, Feb 19–21 2027 — BOOKED AND PAID.** $1,700, 10×10. 🔥 No propane in the hall — demo on video with a running clock. ⛔ Louisiana Outdoor Expo and Nov 11 Cater-Event Expo are a **no**.
-- **Shopify cleanup — a write, so Evan's or Jay's click:** Triple Jet compare-at = price · Scratch & Dent Performance variants carry the Powered cost · SKU `PW30-VLV075-TFR-B-SBI` on two products · two 18 QT variants with compare-at below price · 25 active products not on the Online Store. → [landed-cost pull](../my-work%20%28outputs%29/internal/reports/2026-09-10-landed-cost-by-variant.md)
-- **Nova's queue:** ad naming/build process · missing-end-date pre-launch checklist line · **`maya.md` still lists 1080×1350 as PAID** · `check-centering.py` hardcodes `BAND` · `Performance Boiling Pots (60QT to 120QT)` duplicate · `Commercial Cookers On Sale` has 0 products but is linked from the homepage FAQ.
+- **Retargeting: plan approved, launch held** (Evan, 2026-09-11). **Why:** wait before adding another new campaign. When it goes: two ad sets, **$20/day pots + $10/day 18 QT** · fits $344 of the $350 ceiling · the IW audience stays out (it seeds the lookalike; Biljana uses the list) · IW pixel is CIPA compliant · 18 QT "working" = ≤$30 CPP · no end date · creative `80qt-buy-cheap-twice` (A + B) + `18qt-fry-it-all`, Maya's statics to follow. ⚠️ The 30D pool is padded by the Aug 28 bot-like spike until ~Sept 27 (cause untested). Settle the second pixel before reading results. → [plan](../my-work%20%28outputs%29/content/ads/2026-09-retargeting/2026-09-11-retargeting-plan.md)
+- ✅ **Jay and Robert briefed 2026-09-09.** Future reporting stays consistent with what they hold: 126 orders / $41,100.84 / AOV $326.20. **Owner numbers come from Jay, not Robert**, in one text with every essential question. · ✅ **Closed by Evan 2026-09-08:** sale comms · **popups are Biljana's** · always-on codes are welcome codes and **cannot combine with a live sale**.
+- **IntentWave and Coalition are advisors, not a work queue.** Call "action items" are often Evan spitballing. Parked IW ideas: **On3** (Pete's lane, no seeded product without a signed deliverable) · Peter's paid proposal (**Jay agreed to nothing**) · 24-buyer audience (below Meta's 100 minimum). → [IW 1](../my-work%20%28outputs%29/internal/2026-09-10-intentwave-recap-review.md) · [IW 2](../my-work%20%28outputs%29/internal/2026-09-10-intentwave-call-2-recap.md) · [Coalition Sept 10](../my-work%20%28outputs%29/internal/2026-09-10-coalition-alignment-recap-review.md)
+- **CAC ceilings: v3 + overhead method (2026-09-10).** Landed cost = Shopify `unitCost` (Jay). Under the incremental rule the 18 QT ceiling is ~$73; at Meta's $40.56 it fails the $30 gate, so **hold `18qt-TOF` at $50/day. $350/day holds.** → [v3](../my-work%20%28outputs%29/internal/reports/2026-09-10-cac-ceilings-v3.md)
+- **Sept 1–8 Meta ad-level re-pull (Finn).** It needs the older campaigns' numeric IDs (24 Meta-tagged orders vs 155 claimed, Aug 10–Sep 8). It only unblocks "which Labor Day creative won."
+- **June–October off-season plan**: the real +$500K project. Starts after the post-mortem.
+- **Creator brief.** ~17 idle creators on UpPromote. ⛔ Paid content is discontinued. · **Digit connects in a few weeks** (Evan, 2026-09-10). Stock is fine, so don't gate plans on inventory.
+- **Lanes:** Google Ads + SEO is Coalition's, monitor only. **Email / SMS / Klaviyo is Biljana's**, and we stay out.
+- ✅ **NOLA Home & Garden Show, Feb 19–21 2027: booked and paid.** 🔥 No propane in the hall, so the demo is video with a running clock. ⛔ Louisiana Outdoor Expo and the Nov 11 Cater-Event Expo are a **no**.
+- **Shopify cleanup (a write, so Evan's or Jay's click):** Triple Jet compare-at = price · Scratch & Dent Performance variants carry the Powered cost · SKU `PW30-VLV075-TFR-B-SBI` on two products · two 18 QT variants with compare-at below price · 25 active products not on the Online Store. → [landed-cost pull](../my-work%20%28outputs%29/internal/reports/2026-09-10-landed-cost-by-variant.md)
+- **Nova's queue:** ad naming/build process · missing-end-date checklist line · **`maya.md` still lists 1080×1350 as PAID** · `check-centering.py` hardcodes `BAND` · duplicate Performance pots listing · `Commercial Cookers On Sale` has 0 products but is linked from the homepage FAQ.
 
 ---
 
 ## ⛔ Landmines — do not ship these
 
-- **Warranty: read the live page and write from it. Do not ask Evan again.** Full 2-year on everything; limited 5-year residential, 120 QT or smaller. ⛔ **Never 5-year on the 160 QT, 80–140 Gallon, or any steamer** — `yeti-1x1.html` hardcodes one at line 37. Making it a variable is **Nova's job.**
-- ⛔ **No sitewide % discount before November.** AOV $326.20, down 21.4% YoY. **Keep the deadline, drop the blanket discount.**
-- ⛔ **No discount code on a bundle** — the discount is built in (Evan, 2026-09-10).
-- ⛔ **No "made in USA" or domestic-manufacturing claim.** Jay's SBA plan to make pots, baskets and lids here is ~a year out.
+- **Warranty: read the live page and write from it.** Full 2-year on everything; limited 5-year residential, 120 QT or smaller. ⛔ **Never 5-year on the 160 QT, 80–140 Gallon, or any steamer.** `yeti-1x1.html` hardcodes one at line 37; making it a variable is **Nova's job.**
+- ⛔ **No sitewide % discount before November.** AOV $326.20, down 21.4% YoY.
+- ⛔ **No discount code on a bundle, and no kit goes live before the code fix.** Today codes do stack: 33 of ~70 bundle orders from Jun 1 to Sep 10 had a discount, **$2,000.20** *(Shopify, checked two ways, 2026-09-11)*.
+- ⛔ **Live BM Digital codes, no end date:** `BMdigUGC7`–`12` (100% off the whole order, one use each, **unused**) · `RM40JAY`, `CWBSM40` (40%, one use each) · `JayTestCode` (8%, unlimited). None used since 2026-07-20. **Never share them. Switch off after Jay's OK** *(Finn, 2026-09-11)*.
+- ⛔ **Dormant BM Digital budgets in Meta.** "BM | ASC+ | CBO | Creative Testing" ($200/day) and "BM | TOF | CBO | Internal Whitelisting" ($100/day) are off but still carry budgets. Two BM ABO campaigns have the campaign switch **on** with every ad set off, so turning on one ad set starts spend. Any of these breaks the $350 ceiling *(Finn, 2026-09-11)*.
 - ⛔ **Do not say which Labor Day creative won.** Suspended until Finn re-pulls.
 - ⛔ **Never show Shopify net ÷ Meta spend as ROAS.** It credits Meta with freight, a lawn mower, Biljana's email and Coalition's Google.
-- ⛔ **Never quote a cost-per-customer figure.** Google spend exists only as a 365-day P&L total, with no reconciled new-customer count. "$40 CAC" on calls is Meta cost per purchase.
-- ⛔ **Use the real margin (~40.6%), not the booked 46%.** Jay worked the 46% on $4.3M booked revenue, which includes a $393k double-booked Lowe's order *(real margin derived; assumes that entry carried no cost of goods)*. P&L revenue (~$3.9M) and Shopify net sales + shipping ($3.14M) also differ by ~$760k while COGS matches within 1.4%, so **don't mix the two in one ratio.** **Never reuse the 44.5% August margin** — its costs predate Jay's cost review.
-- ⛔ **IntentWave call figures are not facts:** "$54,800 Meta spend" (real: $6,337), "$674 18 QT AOV" (Shopify: $419), "$222K in carts" (Meta's count).
-- ⛔ **No 30%-off legs in November.** v3: at best a wash (−$3.57 with fees). A leg attached at full price adds **$65.46**.
-- ⛔ **`2026-08-27_laborday-vintage_multi-product_1080x1350_v1.png` is NOT evergreen** — sale, codes and dates on its face.
-- **Coalition's "Revenue Up 199.03% YoY"** is **unverified against Shopify.**
-- **Showroom cards carry no warranty line and no price date** — deliberate. 31 on the floor. Re-pull `products.json` before every print run.
-- **Never quote a price not in** [what-we-sell.md](../my-business%20%28context%29/what-we-sell.md) — matched to Shopify 2026-09-10; **Shopify prices always win.** **Never name a competitor.**
+- ⛔ **Never quote a cost-per-customer figure.** "$40 CAC" on calls is Meta cost per purchase.
+- ⛔ **Use the real margin (~40.6%), not the booked 46%**, and **never the 44.5% August margin**. Don't mix P&L revenue (~$3.9M) and Shopify ($3.14M) in one ratio.
+- ⛔ **Vendor call figures are not facts:** IW's "$54,800 Meta spend" (real: $6,337) · "$674 18 QT AOV" (Shopify: $419) · Coalition's Google "$87,724 / 5.47 ROAS" and "Revenue Up 199.03% YoY" are unverified against Shopify.
+- ⛔ **No 30%-off legs in November.** v3: at best a wash (−$3.57 with fees).
+- ⛔ **`2026-08-27_laborday-vintage_multi-product_1080x1350_v1.png` is NOT evergreen**: sale, codes and dates are on its face.
+- **Showroom cards carry no warranty line and no price date** (deliberate). Re-pull `products.json` before every print run.
+- **Never quote a price not in** [what-we-sell.md](../my-business%20%28context%29/what-we-sell.md); **Shopify prices always win.** **Never name a competitor, and never say "Yeti"** in anything customers see.
 
 ---
 
@@ -99,13 +100,13 @@ Source of truth → [metrics-and-goals.md](../my-files%20%28knowledge%29/hpc-ref
 |---|---|---|
 | ⭐ **Sale, Sept 1–8 2026** | **126 orders · $41,100.84 net · AOV $326.20** · vs 2025: 63 · $26,144.22 · $414.99 | Shopify, verified 2026-09-09 |
 | **Last 30 days, Aug 11–Sep 9** | **321 orders · $115,971.64 net** · $130,902.88 total sales incl. ship + tax | ShopifyQL, 2026-09-10 |
-| **Meta spend, 30 days** | **$6,400.87** (Aug 10–Sep 8) · Shopify credits Meta $7,780 last click · $14,258 any click (Aug 11–Sep 9) | Ads Manager · ShopifyQL, 2026-09-10 |
+| **Meta spend, 30 days** | **$6,400.87** (Aug 10–Sep 8) · Shopify credits Meta $7,780 last click · $14,258 any click | Ads Manager · ShopifyQL, 2026-09-10 |
+| **Meta live daily caps** | **$314/day** (IW $100 · 18qt $50 · BPM $164) · +$30 retargeting when it launches = $344 of $350 | Ads Manager, Finn, 2026-09-11 |
 | 18 QT fryer orders, Aug 10–Sep 8 | 66 paid · AOV **$419.07** · only 4 at $600+ | Shopify, 2026-09-10 |
-| Repeat buyers, 12 mo | **18.6%** of customers ordered 2+ times (inflated by dealer + warranty orders) | Shopify, 2026-09-10 |
-| ⭐ **P&L, last 365 days** | Revenue **$4.3M booked · ~$3.9M real** ($393k Lowe's double-booked) · net **−5%** · marketing **$676k** · COGS **$1.68M** · margin **46% of booked ≈ 40.6% of real**, after fees + freight | Jay, from the P&L, 2026-09-10 · real margin derived |
+| ⭐ **P&L, last 365 days** | Revenue **$4.3M booked · ~$3.9M real** · net **−5%** · marketing **$676k** · COGS **$1.68M** · margin **46% of booked ≈ 40.6% of real** | Jay, 2026-09-10 · real margin derived |
 | Shopify, same 365 days | Net sales $2,902,399.16 · shipping charged $242,199.97 · 6,442 orders | ShopifyQL, 2026-09-10 |
-| Overhead | **$49,550/mo, steady** · $97.49/order (÷ 6,099) — kept out of ad ceilings under the incremental rule | Jay 09-09/10 · Finn |
-| ⚠️ Break-even blended ROAS ~2.4 | **Under revision** — built on the stale 44.5% margin | `paid-media.md`, 2026-08-26 |
+| Overhead | **$49,550/mo, steady** · $97.49/order, kept out of ad ceilings under the incremental rule | Jay 09-09/10 · Finn |
+| ⚠️ Break-even blended ROAS ~2.4 | **Under revision**: built on the stale 44.5% margin | `paid-media.md`, 2026-08-26 |
 
 ⚠️ **Not on file, and not to be invented:** actual CAC · Google spend for the last 30 days · the new-vs-returning split for Sept 1–8.
 

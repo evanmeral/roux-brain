@@ -26,9 +26,9 @@
 |---|---|---|
 | **Biljana** | Contract — Klaviyo / email | Rate unknown |
 | **IntentWave** | Meta ads advisory. Also runs an **identity pixel** on the site and syncs audiences into Meta. | **Free** |
-| **Coalition** | **Google Ads** (revamp began ~mid-Aug 2026) + **HPC SEO for 2+ years** | **$4,800/month** (management only — ad spend separate) |
-| **IntentWave** *(operates as **Persistent.id**)* | Meta advisory, identity pixel + Meta audience syncs, and the **site cookie-consent tool** | Free |
-| **Garrett Frazier / Frazier Media** | Videographer, engaged ~19 Aug 2026 | **$500/video, or $2,500 for 8** ($312.50 each) |
+| **Coalition** | **Google Ads** (revamp began ~mid-Aug 2026) + **HPC SEO for 2+ years**. On **Meta, a read-only secondary advisor, like IntentWave** — no changes, no settings *(Evan, 2026-09-11)* | **$4,800/month** (management only — ad spend separate) |
+| **IntentWave** *(operates as **Persistent.id**)* | Meta advisory, identity pixel + Meta audience syncs, and the **site cookie-consent tool**. Pixel shown to be **CIPA compliant** — IntentWave proved it, Coalition in contact *(Evan, 2026-09-11)* | Free |
+| **Garrett Frazier / Frazier Media** | Videographer, engaged ~19 Aug 2026. **Aug 19 purchase: 2 videos, $1,000** (Evan, 2026-09-11) — the 8-pack has not been bought | **$500/video, or $2,500 for 8** ($312.50 each) |
 
 **On Coalition's fee:** $4,800/mo is ~27.5% of the ~$17.4K/mo Google spend — above the usual 10–20% for pure ad management, **but it also covers SEO, and organic search is 50% of first-touch discovery.** On that basis it looks reasonable. Reconcile results against Shopify periodically — hygiene, not distrust.
 

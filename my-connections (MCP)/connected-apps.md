@@ -10,7 +10,7 @@
 | App | Verified by | What the assistant can do |
 |---|---|---|
 | **Gmail** | **Signed in as `evan@highperformancecookers.com`** (verified 2026-09-01: 201 sent threads in 60 days, every one from the work address; zero mail addressed to `evanmeral@gmail.com`). `evan@hpcookers.com` is the same mailbox, not a second account. | Read, search, label, draft, reply, forward, send, trash |
-| **Google Calendar** | **Signed in as `evanmeral@gmail.com` — the PERSONAL account** (verified 2026-09-01: primary calendar is `evanmeral@gmail.com`; the other three are Family, "Squire work schedule", US Holidays) | Read/write on the personal calendars only. **Cannot see the HPC work calendar at all.** |
+| **Google Calendar** | **Signed in as `evanmeral@gmail.com` — the PERSONAL account**, but **the HPC work calendar is now shared into it** (Jay unlocked sharing, 2026-09-11). Verified 2026-09-11: `list_calendars` shows **"HPC"** (description "High Performance Cookers Calendar", ID `evan@highperformancecookers.com`), access role **writer**, and its events read back (the Sept 10 IntentWave and Coalition calls). | Read/write on the personal calendars **and the HPC work calendar** — pass `calendarId: evan@highperformancecookers.com`. |
 | **Google Drive** | Listed recent files | Search, read, create, update, copy, share, trash |
 | **Slack** | Found `#general` (C05759XA63G), created by Jay Meral, 2023-05-11 | Read channels/threads, search, send, schedule, canvases |
 | **Canva** | Found **HPC Brand Kit** (`kAHRW3t1WWA`) | Search, read, create, edit, export designs; brand templates |
@@ -21,8 +21,7 @@
 
 - **⚠️ Gmail and Calendar are signed in to DIFFERENT Google accounts.** Corrected 2026-09-01 after direct testing; the earlier note here claimed both were the personal account, and that was wrong for Gmail.
   - **Gmail = `evan@highperformancecookers.com`** (work). This is why `/learn-my-voice` and `/fill-my-brain` produced accurate HPC results — they were reading real work mail all along.
-  - **Calendar = `evanmeral@gmail.com`** (personal). Asking for `evan@highperformancecookers.com` by calendar ID returns **"could not be found"** — unreachable, not empty. Any HPC meeting is invisible. **Never report an empty day from this calendar as "nothing scheduled."** Say the work calendar cannot be read.
-  - **Fix:** connect Google Calendar for `evan@highperformancecookers.com`. Until then, the calendar half of `/morning-brief` is unreliable.
+  - **Calendar = `evanmeral@gmail.com`** (personal). ✅ **Fixed 2026-09-11:** the work calendar is shared into it and shows as **"HPC"** (`evan@highperformancecookers.com`, writer access). Always query it by that ID; the default `primary` is still the personal calendar. If a read of it ever fails, say the work calendar cannot be read, never "nothing scheduled."
 - **✅ Draft saving works.** A 2026-09-01 check found a draft missing and wrongly concluded the connector was broken. Evan had deleted it himself after doing the task. **Lesson: a missing draft is not proof of a broken connector — ask before writing a fault into this file.**
 - **Slack is the real HPC workspace** — `#general` was created by Jay Meral.
 - ⚠️ **Google Drive cannot carry large binaries.** `create_file` takes the file's bytes **inline as base64**, so every uploaded byte passes through the conversation. Found 2026-09-08 handing off the showroom cards: 31 print-resolution PNGs are 13.8 MB → **18.4 MB of base64 (~4.6M tokens)**; a single card is ~196k. Folders, Google Docs and text files are fine and cheap. **For image or print deliverables: create the folder, put a text guide in it, and have Evan drag the files in.** There is no local Drive mount on this Mac and no `rclone`/`gdrive` CLI.

@@ -33,11 +33,12 @@ You run as a subagent, so `/prime` has not run for you and nothing is loaded.
 ## ⚠️ The connector split — this will bite you
 
 - **Gmail is signed in to the WORK account** (`evan@highperformancecookers.com`).
-- **Calendar is signed in to the PERSONAL account** (`evanmeral@gmail.com`) and
-  **cannot see the HPC work calendar at all.**
+- **Calendar is signed in to the PERSONAL account** (`evanmeral@gmail.com`). Since
+  2026-09-11 the **HPC work calendar is shared into it** as **"HPC"** — query it with
+  `calendarId: evan@highperformancecookers.com`. The default `primary` is the personal one.
 
-So an empty calendar is **not** evidence of a free day. Say "I cannot see the work
-calendar" — never "nothing scheduled." Same discipline everywhere: a broken connection
+If a read of the HPC calendar fails, an empty result is **not** evidence of a free day.
+Say "I cannot see the work calendar" — never "nothing scheduled." Same discipline everywhere: a broken connection
 is reported as broken, never as a quiet result.
 
 **An unanswered email thread is not proof a task is open.** Evan closes things by phone,

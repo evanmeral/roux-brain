@@ -231,6 +231,8 @@ Zydeco Fire Hot Sauce $5.95 · Seasoning Dust $6.95 · Combo Pack $11.99 · Seaf
 
 Skimmers $9.99–$19.99 · Paddles $9.99–$85 · Scoop $14.99 · Basket Buddy $10.50–$15.99 · Replacement Baskets $35–$120 · Replacement Lids $18.50–$34.75 · Regulators $25.99–$78 · Hose $19.99–$34.99 · Wind Shield $21 · Fry Thermometers $15.99–$18.99 · Turkey Fryer Racks $25–$65 · **Cooker Leg Extensions $119** · Add a Custom Logo $75
 
+> **Fryer accessory fitment (Evan, 2026-09-11):** the **5" fry thermometer** (`HP-5in-Therm`, $15.99) is the one for the **18 QT**, because the 12" doesn't fit it well. The **12"** is the one for the **30 QT turkey pot**. The **Wind Shield** is for a pot sitting on the ground, **not** a fryer standing on leg extensions. *(Wind Shield PDP: powered cookers 60 QT or smaller. Thermometer SKU and price from ROUX's Shopify read, 2026-09-11.)*
+
 ---
 
 ## TIER 3 — inbound only, no ad spend
@@ -320,6 +322,7 @@ are commercial sizes. None were in the 2026-08-26 storefront pull.*
 
 ⛔ **But a welcome code cannot be combined with a live sale code** — it is one or the other.
 ⛔ **No code of any kind applies to a bundle** — its discount is built in. See §1C. *(Evan, 2026-09-10.)*
+**Jay, 2026-09-11: every code skips bundles except military / first-responder.** ⚠️ **Not yet enforced in Shopify:** 33 of ~70 bundle orders Jun 1–Sep 10 2026 had a discount land on the bundle, $2,000.20 *(Shopify, checked two ways, 2026-09-11)*. Welcome10 and the Labor Day code already skip bundles. Most other codes are whole-order discounts and must be recreated → `my-work (outputs)/internal/2026-09-11-bundle-discount-code-fix.md`. ⚠️ `HIGH15` is still active in Shopify although the $15 email code is retired *(ROUX, 2026-09-11)*.
 ✅ Evan, 2026-09-08. Confirmed while auditing the always-on codes after Labor Day: `FANDF`,
 `HPCWS`, `DELAYSHIPMARK`, `TEXT25`, `COOK25`, `CART25` and the rest have **no end date by
 design** because they are these signup rewards. A customer who stacked `LABORDAY10-26` with
@@ -329,7 +332,7 @@ promo, and there is nothing to disable before one.** *(Codes themselves read fro
 
 ⚠️ Unverified: an older imported note claimed the $25 requires a registered account and a $125+ minimum order. **Not confirmed by Evan — do not state those conditions without checking.**
 
-Also live: military / first-responder discount (5% per imported notes, percentage unconfirmed), rewards points program, financing, gift cards, scratch-and-dent clearance.
+Also live: military / first-responder discount (**5%**, confirmed in Shopify code settings, ROUX 2026-09-11; the `fir-` codes are the first-responder ones), rewards points program, financing, gift cards, scratch-and-dent clearance.
 
 ### Resale lines *(we're a dealer — real revenue, no marketing)*
 | Product | Price | Note |

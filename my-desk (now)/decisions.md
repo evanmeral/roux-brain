@@ -11,6 +11,41 @@
 
 ## 2026-09
 
+**Bundles approved: tailgate $479, turkey $469, plus a 60 QT two-bird kit; every code skips bundles except military** —
+Jay, via Evan, 2026-09-11. The kits are **evergreen**: Jay doesn't want them pulled after the season if they
+improve margin. Only the seasonal turkey ads stop at the ship cutoff, **Mon Nov 23** (3 days before
+Thanksgiving). The 30 QT going from $345 to $442.50 is deliberate, because it's now sold as variations. **Evan builds
+the kits in Shopify.** The 7 draft bundle orders at 100% off were influencer seeding. **After approval,**
+Evan changed the tailgate kit to a 5" thermometer (the 12" doesn't fit the 18 QT well) and dropped the
+wind shield (it's for a pot on the ground, not on legs), so its price is being re-checked. Still open:
+Welcome 10% on bundles for new customers · early-Nov 2025 promo · Platinum compare-at · the incremental rule.
+→ `internal/2026-09-11-tailgate-thanksgiving-bundles-plan.md`
+
+**Retargeting: plan approved, launch held** — Evan, 2026-09-11. Two ad sets, $20/day pots and $10/day 18 QT ·
+the 18 QT counts as working at ≤$30 per purchase · no end date · the IntentWave audience stays out (it seeds the
+lookalike, and Biljana uses that list in her flows). **Why held:** Evan wants to wait before adding another
+new campaign. IntentWave's pixel is **CIPA compliant**: IntentWave proved it, and Coalition is in contact (Evan).
+→ `content/ads/2026-09-retargeting/2026-09-11-retargeting-plan.md`
+
+**BPM stays at $164/day; Jay's Aug 31 +25% is not applied** — Evan, 2026-09-11. Live caps total $314/day
+*(Finn, Ads Manager, 2026-09-11)*.
+
+**Coalition is a read-only secondary advisor on Meta, like IntentWave** — Evan, 2026-09-11. No setting
+or attribution changes. "Jay generates Meta copy from Coalition's sheet" was Evan spitballing on the call.
+The sheet is input the brain can mine, not a copy source. Coalition gets our Meta creative in the
+formats we already make, with no extra sizes.
+
+**"Made in USA" and "Built in Louisiana" are approved claims; the board landmine is lifted** — Evan,
+2026-09-11: *"we are Made in the USA and built in Louisiana, and that's part of who we are."*
+⚠️ **The sources disagree and this is not resolved.** The Sept 10 IntentWave call recap records
+Jay saying the SBA loan is to make pots, baskets and lids here *"instead of importing from China."*
+If that describes today, an unqualified "Made in USA" may not meet the FTC's "all or virtually all"
+standard. "Built in Louisiana" is not affected. Evan to confirm with Jay.
+
+**Team line: "Built by hand by our 12-man team here in South Louisiana."** Evan, 2026-09-11. It replaces
+"twelve people build every one," which was too direct. **Never say "Yeti"** in customer-facing work:
+it's free advertising for them. Keep the frame and drop the name.
+
 **IW lookalike ads send every click to the website: Shop destination off on all three** —
 Evan, 2026-09-11, set before publishing. Meta had "Personalized destinations → Shop" on (plus
 Messenger on `120qt-crowd-math`), which can route people to the in-app shop instead of the

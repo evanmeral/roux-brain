@@ -106,7 +106,7 @@ That's the whole company. Jay Meral built HPC around it in Covington, Robert bro
 *All figures from Shopify unless noted. Flagged for re-verification — see `my-files (knowledge)/hpc-reference/metrics-and-goals.md`.*
 
 - **$2,884,025 net sales**, 13 months Aug 2025–Aug 2026
-- **44.5% gross margin** (Aug 2026)
+- ~~44.5% gross margin (Aug 2026)~~ **Superseded:** its costs predate Jay's cost review. The margin of record is **~40.6% real**, derived from Jay's P&L, 2026-09-10 (see `my-desk (now)/decisions.md`).
 - **+345% August YoY** ($19,763 → $87,938)
 - **#1 product:** 120 QT Powered — $492,671 (12 mo)
 - **#2 product:** 18 QT Fish Fryer Powered — $293,194 (12 mo)

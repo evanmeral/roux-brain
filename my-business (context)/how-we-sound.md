@@ -67,6 +67,8 @@ Price is the #1 objection and almost never the reason anyone buys (80% choose on
 
 **Deploy it:** PDP above the fold on high-ticket SKUs · price-objection creative · abandoned-cart email #2 · comment replies · the savings calculator page.
 
+⛔ **Never say "Yeti" in anything customers see** — spoken, on screen, or in a caption. It's free advertising for them *(Evan, 2026-09-11)*. Keep the idea, drop the name: the nice ice chest you buy once vs. the cheap one you keep replacing.
+
 ⚠️ **Never claim a specific lifespan** ("lasts 50 years"). Stay in Evan's register — *"with good care, these last generations"* — and let the 5-year warranty carry the hard proof.
 
 ## The two-part price answer — always run both together
@@ -92,7 +94,7 @@ Price is the #1 objection and almost never the reason anyone buys (80% choose on
 8. **Quality economics** — "Nobody buys this because it's cheap. They buy it because they're done replacing pots."
 9. **Skeptic conversion** — "Everybody thinks the 7-minute thing is marketing. Here's the clock."
 10. **Off-season** — "Steak fingers, fries, and okra. It's not just a crawfish pot."
-11. **Team of 12** — "Twelve people in Covington, Louisiana build every one of these."
+11. **Team of 12** — "Built by hand by our 12-man team here in South Louisiana." *(Evan's wording, 2026-09-11 — not "twelve people build every one," too direct.)*
 12. **Pot-is-the-tech** — "The speed isn't in the burner. It's in the tubes on the bottom of the pot."
 13. **Entry point** — "Already got a burner? You only need the pot."
 
