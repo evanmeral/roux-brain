@@ -11,6 +11,12 @@
 
 ## 2026-09
 
+**Discount sheet answers** — Evan, 2026-09-11. The influence.io customer reward codes (~66 unused $ codes)
+**stay on**. The AMP app's automatic discounts **stay as they are**. Jay reviews `RM40JAY`/`CWBSM40` and may delete
+them. `USATHANKS` is an unpublished military code with no way to verify service, replaced by the newer verified
+military code, and will **likely be deleted**. The NOLA directory text keeps "Made in USA" (Evan: low risk).
+`80qt-buy-cheap-twice` stamps switch to "BUILT IN LOUISIANA" (Maya).
+
 **No "Made in USA" claim until the pots are made in-house; use "Built in Louisiana" and "Hand-welded in
 Louisiana"** — Evan, 2026-09-11. **This reverses the entry just below**, which kept "Made in USA." **Why:** the
 base pot is bought from China, and an unqualified "Made in USA" has to meet the FTC's "all or virtually all"

@@ -40,6 +40,8 @@ Found in the inbox 2026-09-01. These run real parts of the business and the brai
 | **Digit** (`digit-software.com`) ⭐ | **Inventory management system.** Jay sent MCP access 2026-08-26; Evan confirmed 2026-09-01 he is connecting it within days | **Will become the SOURCE OF TRUTH for inventory, overriding Shopify.** Also expected to supply **specific overhead numbers** and more. See the source-of-truth table below. |
 | **IntentWave cookie-consent tool** | Consent banner on highperformancecookers.com | Coalition flagged it during a **CIPA compliance review** and asked for login access. Compliance item, not a marketing one. |
 | **reviews.io** | 752 product reviews, 4.83★, NPS 75 | The customer-language goldmine. ~730 reviews still unmined. |
+| **influence.io** | Customer rewards app. Issues one-time dollar reward codes in Shopify *(Evan, 2026-09-11)* | ~66 unused reward codes are live at any time. **Never disable them as clutter** |
+| **AMP** (Shopify app) | Automatic bundle and upsell discounts. One live upsell discount had 39 uses as of 2026-09-11 | Evan: keep as is. A code setting can't block automatic discounts, so count them in any bundle-margin check |
 
 ## 📐 Source of truth — which system wins
 
