@@ -47,7 +47,7 @@
 
 | Who | What | Since |
 |---|---|---|
-| **Evan + Jay** | **Review the [discount-code sheet](https://docs.google.com/spreadsheets/d/1Cv0iCaWEH_pdPqSgu2oOxwB_Bl4dkBkVCLbExxPQrT8/edit)** (378 active; Evan's decisions pre-filled in the Decision column) and decide what to turn off. Still open for Jay: early-Nov 2025 promo? · fix Platinum's compare-at? · adopt the incremental rule? | 2026-09-11 |
+| **Evan + Jay** | **Review the [discount-code sheet](https://docs.google.com/spreadsheets/d/1953VVT0CvlnuV1rz2tfpPAuVSk9h6hCUvD6HXc9N9_c/edit)** (378 active; Evan's decisions pre-filled in the Decision column) and decide what to turn off. Still open for Jay: early-Nov 2025 promo? · fix Platinum's compare-at? · adopt the incremental rule? | 2026-09-11 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
 | **Evan** | **Code fix** (recreate the whole-order codes so they skip bundles; military + first-responder exempt; Biljana's email/SMS codes are hers), then **build the 3 kits** | 2026-09-11 |
 | **Evan** | Set the Garrett call time | 2026-09-01 |
