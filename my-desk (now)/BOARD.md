@@ -1,4 +1,4 @@
-# Board — 2026-09-11 (evening)
+# Board — 2026-09-11 (close)
 
 > The one page. What is live, what is next, what is waiting, what not to ship.
 > **Rewritten in place at every `/wrap` — never appended.** Hard cap: 120 lines.
@@ -39,8 +39,6 @@
 
 **3. Garrett: book the 8-pack and shoot the turkey demo first.** The turkey video has to be **live Oct 1**, so it shoots **Sept 14–18** (Sept 21–23 at the latest). Slate, ranked: 30 QT turkey demo (Jay) · 7-minute clock, 120 QT · "buy it once" · tailgate 18 QT + 60 QT · team of 12 · 18 QT fry-it-all · pasta/sauce · 28 QT steamer. $2,500 for 8 is new money (the Aug 19 buy was 2 videos, $1,000). The 15–20s 18 QT cut is already delivered. Meta formats only. → [call prep](../my-work%20%28outputs%29/internal/2026-09-11-garrett-call-prep.md)
 
-*Demoted: retargeting → Parked. Evan approved the plan and is holding the launch.*
-
 ---
 
 ## ⏳ Waiting on
@@ -49,7 +47,8 @@
 |---|---|---|
 | **Evan + Jay** | **Review the [discount-code sheet](https://docs.google.com/spreadsheets/d/1953VVT0CvlnuV1rz2tfpPAuVSk9h6hCUvD6HXc9N9_c/edit)** (378 active; Evan's decisions pre-filled in the Decision column) and decide what to turn off. Still open for Jay: early-Nov 2025 promo? · fix Platinum's compare-at? · adopt the incremental rule? | 2026-09-11 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
-| **Evan** | **Code fix** (recreate the whole-order codes so they skip bundles; military + first-responder exempt; Biljana's email/SMS codes are hers), then **build the 3 kits** | 2026-09-11 |
+| **Evan** | **Code fix** (recreate the whole-order codes so they skip bundles; military + first-responder exempt; Biljana's email/SMS codes are hers), then **build the 3 kits** · delete `RM40JAY`, `CWBSM40`, `USATHANKS` in Shopify (Jay/Evan: delete) | 2026-09-11 |
+| **Evan** | Add the warranty exception to `SAFETY.md` (only Evan edits it; it wins until he does): a creative showing only a qualifying pot may say "5-YR RESIDENTIAL" without the size | 2026-09-11 |
 | **Evan** | Set the Garrett call time | 2026-09-01 |
 | **Coalition** | Google Ads copy spreadsheet (Connor). Evan passes it to the brain to mine · Cater + Event reply, Mar 22–25 | 2026-09-10 |
 | **Garrett** | High-res tunnel-tube-in-action still. Library's only one is **640×323** | 2026-09-08 |
@@ -58,7 +57,7 @@
 
 ## ⏸️ Parked — deliberately, do not re-raise
 
-- **Retargeting: plan approved, launch held** (Evan, 2026-09-11). **Why:** wait before adding another new campaign. When it goes: two ad sets, **$20/day pots + $10/day 18 QT** · fits $344 of the $350 ceiling · the IW audience stays out (it seeds the lookalike; Biljana uses the list) · IW pixel is CIPA compliant · 18 QT "working" = ≤$30 CPP · no end date · creative `80qt-buy-cheap-twice` (A + B) + `18qt-fry-it-all`, Maya's statics to follow. ⚠️ The 30D pool is padded by the Aug 28 bot-like spike until ~Sept 27 (cause untested). Settle the second pixel before reading results. → [plan](../my-work%20%28outputs%29/content/ads/2026-09-retargeting/2026-09-11-retargeting-plan.md)
+- **Retargeting: plan approved, launch held** (Evan, 2026-09-11). **Why:** wait before adding another new campaign. When it goes: two ad sets, **$20/day pots + $10/day 18 QT** · fits $344 of the $350 ceiling · the IW audience stays out (it seeds the lookalike; Biljana uses the list) · IW pixel is CIPA compliant · 18 QT "working" = ≤$30 CPP · no end date · creative: `80qt-buy-cheap-twice` v3 (approved into `library/` 2026-09-11, Built in Louisiana, no "cast") + `18qt-fry-it-all`, Maya's statics to follow. ⚠️ The 30D pool is padded by the Aug 28 bot-like spike until ~Sept 27 (cause untested). Settle the second pixel before reading results. → [plan](../my-work%20%28outputs%29/content/ads/2026-09-retargeting/2026-09-11-retargeting-plan.md)
 - ✅ **Jay and Robert briefed 2026-09-09.** Future reporting stays consistent with what they hold: 126 orders / $41,100.84 / AOV $326.20. **Owner numbers come from Jay, not Robert**, in one text with every essential question. · ✅ **Closed by Evan 2026-09-08:** sale comms · **popups are Biljana's** · always-on codes are welcome codes and **cannot combine with a live sale**.
 - **IntentWave and Coalition are advisors, not a work queue.** Call "action items" are often Evan spitballing. Parked IW ideas: **On3** (Pete's lane, no seeded product without a signed deliverable) · Peter's paid proposal (**Jay agreed to nothing**) · 24-buyer audience (below Meta's 100 minimum). → [IW 1](../my-work%20%28outputs%29/internal/2026-09-10-intentwave-recap-review.md) · [IW 2](../my-work%20%28outputs%29/internal/2026-09-10-intentwave-call-2-recap.md) · [Coalition Sept 10](../my-work%20%28outputs%29/internal/2026-09-10-coalition-alignment-recap-review.md)
 - **CAC ceilings: v3 + overhead method (2026-09-10).** Landed cost = Shopify `unitCost` (Jay). Under the incremental rule the 18 QT ceiling is ~$73; at Meta's $40.56 it fails the $30 gate, so **hold `18qt-TOF` at $50/day. $350/day holds.** → [v3](../my-work%20%28outputs%29/internal/reports/2026-09-10-cac-ceilings-v3.md)
@@ -74,9 +73,9 @@
 
 ## ⛔ Landmines — do not ship these
 
-- **Warranty: read the live page and write from it.** Full 2-year on everything; limited 5-year residential, 120 QT or smaller. ⛔ **Never 5-year on the 160 QT, 80–140 Gallon, or any steamer.** `yeti-1x1.html` hardcodes one at line 37; making it a variable is **Nova's job.**
-- ⛔ **Pots are 4mm aluminum, never "cast"** (Evan, 2026-09-11). Still in the live `hpc-dark-evergreen` ad. **Evan is keeping the live ads as they are to avoid a learning reset** (2026-09-11). The v2 image and "4mm aluminum" copy go in at the next refresh, and the old copy is never reused. The 7 "unmatched" ads were traced to BPM and 18qt-TOF: nothing is spending outside the $314 *(Finn, Ads Manager, 2026-09-11)* → [audit](../my-work%20%28outputs%29/content/ads/2026-09-11-live-ad-claims-audit.md).
-- ⛔ **No "Made in USA" until the pots are made in-house** (Evan, 2026-09-11). The base pot is bought from China. **Use "Built in Louisiana" / "Hand-welded in Louisiana" / "Built in the USA"** (Jay: we build them here). Still stamped "MADE IN USA": `80qt-buy-cheap-twice` (all 3 sizes, Maya swapping 2026-09-11) · `yeti-1x1.html`. The submitted NOLA directory text stays as is (Evan: low risk).
+- **Warranty: read the live page and write from it.** Full 2-year on everything; limited 5-year residential, 120 QT or smaller. ⛔ **Never 5-year on the 160 QT, 80–140 Gallon, or any steamer.** `yeti-1x1.html` hardcodes one at line 37; making it a variable is **Nova's job.** Evan's exception (2026-09-11): a qualifying-pot creative may drop the size qualifier, but it's pending his `SAFETY.md` edit.
+- ⛔ **Pots are 4mm aluminum, never "cast"** (Evan, 2026-09-11). The live `hpc-dark-evergreen` ad still says it. **Kept as is to avoid a learning reset** (Evan). At its next refresh, swap in the approved v2 from `library/` and the "4mm aluminum" copy. Never reuse the old copy → [audit](../my-work%20%28outputs%29/content/ads/2026-09-11-live-ad-claims-audit.md).
+- ⛔ **No "Made in USA" until the pots are made in-house** (Evan, 2026-09-11). The base pot is bought from China. **Use "Built in Louisiana" / "Hand-welded in Louisiana" / "Built in the USA"** (Jay: we build them here). Still stamped "MADE IN USA": `yeti-1x1.html` only (not live). The submitted NOLA directory text stays as is (Evan: low risk).
 - ⛔ **No sitewide % discount before November.** AOV $326.20, down 21.4% YoY.
 - ⛔ **No discount code on a bundle, and no kit goes live before the code fix.** Today codes do stack: 33 of ~70 bundle orders from Jun 1 to Sep 10 had a discount, **$2,000.20** *(Shopify, checked two ways, 2026-09-11)*.
 - ⛔ **Dormant BM Digital budgets in Meta.** "BM | ASC+ | CBO | Creative Testing" ($200/day) and "BM | TOF | CBO | Internal Whitelisting" ($100/day) are off but still carry budgets. Two BM ABO campaigns have the campaign switch **on** with every ad set off, so turning on one ad set starts spend. Any of these breaks the $350 ceiling *(Finn, 2026-09-11)*.
@@ -102,6 +101,7 @@ Source of truth → [metrics-and-goals.md](../my-files%20%28knowledge%29/hpc-ref
 | **Last 30 days, Aug 11–Sep 9** | **321 orders · $115,971.64 net** · $130,902.88 total sales incl. ship + tax | ShopifyQL, 2026-09-10 |
 | **Meta spend, 30 days** | **$6,400.87** (Aug 10–Sep 8) · Shopify credits Meta $7,780 last click · $14,258 any click | Ads Manager · ShopifyQL, 2026-09-10 |
 | **Meta live daily caps** | **$314/day** (IW $100 · 18qt $50 · BPM $164) · +$30 retargeting when it launches = $344 of $350 | Ads Manager, Finn, 2026-09-11 |
+| **Meta spend, Sep 4–10** | **$1,403.19**, all in the 5 known ad sets: BPM $1,075.25 · 18qt $327.94 · IW $0 (launched Sep 11). Nothing else spending | Ads Manager, Finn, 2026-09-11 |
 | 18 QT fryer orders, Aug 10–Sep 8 | 66 paid · AOV **$419.07** · only 4 at $600+ | Shopify, 2026-09-10 |
 | ⭐ **P&L, last 365 days** | Revenue **$4.3M booked · ~$3.9M real** · net **−5%** · marketing **$676k** · COGS **$1.68M** · margin **46% of booked ≈ 40.6% of real** | Jay, 2026-09-10 · real margin derived |
 | Shopify, same 365 days | Net sales $2,902,399.16 · shipping charged $242,199.97 · 6,442 orders | ShopifyQL, 2026-09-10 |

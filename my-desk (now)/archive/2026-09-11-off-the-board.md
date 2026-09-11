@@ -24,3 +24,12 @@ What came off `BOARD.md` at the 2026-09-11 wrap, and why. Nothing here is delete
 
 - **Old Now #3, "ROUX: tailgate + Thanksgiving bundle plan."** Replaced by the approved plan and the re-OK. Original proposal: tailgate $479 (fryer, legs, 12" thermometer, wind shield, skimmer) and turkey $469. After Evan's fitment changes, tailgate $465 is recommended and the 60 QT is added at $519. → `internal/2026-09-11-tailgate-thanksgiving-bundles-plan.md`
 - **"Demoted: the Sept 1–8 Meta ad-level re-pull → Parked."** That note is dropped; the item itself stays in Parked.
+
+## Later the same day (second wrap)
+
+- **Jay's re-OK landed:** tailgate $465 and 60 QT $519 approved. **Welcome10 question answered:** it stays off bundles, and military + first-responder stay on.
+- **"Confirm Made in USA with Jay" row closed.** Evan learned the base pot is imported, so **"Made in USA" is blocked** until pots are made in-house. **"Built in the USA" is allowed** (Jay: we build them here). The 30 QT video's "Built in the USA" line stays.
+- **Live BM Digital codes landmine dropped.** Evan: ignore them, they'll never be used. They're listed as "Turn off" in the discount sheet.
+- **`buy-cheap-twice` "MADE IN USA" stamps fixed.** v3 (Built in Louisiana, no "cast") and `hpc-dark-evergreen` v2 (4MM ALUMINUM) were approved into `library/` 2026-09-11.
+- **The 7 "unmatched catalog ads" were traced** (Finn, Ads Manager): five are BPM videos with multiple versions, and two are `18qt-001`–`004` images in 18qt-TOF. Sep 4–10 spend was $1,403.19, all in the 5 known ad sets. Nothing is spending outside the $314/day.
+- **Discount sheet v1 and v2 trashed** (recoverable 30 days). v3 is the only one: https://docs.google.com/spreadsheets/d/1953VVT0CvlnuV1rz2tfpPAuVSk9h6hCUvD6HXc9N9_c/edit
