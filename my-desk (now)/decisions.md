@@ -11,6 +11,15 @@
 
 ## 2026-09
 
+**IW lookalike ads send every click to the website: Shop destination off on all three** —
+Evan, 2026-09-11, set before publishing. Meta had "Personalized destinations → Shop" on (plus
+Messenger on `120qt-crowd-math`), which can route people to the in-app shop instead of the
+landing page; `hpc-dark-evergreen` also warned the shop didn't match its URL. **Why:** in-app
+shop orders never touch the landing page, so they carry no tracking tag, and this campaign is
+judged on tagged Shopify orders. **Trade-off accepted:** some buyers convert faster in-app. Don't
+turn Shop back on because Meta recommends it. Campaign published the same morning, with
+"(DRAFT)" dropped from its name. → `content/ads/2026-09-labor-day/2026-09-10-iw-tracking-tags.md`
+
 **Real margin of record: ~40.6%, not 46%** — Jay, 2026-09-10: the 46% was worked on the
 **$4.3M booked** revenue. That revenue includes the $393k double-booked Lowe's order, which
 had no real sale behind it. **Derived** (assuming that entry carried no cost of goods):
