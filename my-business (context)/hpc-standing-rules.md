@@ -35,9 +35,11 @@ a different thing — lives in [my-voice.md](my-voice.md).
 - **Never pair fryers with crawfish.** Match the use case to the product.
 - **Qualify every number** — "up to," "as little as," "in as fast as." Never a flat guarantee.
 - **Warranty: full 2-year on all products** (parts and labor, normal use). **Limited 5-year on residential pots 120 QT or smaller** — Tunnel Tube pot bottoms, powered cooker stands and all welds; **owner pays labor and shipping both ways.** Never say "5-year warranty" without both qualifiers: residential, and 120 QT or smaller. Verified against highperformancecookers.com/pages/warranty-information, 2026-09-01.
+  - **Evan, 2026-09-11:** on creative that shows only a qualifying pot (residential, 120 QT or smaller), "5-YR RESIDENTIAL WARRANTY" is fine without the size qualifier. ⚠️ `SAFETY.md` still requires both qualifiers and wins on conflict; only Evan edits it.
   - ⚠️ **Never put a 5-year claim on steamer or commercial creative.** The commercial line (80–140 Gallon) is above the size cap *and* sold to commercial buyers. It fails on both grounds.
 - **Never name a competitor.**
 - ⛔ **No "Made in USA" claim** until pot manufacturing is in-house (Jay's SBA plan, ~a year out). The base pot is bought from China; we weld, fit and finish it in Covington. **Use "Built in Louisiana" and "Hand-welded in Louisiana."** Never "we make the pots." *(Evan, 2026-09-11.)*
+- ⛔ **Pots are 4mm aluminum, never "cast."** The only cast-aluminum part is a piece on the Boil Boss Triple Jet burner *(Evan, 2026-09-11)*.
 - **Lead with quality, never defend price.** 80% of customers buy on quality, 10% on price.
 - **Never quote a price that is not in** [what-we-sell.md](what-we-sell.md).
 

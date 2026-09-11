@@ -236,7 +236,7 @@ IG/FB engagers):
 | Pots | `rt-80qt-buy-cheap-twice-b` | Same three files | **Version B**, cost to run | Same |
 | 18 QT | `rt-18qt-fry-it-all` | `2026-09-08_18qt-fryer_fry-it-all_` 1080x1080 · 1080x1920 · 1200x628 | **Version A**, year round · headline `More Than A Fish Fryer.` · description `18 QT powered. Year round.` | `/products/18-qt-fish-fryer` |
 
-- Both pot ads use headline `Buy Once. Boil For Years.` and description `4mm cast. Built to last.` Copy is
+- Both pot ads use headline `Buy Once. Boil For Years.` and description `4mm aluminum. Built to last.` *(was "4mm cast"; the pots aren't cast, Evan 2026-09-11)* Copy is
   verbatim from [evergreen-ad-copy](../2026-09-labor-day/2026-09-09-evergreen-ad-copy.md), §2 and §5.
 - **`buy-cheap-twice` Version B is back in** *(Evan, 2026-09-11)*. It runs as a second ad in the pots set.
   At $20/day the A/B split won't produce a readable winner, so don't claim one. It does put both halves

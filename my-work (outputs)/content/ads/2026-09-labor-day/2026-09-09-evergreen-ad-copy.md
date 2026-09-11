@@ -1,5 +1,7 @@
 # Evergreen Ad Copy — Meta, from Sept 9
 
+> ⛔ **2026-09-11: "4mm cast aluminum" / "4mm cast." below is WRONG.** The pots are 4mm aluminum, not cast (Evan). Some of this copy is live in the IW lookalike; Finn is auditing the live ads. Fix before reuse.
+
 > **Maya, 2026-09-08.** Companion to the 15 approved statics in
 > `my-skills/hpc-ad-creative/work/creative/library/` and to the
 > [Meta off-season plan](2026-09-09-meta-offseason-plan.md).

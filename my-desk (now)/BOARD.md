@@ -47,7 +47,7 @@
 
 | Who | What | Since |
 |---|---|---|
-| **Evan + Jay** | **Review the [discount-code sheet](https://docs.google.com/spreadsheets/d/1Cv0iCaWEH_pdPqSgu2oOxwB_Bl4dkBkVCLbExxPQrT8/edit)** (378 active, fill in the Decision column) and decide what to turn off. Still open for Jay: early-Nov 2025 promo? · fix Platinum's compare-at? · adopt the incremental rule? | 2026-09-11 |
+| **Evan + Jay** | **Review the [discount-code sheet](https://docs.google.com/spreadsheets/d/1Cv0iCaWEH_pdPqSgu2oOxwB_Bl4dkBkVCLbExxPQrT8/edit)** (378 active; Evan's decisions pre-filled in the Decision column) and decide what to turn off. Still open for Jay: early-Nov 2025 promo? · fix Platinum's compare-at? · adopt the incremental rule? | 2026-09-11 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
 | **Evan** | **Code fix** (recreate the whole-order codes so they skip bundles; military + first-responder exempt; Biljana's email/SMS codes are hers), then **build the 3 kits** | 2026-09-11 |
 | **Evan** | Set the Garrett call time | 2026-09-01 |
@@ -75,6 +75,7 @@
 ## ⛔ Landmines — do not ship these
 
 - **Warranty: read the live page and write from it.** Full 2-year on everything; limited 5-year residential, 120 QT or smaller. ⛔ **Never 5-year on the 160 QT, 80–140 Gallon, or any steamer.** `yeti-1x1.html` hardcodes one at line 37; making it a variable is **Nova's job.**
+- ⛔ **Pots are 4mm aluminum, never "cast"** (Evan, 2026-09-11). "Cast" is in `evergreen-ad-copy.md` (possibly **live** in the IW ads; Finn auditing), `hpc-dark-evergreen` (live creative) and `buy-cheap-twice` (Maya fixing).
 - ⛔ **No "Made in USA" until the pots are made in-house** (Evan, 2026-09-11). The base pot is bought from China. **Use "Built in Louisiana" / "Hand-welded in Louisiana."** Still stamped "MADE IN USA": `80qt-buy-cheap-twice` (all 3 sizes, Maya swapping 2026-09-11) · `yeti-1x1.html`. The submitted NOLA directory text stays as is (Evan: low risk).
 - ⛔ **No sitewide % discount before November.** AOV $326.20, down 21.4% YoY.
 - ⛔ **No discount code on a bundle, and no kit goes live before the code fix.** Today codes do stack: 33 of ~70 bundle orders from Jun 1 to Sep 10 had a discount, **$2,000.20** *(Shopify, checked two ways, 2026-09-11)*.

@@ -11,6 +11,19 @@
 
 ## 2026-09
 
+**Pots are 4mm aluminum, never "cast"** — Evan, 2026-09-11. The only cast-aluminum part is a piece on the Boil
+Boss Triple Jet burner. "4mm cast aluminum" had gone into the evergreen ad copy, `hpc-dark-evergreen`,
+`buy-cheap-twice` and `yeti-1x1`. The creative is being fixed as drafts, and the live ads are being audited.
+
+**A 5-year line may drop the size qualifier when the creative shows only a qualifying pot** — Evan, 2026-09-11.
+"5-YR RESIDENTIAL WARRANTY" on the 80 QT `buy-cheap-twice` 1x1 is fine. ⚠️ `SAFETY.md` still says both
+qualifiers, always. Only Evan edits that file, and it wins on conflict until he does.
+
+**Delete `RM40JAY`, `CWBSM40` (Jay didn't remember making them) and `USATHANKS` (not our military or
+first-responder code)** — Jay and Evan, 2026-09-11. Deleting is Evan's click in Shopify. **`-EMAIL` codes are per-customer
+email-signup codes, and the long letter/number codes are per-customer SMS codes.** The system makes a new one for
+each customer so nothing can be reused. Keep them; they belong to Biljana's system.
+
 **Discount sheet answers** — Evan, 2026-09-11. The influence.io customer reward codes (~66 unused $ codes)
 **stay on**. The AMP app's automatic discounts **stay as they are**. Jay reviews `RM40JAY`/`CWBSM40` and may delete
 them. `USATHANKS` is an unpublished military code with no way to verify service, replaced by the newer verified

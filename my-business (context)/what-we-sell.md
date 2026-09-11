@@ -25,6 +25,8 @@
 > unverified. It is verified now: **basket + lid + drain valve, every size.** The only
 > thing a Performance pot lacks versus a Powered is the welded burner and stand.
 
+> ⛔ **The pots are 4mm aluminum, NOT cast aluminum** *(Evan, 2026-09-11)*. The only cast-aluminum part on a cooker is a piece on the **Boil Boss Triple Jet burner**. (Shopify also lists a *58 oz Cast Aluminum Scoop*, `AS-58`, which is an accessory.)
+
 **Both carry the Tunnel Tube technology.** The speed comes from the tubes on the pot bottom, not the burner — so a Performance pot on a customer's existing burner still delivers the speed and the fuel savings. That's a ~$180 cheaper entry point into the technology, and an obvious upgrade path: Performance pot → add BB-TJB ($425) → full rig. Two transactions instead of one lost sale.
 
 ## Setup types (the PDP configurator)
