@@ -36,3 +36,9 @@ Drafts live in `../drafts/` and are **not** archived until Evan approves or edit
 > **Paid Meta sizes changed 2026-09-08 (Evan):** paid statics ship **1:1, 9:16 and 1.91:1**.
 > **4:5 (1080×1350) is organic only.** The four `2026-08-27` entries below at 1080×1350 predate
 > that decision and are organic-spec — do not run them in paid without a 1:1 re-render.
+| `2026-09-11_80qt-powered_buy-cheap-twice_1080x1080_v1.png` | 2026-09-11 | 80qt-powered | buy-cheap-twice | 1080x1080 | meta | Approved by Evan 2026-09-11. v3: BUILT IN LOUISIANA stamp, 4mm aluminum (no cast). Retargeting pots ad. |
+| `2026-09-11_18qt-fryer_dark-evergreen_1080x1080_v1.png` | 2026-09-11 | 18qt-fryer | dark-evergreen | 1080x1080 | meta | Approved by Evan 2026-09-11. v2: 4MM ALUMINUM chip (was CAST). Swap into the live IW ad at the next refresh, not before. |
+| `2026-09-11_80qt-powered_buy-cheap-twice_1080x1920_v1.png` | 2026-09-11 | 80qt-powered | buy-cheap-twice | 1080x1920 | meta | Approved by Evan 2026-09-11. v3: BUILT IN LOUISIANA stamp, 4mm aluminum (no cast). Retargeting pots ad. |
+| `2026-09-11_18qt-fryer_dark-evergreen_1080x1920_v1.png` | 2026-09-11 | 18qt-fryer | dark-evergreen | 1080x1920 | meta | Approved by Evan 2026-09-11. v2: 4MM ALUMINUM chip (was CAST). Swap into the live IW ad at the next refresh, not before. |
+| `2026-09-11_80qt-powered_buy-cheap-twice_1200x628_v1.png` | 2026-09-11 | 80qt-powered | buy-cheap-twice | 1200x628 | meta | Approved by Evan 2026-09-11. v3: BUILT IN LOUISIANA stamp, 4mm aluminum (no cast). Retargeting pots ad. |
+| `2026-09-11_18qt-fryer_dark-evergreen_1200x628_v1.png` | 2026-09-11 | 18qt-fryer | dark-evergreen | 1200x628 | meta | Approved by Evan 2026-09-11. v2: 4MM ALUMINUM chip (was CAST). Swap into the live IW ad at the next refresh, not before. |

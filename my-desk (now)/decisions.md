@@ -11,6 +11,15 @@
 
 ## 2026-09
 
+**"Built in the USA" is an allowed claim; "Made in USA" is still blocked** — Jay, via Evan, 2026-09-11. We do
+build them here. So the 30 QT turkey video's "Built in the USA using premium materials" stays. This is a standing rule
+from here on.
+
+**Live ads stay as they are, "cast" included, to avoid a learning reset** — Evan, 2026-09-11. `hpc-dark-evergreen`
+keeps "4mm cast aluminum" in its live text and image for now. The fixed v2 image and "4mm aluminum" copy go in at the
+next natural refresh. Never reuse the old copy in a new ad. Evan approved `buy-cheap-twice` v3 and
+`hpc-dark-evergreen` v2 into the library.
+
 **Pots are 4mm aluminum, never "cast"** — Evan, 2026-09-11. The only cast-aluminum part is a piece on the Boil
 Boss Triple Jet burner. "4mm cast aluminum" had gone into the evergreen ad copy, `hpc-dark-evergreen`,
 `buy-cheap-twice` and `yeti-1x1`. The creative is being fixed as drafts, and the live ads are being audited.

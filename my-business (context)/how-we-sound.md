@@ -50,7 +50,7 @@ Bold, playful, warm, confident, a little cheeky. Never a caricature, never a cor
 | crowd, crew, family, cook team | "consumers," "users" |
 | fast, hot, tough, built | "premium," "high-end," "luxury" |
 | Louisiana / Gulf Coast | "the South" (too vague) |
-| Built in Louisiana, hand-welded in Louisiana | ⛔ "Made in USA" (blocked until the pots are made in-house, Evan 2026-09-11) · "domestically manufactured" |
+| Built in Louisiana, hand-welded in Louisiana, built in the USA | ⛔ "Made in USA" (blocked until the pots are made in-house, Evan 2026-09-11) · "domestically manufactured" |
 | **rolling boil / raging boil** | ⛔ **"hard boil" — never** |
 
 ---
