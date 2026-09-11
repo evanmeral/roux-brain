@@ -1,4 +1,4 @@
-# Board — 2026-09-10
+# Board — 2026-09-11
 
 > The one page. What is live, what is next, what is waiting, what not to ship.
 > **Rewritten in place at every `/wrap` — never appended.** Hard cap: 120 lines.
@@ -9,19 +9,19 @@
 
 ## 🟢 Running
 
-### 🔴 IW lookalike goes live **Fri Sept 11, 6:30am PDT** — Jay gave the go-ahead, in draft, not published
+### 🟢 IW lookalike — **published Fri Sept 11 by Evan**, starts 6:30am PDT
 
-**`IW Lookalike 1% - Cold Prospecting - Sept 2026 (DRAFT)`** · ad set `IW LAL 1% - Cold Prospecting`
+**`IW Lookalike 1% - Cold Prospecting - Sept 2026`** · ad set `IW LAL 1% - Cold Prospecting`
 
 | | |
 |---|---|
 | Audience | Lookalike off `IW - LA Audience` — **2.3–2.8M**, US, 24+ · excludes 30D visitors · 90D purchasers · dealers *(hard Controls)* |
 | Budget | **$100/day** — takes committed caps to $344 of the $350 ceiling |
-| Ads | 120 QT crowd-math · Platinum Bundle 7-min boil · 18 QT fryer → Evan's landing page |
-| **Before publish** | **Add tracking tags to the 3 ads — new campaign only** → [tag spec](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-10-iw-tracking-tags.md) |
+| Ads | `120qt-crowd-math` · `120qt-performance_rolling-boil` (Platinum Bundle) · `hpc-dark-evergreen` (18 QT → Evan's landing page) |
+| Tracking | **Tags on all 3** → [tag spec](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-10-iw-tracking-tags.md) · **Shop destination off** on all 3 |
 
-- ✅ **Checked 2026-09-10 (Finn, read-only):** age 24 · "Maximize number of conversions", no errors · $100 · Sep 11 6:30am PDT, no end date · exclusions as hard Controls · Advantage+ placements · **URL parameters empty on all 3 ads.**
-- 🔴 **Before publishing:** (1) **discard the stray draft on live ad `18qt-001`** — Finn's read left "Unpublished edits" (button 5 → 6). Use the ad's own *Discard draft*, **not** the top-bar "Discard drafts" (that wipes the IW draft); button should read (5). (2) ⛔ **Ignore Meta's "Apply now → Maximize value of conversions"** — that is error #2490408. (3) `hpc-dark-evergreen` warns *"Shop destination doesn't match website URL"* — check its destination. ⛔ Publishes only on Evan's click. → [how it was built](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-finish-the-IW-draft.md) · [ad copy](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md)
+- ✅ **Read-only checks, 2026-09-11:** before publish, the exact tag string on all 3, age 24, "Maximize number of conversions" on Purchase, $100, no end date, the three exclusions. At 8:23 CDT: campaign + ad set **Scheduled** · `crowd-math` **Scheduled** (passed review) · the other two **Processing** · nothing left in "Review and publish". Shop confirmed off on screen for `hpc-dark-evergreen` and `performance`; **`crowd-math` published before it could be re-read** — only readable by opening a live ad's editor, which queues drafts.
+- **Next:** confirm all 3 show Active · **first Shopify read of tagged orders (Finn) ~Mon Sept 14** — match `utm_campaign` = the campaign name, compare to Meta's claimed purchases. ⛔ Skip Meta's "Apply now" suggestions (Maximize value · show products). After any publish, check "Review and publish" reads zero — the first click today published 1 of 3 ads. → [how it was built](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-finish-the-IW-draft.md) · [ad copy](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md)
 - ⚠️ **The lookalike sits under "Suggest an audience," not Controls** *(Finn, 2026-09-10)*. Only age, US and the exclusions are hard; Advantage+ can reach past the lookalike. So the test is "Advantage+ seeded with IW's list," not "IW's 2.3–2.8M." Advantage+ Sales offers no hard inclusion.
 - **18 QT ad stays in — ROUX's call.** Under the incremental rule (Now #1) its ceiling is **~$73 per real order**, so it no longer drags the campaign; it counts toward the **25% cap on low-ticket lines** *(overhead-method-options §6a, §8)*. **Watch its share of purchases.**
 
