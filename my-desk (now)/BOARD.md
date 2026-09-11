@@ -75,7 +75,7 @@
 ## ⛔ Landmines — do not ship these
 
 - **Warranty: read the live page and write from it.** Full 2-year on everything; limited 5-year residential, 120 QT or smaller. ⛔ **Never 5-year on the 160 QT, 80–140 Gallon, or any steamer.** `yeti-1x1.html` hardcodes one at line 37; making it a variable is **Nova's job.**
-- ⛔ **Pots are 4mm aluminum, never "cast"** (Evan, 2026-09-11). "Cast" is in `evergreen-ad-copy.md` (possibly **live** in the IW ads; Finn auditing), `hpc-dark-evergreen` (live creative) and `buy-cheap-twice` (Maya fixing).
+- ⛔ **Pots are 4mm aluminum, never "cast"** (Evan, 2026-09-11). **Live now in `hpc-dark-evergreen`** (primary text + description + image). Evan swaps in "4mm aluminum" and the v2 image. 7 unmatched catalog ads and a 30 QT video ("Built in the USA") also flagged → [audit](../my-work%20%28outputs%29/content/ads/2026-09-11-live-ad-claims-audit.md).
 - ⛔ **No "Made in USA" until the pots are made in-house** (Evan, 2026-09-11). The base pot is bought from China. **Use "Built in Louisiana" / "Hand-welded in Louisiana."** Still stamped "MADE IN USA": `80qt-buy-cheap-twice` (all 3 sizes, Maya swapping 2026-09-11) · `yeti-1x1.html`. The submitted NOLA directory text stays as is (Evan: low risk).
 - ⛔ **No sitewide % discount before November.** AOV $326.20, down 21.4% YoY.
 - ⛔ **No discount code on a bundle, and no kit goes live before the code fix.** Today codes do stack: 33 of ~70 bundle orders from Jun 1 to Sep 10 had a discount, **$2,000.20** *(Shopify, checked two ways, 2026-09-11)*.
