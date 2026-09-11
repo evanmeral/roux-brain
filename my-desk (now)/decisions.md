@@ -11,6 +11,13 @@
 
 ## 2026-09
 
+**Meta's official Ads connector is live, and every write needs Evan's explicit yes** — Evan, 2026-09-11. It replaces
+Claude in Chrome for Meta work. Meta's own panel would not block specific actions, so the brain does: publishing
+(`ads_activate_entity`) is denied outright, and every other write prompts Evan in the app. Never decide on my own
+that a write is allowed. Why: publishing and budget changes are always Evan's click (`SAFETY.md`), and the IW test is
+in Learning. Work only in HP Cookers ADs (`4392736013287`). The second account the connector returns,
+`939759932469855`, was connected by accident: ignore it. → [hpc-standing-rules → Meta Ads connector](../my-business%20%28context%29/hpc-standing-rules.md)
+
 **"Built in the USA" is an allowed claim; "Made in USA" is still blocked** — Jay, via Evan, 2026-09-11. We do
 build them here. So the 30 QT turkey video's "Built in the USA using premium materials" stays. This is a standing rule
 from here on.

@@ -55,6 +55,38 @@ a different thing — lives in [my-voice.md](my-voice.md).
 - **Never invent or estimate a performance number.** If you don't have it, say "I don't have that number."
 - **Name the source of every figure.** A fact and a conclusion are never written the same way.
 
+### Meta Ads connector — every write needs Evan's yes *(Evan, 2026-09-11)*
+
+Meta's official Ads connector (`mcp.facebook.com/ads`) was connected 2026-09-11. Meta's own
+permission panel would not let Evan block specific actions, so **these rules are the block.**
+
+- **Reads are free:** reports, spend, settings, audiences, creatives, the activity log, pixel health.
+- **Every write needs Evan's explicit permission, in the current conversation, for that specific change.**
+  **Never decide on my own that a write is allowed.** Not because it's paused, small, reversible,
+  "part of the task," or because something like it was approved before. If the permission is not
+  clearly there, ask. A yes covers the change it was given for, nothing after it.
+- **The writes, by group:**
+  - ⛔ **Publishing / turning anything on** (`ads_activate_entity`): **blocked outright.** Publishing is
+    Evan's click in Ads Manager. Never use the edit tool to set a status to Active either.
+  - **Editing anything that exists** (`ads_update_entity`): budgets, bids, schedules, targeting, status,
+    names. An edit to a live ad set can reset learning.
+  - **Building:** campaigns, ad sets, ads, creatives, and uploading images or videos.
+  - **Audiences:** create, edit, delete, add or remove people. The IW audience seeds the lookalike.
+  - **Catalog:** any product, feed, product-set or catalog change, and connecting or disconnecting
+    event sources. The catalog is fed from Shopify.
+  - **Pixel and tracking:** creating, editing or deleting pixel events or parameters.
+  - **Tests:** creating or editing A/B tests and lift studies.
+  - **Deleting** anything.
+- **A tool not listed as a read is a write.** Meta adds tools. A new one needs a yes until it is
+  classified here.
+- **Only HP Cookers ADs (`4392736013287`).** The connection also returns `939759932469855` ("Roux Meral").
+  It was connected by accident (Evan, 2026-09-11). Ignore it completely, and don't raise it again.
+- **After any approved write:** say exactly what changed and its ID, then confirm it in the activity log.
+- **Also enforced by the app.** `.claude/settings.json` denies the publish tool and makes every write
+  tool prompt Evan, whatever I think. The rules are keyed to the connector's ID
+  (`54b12e32-cc25-4e3a-a169-b4cac126036e`). If it is ever reconnected under a new ID, re-point them
+  (Nova's job); until then the written rules above still apply in full.
+
 ---
 
 ## Lane discipline — who owns what

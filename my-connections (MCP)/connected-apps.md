@@ -16,6 +16,7 @@
 | **Canva** | Found **HPC Brand Kit** (`kAHRW3t1WWA`) | Search, read, create, edit, export designs; brand templates |
 | **Claude in Chrome** | Extension | Reach any website — Meta Ads Manager, Shopify admin, Google Ads |
 | **Shopify** ⭐ | Called `get-shop-info` 2026-09-01 — **High Performance Cookers**, `highperformancecookers.com`, Advanced plan, USD, CDT, owner email `jay@highperformancecookers.com` | **Read:** orders, customers, products, inventory, collections, analytics queries, raw GraphQL queries. ⚠️ **Also exposes WRITE** — see warning below |
+| **Meta Ads** ⭐ | **Meta's official connector** (`mcp.facebook.com/ads`), connected by Evan 2026-09-11. Called `ads_get_ad_accounts` 2026-09-11: **HP Cookers ADs** `4392736013287` (Shopify Business Manager) is MCP-enabled, queryable and active. It also returns `939759932469855` ("Roux Meral"). **That one was connected by accident (Evan, 2026-09-11). Ignore it: work only in HP Cookers ADs, and don't raise it again.** | **Read:** performance, spend, settings, audiences, creatives, activity log, pixel and dataset health. ⚠️ **Also exposes WRITE, including publish.** Every write needs Evan's explicit yes: [hpc-standing-rules → Meta Ads connector](../my-business%20%28context%29/hpc-standing-rules.md). Meta's permission panel would not block specific actions (Evan, 2026-09-11); `.claude/settings.json` does. |
 
 ### Notes from the check
 
@@ -52,7 +53,7 @@ When two systems disagree, this is the order:
 | **Orders, revenue, product mix, customers** | **Shopify** | Connected 2026-09-01. Never use Meta's or Google's reported revenue |
 | **Inventory / stock levels** | **Digit** (once connected) | ⚠️ **Overrides Shopify on inventory.** Until Digit is live, treat Shopify stock counts as indicative only — do not raise stock issues off Shopify numbers alone |
 | **Overhead, landed cost, COGS** | **Digit** (expected) | This is what the CAC *ceiling* has been blocked on. See `my-desk (now)/BOARD.md` — the ceiling is PROVISIONAL until real overhead lands |
-| **Ad spend** | Meta / Google platforms | No connector. CSV export only |
+| **Ad spend** | Meta / Google platforms | **Meta: official connector since 2026-09-11** (platform-reported). Google: no connector, CSV export only |
 | **Warranty, product claims** | `highperformancecookers.com/pages/warranty-information` | Verified 2026-09-01 |
 
 ---
@@ -79,7 +80,7 @@ Ahrefs · Notion · Figma · Box · Atlassian · Gong · Granola · Amplitude ·
 | System | Status | How to get numbers |
 |---|---|---|
 | **Shopify admin** | ✅ **CONNECTED 2026-09-01.** Source of truth for orders, revenue, product mix, customers | Query it directly — `list-orders`, `list-customers`, `run-analytics-query`, `graphql_query` |
-| **Meta Ads Manager** | ✅ **Browser route works — found 2026-09-03.** No API connector, but Claude in Chrome's "Roux Meral" Facebook profile has full access to the real ad account: **"HP Cookers ADs," ID `4392736013287`, under the "Shopify Business Manager" portfolio.** ⚠️ Don't confuse it with the *other* ad account in that same portfolio, `939759932469855` ("Seller Dummy AdAccount") — that one has 0 people assigned and has never run an ad; a first pass landed there and wrongly concluded Meta was unreachable. To get back to the right account: business.facebook.com → account switcher (top-left) → **Shopify Business Manager** portfolio → **HP Cookers ADs**. Numbers pulled this way are Meta's platform-reported figures (pre-discount, no refunds) — fine for "is it delivering," not a substitute for Shopify on CAC/ROAS. | Browser (Claude in Chrome) via the account above, read-only. CSV export still the fallback for `hpc-scoreboard-report`. |
+| **Meta Ads Manager** | ✅ **Official connector live 2026-09-11** (top table). Use it first. *Fallback only:* the browser route, found 2026-09-03. Claude in Chrome's "Roux Meral" Facebook profile has full access to the real ad account: **"HP Cookers ADs," ID `4392736013287`, under the "Shopify Business Manager" portfolio.** ⚠️ Don't confuse it with the *other* ad account in that same portfolio, `939759932469855` ("Seller Dummy AdAccount") — that one has 0 people assigned and has never run an ad; a first pass landed there and wrongly concluded Meta was unreachable. To get back to the right account: business.facebook.com → account switcher (top-left) → **Shopify Business Manager** portfolio → **HP Cookers ADs**. Numbers pulled this way are Meta's platform-reported figures (pre-discount, no refunds) — fine for "is it delivering," not a substitute for Shopify on CAC/ROAS. | Browser (Claude in Chrome) via the account above, read-only. CSV export still the fallback for `hpc-scoreboard-report`. |
 | **Google Ads** | ❌ Still no connector | Browser (read-only), or Coalition's reporting |
 
 **What Shopify changes:** actual CAC and ROAS are now checkable against source of truth instead of platform-reported numbers. Order counts, new-vs-returning customers, real post-discount revenue net of refunds — all directly queryable. This was the single biggest hole in the brain and it is now closed on the revenue side.

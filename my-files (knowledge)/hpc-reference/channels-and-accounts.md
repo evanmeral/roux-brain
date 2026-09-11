@@ -76,7 +76,7 @@ Ask before launching: who owns posting, and do we want @highperformancecookers r
 
 | Source | Trust | Notes |
 |---|---|---|
-| **Meta Ads Manager** (direct) | ✅ Source of truth for Meta | ROUX has no access yet |
+| **Meta Ads Manager** (direct) | ✅ Source of truth for Meta | **Readable through Meta's official connector since 2026-09-11** (HP Cookers ADs only). Every write needs Evan's yes; publishing is blocked. → `hpc-standing-rules.md` |
 | **Google Ads** (direct) | ✅ Source of truth for Google | ROUX has no access yet |
 | **Shopify admin** | ✅ Source of truth for orders/revenue/product mix | ROUX has no access yet |
 | **Klaviyo** (direct) | ✅ Source of truth for email | Biljana owns. Connector unauthorized. |

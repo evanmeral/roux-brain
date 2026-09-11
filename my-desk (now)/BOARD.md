@@ -1,4 +1,4 @@
-# Board — 2026-09-11 (close)
+# Board — 2026-09-11 (evening close)
 
 > The one page. What is live, what is next, what is waiting, what not to ship.
 > **Rewritten in place at every `/wrap` — never appended.** Hard cap: 120 lines.
@@ -20,7 +20,7 @@
 | Ads | `120qt-crowd-math` · `120qt-performance_rolling-boil` (Platinum Bundle) · `hpc-dark-evergreen` (18 QT → Evan's landing page) |
 | Tracking | **Tags on all 3** → [tag spec](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-10-iw-tracking-tags.md) · **Shop destination off on all 3** (`crowd-math` checked by Evan, 2026-09-11) |
 
-- **Next: first Shopify read of tagged orders (Finn) ~Mon Sept 14.** Match `utm_campaign` to the campaign name and compare with Meta's claimed purchases. ⛔ Skip Meta's "Apply now" suggestions (Maximize value · show products). After any publish, check "Review and publish" reads zero. → [how it was built](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-finish-the-IW-draft.md) · [ad copy](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md)
+- **Next: first Shopify read of tagged orders (Finn) ~Mon Sept 14.** Match `utm_campaign` to the campaign name and compare with Meta's claimed purchases (Meta side now read through the **Meta connector**, not Chrome). ⛔ Skip Meta's "Apply now" suggestions (Maximize value · show products). After any publish, check "Review and publish" reads zero. → [how it was built](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-finish-the-IW-draft.md) · [ad copy](../my-work%20%28outputs%29/content/ads/2026-09-labor-day/2026-09-09-evergreen-ad-copy.md)
 - ⚠️ **The lookalike sits under "Suggest an audience," not Controls** *(Finn, 2026-09-10)*. Only age, US and the exclusions are hard, so the test is "Advantage+ seeded with IW's list," not "IW's 2.3–2.8M."
 - **18 QT ad stays in (ROUX's call).** Incremental ceiling ~$73 per real order; it counts toward the **25% cap on low-ticket lines**. **Watch its share of purchases.**
 - 🟢 **Coalition and IntentWave are read-only advisors on Meta.** No setting or attribution changes during this test (Evan, 2026-09-11).
@@ -61,7 +61,7 @@
 - ✅ **Jay and Robert briefed 2026-09-09.** Future reporting stays consistent with what they hold: 126 orders / $41,100.84 / AOV $326.20. **Owner numbers come from Jay, not Robert**, in one text with every essential question. · ✅ **Closed by Evan 2026-09-08:** sale comms · **popups are Biljana's** · always-on codes are welcome codes and **cannot combine with a live sale**.
 - **IntentWave and Coalition are advisors, not a work queue.** Call "action items" are often Evan spitballing. Parked IW ideas: **On3** (Pete's lane, no seeded product without a signed deliverable) · Peter's paid proposal (**Jay agreed to nothing**) · 24-buyer audience (below Meta's 100 minimum). → [IW 1](../my-work%20%28outputs%29/internal/2026-09-10-intentwave-recap-review.md) · [IW 2](../my-work%20%28outputs%29/internal/2026-09-10-intentwave-call-2-recap.md) · [Coalition Sept 10](../my-work%20%28outputs%29/internal/2026-09-10-coalition-alignment-recap-review.md)
 - **CAC ceilings: v3 + overhead method (2026-09-10).** Landed cost = Shopify `unitCost` (Jay). Under the incremental rule the 18 QT ceiling is ~$73; at Meta's $40.56 it fails the $30 gate, so **hold `18qt-TOF` at $50/day. $350/day holds.** → [v3](../my-work%20%28outputs%29/internal/reports/2026-09-10-cac-ceilings-v3.md)
-- **Sept 1–8 Meta ad-level re-pull (Finn).** It needs the older campaigns' numeric IDs (24 Meta-tagged orders vs 155 claimed, Aug 10–Sep 8). It only unblocks "which Labor Day creative won."
+- **Sept 1–8 Meta ad-level re-pull (Finn).** The Meta connector may now reach the older campaigns' numeric IDs (untested). It needs them (24 Meta-tagged orders vs 155 claimed, Aug 10–Sep 8). It only unblocks "which Labor Day creative won."
 - **June–October off-season plan**: the real +$500K project. Starts after the post-mortem.
 - **Creator brief.** ~17 idle creators on UpPromote. ⛔ Paid content is discontinued. · **Digit connects in a few weeks** (Evan, 2026-09-10). Stock is fine, so don't gate plans on inventory.
 - **Lanes:** Google Ads + SEO is Coalition's, monitor only. **Email / SMS / Klaviyo is Biljana's**, and we stay out.
@@ -80,8 +80,8 @@
 - ⛔ **No discount code on a bundle, and no kit goes live before the code fix.** Today codes do stack: 33 of ~70 bundle orders from Jun 1 to Sep 10 had a discount, **$2,000.20** *(Shopify, checked two ways, 2026-09-11)*.
 - ⛔ **Dormant BM Digital budgets in Meta.** "BM | ASC+ | CBO | Creative Testing" ($200/day) and "BM | TOF | CBO | Internal Whitelisting" ($100/day) are off but still carry budgets. Two BM ABO campaigns have the campaign switch **on** with every ad set off, so turning on one ad set starts spend. Any of these breaks the $350 ceiling *(Finn, 2026-09-11)*.
 - ⛔ **Do not say which Labor Day creative won.** Suspended until Finn re-pulls.
-- ⛔ **Never show Shopify net ÷ Meta spend as ROAS.** It credits Meta with freight, a lawn mower, Biljana's email and Coalition's Google.
-- ⛔ **Never quote a cost-per-customer figure.** "$40 CAC" on calls is Meta cost per purchase.
+- ⛔ **Never show Shopify net ÷ Meta spend as ROAS.** It credits Meta with freight, a lawn mower, Biljana's email and Coalition's Google. ⛔ **Never quote a cost-per-customer figure.** "$40 CAC" on calls is Meta cost per purchase.
+- ⛔ **Meta connector: no write without Evan's explicit yes for that specific change; publishing is blocked outright** (Evan, 2026-09-11). HP Cookers ADs only. Also enforced in `.claude/settings.json` → [rules](../my-business%20%28context%29/hpc-standing-rules.md)
 - ⛔ **Use the real margin (~40.6%), not the booked 46%**, and **never the 44.5% August margin**. Don't mix P&L revenue (~$3.9M) and Shopify ($3.14M) in one ratio.
 - ⛔ **Vendor call figures are not facts:** IW's "$54,800 Meta spend" (real: $6,337) · "$674 18 QT AOV" (Shopify: $419) · Coalition's Google "$87,724 / 5.47 ROAS" and "Revenue Up 199.03% YoY" are unverified against Shopify.
 - ⛔ **No 30%-off legs in November.** v3: at best a wash (−$3.57 with fees).
