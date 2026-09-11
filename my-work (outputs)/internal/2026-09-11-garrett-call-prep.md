@@ -161,7 +161,7 @@ and `Commercial Boiler.mp4` already cover it, and commercial is inbound only.
   (*"the team of 12, on camera, still unusable"*, ASSET-INDEX.md). Also for the website, PDPs and a second NOLA loop.
 - **Hook:** sparks off a Tunnel Tube weld.
 - **The line** *(Evan, 2026-09-11)*: **"Built by hand by our 12-man team here in South Louisiana."**
-  *"Made in USA"* and *"Built in Louisiana"* are approved claims *(Evan, 2026-09-11)*.
+  *"Built in Louisiana"* and *"Hand-welded in Louisiana"* are approved. ⛔ **No "Made in USA"** until the pots are made in-house *(Evan, 2026-09-11)*.
 - **Shots:**
   1. Tubes being hand-welded onto the pot bottom.
   2. **Alexis answering the phone.** Name the person who answers the phone.
@@ -244,7 +244,7 @@ creatives (Maya) → 1 article (Leo). Session A alone should give Maya cutdowns 
 - The 18 QT cut exists.
 - No brand named in the ice-chest line.
 - The team line is set.
-- Made in USA and Built in Louisiana are approved.
+- "Built in Louisiana" and "Hand-welded in Louisiana" are approved. ⛔ No "Made in USA" (Evan, 2026-09-11).
 - Evan supplies the menus for #7 and #8.
 - Evan sets the call time.
 

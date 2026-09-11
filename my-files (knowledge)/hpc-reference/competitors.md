@@ -16,7 +16,7 @@
 | **Fuel** | Up to 75% less propane (Tunnel Tube) | No efficiency story |
 | **Material** | 4mm aluminum | Thinner gauge, warps |
 | **Warranty** | 2-yr full on all products; 5-yr limited on residential pots ≤120 QT | Typically 1 yr or none |
-| **Origin** | Made in USA, built in Louisiana | Largely imported |
+| **Origin** | Built and hand-welded in Louisiana (base pot imported, so no "Made in USA" claim, Evan 2026-09-11) | Largely imported |
 | **Technology** | **Patented** Tunnel Tube | None patented in this way |
 | **Identity** | Actual Louisiana operation | National/generic |
 

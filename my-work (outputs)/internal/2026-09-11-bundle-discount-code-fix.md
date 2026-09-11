@@ -1,6 +1,16 @@
 # Bundle discount-code fix: Evan's to-do
 **2026-09-11 · ROUX · for Evan.** Rule (Jay, 2026-09-11): **every code skips bundles. Military and first-responder 5% are the one exception.**
 
+**Approved 2026-09-11 (Evan):**
+- The tailgate kit at $465 and the 60 QT kit at $519 (Jay).
+- **Welcome10 stays off bundles.** It already skips them, so there's nothing to change.
+- Military and first responder stay allowed on bundles.
+- The BM Digital codes will never be used again, so they're listed to turn off.
+- `RM40JAY` and `CWBSM40` are Jay's discretionary codes. Keep them.
+
+**Every discount in Shopify**, with a recommendation on each row, is in
+[2026-09-11-discount-code-inventory.csv](reports/2026-09-11-discount-code-inventory.csv), ready to import into a Google Sheet.
+
 Research was read-only. Nothing was changed in Shopify. Every step below is Evan's click in Shopify admin. **Codes
 issued by Biljana's email/SMS flows are hers to change.** Where a code's owner isn't on record, that's said.
 Context: [bundle plan](2026-09-11-tailgate-thanksgiving-bundles-plan.md) §2 and §6.
@@ -162,10 +172,33 @@ the `Tailgater` tag, the turkey kits via `Turkey`, and all three via "All Non Co
 ---
 
 ## Found along the way (not the bundle rule; Evan's or Jay's call)
-- **`BMdigUGC1`–`BMdigUGC12`: 100% off the entire order, active, no end date.** Six have been used and six haven't.
-  BM Digital was let go on 2026-07-20. **Deactivate.** Same for `BMdigFreeShip7`–`12` (unused).
-- **Open high-value codes with no customer limit:** `RM40JAY` and `CWBSM40` (40% off entire order, unused),
-  `HOMEDEPOT80` ($210 off), `JayTestCode`. Deactivate any that aren't needed.
+- **24 BM Digital codes: `BMdigUGC1`–`12` (100% off the entire order) and `BMdigFreeShip1`–`12`.** They're
+  active with no end date. **Turn off** (Evan: they'll never be used again). They're listed in the inventory.
+- **`RM40JAY` and `CWBSM40`: Jay's discretionary codes. Keep** (Evan).
+  - The data doesn't contradict that: 40% off the entire order, never used, no customer or usage limit, no end date.
+  - They do reach bundles. If Jay wants them to follow the bundle rule, they have to be recreated as product discounts.
+- `HOMEDEPOT80` ($210 off) and `JayTestCode`: see their rows in the inventory.
+
+## New from the full inventory (2026-09-11)
+*Source: every discount in Shopify, read-only, all 10 pages, code and automatic. Last-used dates come from Shopify order search by code, checked with a fake-code control.*
+- **2,307 discounts in total: 378 active, 1,929 expired, none scheduled. 15 are automatic.** 339 of the active ones reach bundles today.
+- **13 automatic discounts from the AMP app:**
+  - 12 "AMP Bundles Discount" entries, never used.
+  - 1 "AMP Upsell Discount" (Post Purchase Upsell by AMP) with 39 uses.
+  - Automatic discounts don't need a code, so the code fix doesn't touch them.
+  - **Ask Jay whether the app stays.** It's a second bundle system running next to Shopify's own bundles.
+- **168 machine-generated dollar codes** (12-character like `714d364aa63f`, or `XXXX-XXXX-XXXX`):
+  - **102 already redeemed:** turn off.
+  - **66 unredeemed, worth $2,725 in total** (largest $516). These may be customers' credits or rewards.
+  - **Don't turn off the 66 until the generating app is known.**
+- **Twelve 10%+ whole-order codes that anyone holding the code can use** (no customer limit, no usage limit).
+  That runs against "no sitewide % before November": `HIGH10`, `BOIL10`, `JAY10`, `DC10`, `Frac10`, `FIRSTR10OFF`,
+  `INC1021` (min $600), `Flores202610`, `HowSlow10`, `MENDIETA13`, `GAINES2026`, `UPPROMOTE_CUSTOMER_REFERRAL`.
+  `HIGH10` is Biljana's to decide.
+- **Worth Jay's eye:**
+  - `FANDF`: 16% for a friends-and-family segment, last used Sep 1.
+  - `HPCWS`: 23%, dealer-style, untouched since 2021.
+  - `USATHANKS`: 5% for a VETERAN segment. Does the military exception cover it?
 - **`HIGH15` is still live** though `what-we-sell.md` calls the $15 email code retired.
 - **The 7 draft bundle orders at 100% off were influencer seeding** (Jay). No action. Draft orders don't use codes and sit outside every count here.
 

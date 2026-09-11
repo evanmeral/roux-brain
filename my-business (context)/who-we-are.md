@@ -63,7 +63,7 @@ Three things follow from that, and they matter commercially:
 | **Up to 75% less propane** | The cost argument. Powers the savings calculator. |
 | **4mm aluminum** | Durability vs. thin-gauge competitors |
 | **2-yr full warranty; 5-yr limited on residential pots ≤120 QT** | Risk reversal at checkout. ⚠️ Never shorten to "5-year warranty" in copy |
-| **Made in USA / built in Louisiana** | Identity + trust |
+| **Built in Louisiana / hand-welded in Louisiana** | Identity + trust. ⛔ **Not "Made in USA"** until the pots are made in-house (Evan, 2026-09-11) |
 | **Fast shipping — most orders 1–2 business days** | Urgency near season or event dates |
 | **Financing via ShopPay** | Critical on $700+ and commercial |
 
@@ -88,7 +88,8 @@ Three things follow from that, and they matter commercially:
 
 ## What we stand for
 
-- **Built here, by us.** Made in USA, welded in Louisiana, by a small team.
+- **Built here, by us.** Built and hand-welded in Louisiana, by a small team.
+  **What happens in Covington** *(Evan, 2026-09-11)*: the **base pot is bought from China**. We weld on the legs, the burner and the Tunnel Tubes, drill the valve hole, fit the gate valve, clean it and put our logo on it. Evan's reading is that it's mostly made here. So **never write "we make the pots"**. Jay's SBA loan (submitted 2026-09-04) is meant to bring pot, basket and lid manufacturing here, about a year out *(Jay, Sept 10 IW call)*.
 - **Quality over price.** 80% of our customers buy on product quality; only 10% cite price (reviews.io post-purchase survey, n=20, sampled 2026-08-26). We don't apologize for price and we don't lead with discounts.
 - **Honest numbers.** Every figure names its source. We don't repeat a vendor's claim we haven't checked against Shopify.
 - **We're the people who actually boil.** Owners are NOLA-raised — crabbing, fishing, hunting, camping. Real Louisiana roots, not borrowed ones.

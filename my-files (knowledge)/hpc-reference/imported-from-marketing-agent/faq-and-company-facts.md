@@ -17,7 +17,7 @@
 - All pots/baskets are **food-grade aluminum** (NOT stainless) — chosen for far higher thermal conductivity
 - Standard pot wall thickness is **4mm**; HPC determined 4mm is optimal and does **not** offer a 6mm pot
 - **Tunnel Tube Technology:** patented aluminum channels welded to the pot bottom, increasing surface area ~3x → heats ~3x faster, boils in under ~7 min, re-boils in ~90 sec, fewer hot spots, less fuel
-- Made in the USA — 100% manufactured in **Covington, Louisiana**
+- ~~Made in the USA — 100% manufactured in Covington, Louisiana~~ ❌ **Wrong** (Evan, 2026-09-11): the base pot is imported; the welding, fitting and finishing happen in Covington. Say "Built in Louisiana."
 - Discoloration/patina from minerals in the water is **normal and safe**; clean with white-vinegar solution (~1 cup vinegar per 5 gal water, boil + scrub)
 
 ## Burners & BTUs

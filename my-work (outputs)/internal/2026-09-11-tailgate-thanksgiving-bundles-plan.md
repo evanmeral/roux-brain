@@ -13,11 +13,12 @@ Jay's version: [2026-09-11-bundles-for-jay.md](2026-09-11-bundles-for-jay.md) ·
 | Item | Status |
 |---|---|
 | Turkey kit, 30 QT, **$469** | ✅ **Approved** (Jay) |
-| Tailgate kit | ⚠️ **Contents changed by Evan → price needs Jay's re-OK.** Jay approved $479 on the old five-piece kit. With the new four pieces, $479 saves only $5.98. **ROUX recommends $465** (section 3) |
-| 60 QT two-bird turkey kit | ✅ Kit approved (Jay). **$519 is ROUX's price. Confirm it in the same re-OK** (section 4) |
+| Tailgate kit, **$465** | ✅ **Approved** (Jay via Evan, 2026-09-11), on Evan's new contents: fryer, legs, 5" thermometer, skimmer |
+| 60 QT two-bird turkey kit, **$519** | ✅ **Approved** (Jay via Evan, 2026-09-11) |
 | Codes | ✅ **Every code skips bundles. Military and first responder are the one exception** (Jay). To-do → [code fix](2026-09-11-bundle-discount-code-fix.md) |
 | Code fix scope | ⚠️ Bigger than a settings change. Almost every code in use (HIGH10, HIGH15, SMS25, TEXT25, BOIL10, SPROM…) is an **"amount off order"** discount, which Shopify can't limit to a collection, so those get **recreated**. Several collection-scoped codes (HPC10, Stale30, KLUD40, NICESPICE) already reach bundles, and the new kits would inherit them via their `Tailgater` and `Turkey` tags. **Fix before any kit goes live** |
-| Welcome10 on bundles? | Jay asked us. **ROUX: no, keep it off** (section 5) |
+| Welcome10 on bundles? | ✅ **Stays off bundles** (Evan, 2026-09-11; ROUX's recommendation, section 5). Military and first responder stay allowed |
+| Discount inventory | Every discount in Shopify, with a recommendation for each → [2026-09-11-discount-code-inventory.csv](reports/2026-09-11-discount-code-inventory.csv) |
 | 30 QT price ($345 last season → $442.50) | ✅ Deliberate (Jay). Last season it sold only as the full kit; now it comes in configurations |
 | Ship cutoff | ✅ **Mon Nov 23, 2026**, 3 days before Thanksgiving morning (Jay) |
 | Kits in season only? | ✅ **Evergreen** (Jay). Kits stay live while they improve margin. Only the seasonal ad push stops at the cutoff |
@@ -35,7 +36,7 @@ Jay's version: [2026-09-11-bundles-for-jay.md](2026-09-11-bundles-for-jay.md) ·
 |---|---|---|---|
 | Contents | 18 QT Powered fryer (valve + basket) · Leg Extensions · **5" fry thermometer** · 20" skimmer | 30 QT Turkey Fryer Powered pot (rack + basket) · **12" fry thermometer** · Wind Shield · 20" skimmer | 60 QT Dual Turkey Fryer (3/4" valve) · 12" fry thermometer · Wind Shield · 20" skimmer |
 | Parts at list | $484.98 | $492.48 | $544.98 |
-| **Price · saving** | **$465 · $19.98** *(re-OK)* | **$469 · $23.48** ✅ | **$519 · $25.98** *(confirm)* |
+| **Price · saving** | **$465 · $19.98** ✅ | **$469 · $23.48** ✅ | **$519 · $25.98** ✅ |
 | Landed cost | $236.38 | $249.14 | $263.62 |
 | Gross profit: kit vs hero alone | $228.62 vs $157.95 | $219.86 vs $200.56 | $255.38 vs $238.58 |
 | Contribution before ads | $207.18 (44.6%) | $198.27 (42.3%) | $231.84 (44.7%) |
@@ -131,7 +132,7 @@ Shopify agrees on the thermometer: 18 of 221 Jun–Aug fryer orders bought the 5
   | All four pieces | 7 | −$19.98 |
 
   **Blended: +$43.24 per kit order** *(derived; assumes kit buyers come from today's mix)*.
-- **⚠️ Jay needs to re-OK $465.** His $479 was for different contents.
+- ✅ **Jay approved $465** (via Evan, 2026-09-11).
 
 ### 3.3 Timing, merchandising, ads
 - **Live Fri Sep 25.** Evergreen: tailgate creative now, gifting from Nov 15 (Dec 2025 had 90 fryer orders;
@@ -147,7 +148,7 @@ Shopify agrees on the thermometer: 18 of 221 Jun–Aug fryer orders bought the 5
   - Angles: frying standing up (the legs put it at about 41", per the legs PDP) · **350° in under 5 minutes**
     (18 QT, 4-Way and 40 QT only; qualify it) · fish, fries, wings, okra.
   - Never crawfish with a fryer. Warranty only with both qualifiers.
-  - "Made in USA" and "Built in Louisiana" are approved claims (Evan, 2026-09-11).
+  - "Built in Louisiana" and "Hand-welded in Louisiana" are the approved claims. ⛔ No "Made in USA" until the pots are made in-house (Evan, 2026-09-11).
 - **Ad ceiling in practice:** for `18qt-TOF`'s $40.56 CPP (Meta's count) to clear the 40% gate, **~69% of its
   orders would have to be kits** *(derived)*. The kit does not reopen the 18 QT ladder on its own. Hold ads to
   the hero's $73.39 ceiling until Finn reads kit share from tagged orders.
@@ -182,7 +183,7 @@ Shopify agrees on the thermometer: 18 of 221 Jun–Aug fryer orders bought the 5
   −$0.20 vs pot + Wind Shield · −$17.04 vs pot + both (9%). **Blended +$12.68 per kit order.**
 - Floor ~$467, so don't go lower.
 
-### 4.3 The 60 QT two-bird kit (new; $519 to confirm)
+### 4.3 The 60 QT two-bird kit ✅ $519 (approved by Jay via Evan, 2026-09-11)
 
 | Component | SKU | List | Landed |
 |---|---|---|---|
@@ -296,7 +297,7 @@ no-valve variants and each bundle variant's own `unitCost`, as v3 did)*:
 
 | When | What | Who |
 |---|---|---|
-| Now | Re-OK tailgate at $465 and the 60 QT kit at $519 · Q6, Q7, Q9 still open | **Jay** |
+| Now | Q6, Q7, Q9 still open · go through the "Ask Jay" rows in the [discount inventory](reports/2026-09-11-discount-code-inventory.csv) | **Jay** |
 | Now | Kit names, kit-page copy incl. the "codes don't apply" line, ad copy | Maya |
 | Before any kit goes live | Code fix: [to-do](2026-09-11-bundle-discount-code-fix.md) | **Evan** · Biljana for her email/SMS codes |
 | By Sep 25 / Oct 1 | Build the tailgate kit, then the turkey kit (30 + 60 QT variants) | **Evan** |

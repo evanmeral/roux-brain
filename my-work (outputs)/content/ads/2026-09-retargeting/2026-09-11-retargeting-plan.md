@@ -269,7 +269,7 @@ the objection with quality. **Never defend price.** The statics can be built whi
 - Tunnel Tubes are on the **bottom of the pot**. The technology is in the pot, not the burner.
 - Rolling or raging boil; never "hard boil." Never put fryers with crawfish. Qualify every number.
 - Shipping is **"most orders"** in 1–2 business days, never a flat promise.
-- **"Made in USA" and "Built in Louisiana" are approved claims** *(Evan, 2026-09-11)*. If a static needs a
+- **"Built in Louisiana" and "Hand-welded in Louisiana" are the approved claims. ⛔ No "Made in USA"** until the pots are made in-house *(Evan, 2026-09-11)*. **The `80qt-buy-cheap-twice` stamps say "MADE IN USA" on all three sizes (1x1, 1.91x1, 9x16), so Maya swaps them before launch.** If a static needs a
   team line, use Evan's: **"Built by hand by our 12-man team here in South Louisiana."** *(The BOARD
   landmine still reads the old rule; it gets updated at the next /wrap.)*
 - Never name a competitor; "thin pots" is fine.
@@ -480,7 +480,7 @@ sources, trailing 14 days, against the prior 14 and the same weeks of 2025. Dire
 4. **The 18 QT "working" line is $30, not $40.**
 5. **No end date**, on purpose.
 6. **Coalition is a read-only secondary advisor, like IntentWave.** No attribution changes.
-7. **"Made in USA" and "Built in Louisiana" are approved claims.** `buy-cheap-twice` Version B is back in.
+7. **"Built in Louisiana" is approved; "Made in USA" is blocked** (Evan, 2026-09-11). `buy-cheap-twice` Version B is back in, but its "MADE IN USA" stamp changes first.
 8. **Budget confirmed:** $314 live caps, $344 of $350 with retargeting. BPM stays at $164.
 
 **Still open:** the launch date (Evan).

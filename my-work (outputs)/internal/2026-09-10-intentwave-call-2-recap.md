@@ -69,8 +69,8 @@ Aug 30 1,997. Aug 20–21 also elevated (6,257 · 7,325).
   pots, baskets and lids domestically** instead of importing from China. ~1 year to get equipment in.
   Peter said margin effect Dec/Jan — the recap contradicts itself. *(Jay, in the room.)*
   ~~⛔ No "made in USA" or domestic-manufacturing claim in any copy until it is true.~~
-  **Superseded 2026-09-11:** Evan approved "Made in USA" and "Built in Louisiana" as claims. The conflict
-  with Jay's line above is logged, unresolved, in `decisions.md`.
+  **Settled 2026-09-11 (Evan):** no "Made in USA" until the pots are made in-house. "Built in Louisiana" and
+  "Hand-welded in Louisiana" are the claims. See `decisions.md`.
 - Peter raised cost of money (cash advance) eating margin; suggested raising prices or bundling.
   **Pricing is Jay's call.**
 - Peter suggested sourcing Walmart items into bundles — brand risk; ROUX to weigh.

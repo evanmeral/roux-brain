@@ -11,6 +11,30 @@
 
 ## 2026-09
 
+**No "Made in USA" claim until the pots are made in-house; use "Built in Louisiana" and "Hand-welded in
+Louisiana"** — Evan, 2026-09-11. **This reverses the entry just below**, which kept "Made in USA." **Why:** the
+base pot is bought from China, and an unqualified "Made in USA" has to meet the FTC's "all or virtually all"
+standard. It comes back once Jay's SBA plan brings pot manufacturing here (~a year out). This goes in the standing
+rules as a copy non-negotiable. Existing "MADE IN USA" stamps (`80qt-buy-cheap-twice`, `yeti-1x1.html`, the
+NOLA directory text) get fixed before they ship again.
+
+**All three kits approved: tailgate $465, turkey 30 QT $469, 60 QT two-bird $519** — Jay, via Evan,
+2026-09-11 (re-OK after the tailgate contents changed). **Welcome10 stays off bundles; military and
+first-responder codes stay allowed on bundles.** Every other code gets excluded from bundles.
+
+**Discount codes: Evan and Jay decide what to turn off from a full inventory sheet** — Evan, 2026-09-11.
+The BM Digital codes will never be used again; Evan says to ignore them, so they're off the board and just listed in the sheet.
+`RM40JAY` and `CWBSM40` are, Evan believes, Jay's codes for people who help the shop (e.g. the attorney).
+They're Jay's to keep.
+
+**"Made in USA" stays a claim we use** — Evan, 2026-09-11, after the manufacturing facts came out. **Facts (Evan):** the
+base pot is bought from China. In Covington we weld on the legs, burner and Tunnel Tubes, drill the valve hole,
+fit the gate valve, clean and brand it. **Evan's reading:** "mostly made here in the USA/Louisiana." ⚠️ **Flagged,
+not blocked:** the FTC's rule for an *unqualified* "Made in USA" is "all or virtually all" US-made, and the pot
+body is a major component. "Built in Louisiana," "hand-welded in Louisiana" and "Made in USA with imported pot"
+carry no such risk. Evan's call; it's worth Jay or the attorney confirming before it leads a paid ad. This
+supersedes the "Jay to confirm" item below. Never write "we make the pots."
+
 **Bundles approved: tailgate $479, turkey $469, plus a 60 QT two-bird kit; every code skips bundles except military** —
 Jay, via Evan, 2026-09-11. The kits are **evergreen**: Jay doesn't want them pulled after the season if they
 improve margin. Only the seasonal turkey ads stop at the ship cutoff, **Mon Nov 23** (3 days before

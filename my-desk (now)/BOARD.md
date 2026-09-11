@@ -33,7 +33,7 @@
 
 ## 🔺 Now — top three
 
-**1. Bundles: get Jay's re-OK, fix the codes, then Evan builds. The tailgate kit goes live Sep 25.** Jay approved the plan 2026-09-11: turkey 30 QT at **$469**, a **60 QT two-bird kit**, every code skips bundles except military/first-responder, the kits are **evergreen**, the turkey push stops at the **Mon Nov 23** ship cutoff, and **Evan builds**. Evan changed the tailgate contents after approval (18 QT fryer · legs · **5"** thermometer · skimmer; no wind shield), so **ROUX recommends $465** (was $479, which would now save only $5.98) and **$519** for the 60 QT. Both need Jay's re-OK. ROUX's answer to Jay: **Welcome10 stays off bundles.** ⚠️ **Code fix first:** most codes are whole-order discounts, which Shopify can't scope to a collection, so they have to be **recreated**. → [plan](../my-work%20%28outputs%29/internal/2026-09-11-tailgate-thanksgiving-bundles-plan.md) · [Jay one-pager](../my-work%20%28outputs%29/internal/2026-09-11-bundles-for-jay.md) · [code fix](../my-work%20%28outputs%29/internal/2026-09-11-bundle-discount-code-fix.md)
+**1. Bundles: all three kits approved. Fix the codes, then Evan builds. The tailgate kit goes live Sep 25.** Jay approved 2026-09-11: tailgate **$465** · turkey 30 QT **$469** · 60 QT two-bird **$519**, every code skips bundles except military/first-responder, the kits are **evergreen**, the turkey push stops at the **Mon Nov 23** ship cutoff, and **Evan builds**. Evan changed the tailgate contents after approval (18 QT fryer · legs · **5"** thermometer · skimmer; no wind shield), and $479 would have saved only $5.98, so Jay re-OK'd **$465**. **Welcome10 stays off bundles; military + first-responder stay on** (Jay). ⚠️ **Code fix first:** most codes are whole-order discounts, which Shopify can't scope to a collection, so they have to be **recreated**. → [plan](../my-work%20%28outputs%29/internal/2026-09-11-tailgate-thanksgiving-bundles-plan.md) · [Jay one-pager](../my-work%20%28outputs%29/internal/2026-09-11-bundles-for-jay.md) · [code fix](../my-work%20%28outputs%29/internal/2026-09-11-bundle-discount-code-fix.md)
 
 **2. ROUX: rebuild the marketing budget around 20% net.** Jay's P&L, last 365 days *(2026-09-10)*: net **−5%** · marketing **$676k** (Google $206k · Meta $258k · agency fees $152k · other $56k · affiliates ~$4k) · real margin **~40.6% of ~$3.9M** · overhead ~$49,550/mo. 20% net leaves **~$209k/yr for all marketing** *(derived)*, so we were **~$467k over**. **Build on today's run-rate:** Meta spent $6,401 in the last 30 days. **Incremental rule:** no overhead in the ad ceiling; each ad leaves ≥20% of the order after product, fees and the ad *(ROUX's recommendation; Jay hasn't adopted it)*. Google is Coalition's (suggestions only). ⛔ Email is Biljana's. → [overhead method + P&L](../my-work%20%28outputs%29/internal/reports/2026-09-10-overhead-method-options.md)
 
@@ -47,8 +47,7 @@
 
 | Who | What | Since |
 |---|---|---|
-| **Jay** | **Re-OK tailgate $465 + 60 QT $519** · Welcome10 off bundles · OK to switch off the live BM Digital codes · still open: early-Nov 2025 promo? · fix Platinum's compare-at? · adopt the incremental rule? → [one-pager](../my-work%20%28outputs%29/internal/2026-09-11-bundles-for-jay.md) | 2026-09-11 |
-| **Jay** | **Confirm "Made in USA" before it runs in paid ads.** On the Sept 10 IW call he said the SBA loan is to make pots, baskets and lids here "instead of importing from China" (see decisions.md) | 2026-09-11 |
+| **Evan + Jay** | **Review the [discount-code sheet](https://docs.google.com/spreadsheets/d/128NBhDPHA1c6O5h96ftGwQERE6guYSzfcjLPl0pf7Sk/edit)** (378 active, fill in the Decision column) and decide what to turn off. Still open for Jay: early-Nov 2025 promo? · fix Platinum's compare-at? · adopt the incremental rule? | 2026-09-11 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
 | **Evan** | **Code fix** (recreate the whole-order codes so they skip bundles; military + first-responder exempt; Biljana's email/SMS codes are hers), then **build the 3 kits** | 2026-09-11 |
 | **Evan** | Set the Garrett call time | 2026-09-01 |
@@ -76,9 +75,9 @@
 ## ⛔ Landmines — do not ship these
 
 - **Warranty: read the live page and write from it.** Full 2-year on everything; limited 5-year residential, 120 QT or smaller. ⛔ **Never 5-year on the 160 QT, 80–140 Gallon, or any steamer.** `yeti-1x1.html` hardcodes one at line 37; making it a variable is **Nova's job.**
+- ⛔ **No "Made in USA" until the pots are made in-house** (Evan, 2026-09-11). The base pot is bought from China. **Use "Built in Louisiana" / "Hand-welded in Louisiana."** Still stamped "MADE IN USA": `80qt-buy-cheap-twice` (all 3 sizes, Maya fixes before retargeting) · `yeti-1x1.html` · the submitted NOLA show directory text.
 - ⛔ **No sitewide % discount before November.** AOV $326.20, down 21.4% YoY.
 - ⛔ **No discount code on a bundle, and no kit goes live before the code fix.** Today codes do stack: 33 of ~70 bundle orders from Jun 1 to Sep 10 had a discount, **$2,000.20** *(Shopify, checked two ways, 2026-09-11)*.
-- ⛔ **Live BM Digital codes, no end date:** `BMdigUGC7`–`12` (100% off the whole order, one use each, **unused**) · `RM40JAY`, `CWBSM40` (40%, one use each) · `JayTestCode` (8%, unlimited). None used since 2026-07-20. **Never share them. Switch off after Jay's OK** *(Finn, 2026-09-11)*.
 - ⛔ **Dormant BM Digital budgets in Meta.** "BM | ASC+ | CBO | Creative Testing" ($200/day) and "BM | TOF | CBO | Internal Whitelisting" ($100/day) are off but still carry budgets. Two BM ABO campaigns have the campaign switch **on** with every ad set off, so turning on one ad set starts spend. Any of these breaks the $350 ceiling *(Finn, 2026-09-11)*.
 - ⛔ **Do not say which Labor Day creative won.** Suspended until Finn re-pulls.
 - ⛔ **Never show Shopify net ÷ Meta spend as ROAS.** It credits Meta with freight, a lawn mower, Biljana's email and Coalition's Google.
