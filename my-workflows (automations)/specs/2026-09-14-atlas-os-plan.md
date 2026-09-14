@@ -1,6 +1,8 @@
-# Atlas OS — build plan (v3, for Evan's go-ahead)
+# Atlas OS — build plan (v3) · BUILT 2026-09-14, two items on Evan
 
-**Date:** 2026-09-14 · **Status:** PLAN — nothing built yet.
+**Date:** 2026-09-14 · **Status:** BUILT (phases 1–5). Waiting on Evan: the one-time Desktop-access click for
+`Atlas OS.app`, and the two calendar addresses in `config.local.json`. Next: Weekly check as a headless button,
+the second-monitor layout when the monitor arrives.
 **Owner:** Nova (systems). **Where it will live:** `my-workflows (automations)/live/atlas-os/`
 **v2 → v3 (2026-09-14):** mapped against the ARMS guide (`~/Desktop/ARMS-Agentic-OS-Guide.pdf`,
 RoboNuggets). Changes: headless skill buttons with run status and a `runs.log`, a Routines panel,

@@ -45,6 +45,8 @@ BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay
 | **Evan** | Send Biljana the Slack message confirming which codes are hers, and whether her flows can take a renamed code | 2026-09-14 |
 | **Evan → Jay** | One text: the agency-fee breakdown, and whether Jay adopts the incremental rule | 2026-09-14 |
 | **Evan** | Book Garrett's 8-pack after today's 2pm call | 2026-09-14 |
+| **Evan** | **Atlas OS, one click:** open `~/Applications/Atlas OS.app` once and click Allow when macOS asks about the Desktop folder (or System Settings → Privacy & Security → Files and Folders → Atlas OS → Desktop Folder). Until then `localhost:4242` cannot read the vault | 2026-09-14 |
+| **Evan** | **Atlas OS, calendars:** paste the two Google Calendar secret iCal addresses (personal + HPC) into `my-workflows (automations)/live/atlas-os/config.local.json` | 2026-09-14 |
 | **Finn** | **Scheduled: re-pull IW Meta numbers + Shopify UTM match on Sept 18** (Day 7 / ~$700), or sooner if Learning exits. Also: Coalition's current monthly Google spend | 2026-09-14 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
 | **Coalition** | Google Ads copy spreadsheet (Connor). Evan passes it to the brain to mine · Cater + Event reply, Mar 22–25 | 2026-09-10 |
@@ -65,7 +67,7 @@ BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay
 - **Lanes:** Google Ads + SEO is Coalition's — **read-only monitoring is allowed** (Evan reconfirmed 2026-09-14: pull numbers when genuinely needed, change nothing). **Email / SMS / Klaviyo is Biljana's**, and we stay out.
 - ✅ **NOLA Home & Garden Show, Feb 19–21 2027: booked and paid.** 🔥 No propane in the hall, so the demo is video with a running clock. ⛔ Louisiana Outdoor Expo and the Nov 11 Cater-Event Expo are a **no**.
 - **Shopify cleanup (a write, so Evan's or Jay's click):** Triple Jet compare-at = price · Scratch & Dent Performance variants carry the Powered cost · SKU `PW30-VLV075-TFR-B-SBI` on two products · two 18 QT variants with compare-at below price · 25 active products not on the Online Store. → [landed-cost pull](../my-work%20%28outputs%29/internal/reports/2026-09-10-landed-cost-by-variant.md)
-- **Nova's queue:** ad naming/build process · missing-end-date checklist line · **`maya.md` still lists 1080×1350 as PAID** · `check-centering.py` hardcodes `BAND` · duplicate Performance pots listing · `Commercial Cookers On Sale` has 0 products but is linked from the homepage FAQ.
+- **Nova's queue:** **Atlas OS follow-ups** — Weekly check as a headless button · Safari "Add to Dock" (Evan's click) · second-monitor layout when it arrives · remove the n8n agent and Venon from the connector list (Evan's click) · ad naming/build process · missing-end-date checklist line · **`maya.md` still lists 1080×1350 as PAID** · `check-centering.py` hardcodes `BAND` · duplicate Performance pots listing · `Commercial Cookers On Sale` has 0 products but is linked from the homepage FAQ.
 
 ---
 
@@ -112,6 +114,7 @@ Source of truth → [metrics-and-goals.md](../my-files%20%28knowledge%29/hpc-ref
 
 ## 🧭 Map
 
+- **Atlas OS** — `localhost:4242` · [spec + build log](../my-workflows%20%28automations%29/specs/2026-09-14-atlas-os-plan.md) · [README](../my-workflows%20%28automations%29/live/atlas-os/README.md) · the 6:30 pulse writes [today.md](today.md) · your notes land in [capture.md](capture.md) · dates in [key-dates.md](key-dates.md)
 - **Playbooks** — [weekly rhythm](../my-workflows%20%28automations%29/playbooks/weekly-operating-rhythm.md) · [paid media](../my-workflows%20%28automations%29/playbooks/paid-media.md) · [content engine](../my-workflows%20%28automations%29/playbooks/content-engine.md) · [automation roadmap](../my-workflows%20%28automations%29/playbooks/automation-roadmap.md)
 - **The business** — [who we are](../my-business%20%28context%29/who-we-are.md) · [what we sell](../my-business%20%28context%29/what-we-sell.md) · [our team](../my-business%20%28context%29/our-team.md) · [how we sound](../my-business%20%28context%29/how-we-sound.md) · [metrics & goals](../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [seasonal calendar](../my-files%20%28knowledge%29/hpc-reference/seasonal-calendar.md) · [connected apps](../my-connections%20%28MCP%29/connected-apps.md)
 

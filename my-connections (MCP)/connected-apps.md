@@ -116,6 +116,20 @@ This is the same shape as the Venon problem Evan closed on 2026-08-26. **Evan's 
 
 **If a replacement is ever built:** give it the non-negotiables from `my-business (context)/hpc-standing-rules.md` in its own knowledge base, and do not let it publish unsupervised. The failure mode was instruction-following over rule-following, which produces copy that sounds right and is wrong.
 
+## 🖥️ The command line sees the same connectors, under different names *(found 2026-09-14)*
+
+`claude` (the CLI, 2.1.226) is installed and sees the claude.ai connectors — Meta Ads, Shopify, Google
+Calendar, Gmail, Drive, Slack all report Connected — so Atlas OS can start real sessions and run the
+6:30 pulse headless. **But the CLI names them `mcp__claude_ai_<Name>__<tool>`** (for example
+`mcp__claude_ai_Shopify__run-analytics-query`), not the UUID prefixes the desktop app uses. Every
+Meta rule in `.claude/settings.json` is now carried under both namings, so publish is denied and
+writes prompt in a Terminal session too. Any new permission rule must be added in both forms.
+
+⚠️ **The n8n "HPC Meta and Google AD Assistant" is still connected at the account level** (the
+CLI lists `ask_marketing_agent`), despite the deletion recorded above on 2026-09-01. It is now
+**denied** in `settings.json` under both namings. Evan can remove it for good in the Claude
+connector settings; Venon is also still listed there, unauthenticated, and should go with it.
+
 ## 🐙 GitHub
 
 Connected by Evan 2026-09-01, but **no GitHub tools were reachable in that session** — possibly needs a Claude restart, or is connected at account level without being exposed to this folder. Not yet verified working.
