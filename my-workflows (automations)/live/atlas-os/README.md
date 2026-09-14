@@ -11,8 +11,10 @@ It holds no Shopify, Meta or Google credentials and cannot reach them.
 ## Run
 
 - **As a login item (normal):** `./install.sh` once. launchd runs node on `server.js` directly,
-  starts it at login and restarts it if it dies; the 6:30 pulse is a second launchd job that curls
-  the running server. Logs in `logs/`. Remove with `./uninstall.sh`.
+  starts it at login and restarts it if it dies. Logs in `logs/`. Remove with `./uninstall.sh`.
+- **The pulse is button-only** (Evan, 2026-09-14): press Pulse now on the page. To also run it at
+  6:30 every morning, set `pulse.schedule` to `daily` in `config.json` and run `./install.sh`
+  again; that adds a second launchd job that curls the running server at 6:30.
 - **One-time macOS step:** the vault lives in `~/Desktop`, which macOS protects from background
   programs. macOS files that permission under **node** in System Settings → Privacy & Security →
   Files and Folders: expand node and turn on Desktop Folder. `install.sh` starts the server once,
@@ -36,7 +38,8 @@ It holds no Shopify, Meta or Google credentials and cannot reach them.
 ## The 6:30 pulse
 
 `.claude/commands/pulse.md` is the prompt; `pulse.sh` runs it headless (`claude -p`, Sonnet 5 by
-default, `ATLAS_PULSE_MODEL` overrides) and logs to `runs.log`. Reads only: Meta (HP Cookers ADs),
+default, `ATLAS_PULSE_MODEL` overrides) and logs to `runs.log`. It runs on Evan's claude.ai Max
+plan (the CLI is signed in with that account, no API key), so it spends plan allowance, not money. Reads only: Meta (HP Cookers ADs),
 Shopify (ShopifyQL), both calendars, the board, key dates, capture. Writes `today.md` and
 `pulse/<date>.json`. First real run 2026-09-14: 97 s, about $0.82, no permission denials. The
 "Pulse now" button on the page runs the same thing on demand.

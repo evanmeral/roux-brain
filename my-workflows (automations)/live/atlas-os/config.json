@@ -17,14 +17,45 @@
     "0": "Off"
   },
   "links": [
-    { "label": "Shopify admin", "url": "https://admin.shopify.com/" },
-    { "label": "Ads Manager", "url": "https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=4392736013287" },
-    { "label": "Basecamp", "url": "https://3.basecamp.com/" },
-    { "label": "UpPromote", "url": "https://app.uppromote.com/" },
-    { "label": "reviews.io", "url": "https://dash.reviews.io/" },
-    { "label": "Canva", "url": "https://www.canva.com/" },
-    { "label": "Drive", "url": "https://drive.google.com/" },
-    { "label": "The site", "url": "https://highperformancecookers.com/" },
-    { "label": "Warranty page", "url": "https://highperformancecookers.com/pages/warranty-information" }
-  ]
+    {
+      "label": "Shopify admin",
+      "url": "https://admin.shopify.com/"
+    },
+    {
+      "label": "Ads Manager",
+      "url": "https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=4392736013287"
+    },
+    {
+      "label": "Basecamp",
+      "url": "https://3.basecamp.com/"
+    },
+    {
+      "label": "UpPromote",
+      "url": "https://app.uppromote.com/"
+    },
+    {
+      "label": "reviews.io",
+      "url": "https://dash.reviews.io/"
+    },
+    {
+      "label": "Canva",
+      "url": "https://www.canva.com/"
+    },
+    {
+      "label": "Drive",
+      "url": "https://drive.google.com/"
+    },
+    {
+      "label": "The site",
+      "url": "https://highperformancecookers.com/"
+    },
+    {
+      "label": "Warranty page",
+      "url": "https://highperformancecookers.com/pages/warranty-information"
+    }
+  ],
+  "pulse": {
+    "schedule": "off",
+    "_note": "off = button-only (Pulse now on the page). daily = also runs at 6:30 CT via launchd; install.sh reads this."
+  }
 }

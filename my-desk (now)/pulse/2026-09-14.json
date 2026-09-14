@@ -1,19 +1,19 @@
 {
   "date": "2026-09-14",
-  "runAt": "10:37",
+  "runAt": "11:05",
   "meta": {
-    "total": 362.23,
+    "total": 362.27,
     "byCampaign": [
-      { "name": "IW Lookalike 1% - Cold Prospecting - Sept 2026", "spend": 103.34, "learning": true },
-      { "name": "18qt-TOF-Prospecting", "spend": 58.03, "learning": null },
-      { "name": "BPM_TOF_Manual", "spend": 200.86, "learning": null }
+      { "name": "IW Lookalike 1% - Cold Prospecting - Sept 2026", "spend": 103.34 },
+      { "name": "18qt-TOF-Prospecting", "spend": 58.03 },
+      { "name": "BPM_TOF_Manual", "spend": 200.90 }
     ],
-    "source": "Meta connector, HP Cookers ADs (4392736013287), read 10:41 CT, date=yesterday (2026-09-13)"
+    "source": "Meta connector, HP Cookers ADs, read 11:05"
   },
   "shopify": {
     "orders": 2,
     "net": 403.49,
-    "source": "ShopifyQL, read 10:44 CT, date=2026-09-13"
+    "source": "ShopifyQL, read 11:07"
   },
   "problems": []
 }

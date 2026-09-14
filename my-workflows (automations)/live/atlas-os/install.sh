@@ -39,6 +39,10 @@ if ! curl -s -m 2 http://localhost:4242/health >/dev/null 2>&1; then
 fi
 
 PULSE="$HOME/Library/LaunchAgents/com.atlas.pulse.plist"
-sed -e "s|__ROOT__|$ROOT|g" "$ROOT/launchd/com.atlas.pulse.plist" > "$PULSE"
-launchctl bootstrap "gui/$(id -u)" "$PULSE"
-echo "Atlas OS is running at http://localhost:4242, starts at login, and the 6:30 pulse is scheduled."
+if [ "$(python3 -c "import json;print(json.load(open('$ROOT/config.json')).get('pulse',{}).get('schedule','off'))")" = "daily" ]; then
+  sed -e "s|__ROOT__|$ROOT|g" "$ROOT/launchd/com.atlas.pulse.plist" > "$PULSE"
+  launchctl bootstrap "gui/$(id -u)" "$PULSE"
+  echo "Atlas OS is running at http://localhost:4242, starts at login, and the 6:30 pulse is scheduled."
+else
+  echo "Atlas OS is running at http://localhost:4242 and starts at login. The pulse is button-only (config.json: pulse.schedule)."
+fi

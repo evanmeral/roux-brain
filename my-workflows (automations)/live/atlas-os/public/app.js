@@ -304,7 +304,7 @@ async function runPulse() {
     const r = await fetch('/api/run', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Atlas': 'page' }, body: JSON.stringify({ kind: 'pulse' }) });
     const j = await r.json();
     if (!r.ok) throw new Error(j.error || r.status);
-    toast('Pulse started. It reads Meta, Shopify and the calendar, then writes today.md. A minute or two.');
+    toast('Pulse started. It reads Meta, Shopify and the calendar, then writes the brief. About a minute and a half.');
     setTimeout(loadRuns, 800);
   } catch (e) { toast(e.message, true); btn.disabled = false; }
 }

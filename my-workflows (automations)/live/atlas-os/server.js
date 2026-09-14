@@ -72,7 +72,7 @@ function buildState() {
       sections: sections.map((x) => ({ key: x.key, title: x.title, html: md.render(x.lines.join('\n'), ctx), text: x.lines.join(' ').trim() })),
     };
     health.today = 'ok';
-  } else health.today = td.error === 'missing' ? 'No brief yet. The 6:30 routine has not run.' : 'Cannot read today.md (' + td.error + ')';
+  } else health.today = td.error === 'missing' ? 'No brief yet. Press Pulse now for one.' : 'Cannot read today.md (' + td.error + ')';
 
   const cap = readText(path.join(DESK, 'capture.md'));
   const captureLines = cap.text ? cap.text.split('\n').filter((l) => /^- /.test(l)).length : 0;
@@ -160,7 +160,7 @@ function routines() {
   const running = pulse[0] && pulse[0].status === 'started' && (!last || pulse[0].at > last.at);
   const pulseJob = fs.existsSync(path.join(process.env.HOME || '', 'Library/LaunchAgents/com.atlas.pulse.plist'));
   return {
-    list: [{ key: 'pulse', name: 'Morning pulse', schedule: pulseJob ? '6:30 CT daily' : 'not scheduled', last, running: !!running }],
+    list: [{ key: 'pulse', name: 'Morning pulse', schedule: pulseJob ? '6:30 CT daily' : 'button only', last, running: !!running }],
     recent: runs.slice(0, 12),
   };
 }

@@ -11,6 +11,11 @@
 
 ## 2026-09
 
+**Atlas OS pulse is button-only, not scheduled** — Evan, 2026-09-14. The 6:30 launchd job is unloaded; Pulse now on
+the page runs the same read-only routine on demand. **Why:** the pulse runs on Evan's claude.ai Max plan (no API key,
+verified), so it costs no money, but he would rather not spend plan allowance on an unattended daily run. Turning it back
+on is `pulse.schedule: daily` in `config.json` plus `./install.sh`.
+
 **Atlas OS is the daily cockpit; Obsidian stays the editor; `BOARD.md` stays the single state** — Evan, 2026-09-14.
 A local page at `localhost:4242` (`my-workflows (automations)/live/atlas-os/`) renders the board, the week, key dates
 and the morning brief, and starts real Claude sessions from buttons. **Only the brain writes the board**; Evan writes to
