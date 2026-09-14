@@ -180,7 +180,7 @@ function toast(msg, bad) {
 }
 async function capture(kind, text) {
   try {
-    const r = await fetch('/api/capture', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ kind, text }) });
+    const r = await fetch('/api/capture', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Atlas': 'page' }, body: JSON.stringify({ kind, text }) });
     const j = await r.json();
     if (!r.ok) throw new Error(j.error || r.status);
     toast(kind === 'Done' ? 'Noted as done. The next wrap clears it from the board.' : 'Saved. The next session reads it first.');
@@ -192,7 +192,7 @@ async function startSession(prompt, btn) {
   if (btn) btn.disabled = true;
   st.textContent = 'opening…';
   try {
-    const r = await fetch('/api/session', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ prompt }) });
+    const r = await fetch('/api/session', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Atlas': 'page' }, body: JSON.stringify({ prompt }) });
     const j = await r.json();
     if (!r.ok) throw new Error(j.error || r.status);
     st.textContent = 'session opened in Terminal';
@@ -301,7 +301,7 @@ function renderRoutine() {
 async function runPulse() {
   const btn = $('pulse-btn'); btn.disabled = true;
   try {
-    const r = await fetch('/api/run', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ kind: 'pulse' }) });
+    const r = await fetch('/api/run', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Atlas': 'page' }, body: JSON.stringify({ kind: 'pulse' }) });
     const j = await r.json();
     if (!r.ok) throw new Error(j.error || r.status);
     toast('Pulse started. It reads Meta, Shopify and the calendar, then writes today.md. A minute or two.');

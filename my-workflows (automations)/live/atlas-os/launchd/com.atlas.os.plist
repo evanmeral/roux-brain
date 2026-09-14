@@ -13,10 +13,18 @@
   </array>
   <key>RunAtLoad</key>
   <true/>
+  <!-- Relaunch only while the "granted" marker exists. The launcher removes it when macOS
+       refuses Desktop access, so a missing grant means one dialog, not a loop. -->
   <key>KeepAlive</key>
-  <true/>
+  <dict>
+    <key>PathState</key>
+    <dict>
+      <key>__HOME__/Library/Application Support/AtlasOS/granted</key>
+      <true/>
+    </dict>
+  </dict>
   <key>ThrottleInterval</key>
-  <integer>15</integer>
+  <integer>20</integer>
   <key>StandardOutPath</key>
   <string>__ROOT__/logs/launchd.log</string>
   <key>StandardErrorPath</key>

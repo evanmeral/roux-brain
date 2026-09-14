@@ -174,6 +174,11 @@ task. The read tools it needs are added to the allow list in `.claude/settings.j
   is hosted in `~/Applications/Atlas OS.app`, opened through LaunchServices so the prompt can
   appear; the 6:30 job is a `curl` to the server, so one grant covers both. Evan's one click.
 - **Found:** the desktop app's preview harness could not bind the port; launchd is the runner.
+- **Fixed after a teammate session flagged it (2026-09-14):** the first launcher relaunched every
+  15 s and re-raised errors as dialogs while the Desktop grant was missing. Now the launcher checks
+  the grant first, shows one dialog with an Open Settings button, and exits; launchd's KeepAlive is
+  tied to a grant marker outside the Desktop; `install.sh` registers nothing until the server
+  answers. Also added the Host/Origin guard on the server (POSTs need same-origin or `X-Atlas`).
 
 ## Stack
 

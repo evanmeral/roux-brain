@@ -15,11 +15,16 @@ It holds no Shopify, Meta or Google credentials and cannot reach them.
   (starts at login, restarts if it dies) and the 6:30 pulse (a `curl` to the running server,
   which runs `pulse.sh` under the app's own Desktop grant). Logs in `logs/`. Remove with
   `./uninstall.sh`.
-- **One-time macOS step:** the vault lives in `~/Desktop`, which macOS protects. The first
-  time "Atlas OS" runs, macOS asks whether it may access the Desktop folder: click Allow. If it
-  never asked, or you said no: System Settings → Privacy & Security → Files and Folders →
-  Atlas OS → turn on Desktop Folder. Until then the server cannot read the vault; the reason
-  is written to `logs/launcher.log` and launchd retries every 15 seconds.
+- **One-time macOS step:** the vault lives in `~/Desktop`, which macOS protects. The launcher
+  checks it can read the vault before doing anything. If it cannot, it shows one dialog with an
+  Open Settings button (System Settings → Privacy & Security → Files and Folders → Atlas OS →
+  Desktop Folder) and exits; `install.sh` registers nothing with launchd in that case, so there
+  is never a relaunch loop. Grant access, then run `./install.sh` again. launchd relaunches the
+  server only while the grant marker at `~/Library/Application Support/AtlasOS/granted` exists;
+  the launcher writes it on a successful start and removes it when macOS refuses.
+- **Request guard:** the server answers only requests with a localhost Host header, and accepts a
+  POST only from the page itself (same-origin) or with an `X-Atlas` header (the 6:30 curl). A web
+  page in the browser cannot reach the write endpoints.
 - **By hand:** `node server.js` in this folder.
 - **As a dock app:** open http://localhost:4242 in Safari, then File → Add to Dock. It gets its own
   window and icon.

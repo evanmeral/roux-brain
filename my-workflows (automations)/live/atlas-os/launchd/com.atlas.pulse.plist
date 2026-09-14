@@ -14,6 +14,8 @@
     <string>POST</string>
     <string>-H</string>
     <string>Content-Type: application/json</string>
+    <string>-H</string>
+    <string>X-Atlas: launchd</string>
     <string>-d</string>
     <string>{"kind":"pulse","by":"launchd 6:30"}</string>
     <string>http://localhost:4242/api/run</string>

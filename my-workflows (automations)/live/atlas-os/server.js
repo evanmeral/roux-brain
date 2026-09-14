@@ -245,6 +245,24 @@ function onDeskChange(evt, file) {
 try { fs.watch(DESK, { recursive: true }, onDeskChange); } catch (e) { log('watch failed', e.message); }
 try { fs.watch(ROOT, (evt, file) => { if (file === 'config.local.json') { ics.invalidate(); broadcast('config'); } if (file === 'runs.log') broadcast('runs'); }); } catch (_) {}
 
+
+// ---- request guard: this server listens on localhost only, but a web page in the browser could
+// still aim requests at it. Every request must carry a localhost Host header (defeats DNS
+// rebinding); every POST must come from this page (same-origin Origin) or carry the X-Atlas
+// header, which a cross-site page cannot add without a preflight this server never answers.
+const LOCAL_HOSTS = new Set(['localhost', '127.0.0.1', '[::1]']);
+function hostOk(req) {
+  const host = (req.headers.host || '').replace(/:\d+$/, '');
+  return LOCAL_HOSTS.has(host);
+}
+function postOk(req) {
+  const origin = req.headers.origin;
+  if (origin) {
+    try { const u = new URL(origin); return LOCAL_HOSTS.has(u.hostname) && Number(u.port || 80) === PORT; } catch (_) { return false; }
+  }
+  return typeof req.headers['x-atlas'] === 'string';
+}
+
 // ---- http ----
 const MIME = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif', '.webp': 'image/webp', '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml', '.json': 'application/json; charset=utf-8', '.woff2': 'font/woff2' };
 
@@ -264,6 +282,9 @@ function readBody(req) {
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://localhost');
   const p = url.pathname;
+  if (!hostOk(req)) return send(res, 403, { error: 'forbidden host' });
+  if (req.method === 'POST' && !postOk(req)) { log('blocked POST', p, 'origin=' + (req.headers.origin || '-')); return send(res, 403, { error: 'forbidden origin' }); }
+  if (req.method !== 'GET' && req.method !== 'POST') return send(res, 405, { error: 'method' });
   try {
     if (p === '/api/state') return send(res, 200, buildState());
     if (p === '/api/calendar') {
