@@ -10,18 +10,15 @@ It holds no Shopify, Meta or Google credentials and cannot reach them.
 
 ## Run
 
-- **As a login item (normal):** `./install.sh` once. It builds `~/Applications/Atlas OS.app`
-  (a tiny launcher that hosts the node server) and registers two launchd jobs: the server
-  (starts at login, restarts if it dies) and the 6:30 pulse (a `curl` to the running server,
-  which runs `pulse.sh` under the app's own Desktop grant). Logs in `logs/`. Remove with
-  `./uninstall.sh`.
-- **One-time macOS step:** the vault lives in `~/Desktop`, which macOS protects. The launcher
-  checks it can read the vault before doing anything. If it cannot, it shows one dialog with an
-  Open Settings button (System Settings → Privacy & Security → Files and Folders → Atlas OS →
-  Desktop Folder) and exits; `install.sh` registers nothing with launchd in that case, so there
-  is never a relaunch loop. Grant access, then run `./install.sh` again. launchd relaunches the
-  server only while the grant marker at `~/Library/Application Support/AtlasOS/granted` exists;
-  the launcher writes it on a successful start and removes it when macOS refuses.
+- **As a login item (normal):** `./install.sh` once. launchd runs node on `server.js` directly,
+  starts it at login and restarts it if it dies; the 6:30 pulse is a second launchd job that curls
+  the running server. Logs in `logs/`. Remove with `./uninstall.sh`.
+- **One-time macOS step:** the vault lives in `~/Desktop`, which macOS protects from background
+  programs. macOS files that permission under **node** in System Settings → Privacy & Security →
+  Files and Folders: expand node and turn on Desktop Folder. `install.sh` starts the server once,
+  checks it answers, and registers nothing until it does, so a missing grant means one line of
+  advice, not a loop. (An app-bundle launcher was tried first; ad-hoc-signed apps never appear in
+  that list, so it was retired on 2026-09-14.)
 - **Request guard:** the server answers only requests with a localhost Host header, and accepts a
   POST only from the page itself (same-origin) or with an `X-Atlas` header (the 6:30 curl). A web
   page in the browser cannot reach the write endpoints.

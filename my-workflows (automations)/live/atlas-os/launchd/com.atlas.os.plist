@@ -4,30 +4,33 @@
 <dict>
   <key>Label</key>
   <string>com.atlas.os</string>
+  <!-- node runs the server directly. macOS files the Desktop-folder grant under "node" in
+       System Settings > Privacy & Security > Files and Folders; that toggle is what lets it
+       read the vault. No dialogs: node has no UI, and a refused start just logs and retries
+       once a minute. -->
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/bin/open</string>
-    <string>-W</string>
-    <string>-a</string>
-    <string>__APP__</string>
+    <string>__NODE__</string>
+    <string>server.js</string>
   </array>
+  <key>WorkingDirectory</key>
+  <string>__ROOT__</string>
   <key>RunAtLoad</key>
   <true/>
-  <!-- Relaunch only while the "granted" marker exists. The launcher removes it when macOS
-       refuses Desktop access, so a missing grant means one dialog, not a loop. -->
   <key>KeepAlive</key>
-  <dict>
-    <key>PathState</key>
-    <dict>
-      <key>__HOME__/Library/Application Support/AtlasOS/granted</key>
-      <true/>
-    </dict>
-  </dict>
+  <true/>
   <key>ThrottleInterval</key>
-  <integer>20</integer>
+  <integer>60</integer>
   <key>StandardOutPath</key>
-  <string>__ROOT__/logs/launchd.log</string>
+  <string>__ROOT__/logs/server.log</string>
   <key>StandardErrorPath</key>
-  <string>__ROOT__/logs/launchd.err.log</string>
+  <string>__ROOT__/logs/server.err.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>__HOME__/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>HOME</key>
+    <string>__HOME__</string>
+  </dict>
 </dict>
 </plist>

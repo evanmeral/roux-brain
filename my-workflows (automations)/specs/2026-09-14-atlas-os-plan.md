@@ -179,6 +179,10 @@ task. The read tools it needs are added to the allow list in `.claude/settings.j
   the grant first, shows one dialog with an Open Settings button, and exits; launchd's KeepAlive is
   tied to a grant marker outside the Desktop; `install.sh` registers nothing until the server
   answers. Also added the Host/Origin guard on the server (POSTs need same-origin or `X-Atlas`).
+- **Then retired the app launcher entirely (2026-09-14, from Evan's screenshot):** an ad-hoc-signed
+  applet never shows up in Files and Folders, so there was nothing for Evan to toggle. macOS *does*
+  list **node** there (the very first launchd run put it there). launchd now runs node directly;
+  Evan turns on Desktop Folder under node; `install.sh` registers only once the server answers.
 
 ## Stack
 
