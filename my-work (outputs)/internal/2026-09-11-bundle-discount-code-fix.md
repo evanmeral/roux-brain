@@ -202,4 +202,20 @@ the `Tailgater` tag, the turkey kits via `Turkey`, and all three via "All Non Co
 - **`HIGH15` is still live** though `what-we-sell.md` calls the $15 email code retired.
 - **The 7 draft bundle orders at 100% off were influencer seeding** (Jay). No action. Draft orders don't use codes and sit outside every count here.
 
+## Jay's answers (2026-09-14) — these settle the open rows above
+
+| Question | Jay's answer | What changes |
+|---|---|---|
+| Does the **AMP app** stay? | **Keep it running** | No change. It's automatic (no code), so the code fix doesn't touch it. Still count it in any bundle-margin check |
+| **`USATHANKS`** — does the military exception cover it? | **Yes. It is one of our military discounts. Keep it** | ⚠️ **Reverses the 2026-09-11 "delete `USATHANKS`" decision.** Do not delete. Treat it like `mil-`/`fir-`: exempt from the bundle rule |
+| **`HPCWS`** (23%, dealer-style, since 2021) | **Old code, not in use. Leave it as is** | No action. Not worth deleting |
+| **`FANDF`** (16%, friends and family) | **Keep. It's the live friends-and-family code** | No action on the code itself. It's a whole-order code, so it currently reaches bundles — flag if that matters to Jay |
+
+✅ **Resolved 2026-09-14: `RM40JAY` and `CWBSM40` are deleted.** Jay confirmed they are old codes and can go. This
+supersedes the "keep" in the approval block at the top of this doc and in "Found along the way" below — **delete
+wins.** Evan's click in Shopify, and it is permanent.
+
+✅ **`FANDF` stays as-is** (Jay, 2026-09-14), whole-order type included. It can reach a bundle line and that is
+accepted. Do not recreate it as a product discount.
+
 → [bundle plan](2026-09-11-tailgate-thanksgiving-bundles-plan.md) · [Jay one-pager](2026-09-11-bundles-for-jay.md)

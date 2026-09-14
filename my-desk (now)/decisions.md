@@ -11,6 +11,61 @@
 
 ## 2026-09
 
+**Hold the IW lookalike campaign — no cut, no budget change, re-check Sept 18** — Evan, on ROUX's recommendation,
+2026-09-14. First read is $299.94 spent over 3 days, 1 Meta-claimed purchase, **0 Shopify UTM-matched orders, $0 real
+revenue**, ad set still in Learning. **Why not cut:** Meta needs ~50 conversions per ad set to leave Learning; 3 days
+at n=1 is noise, not signal. **What would change the call:** at Day 7 / ~$700 spend, or on Learning exit, if matched
+orders are still 0 and spend has passed the $73/real-order ceiling, that becomes a real cut conversation.
+→ board Running section
+
+**No change to Meta daily caps off the 20%-net budget rebuild** — ROUX, accepted by Evan 2026-09-14. BPM stays $164,
+`18qt-TOF` stays $50, IW stays $100. **Why:** Meta's forward pace ($78k–$115k/yr) is already under its share of the
+~$209k/yr room. The overspend sits in **Google ($206k, ~99% of the whole room alone)** and **agency fees ($152k)** —
+both outside marketing's direct control. Cutting Meta further would be cutting the cleanest line.
+→ [model](../my-work%20%28outputs%29/internal/reports/2026-09-14-marketing-budget-model-20pct-net.md)
+
+**Google Ads: read-only monitoring is allowed, numbers only** — Evan, 2026-09-14. Pull figures from the Google Ads
+account when a question genuinely needs them, rather than answering "I don't have that number" for something visible
+there. **Change nothing** — it stays Coalition's lane and their work must not be disturbed. This restates existing
+policy (`SAFETY.md`: read freely, write never); it is logged because Evan raised it explicitly.
+
+**`RM40JAY` and `CWBSM40` are deleted — contradiction resolved** — Jay, via Evan, 2026-09-14. They are old codes
+and can go. This settles the 2026-09-11 conflict where `decisions.md` and `BOARD.md` said delete while
+[the code-fix doc](../my-work%20%28outputs%29/internal/2026-09-11-bundle-discount-code-fix.md) said keep. **Delete
+wins.** Deleting is Evan's click in Shopify and is permanent. ⚠️ `USATHANKS` was on that same delete line and is
+**not** deleted — see the reversal below.
+
+**`FANDF` stays exactly as it is, whole-order type included** — Jay, via Evan, 2026-09-14. It is the
+friends-and-family code and is used as-is. It is a whole-order discount, so it can still reach a bundle line; that is
+**accepted, not an oversight.** Do not recreate it as a product discount and do not raise it again in the bundle fix.
+
+**⚠️ REVERSAL — `USATHANKS` is kept, not deleted** — Jay, via Evan, 2026-09-14. It **is** one of our military
+discounts. This reverses the 2026-09-11 decision below ("delete `RM40JAY`, `CWBSM40`, `USATHANKS`"), which had it
+recorded as "not our military or first-responder code." That was wrong. **Do not delete it.**
+
+**`HPCWS` and `FANDF` both stay** — Jay, via Evan, 2026-09-14. `HPCWS` (23%, dealer-style, untouched since 2021)
+is an old code they don't use; harmless where it is, no action. `FANDF` (16%) is the live friends-and-family code,
+used when friends and family buy. Both were flagged for Jay's eye in the code inventory; both are now settled as keep.
+
+**The AMP app stays running** — Jay, via Evan, 2026-09-14. It's a second automatic bundle/upsell discount system
+running alongside Shopify's own bundles. Automatic discounts need no code, so the bundle code fix doesn't touch it —
+but it must still be counted in any bundle-margin check.
+
+**Warranty exception is now IN `SAFETY.md`** — Evan pasted it in himself, 2026-09-14, after the assistant's edit was
+refused by a permission-settings block on that file (by design). The rule now live: a creative showing a single
+qualifying pot may say "5-YR RESIDENTIAL WARRANTY" without the size qualifier; steamer and commercial creative are
+never eligible. Supersedes the entry below.
+
+**Warranty exception still NOT in `SAFETY.md`** — Evan gave one-time chat permission 2026-09-14 to add it, but
+the edit was refused by a permission-settings block on that file (by design — "only you edit this file"). The
+exception itself was decided 2026-09-11 (below): a creative showing a single qualifying pot may say "5-YR
+RESIDENTIAL WARRANTY" without the size qualifier; steamer and commercial creative are still never eligible.
+**Still pending: Evan pastes the text in himself, or loosens `.claude/settings.json` for that one file.**
+
+**One-time-use email/SMS signup discount codes stay as they are** — Evan and Jay, reviewed the discount-code
+sheet together, 2026-09-14. They're not public — only the customer who signed up has theirs — so they carry no
+stacking-on-bundles risk the way a public/reusable code would. No action needed on this class of code.
+
 **Meta's official Ads connector is live, and every write needs Evan's explicit yes** — Evan, 2026-09-11. It replaces
 Claude in Chrome for Meta work. Meta's own panel would not block specific actions, so the brain does: publishing
 (`ads_activate_entity`) is denied outright, and every other write prompts Evan in the app. Never decide on my own
