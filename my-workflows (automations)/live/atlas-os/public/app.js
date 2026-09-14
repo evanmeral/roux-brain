@@ -68,7 +68,10 @@ function renderMorning() {
 function renderNow() {
   const b = STATE.board;
   const body = $('now-body');
-  $('board-stamp').textContent = b ? `board ${b.date || ''} · ${b.lineCount} lines` : '';
+  const stamp = $('board-stamp');
+  const age = b && b.date ? -daysUntil(b.date, STATE.today) : null;
+  stamp.textContent = b ? `board ${b.date || ''} · ${b.lineCount} lines${age > 2 ? ` · ${age} days old, wrap the last session` : ''}` : '';
+  stamp.style.color = age > 2 ? 'var(--gold)' : '';
   if (!b) { body.innerHTML = `<div class="empty bad">${esc(STATE.health.board)}</div>`; return; }
   if (!b.now || !b.now.length) { body.innerHTML = `<div class="empty bad">The board has no Now section I can read.</div>`; return; }
   const open = new Set([...body.querySelectorAll('.now-card.is-open')].map((c) => c.dataset.n));
@@ -228,7 +231,9 @@ function showTab(name) {
   if (name === 'files') { loadFiles($('files-q').value); setTimeout(() => $('files-q').focus(), 50); }
 }
 function renderLinks() {
-  $('links').innerHTML = (STATE.links || []).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join('')
+  $('links').innerHTML = (STATE.links || []).map((l) => l.vault
+    ? `<a href="obsidian://open?vault=${encodeURIComponent(STATE.vaultName)}&file=${encodeURIComponent(l.vault)}">${esc(l.label)}</a>`
+    : `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join('')
     + `<a href="obsidian://open?vault=${encodeURIComponent(STATE.vaultName)}">Vault</a>`;
 }
 function ago(iso) {

@@ -52,6 +52,10 @@
     {
       "label": "Warranty page",
       "url": "https://highperformancecookers.com/pages/warranty-information"
+    },
+    {
+      "label": "Manual",
+      "vault": "my-files (knowledge)/how-to-use-atlas-os"
     }
   ],
   "pulse": {

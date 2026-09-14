@@ -27,6 +27,12 @@ Your AI assistant. It knows your business and gets smarter every time you use it
 
 ---
 
+## The daily cockpit
+
+Atlas OS at `localhost:4242` is the front door: the time, the week, what is waiting on you,
+what is live, and a brief the brain writes when you press Pulse now. Every card starts the
+work. Read [how to use Atlas OS](how-to-use-atlas-os.md) once; it is two pages.
+
 ## How to start a session
 
 1. Open the Claude app
