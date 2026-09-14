@@ -45,8 +45,7 @@ BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay
 | **Evan** | Send Biljana the Slack message confirming which codes are hers, and whether her flows can take a renamed code | 2026-09-14 |
 | **Evan → Jay** | One text: the agency-fee breakdown, and whether Jay adopts the incremental rule | 2026-09-14 |
 | **Evan** | Book Garrett's 8-pack after today's 2pm call | 2026-09-14 |
-| **Evan** | **Atlas OS, one click:** open `~/Applications/Atlas OS.app` once and click Allow when macOS asks about the Desktop folder (or System Settings → Privacy & Security → Files and Folders → Atlas OS → Desktop Folder). Until then `localhost:4242` cannot read the vault | 2026-09-14 |
-| **Evan** | **Atlas OS, calendars:** paste the two Google Calendar secret iCal addresses (personal + HPC) into `my-workflows (automations)/live/atlas-os/config.local.json` | 2026-09-14 |
+| **Evan** | **Atlas OS, two setup steps:** (1) open `~/Applications/Atlas OS.app` once and click Allow when macOS asks about the Desktop folder (or System Settings → Privacy & Security → Files and Folders → Atlas OS → Desktop Folder); until then `localhost:4242` cannot read the vault. (2) Paste the two Google Calendar secret iCal addresses (personal + HPC) into `my-workflows (automations)/live/atlas-os/config.local.json` | 2026-09-14 |
 | **Finn** | **Scheduled: re-pull IW Meta numbers + Shopify UTM match on Sept 18** (Day 7 / ~$700), or sooner if Learning exits. Also: Coalition's current monthly Google spend | 2026-09-14 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
 | **Coalition** | Google Ads copy spreadsheet (Connor). Evan passes it to the brain to mine · Cater + Event reply, Mar 22–25 | 2026-09-10 |
