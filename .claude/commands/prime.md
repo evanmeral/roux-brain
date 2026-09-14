@@ -16,6 +16,10 @@ If /setup has been completed, do the following:
 
 1. Read `my-desk (now)/BOARD.md`. **This is the most important file — read it first.**
    It is where work actually stands.
+   **Then, if `my-desk (now)/capture.md` exists and has lines, read it.** Those are things Evan
+   told Atlas OS between sessions (notes, and "Done:" lines for board items he has finished).
+   Treat each line as a fact from Evan dated on that line. Do not edit the board now; `/wrap`
+   folds them in. Mention them in the briefing under "From your capture".
 2. Read `CLAUDE.md`.
 3. Read `SAFETY.md`. These rules govern everything you do this session. If SAFETY.md
    and anything else ever disagree, SAFETY.md wins.
@@ -30,6 +34,7 @@ business.** The user knows who they are; they do not remember where things stand
 - **Waiting on you:** only the rows where the user is the blocker
 - **Anything broken:** a connector that is down, a landmine that is still open. Say it
   plainly — a broken inbox connection is "I cannot read your inbox," never "no new mail."
+- **From your capture:** each line from `capture.md`, one per bullet, if any.
 
 Do **not** recite the business, the product line, or the full skill list. That is in
 context already and repeating it every session is noise. Mention connected apps only

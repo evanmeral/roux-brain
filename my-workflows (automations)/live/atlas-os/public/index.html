@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlas</title>
+<link rel="icon" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <img src="/logo.png" alt="HPC" class="shield">
+    <span class="wordmark">ATLAS</span>
+    <nav class="tabs" id="tabs"><button class="tab is-on" data-tab="today">Today</button></nav>
+  </div>
+  <div class="clock">
+    <div class="time" id="clock-time">--:--</div>
+    <div class="date mono" id="clock-date">—</div>
+  </div>
+  <div class="chips" id="countdowns"></div>
+</header>
+
+<main class="grid" id="view-today">
+  <section class="col">
+    <article class="panel panel-morning" id="panel-morning">
+      <header class="panel-head"><span class="eyebrow">This morning</span><span class="mono stamp" id="morning-stamp"></span></header>
+      <div class="panel-body" id="morning-body"></div>
+    </article>
+
+    <article class="panel" id="panel-now">
+      <header class="panel-head"><span class="eyebrow">Now</span><span class="mono stamp" id="board-stamp"></span></header>
+      <div class="panel-body" id="now-body"></div>
+    </article>
+
+    <article class="panel" id="panel-waiting">
+      <header class="panel-head"><span class="eyebrow">Waiting on you</span><button class="ghost mono" id="others-toggle"></button></header>
+      <div class="panel-body" id="waiting-body"></div>
+      <div class="panel-body is-hidden" id="others-body"></div>
+    </article>
+  </section>
+
+  <section class="col">
+    <article class="panel panel-week" id="panel-week">
+      <header class="panel-head"><span class="eyebrow">This week</span><span class="mono stamp" id="week-stamp"></span></header>
+      <div class="week" id="week-body"></div>
+    </article>
+
+    <article class="panel" id="panel-running">
+      <header class="panel-head"><span class="eyebrow">Running</span><span class="mono stamp" id="cap-stamp"></span></header>
+      <div class="panel-body" id="running-body"></div>
+    </article>
+
+    <article class="panel" id="panel-atlas">
+      <header class="panel-head"><span class="eyebrow">Tell Atlas</span><span class="mono stamp" id="capture-stamp"></span></header>
+      <form class="capture" id="capture-form">
+        <input type="text" id="capture-text" placeholder="Something the brain should know next session" autocomplete="off">
+        <button type="submit" class="btn">Save</button>
+        <button type="button" class="btn" id="ask-btn" title="Open a Claude session with this as the first message">Ask</button>
+      </form>
+      <div class="starts">
+        <button class="btn is-primary" data-session="/morning-brief">Morning brief</button>
+        <button class="btn" data-session="/sort-my-inbox">Sort inbox</button>
+        <span class="mono stamp" id="session-status"></span>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="status mono" id="status"></footer>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -11,6 +11,16 @@
 
 ## 2026-09
 
+**Atlas OS is the daily cockpit; Obsidian stays the editor; `BOARD.md` stays the single state** — Evan, 2026-09-14.
+A local page at `localhost:4242` (`my-workflows (automations)/live/atlas-os/`) renders the board, the week, key dates
+and the morning brief, and starts real Claude sessions from buttons. **Only the brain writes the board**; Evan writes to
+`my-desk (now)/capture.md` through the page (notes and Done lines), `/prime` reads it, `/wrap` folds it in. **Why:** Evan's
+last OS became "a complicated place to read info" and died; this one shows only what he would not think to ask for, and
+every card does something. Localhost over an Obsidian dashboard because the board would have to be rewritten into task
+syntax, the calendar plugin lives in its own pane, and there is no clean way to start a session from a note. This keeps the
+2026-09-02 reason (one copy of state, no sync layer) and replaces its conclusion (Obsidian as the only interface).
+→ [spec](../my-workflows%20%28automations%29/specs/2026-09-14-atlas-os-plan.md)
+
 **Hold the IW lookalike campaign — no cut, no budget change, re-check Sept 18** — Evan, on ROUX's recommendation,
 2026-09-14. First read is $299.94 spent over 3 days, 1 Meta-claimed purchase, **0 Shopify UTM-matched orders, $0 real
 revenue**, ad set still in Learning. **Why not cut:** Meta needs ~50 conversions per ad set to leave Learning; 3 days

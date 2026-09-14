@@ -1,0 +1,30 @@
+{
+  "port": 4242,
+  "timezone": "America/Chicago",
+  "vaultName": "Atlas AI Brain",
+  "weekStartsOn": 1,
+  "metaDailyCeiling": {
+    "value": 350,
+    "source": "hpc-standing-rules and the board: the $350/day ceiling holds (2026-09-10)"
+  },
+  "rhythm": {
+    "1": "Look back",
+    "2": "Paid media",
+    "3": "Content",
+    "4": "Partners & follow-ups",
+    "5": "Build",
+    "6": "Off",
+    "0": "Off"
+  },
+  "links": [
+    { "label": "Shopify admin", "url": "https://admin.shopify.com/" },
+    { "label": "Ads Manager", "url": "https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=4392736013287" },
+    { "label": "Basecamp", "url": "https://3.basecamp.com/" },
+    { "label": "UpPromote", "url": "https://app.uppromote.com/" },
+    { "label": "reviews.io", "url": "https://dash.reviews.io/" },
+    { "label": "Canva", "url": "https://www.canva.com/" },
+    { "label": "Drive", "url": "https://drive.google.com/" },
+    { "label": "The site", "url": "https://highperformancecookers.com/" },
+    { "label": "Warranty page", "url": "https://highperformancecookers.com/pages/warranty-information" }
+  ]
+}
