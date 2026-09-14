@@ -127,7 +127,10 @@ function startSession(prompt) {
   const file = path.join(PROMPTS, `${Date.now()}.txt`);
   fs.writeFileSync(file, prompt.trim() + '\n');
   const asq = (str) => str.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-  const shell = `cd '${VAULT.replace(/'/g, "'\\''")}' && clear && '${CLAUDE_BIN}' "$(cat '${file}')"`;
+  // If Claude cannot start (usually: Terminal lacks Desktop-folder access), keep the window open
+  // and say so, instead of closing before Evan can read anything.
+  const hint = 'Atlas OS: Claude could not read the vault from this Terminal window. Give Terminal access to your Desktop folder: System Settings > Privacy & Security > Files and Folders > Terminal > Desktop Folder. Then press the button again.';
+  const shell = `cd '${VAULT.replace(/'/g, "'\\''")}' && clear && '${CLAUDE_BIN}' "$(cat '${file}')" || { echo; echo '${hint}'; exec $SHELL; }`;
   const script = [
     'tell application "Terminal"',
     '  activate',

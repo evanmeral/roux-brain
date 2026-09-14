@@ -21,6 +21,10 @@ It holds no Shopify, Meta or Google credentials and cannot reach them.
   checks it answers, and registers nothing until it does, so a missing grant means one line of
   advice, not a loop. (An app-bundle launcher was tried first; ad-hoc-signed apps never appear in
   that list, so it was retired on 2026-09-14.)
+- **Terminal needs the same permission.** The session buttons open a real Claude session in a
+  Terminal window, and Terminal reads the vault under its own Desktop-folder grant: System
+  Settings → Privacy & Security → Files and Folders → Terminal → Desktop Folder. Without it the
+  session fails at once; the window now stays open and says so.
 - **Request guard:** the server answers only requests with a localhost Host header, and accepts a
   POST only from the page itself (same-origin) or with an `X-Atlas` header (the 6:30 curl). A web
   page in the browser cannot reach the write endpoints.
