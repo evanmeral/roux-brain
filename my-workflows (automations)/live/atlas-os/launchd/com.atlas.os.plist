@@ -6,24 +6,20 @@
   <string>com.atlas.os</string>
   <key>ProgramArguments</key>
   <array>
-    <string>__APP__/Contents/MacOS/applet</string>
+    <string>/usr/bin/open</string>
+    <string>-W</string>
+    <string>-a</string>
+    <string>__APP__</string>
   </array>
-  <key>WorkingDirectory</key>
-  <string>__ROOT__</string>
   <key>RunAtLoad</key>
   <true/>
   <key>KeepAlive</key>
   <true/>
   <key>ThrottleInterval</key>
-  <integer>10</integer>
+  <integer>15</integer>
   <key>StandardOutPath</key>
   <string>__ROOT__/logs/launchd.log</string>
   <key>StandardErrorPath</key>
   <string>__ROOT__/logs/launchd.err.log</string>
-  <key>EnvironmentVariables</key>
-  <dict>
-    <key>PATH</key>
-    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
-  </dict>
 </dict>
 </plist>

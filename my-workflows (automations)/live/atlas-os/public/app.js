@@ -44,7 +44,17 @@ function renderCountdowns() {
 function renderMorning() {
   const body = $('morning-body'), stamp = $('morning-stamp');
   if (STATE.todayNote) {
-    body.innerHTML = STATE.todayNote.html;
+    const secs = STATE.todayNote.sections || [];
+    const keep = new Set(['top-three', 'yesterday', 'today']);
+    const problems = secs.find((x) => x.key === 'problems');
+    const hasProblems = problems && !/^-?\s*none\b/i.test(problems.text);
+    const main = secs.filter((x) => keep.has(x.key));
+    const fold = secs.filter((x) => !keep.has(x.key) && x.key !== 'problems');
+    body.innerHTML = (hasProblems ? `<h2 class="problems">Problems</h2><div class="problems">${problems.html}</div>` : '')
+      + main.map((x) => `<h2>${esc(x.title)}</h2>${x.html}`).join('')
+      + (fold.length ? `<div class="fold">${fold.map((x) => `<h2>${esc(x.title)}</h2>${x.html}`).join('')}</div><button class="fold-btn" id="morning-fold">${$('panel-morning').classList.contains('is-open') ? 'less' : 'more'}</button>` : '');
+    const fb = $('morning-fold');
+    if (fb) fb.addEventListener('click', () => { const on = $('panel-morning').classList.toggle('is-open'); fb.textContent = on ? 'less' : 'more'; });
     const t = new Date(STATE.todayNote.modified);
     stamp.textContent = 'written ' + t.toLocaleString('en-US', { timeZone: STATE.timezone, month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
     stamp.className = 'mono stamp';
@@ -156,7 +166,8 @@ function renderStatus() {
 }
 
 function renderAll() {
-  tickClock(); renderCountdowns(); renderMorning(); renderNow(); renderWaiting(); renderRunning(); renderWeek(); renderStatus();
+  tickClock(); renderCountdowns(); renderMorning(); renderNow(); renderWaiting(); renderRunning(); renderWeek(); renderStatus(); renderLinks();
+  if (document.querySelector('#view-board.is-on')) renderBoard();
 }
 
 // ---- actions ----
@@ -202,6 +213,100 @@ function wireActions() {
     startSession(text, $('ask-btn')).then(() => { $('capture-text').value = ''; });
   });
   document.querySelectorAll('[data-session]').forEach((btn) => btn.addEventListener('click', () => startSession(btn.dataset.session, btn)));
+  $('pulse-btn').addEventListener('click', runPulse);
+  document.querySelectorAll('.tab').forEach((t) => t.addEventListener('click', () => showTab(t.dataset.tab)));
+  $('files-q').addEventListener('input', () => { clearTimeout(filesTimer); filesTimer = setTimeout(() => loadFiles($('files-q').value), 150); });
+  document.addEventListener('keydown', (e) => { if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); showTab('files'); $('files-q').select(); } });
+}
+
+// ---- tabs, links, recent, board, files ----
+function showTab(name) {
+  document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('is-on', t.dataset.tab === name));
+  document.querySelectorAll('.view').forEach((v) => v.classList.toggle('is-on', v.id === 'view-' + name));
+  try { localStorage.setItem('atlas.tab', name); } catch (_) {}
+  if (name === 'board') renderBoard();
+  if (name === 'files') { loadFiles($('files-q').value); setTimeout(() => $('files-q').focus(), 50); }
+}
+function renderLinks() {
+  $('links').innerHTML = (STATE.links || []).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join('')
+    + `<a href="obsidian://open?vault=${encodeURIComponent(STATE.vaultName)}">Vault</a>`;
+}
+function ago(iso) {
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  if (m < 2) return 'now'; if (m < 60) return m + 'm'; const h = Math.round(m / 60); if (h < 48) return h + 'h'; return Math.round(h / 24) + 'd';
+}
+async function loadRecent() {
+  try {
+    const r = await fetch('/api/recent', { cache: 'no-store' }); const j = await r.json(); j.files = j.files.slice(0, 8);
+    $('recent-body').innerHTML = j.files.map((f) => `<div class="recent-row"><a href="${esc(f.obsidian)}" title="${esc(f.rel)}"><span class="area">${esc(f.area.replace(/\s*\(.*?\)/, ''))}</span>${esc(f.name)}</a><span class="when">${ago(f.modified)}</span></div>`).join('') || '<div class="empty">Nothing yet.</div>';
+  } catch (e) { $('recent-body').innerHTML = `<div class="empty bad">Cannot list files: ${esc(e.message)}</div>`; }
+}
+function renderBoard() {
+  const b = STATE.board, el = $('board-body');
+  if (!b) { el.innerHTML = `<div class="board-sec bad">${esc(STATE.health.board)}</div>`; return; }
+  const order = ['now', 'waiting', 'running', 'parked', 'landmines', 'numbers', 'map'];
+  const secs = [...b.sections].sort((x, y) => (order.indexOf(x.key) + 99) % 99 - (order.indexOf(y.key) + 99) % 99);
+  el.innerHTML = `<div class="board-sec is-wide"><span class="eyebrow">${esc(b.title)}</span><span class="mono stamp">${b.lineCount} lines · rewritten at every /wrap · only the brain edits this · <a href="obsidian://open?vault=${encodeURIComponent(STATE.vaultName)}&file=${encodeURIComponent('my-desk (now)/BOARD')}">open in Obsidian</a></span></div>`
+    + secs.map((x) => `<div class="board-sec is-${x.key} ${x.key === 'landmines' || x.key === 'numbers' || x.key === 'parked' ? 'is-wide' : ''}"><span class="eyebrow">${esc(x.heading)}</span>${x.html}</div>`).join('');
+}
+let filesTimer = null, filesSel = null;
+async function loadFiles(q) {
+  try {
+    const r = await fetch('/api/files?q=' + encodeURIComponent(q || ''), { cache: 'no-store' }); const j = await r.json();
+    $('files-count').textContent = `${j.files.length} of ${j.total} files${q ? ' matching' : ''}`;
+    const groups = {};
+    for (const f of j.files) (groups[f.area] = groups[f.area] || []).push(f);
+    $('files-list').innerHTML = Object.entries(groups).map(([area, fs]) => `<div class="file-area">${esc(area)}</div>` + fs.map((f) => `<div class="file-row ${filesSel === f.rel ? 'is-on' : ''}" data-rel="${esc(f.rel)}" data-obs="${esc(f.obsidian)}"><span class="fn">${esc(f.name)}<br><span class="fp">${esc(f.rel.split('/').slice(1, -1).join(' / '))}</span></span><span class="when">${ago(f.modified)}</span></div>`).join('')).join('');
+    $('files-list').querySelectorAll('.file-row').forEach((row) => row.addEventListener('click', () => previewFile(row.dataset.rel, row.dataset.obs)));
+  } catch (e) { $('files-list').innerHTML = `<div class="empty bad">Cannot search: ${esc(e.message)}</div>`; }
+}
+async function previewFile(rel, obs) {
+  filesSel = rel;
+  document.querySelectorAll('.file-row').forEach((r) => r.classList.toggle('is-on', r.dataset.rel === rel));
+  const el = $('files-preview');
+  const head = `<div class="pv-head"><span class="path" title="${esc(rel)}">${esc(rel)}</span><a class="btn btn-sm" href="${esc(obs)}">Open in Obsidian</a><button class="btn btn-sm" id="pv-copy">Copy path</button></div>`;
+  el.innerHTML = head + '<div class="pv empty">Loading…</div>';
+  $('pv-copy').addEventListener('click', () => { navigator.clipboard.writeText(rel).then(() => toast('Path copied')); });
+  try {
+    const r = await fetch('/api/preview?path=' + encodeURIComponent(rel), { cache: 'no-store' }); const j = await r.json();
+    let body = '';
+    if (j.kind === 'markdown') body = j.html + (j.truncated ? '<p class="empty">… (first part only, open in Obsidian for the whole file)</p>' : '');
+    else if (j.kind === 'text') body = `<pre>${esc(j.text)}</pre>`;
+    else if (j.kind === 'image') body = `<img src="${esc(j.src)}" alt="">`;
+    else body = `<div class="empty">No preview for this type (${Math.round((j.size || 0) / 1024)} KB). Open it in Obsidian or Finder.</div>`;
+    el.innerHTML = head + `<div class="pv">${body}</div>`;
+    $('pv-copy').addEventListener('click', () => { navigator.clipboard.writeText(rel).then(() => toast('Path copied')); });
+  } catch (e) { el.innerHTML = head + `<div class="empty bad">${esc(e.message)}</div>`; }
+}
+
+// ---- routines ----
+let RUNS = null;
+async function loadRuns() {
+  try { const r = await fetch('/api/runs', { cache: 'no-store' }); RUNS = await r.json(); } catch (e) { RUNS = null; }
+  renderRoutine();
+}
+function renderRoutine() {
+  const el = $('routine-status'), btn = $('pulse-btn');
+  if (!RUNS) { el.textContent = ''; return; }
+  const p = RUNS.list.find((x) => x.key === 'pulse');
+  el.className = 'mono stamp' + (p.running ? ' is-running' : p.last && p.last.status === 'failed' ? ' is-failed' : '');
+  if (p.running) { el.textContent = 'pulse running…'; btn.disabled = true; return; }
+  btn.disabled = false;
+  if (p.last) {
+    const t = new Date(p.last.at).toLocaleString('en-US', { timeZone: STATE ? STATE.timezone : undefined, month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+    el.textContent = `pulse ${p.last.status} ${t} · ${p.schedule}`;
+    el.title = p.last.detail || '';
+  } else el.textContent = `pulse: never run · ${p.schedule}`;
+}
+async function runPulse() {
+  const btn = $('pulse-btn'); btn.disabled = true;
+  try {
+    const r = await fetch('/api/run', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ kind: 'pulse' }) });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || r.status);
+    toast('Pulse started. It reads Meta, Shopify and the calendar, then writes today.md. A minute or two.');
+    setTimeout(loadRuns, 800);
+  } catch (e) { toast(e.message, true); btn.disabled = false; }
 }
 
 // ---- data ----
@@ -222,10 +327,13 @@ async function boot() {
   wireActions();
   try { await loadState(); } catch (e) { $('status').innerHTML = `<span class="bad">Cannot load state: ${esc(e.message)}</span>`; }
   await loadWeek();
+  await loadRuns();
+  await loadRecent();
+  try { const t = localStorage.getItem('atlas.tab'); if (t && t !== 'today') showTab(t); } catch (_) {}
   setInterval(loadWeek, 5 * 60 * 1000);
   setInterval(() => loadState().catch(() => {}), 10 * 60 * 1000);
   const es = new EventSource('/api/events');
-  es.onmessage = (m) => { if (m.data === 'hello') return; loadState().catch(() => {}); if (m.data === 'config') loadWeek(); };
+  es.onmessage = (m) => { if (m.data === 'hello') return; if (m.data === 'runs') { loadRuns(); return; } loadState().catch(() => {}); loadRecent(); if (m.data === 'config') loadWeek(); };
   es.onerror = () => { $('status').insertAdjacentHTML('beforeend', '<span class="bad">live updates disconnected, retrying</span>'); };
 }
 boot();

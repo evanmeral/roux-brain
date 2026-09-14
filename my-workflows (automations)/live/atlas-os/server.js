@@ -59,7 +59,18 @@ function buildState() {
   let todayNote = null;
   if (td.text) {
     const stat = fs.statSync(path.join(DESK, 'today.md'));
-    todayNote = { html: md.render(td.text, ctx), modified: stat.mtime.toISOString(), title: (td.text.match(/^# (.+)$/m) || [null, null])[1] };
+    // Split by H2 so the page can show the sharp parts and fold the rest.
+    const sections = [];
+    let cur = null;
+    for (const line of td.text.split('\n')) {
+      const m = line.match(/^## (.+)$/);
+      if (m) { cur = { title: m[1].trim(), key: m[1].trim().toLowerCase().replace(/[^a-z]+/g, '-'), lines: [] }; sections.push(cur); }
+      else if (cur) cur.lines.push(line);
+    }
+    todayNote = {
+      html: md.render(td.text, ctx), modified: stat.mtime.toISOString(), title: (td.text.match(/^# (.+)$/m) || [null, null])[1],
+      sections: sections.map((x) => ({ key: x.key, title: x.title, html: md.render(x.lines.join('\n'), ctx), text: x.lines.join(' ').trim() })),
+    };
     health.today = 'ok';
   } else health.today = td.error === 'missing' ? 'No brief yet. The 6:30 routine has not run.' : 'Cannot read today.md (' + td.error + ')';
 
@@ -108,12 +119,15 @@ function appendCapture(kind, text) {
 
 // ---- sessions: a real interactive Claude session in the vault, in a new Terminal window ----
 const PROMPTS = path.join(ROOT, 'logs', 'prompts');
+// Terminal's login shell may not have ~/.local/bin on PATH, so resolve the claude binary here.
+const HOME = process.env.HOME || require('os').homedir();
+const CLAUDE_BIN = [path.join(HOME, '.local/bin/claude'), '/opt/homebrew/bin/claude', '/usr/local/bin/claude'].find((p) => fs.existsSync(p)) || 'claude';
 function startSession(prompt) {
   fs.mkdirSync(PROMPTS, { recursive: true });
   const file = path.join(PROMPTS, `${Date.now()}.txt`);
   fs.writeFileSync(file, prompt.trim() + '\n');
   const asq = (str) => str.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-  const shell = `cd '${VAULT.replace(/'/g, "'\\''")}' && clear && claude "$(cat '${file}')"`;
+  const shell = `cd '${VAULT.replace(/'/g, "'\\''")}' && clear && '${CLAUDE_BIN}' "$(cat '${file}')"`;
   const script = [
     'tell application "Terminal"',
     '  activate',
@@ -130,6 +144,95 @@ function startSession(prompt) {
   });
 }
 
+
+// ---- routines: what ran, when, how it ended (from runs.log) ----
+function readRuns(limit = 30) {
+  const p = path.join(ROOT, 'runs.log');
+  if (!fs.existsSync(p)) return [];
+  const lines = fs.readFileSync(p, 'utf8').trim().split('\n').filter(Boolean).slice(-200);
+  const runs = lines.map((l) => { const [at, kind, status, ...rest] = l.split('\t'); return { at, kind, status, detail: rest.join(' · ') }; });
+  return runs.slice(-limit).reverse();
+}
+function routines() {
+  const runs = readRuns();
+  const pulse = runs.filter((r) => r.kind === 'pulse');
+  const last = pulse.find((r) => r.status !== 'started') || null;
+  const running = pulse[0] && pulse[0].status === 'started' && (!last || pulse[0].at > last.at);
+  const pulseJob = fs.existsSync(path.join(process.env.HOME || '', 'Library/LaunchAgents/com.atlas.pulse.plist'));
+  return {
+    list: [{ key: 'pulse', name: 'Morning pulse', schedule: pulseJob ? '6:30 CT daily' : 'not scheduled', last, running: !!running }],
+    recent: runs.slice(0, 12),
+  };
+}
+
+
+// ---- headless runs: routines on demand ----
+const { spawn } = require('child_process');
+function runRoutine(kind) {
+  if (kind !== 'pulse') throw new Error('Unknown routine: ' + kind);
+  const r = routines();
+  if (r.list.find((x) => x.key === 'pulse').running) throw new Error('The pulse is already running');
+  const child = spawn(path.join(ROOT, 'pulse.sh'), [], { cwd: ROOT, detached: true, stdio: 'ignore', env: { ...process.env, HOME: process.env.HOME || require('os').homedir() } });
+  child.unref();
+  log('run', kind, 'pid', child.pid);
+  return { ok: true, pid: child.pid };
+}
+
+
+// ---- the vault as a searchable map (Files tab) and the recent list ----
+const SKIP_DIRS = new Set(['.git', '.obsidian', 'node_modules', 'logs', '.claude']);
+const TEXT_EXT = new Set(['.md', '.txt', '.json', '.csv', '.html', '.css', '.js', '.py', '.sh', '.liquid']);
+const IMG_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg']);
+let fileIndex = { at: 0, entries: [] };
+function walk(dir, rel, out) {
+  let list;
+  try { list = fs.readdirSync(dir, { withFileTypes: true }); } catch (_) { return; }
+  for (const e of list) {
+    if (e.name.startsWith('.') || e.name.startsWith('~$')) continue;
+    const r = rel ? rel + '/' + e.name : e.name;
+    if (e.isDirectory()) { if (!SKIP_DIRS.has(e.name)) walk(path.join(dir, e.name), r, out); continue; }
+    let st; try { st = fs.statSync(path.join(dir, e.name)); } catch (_) { continue; }
+    out.push({ rel: r, name: e.name, ext: path.extname(e.name).toLowerCase(), area: r.split('/')[0], mtime: st.mtimeMs, size: st.size });
+  }
+}
+function getIndex() {
+  if (Date.now() - fileIndex.at > 60000) { const out = []; walk(VAULT, '', out); fileIndex = { at: Date.now(), entries: out }; }
+  return fileIndex.entries;
+}
+function withObsidian(e) {
+  return { ...e, modified: new Date(e.mtime).toISOString(), obsidian: `obsidian://open?vault=${encodeURIComponent(CONFIG.vaultName)}&file=${encodeURIComponent(e.rel.replace(/\.md$/i, ''))}`, kind: IMG_EXT.has(e.ext) ? 'image' : TEXT_EXT.has(e.ext) ? 'text' : 'other' };
+}
+function recentFiles(limit = 10) {
+  const roots = ['my-work (outputs)', 'my-desk (now)', 'my-files (knowledge)', 'my-business (context)', 'my-skills/hpc-ad-creative/work/creative/drafts', 'my-skills/hpc-ad-creative/work/creative/library'];
+  return getIndex().filter((e) => roots.some((r) => e.rel.startsWith(r + '/')) && !/\/pulse\//.test(e.rel) && e.name !== 'capture.md')
+    .sort((a, b) => b.mtime - a.mtime).slice(0, limit).map(withObsidian);
+}
+function searchFiles(q, limit = 80) {
+  const terms = (q || '').toLowerCase().split(/\s+/).filter(Boolean);
+  let list = getIndex();
+  if (terms.length) list = list.filter((e) => { const hay = e.rel.toLowerCase(); return terms.every((t) => hay.includes(t)); });
+  return { total: list.length, files: list.sort((a, b) => b.mtime - a.mtime).slice(0, limit).map(withObsidian) };
+}
+function safeVaultPath(rel) {
+  if (!rel) return null;
+  const abs = path.resolve(VAULT, rel);
+  if (!abs.startsWith(VAULT + path.sep)) return null;
+  const segs = path.relative(VAULT, abs).split(path.sep);
+  if (segs.some((x) => SKIP_DIRS.has(x))) return null;
+  return abs;
+}
+function preview(rel) {
+  const abs = safeVaultPath(rel);
+  if (!abs || !fs.existsSync(abs)) return { error: 'not found' };
+  const ext = path.extname(abs).toLowerCase();
+  const st = fs.statSync(abs);
+  if (IMG_EXT.has(ext)) return { kind: 'image', src: '/api/raw?path=' + encodeURIComponent(rel), size: st.size };
+  if (!TEXT_EXT.has(ext)) return { kind: 'other', size: st.size };
+  const text = fs.readFileSync(abs, 'utf8').slice(0, 12000);
+  if (ext === '.md') return { kind: 'markdown', html: md.render(text, { baseDir: path.dirname(abs), vaultDir: VAULT, vaultName: CONFIG.vaultName }), truncated: st.size > 12000 };
+  return { kind: 'text', text, truncated: st.size > 12000 };
+}
+
 // ---- server-sent events: the page refreshes itself when a desk file changes ----
 const clients = new Set();
 function broadcast(what) { for (const res of clients) res.write(`data: ${what}\n\n`); }
@@ -140,10 +243,10 @@ function onDeskChange(evt, file) {
   watchTimer = setTimeout(() => broadcast('desk:' + file), 300);
 }
 try { fs.watch(DESK, { recursive: true }, onDeskChange); } catch (e) { log('watch failed', e.message); }
-try { fs.watch(ROOT, (evt, file) => { if (file === 'config.local.json') { ics.invalidate(); broadcast('config'); } }); } catch (_) {}
+try { fs.watch(ROOT, (evt, file) => { if (file === 'config.local.json') { ics.invalidate(); broadcast('config'); } if (file === 'runs.log') broadcast('runs'); }); } catch (_) {}
 
 // ---- http ----
-const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml', '.json': 'application/json; charset=utf-8', '.woff2': 'font/woff2' };
+const MIME = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif', '.webp': 'image/webp', '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml', '.json': 'application/json; charset=utf-8', '.woff2': 'font/woff2' };
 
 function send(res, code, body, type = 'application/json; charset=utf-8') {
   res.writeHead(code, { 'Content-Type': type, 'Cache-Control': 'no-store' });
@@ -182,6 +285,19 @@ const server = http.createServer(async (req, res) => {
       if (!body.text || !body.text.trim()) return send(res, 400, { error: 'Nothing to capture' });
       const line = appendCapture(body.kind || '', body.text);
       return send(res, 200, { ok: true, line });
+    }
+    if (p === '/api/runs') return send(res, 200, routines());
+    if (p === '/api/recent') return send(res, 200, { files: recentFiles(10) });
+    if (p === '/api/files') return send(res, 200, searchFiles(url.searchParams.get('q') || ''));
+    if (p === '/api/preview') return send(res, 200, preview(url.searchParams.get('path') || ''));
+    if (p === '/api/raw') {
+      const abs = safeVaultPath(url.searchParams.get('path') || '');
+      if (!abs || !fs.existsSync(abs)) return send(res, 404, { error: 'not found' });
+      return send(res, 200, fs.readFileSync(abs), MIME[path.extname(abs).toLowerCase()] || 'application/octet-stream');
+    }
+    if (p === '/api/run' && req.method === 'POST') {
+      const body = await readBody(req);
+      try { return send(res, 200, runRoutine(body.kind)); } catch (e) { return send(res, 400, { error: e.message }); }
     }
     if (p === '/api/session' && req.method === 'POST') {
       const body = await readBody(req);

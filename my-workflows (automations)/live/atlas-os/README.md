@@ -10,8 +10,16 @@ It holds no Shopify, Meta or Google credentials and cannot reach them.
 
 ## Run
 
-- **As a login item (normal):** `./install.sh` once. launchd starts it at login and restarts it if
-  it dies. Logs in `logs/`. Remove with `./uninstall.sh`.
+- **As a login item (normal):** `./install.sh` once. It builds `~/Applications/Atlas OS.app`
+  (a tiny launcher that hosts the node server) and registers two launchd jobs: the server
+  (starts at login, restarts if it dies) and the 6:30 pulse (a `curl` to the running server,
+  which runs `pulse.sh` under the app's own Desktop grant). Logs in `logs/`. Remove with
+  `./uninstall.sh`.
+- **One-time macOS step:** the vault lives in `~/Desktop`, which macOS protects. The first
+  time "Atlas OS" runs, macOS asks whether it may access the Desktop folder: click Allow. If it
+  never asked, or you said no: System Settings → Privacy & Security → Files and Folders →
+  Atlas OS → turn on Desktop Folder. Until then the server cannot read the vault; the reason
+  is written to `logs/launcher.log` and launchd retries every 15 seconds.
 - **By hand:** `node server.js` in this folder.
 - **As a dock app:** open http://localhost:4242 in Safari, then File → Add to Dock. It gets its own
   window and icon.
@@ -22,6 +30,14 @@ It holds no Shopify, Meta or Google credentials and cannot reach them.
 - `config.local.json` — **not committed.** The two Google Calendar secret iCal addresses. Read-only
   by design; reset them in Google Calendar settings if one ever leaks. The page picks up edits on
   its own.
+
+## The 6:30 pulse
+
+`.claude/commands/pulse.md` is the prompt; `pulse.sh` runs it headless (`claude -p`, Sonnet 5 by
+default, `ATLAS_PULSE_MODEL` overrides) and logs to `runs.log`. Reads only: Meta (HP Cookers ADs),
+Shopify (ShopifyQL), both calendars, the board, key dates, capture. Writes `today.md` and
+`pulse/<date>.json`. First real run 2026-09-14: 97 s, about $0.82, no permission denials. The
+"Pulse now" button on the page runs the same thing on demand.
 
 ## Files it reads
 

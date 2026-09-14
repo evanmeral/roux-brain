@@ -15,7 +15,7 @@
   <div class="brand">
     <img src="/logo.png" alt="HPC" class="shield">
     <span class="wordmark">ATLAS</span>
-    <nav class="tabs" id="tabs"><button class="tab is-on" data-tab="today">Today</button></nav>
+    <nav class="tabs" id="tabs"><button class="tab is-on" data-tab="today">Today</button><button class="tab" data-tab="board">Board</button><button class="tab" data-tab="files">Files</button></nav>
   </div>
   <div class="clock">
     <div class="time" id="clock-time">--:--</div>
@@ -24,10 +24,10 @@
   <div class="chips" id="countdowns"></div>
 </header>
 
-<main class="grid" id="view-today">
+<main class="grid view is-on" id="view-today">
   <section class="col">
     <article class="panel panel-morning" id="panel-morning">
-      <header class="panel-head"><span class="eyebrow">This morning</span><span class="mono stamp" id="morning-stamp"></span></header>
+      <header class="panel-head"><span class="eyebrow">This morning</span><span class="head-right"><span class="mono stamp" id="morning-stamp"></span><span class="mono stamp" id="routine-status"></span><button class="btn btn-sm" id="pulse-btn" title="Run the morning pulse now (reads only, a minute or two)">Pulse now</button></span></header>
       <div class="panel-body" id="morning-body"></div>
     </article>
 
@@ -67,7 +67,27 @@
         <span class="mono stamp" id="session-status"></span>
       </div>
     </article>
+
+    <article class="panel" id="panel-recent">
+      <header class="panel-head"><span class="eyebrow">Made recently</span><span class="mono stamp">opens in Obsidian</span></header>
+      <div class="panel-body recent" id="recent-body"></div>
+    </article>
+
+    <div class="links" id="links"></div>
   </section>
+</main>
+
+<main class="view board" id="view-board">
+  <div class="board-grid" id="board-body"></div>
+</main>
+
+<main class="view files" id="view-files">
+  <div class="files-left">
+    <input type="search" id="files-q" placeholder="Search the vault: a word from the file name or folder" autocomplete="off">
+    <div class="mono stamp" id="files-count"></div>
+    <div id="files-list"></div>
+  </div>
+  <div class="files-right panel" id="files-preview"><div class="empty">Pick a file to preview it here. Open in Obsidian or copy the path from the top of the preview.</div></div>
 </main>
 
 <footer class="status mono" id="status"></footer>

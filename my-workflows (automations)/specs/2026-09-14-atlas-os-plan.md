@@ -158,6 +158,21 @@ missing section. launchd runs a missed job at wake, so a closed lid at 6:30 stil
 Verified at build: `claude -p` headless with connectors; fallback is the desktop app's scheduled
 task. The read tools it needs are added to the allow list in `.claude/settings.json` (Nova).
 
+## Build log
+
+- **2026-09-14, phases 1–3 built.** Server, board parser, week view, capture, Done, Work on this,
+  Ask, Morning brief and Sort inbox as sessions, key-dates, prime/wrap hooks, the pulse command,
+  runner, Pulse-now button and routine status. First pulse run: 97 s, ~$0.82, Meta + Shopify +
+  both calendars read, `today.md` in the contract shape, no denials.
+- **Found:** the CLI names claude.ai connectors `mcp__claude_ai_<Name>__<tool>`, not the UUID
+  prefixes the desktop app uses. `settings.json` now carries every Meta rule under both namings
+  (publish denied in both) and denies the unverified n8n `ask_marketing_agent` in both. Its dead
+  `Write(...)` rules were dropped (only `Edit(path)` rules are matched, and they cover Write).
+- **Found:** launchd-spawned processes cannot read `~/Desktop` until macOS grants it. The server
+  is hosted in `~/Applications/Atlas OS.app`, opened through LaunchServices so the prompt can
+  appear; the 6:30 job is a `curl` to the server, so one grant covers both. Evan's one click.
+- **Found:** the desktop app's preview harness could not bind the port; launchd is the runner.
+
 ## Stack
 
 Node 26, one `server.js`, one package for ICS parsing with recurrence. One page, vanilla JS,
