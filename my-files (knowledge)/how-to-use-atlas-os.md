@@ -34,8 +34,9 @@ If a panel stops earning its place, say so in chat and it gets deleted. Small on
    with flags, and anything waiting on you past two days. That is your morning brief. Nobody
    wrote it for you; the brain read the systems.
 3. Look at **This week** and **Waiting on you**. Ages turn gold at two days and red at five.
-4. Pick the thing and press **Work on this**. A real Claude session opens in Terminal with the
-   board item and its documents already read. Or press **Sort inbox** and let it draft replies.
+4. Pick the thing and open a Claude Code chat here in the app, as you do today. (The **Work on
+   this**, **Ask**, **Morning brief** and **Sort inbox** buttons open the same session in a Terminal
+   window instead; they are optional, and they need Terminal's Desktop-folder permission.)
 
 Then close it. That is the whole routine.
 
@@ -46,7 +47,7 @@ Then close it. That is the whole routine.
 | Jay says something, or you think of something at 9pm | Type it in **Tell Atlas** and press Save. The next session reads it before anything else. Nothing said between sessions is lost anymore. |
 | You finished a thing that is on the board | Press **Done** on its row. It greys out, and the next wrap clears it from the board. You never edit the board by hand. |
 | You need a file and cannot remember where it is | **Files** tab, or Cmd+K. Type one word from the name or folder. Click to preview, Open in Obsidian, or Copy path to paste into chat. |
-| You need a number or a "what does this mean" | Type the question in the box and press **Ask**. Chat is still where questions go; the OS just starts the session with the vault open. |
+| You need a number or a "what does this mean" | Ask in a Claude Code chat, as now. The page is not a chat and will not become one (Evan, 2026-09-14). |
 | You want the whole board | **Board** tab. Every section, readable, one click to Obsidian. Read only, on purpose. |
 | Something feels stale | The stamp on the Now panel shows the board's date. If it is more than two days old it turns gold: wrap the last session, and the page follows on its own. |
 

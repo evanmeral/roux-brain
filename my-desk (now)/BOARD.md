@@ -45,7 +45,7 @@ BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay
 | **Evan** | Send Biljana the Slack message confirming which codes are hers, and whether her flows can take a renamed code | 2026-09-14 |
 | **Evan → Jay** | One text: the agency-fee breakdown, and whether Jay adopts the incremental rule | 2026-09-14 |
 | **Evan** | Book Garrett's 8-pack after today's 2pm call | 2026-09-14 |
-| **Evan** | **Atlas OS buttons:** turn on Desktop Folder for **Terminal** (System Settings → Privacy & Security → Files and Folders → Terminal). Until then Work on this / Ask / Morning brief / Sort inbox open a window that cannot read the vault | 2026-09-14 |
+| **Evan** | *(optional)* **Atlas OS buttons:** turn on Desktop Folder for **Terminal** in Files and Folders if you ever want Work on this / Ask to open a session from the page. Evan chose to work in the app instead (2026-09-14), so this can also just be dropped | 2026-09-14 |
 | **Finn** | **Scheduled: re-pull IW Meta numbers + Shopify UTM match on Sept 18** (Day 7 / ~$700), or sooner if Learning exits. Also: Coalition's current monthly Google spend | 2026-09-14 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
 | **Coalition** | Google Ads copy spreadsheet (Connor). Evan passes it to the brain to mine · Cater + Event reply, Mar 22–25 | 2026-09-10 |

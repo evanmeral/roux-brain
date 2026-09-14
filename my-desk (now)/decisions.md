@@ -11,6 +11,13 @@
 
 ## 2026-09
 
+**Atlas OS stays a launcher and an inbox; the work happens in Claude Code chat** — Evan, 2026-09-14. No in-page
+answers, no second chat surface. The page is for the glance (clock, week, waiting, running, the pulse brief) and for
+telling the brain things (Tell Atlas, Done). Sessions start here in the desktop app as they do today; the Work-on-this
+and Ask buttons that open a Terminal session are optional and need Terminal's Desktop-folder permission, which is
+Evan's toggle if he ever wants them. **Why:** Evan prefers to do the actual work in this app, and the page must not
+become a second, worse chat. Consistent with the four rules in the spec.
+
 **Atlas OS pulse is button-only, not scheduled** — Evan, 2026-09-14. The 6:30 launchd job is unloaded; Pulse now on
 the page runs the same read-only routine on demand. **Why:** the pulse runs on Evan's claude.ai Max plan (no API key,
 verified), so it costs no money, but he would rather not spend plan allowance on an unattended daily run. Turning it back
