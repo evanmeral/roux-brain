@@ -11,6 +11,17 @@
 
 ## 2026-09
 
+**Natural-gas variant of Stephen's commercial follow-up email created and sent** — Evan, 2026-09-14.
+Adapted from the live propane template (Google Doc "CC follow-up email v3") for NG prospects. **Dropped**
+the $5,000/yr propane-savings figure and the savings-calculator link — both are anchored to propane gallon
+cost and there is no equivalent NG fuel-savings number on file (not invented). **Kept** the output/speed
+proof points (Lefort's, All Star, The Fruit Stand) since those describe the tunnel-tube cooker's boil speed,
+not the fuel. **Added** a caveat from the existing call script (`HPC_Commercial_Call_Script_and_Email_v3`):
+NG only matches propane speed on high-pressure 2 lb commercial gas service, not standard 1/2 lb household
+lines. **Why:** Evan asked for a version of the propane follow-up for NG-using prospects; delivered in paste
+format only, per his request, and added by him to the shared Google Doc before going to Stephen. No copy in
+the vault — the Google Doc is the source of truth for both versions.
+
 **Atlas OS stays a launcher and an inbox; the work happens in Claude Code chat** — Evan, 2026-09-14. No in-page
 answers, no second chat surface. The page is for the glance (clock, week, waiting, running, the pulse brief) and for
 telling the brain things (Tell Atlas, Done). Sessions start here in the desktop app as they do today; the Work-on-this
