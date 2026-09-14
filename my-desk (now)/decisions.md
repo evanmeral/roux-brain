@@ -11,6 +11,150 @@
 
 ## 2026-09
 
+**Coalition's current actual Google Ads spend: not worth chasing further** — Evan, 2026-09-14.
+Finn had already come up empty on Gmail and a locked Basecamp; once Basecamp was opened, a
+second pass through its Message Board and Docs & Files also found no spend report — only
+strategy and copy docs. Evan's call: the 20%-net budget model's central finding (Meta is fine,
+Google + agency fees are the structural problem) rests on last year's $206k trailing Google
+figure and doesn't change without a current number — it would sharpen the picture, not alter
+the conclusion, so it isn't worth further digging. Nothing on the board is blocked on it.
+→ [model](../my-work%20%28outputs%29/internal/reports/2026-09-14-marketing-budget-model-20pct-net.md)
+
+**Garrett shoot plan settles at 8 videos after a second restructure** — Evan, 2026-09-14, answering the
+questions asked earlier the same day.
+- **"Buy it once" uses the 60 QT Performance**, handled/demonstrated on camera throughout (a few other
+  pots can sit out on set for background variety, but the 60 QT is what gets the calipers/weld-bead
+  treatment).
+- **A-Z Process video dropped entirely.** Evan's call: don't shoot a "start to finish build" video until
+  HPC is actually making the pot itself in-house (the base pot is still bought from China — landmine on
+  the board). Shooting it now would misrepresent the process.
+- **Shop Interviews: staff answer questions while actively working** (welding, packing, handling
+  product) — not a sit-down talking head. Matches Evan's standing rule that every video shows product in
+  actual use.
+- **Fried-food content re-shuffled twice, landing on:** beignets and corn are out entirely. One video
+  combines **funnel cake + blooming onion + a seafood item** (shrimp, fish, or soft-shell crab — **Evan to
+  pick later**), all fried in the 18 QT. **Monte Cristo stays a separate, standalone video.** Oreos and a
+  generic "fried everything" montage are dropped — Evan's answers moved from a montage concept toward two
+  concrete, product-in-use videos instead once the video count got tight.
+- **Net result: exactly 8 videos**, matching the $2,500 deal. Final list: turkey demo (Stephen) · 60 QT
+  shrimp boil (Stephen) · 18 QT fry-it-all (Jay) · tailgate (Jay + Stephen) · buy-it-once (60 QT) · shop
+  interviews (working, not sitting) · fried funnel-cake/blooming-onion/seafood combo · Monte Cristo.
+Both artifacts rebuilt as new files (this connector can't edit an existing Sheet/Doc's content in place —
+only create new or rename). Old drafts moved to Drive trash, recoverable.
+→ [shoot plan v4](../my-work%20%28outputs%29/internal/2026-09-14-garrett-shoot-plan-sept22.md) ·
+[sheet](https://docs.google.com/spreadsheets/d/1ite_Mjxsw6qOj56J3zc1b9YUweJWaFf0qbL_elwiqz0/edit) ·
+[Garrett doc](https://docs.google.com/document/d/1feCok40JDRI_QGeuMRgZHox_KbX22FB1GwqoCizzJCk/edit) · Board Now #2
+
+**Garrett shoot plan cut to exactly 8 videos and re-cast; three concepts still open** — Evan, 2026-09-14,
+after editing the Garrett-facing Google Doc directly.
+- **8 videos, not 9.** Fried Desserts and Fried Experiments (organic/UGC) merged into one "Fried Foods"
+  video — same food list, one deliverable, to hit the 8-video count for the $2,500 deal.
+- **On-camera swap: Stephen replaces Jay for the Turkey Demo (30 QT) and the 60 QT Shrimp Boil Demo.**
+  Jay stays on the 18 QT demo. The tailgate video now has both Jay and Stephen.
+- **Every video must show the product in use — not a talking head.** Evan flagged this specifically for
+  the three videos that had no pot/setup or hook defined yet: "Buy It Once" (which pot to physically
+  feature), the A-Z Process video (which product to follow start to finish, plus a hook), and the Shop
+  Interviews (how staff hold/use product while talking, plus a hook). Questions sent to Evan rather than
+  guessed — his call, not ours.
+- **Tool limitation, not a plan change:** Evan edited the Garrett-facing Google Doc directly, but the Drive
+  connector here can only create new files or rename existing ones — it can't edit an existing Doc's body.
+  His edits were read back and carried into a new Doc (same title), and the old one was moved to Drive
+  trash (recoverable, not deleted). Same pattern used for the Sheet earlier today.
+→ [shoot plan v2](../my-work%20%28outputs%29/internal/2026-09-14-garrett-shoot-plan-sept22.md) · [Garrett doc, still has TBDs](https://docs.google.com/document/d/13-d3i6FSn7_qnUoD8qt5tgxcN5g3uZldz1KFUiRmgd0/edit) · Board Now #2
+
+**Correction to the "7-minute boil" note below: it is NOT 120 QT-exclusive** — Evan, 2026-09-14, same
+day. My earlier entry said the boil claim belonged to the 120 QT (and 80/100 QT Double/Triple Jet line)
+"never the 30 QT." That was incomplete, not the recap's error. **The 30 QT and 60 QT carry the same
+"boils in under 7 minutes" claim when set up to boil** — it comes from the Tunnel Tubes on the pot,
+not the burner. The 30 QT ships with a 6" Banjo Burner (used for both frying and boiling on that pot);
+the 60 QT ships with a Single Jet Burner for boiling, or swaps to a 6" Banjo Burner to fry a turkey.
+Frying and boiling are still separate claims that never mix on one shot: frying is 350° in under 5
+minutes (18 QT/4-Way/40 QT only) or 10 minutes (every other pot, including the 30 QT and 60 QT);
+boiling is the 7-minute figure. **The Sept 22 shoot plan is revised accordingly:** the boil-time-test
+video now uses the **60 QT** (shrimp boil, Single Jet Burner) instead of the 120 QT, and the turkey
+demo stays on the **30 QT** (frying claim, 350°/10 min) with no 60 QT cutaway. → [what-we-sell.md](../my-business%20%28context%29/what-we-sell.md)
+"The boiling claim" · [shoot plan v2](../my-work%20%28outputs%29/internal/2026-09-14-garrett-shoot-plan-sept22.md)
+
+**Garrett shoot plan revised a second time, same day — tailgate location confirmed, "buy it once" and
+the 12-man team folded into Sept 22 itself, price confirmed** — Evan, 2026-09-14.
+- **Tailgate video: staged at the shop on Sept 22**, not held for a game day. No full crowd/game
+  atmosphere — a tight staged spread (table, cooler, team colors) instead.
+- **"Get as much done as possible, useful things first."** Evan does not want "buy it once" and the
+  12-man team material held back as pitch-only ideas — fold them into Sept 22's actual shoot list,
+  prioritized behind the deadline-critical and highest-value pieces. Final priority order: turkey demo
+  (30 QT) → 60 QT shrimp boil → 18 QT fry-it-all → tailgate → buy-it-once → A-Z process → shop
+  interviews/12-man raw coverage → fried desserts (UGC) → fried experiments (UGC).
+- **$2,500 for 8 videos is confirmed as the Sept 22 shoot** — not a separate future deal. The 8-pack
+  cap is a reason to keep the list priority-ordered: whichever 8 make it, the most useful ones should
+  be first.
+→ [shoot plan v2](../my-work%20%28outputs%29/internal/2026-09-14-garrett-shoot-plan-sept22.md) · Board Now #2
+
+**Garrett shoot plan finalized after the Sept 14 call (Fathom recap + Evan's corrections)** — Evan, 2026-09-14.
+Meetings with Garrett are brainstorming input, not commitments; Evan and the brain decide the actual plan.
+- **Date: Tuesday, Sept 22 — confirmed, not Sept 23.** The Fathom AI recap misread the date; the calendar
+  invites Garrett sent (same inbox, same day) say Sept 22, 9:30am–12:30pm CDT, and Sept 23, 2026 is a
+  Wednesday. Going with the calendar.
+- **No hard stop on the day** — Garrett typically runs long. Treat 12:30pm as a soft estimate, not a cutoff.
+- **Kept, against the recap's "dropped" list: the buy-it-once price-objection video.** Not locked to Sept 22 —
+  Evan wants a concept ready to hand Garrett so it's on his radar for scheduling.
+- **Tailgate video ties to the already-approved 18 QT tailgate bundle** (fryer, leg extensions, 12" thermometer,
+  wind shield, skimmer — $465, Board Now #1), not a new concept.
+- **Pasta/sauce (4-Way + 40 QT) and the 28 QT steamer stay off the slate for now** — not core sellers today.
+  Revisit later, not this cycle.
+- **12-man team brand film is not NOLA-exclusive.** Evan wants ideas pitched beyond the trade-show angle, and
+  expects to cover some of it when Garrett is on-site Sept 22.
+- **120 QT timed boil-demo video (for the NOLA booth) moves to a later date** — off-season for 120 QT sales
+  right now; no rush.
+- **"Owner's Choice" seasoning add-in scrapped.** It was Garrett's suggestion, not ours — HPC has its own
+  seasoning line and won't bundle in someone else's.
+- **The recap's "Tailgate Pack" and "Turkey Fryer Bundle" are not new asks** — they're the tailgate/turkey/60 QT
+  bundles already approved by Jay (Board Now #1), just described loosely on the call.
+- **Correction caught while planning, not from the call:** the "boils in under 7 minutes" claim belongs to the
+  120 QT (and the 80/100 QT Double/Triple Jet burner line) — never the 30 QT, which is a turkey fryer with its
+  own frying-time claim. The Fathom recap says "30-quart cooker... boils in under 7 minutes," which conflates
+  the two. The shoot plan's boil-time-test video uses the 120 QT, consistent with existing sourced copy
+  (`how-we-sound.md`, `customer-language.md`, `2026-09-10-landed-cost-by-variant.md`).
+- **Bundle building (code fix + building the 3 kits) stays held for tomorrow, 2026-09-15** — unchanged from
+  Board Now #1.
+- ⚠️ **Not confirmed in the recap: the $2,500 8-pack deal terms.** The Fathom summary doesn't mention price,
+  payment, or what counts as "one video." Worth verifying with Garrett before or during Sept 22, not assumed
+  settled.
+→ [shoot plan](../my-work%20%28outputs%29/internal/2026-09-14-garrett-shoot-plan-sept22.md) · [call prep](../my-work%20%28outputs%29/internal/2026-09-11-garrett-call-prep.md) · Board Now #2
+
+**Jay answers the four open questions on the 20%-net budget model — room confirmed at
+$290,600/yr, agency and other-advertising forward run-rates far below trailing, incremental
+rule formally adopted** — Jay, via Evan (text, relayed verbatim), 2026-09-14. 🔒 Hard
+constraints, not judgment calls:
+- **Q1, double-count: "Yes."** The $6,800/mo agency retainer sits inside both the
+  $49,550/mo overhead figure and the P&L's $152k "agency fees" marketing line. Re-derived
+  from the model's own formula (not just re-quoted): pulling the double-counted $81,600/yr
+  out of overhead drops overhead% from 15.2% to 13.15% of real revenue, which raises the
+  20%-net room from $209,000/yr to **$290,600/yr — now the confirmed figure**, not a flag.
+- **Q2, agency-fees composition:** the $152k trailing line holds the $6,800/mo Coalition
+  retainer plus one-time, now-discontinued BM Digital costs — a 15%-of-ad-spend commission
+  (dollar amount not given, not invented), a $7,000/mo BM Digital retainer Dec–May
+  ($42,000), and "probably $5,000 to $6,000" of other one-time misc. **Forward run-rate:
+  ~$81,600/yr, Coalition retainer only.** ~$22,900 of the trailing $152k doesn't reconcile
+  to named pieces — flagged as unquantified (consistent with, not proof of, the unstated
+  15%-of-spend commission), not forced to close.
+- **Q3, "other advertising" composition:** nearly all of the trailing $56k is one-time and
+  discontinued. **Forward run-rate: ~$10,300/yr** — ~$5,000 misc (annual cadence assumed,
+  not stated by Jay) plus a $5,300 reviews.io renewal each November.
+- **Q4, incremental per-ad rule: "yes."** Formally Jay's rule now — every ad must clear
+  20% net after landed cost, fees and the ad itself — not a ROUX recommendation awaiting
+  sign-off.
+
+**Why it matters:** the model's central finding gets revised, not just refreshed.
+Recomputing on forward run-rates instead of trailing totals — Meta $78k–$115k + Google
+$206k (still trailing, no current figure, dropped per Evan's earlier 2026-09-14 call, not
+re-chased here) + agency $81.6k + other $10.3k + affiliates $4k ≈ **$380k–$417k/yr**
+against the **$290,600/yr room** — the forward gap is **~$89k–$126k/yr**, a fraction of the
+old $467k figure built on trailing totals and the unconfirmed $209k room. Agency fees are
+no longer a distinct structural problem now that BM Digital is gone — they're a known,
+bounded line smaller than Meta's own spend. **Google alone is now ~71% of the entire room**
+and remains the one real lever outside marketing's control. No Meta daily-cap changes.
+→ [model](../my-work%20%28outputs%29/internal/reports/2026-09-14-marketing-budget-model-20pct-net.md) · board Now #3
+
 **Natural-gas variant of Stephen's commercial follow-up email created and sent** — Evan, 2026-09-14.
 Adapted from the live propane template (Google Doc "CC follow-up email v3") for NG prospects. **Dropped**
 the $5,000/yr propane-savings figure and the savings-calculator link — both are anchored to propane gallon

@@ -191,6 +191,21 @@ They still deliver **up to 75% less propane** — run both, temperature first.
 > not fry as fast as a purpose-built fryer, so **the 5-minute stat is scoped to the three
 > products named above and nowhere else.** Use 10 minutes on pots.
 
+### The boiling claim — which pots qualify
+
+*Added by Evan, 2026-09-14, while planning the Sept 22 Garrett shoot.* **"Rolling boil in under 7
+minutes" is not 120 QT-exclusive.** The 30 QT and 60 QT carry the same claim **when set up to boil**
+— it comes from the Tunnel Tubes on the pot bottom, not the burner, so any pot with them qualifies
+once it has a burner capable of it.
+
+- **30 QT** ships with a **6" Banjo Burner** only. That burner is what it uses whether frying or boiling.
+- **60 QT** ships with a **Single Jet Burner** for boiling (shrimp, crawfish, etc.). To use it as a
+  turkey fryer instead, swap in a **6" Banjo Burner**.
+- **Frying and boiling are different modes on the same pot and never share a claim.** In frying mode,
+  use the frying figure above (5 minutes for the 18 QT/4-Way/40 QT, 10 minutes on every other pot,
+  including the 30 QT and 60 QT). In boiling mode, use "rolling boil in under 7 minutes" — the same
+  figure as the 80/100/120 QT Double/Triple Jet line.
+
 **2. Leg extensions ($119) fit these three products and nothing else.**
 The **18 QT Fish Fryer**, the **4-Way Fryer / Pasta Cooker** and the **40 QT** are the only products
 in the catalog that take **Cooker Leg Extensions**. Never imply the legs fit a product outside this

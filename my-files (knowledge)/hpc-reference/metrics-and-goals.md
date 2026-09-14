@@ -28,7 +28,7 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 
 ## 🎯 CAC — always report this alongside ROAS (Evan, 2026-08-27)
 
-> 🚨 **SUPERSEDED AGAIN, 2026-09-10:** real landed cost, $49,550/mo overhead, and a 20% net target → `internal/reports/2026-09-10-cac-ceilings-v3.md` + `2026-09-10-overhead-method-options.md`. ROUX recommends the incremental rule: no overhead in ad ceilings, each ad leaves ≥20% of the order after ad cost, 20% checked monthly at business level. **Don't use the tables below.**
+> 🚨 **SUPERSEDED AGAIN, 2026-09-14:** real landed cost, $49,550/mo overhead, and a 20% net target → `internal/reports/2026-09-10-cac-ceilings-v3.md` + `2026-09-10-overhead-method-options.md` + `internal/reports/2026-09-14-marketing-budget-model-20pct-net.md`. **The incremental rule is now Jay's official rule (2026-09-14, not just a ROUX recommendation):** no overhead in ad ceilings, each ad leaves ≥20% of the order after ad cost, 20% checked monthly at business level. The **20%-net annual marketing room is $290,600/yr** (confirmed 2026-09-14 — Jay confirmed the $6,800/mo agency retainer was double-counted inside both overhead and the P&L's agency-fees line; correcting it moved the room up from an earlier $209,000 read). **Don't use the tables below.**
 >
 > 🚨 **SUPERSEDED IN PART — see `my-work (outputs)/internal/reports/2026-08-28-cac-model-v2.md`.**
 > Robert (co-owner) correctly identified that the "allowable CAC" below is **gross profit per unit**,
@@ -102,7 +102,7 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 | Returns, 13 mo | −$521,426 (13.7%) — **−$174,002 (4.9%) excluding the Lowe's reversal** | Shopify |
 | Gross margin (Aug 2026) | **44.5%** ⚠️ stale: order-line costs predate Jay's cost review | Shopify |
 | ⭐ **P&L, last 365 days** (to 2026-09-09) | Revenue **$4.3M booked, ~$3.9M real** ($393k expense from a double-booked Lowe's order) · margin before overhead + ads **46%**, after card fees + shipping cost · net profit **−5%** · COGS **$1.68M**. The 46% was worked on the $4.3M booked (Jay), so the **real margin is ~40.6%** of ~$3.9M *(derived; assumes the double-booked entry carried no COGS)* | Jay, from the P&L, 2026-09-10 |
-| Marketing, last 365 days | **$676k**: Google $206k · Meta $258k · agency fees $152k · other advertising/marketing $56k · affiliates ~$4k | Jay, P&L, 2026-09-10 |
+| Marketing, last 365 days | **$676k**: Google $206k · Meta $258k · agency fees $152k · other advertising/marketing $56k · affiliates ~$4k. ⚠️ **Trailing actuals, not forward-looking** — agency fees and other advertising were mostly one-time BM Digital costs, now discontinued (Jay, 2026-09-14): forward run-rates are ~$81.6k/yr agency fees, ~$10.3k/yr other advertising → `internal/reports/2026-09-14-marketing-budget-model-20pct-net.md` | Jay, P&L, 2026-09-10 · forward figures Jay, 2026-09-14 |
 | Overhead | **~$49,550/mo, steady year-round** (agencies $6,800 · software $7,000 · non-build payroll $20,000 · rent $9,750 · insurance $1,000 · misc $5,000). Ad spend not included. A rough estimate | Jay, 2026-09-09/10 |
 | Shopify, 2025-09-10 → 2026-09-09 | Net sales $2,902,399.16 · shipping charged $242,199.97 · taxes $95,575.15 · 6,442 orders | ShopifyQL, 2026-09-10 |
 | Landed cost check | Shopify current `unitCost` on 12 months of paid orders ≈ $1.66M vs P&L COGS $1.68M: **within 1.4%** *(derived)* | Finn Pull D + Jay, 2026-09-10 |
