@@ -45,7 +45,6 @@ BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay
 | **Evan** | Send Biljana the Slack message confirming which codes are hers, and whether her flows can take a renamed code | 2026-09-14 |
 | **Evan → Jay** | One text: the agency-fee breakdown, and whether Jay adopts the incremental rule | 2026-09-14 |
 | **Evan** | Book Garrett's 8-pack after today's 2pm call | 2026-09-14 |
-| **Evan** | **Atlas OS:** paste the two Google Calendar secret iCal addresses (personal + HPC) into `my-workflows (automations)/live/atlas-os/config.local.json`; the week view is empty until then. *(Desktop access for node: done 2026-09-14; server live at `localhost:4242`.)* | 2026-09-14 |
 | **Finn** | **Scheduled: re-pull IW Meta numbers + Shopify UTM match on Sept 18** (Day 7 / ~$700), or sooner if Learning exits. Also: Coalition's current monthly Google spend | 2026-09-14 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
 | **Coalition** | Google Ads copy spreadsheet (Connor). Evan passes it to the brain to mine · Cater + Event reply, Mar 22–25 | 2026-09-10 |
@@ -113,7 +112,7 @@ Source of truth → [metrics-and-goals.md](../my-files%20%28knowledge%29/hpc-ref
 
 ## 🧭 Map
 
-- **Atlas OS** — `localhost:4242` · [spec + build log](../my-workflows%20%28automations%29/specs/2026-09-14-atlas-os-plan.md) · [README](../my-workflows%20%28automations%29/live/atlas-os/README.md) · the 6:30 pulse writes [today.md](today.md) · your notes land in [capture.md](capture.md) · dates in [key-dates.md](key-dates.md)
+- **Atlas OS** — `localhost:4242`, live as a login item; both calendars connected; pulse is button-only · [spec + build log](../my-workflows%20%28automations%29/specs/2026-09-14-atlas-os-plan.md) · [README](../my-workflows%20%28automations%29/live/atlas-os/README.md) · the 6:30 pulse writes [today.md](today.md) · your notes land in [capture.md](capture.md) · dates in [key-dates.md](key-dates.md)
 - **Playbooks** — [weekly rhythm](../my-workflows%20%28automations%29/playbooks/weekly-operating-rhythm.md) · [paid media](../my-workflows%20%28automations%29/playbooks/paid-media.md) · [content engine](../my-workflows%20%28automations%29/playbooks/content-engine.md) · [automation roadmap](../my-workflows%20%28automations%29/playbooks/automation-roadmap.md)
 - **The business** — [who we are](../my-business%20%28context%29/who-we-are.md) · [what we sell](../my-business%20%28context%29/what-we-sell.md) · [our team](../my-business%20%28context%29/our-team.md) · [how we sound](../my-business%20%28context%29/how-we-sound.md) · [metrics & goals](../my-files%20%28knowledge%29/hpc-reference/metrics-and-goals.md) · [seasonal calendar](../my-files%20%28knowledge%29/hpc-reference/seasonal-calendar.md) · [connected apps](../my-connections%20%28MCP%29/connected-apps.md)
 
