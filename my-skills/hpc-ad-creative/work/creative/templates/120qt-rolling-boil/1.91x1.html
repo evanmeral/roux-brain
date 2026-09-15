@@ -16,14 +16,16 @@ html,body{width:1200px;height:628px}
 .spec .n{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:26px;color:#fff;line-height:1}
 .spec .n em{font-style:normal;font-size:15px;color:var(--accent)}
 .spec .n i{font-style:normal;font-family:'Poppins';font-weight:600;font-size:13px;color:rgba(255,255,255,.6);margin-right:5px}
-.spec .l{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:9px;
-  color:rgba(255,255,255,.5);letter-spacing:.15em;margin-top:8px}
+/* Round 3 correction (Evan, 2026-09-15): number reverted to ORIGINAL size; this label is
+   the flagged "smaller text" — pushed hard past round 2's 22px. */
+.spec .l{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:24px;white-space:nowrap;
+  color:rgba(255,255,255,.78);letter-spacing:0;margin-top:9px}
 .cta{margin-top:24px;font-size:19px;align-self:flex-start}
 .right{position:relative;flex:1 1 auto;display:flex;align-items:center;justify-content:center}
 .glow{width:470px;height:320px;left:50%;top:50%;transform:translate(-58%,-4%);z-index:1}
 .shadow{position:relative;z-index:2;filter:drop-shadow(0 26px 40px rgba(0,0,0,.55))}
 .logo{width:88px;top:34px;right:44px}
-.legal{position:absolute;left:52px;bottom:20px;font-size:10px;color:#fff;z-index:5}
+.legal{position:absolute;left:46px;right:46px;bottom:14px;font-size:18px;color:#fff;z-index:5}
 </style></head>
 <body><div class="ad bg-dark"><div class="grid">
   <img class="logo" src="../../../../assets/brand-refs/HPC-ShieldLogo-White.png">
@@ -32,7 +34,7 @@ html,body{width:1200px;height:628px}
     <div class="hl">Cold water to a<br><span class="accent">rolling boil.</span></div>
     <div class="sub">Tunnel Tube technology is in the pot &mdash; so it works on any burner you already own.</div>
     <div class="specs">
-      <div class="spec"><div class="n">6.5&ndash;7<em>min</em></div><div class="l">TO A ROLLING BOIL</div></div>
+      <div class="spec"><div class="n">6.5&ndash;7<em>min</em></div><div class="l">ROLLING BOIL</div></div>
       <div class="spec"><div class="n">~90<em>sec</em></div><div class="l">RECOVERY</div></div>
       <div class="spec"><div class="n"><i>up to</i>75<em>%</em></div><div class="l">LESS PROPANE</div></div>
     </div>
@@ -42,5 +44,5 @@ html,body{width:1200px;height:628px}
     <div class="glow"></div>
     <div class="pbox shadow" style="width:284px;height:440px;transform:translate(-42px,14px)"><img src="../../../../assets/product-cutouts/120qt on BB-TJB_.png" style="width:418px;left:-71px;top:-58px"></div>
   </div>
-  <div class="legal">Boil times vary with volume, ambient temperature and fuel pressure.</div>
+  <div class="legal">Boil times vary with volume, temp and fuel pressure.</div>
 </div></div></body></html>

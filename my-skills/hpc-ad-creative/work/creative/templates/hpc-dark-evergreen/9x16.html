@@ -21,12 +21,15 @@ html,body{width:1080px;height:1920px}
 .bar{position:relative;z-index:5;flex:none;background:var(--accent);color:var(--ink);border-radius:9px;
   padding:19px;text-align:center;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:31px;
   letter-spacing:.06em;margin-bottom:16px}
+/* Round 3 correction (Evan, 2026-09-15): headline block reverted to ORIGINAL size.
+   Chip text (warranty/material claim) grown well past round 2; product cutout trimmed
+   ~2% to keep clearance — reformatting Evan explicitly OK'd rather than cramming type in. */
 .chips{position:relative;z-index:5;flex:none;display:flex;gap:14px;margin-bottom:22px}
 .chip{flex:1;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.20);
   border-radius:9px;padding:20px 8px;text-align:center}
-.chip .k{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:40px;color:#fff;letter-spacing:-.02em}
-.chip .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:21px;color:var(--accent);
-  letter-spacing:.05em;margin-top:10px}
+.chip .k{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:64px;color:#fff;letter-spacing:-.02em}
+.chip .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:42px;color:var(--accent);
+  letter-spacing:.01em;margin-top:12px;line-height:1.18}
 .foot{position:relative;z-index:5;flex:none;display:flex;align-items:center;justify-content:space-between;
   padding-bottom:300px;font-family:'JetBrains Mono',monospace;font-weight:800;letter-spacing:.06em}
 .fb{font-size:25px;color:rgba(255,255,255,.62)}
@@ -41,7 +44,7 @@ html,body{width:1080px;height:1920px}
     <div class="plus">UP TO <b>75%</b> LESS PROPANE</div>
   </div>
   <div class="glow"></div>
-  <div class="mid"><div class="pbox shadow" style="width:406px;height:660px;transform:translate(-30px,-40px)"><img src="../../../../assets/product-cutouts/18qt pwd on leg extensions.png" style="width:934px;left:-262px;top:-293px"></div></div>
+  <div class="mid"><div class="pbox shadow" style="width:369px;height:600px;transform:translate(-27px,-36px)"><img src="../../../../assets/product-cutouts/18qt pwd on leg extensions.png" style="width:849px;left:-238px;top:-266px"></div></div>
   <div class="bar">TUNNEL TUBES ON THE POT BOTTOM</div>
   <div class="chips">
     <div class="chip"><div class="k">4MM</div><div class="v">ALUMINUM</div></div>

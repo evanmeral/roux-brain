@@ -21,12 +21,15 @@ html,body{width:1080px;height:1080px}
 .bar{position:relative;z-index:5;flex:none;background:var(--accent);color:var(--ink);border-radius:9px;
   padding:16px;text-align:center;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:27px;
   letter-spacing:.06em;margin-bottom:16px}
+/* Round 3 correction (Evan, 2026-09-15): headline block above reverted to its ORIGINAL
+   size — it was never too small. Only the chip text below (the actual warranty/material
+   claim) needed to grow, and it's pushed well past round 2 here. */
 .chips{position:relative;z-index:5;flex:none;display:flex;gap:14px;margin-bottom:22px}
 .chip{flex:1;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.20);
   border-radius:9px;padding:18px 8px;text-align:center}
-.chip .k{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:35px;color:#fff;letter-spacing:-.02em}
-.chip .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:19px;color:var(--accent);
-  letter-spacing:.05em;margin-top:10px}
+.chip .k{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:56px;color:#fff;letter-spacing:-.02em}
+.chip .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:36px;color:var(--accent);
+  letter-spacing:.01em;margin-top:10px;line-height:1.18}
 .foot{position:relative;z-index:5;flex:none;display:flex;align-items:center;justify-content:space-between;
   padding-bottom:26px;font-family:'JetBrains Mono',monospace;font-weight:800;letter-spacing:.06em}
 .fb{font-size:22px;color:rgba(255,255,255,.62)}

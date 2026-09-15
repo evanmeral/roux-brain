@@ -17,6 +17,7 @@
 
 - **ROUX's call: hold. Do not cut, do not touch spend.** 3 days and $300 in Learning is noise, not signal. **Re-check Sept 18 (Day 7 / ~$700) or the moment Learning exits, whichever first.** *(Evan agreed to hold, 2026-09-14.)*
 - ⚠️ **`hpc-dark-evergreen` is taking 60% of spend and 62% of impressions** — Meta defaulting to the cheapest ad, not evidence against Performance pots. Open question: give the two 120 QT ads a floor or their own ad set.
+- **New creative for all 3 ads approved 2026-09-15 (Jay + Evan)** — bigger legible wording (Jay's ask), `hpc-dark-evergreen`'s "4mm aluminum" copy fix rolled in, crowd-math got a real headline. Staged in `library/`, ready to push in one click. **ROUX's call: don't swap yet — bundle it into the Sept 18 checkpoint** (or Learning exit, whichever first) rather than disrupt Learning twice. → [decision](decisions.md)
 - 🟢 Coalition and IntentWave stay read-only advisors on Meta. No setting or attribution changes during this test.
 
 ### 📡 Also live — `BPM_TOF_Manual` ($164/day) + `18qt-TOF-Prospecting` ($50/day CBO)
@@ -40,7 +41,7 @@ BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay
 | **Biljana** | Confirm her flows are switched to `HIGH15B`/`SMS25B`, then we deactivate `HIGH15`/`SMS25` | 2026-09-15 |
 | **Evan** | Build the 3 kits (code fix is done) | 2026-09-15 |
 | **Jay → Evan → Garrett** | Jay completes the dream-client-profile questionnaire (expected Sept 15, not yet received) | 2026-09-14 |
-| **Finn** | **Scheduled: re-pull IW Meta numbers + Shopify UTM match on Sept 18** (Day 7 / ~$700), or sooner if Learning exits | 2026-09-14 |
+| **Finn** | **Scheduled: re-pull IW Meta numbers + Shopify UTM match on Sept 18** (Day 7 / ~$700), or sooner if Learning exits — **Evan then decides continue/hold/cut and the creative swap together** | 2026-09-14 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
 
 ---
@@ -63,7 +64,7 @@ BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay
 ## ⛔ Landmines — do not ship these
 
 - **Warranty: read the live page and write from it.** Full 2-year on everything; limited 5-year residential, 120 QT or smaller. ⛔ **Never 5-year on the 160 QT, 80–140 Gallon, or any steamer.** ✅ **Exception in `SAFETY.md`:** a creative showing **a single qualifying pot** may say "5-YR RESIDENTIAL WARRANTY" without the size qualifier. `yeti-1x1.html` still hardcodes one at line 37 — Nova's job.
-- ⛔ **Pots are 4mm aluminum, never "cast."** The live `hpc-dark-evergreen` ad still says it — kept as-is to avoid a learning reset. At its next refresh, swap in the approved v2 from `library/`.
+- ⛔ **Pots are 4mm aluminum, never "cast."** The live `hpc-dark-evergreen` ad still says it — kept as-is to avoid a learning reset. Fixed version (2026-09-15, also bigger wording) staged in `library/`, ready to swap at the Sept 18 checkpoint.
 - ⛔ **No "Made in USA" until the pots are made in-house.** Use "Built in Louisiana" / "Hand-welded in Louisiana." Still stamped "MADE IN USA": `yeti-1x1.html` only (not live).
 - ⛔ **No sitewide % discount before November.** AOV $326.20, down 21.4% YoY.
 - ⛔ **No discount code on a bundle; no kit goes live while `HIGH15`/`SMS25` stay active.** Fix landed 2026-09-15 (see Now #1) — exempt by design: military, first responder, `USATHANKS`, `FANDF`, and now `SPROM` (UpPromote-owned, Evan's call to leave it). Historical stack: 33 of ~70 bundle orders Jun 1–Sep 10 had a discount, $2,000.20 *(Shopify, checked two ways)*.

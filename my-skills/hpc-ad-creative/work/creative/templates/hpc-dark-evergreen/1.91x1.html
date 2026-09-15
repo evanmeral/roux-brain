@@ -2,7 +2,7 @@
 <style>
 html,body{width:1200px;height:628px}
 .ad{padding:0;display:block}
-.stage{position:absolute;left:0;right:0;top:0;height:544px;display:flex}
+.stage{position:absolute;left:0;right:0;top:0;height:538px;display:flex}
 .left{position:relative;z-index:4;width:672px;flex:none;padding:44px 0 0 52px;
   display:flex;flex-direction:column;justify-content:center}
 .eyebrow{color:var(--accent);font-family:'JetBrains Mono',monospace;font-weight:800;
@@ -10,7 +10,7 @@ html,body{width:1200px;height:628px}
 .big{font-weight:900;font-size:124px;line-height:.82;letter-spacing:-.05em;margin-top:12px;
   background:var(--flame);-webkit-background-clip:text;background-clip:text;color:transparent}
 .sw{font-weight:900;font-size:40px;color:#fff;letter-spacing:.01em;margin-top:2px}
-.plus{display:inline-block;align-self:flex-start;margin-top:18px;background:rgba(255,255,255,.10);
+.plus{display:inline-block;align-self:flex-start;margin-top:16px;background:rgba(255,255,255,.10);
   border:2px solid rgba(255,255,255,.3);color:#fff;border-radius:8px;
   padding:9px 18px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:20px;letter-spacing:.04em}
 .plus b{color:var(--accent)}
@@ -18,13 +18,15 @@ html,body{width:1200px;height:628px}
 .glow{width:520px;height:250px;left:50%;top:50%;transform:translate(-50%,-38%);z-index:1}
 .shadow{position:relative;z-index:2;filter:drop-shadow(0 26px 38px rgba(0,0,0,.6))}
 .logo{width:104px;top:36px;right:44px}
-/* orange bar, near-black type — 7.6:1. Anchors the wide frame and carries the one claim
-   that has to survive at right-column size. */
-.bar{position:absolute;left:0;right:0;bottom:0;height:84px;background:var(--accent);
+/* Round 3 correction (Evan, 2026-09-15): eyebrow/headline/badge/logo/left column all back
+   to ORIGINAL size — only .b below (the "4MM ALUMINUM" claim) is pushed bigger; .a stays
+   put since it's the headline-tier claim, not the small text Evan flagged. Bar grew from
+   84->92px only to give the bigger .b room, not to blow up the whole strip. */
+.bar{position:absolute;left:0;right:0;bottom:0;height:92px;background:var(--accent);
   display:flex;align-items:center;justify-content:space-between;padding:0 52px;z-index:6;
-  font-family:'JetBrains Mono',monospace;font-weight:800;color:var(--ink);letter-spacing:.07em}
+  font-family:'JetBrains Mono',monospace;font-weight:800;color:var(--ink);letter-spacing:.06em}
 .bar .a{font-size:23px}
-.bar .b{font-size:18px;opacity:.72}
+.bar .b{font-size:28px;opacity:.85}
 </style></head>
 <body><div class="ad bg-dark">
   <img class="logo" src="../../../../assets/brand-refs/HPC-ShieldLogo-White.png">
