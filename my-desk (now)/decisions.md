@@ -11,6 +11,44 @@
 
 ## 2026-09
 
+**IW Lookalike creative refresh (bigger wording, all 3 ads) built and approved, but hold the live swap until Sept 18** —
+Evan + Jay approve, ROUX's call, 2026-09-15. Jay found the wording on `hpc-dark-evergreen`,
+`120qt-performance_rolling-boil`, and `120qt-powered_crowd-math` too small to read; Maya
+reworked all three (bigger supporting text, headlines/CTA left at original size, crowd-math
+got a real headline on "120 QT Powered Cooker," wordmark text dropped where the logo already
+carries it) and both approved the result. ROUX's read: don't swap into the still-Learning IW
+ad set now — bundle it into the already-scheduled Sept 18 re-check (or sooner if Learning
+exits first), same logic already applied to holding `hpc-dark-evergreen`'s "cast" copy fix.
+An ad-set-level creative edit risks resetting Learning; Sept 18 is already a touch-the-ad-set
+moment (continue/hold/cut), so do the creative swap and that call together, not twice.
+Approved creative promoted to `my-skills/hpc-ad-creative/work/creative/library/`, staged and
+ready to push in one click when Evan says go. → [BOARD.md](BOARD.md)
+
+**Video 7 (Fried Foods, Garrett shoot) seafood: fish and soft-shell crab, not shrimp** —
+Evan, 2026-09-15. Shrimp already carries Video 2 (60 QT boil demo); repeating it in Video
+7 would mean buying it twice for two different treatments. Fish and soft-shell crab are
+already on Video 3's ingredient list, so no added cost, and a whole soft-shell crab in the
+fryer fits the "weirdest stuff we had in the fryer" hook better than fish alone.
+
+**`HIGH15`/`SMS25` become `HIGH15B`/`SMS25B`, not reused under the same name** —
+Biljana, 2026-09-15. Her flows can send a renamed code, so redemption history stays clean
+instead of resetting. Old codes stay live until she confirms the flow switch, then get
+deactivated. → [bundle discount code fix](../my-work%20(outputs)/internal/2026-09-11-bundle-discount-code-fix.md)
+
+**`NICESPICE` (buy-one-get-one, 4 collections) deactivated outright, not recreated** —
+Jay via Evan, 2026-09-15. Old code, not worth the rebuild effort just to keep it inside
+the bundle rule.
+
+**`HPC10` and `Stale30` repointed to the general eligible-discounts collection, which
+also opens them to commercial products** — Jay via Evan, 2026-09-15. Both were previously
+restricted to non-commercial via "All Non Commercial Products." The more surgical fix
+(add a Bundle exclusion directly to that narrower collection instead) was flagged, but
+Jay accepted the wider scope since 10%/$30 off is immaterial against commercial pricing.
+
+**`SPROM` stays exactly as-is, unfixed against the bundle rule** — Evan, 2026-09-15.
+It's UpPromote/affiliate-app-owned; editing it Shopify-side risks fighting the app's own
+sync, and volume is low (9 uses). Pete's lane if it needs a real fix later.
+
 **Coalition's current actual Google Ads spend: not worth chasing further** — Evan, 2026-09-14.
 Finn had already come up empty on Gmail and a locked Basecamp; once Basecamp was opened, a
 second pass through its Message Board and Docs & Files also found no spend report — only
