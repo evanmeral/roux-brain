@@ -156,6 +156,7 @@ Atlas AI Brain/
 | /write-a-post | Write a social media post |
 | /write-an-ad | Write ad copy with hooks, headlines, and CTA |
 | /carousel | Build a multi-frame Instagram/Facebook swipe post |
+| /hpc-showroom-cards | Reprint, add, change or retire the showroom product cards: prices checked against Shopify, every card rendered and measured, then handed to Alexis to print |
 | /ask-for-review | Ask a happy customer for a review |
 
 ### Team & big jobs

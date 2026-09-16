@@ -6,7 +6,7 @@
 
 | Date | What | Source |
 |---|---|---|
-| 2026-09-18 | IW lookalike re-check (Day 7, ~$700), or sooner if Learning exits | board, Running · ROUX 2026-09-14 |
+| 2026-09-18 | IW lookalike checkpoint — `/hpc-campaign-checkpoint` (Day 7, ~$700), or sooner if Learning exits | board, Running · ROUX 2026-09-14 · skill built 2026-09-16 |
 | 2026-09-18 | Target: BFCM offer sent to Coalition (Connor) + Biljana, pending Jay's sign-off first | board, Now #3 · Evan 2026-09-16 |
 | 2026-09-21 | First automated `/content-week` run, 8:00 CT — if the Sept 21–27 plan is approved before then it becomes a confirmation; Monday's post needs the yes before 11:00 | Evan's ask 2026-09-16 · task `content-week-monday` |
 | 2026-09-22 | Garrett shoot, HPC shop — 8 videos, $2,500, locked | board, Now #2 · Evan 2026-09-14 |

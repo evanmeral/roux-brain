@@ -1,5 +1,9 @@
 # Showroom product cards
 
+> **The procedure — reprint, add, change, retire — is the `hpc-showroom-cards` skill**
+> (`my-skills/hpc-showroom-cards/instructions.md`, 2026-09-16). This file is the printing
+> guide and the rulebook it reads; keep the two consistent.
+
 Landscape print cards for the HPC showroom floor — one card per product, sat next to the
 product it describes. **Sized for four cards to a sheet.**
 

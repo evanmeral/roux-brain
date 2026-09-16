@@ -1,6 +1,6 @@
 Close the session properly. **The board is the deliverable — everything else is secondary.**
 
-Say "Wrapping up the session." then do all five steps. Do not skip a step because the
+Say "Wrapping up the session." then do all six steps. Do not skip a step because the
 session felt small; a short session still moves the board.
 
 ---
@@ -68,7 +68,19 @@ Every fact carries its source. A fact and a conclusion are never written the sam
 If Evan supplied a product fact mid-conversation, that is durable — file it, do not just
 use it once.
 
-## 5. Commit
+## 5. Name any repeatable procedure
+
+Ask one question before committing: **did this session run a procedure that has been done
+before, or build one that will run again?** A re-pull, an audit, a Shopify build, a print run,
+a plan that follows a fixed shape. If yes, and nothing in `my-skills/` covers it, say so in
+the report and propose the skill in one line: its name, what it would produce, what it would
+read. Evan decides. Do not build it inside /wrap; if he says yes, it is Nova's job next
+session and sits in Nova's queue on the board until it exists.
+
+A procedure that ran once and will not run again is not a skill. Do not propose one just to
+fill the line.
+
+## 6. Commit
 
 ```
 git add -A && git commit -m "<what changed this session>"
@@ -79,11 +91,12 @@ way back.
 
 ---
 
-## Then report, in five lines or fewer
+## Then report, in six lines or fewer
 
 - What moved on the board
 - What was decided
 - What is now waiting on Evan
+- Any repeatable procedure with no skill yet, and the skill you propose (or "none")
 - Anything you could **not** resolve and why
 
 If nothing was worth saving, say exactly that and still commit nothing. Do not invent
