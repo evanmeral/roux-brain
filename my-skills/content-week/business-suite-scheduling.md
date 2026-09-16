@@ -43,10 +43,11 @@ this says, use `find` to locate it by label, and if the UI fights back twice, st
 
 1. **Open the composer** for the right type (post / reel / story).
 2. **Placements:** confirm both Facebook and Instagram are selected, or only the one the plan says.
-3. **Media:** locate the file input with `find` ("file input" / "upload") and use the **`file_upload`
-   tool with its ref**. Never click the upload button — it opens a native dialog nobody can see. A
-   carousel is several files in one upload, in posting order (`_1-cover`, `_2-…`). Combined size
-   under 10 MB per call; a larger video is Evan's upload, and the plan says so.
+3. **Media:** there is no file input in the page until *Add photo/video* is clicked, and a plain click
+   opens a native dialog nobody can see. Paste `business-suite-helpers.js` first: it intercepts that
+   click, exposes the input as `atlas-upload-input`, and `file_upload` uses its ref. A carousel is
+   several files in one upload, in posting order (`_1-cover`, `_2-…`). Combined size under 10 MB per
+   call; a larger video is Evan's upload, and the plan says so.
 4. **Caption:** paste the Facebook caption. If the plan has a different Instagram caption, turn on
    *Customize post for Facebook and Instagram* and set each. Hashtags on Instagram only.
 5. **Boost: OFF.** Always. Boosting is paid media — Maya's lane and Evan's click in Ads Manager.
