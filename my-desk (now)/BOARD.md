@@ -1,4 +1,4 @@
-# Board — 2026-09-15 (Tuesday)
+# Board — 2026-09-16 (Wednesday)
 
 > The one page. What is live, what is next, who is blocking, what must not be shipped.
 > **Rewritten in place at every `/wrap` — never appended.** Hard cap: 120 lines.
@@ -58,6 +58,7 @@ BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay
 - ✅ **NOLA Home & Garden Show, Feb 19–21 2027: booked and paid.** No propane in the hall, so the demo is video with a running clock. ⛔ Louisiana Outdoor Expo and the Nov 11 Cater-Event Expo are a **no**.
 - **Shopify cleanup (a write, so Evan's or Jay's click):** Triple Jet compare-at = price · Scratch & Dent Performance variants carry the Powered cost · SKU `PW30-VLV075-TFR-B-SBI` on two products · two 18 QT variants with compare-at below price · 25 active products not on the Online Store. → [landed-cost pull](../my-work%20(outputs)/internal/reports/2026-09-10-landed-cost-by-variant.md)
 - **Nova's queue:** Atlas OS follow-ups — Safari "Add to Dock" · second-monitor layout when it arrives · remove the n8n agent and Venon from the connector list · ad naming/build process · missing-end-date checklist line · **`maya.md` still lists 1080×1350 as PAID** · `check-centering.py` hardcodes `BAND` · duplicate Performance pots listing · `Commercial Cookers On Sale` has 0 products but is linked from the homepage FAQ.
+- **Product image library refreshed (2026-09-16):** 146 new cutouts + 146 studio shots identified, renamed and copied into `hpc-ad-creative/assets/` (index updated, bboxes computed); the source folder went to the shop Dropbox. **Open, Evan's eye only:** the five `100-120qt - pwd` shots (100 vs 120 not readable from the frame) and the four `Commercial cooker` shots with no gallon size — rename when known. ⚠️ Adds ~312 MB to the repo; assets are tracked by policy, drop `studio-product-images/` from git if that's unwanted.
 
 ---
 
@@ -104,6 +105,7 @@ Source of truth → [metrics-and-goals.md](../my-files%20(knowledge)/hpc-referen
 ## 🧭 Map
 
 - **Atlas OS** — `localhost:4242`, live as a login item; both calendars connected; pulse is button-only · [spec + build log](../my-workflows%20(automations)/specs/2026-09-14-atlas-os-plan.md) · [README](../my-workflows%20(automations)/live/atlas-os/README.md) · the 6:30 pulse writes [today.md](today.md) · your notes land in [capture.md](capture.md) · dates in [key-dates.md](key-dates.md)
+- **Product images** — [asset index](../my-skills/hpc-ad-creative/assets/ASSET-INDEX.md) · [2026-09 rename map](../my-work%20(outputs)/internal/2026.09.15%20-%20HPC%20-%20Product%20Image%20Rename%20Map.md) (original filename → new name, with every size call explained)
 - **Playbooks** — [weekly rhythm](../my-workflows%20(automations)/playbooks/weekly-operating-rhythm.md) · [paid media](../my-workflows%20(automations)/playbooks/paid-media.md) · [content engine](../my-workflows%20(automations)/playbooks/content-engine.md) · [automation roadmap](../my-workflows%20(automations)/playbooks/automation-roadmap.md)
 - **The business** — [who we are](../my-business%20(context)/who-we-are.md) · [what we sell](../my-business%20(context)/what-we-sell.md) · [our team](../my-business%20(context)/our-team.md) · [how we sound](../my-business%20(context)/how-we-sound.md) · [metrics & goals](../my-files%20(knowledge)/hpc-reference/metrics-and-goals.md) · [seasonal calendar](../my-files%20(knowledge)/hpc-reference/seasonal-calendar.md) · [connected apps](../my-connections%20(MCP)/connected-apps.md)
 

@@ -11,6 +11,17 @@
 
 ## 2026-09
 
+**Product image naming: `product - config - shot`, sizes first, `100-120qt` when the size can't be read** —
+Evan's brief, Atlas's convention, 2026-09-15/16. Evan dropped 146 raw Photoroom shots (cutout +
+studio pair per shot) for the shop Dropbox and asked for every file named by what it actually is,
+unknowns left alone. Names follow the existing ad-creative library (`80qt - pwd`, `18qt - perf`)
+with a short angle tag so one product's shots sort together; the library's own `100-120qt`
+convention was reused for the shared-plate powered pots rather than guessing 100 or 120. Evan
+confirmed the three `30qt - perf` shots are 30s (2026-09-16) after a loose `30qt-perf-master.jpg`
+turned out to be a 60 QT — renamed, so the 30 labels stand. Copies live in
+`hpc-ad-creative/assets/product-cutouts/updated-2026-09/` and `assets/studio-product-images/`;
+the originals are in the shop Dropbox. → [rename map](../my-work%20(outputs)/internal/2026.09.15%20-%20HPC%20-%20Product%20Image%20Rename%20Map.md)
+
 **IW Lookalike creative refresh (bigger wording, all 3 ads) built and approved, but hold the live swap until Sept 18** —
 Evan + Jay approve, ROUX's call, 2026-09-15. Jay found the wording on `hpc-dark-evergreen`,
 `120qt-performance_rolling-boil`, and `120qt-powered_crowd-math` too small to read; Maya

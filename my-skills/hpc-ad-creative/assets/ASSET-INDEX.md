@@ -75,6 +75,33 @@ stills from video footage becomes routine, installing ffmpeg (`brew install ffmp
 
 → **Ad creative system: `work/creative/` — run `./build.sh` to render HTML templates to PNG.**
 
+### 2026-09 refresh — `assets/product-cutouts/updated-2026-09/` (added 2026-09-16)
+**146 new transparent PNGs, identified and renamed 2026-09-15.** Copied from Evan's "Updated product
+images" drop before it moved to the shop Dropbox. The original 39 above are untouched; these sit in
+their own subfolder so nothing in `_bboxes.json` or existing templates shifted. Bounds for all 146
+are in `_bboxes.json` keyed with the subfolder prefix, so `prod.py "updated-2026-09/18qt - pwd - lid on, front.png" 470` works as-is.
+
+**Naming:** `product - config - shot`, e.g. `80qt - pwd - lid on, three-quarter`. Multiple angles per
+product (lid on / lid off / top-down / burner underside / full kit with hose and regulator), which the
+original set mostly lacked. `100-120qt - pwd` = the 100/120 shared plate where the size could not be
+read from the frame — confirm before using in size-specific creative.
+
+**New subjects not in the original 39:** Crawcuzzi crawfish cleaner (6 angles) and its air blower ·
+100 QT steamer trays (single and set of three) · 28 QT steamer tray and burner base · 30 QT turkey
+fryer (perf and pwd) · 30 QT and 80 QT baskets alone · 18 QT basket + notched lid · 4-way fryer single
+basket · replacement jet burner tube · Boil Boss seasoning (Original and Hot, 4 lb) · Boil Boss TJB
+detail shots (control box, igniter, centering bracket) · 60 gal commercial cooker (14 angles) ·
+commercial flip-basket, burner underside and custom "SAINTS" lid · crawfish sorting table.
+
+Full original-filename map with the confidence notes on every size call:
+`my-work (outputs)/internal/2026.09.15 - HPC - Product Image Rename Map.md`.
+
+## Studio product shots — `assets/studio-product-images/` (added 2026-09-16)
+**146 jpg/png, the same 146 shots on a white studio background** (not transparent). Same base names
+as `updated-2026-09/`, so the cutout and the studio version of any shot are found by the same search.
+Use for product-grid, catalogue and white-background layouts where a cutout on a coloured stage is
+wrong; use the cutout for everything else.
+
 ## ⭐ Logo set — `assets/brand-refs/` (complete as of 2026-08-27)
 
 **The shield is the primary mark. Use it unless there's a reason not to.**
