@@ -17,7 +17,7 @@
 |---|---|---|---|---|---|---|---|
 | 1 | Mon 21 · 12:00 | Boil Math Monday | graphic 4:5 | ✅ | ✅ | `01_MON-0921_FEED_boil-math-pot-not-burner.png` | scheduled ✔ |
 | 2 | Tue 22 · 5:30 pm | Shop Floor Tuesday | raw photo 4:5 + story 9:16 | ✅ | ✅ | `02_TUE-0922_FEED_shop-floor-weld-RAW.png` · `02_TUE-0922_STORY_shop-floor-weld-RAW.png` | scheduled ✔ feed + story (swap the photo if a shoot-day one lands) |
-| 3 | Wed 23 · 12:00 | How-To Wednesday | carousel ×6 | ✅ | ✅ | `03_WED-0923_CAROUSEL_1-cover.png` … `_6-cta.png` | scheduled ✔ · ⚠️ **scheduled version says 160 QT on frame 3 and in the FB caption — swap pending** |
+| 3 | Wed 23 · 12:00 | How-To Wednesday | carousel ×6 | ✅ | ✅ | `03_WED-0923_CAROUSEL_1-cover.png` … `_6-cta.png` | scheduled ✔ · corrected 2026-09-16 (frame 3 + FB caption, 160 → 120 QT) |
 | 4 | Thu 24 · 5:30 pm | Word of Mouth Thursday | review card 4:5 | ✅ | ✅ | `04_THU-0924_FEED_review-kendall-18qt.png` | scheduled ✔ |
 | 5 | Fri 25 · 12:00 | Friday Fire | reel 9:16, 7 s, sound on | ✅ | ✅ | `05_FRI-0925_REEL_wings-18qt.MOV` | scheduled by Evan |
 | 6 | Sat 26 · 9:00 am | Game Day | story 9:16 | ✅ | ✅ | `06_SAT-0926_STORY_game-day.png` — or `…_game-day-KIT.png` `[IF KIT LIVE]` | scheduled by Evan (plain version) |
@@ -110,7 +110,7 @@ POWERED: tubes and burner welded to the pot as one piece. The complete rig. Set 
 
 PERFORMANCE: tubes only. It runs on the burner you already own, and it ships with the basket, the lid and the drain valve. 18 QT to 120 QT.
 
-Starting from scratch? Powered. Already got a burner you trust? Performance. Either way it gets to a rolling boil in about 7 minutes and burns up to 75% less propane doing it.
+Starting from scratch? Powered. Already got a burner you trust? Performance. Either way the tubes are on the pot, and either way it burns up to 75% less propane doing it.
 
 Still not sure which size? Comment how many people you usually feed and we'll tell you the pot.
 ```
@@ -129,7 +129,7 @@ Comment how many people you feed and we'll tell you the pot. 🔥
 #crawfishboil #seafoodboil #louisiana #outdoorcooking #builtinlouisiana #cajuncooking #highperformancecookers
 ```
 **Why this one:** the How pillar with the highest save value — it is the buyer's first real question, and it argues the Tier 1A Performance entry point without a discount.
-**Claims check:** Powered/Performance definitions, "works on any burner," basket + lid + drain valve included (Evan, 2026-09-08), 18 QT Performance fryer exists — from `what-we-sell.md`. ❌ **Missed on first pass:** it also said Powered runs to 160 QT. The 160 QT is commercial; consumer pots top out at 120 QT (Evan, 2026-09-16). Frame 3 re-rendered and the Facebook caption corrected here; the scheduled post still needs the swap. No Triple Jet fitment line (would need "60 QT and up"). No prices. Frame 3 says "about 7 min," frames 3–4 "up to 75%." Comment CTA replaces an offer.
+**Claims check:** Powered/Performance definitions, "works on any burner," basket + lid + drain valve included (Evan, 2026-09-08), 18 QT Performance fryer exists — from `what-we-sell.md`. ❌ **Missed on first pass:** it also said Powered runs to 160 QT. The 160 QT is commercial; consumer pots top out at 120 QT (Evan, 2026-09-16). Frame 3 re-rendered and the Facebook caption corrected. The caption's "rolling boil in about 7 minutes" line was also dropped, since the range starts at the 18 QT fryer (boiling and frying claims never share a line). **Both scheduled posts edited in Business Suite 2026-09-16 on Evan's go**, read back still scheduled Wed Sep 23 12:00 PM with no 160 anywhere. No Triple Jet fitment line (would need "60 QT and up"). No prices. Frame 3 says "about 7 min," frames 3–4 "up to 75%." Comment CTA replaces an offer.
 
 ### 4 · Thu Sep 24 · 5:30 pm · Word of Mouth Thursday
 ![](04_THU-0924_FEED_review-kendall-18qt.png)

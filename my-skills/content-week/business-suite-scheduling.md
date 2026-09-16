@@ -95,6 +95,13 @@ try *Create reel*, and give it one attempt before handing it to Evan.
 **Cost control:** read with scripts that return a few fields; screenshot only at scale 0.5 and only
 when a check fails for a reason the fields can't show. Two failures on the same step = stop and hand off.
 
+**Editing a scheduled post** (proven 2026-09-16, fixing the Wednesday carousel): Content → Scheduled →
+click the row's caption → *Post details* panel → the **⋯ Actions** button → **Edit post** (never *Publish
+now*, which sits next to it in the row dropdown). Facebook and Instagram are separate posts, edit each.
+The editor keeps the date. To replace one carousel frame without dragging, remove that frame and every
+frame after it, then upload the replacement plus the rest in order in one call. The footer button is still
+*Schedule*; saving lands on the Published tab, so always read back in Scheduled that it did not publish.
+
 ## Verify — never say "scheduled" without this
 
 **Content → Scheduled** (`/latest/posts/scheduled_posts`) is the cheapest read-back: one script

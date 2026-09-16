@@ -24,8 +24,8 @@
 
 BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay 18qt Demo` $43.04 (30). `18qt-TOF` is *Learning limited*. **BPM stays at $164; Jay's +25% is not applied.** Sept 11–14 actual: BPM $557.09 · 18qt $167.79 · IW $299.94 — pacing at the $314/day baseline *(Finn, 2026-09-14)*.
 
-### 🟢 Content week — the weekly FB/IG system, live 2026-09-16 · **Sept 21–27: all 6 scheduled · ⚠️ Wed carousel needs a fix**
-Up to six slots Mon–Sat, a ceiling not a quota (`my-skills/content-week/weekly-format.md`); Monday 8:00 task `content-week-monday` proposes, Evan approves, Atlas schedules in Business Suite via Chrome. **Scheduled and read back 2026-09-16:** Mon 12:00 · Tue 5:30 feed + story · Wed 12:00 carousel · Thu 5:30, each on FB + IG. Fri reel + Sat story scheduled by Evan by hand (his word). ⚠️ **Wed carousel frame 3 and its FB caption say "18 QT to 160 QT"** — consumer pots stop at 120 QT; corrected frame made, live swap pending. → [plan](../my-work%20(outputs)/content/social/2026-09-21-week/PLAN.md) · **Open, Evan's call:** keep scheduling through Chrome, schedule by hand from the pack, or have Nova build a Meta API scheduler.
+### 🟢 Content week — the weekly FB/IG system, live 2026-09-16 · **Sept 21–27: all 6 scheduled**
+Up to six slots Mon–Sat, a ceiling not a quota (`my-skills/content-week/weekly-format.md`); Monday 8:00 task `content-week-monday` proposes, Evan approves, Atlas schedules in Business Suite via Chrome. **Scheduled and read back 2026-09-16:** Mon 12:00 · Tue 5:30 feed + story · Wed 12:00 carousel · Thu 5:30, each on FB + IG. Fri reel + Sat story scheduled by Evan by hand (his word). Wed carousel corrected in Business Suite 2026-09-16 (frame 3 + FB caption said 160 QT; consumer pots stop at 120 QT) and read back. → [plan](../my-work%20(outputs)/content/social/2026-09-21-week/PLAN.md) · **Open, Evan's call:** keep scheduling through Chrome, schedule by hand from the pack, or have Nova build a Meta API scheduler.
 
 ---
 
@@ -50,7 +50,7 @@ Up to six slots Mon–Sat, a ceiling not a quota (`my-skills/content-week/weekly
 | **Finn** | **Sept 18: run `/hpc-campaign-checkpoint` on the IW lookalike** (Day 7 / ~$700), or sooner if Learning exits — Meta pull + Shopify tagged orders + the zero check, ROUX's call, then **Evan decides continue/hold/cut and the creative swap together** | 2026-09-14 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
 | **Jay** | Sign off on BFCM offer (10% sitewide, `BLKF26`, Nov 23–Dec 1) — Evan taking it to him as-is. **Evan's target: send to Coalition (Connor) and Biljana Fri Sept 18** — matches Connor's Basecamp due date | 2026-09-16 |
-| **Evan** | **Swap frame 3 + fix the FB caption line on the Wed Sep 23 carousel** before 12:00 PM Wed (said 160 QT) — or say the word and Atlas does it in Chrome · optional shop-floor photo swap by Tue 3 pm · kit live-or-not by Thu noon | 2026-09-16 |
+| **Evan** | Optional: a shop-floor phone photo to swap into Tuesday's post by Tue 3 pm · kit live-or-not by Thu noon (decides nothing already scheduled) | 2026-09-16 |
 
 ---
 
