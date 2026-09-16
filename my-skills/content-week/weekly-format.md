@@ -117,6 +117,13 @@ ones that bite on social:
 - Size ranges are claims too: consumer pots run 18 QT to 120 QT. The 160 QT is commercial and never goes in a consumer range (Evan, 2026-09-16).
 - Run `stop-slop` over every caption.
 
+**Visual checks on every graphic, before it goes in the plan** (creative rules 2, 7, 8, 9 in
+`my-skills/hpc-ad-creative/instructions.md`, Evan 2026-09-16):
+- The **product** is centred, measured with `check-centering.py` (`--band` for non-carousel layouts), not eyeballed from the image box.
+- **No gray box** around any cutout. Shadows go on `.pbox`, never on the img inside it.
+- **Right size for the slot:** feed and carousel 1080×1350, story and reel 1080×1920.
+- **Readable at ~380px wide**; only fine print goes small.
+
 ---
 
 ## Change log

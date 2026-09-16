@@ -90,10 +90,12 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
 
 ---
 
-## ⛔ Evan's seven creative rules — check every creative against all of them
+## ⛔ Evan's nine creative rules — check every creative against all of them
 
 1. **Logo always present** unless deliberately omitted for a reason.
-2. **Product centred** in whatever area it occupies. Use `prod.py`.
+2. **Product centred — the product itself, not the image file.** Use `prod.py`, then measure the render:
+   `python3 check-centering.py <png>`, adding `--band <y0> <y1>` (the product's vertical range) for any
+   layout that isn't a carousel product frame. Both numbers inside ±50px. *(Evan, 2026-09-02, repeated 2026-09-16.)*
 3. **Never "hard boil."** Use **rolling boil** or **raging boil**.
 4. **Never link fryers to crawfish.** A fryer is for fish, soft-shell crab, beignets, hushpuppies,
    fries, wings, okra. Be creative about genuine uses — **never invent one.**
@@ -114,6 +116,20 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
    (21px), swipe cue (23px), frame counter (26px), CTA footer (24px); the `cw-2026-09-21` templates'
    spec labels (17px), review credit line (20px) and story footers (23–25px). The Sept 21–27 week
    predates this rule and ships as approved.
+8. **No gray box around a product.** *(Evan, 2026-09-16.)* A faint rectangle around a cutout means
+   something is being cut off at the crop edge. The usual cause is a drop-shadow on `.pbox img`:
+   `.pbox` clips, so the shadow is sliced into a box. **Put the filter on `.pbox`**, never on the img
+   inside it (`carousel.py` and `brand.css` do this since 2026-09-16). Also confirm the cutout's edges
+   are fully transparent. Look at the render at full size before showing anyone; on 2026-09-16 moving
+   the shadow cut the box lines on the Powered frame from 71% to 3% of the bottom edge.
+9. **Right size and format for the placement, every time.** *(Evan, 2026-09-16.)* Check each PNG's
+   pixel size (`build.sh` prints it) against the slot it's going into before showing Evan:
+   | Placement | Size |
+   |---|---|
+   | Organic feed post, every carousel frame | 1080×1350 (4:5) |
+   | Story, reel (organic) | 1080×1920 (9:16) · type out of the top 250px and bottom 340px · video as MP4 |
+   | Paid static | 1:1 + 9:16 + 1.91:1 in one ad · never 4:5 |
+   A raw photo gets cropped to the slot, never stretched or letterboxed.
 
 ## Claims discipline (non-negotiable)
 

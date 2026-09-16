@@ -91,7 +91,9 @@ html,body{width:1080px;height:1350px}
 /* stage 150-650 · copy starts 694 — keeps the product clear of the type */
 .stage{position:absolute;left:0;right:0;top:150px;height:500px;z-index:4;
   display:flex;align-items:center;justify-content:center}
-.pbox img{filter:drop-shadow(0 40px 60px rgba(0,0,0,.55))}
+/* shadow on the .pbox, never on the img inside it: .pbox clips (overflow:hidden), so a shadow drawn
+   inside it gets cut at the crop edge and shows as a gray box outline (Evan, 2026-09-16) */
+.pbox{filter:drop-shadow(0 40px 60px rgba(0,0,0,.55))}
 .copy{position:absolute;left:70px;right:70px;top:694px;z-index:5;text-align:center}
 .eyebrow{color:var(--accent);font-size:26px;letter-spacing:.2em;display:block}
 .hl{color:#fff;font-size:72px;font-weight:900;letter-spacing:-.035em;line-height:1.0;margin-top:22px}

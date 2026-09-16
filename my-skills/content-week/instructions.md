@@ -99,6 +99,7 @@ python3 check-centering.py drafts/<name>    # ⛔ never skip on product frames; 
 - Eyebrow on every graphic: `SEGMENT · DAY MM.DD`. Shield logo top-left, white on dark.
 - Raw photo posts: crop only, no type, no logo. Story repost of a raw photo uses the blurred-cover
   band described in the ad-creative instructions, so a landscape photo is not cropped to a sliver.
+- **Pre-flight every graphic** against the visual checks in `weekly-format.md`: product centred (measured), no gray box around a cutout, right pixel size for the slot, readable at phone size.
 - **Look at every PNG** before it goes in the plan. Blank render, type touching product, a crop that
   misses the subject — obvious on sight, invisible in a log.
 - Video: check duration and dimensions (`qlmanage` for a poster frame; there is no ffmpeg). Over

@@ -56,6 +56,8 @@ body{font-family:'Poppins',system-ui,-apple-system,Helvetica,sans-serif;color:va
 /* --- product box: crops a cutout to its visible bounds so the PRODUCT centres,
    not the transparent canvas. Generate with `python3 prod.py <file> <width>`. --- */
 .pbox{position:relative;overflow:hidden;flex:none}
+/* ⛔ Never put a filter (drop-shadow, glow) on `.pbox img`. The box clips, so the shadow is cut at the
+   crop edge and reads as a gray box outline around the product (Evan, 2026-09-16). Put it on `.pbox`. */
 .pbox img{position:absolute;max-width:none}
 
 /* --- Americana palette: holiday/seasonal use (Labor Day, 4th of July, Memorial Day) --- */

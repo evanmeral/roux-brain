@@ -3,6 +3,10 @@
 
   python3 check-centering.py drafts/laborday-2026
   python3 check-centering.py drafts/foo/frame-02-fryer.png
+  python3 check-centering.py drafts/foo/review-4x5.png --band 860 1240   # any layout: the product's y-range
+
+Default band (200-660) fits the carousel product frame. For any other layout pass --band with the
+y-range the product occupies, starting below the logo and above any type, or the reading is wrong.
 
 Why this exists: prod.py and carousel.py centre the cutout's BOUNDING BOX. Cutouts
 with a lid leaning one way, a regulator hose sprawling, or a long handle will still
@@ -74,7 +78,13 @@ def measure(pngs, band=BAND):
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         sys.exit(__doc__)
-    target = sys.argv[1]
+    args = sys.argv[1:]
+    band = BAND
+    if "--band" in args:
+        i = args.index("--band")
+        band = (int(args[i + 1]), int(args[i + 2]))
+        del args[i:i + 3]
+    target = args[0]
     # cover and offer cards are photo-led with no cutout to centre — measuring them
     # is meaningless and produces false "nudge" advice. Skip unless asked explicitly.
     SKIP = ("cover", "cta", "offer")
@@ -92,7 +102,7 @@ if __name__ == "__main__":
     print("%-40s %8s %8s   %s" % ("frame", "bbox", "mass", "verdict"))
     print("-" * 76)
     worst = 0
-    for r in measure(pngs):
+    for r in measure(pngs, band):
         if r.get("error"):
             print("%-40s %s" % (r["f"][:40], r["error"]))
             continue

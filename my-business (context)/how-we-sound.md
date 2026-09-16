@@ -119,10 +119,10 @@ Shop the 7-minute boil · Get your rig before season · Build your setup · See 
 
 ---
 
-## ⛔ Creative rules — check every creative against all seven
+## ⛔ Creative rules — check every creative against all nine
 
 1. **Logo always present** unless deliberately omitted for a reason.
-2. **Product centred** in whatever area it occupies. Use `prod.py`.
+2. **Product centred: the product itself, not the image file** *(Evan, 2026-09-02, repeated 2026-09-16)*. Use `prod.py`, then measure the render with `check-centering.py`.
 3. **Never "hard boil."** Use **rolling boil** or **raging boil**.
 4. **Never link fryers to crawfish.** Match the use case to the product — a fryer is for fish, soft-shell crab, beignets, hushpuppies, fries, wings, okra. Be creative, **never invent** a use case.
 5. **Type centred in its container** — stats and labels must not touch borders or dividers.
@@ -130,6 +130,8 @@ Shop the 7-minute boil · Get your rig before season · Build your setup · See 
    Leave real clearance between the product stage and the copy block. *(Evan, 2026-09-02.)*
 6. **Ask Evan for images you need**, specifying the treatment: cutout, cutout with shadow, plain white background, studio shot, specific angle.
 7. **Readable on a phone, without squinting** *(Evan, 2026-09-16)*. On a 1080-wide frame: headlines 72px+, body 36px+, every other informative line 30px+. Only fine print (a "times vary" disclaimer, a patent line) goes smaller, 20px floor. Check the PNG at ~380px wide before showing it. Full rule: `my-skills/hpc-ad-creative/instructions.md`, rule 7.
+8. **No gray box around a product** *(Evan, 2026-09-16)*. A shadow inside the crop box gets sliced into a rectangle; put it on the box, not the image, and look at the render.
+9. **Right size and format for the placement** *(Evan, 2026-09-16)*. Feed post and carousel 1080×1350 · story and reel 1080×1920 · paid 1:1 + 9:16 + 1.91:1. Check every PNG's size before showing it.
 
 ## Claims discipline (non-negotiable)
 
