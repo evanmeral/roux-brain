@@ -32,6 +32,8 @@ BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay
 
 **2. Garrett shoot: Tuesday Sept 22, HPC shop. Final 8 videos for $2,500, locked — doc sent to Garrett.** Priority order: 30 QT turkey demo, **Stephen** (live by Oct 1) · 60 QT shrimp boil demo, **Stephen** (proves "boils in under 7 min," not 120 QT-exclusive) · 18 QT fry-it-all remake, Jay · 18 QT tailgate-bundle video, **Jay + Stephen** · "buy it once" on the **60 QT** · shop interviews, staff interviewed while actively working · **Fried Foods (Video 7): funnel cake + blooming onion + fish + soft-shell crab** (Evan, 2026-09-15 — shrimp stays boil-only in Video 2, no added cost since fish/crab are already on Video 3's list) · Monte Cristo, standalone. ⛔ A-Z process video dropped. **Standing rule: every video shows product physically in use, no talking heads.** Shopping list for Monday pull: turkey, shrimp/corn/potatoes, steak fingers/fries/okra/fish/wings/hushpuppy batter/beignet dough/soft-shell crab, blooming onion, funnel cake batter, Monte Cristo fixings — skip Oreos (dropped from the plan, an old doc line still listed it). → [shoot plan v4](../my-work%20(outputs)/internal/2026-09-14-garrett-shoot-plan-sept22.md) · [internal sheet](https://docs.google.com/spreadsheets/d/1ite_Mjxsw6qOj56J3zc1b9YUweJWaFf0qbL_elwiqz0/edit) · [Garrett doc](https://docs.google.com/document/d/1feCok40JDRI_QGeuMRgZHox_KbX22FB1GwqoCizzJCk/edit)
 
+**3. BFCM 2026 offer built, landing page drafted through v6 — Evan taking both to Jay for sign-off.** 10% off sitewide, code `BLKF26`, $100 min, Mon Nov 23–Tue Dec 1 2026, one offer covers both Black Friday and Cyber Monday (ROUX's proposal, grounded in 2025's actual BFCM data — core-window AOV $478 vs. $387 non-sale November baseline). Excludes bundle/kit products, gift cards, Scratch & Dent — new vs. 2025's zero-exclusion code. Landing page (hero, product cards, images) approved by Evan on photos/layout, 2026-09-16. Answers Coalition's Basecamp to-do (Connor Levy, due Sept 18); reply drafted, held until Jay approves. **Evan's target: Jay first, then Coalition + Biljana by Fri Sept 18.** → [v6](../my-work%20(outputs)/content/website/2026-09-16-bfcm-sitewide-draft-v6.html) · [decision](decisions.md)
+
 ---
 
 ## ⏳ Waiting on
@@ -43,6 +45,7 @@ BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay
 | **Jay → Evan → Garrett** | Jay completes the dream-client-profile questionnaire (expected Sept 15, not yet received) | 2026-09-14 |
 | **Finn** | **Scheduled: re-pull IW Meta numbers + Shopify UTM match on Sept 18** (Day 7 / ~$700), or sooner if Learning exits — **Evan then decides continue/hold/cut and the creative swap together** | 2026-09-14 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
+| **Jay** | Sign off on BFCM offer (10% sitewide, `BLKF26`, Nov 23–Dec 1) — Evan taking it to him as-is. **Evan's target: send to Coalition (Connor) and Biljana Fri Sept 18** — matches Connor's Basecamp due date | 2026-09-16 |
 
 ---
 
@@ -108,7 +111,6 @@ Source of truth → [metrics-and-goals.md](../my-files%20(knowledge)/hpc-referen
 
 - **Atlas OS** — `localhost:4242`, live as a login item; both calendars connected; pulse is button-only · [spec + build log](../my-workflows%20(automations)/specs/2026-09-14-atlas-os-plan.md) · [README](../my-workflows%20(automations)/live/atlas-os/README.md) · the 6:30 pulse writes [today.md](today.md) · your notes land in [capture.md](capture.md) · dates in [key-dates.md](key-dates.md)
 - **Product images** — [asset index](../my-skills/hpc-ad-creative/assets/ASSET-INDEX.md) · [2026-09 rename map](../my-work%20(outputs)/internal/2026.09.15%20-%20HPC%20-%20Product%20Image%20Rename%20Map.md) (original filename → new name, with every size call explained)
-- **BFCM 2026 sitewide sale page** — drafts v2–v4 in `my-work (outputs)/content/website/` (2026-09-16), built in a separate session; that session's wrap owns the status. Landmine still applies: no sitewide % discount before November.
 - **Playbooks** — [weekly rhythm](../my-workflows%20(automations)/playbooks/weekly-operating-rhythm.md) · [paid media](../my-workflows%20(automations)/playbooks/paid-media.md) · [content engine](../my-workflows%20(automations)/playbooks/content-engine.md) · [automation roadmap](../my-workflows%20(automations)/playbooks/automation-roadmap.md)
 - **The business** — [who we are](../my-business%20(context)/who-we-are.md) · [what we sell](../my-business%20(context)/what-we-sell.md) · [our team](../my-business%20(context)/our-team.md) · [how we sound](../my-business%20(context)/how-we-sound.md) · [metrics & goals](../my-files%20(knowledge)/hpc-reference/metrics-and-goals.md) · [seasonal calendar](../my-files%20(knowledge)/hpc-reference/seasonal-calendar.md) · [connected apps](../my-connections%20(MCP)/connected-apps.md)
 
