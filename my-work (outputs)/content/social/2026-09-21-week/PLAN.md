@@ -17,10 +17,10 @@
 |---|---|---|---|---|---|---|---|
 | 1 | Mon 21 · 12:00 | Boil Math Monday | graphic 4:5 | ✅ | ✅ | `01_MON-0921_FEED_boil-math-pot-not-burner.png` | scheduled ✔ |
 | 2 | Tue 22 · 5:30 pm | Shop Floor Tuesday | raw photo 4:5 + story 9:16 | ✅ | ✅ | `02_TUE-0922_FEED_shop-floor-weld-RAW.png` · `02_TUE-0922_STORY_shop-floor-weld-RAW.png` | scheduled ✔ feed + story (swap the photo if a shoot-day one lands) |
-| 3 | Wed 23 · 12:00 | How-To Wednesday | carousel ×6 | ✅ | ✅ | `03_WED-0923_CAROUSEL_1-cover.png` … `_6-cta.png` | scheduled ✔ |
+| 3 | Wed 23 · 12:00 | How-To Wednesday | carousel ×6 | ✅ | ✅ | `03_WED-0923_CAROUSEL_1-cover.png` … `_6-cta.png` | scheduled ✔ · ⚠️ **scheduled version says 160 QT on frame 3 and in the FB caption — swap pending** |
 | 4 | Thu 24 · 5:30 pm | Word of Mouth Thursday | review card 4:5 | ✅ | ✅ | `04_THU-0924_FEED_review-kendall-18qt.png` | scheduled ✔ |
-| 5 | Fri 25 · 12:00 | Friday Fire | reel 9:16, 7 s, sound on | ✅ | ✅ | `05_FRI-0925_REEL_wings-18qt.MOV` | **not scheduled** — Evan |
-| 6 | Sat 26 · 9:00 am | Game Day | story 9:16 | ✅ | ✅ | `06_SAT-0926_STORY_game-day.png` — or `…_game-day-KIT.png` `[IF KIT LIVE]` | **not scheduled** — Evan |
+| 5 | Fri 25 · 12:00 | Friday Fire | reel 9:16, 7 s, sound on | ✅ | ✅ | `05_FRI-0925_REEL_wings-18qt.MOV` | scheduled by Evan |
+| 6 | Sat 26 · 9:00 am | Game Day | story 9:16 | ✅ | ✅ | `06_SAT-0926_STORY_game-day.png` — or `…_game-day-KIT.png` `[IF KIT LIVE]` | scheduled by Evan (plain version) |
 
 Sunday dark. Pillar count: Proof 1½ · People 1½ · How 1 · Boil 2 · Offer 0 (or a passenger on 4, 5, 6 if the kit is live).
 
@@ -92,7 +92,7 @@ Camera crew's in the shop this week. More of these folks soon.
 ![](03_WED-0923_CAROUSEL_1-cover.png)
 1. `_1-cover` — steam photo, "Powered or Performance? Which one do you need." kicker HOW-TO WEDNESDAY · WED 09.23
 2. `_2-same-tubes` — flame through the tubes, "Same tubes on both."
-3. `_3-powered` — 120 QT Powered cutout, "Tubes and burner, welded as one." · rolling boil in about 7 min · up to 75% less propane · 18 QT to 160 QT
+3. `_3-powered` — 120 QT Powered cutout, "Tubes and burner, welded as one." · rolling boil in about 7 min · up to 75% less propane · 18 QT to 120 QT *(was "160 QT", corrected by Evan 2026-09-16)*
 4. `_4-performance` — 80 QT Performance cutout, "Tubes only. Bring your burner." · works on any burner · up to 75% less propane · 18 QT to 120 QT
 5. `_5-which-one` — "Starting from scratch? Powered. Already got a burner? Performance."
 6. `_6-cta` — basket-pour photo, "Still not sure? Comment how many people you feed and we'll tell you the pot."
@@ -106,7 +106,7 @@ Powered or Performance? The question we get most, answered in six swipes.
 
 Every pot we build comes two ways. Both have the same hand-welded tunnel tubes on the bottom, and the tubes are what make it fast.
 
-POWERED: tubes and burner welded to the pot as one piece. The complete rig. Set it down, hook up the propane, cook. 18 QT to 160 QT.
+POWERED: tubes and burner welded to the pot as one piece. The complete rig. Set it down, hook up the propane, cook. 18 QT to 120 QT.
 
 PERFORMANCE: tubes only. It runs on the burner you already own, and it ships with the basket, the lid and the drain valve. 18 QT to 120 QT.
 
@@ -129,7 +129,7 @@ Comment how many people you feed and we'll tell you the pot. 🔥
 #crawfishboil #seafoodboil #louisiana #outdoorcooking #builtinlouisiana #cajuncooking #highperformancecookers
 ```
 **Why this one:** the How pillar with the highest save value — it is the buyer's first real question, and it argues the Tier 1A Performance entry point without a discount.
-**Claims check:** Powered/Performance definitions, "works on any burner," basket + lid + drain valve included (Evan, 2026-09-08), 18 QT Performance fryer and 160 QT Powered both exist — all from `what-we-sell.md`. No Triple Jet fitment line (would need "60 QT and up"). No prices. Frame 3 says "about 7 min," frames 3–4 "up to 75%." Comment CTA replaces an offer.
+**Claims check:** Powered/Performance definitions, "works on any burner," basket + lid + drain valve included (Evan, 2026-09-08), 18 QT Performance fryer exists — from `what-we-sell.md`. ❌ **Missed on first pass:** it also said Powered runs to 160 QT. The 160 QT is commercial; consumer pots top out at 120 QT (Evan, 2026-09-16). Frame 3 re-rendered and the Facebook caption corrected here; the scheduled post still needs the swap. No Triple Jet fitment line (would need "60 QT and up"). No prices. Frame 3 says "about 7 min," frames 3–4 "up to 75%." Comment CTA replaces an offer.
 
 ### 4 · Thu Sep 24 · 5:30 pm · Word of Mouth Thursday
 ![](04_THU-0924_FEED_review-kendall-18qt.png)
@@ -219,7 +219,7 @@ What's going in the fryer this weekend?
 | 2 | Tue Sep 22, 5:30 PM · feed on Facebook + Instagram · story on Facebook + Instagram | ✔ feed: Scheduled list, both · ✔ story: Planner shows two more 5:30 PM items that day | Share-to-Facebook-Story switched off on every feed post (the separate story covers it) |
 | 3 | Wed Sep 23, 12:00 PM · Facebook + Instagram · 6 frames | ✔ Scheduled list, both · Instagram preview showed the cover as frame 1 | |
 | 4 | Thu Sep 24, 5:30 PM · Facebook + Instagram | ✔ Scheduled list, both | Kit lines left out (kit still a draft) |
-| 5 | **not scheduled** | — | The `.MOV` sat on "Processing media" for 4+ minutes with no error. **Evan:** upload `05_FRI-0925_REEL_wings-18qt.MOV` for Fri Sep 25, 12:00 PM with the captions above, or re-export as MP4 and Atlas retries. |
-| 6 | **not scheduled** | — | The story composer's date picker failed twice; stopped under the two-strikes rule. **Evan:** schedule `06_SAT-0926_STORY_game-day.png` as a story on both, Sat Sep 26, 9:00 AM. |
+| 5 | Fri Sep 25, 12:00 PM · scheduled **by Evan**, 2026-09-16 (his word, not read back) | — | The `.MOV` sat on "Processing media" for 4+ minutes with no error. **Evan:** upload `05_FRI-0925_REEL_wings-18qt.MOV` for Fri Sep 25, 12:00 PM with the captions above, or re-export as MP4 and Atlas retries. |
+| 6 | Sat Sep 26, 9:00 AM · scheduled **by Evan**, 2026-09-16 (his word, not read back) | — | The story composer's date picker failed twice; stopped under the two-strikes rule. **Evan:** schedule `06_SAT-0926_STORY_game-day.png` as a story on both, Sat Sep 26, 9:00 AM. |
 
 **Active times Business Suite suggested** (read 2026-09-16, Schedule panel): Facebook Sun 9/20, Mon 9/21, Tue 9/22 at 8:00 PM · Instagram Thu 9/17 8:00 PM, Fri 9/18 4:00 PM, Wed 9/23 9:00 AM. Evenings lead on both. One data point; revisit slot times after four weeks as rule 6 says.

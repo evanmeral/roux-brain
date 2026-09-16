@@ -114,6 +114,7 @@ ones that bite on social:
 - Pots are 4mm aluminum, never "cast." Never "Made in USA," never `#madeinusa`. "Built in Louisiana" / "hand-welded in Louisiana."
 - Never a competitor, never "Yeti." The idea, not the name.
 - Fitment lines are claims: legs fit three products, the Triple Jet pairs with 60 QT and up. Never wider.
+- Size ranges are claims too: consumer pots run 18 QT to 120 QT. The 160 QT is commercial and never goes in a consumer range (Evan, 2026-09-16).
 - Run `stop-slop` over every caption.
 
 ---
