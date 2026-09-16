@@ -52,7 +52,7 @@ When two systems disagree, this is the order:
 |---|---|---|
 | **Orders, revenue, product mix, customers** | **Shopify** | Connected 2026-09-01. Never use Meta's or Google's reported revenue |
 | **Inventory / stock levels** | **Digit** (once connected) | ⚠️ **Overrides Shopify on inventory.** Until Digit is live, treat Shopify stock counts as indicative only — do not raise stock issues off Shopify numbers alone |
-| **Overhead, landed cost, COGS** | **Digit** (expected) | This is what the CAC *ceiling* has been blocked on. See `my-desk (now)/BOARD.md` — the ceiling is PROVISIONAL until real overhead lands |
+| **Overhead, landed cost, COGS** | **Digit** (expected) | Overhead landed from Jay ($49,550/mo, 2026-09-09/10, per `my-desk (now)/BOARD.md`) — the ceiling is no longer provisional; current ceilings: `my-work (outputs)/internal/reports/2026-09-10-cac-ceilings-v3.md` (v3 + overhead method, 2026-09-10). Digit still expected for inventory and landed cost |
 | **Ad spend** | Meta / Google platforms | **Meta: official connector since 2026-09-11** (platform-reported). Google: no connector, CSV export only |
 | **Warranty, product claims** | `highperformancecookers.com/pages/warranty-information` | Verified 2026-09-01 |
 
@@ -85,7 +85,7 @@ Ahrefs · Notion · Figma · Box · Atlassian · Gong · Granola · Amplitude ·
 
 **What Shopify changes:** actual CAC and ROAS are now checkable against source of truth instead of platform-reported numbers. Order counts, new-vs-returning customers, real post-discount revenue net of refunds — all directly queryable. This was the single biggest hole in the brain and it is now closed on the revenue side.
 
-**What is still missing:** ad *spend*. CAC needs spend ÷ new customers; Shopify has the denominator, not the numerator. Until Meta and Google connect, spend still comes from CSV exports paired through the `hpc-scoreboard-report` skill.
+**What is still missing:** Google ad *spend*. CAC needs spend ÷ new customers; Shopify has the denominator, not the numerator. **Meta spend now comes from the official connector** (live 2026-09-11, top table); **Google is still CSV export only**, paired through the `hpc-scoreboard-report` skill.
 
 **Never invent or estimate a performance number.** Say "I don't have that number."
 
@@ -141,7 +141,7 @@ Connected by Evan 2026-09-01, but **no GitHub tools were reachable in that sessi
 ## Notes
 
 - **Google side is connected; Microsoft is not** — HPC runs on Google.
-- The `hpc-scoreboard-report` skill runs from **paired Meta + Google CSV exports**, not live connectors.
+- The `hpc-scoreboard-report` skill runs from **paired Meta + Google CSV exports**, not live connectors (Meta could now come from the connector, live 2026-09-11; the skill has not been updated — checked 2026-09-16, its `SKILL.md` still asks for two CSVs).
 - Raw exports live in `my-work (outputs)/internal/reports/raw/`.
 
 

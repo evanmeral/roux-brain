@@ -34,7 +34,7 @@ few seconds with.
 **HPC already has 18 tutorial videos and a full online manual** —
 `my-files (knowledge)/hpc-reference/imported-from-marketing-agent/tutorial-video-library.md`.
 
-Garrett is $500 a video, or $2,500 for eight. **Check the existing library first.** The
+Garrett is $500 a video, or $2,500 for eight *(Evan, confirmed 2026-09-16)*. **Check the existing library first.** The
 how-to material largely exists. Garrett's real value is lifestyle and brand film, not
 another instructional.
 

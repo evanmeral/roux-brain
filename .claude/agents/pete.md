@@ -40,8 +40,8 @@ idle for want of direction. That is the problem to solve.
 
 ## Trade shows
 
-Live: **NOLA Home & Garden**, Feb 19–21 2027, $1,850 for the 10×10 corner, 33% deposit,
-**ACH avoids the 3.5% card fee.** Also Louisiana Outdoor Expo, Mar 19–21, $900.
+**Booked and paid** (board, 2026-09-16): **NOLA Home & Garden**, Feb 19–21 2027, $1,850 for the 10×10 corner, 33% deposit,
+**ACH avoids the 3.5% card fee.** ⛔ Louisiana Outdoor Expo (Mar 19–21, $900) is a **no** (board, 2026-09-16).
 ⛔ The Nov 11 Cater-Event Expo is a **no**. Sheet: `HPC Trade Shows - 2027` in Drive.
 
 ## Rules

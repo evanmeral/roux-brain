@@ -1,0 +1,206 @@
+<!--
+  HERO LAB — not a deliverable. Internal testing harness only.
+  Holds three hero treatments (A/B/C) side by side, switchable with ?hero=a|b|c in the URL,
+  so each can be rendered and screenshotted independently at desktop and mobile widths.
+  Body/sections below the hero are unchanged from v2 — only the hero is under test.
+  The winner gets baked into 2026-09-16-bfcm-sitewide-draft-v3.html as a normal static hero.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BFCM Hero Lab</title>
+<style>
+  :root{
+    --white:      #FFFFFF;
+    --offwhite:   #F3F6F6;
+    --border:     #ECEFEF;
+    --ink:        #282727;
+    --muted:      #726F6C;
+    --accent:     #F69329;
+    --accent-dk:  #E13418;
+    --gold:       #FFA41C;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Poppins',sans-serif;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .btn{display:inline-block;text-decoration:none;font-weight:600;font-size:0.95rem;padding:14px 28px;border-radius:6px;transition:transform 0.15s ease;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-secondary{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.6);}
+  .btn-dark{background:var(--ink);color:#fff;}
+  .code-chip{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.1);border:1px dashed var(--accent);backdrop-filter:blur(3px);border-radius:8px;padding:12px 22px;margin-bottom:28px;}
+  .code-chip .label{font-size:0.72rem;color:#E7E4E1;text-transform:uppercase;letter-spacing:0.06em;}
+  .code-chip .code{font-family:'JetBrains Mono',monospace;font-size:1.3rem;font-weight:700;color:var(--accent);letter-spacing:0.04em;}
+  .lab-tag{position:fixed;top:8px;right:8px;z-index:999;background:#000;color:#0f0;font-family:monospace;font-size:11px;padding:4px 8px;border-radius:4px;}
+
+  /* ================= HERO A — golden-hour split editorial ================= */
+  .hero-a{background:var(--ink);color:#fff;}
+  .hero-a .grid{display:grid;grid-template-columns:1.1fr 1fr;align-items:stretch;min-height:620px;}
+  .hero-a .copy{display:flex;flex-direction:column;justify-content:center;padding:80px 48px 64px 24px;max-width:560px;margin-left:auto;}
+  .hero-a .eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.8rem;letter-spacing:0.08em;color:var(--gold);text-transform:uppercase;margin-bottom:14px;}
+  .hero-a h1{font-size:2.7rem;font-weight:800;line-height:1.1;margin:0 0 16px;}
+  .hero-a p.sub{font-size:1.05rem;color:#E7E4E1;margin:0 0 26px;line-height:1.5;}
+  .hero-a .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .hero-a .img-col{position:relative;overflow:hidden;}
+  .hero-a .img-col img{width:100%;height:100%;object-fit:cover;object-position:center 20%;}
+  .hero-a .img-col::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg, rgba(40,39,39,0.55) 0%, rgba(40,39,39,0) 18%);}
+  .hero-a .img-badge{
+    position:absolute;top:28px;right:28px;background:var(--accent-dk);color:#fff;
+    font-family:'JetBrains Mono',monospace;font-weight:700;font-size:0.8rem;letter-spacing:0.04em;
+    padding:10px 16px;border-radius:6px;text-transform:uppercase;box-shadow:0 8px 20px rgba(0,0,0,0.35);
+  }
+  @media (max-width:900px){
+    .hero-a .grid{grid-template-columns:1fr;min-height:0;}
+    .hero-a .copy{max-width:100%;margin:0;padding:56px 24px 32px;text-align:left;}
+    .hero-a h1{font-size:2rem;}
+    .hero-a .img-col{aspect-ratio:4/3;}
+    .hero-a .img-col::after{background:linear-gradient(180deg, rgba(40,39,39,0) 0%, rgba(40,39,39,0.25) 100%);}
+  }
+
+  /* ================= HERO B — doorbuster poster (no photo bg) ================= */
+  .hero-b{
+    position:relative;overflow:hidden;color:#fff;min-height:640px;display:flex;align-items:center;
+    background:
+      radial-gradient(circle at 82% 28%, rgba(246,147,41,0.28) 0%, rgba(246,147,41,0) 45%),
+      linear-gradient(135deg, #1c1b1b 0%, var(--ink) 45%, #3a1712 100%);
+    padding:96px 0 64px;
+  }
+  .hero-b .grid{display:grid;grid-template-columns:1.15fr 0.85fr;align-items:center;gap:24px;}
+  .hero-b .eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.8rem;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;margin-bottom:14px;}
+  .hero-b h1{font-size:3.4rem;font-weight:800;line-height:1.02;margin:0 0 18px;letter-spacing:-0.01em;}
+  .hero-b h1 em{font-style:normal;color:var(--accent);}
+  .hero-b p.sub{font-size:1.08rem;color:#E7E4E1;max-width:520px;margin:0 0 26px;line-height:1.5;}
+  .hero-b .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .hero-b .prod-wrap{position:relative;display:flex;justify-content:center;align-items:center;}
+  .hero-b .prod-card{
+    position:relative;background:#fff;border-radius:18px;padding:18px;
+    box-shadow:0 30px 60px rgba(0,0,0,0.45);max-width:340px;transform:rotate(-2deg);
+  }
+  .hero-b .prod-card img{border-radius:10px;}
+  .hero-b .badge-circle{
+    position:absolute;top:-18px;left:-18px;width:92px;height:92px;border-radius:50%;
+    background:var(--accent-dk);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    font-family:'JetBrains Mono',monospace;font-weight:800;text-align:center;line-height:1.05;
+    box-shadow:0 10px 20px rgba(0,0,0,0.35);transform:rotate(-2deg);
+  }
+  .hero-b .badge-circle .n{font-size:1.5rem;}
+  .hero-b .badge-circle .s{font-size:0.55rem;letter-spacing:0.03em;text-transform:uppercase;}
+  @media (max-width:900px){
+    .hero-b{min-height:0;padding:72px 0 40px;}
+    .hero-b .grid{grid-template-columns:1fr;gap:36px;text-align:left;}
+    .hero-b h1{font-size:2.1rem;}
+    .hero-b .prod-wrap{order:-1;}
+    .hero-b .prod-card{max-width:220px;margin:0 auto;}
+  }
+
+  /* ================= HERO C — full-bleed dramatic photo ================= */
+  .hero-c{
+    position:relative;min-height:640px;display:flex;align-items:flex-end;color:#fff;padding:120px 0 48px;
+    background-size:cover;background-position:center 42%;background-repeat:no-repeat;
+  }
+  .hero-c::before{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(180deg, rgba(24,20,18,0.25) 0%, rgba(24,20,18,0.45) 45%, rgba(20,14,12,0.94) 100%),
+      linear-gradient(90deg, rgba(24,14,10,0.35) 0%, rgba(24,14,10,0) 35%, rgba(24,14,10,0) 65%, rgba(24,14,10,0.35) 100%);
+  }
+  .hero-c .wrap{position:relative;z-index:1;width:100%;text-align:center;}
+  .hero-c .eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.8rem;letter-spacing:0.08em;color:var(--gold);text-transform:uppercase;margin-bottom:14px;}
+  .hero-c h1{font-size:3.1rem;font-weight:800;line-height:1.1;margin:0 0 16px;text-shadow:0 2px 18px rgba(0,0,0,0.45);}
+  .hero-c p.sub{font-size:1.12rem;color:#F1EFED;max-width:640px;margin:0 auto 28px;line-height:1.5;}
+  .hero-c .hero-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  @media (max-width:900px){
+    .hero-c{min-height:560px;padding-top:96px;}
+    .hero-c h1{font-size:2.2rem;}
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="lab-tag" id="labTag">hero=a</div>
+
+<!-- ============ HERO A ============ -->
+<section class="hero-a" data-hero="a">
+  <div class="grid">
+    <div class="copy">
+      <div class="eyebrow">Monday, Nov 23 &ndash; Tuesday, Dec 1, 2026</div>
+      <h1>One sale. The whole site. Ten percent off.</h1>
+      <p class="sub">Black Friday and Cyber Monday, rolled into one week — no mid-week reset, no games. Get the pot, get the burner, get whatever else your crew needs before the season turns.</p>
+      <div class="code-chip">
+        <span class="label mono">Code</span>
+        <span class="code">BLKF26</span>
+        <span class="label mono">$100 min. order</span>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#">Shop the Sale</a>
+        <a class="btn btn-secondary" href="#">See the Performance Line</a>
+      </div>
+    </div>
+    <div class="img-col">
+      <div class="img-badge">10% Off Sitewide</div>
+      <img src="./2026-09-16-bfcm-v3-images/hero-a-120qt-goldenhour.jpg" alt="120 QT Performance pot with steam rising, basket and lid beside it, backyard patio">
+    </div>
+  </div>
+</section>
+
+<!-- ============ HERO B ============ -->
+<section class="hero-b" data-hero="b" style="display:none;">
+  <div class="wrap">
+    <div class="grid">
+      <div class="copy">
+        <div class="eyebrow">Monday, Nov 23 &ndash; Tuesday, Dec 1, 2026</div>
+        <h1>One sale.<br>The whole site.<br><em>10% off.</em></h1>
+        <p class="sub">Black Friday and Cyber Monday, rolled into one week — no mid-week reset, no games. Get the pot, get the burner, get whatever else your crew needs before the season turns.</p>
+        <div class="code-chip">
+          <span class="label mono">Code</span>
+          <span class="code">BLKF26</span>
+          <span class="label mono">$100 min. order</span>
+        </div>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#">Shop the Sale</a>
+          <a class="btn btn-secondary" href="#">See the Performance Line</a>
+        </div>
+      </div>
+      <div class="prod-wrap">
+        <div class="prod-card">
+          <div class="badge-circle"><span class="n">10%</span><span class="s">Off</span></div>
+          <img src="./2026-09-16-bfcm-v3-images/hero-b-120qt-tjb-studio.jpg" alt="120 QT Performance pot on the Boil Boss Triple Jet Burner, lid off, hose and regulator attached">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HERO C ============ -->
+<section class="hero-c" data-hero="c" style="display:none; background-image:url('./2026-09-16-bfcm-v3-images/hero-c-combo-lakeside.jpg');">
+  <div class="wrap">
+    <div class="eyebrow">Monday, Nov 23 &ndash; Tuesday, Dec 1, 2026</div>
+    <h1>One sale. The whole site. Ten percent off.</h1>
+    <p class="sub">Black Friday and Cyber Monday, rolled into one week — no mid-week reset, no games. Get the pot, get the burner, get whatever else your crew needs before the season turns.</p>
+    <div class="code-chip">
+      <span class="label mono">Code</span>
+      <span class="code">BLKF26</span>
+      <span class="label mono">$100 min. order</span>
+    </div>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#">Shop the Sale</a>
+      <a class="btn btn-secondary" href="#">See the Performance Line</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  var p = new URLSearchParams(location.search);
+  var h = p.get('hero') || 'a';
+  document.querySelectorAll('[data-hero]').forEach(function(el){
+    el.style.display = (el.getAttribute('data-hero') === h) ? '' : 'none';
+  });
+  document.getElementById('labTag').textContent = 'hero=' + h;
+</script>
+</body>
+</html>

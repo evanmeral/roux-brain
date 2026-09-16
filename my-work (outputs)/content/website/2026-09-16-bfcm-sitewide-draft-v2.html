@@ -1,0 +1,677 @@
+<!--
+  DRAFT v2 — INTERNAL PREVIEW ONLY. NOT APPROVED. NOT PUBLISHED.
+  Built by Nova, 2026-09-16, for Evan to review before showing Jay.
+  Redo of 2026-09-15-bfcm-sitewide-draft.html — Evan called the first draft "too bland,"
+  asked for more pictures and more visual energy. This file is that redo. The first draft
+  is left in place, untouched, for side-by-side comparison.
+  Offer terms are unchanged and still ROUX's proposal, pending Jay's sign-off on the offer
+  itself. This is a local HTML mockup — not wired to Shopify, no live Add to Cart, not
+  pasted into any theme template. Nothing on this page is live or published.
+
+  Offer as briefed (unchanged from v1):
+    Mechanic: 10% off sitewide, code BLKF26, $100 minimum order
+    Window: Mon Nov 23 – Tue Dec 1, 2026 (one offer, covers BF + CM, no mid-week reset)
+    Hero products: Performance pot line (80/100/120 QT) + Boil Boss Triple Jet Burner
+    Also included: Powered pots and fryers (sitewide otherwise)
+    Excluded: bundle/kit products, gift cards, Scratch & Dent
+    Code is customer-entered, not auto-applied
+    Restrictions: no code stacking, while supplies last on backorder, no cash value
+
+  What changed from v1:
+    - New photography throughout. v1 used only flat product-on-white Shopify pack shots.
+      This pass pulls from the lifestyle library and the 2026-09-16 product-image refresh
+      (my-skills/hpc-ad-creative/assets/lifestyle/ and /assets/studio-product-images/),
+      neither of which had been used in any landing page draft before now.
+    - Full-bleed photo breaks between sections instead of text-only blocks.
+    - A bento-style hero product layout instead of four equal boxes.
+    - A texture/detail gallery strip for scroll rhythm.
+    - A scrolling offer ticker for a little motion (auto-pauses under prefers-reduced-motion).
+    - Section backgrounds alternate more aggressively for a less uniform scroll.
+  Everything else — copy discipline, links, footer, Prop 65 notice, no price/warranty/
+  competitor claims — is carried over unchanged from v1.
+
+  Product data (names, PDP links) same as v1, re-verified 2026-09-16 — all 24 outbound
+  links return HTTP 200 (curl-checked). No price shown anywhere on this page. No warranty
+  claim on this page at all — same reasoning as v1: out of scope for a promo banner, and
+  safest given the residential / 120 QT-or-smaller qualifier rule.
+
+  Image sourcing note: photography is pulled from local files (lifestyle library +
+  2026-09-16 studio refresh), resized/compressed for web and copied into
+  ./2026-09-16-bfcm-v2-images/ alongside this file, referenced by relative path. These are
+  NOT yet uploaded to Shopify's CDN — that happens at publish time, out of scope for this
+  draft. The 80/100/120 QT product cards still use the real, verified Shopify CDN pack-shot
+  images (same URLs as v1) so each card's thumbnail maps to exactly the product it links to.
+  Where a studio photo shows the 100 & 120 QT pots together on a shared plate (the new
+  refresh doesn't yet have separate solo shots for every size), it's captioned as the pair,
+  not claimed as one specific size — no image is used to imply a product it doesn't show.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BFCM 2026 Sitewide Sale — DRAFT v2</title>
+<style>
+  :root{
+    --white:      #FFFFFF;
+    --offwhite:   #F3F6F6;
+    --border:     #ECEFEF;
+    --ink:        #282727;
+    --muted:      #726F6C;
+    --accent:     #F69329;
+    --accent-dk:  #E13418;
+    --gold:       #FFA41C;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  .mono{font-family:'JetBrains Mono',monospace;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+  /* Draft banner — not part of the design system, exists only so this can never
+     be mistaken for a live page */
+  .draft-banner{
+    position:sticky; top:0; z-index:100;
+    background:var(--accent-dk); color:#fff;
+    text-align:center; padding:10px 16px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.78rem; letter-spacing:0.03em;
+    font-weight:700;
+  }
+
+  /* Promo top bar */
+  .topbar{
+    background:var(--accent); color:#fff; text-align:center;
+    padding:10px 16px; font-size:0.85rem; font-weight:600;
+    letter-spacing:0.01em;
+  }
+  .topbar .mono{font-size:0.78rem;}
+
+  /* Nav */
+  nav{
+    position:sticky; top:34px; z-index:90;
+    background:rgba(255,255,255,0.94);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--border);
+  }
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;}
+  nav img.logo{height:52px;}
+  nav .nav-cta{
+    background:var(--accent); color:#fff; text-decoration:none;
+    font-weight:600; font-size:0.9rem; padding:11px 22px; border-radius:6px;
+    white-space:nowrap;
+  }
+
+  /* ============ HERO — full-bleed photo ============ */
+  .hero{
+    position:relative;
+    min-height:640px;
+    display:flex; align-items:flex-end;
+    background:
+      linear-gradient(180deg, rgba(40,39,39,0.35) 0%, rgba(40,39,39,0.55) 55%, rgba(40,39,39,0.92) 100%),
+      url('./2026-09-16-bfcm-v2-images/hero-steam.jpg') center 38% / cover no-repeat;
+    color:#fff;
+    padding:120px 0 48px;
+  }
+  .hero .wrap{width:100%; text-align:center;}
+  .hero .eyebrow{
+    font-family:'JetBrains Mono',monospace; font-size:0.8rem;
+    letter-spacing:0.08em; color:var(--gold); text-transform:uppercase;
+    margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:3.1rem; font-weight:800; line-height:1.1; margin:0 0 16px;
+    text-shadow:0 2px 18px rgba(0,0,0,0.35);
+  }
+  .hero p.sub{
+    font-size:1.12rem; color:#F1EFED; max-width:640px; margin:0 auto 28px;
+    line-height:1.5;
+  }
+  .code-chip{
+    display:inline-flex; align-items:center; gap:10px;
+    background:rgba(255,255,255,0.1); border:1px dashed var(--accent);
+    backdrop-filter:blur(3px);
+    border-radius:8px; padding:12px 22px; margin-bottom:28px;
+  }
+  .code-chip .label{font-size:0.72rem; color:#E7E4E1; text-transform:uppercase; letter-spacing:0.06em;}
+  .code-chip .code{
+    font-family:'JetBrains Mono',monospace; font-size:1.3rem; font-weight:700;
+    color:var(--accent); letter-spacing:0.04em;
+  }
+  .hero-ctas{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+  .btn{
+    display:inline-block; text-decoration:none; font-weight:600; font-size:0.95rem;
+    padding:14px 28px; border-radius:6px; transition:transform 0.15s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--accent); color:#fff;}
+  .btn-secondary{background:transparent; color:#fff; border:1.5px solid rgba(255,255,255,0.6);}
+  .btn-dark{background:var(--ink); color:#fff;}
+
+  /* ============ Ticker ============ */
+  .ticker{
+    background:var(--ink); color:#fff; overflow:hidden;
+    white-space:nowrap; border-bottom:3px solid var(--accent);
+  }
+  .ticker-track{
+    display:inline-flex; align-items:center;
+    animation:ticker-scroll 26s linear infinite;
+    padding:11px 0;
+  }
+  .ticker-track span{
+    font-family:'JetBrains Mono',monospace; font-size:0.78rem;
+    letter-spacing:0.05em; text-transform:uppercase;
+    padding:0 28px; color:#E7E4E1;
+  }
+  .ticker-track span b{color:var(--accent); font-weight:700;}
+  @keyframes ticker-scroll{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-50%);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .ticker-track{animation:none;}
+  }
+
+  /* Badge strip */
+  .badges{background:var(--offwhite); border-bottom:1px solid var(--border);}
+  .badge-row{
+    display:grid; grid-template-columns:repeat(5,1fr); gap:20px;
+    padding:32px 0;
+  }
+  .badge{text-align:center;}
+  .badge-num{font-size:1.35rem; font-weight:800; color:var(--ink);}
+  .badge-cap{
+    font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--muted);
+    text-transform:uppercase; letter-spacing:0.05em; margin-top:4px;
+  }
+
+  /* ============ Full-bleed image break ============ */
+  .breakout{
+    position:relative;
+    min-height:440px;
+    display:flex; align-items:center;
+    background-size:cover; background-position:center;
+    color:#fff;
+  }
+  .breakout::before{
+    content:"";
+    position:absolute; inset:0;
+    background:linear-gradient(90deg, rgba(40,39,39,0.86) 0%, rgba(40,39,39,0.35) 55%, rgba(40,39,39,0.1) 100%);
+  }
+  .breakout.rtl::before{
+    background:linear-gradient(270deg, rgba(40,39,39,0.86) 0%, rgba(40,39,39,0.35) 55%, rgba(40,39,39,0.1) 100%);
+  }
+  .breakout .wrap{position:relative; z-index:1;}
+  .breakout-inner{max-width:480px;}
+  .breakout.rtl .breakout-inner{margin-left:auto;}
+  .breakout .eyebrow{
+    font-family:'JetBrains Mono',monospace; font-size:0.75rem; color:var(--gold);
+    text-transform:uppercase; letter-spacing:0.06em; margin-bottom:12px;
+  }
+  .breakout h2{font-size:2.1rem; font-weight:800; line-height:1.18; margin:0 0 14px;}
+  .breakout p{font-size:1rem; line-height:1.55; color:#F1EFED; margin:0 0 22px;}
+  .breakout-crawfish{background-image:url('./2026-09-16-bfcm-v2-images/crawfish-pour.jpg');}
+  .breakout-welder{background-image:url('./2026-09-16-bfcm-v2-images/welder.jpg');}
+
+  /* Section shell */
+  section.block{padding:64px 0;}
+  section.block.alt{background:var(--offwhite);}
+  section.block.tight{padding:48px 0;}
+  .section-head{text-align:center; max-width:640px; margin:0 auto 36px;}
+  .section-head.left{margin:0 0 32px; text-align:left; max-width:none;}
+  .section-head .eyebrow{
+    font-family:'JetBrains Mono',monospace; font-size:0.75rem; color:var(--accent-dk);
+    text-transform:uppercase; letter-spacing:0.06em; margin-bottom:10px;
+  }
+  .section-head h2{font-size:1.95rem; font-weight:800; margin:0 0 12px; line-height:1.2;}
+  .section-head p{color:var(--muted); font-size:1rem; line-height:1.55; margin:0;}
+
+  /* ============ Bento hero-products layout ============ */
+  .bento{display:grid; grid-template-columns:1fr; gap:20px;}
+  .family-tile{
+    position:relative; border-radius:14px; overflow:hidden;
+    min-height:380px; display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-end;
+    background:
+      linear-gradient(180deg, rgba(40,39,39,0.35) 0%, rgba(40,39,39,0.4) 45%, rgba(40,39,39,0.92) 100%),
+      url('./2026-09-16-bfcm-v2-images/100-120qt-perf-lidoff.jpg') center 20% / cover no-repeat;
+    color:#fff; padding:36px;
+  }
+  .family-tile .tag{
+    font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--gold);
+    text-transform:uppercase; letter-spacing:0.06em; margin-bottom:8px;
+    text-shadow:0 1px 8px rgba(0,0,0,0.5);
+  }
+  .family-tile h3{font-size:1.7rem; font-weight:800; margin:0 0 10px; line-height:1.2; text-shadow:0 2px 12px rgba(0,0,0,0.45);}
+  .family-tile p{font-size:0.95rem; color:#E7E4E1; max-width:460px; margin:0 0 20px; line-height:1.5; text-shadow:0 1px 8px rgba(0,0,0,0.5);}
+  .pill-row{display:flex; gap:10px; flex-wrap:wrap;}
+  .pill{
+    background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.5);
+    color:#fff; text-decoration:none; font-size:0.85rem; font-weight:600;
+    padding:9px 18px; border-radius:30px; transition:background 0.15s ease;
+    backdrop-filter:blur(2px);
+  }
+  .pill:hover{background:var(--accent); border-color:var(--accent);}
+
+  .duo{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+  .pcard{
+    background:#fff; border:1px solid var(--border); border-radius:14px;
+    overflow:hidden; text-decoration:none; color:var(--ink);
+    display:flex; flex-direction:column;
+    transition:box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .pcard:hover{box-shadow:0 14px 30px rgba(40,39,39,0.12); transform:translateY(-3px);}
+  .pcard .img-wrap{background:var(--offwhite); aspect-ratio:4/3; overflow:hidden;}
+  .pcard .img-wrap img{width:100%; height:100%; object-fit:cover;}
+  .pcard.on-white .img-wrap{padding:22px; aspect-ratio:1/1; display:flex; align-items:center; justify-content:center;}
+  .pcard.on-white .img-wrap img{object-fit:contain; height:100%; width:auto;}
+  .pcard .pbody{padding:20px 22px 24px; flex:1; display:flex; flex-direction:column;}
+  .pcard .tag{
+    font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--accent-dk);
+    text-transform:uppercase; letter-spacing:0.05em; margin-bottom:6px;
+  }
+  .pcard h3{font-size:1.15rem; font-weight:700; margin:0 0 8px; line-height:1.3;}
+  .pcard p{font-size:0.88rem; color:var(--muted); line-height:1.45; margin:0 0 14px; flex:1;}
+  .pcard .shop-link{font-size:0.85rem; font-weight:600; color:var(--accent-dk);}
+
+  /* Small solo product grid (80/100/120 individually via real Shopify shots) */
+  .shop-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:20px;}
+
+  /* Also-included tiles — now photographic */
+  .tile-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px;}
+  .ptile{
+    position:relative; border-radius:14px; overflow:hidden;
+    min-height:300px; display:flex; align-items:flex-end;
+    text-decoration:none; color:#fff;
+    background-size:cover; background-position:center;
+  }
+  .ptile::before{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(40,39,39,0.02) 0%, rgba(40,39,39,0.85) 100%);
+  }
+  .ptile .ptile-body{position:relative; z-index:1; padding:26px;}
+  .ptile h3{font-size:1.25rem; font-weight:800; margin:0 0 6px;}
+  .ptile p{font-size:0.88rem; color:#E7E4E1; margin:0 0 12px; line-height:1.5; max-width:320px;}
+  .ptile .shop-link{font-size:0.85rem; font-weight:700; color:var(--gold);}
+  .ptile-powered{background-image:url('./2026-09-16-bfcm-v2-images/pwd-full-kit.jpg');}
+  .ptile-fryers{background-image:url('./2026-09-16-bfcm-v2-images/frying-wings.jpg'); background-position:center 30%;}
+  .everything-line{
+    text-align:center; margin-top:28px; padding-top:24px; border-top:1px solid var(--border);
+  }
+  .everything-line p{color:var(--muted); font-size:0.95rem; margin:0 0 14px;}
+
+  /* ============ Detail/texture gallery ============ */
+  .gallery{
+    display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:150px; gap:12px;
+  }
+  .gallery img{width:100%; height:100%; object-fit:cover; border-radius:10px;}
+  .gallery .g1{grid-row:span 2;}
+  .gallery .g2{grid-row:span 1;}
+  .gallery .g3{grid-row:span 1;}
+  .gallery .g4{grid-row:span 2;}
+
+  /* How it works */
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .step{text-align:center; padding:0 12px;}
+  .step .num{
+    width:38px; height:38px; border-radius:50%; background:var(--accent); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-weight:700;
+    margin:0 auto 14px; font-family:'JetBrains Mono',monospace;
+  }
+  .step h4{font-size:1rem; font-weight:700; margin:0 0 8px;}
+  .step p{font-size:0.88rem; color:var(--muted); line-height:1.5; margin:0;}
+
+  /* Fine print */
+  .fine-print{
+    font-size:0.78rem; color:var(--muted); line-height:1.6;
+    border-top:1px solid var(--border); padding-top:20px;
+  }
+  .fine-print strong{color:var(--ink);}
+
+  /* Footer (per design system) */
+  footer{background:var(--ink); color:#D8D6D4; padding:48px 0 24px; margin-top:40px;}
+  .footer-cols{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:32px;}
+  .footer-brand img{height:40px; margin-bottom:14px; filter:brightness(0) invert(1);}
+  .footer-brand p{font-size:0.85rem; line-height:1.6; margin:0 0 6px; color:#B8B5B2;}
+  .footer-brand a{color:#B8B5B2;}
+  .footer-col h4{font-size:0.85rem; text-transform:uppercase; letter-spacing:0.04em; color:#fff; margin:0 0 14px;}
+  .footer-col ul{list-style:none; margin:0; padding:0;}
+  .footer-col li{margin-bottom:9px;}
+  .footer-col a{font-size:0.85rem; color:#B8B5B2; text-decoration:none;}
+  .footer-col a:hover{color:#fff;}
+  .footer-bottom{
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+    border-top:1px solid #3d3b3a; margin-top:32px; padding-top:20px;
+    font-size:0.78rem; color:#8f8c89;
+  }
+  .footer-bottom a{color:#8f8c89; text-decoration:none;}
+
+  @media (max-width:900px){
+    .duo{grid-template-columns:1fr;}
+    .shop-grid{grid-template-columns:1fr 1fr;}
+    .tile-grid{grid-template-columns:1fr;}
+    .gallery{grid-template-columns:repeat(2,1fr); grid-auto-rows:170px;}
+    .gallery .g1, .gallery .g4{grid-row:span 1;}
+    .steps{grid-template-columns:1fr; gap:28px;}
+    .badge-row{grid-template-columns:repeat(2,1fr); row-gap:24px;}
+    .footer-cols{grid-template-columns:1fr 1fr;}
+    .hero h1{font-size:2.2rem;}
+    .hero{min-height:560px; padding-top:96px;}
+    .breakout{min-height:380px;}
+    .breakout-inner{max-width:100%;}
+    .breakout.rtl .breakout-inner{margin-left:0;}
+    .breakout::before, .breakout.rtl::before{
+      background:linear-gradient(180deg, rgba(40,39,39,0.35) 0%, rgba(40,39,39,0.9) 75%);
+    }
+    .family-tile{min-height:320px; padding:26px;}
+    .family-tile h3{font-size:1.4rem;}
+  }
+  @media (max-width:520px){
+    .shop-grid{grid-template-columns:1fr;}
+    .footer-cols{grid-template-columns:1fr;}
+    .gallery{grid-template-columns:repeat(2,1fr); grid-auto-rows:120px;}
+    .hero h1{font-size:1.85rem;}
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="draft-banner">
+  INTERNAL DRAFT — OFFER PENDING JAY'S SIGN-OFF — NOT PUBLISHED, NOT FOR CUSTOMER EYES
+</div>
+
+<div class="topbar">
+  BLACK FRIDAY THROUGH CYBER MONDAY <span class="mono">·</span>
+  10% OFF SITEWIDE <span class="mono">·</span>
+  CODE <span class="mono">BLKF26</span>
+</div>
+
+<nav>
+  <div class="wrap">
+    <img class="logo" src="https://cdn.shopify.com/s/files/1/0505/0394/2320/files/HPC_Logo_90146df7-877f-4c95-b086-309207755e00.png?v=1785420354" alt="High Performance Cookers">
+    <a class="nav-cta" href="https://highperformancecookers.com/collections/all" target="_blank" rel="noopener">Shop the Sale</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Monday, Nov 23 &ndash; Tuesday, Dec 1, 2026</div>
+    <h1>One sale. The whole site. Ten percent off.</h1>
+    <p class="sub">
+      Black Friday and Cyber Monday, rolled into one week — no mid-week reset, no games.
+      Get the pot, get the burner, get whatever else your crew needs before the season turns.
+    </p>
+    <div class="code-chip">
+      <span class="label mono">Code</span>
+      <span class="code">BLKF26</span>
+      <span class="label mono">$100 min. order</span>
+    </div>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://highperformancecookers.com/collections/all" target="_blank" rel="noopener">Shop the Sale</a>
+      <a class="btn btn-secondary" href="#hero-products">See the Performance Line</a>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>10% OFF SITEWIDE</span><span>CODE <b>BLKF26</b></span><span>$100 MINIMUM ORDER</span><span>NOV 23 &ndash; DEC 1, 2026</span>
+    <span>10% OFF SITEWIDE</span><span>CODE <b>BLKF26</b></span><span>$100 MINIMUM ORDER</span><span>NOV 23 &ndash; DEC 1, 2026</span>
+    <span>10% OFF SITEWIDE</span><span>CODE <b>BLKF26</b></span><span>$100 MINIMUM ORDER</span><span>NOV 23 &ndash; DEC 1, 2026</span>
+    <span>10% OFF SITEWIDE</span><span>CODE <b>BLKF26</b></span><span>$100 MINIMUM ORDER</span><span>NOV 23 &ndash; DEC 1, 2026</span>
+  </div>
+</div>
+
+<div class="badges">
+  <div class="wrap badge-row">
+    <div class="badge">
+      <div class="badge-num">10%</div>
+      <div class="badge-cap">Off Sitewide</div>
+    </div>
+    <div class="badge">
+      <div class="badge-num">BLKF26</div>
+      <div class="badge-cap">Enter at Checkout</div>
+    </div>
+    <div class="badge">
+      <div class="badge-num">$100</div>
+      <div class="badge-cap">Order Minimum</div>
+    </div>
+    <div class="badge">
+      <div class="badge-num">1 Week</div>
+      <div class="badge-cap">Nov 23 &ndash; Dec 1</div>
+    </div>
+    <div class="badge">
+      <div class="badge-num">Louisiana</div>
+      <div class="badge-cap">Hand-Welded Here</div>
+    </div>
+  </div>
+</div>
+
+<!-- Full-bleed photo break -->
+<div class="breakout breakout-crawfish">
+  <div class="wrap">
+    <div class="breakout-inner">
+      <div class="eyebrow">Feeds The Whole Crew</div>
+      <h2>Two sacks. Forty people. One pot.</h2>
+      <p>Whatever's going in the pot this season, the rig that gets you there is 10% off through Cyber Monday.</p>
+      <a class="btn btn-primary" href="#hero-products">See the Performance Line</a>
+    </div>
+  </div>
+</div>
+
+<section class="block" id="hero-products">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The Main Event</div>
+      <h2>Performance pots and the Triple Jet Burner</h2>
+      <p>
+        Tunnel Tube technology on the pot, without the weight of a welded burner. Pair any size
+        with the Boil Boss Triple Jet and you've got a full rig for less than buying the welded
+        version outright. All three sizes, plus the burner, are 10% off through Cyber Monday.
+      </p>
+    </div>
+
+    <div class="bento">
+      <div class="family-tile">
+        <div class="tag">Performance Line</div>
+        <h3>80, 100 &amp; 120 QT — same Tunnel Tube bottom, three sizes for three crowds</h3>
+        <p>Works on any burner, ours preferred. Pick your size, all three are 10% off through Cyber Monday.</p>
+        <div class="pill-row">
+          <a class="pill" href="https://highperformancecookers.com/products/80-qt-performance-seafood-pot" target="_blank" rel="noopener">Shop the 80 QT &rarr;</a>
+          <a class="pill" href="https://highperformancecookers.com/products/100-qt-stock-pot" target="_blank" rel="noopener">Shop the 100 QT &rarr;</a>
+          <a class="pill" href="https://highperformancecookers.com/products/120-qt-performance-seafood-pot" target="_blank" rel="noopener">Shop the 120 QT &rarr;</a>
+        </div>
+      </div>
+
+      <div class="duo">
+        <a class="pcard" href="https://highperformancecookers.com/products/80-qt-performance-seafood-pot" target="_blank" rel="noopener">
+          <div class="img-wrap"><img src="./2026-09-16-bfcm-v2-images/80qt-perf-threequarter.jpg" alt="80 QT Performance Seafood Pot, lid on, three-quarter angle"></div>
+          <div class="pbody">
+            <div class="tag">Performance Line</div>
+            <h3>80 QT Performance Seafood Pot</h3>
+            <p>The starting point for the line — Tunnel Tube bottom, basket, lid and drain valve, ready for your own burner.</p>
+            <span class="shop-link">Shop the 80 QT &rarr;</span>
+          </div>
+        </a>
+        <a class="pcard" href="https://highperformancecookers.com/products/boil-boss-triple-jet-burner" target="_blank" rel="noopener">
+          <div class="img-wrap"><img src="./2026-09-16-bfcm-v2-images/tjb-hose-regulator.jpg" alt="Boil Boss Triple Jet Burner with hose and regulator"></div>
+          <div class="pbody">
+            <div class="tag">Boil Boss</div>
+            <h3>Boil Boss Triple Jet Burner</h3>
+            <p>Pairs with our Performance pots, 60 QT and up. Built in-house, sold on its own or alongside any Performance pot.</p>
+            <span class="shop-link">Shop the Triple Jet &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Full-bleed photo break, right-to-left variant -->
+<div class="breakout breakout-welder rtl">
+  <div class="wrap">
+    <div class="breakout-inner">
+      <div class="eyebrow">Built In Louisiana</div>
+      <h2>Hand-welded, one tube at a time.</h2>
+      <p>Built by hand by our 12-man team here in South Louisiana. No big corporate entity behind it — just people who boil too.</p>
+      <a class="btn btn-secondary" href="https://highperformancecookers.com/pages/about-us" target="_blank" rel="noopener">About HPC</a>
+    </div>
+  </div>
+</div>
+
+<section class="block alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Also Included</div>
+      <h2>Powered pots and fryers are in on it too</h2>
+      <p>
+        Want the whole rig, welded and ready to go? Powered pots and fryers carry the same 10%
+        through Cyber Monday — no separate code, no exceptions within the category.
+      </p>
+    </div>
+    <div class="tile-grid">
+      <a class="ptile ptile-powered" href="https://highperformancecookers.com/collections/powered-cookers" target="_blank" rel="noopener">
+        <div class="ptile-body">
+          <h3>Powered Pots</h3>
+          <p>Tunnel Tubes and the burner, welded together as one rig. Nothing else to buy — 10% off, sitewide.</p>
+          <span class="shop-link">Shop Powered Pots &rarr;</span>
+        </div>
+      </a>
+      <a class="ptile ptile-fryers" href="https://highperformancecookers.com/collections/fryers" target="_blank" rel="noopener">
+        <div class="ptile-body">
+          <h3>Fryers</h3>
+          <p>From the 18 QT on up — the off-season workhorses, now 10% off through Cyber Monday.</p>
+          <span class="shop-link">Shop Fryers &rarr;</span>
+        </div>
+      </a>
+    </div>
+    <div class="everything-line">
+      <p>That's not the whole list — this sale covers the site. See what else qualifies.</p>
+      <a class="btn btn-dark" href="https://highperformancecookers.com/collections/all" target="_blank" rel="noopener">Shop Everything</a>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Built Different</div>
+      <h2>Inside and out</h2>
+      <p>A closer look at the tech and the build — the same details, up close, that make the boil faster.</p>
+    </div>
+    <div class="gallery">
+      <img class="g1" src="./2026-09-16-bfcm-v2-images/120qt-on-tjb.jpg" alt="120 QT pot on the Boil Boss Triple Jet Burner, lid off, hose and regulator attached">
+      <img class="g2" src="./2026-09-16-bfcm-v2-images/burner-lit.jpg" alt="Powered burner lit under a pot">
+      <img class="g3" src="./2026-09-16-bfcm-v2-images/tjb-bracket-detail.jpg" alt="Boil Boss Triple Jet Burner centering bracket, close up">
+      <img class="g4" src="./2026-09-16-bfcm-v2-images/tjb-module.jpg" alt="Triple Jet Burner module, standalone">
+      <img class="g2" src="./2026-09-16-bfcm-v2-images/80qt-perf-topdown.jpg" alt="80 QT Performance pot, top-down view with basket">
+    </div>
+  </div>
+</section>
+
+<section class="block alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">How It Works</div>
+      <h2>Three steps, one code</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num mono">1</div>
+        <h4>Add to your cart</h4>
+        <p>Shop like you normally would — the pot, the burner, whatever your crew needs before the season turns.</p>
+      </div>
+      <div class="step">
+        <div class="num mono">2</div>
+        <h4>Enter BLKF26 at checkout</h4>
+        <p>The code doesn't apply itself — type it into the discount box on the checkout page.</p>
+      </div>
+      <div class="step">
+        <div class="num mono">3</div>
+        <h4>Save 10%, $100 minimum</h4>
+        <p>10% comes off orders of $100 or more, Monday Nov 23 through Tuesday Dec 1.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block tight">
+  <div class="wrap" style="max-width:760px;">
+    <p class="fine-print">
+      <strong>Sale details:</strong> 10% off sitewide with code <strong>BLKF26</strong>, valid Monday,
+      November 23 through Tuesday, December 1, 2026. Code must be entered manually at checkout — it
+      does not apply automatically. $100 minimum order required, before shipping and tax. Cannot be
+      combined with any other discount code or promotion. Excludes bundle and kit products, gift
+      cards, and Scratch &amp; Dent items. Backordered items ship while supplies last. No cash value.
+    </p>
+  </div>
+</section>
+
+<div class="wrap" style="padding:24px 24px 0;">
+  <p style="font-size:0.78rem; color:var(--muted); border-top:1px solid var(--border); padding-top:20px;">
+    &#9888; <strong>WARNING:</strong> Since all of our products connect to propane tanks, they can expose you to
+    chemicals including carbon monoxide and lead, which are known to the State of California to cause
+    cancer and birth defects or other reproductive harm. For more information, visit
+    <a href="https://www.P65Warnings.ca.gov" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:underline;">P65Warnings.ca.gov</a>.
+  </p>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <img src="https://cdn.shopify.com/s/files/1/0505/0394/2320/files/HPC_Logo_90146df7-877f-4c95-b086-309207755e00.png?v=1785420354" alt="High Performance Cookers">
+        <p>17991 Painters Row, Suite 100<br>Covington, LA 70435</p>
+        <p>Call Us: <a href="tel:9852601505">985-260-1505</a></p>
+        <p>M&ndash;F 7:30AM to 3:30PM, Central</p>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="https://highperformancecookers.com/collections/fryers" target="_blank" rel="noopener">Deep Fryers</a></li>
+          <li><a href="https://highperformancecookers.com/collections/turkey-frying-pots-cookers" target="_blank" rel="noopener">Turkey Fryers</a></li>
+          <li><a href="https://highperformancecookers.com/collections/brazier-pots" target="_blank" rel="noopener">Aluminum Fish Fryer Pots</a></li>
+          <li><a href="https://highperformancecookers.com/collections/powered-cookers" target="_blank" rel="noopener">Seafood Boil Cookers</a></li>
+          <li><a href="https://highperformancecookers.com/collections/commercial-cookers" target="_blank" rel="noopener">Commercial Seafood Boilers</a></li>
+          <li><a href="https://highperformancecookers.com/collections" target="_blank" rel="noopener">View All</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About HPC</h4>
+        <ul>
+          <li><a href="https://highperformancecookers.com/pages/about-us" target="_blank" rel="noopener">About Us</a></li>
+          <li><a href="https://highperformancecookers.com/pages/contact-us" target="_blank" rel="noopener">Contact Us</a></li>
+          <li><a href="https://highperformancecookers.com/pages/customer-reviews" target="_blank" rel="noopener">Customer Reviews</a></li>
+          <li><a href="https://highperformancecookers.com/pages/cooker-selection-chart" target="_blank" rel="noopener">Cooker Selection Chart</a></li>
+          <li><a href="https://af.uppromote.com/high-performance-cookers/register" target="_blank" rel="noopener">Join our Affiliate Program</a></li>
+          <li><a href="https://highperformancecookers.com/a/dealer-locator" target="_blank" rel="noopener">Dealer Locator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="https://highperformancecookers.com/account" target="_blank" rel="noopener">Order Status</a></li>
+          <li><a href="https://highperformancecookers.com/policies/shipping-policy" target="_blank" rel="noopener">Shipping Policy</a></li>
+          <li><a href="https://highperformancecookers.com/policies/refund-policy" target="_blank" rel="noopener">Refund/Returns Policy</a></li>
+          <li><a href="https://highperformancecookers.com/pages/warranty-information" target="_blank" rel="noopener">Warranty Information</a></li>
+          <li><a href="https://highperformancecookers.com/a/faq" target="_blank" rel="noopener">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026, High Performance Cookers</p>
+      <p><a href="https://highperformancecookers.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="https://highperformancecookers.com/policies/terms-of-service" target="_blank" rel="noopener">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
