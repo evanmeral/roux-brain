@@ -5,8 +5,8 @@
 | Channel | Handle / location | Status | Job |
 |---|---|---|---|
 | **Website** | highperformancecookers.com (Shopify) | Live | Convert. Primary revenue surface. |
-| **Instagram** | @highperformancecookers | **Active, posting** | Lifestyle + proof. Reels are the growth engine. |
-| **Facebook** | facebook.com/highperformancecookers | **Active, posting** | Where the primary buyer actually lives. Groups + Marketplace potential. |
+| **Instagram** | @highperformancecookers | **Active — 5.1K followers** *(Business Suite, 2026-09-16)*. Posted on the `/content-week` format since 2026-09-21 | Lifestyle + proof. Reels are the growth engine. |
+| **Facebook** | facebook.com/highperformancecookers (Page ID `100186835257740`) | **Active — 21.9K followers** *(Business Suite, 2026-09-16)*. Same weekly format, scheduled together with IG | Where the primary buyer actually lives. Groups + Marketplace potential. |
 | **LinkedIn** | linkedin.com/company/high-performance-cookers | **Active, posting** | Commercial/B2B lead-gen. Low volume, high intent. |
 | **YouTube** | @highperformancecookers9483 | **Active, posting** | Long-form proof + SEO. Underrated for "how to boil crawfish" search demand. |
 | **TikTok** | — | **NOT ACTIVE** | Biggest open channel. See below. |
@@ -60,7 +60,7 @@ Ask before launching: who owns posting, and do we want @highperformancecookers r
 ## What ROUX needs to be useful on channels
 <!-- Tier-1 homework -->
 - Follower counts + engagement benchmarks per channel (baseline)
-- Who posts, on what cadence, using what tool (native? Later? Metricool?)
+- ~~Who posts, on what cadence, using what tool~~ — answered 2026-09-16: Evan, by hand, campaign-driven (nothing posted Sept 8–16). From 2026-09-21: `/content-week`, six slots a week, scheduled in Meta Business Suite.
 - Klaviyo access + list size + current flow inventory
 - GA4 access
 - Ad account structure exports

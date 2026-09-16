@@ -8,6 +8,8 @@ Frames are numbered automatically (NN / TOTAL) and the swipe label on the
 second-to-last frame becomes "ONE MORE" on its own. Render with build-carousel.sh.
 
 Config shape — see `my-skills/carousel/example-config.json` for a full worked one.
+A frame with "kind": "tip" is text-led (no cutout): eyebrow / big / headline / sub, optional
+"photo" (from assets/lifestyle) and "position". Added 2026-09-16 for How-To Wednesday carousels.
 Every text field accepts inline HTML (<br>, <b>, &middot;, &deg;).
 """
 import json, os, sys
@@ -161,6 +163,46 @@ html,body{width:1080px;height:1350px}
 """
 
 
+TIP = """<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand.css">
+<style>
+html,body{width:1080px;height:1350px}
+.ad{position:relative;overflow:hidden;background:var(--char)}
+.bg{position:absolute;inset:0;background-image:url('%(ASSETS)slifestyle/%(photo)s');
+  background-size:cover;background-position:%(position)s;filter:brightness(.42) contrast(1.05) saturate(.85);%(bgdisplay)s}
+.vig{position:absolute;inset:0;background:radial-gradient(90%% 70%% at 50%% 45%%,transparent 0%%,rgba(8,7,6,.55) 60%%,rgba(8,7,6,.95) 100%%)}
+.logo{width:118px;top:52px;left:56px}
+.num{position:absolute;top:60px;right:60px;z-index:5;font-family:'JetBrains Mono',monospace;
+  font-weight:800;font-size:26px;color:rgba(255,255,255,.38);letter-spacing:.14em}
+.mid{position:absolute;left:80px;right:80px;top:50%%;transform:translateY(-50%%);z-index:5;text-align:center}
+.eyebrow{color:var(--accent);font-size:26px;letter-spacing:.2em;display:block}
+.big{color:#fff;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:200px;line-height:1;
+  letter-spacing:-.04em;margin-top:34px;text-shadow:0 8px 40px rgba(0,0,0,.6)}
+.big em{font-style:normal;color:var(--gold)}
+.hl{color:#fff;font-size:%(hlsize)spx;font-weight:900;letter-spacing:-.035em;line-height:1.02;margin-top:30px;
+  text-shadow:0 6px 30px rgba(0,0,0,.6)}
+.hl em{font-style:normal;color:var(--gold)}
+.rule{width:88px;height:4px;background:var(--accent);border-radius:2px;margin:32px auto 0}
+.sub{color:rgba(255,255,255,.86);font-size:34px;font-weight:600;margin-top:30px;line-height:1.36}
+.swipe{position:absolute;left:0;right:0;bottom:50px;z-index:5;text-align:center;
+  font-family:'JetBrains Mono',monospace;font-weight:800;font-size:23px;color:rgba(255,255,255,.42);
+  letter-spacing:.2em}
+</style></head>
+<body><div class="ad">
+  <div class="bg"></div><div class="vig"></div>
+  <img class="logo" src="%(shield)s">
+  <div class="num">%(num)s</div>
+  <div class="mid">
+    <span class="eyebrow">%(eyebrow)s</span>
+    %(big)s
+    <div class="hl">%(headline)s</div>
+    <div class="rule"></div>
+    <div class="sub">%(sub)s</div>
+  </div>
+  <div class="swipe">%(swipe)s &rarr;</div>
+</div></body></html>
+"""
+
+
 def build(cfg):
     name = cfg["name"]
     outdir = os.path.join(HERE, "templates", name)
@@ -194,7 +236,18 @@ def build(cfg):
         swipe = "ONE MORE" if (last_product and cfg.get("cta")) else "SWIPE"
         stats = "<br>".join(f.get("stats", []))
         tag = ('<span class="tag">%s</span>' % f["tag"]) if f.get("tag") else ""
-        emit("frame-%02d-%s.html" % (idx, f.get("slug", "product%d" % idx)), PRODUCT % dict(
+        fn = "frame-%02d-%s.html" % (idx, f.get("slug", "product%d" % idx))
+        if f.get("kind") == "tip":
+            # text-led frame (how-to steps, "so which one?" etc.) -- no product cutout
+            big = ('<div class="big">%s</div>' % f["big"]) if f.get("big") else ""
+            emit(fn, TIP % dict(
+                ASSETS=ASSETS, shield=SHIELD, num="%02d / %02d" % (idx, total),
+                photo=f.get("photo", ""), position=f.get("position", "50% 50%"),
+                bgdisplay="" if f.get("photo") else "display:none",
+                eyebrow=f.get("eyebrow", ""), big=big, headline=f["headline"],
+                hlsize=f.get("size", 72), sub=f.get("sub", ""), swipe=swipe))
+            continue
+        emit(fn, PRODUCT % dict(
             shield=SHIELD, num="%02d / %02d" % (idx, total),
             pbox=pbox(f["cutout"], f.get("boxHeight", 440), tuple(f.get("nudge", (0, 0)))),
             eyebrow=f.get("eyebrow", ""), headline=f["headline"], sub=f.get("sub", ""),

@@ -39,6 +39,7 @@ Use the `schedule` skill / scheduled tasks.
 | Job | Cadence | Output |
 |---|---|---|
 | Weekly scoreboard | Mon 7:30a CT | CAC/ROAS by channel + 1 recommendation |
+| **Weekly content plan** ✅ **live 2026-09-16** | **Mon 8:00a CT** (`content-week-monday`) | Six FB/IG slots with previews → Evan approves → scheduled in Business Suite |
 | Creative performance digest | Wed | Winners/losers + 3 new concepts briefed |
 | Email flow health | Thu | Flow revenue, drop-offs, one fix |
 | Monthly review | 1st Monday | Full performance report + next-month plan |
@@ -59,7 +60,7 @@ Use the `schedule` skill / scheduled tasks.
 **Custom skills to build in this phase:**
 | Skill | Does |
 |---|---|
-| `hpc-content-batch` | 2 weeks of channel-specific social content on brand + on calendar |
+| ~~`hpc-content-batch`~~ → **`content-week`** ✅ built 2026-09-16 | One week of FB + IG in six standing slots, proposed Monday with previews, approved, scheduled in Business Suite. Repeats weekly. |
 | `hpc-ad-brief` | Creative concept → scripted, shot-listed ad brief |
 | `hpc-email-campaign` | Seasonal moment → full campaign email, on brand, segmented |
 | `hpc-creator-outreach` | Prospect list → personalized outreach + tracked seeding agreement |
@@ -98,7 +99,7 @@ Use the `schedule` skill / scheduled tasks.
 2. [ ] Set up recurring Shopify / Meta / Google exports into `my-work (outputs)/internal/reports/raw/`
 3. [ ] Run `grill me` against `my-files (knowledge)/hpc-reference/open-questions.md`
 4. [ ] Schedule the Monday scoreboard task
-5. [ ] Build `hpc-content-batch` skill
+5. [x] ~~Build `hpc-content-batch` skill~~ — built as `/content-week`, 2026-09-16 (`my-skills/content-week/`)
 
 
 ---

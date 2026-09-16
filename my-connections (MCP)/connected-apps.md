@@ -29,6 +29,28 @@
 - **Google Drive holds video assets**, including `raw footage/8-19-26 commercial boiler/` (a 374 MB MP4 from the ~19 Aug commercial-boiler shoot). Garrett's footage is likely here — check Drive before asking him to re-send anything.
 - **Canva has an HPC Brand Kit** already set up.
 
+## 📅 Meta Business Suite — organic posting, through the browser *(added 2026-09-16)*
+
+Organic Facebook + Instagram posts are scheduled in **Meta Business Suite via Claude in Chrome**.
+The Meta Ads connector has no tool that creates an organic post, so this is a browser job. Verified
+read-only 2026-09-16: Home, Content, Planner and the composer all opened under the Chrome profile
+already signed in to Facebook; nothing was typed or saved.
+
+| Thing | Value | Source |
+|---|---|---|
+| Business portfolio | `191493022516250` (Shopify Business Manager) | Business Suite URL, 2026-09-16 |
+| Facebook Page | `100186835257740` — High Performance Cookers, **21.9K followers** | `ads_get_user_pages` + Business Suite Home, 2026-09-16 |
+| Instagram | `highperformancecookers`, **5.1K followers**, connected to the Page | Business Suite Home, 2026-09-16 |
+
+- **Procedure and guardrails:** `my-skills/content-week/business-suite-scheduling.md`. Scheduling
+  happens only after Evan approves the specific piece in that conversation; always *Schedule*, never
+  *Publish now*; Boost stays off; every schedule is read back in the Planner before it is called done.
+- ⚠️ `ads_get_ig_accounts` on HP Cookers ADs returns **no linked Instagram account** (2026-09-16).
+  That only matters for boosting through the connector; organic scheduling in Business Suite is fine.
+- The Planner shows a "followers most active at" hint each week — `/content-week` reads it Monday.
+- The Business Suite drafts URL (`/latest/posts/drafts`) redirects to Home; drafts are reached from
+  Content → Drafts in the UI, not by URL.
+
 ## 🧰 Systems in daily use — no MCP connector, reach via browser
 
 Found in the inbox 2026-09-01. These run real parts of the business and the brain needs to know they exist.

@@ -28,6 +28,8 @@ comments and DMs.
 3. `my-workflows (automations)/playbooks/content-engine.md` — the pillar mix and format rules
 4. `my-files (knowledge)/hpc-reference/customer-language.md`
 5. `my-desk (now)/BOARD.md` — what is already scheduled, and the Landmines
+6. `my-skills/content-week/weekly-format.md` — the six standing weekly slots. **Every organic piece
+   belongs to one of them**; `my-work (outputs)/content/social/LOG.md` says what has already run.
 
 ## The content thesis
 
@@ -50,6 +52,7 @@ without both qualifiers.
 
 ## Skills you drive
 
+**`content-week`** (the weekly system — propose Monday, approve, schedule in Business Suite) ·
 `write-a-post` · `carousel` (organic variants) · `ask-for-review`
 
 ## Output

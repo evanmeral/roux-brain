@@ -1,0 +1,64 @@
+{
+  "_comment": "Content week 2026-09-21 · How-To Wednesday · Powered or Performance? Facts from what-we-sell.md (2026-09-10 prices not shown; cold organic carries no price). Frames with kind:tip are text-led. Rendered with carousel.py + build-carousel.sh; product frames checked with check-centering.py.",
+
+  "name": "cw-2026-09-23-howto",
+  "kicker": "HOW-TO WEDNESDAY",
+  "kickerSub": "WED 09.23",
+
+  "cover": {
+    "photo": "120qt-with-steam.png",
+    "position": "56% 38%",
+    "brightness": ".70",
+    "size": 92,
+    "headline": "Powered or<br>Performance?",
+    "accent": "Which one do you need.",
+    "sub": "Every pot we build comes two ways. The difference, in four swipes."
+  },
+
+  "frames": [
+    {
+      "kind": "tip",
+      "slug": "same-tubes",
+      "photo": "pwd-burner-lit.png",
+      "position": "50% 45%",
+      "eyebrow": "THE PART THAT DOES THE WORK",
+      "headline": "Same tubes<br>on both.",
+      "size": 84,
+      "sub": "Hand-welded tunnel tubes across the bottom spread the flame over the whole base. That&rsquo;s where the speed comes from &mdash; not the burner."
+    },
+    {
+      "slug": "powered",
+      "cutout": "120qt - pwd.png",
+      "eyebrow": "POWERED",
+      "headline": "Tubes and burner,<br>welded as one.",
+      "sub": "The complete rig. Set it down,<br>hook up the propane, cook.",
+      "stats": ["ROLLING BOIL IN ABOUT <b>7 MIN</b>", "UP TO <b>75%</b> LESS PROPANE"],
+      "tag": "18 QT TO 160 QT"
+    },
+    {
+      "slug": "performance",
+      "cutout": "80qt - perf.png",
+      "eyebrow": "PERFORMANCE",
+      "headline": "Tubes only.<br>Bring your burner.",
+      "sub": "Same speed on the burner you already own.<br>Basket, lid and drain valve included.",
+      "stats": ["WORKS ON <b>ANY</b> BURNER", "UP TO <b>75%</b> LESS PROPANE"],
+      "tag": "18 QT TO 120 QT"
+    },
+    {
+      "kind": "tip",
+      "slug": "which-one",
+      "eyebrow": "SO WHICH ONE?",
+      "headline": "Starting from scratch? <em>Powered.</em><br>Already got a burner? <em>Performance.</em>",
+      "size": 66,
+      "sub": "Either way the tubes are on the pot.<br>Either way it boils fast."
+    }
+  ],
+
+  "cta": {
+    "photo": "Crawfishboil-basket-pour.png",
+    "headline": "Still not sure?",
+    "sub": "Comment how many people you feed<br>and we&rsquo;ll tell you the pot.",
+    "codes": [],
+    "foot": "BUILT IN COVINGTON, LOUISIANA<br>MOST ORDERS SHIP IN 1&ndash;2 BUSINESS DAYS"
+  }
+}

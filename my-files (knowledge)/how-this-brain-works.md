@@ -151,6 +151,8 @@ Atlas AI Brain/
 ### Marketing
 | Type this | What it does |
 |---|---|
+| /content-week | Plan the week's Facebook + Instagram posts in one Monday session, approve them, and have them scheduled in Meta Business Suite. Also fires on its own every Monday at 8:00. |
+| /hpc-campaign-checkpoint | Re-read a live paid campaign at its checkpoint: Meta's numbers, Shopify's tagged orders, the gap between them, and ROUX's continue / hold / cut call. The decision stays Evan's. |
 | /write-a-post | Write a social media post |
 | /write-an-ad | Write ad copy with hooks, headlines, and CTA |
 | /carousel | Build a multi-frame Instagram/Facebook swipe post |

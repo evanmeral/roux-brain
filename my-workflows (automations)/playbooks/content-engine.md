@@ -71,12 +71,16 @@ Run `marketing:seo-audit` to build the real list.
 → **Buy the 8-pack and pre-plan all 8 against the seasonal calendar.** Break-even is video 5.
 Already shot: company spotlight (free promo), 18 QT fryer, commercial cookers.
 
-**Posting:** Evan posts manually through native apps, one at a time, on every channel. **First
-automation win: Meta Business Suite (free) to schedule IG + FB together.** ROUX drafts captions in
-batch; Evan approves and schedules in one sitting instead of daily interruptions.
+**Posting: the weekly content system — `/content-week`, live 2026-09-16.** Six standing slots
+Mon–Sat, the same every week (`my-skills/content-week/weekly-format.md`: Boil Math Monday · Shop
+Floor Tuesday · How-To Wednesday · Word of Mouth Thursday · Friday Fire · Game Day story). A
+scheduled task proposes the week every Monday 8:00 CT with real previews; Evan approves in one
+sitting; the approved pieces are scheduled in Meta Business Suite through the browser. What ran is
+logged in `my-work (outputs)/content/social/LOG.md`. Evan no longer posts one at a time.
+*(Before this, posting was manual and campaign-driven: nothing went out between Sept 8 and Sept 16, 2026 — Business Suite, read 2026-09-16.)*
 <!-- TBD: confirm shoot cadence -->
 - 1 shoot day/month producing 4–6 weeks of content
-- 4–5 posts/week per primary channel (IG, FB)
+- 5 feed posts + 2 stories a week on IG and FB — the `/content-week` format (since 2026-09-16)
 - 2 YouTube uploads/month
 - Daily TikTok once launched (that's the price of admission there)
 

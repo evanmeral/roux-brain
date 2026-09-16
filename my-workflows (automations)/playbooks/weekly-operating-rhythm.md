@@ -2,7 +2,10 @@
 
 The default cadence. ROUX should proactively drive this, not wait to be asked.
 
-## Monday — Look back
+## Monday — Look back, then the week's content
+- **8:00 — `/content-week` fires as a scheduled task** (`content-week-monday`): the six FB/IG slots
+  for the week, with previews → Evan approves → scheduled in Meta Business Suite before lunch.
+  Format and banks: `my-skills/content-week/weekly-format.md`.
 - Pull last week's numbers → `hpc-scoreboard-report`
 - Spend, revenue, CAC, ROAS by channel; flag anything outside guardrails
 - **Output:** 5-bullet scoreboard + one recommendation
@@ -13,10 +16,12 @@ The default cadence. ROUX should proactively drive this, not wait to be asked.
 - Brief 2–3 new creative concepts for the week
 - **Output:** creative briefs in `my-work (outputs)/internal/drafts/`
 
-## Wednesday — Content & organic
-- Next 2 weeks of social planned against `my-files (knowledge)/hpc-reference/seasonal-calendar.md`
-- Captions + hooks drafted for IG / FB / YT / (TikTok when live)
-- **Output:** content calendar + drafted captions
+## Wednesday — Content check-in
+- The week's posts were scheduled Monday (`/content-week`). Wednesday is the mid-week look: comments
+  and DMs answered (Sage), a scheduled piece swapped if a better photo or video landed, next week's
+  gaps (a shop photo, a reel) asked for early.
+- Longer-form: YouTube / blog planned against `my-files (knowledge)/hpc-reference/seasonal-calendar.md` (Leo)
+- **Output:** replies done, swaps made, next week's asks sent
 
 ## Thursday — Email/SMS & lifecycle
 - Next campaign email drafted; flow performance reviewed
