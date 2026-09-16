@@ -90,7 +90,7 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
 
 ---
 
-## ⛔ Evan's six creative rules — check every creative against all of them
+## ⛔ Evan's seven creative rules — check every creative against all of them
 
 1. **Logo always present** unless deliberately omitted for a reason.
 2. **Product centred** in whatever area it occupies. Use `prod.py`.
@@ -101,6 +101,19 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
    **Nothing touches type.** The product never crowds or overlaps a headline unless it's deliberate.
 6. **Ask for the images you need**, specifying the treatment: cutout, cutout with shadow, plain
    white background, studio shot, specific angle.
+7. **Readable on a phone, without squinting.** *(Evan, 2026-09-16.)* Customers read these at thumb
+   size, so every line that carries information has to be easy to read. On a 1080-wide frame, feed
+   or story: **headlines 72px+ · body and sub-copy 36px+ · every other line that says something**
+   (stats, labels, eyebrows, prices, codes, names, credits, tags, swipe cues, frame counters) **30px+**,
+   heavier weight rather than lighter, and never faded below ~60% white. **Only fine print is exempt**
+   — a disclaimer like *"Times vary with volume, ambient temperature and fuel pressure"* or a patent
+   line — and it keeps a 20px floor. **Check it before showing anyone:** look at the PNG at ~380px
+   wide (how it lands in a phone feed); any non-fine-print line that needs a zoom gets sized up.
+   Same lesson as Jay's 2026-09-15 note on the IW ads.
+   ⚠️ **Below the bar today, fix on next use and re-render:** `carousel.py` stat lines (26px), tags
+   (21px), swipe cue (23px), frame counter (26px), CTA footer (24px); the `cw-2026-09-21` templates'
+   spec labels (17px), review credit line (20px) and story footers (23–25px). The Sept 21–27 week
+   predates this rule and ships as approved.
 
 ## Claims discipline (non-negotiable)
 

@@ -30,7 +30,8 @@ weekend fixtures and new review verbatims. Nova fixes the pipeline if a render b
 
 If a `PLAN.md` for the target week already exists, do not start over: read it, check it against the
 board (a promo that slipped, a shoot that moved), and present it for confirmation with any changes
-called out.
+called out. **If it is already scheduled**, do not re-propose it: report the read-back, list anything
+marked *not scheduled* and whether Evan has handled it, and stop.
 
 ---
 
@@ -60,10 +61,11 @@ called out.
 Ask Scout (or search) for the weekend's LSU and Saints fixtures with the source when the Game Day
 slot is in season.
 
-### 2. Fill the six slots
+### 2. Fill up to six slots
 
 Pick from the rotation banks in `weekly-format.md`. Match the week: a launch, a shoot day, a game, a
-season turn. Rules that decide ties:
+season turn. **Six is the ceiling, not a quota** (Evan, 2026-09-16) — drop a slot when the content is
+not there, and say which one and why. Rules that decide ties:
 
 - The Offer slot is a passenger (Thursday tail, Saturday story), one a week at most, live windows only.
   Write the conditional version too ("if the kit is live by Thursday…") and say which condition.
@@ -124,7 +126,7 @@ graphics also go through `./approve.sh` into the creative library (channel `orga
 In chat, in this order, nothing before it: the week table, then each piece's preview (the image,
 the FB caption, the IG caption, one line on why, the claims check), then *Needs from Evan*, then:
 
-> **Reply `approved` to schedule all six, or give me line notes by number.**
+> **Reply `approved` to schedule all of these, or give me line notes by number.**
 
 State anything missing and the fallback used. Never quiet a gap.
 
@@ -145,8 +147,8 @@ squeezed in.
 
 ## Schedule
 
-Only after the approval, only the approved pieces, only in this conversation. Follow
-`business-suite-scheduling.md` exactly: one piece at a time, Boost off, **Schedule** never
+Only after the approval, only the approved pieces, only in this conversation. Paste
+`business-suite-helpers.js` first, then follow `business-suite-scheduling.md` exactly: one piece at a time, Boost off, **Schedule** never
 Publish, then the Planner read-back. Fill the *After approval* table in `PLAN.md` with the time read
 back for every piece, or *not scheduled: reason*.
 

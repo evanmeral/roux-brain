@@ -48,7 +48,8 @@ Status values: `proposed` · `approved` · `revised` · `dropped` · `scheduled 
 ## Needs from Evan
 
 - {a photo, a video, a confirmation — each with the deadline that keeps its slot}
-- **Reply `approved` to schedule all six, or give line notes by number (e.g. "3: swap frame 4").**
+- **Reply `approved` to schedule all of these, or give line notes by number (e.g. "3: swap frame 4").**
+- If a slot was dropped this week, say so here with the reason (six is the ceiling, not a quota).
 
 ---
 

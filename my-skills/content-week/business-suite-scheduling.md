@@ -59,8 +59,46 @@ this says, use `find` to locate it by label, and if the UI fights back twice, st
 9. **Reels:** *Create reel* → upload → caption → pick a cover frame if offered → Schedule. Facebook
    now treats every uploaded video as a reel.
 
+## The proven recipe — first real run, 2026-09-16
+
+Scheduling the Sept 21–27 week taught these. **Paste `business-suite-helpers.js` before anything
+else**; it holds the parts that work by script. Everything below it is what must stay a real click.
+
+**Feed post, about 3 browser calls once the recipe is loaded:**
+1. Composer open → paste helpers → click *Add photo/video* (the helper captures the hidden file input)
+   → `find "atlas-upload-input"` → `file_upload` to the **newest** ref (a carousel is all frames in one
+   call, in posting order; order held on the Wednesday carousel).
+2. `await __A({day, fb, ig})` does both captions, story-share off, schedule on, both dates.
+3. **Real click on the story-share Confirm** if that dialog is still visible (it hangs half-faded and
+   swallows typing). Its button sits at CSS px × 1.085 in screenshot coordinates on this Mac.
+4. `find` the hours and minutes spinbuttons → **real click + type** each: `"05"` then `"30"`; `"A"`
+   or `"P"` on the meridiem. JS focus and synthetic key events do not change them.
+5. `await __go({date:'Sep 24, 2026', spins:'5,30,PM,5,30,PM', media:1, seg:'Word of Mouth Thursday.'})`
+   checks every field and only then clicks Schedule. A failed check schedules nothing; that caught
+   three wrong-time attempts on the first run.
+
+**Moving between posts:** the Planner's *Create post* button opens a new composer without reloading,
+so the helpers survive. A composer with unsaved content triggers a native "Leave site?" the browser
+tool cannot dismiss, and closing that tab can hang: open a new tab instead. **Clicking an empty slot in
+the Planner opens a blank composer**, not a status panel — cancel it.
+
+**Stories:** *Create story* (`/latest/story_composer/`) → *Add photo/video* → *Schedule* toggle → one
+date and time row per platform. No story-share switch, and times took real clicks without trouble.
+`__pick` must run after the schedule rows render; on the Saturday story it failed twice and was handed
+to Evan.
+
+**Reels / video:** a 9.35 MB `.MOV` (7 s, H.264) through *Create post* sat on "Processing media" for
+4+ minutes with no error, and the page stopped answering scripts. Not solved. Next time: export MP4,
+try *Create reel*, and give it one attempt before handing it to Evan.
+
+**Cost control:** read with scripts that return a few fields; screenshot only at scale 0.5 and only
+when a check fails for a reason the fields can't show. Two failures on the same step = stop and hand off.
+
 ## Verify — never say "scheduled" without this
 
+**Content → Scheduled** (`/latest/posts/scheduled_posts`) is the cheapest read-back: one script
+returns each feed post's segment, platform and time. Stories do not appear there; read them in the
+**Planner week view** (`/latest/content_calendar?focus_time=<unix seconds in the week>`).
 Open the **Planner week view** for the target week and read it back. Every piece appears with its
 day and time. Record the read-back time in the plan's *After approval* table. Then open **Content →
 Scheduled** and confirm the count matches. If anything is missing, it is written as *not scheduled*

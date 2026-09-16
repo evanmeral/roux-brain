@@ -44,6 +44,14 @@ mix (30 · 25 · 20 · 15 · 10). If a week drifts past one offer slot, it is ou
    photo → the library fallback, said plainly. Never a still pretending to be a reel.
 8. **Sunday stays dark.** Rest day for the feed. A Saturday game-day story can run into Sunday when
    the Saints play, as a second story, not a feed post.
+9. **Six slots are the ceiling, not a quota.** Evan, 2026-09-16: *"we don't have to post every day
+   but we can if you think it helps, totally up to your discretion."* Drop a slot when the content
+   is not there or the week is thin, say which slot and why in the plan, and never fill a slot just to
+   fill it. A strong four-post week beats a padded six.
+10. **Readable on a phone, without squinting** (Evan, 2026-09-16). Headlines 72px+, body 36px+,
+    every other line that carries information 30px+ on a 1080-wide frame; only fine print (the
+    "times vary" line, a patent number) goes smaller. Check every PNG at ~380px wide before it goes
+    in the plan. Creative rule 7 in `my-skills/hpc-ad-creative/instructions.md` has the detail.
 
 ---
 
@@ -115,3 +123,5 @@ ones that bite on social:
 | Date | Change | Why |
 |---|---|---|
 | 2026-09-16 | Format created: six slots, Mon–Sat, Sunday dark | Evan: one Monday planning session, uniform week to week, so the page becomes something people check |
+| 2026-09-16 | Rule 9: the six slots are a ceiling, not a quota | Evan, on approving week 1: no need to post every day; Atlas's discretion |
+| 2026-09-16 | Rule 10: readable at phone size, fine print the only exception | Evan: customers should never strain to read our content |

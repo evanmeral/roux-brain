@@ -119,7 +119,7 @@ Shop the 7-minute boil · Get your rig before season · Build your setup · See 
 
 ---
 
-## ⛔ Creative rules — check every creative against all six
+## ⛔ Creative rules — check every creative against all seven
 
 1. **Logo always present** unless deliberately omitted for a reason.
 2. **Product centred** in whatever area it occupies. Use `prod.py`.
@@ -129,6 +129,7 @@ Shop the 7-minute boil · Get your rig before season · Build your setup · See 
    **Nothing touches type.** The product never crowds or overlaps a headline unless it's deliberate.
    Leave real clearance between the product stage and the copy block. *(Evan, 2026-09-02.)*
 6. **Ask Evan for images you need**, specifying the treatment: cutout, cutout with shadow, plain white background, studio shot, specific angle.
+7. **Readable on a phone, without squinting** *(Evan, 2026-09-16)*. On a 1080-wide frame: headlines 72px+, body 36px+, every other informative line 30px+. Only fine print (a "times vary" disclaimer, a patent line) goes smaller, 20px floor. Check the PNG at ~380px wide before showing it. Full rule: `my-skills/hpc-ad-creative/instructions.md`, rule 7.
 
 ## Claims discipline (non-negotiable)
 

@@ -1,6 +1,7 @@
 # Content week — Mon Sep 21 to Sun Sep 27, 2026
 
-**Proposed:** Wed 2026-09-16, 10:50 CT (built as the first run of `/content-week`, ahead of the Monday task) · **Status:** proposed
+**Proposed:** Wed 2026-09-16, 10:50 CT (built as the first run of `/content-week`, ahead of the Monday task) · **Status:** **approved** — Evan, 2026-09-16, 11:05 CT in chat ("i like this first round, it is approved so go ahead and schedule it"), all six as proposed · **4 of 6 scheduled** in Business Suite, read back 2026-09-16 ~3:00 pm CT · Friday reel and Saturday story **not scheduled** (see the table at the bottom)
+**Kit condition at scheduling time:** the Tailgate Kit is still a Shopify **draft** (board, Now #1), so every `[IF KIT LIVE]` line is **left out** of the scheduled captions and the **plain** Saturday story is scheduled. If the kit goes live before Thursday, edit the Thu/Fri captions and swap the Saturday story in the Planner.
 **Season:** tailgate season open, October peak ahead, turkey content starts Oct 1 (`seasonal-calendar.md`).
 **Carrying from the board:** the Garrett shoot is Tue Sept 22 at the shop (Tuesday's caption mentions the camera crew) · the **18 QT Tailgate Kit is due live Fri Sept 25 at $465** (Jay approved) **but is gated** — no kit goes live while `HIGH15`/`SMS25` are still active (Biljana switching flows). Every kit line below is marked `[IF KIT LIVE]` and comes out if it is not.
 **Planner hint:** "This week, your Instagram followers are most active at 4:00 PM" (Business Suite Planner, for Fri Sept 18, read 2026-09-16). Slot times below are the standing format's starting times; revisit after four weeks.
@@ -14,12 +15,12 @@
 
 | # | Day · time (CT) | Segment | Format | FB | IG | Piece | Status |
 |---|---|---|---|---|---|---|---|
-| 1 | Mon 21 · 12:00 | Boil Math Monday | graphic 4:5 | ✅ | ✅ | `01_MON-0921_FEED_boil-math-pot-not-burner.png` | proposed |
-| 2 | Tue 22 · 5:30 pm | Shop Floor Tuesday | raw photo 4:5 + story 9:16 | ✅ | ✅ | `02_TUE-0922_FEED_shop-floor-weld-RAW.png` · `02_TUE-0922_STORY_shop-floor-weld-RAW.png` | proposed (swap if a shoot-day photo lands) |
-| 3 | Wed 23 · 12:00 | How-To Wednesday | carousel ×6 | ✅ | ✅ | `03_WED-0923_CAROUSEL_1-cover.png` … `_6-cta.png` | proposed |
-| 4 | Thu 24 · 5:30 pm | Word of Mouth Thursday | review card 4:5 | ✅ | ✅ | `04_THU-0924_FEED_review-kendall-18qt.png` | proposed |
-| 5 | Fri 25 · 12:00 | Friday Fire | reel 9:16, 7 s, sound on | ✅ | ✅ | `05_FRI-0925_REEL_wings-18qt.MOV` | proposed |
-| 6 | Sat 26 · 9:00 am | Game Day | story 9:16 | ✅ | ✅ | `06_SAT-0926_STORY_game-day.png` — or `…_game-day-KIT.png` `[IF KIT LIVE]` | proposed |
+| 1 | Mon 21 · 12:00 | Boil Math Monday | graphic 4:5 | ✅ | ✅ | `01_MON-0921_FEED_boil-math-pot-not-burner.png` | scheduled ✔ |
+| 2 | Tue 22 · 5:30 pm | Shop Floor Tuesday | raw photo 4:5 + story 9:16 | ✅ | ✅ | `02_TUE-0922_FEED_shop-floor-weld-RAW.png` · `02_TUE-0922_STORY_shop-floor-weld-RAW.png` | scheduled ✔ feed + story (swap the photo if a shoot-day one lands) |
+| 3 | Wed 23 · 12:00 | How-To Wednesday | carousel ×6 | ✅ | ✅ | `03_WED-0923_CAROUSEL_1-cover.png` … `_6-cta.png` | scheduled ✔ |
+| 4 | Thu 24 · 5:30 pm | Word of Mouth Thursday | review card 4:5 | ✅ | ✅ | `04_THU-0924_FEED_review-kendall-18qt.png` | scheduled ✔ |
+| 5 | Fri 25 · 12:00 | Friday Fire | reel 9:16, 7 s, sound on | ✅ | ✅ | `05_FRI-0925_REEL_wings-18qt.MOV` | **not scheduled** — Evan |
+| 6 | Sat 26 · 9:00 am | Game Day | story 9:16 | ✅ | ✅ | `06_SAT-0926_STORY_game-day.png` — or `…_game-day-KIT.png` `[IF KIT LIVE]` | **not scheduled** — Evan |
 
 Sunday dark. Pillar count: Proof 1½ · People 1½ · How 1 · Boil 2 · Offer 0 (or a passenger on 4, 5, 6 if the kit is live).
 
@@ -212,11 +213,13 @@ What's going in the fryer this weekend?
 
 ## After approval — filled in by the skill
 
-| # | Scheduled for (CT) | Read back in Planner | Notes |
+| # | Scheduled for (CT) | Read back | Notes |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
+| 1 | Mon Sep 21, 12:00 PM · Facebook + Instagram | ✔ Content → Scheduled lists both, 2026-09-16 ~3:00 pm | |
+| 2 | Tue Sep 22, 5:30 PM · feed on Facebook + Instagram · story on Facebook + Instagram | ✔ feed: Scheduled list, both · ✔ story: Planner shows two more 5:30 PM items that day | Share-to-Facebook-Story switched off on every feed post (the separate story covers it) |
+| 3 | Wed Sep 23, 12:00 PM · Facebook + Instagram · 6 frames | ✔ Scheduled list, both · Instagram preview showed the cover as frame 1 | |
+| 4 | Thu Sep 24, 5:30 PM · Facebook + Instagram | ✔ Scheduled list, both | Kit lines left out (kit still a draft) |
+| 5 | **not scheduled** | — | The `.MOV` sat on "Processing media" for 4+ minutes with no error. **Evan:** upload `05_FRI-0925_REEL_wings-18qt.MOV` for Fri Sep 25, 12:00 PM with the captions above, or re-export as MP4 and Atlas retries. |
+| 6 | **not scheduled** | — | The story composer's date picker failed twice; stopped under the two-strikes rule. **Evan:** schedule `06_SAT-0926_STORY_game-day.png` as a story on both, Sat Sep 26, 9:00 AM. |
+
+**Active times Business Suite suggested** (read 2026-09-16, Schedule panel): Facebook Sun 9/20, Mon 9/21, Tue 9/22 at 8:00 PM · Instagram Thu 9/17 8:00 PM, Fri 9/18 4:00 PM, Wed 9/23 9:00 AM. Evenings lead on both. One data point; revisit slot times after four weeks as rule 6 says.

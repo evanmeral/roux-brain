@@ -24,8 +24,8 @@
 
 BPM runs on **video**. Best: `Video_Jay 30qt Demo` **$19.41** (13) · `Video_Jay 18qt Demo` $43.04 (30). `18qt-TOF` is *Learning limited*. **BPM stays at $164; Jay's +25% is not applied.** Sept 11–14 actual: BPM $557.09 · 18qt $167.79 · IW $299.94 — pacing at the $314/day baseline *(Finn, 2026-09-14)*.
 
-### 🟢 Content week — the weekly FB/IG system, live 2026-09-16 · **first plan awaiting Evan's approval**
-Six fixed slots Mon–Sat (`my-skills/content-week/weekly-format.md`); the Monday 8:00 task `content-week-monday` proposes, Evan approves, Atlas schedules in Business Suite (browser, never the Ads connector). **Week of Sept 21–27 built and proposed** → [plan](../my-work%20(outputs)/content/social/2026-09-21-week/PLAN.md): 6 pieces, previews rendered, kit lines gated on Now #1's landmine. Nothing has posted since Sept 8 *(Business Suite, read 2026-09-16)*.
+### 🟢 Content week — the weekly FB/IG system, live 2026-09-16 · **Sept 21–27: 4 of 6 scheduled**
+Up to six slots Mon–Sat, a ceiling not a quota (`my-skills/content-week/weekly-format.md`); Monday 8:00 task `content-week-monday` proposes, Evan approves, Atlas schedules in Business Suite via Chrome. **Scheduled and read back 2026-09-16:** Mon 12:00 · Tue 5:30 feed + story · Wed 12:00 carousel · Thu 5:30, each on FB + IG. **Not scheduled:** Fri reel (MOV stuck processing) · Sat game-day story (date picker failed twice) → Evan. → [plan](../my-work%20(outputs)/content/social/2026-09-21-week/PLAN.md) · **Open, Evan's call:** keep scheduling through Chrome, schedule by hand from the pack, or have Nova build a Meta API scheduler.
 
 ---
 
@@ -50,7 +50,7 @@ Six fixed slots Mon–Sat (`my-skills/content-week/weekly-format.md`); the Monda
 | **Finn** | **Sept 18: run `/hpc-campaign-checkpoint` on the IW lookalike** (Day 7 / ~$700), or sooner if Learning exits — Meta pull + Shopify tagged orders + the zero check, ROUX's call, then **Evan decides continue/hold/cut and the creative swap together** | 2026-09-14 |
 | **Jay** | Whose is the second Meta pixel `491960645999331`? Evan asking | 2026-09-11 |
 | **Jay** | Sign off on BFCM offer (10% sitewide, `BLKF26`, Nov 23–Dec 1) — Evan taking it to him as-is. **Evan's target: send to Coalition (Connor) and Biljana Fri Sept 18** — matches Connor's Basecamp due date | 2026-09-16 |
-| **Evan** | **Approve the Sept 21–27 content plan** (6 pieces; scheduled in Business Suite on his yes — Monday's post needs the yes before 11:00 Mon) · a shop-floor phone photo by Tue 3 pm · kit live-or-not by Thu noon | 2026-09-16 |
+| **Evan** | **Schedule the Fri Sep 25 reel (12:00 PM) and Sat Sep 26 game-day story (9:00 AM) by hand** — files + captions in the week's PLAN.md · optional shop-floor photo swap by Tue 3 pm · kit live-or-not by Thu noon | 2026-09-16 |
 
 ---
 
