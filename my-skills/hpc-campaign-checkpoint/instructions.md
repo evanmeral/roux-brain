@@ -86,6 +86,13 @@ its **last visit**:
 2. `utmParameters.campaign` equals the name with a `(DRAFT)` suffix — Meta keeps the
    suffix if the campaign was renamed after the tag was set (`2026-09-10-iw-tracking-tags.md`).
 3. `utm_id` (surfaces in `landingPage` as `utm_id=`) equals the campaign ID.
+4. `utmParameters.campaign` equals the campaign **ID** — BPM and 18qt-TOF tag by ID, not
+   name (`utm_campaign=<campaign ID>`, `utm_content=<ad ID>`), so split those by ad ID
+   instead of `term` / `content` names *(Finn, 2026-09-17-month-plan-baseline.md §3)*.
+
+**Known blind spot.** An ad whose tags never reach Shopify is invisible to every rule above.
+Check `campaigns.md` for a "Tag blind spot" row (IW: `hpc-dark-evergreen`, Finn 2026-09-17)
+and state in the report which share of spend no match could have caught.
 
 Count first-visit matches separately. Then split the tagged orders by `utmParameters.term`
 (ad set) and `utmParameters.content` (ad).

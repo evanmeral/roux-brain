@@ -48,3 +48,39 @@ Mutations, in order (all validated against the schema first): `productSet` ×2 (
 5. Checkout test, no order placed: each kit + one ordinary item, try `Welcome10`, `HPC10`, `Stale30`, a recreated code. Discount lands on the ordinary item only. (Code-fix doc, Step 6.)
 6. Set status ACTIVE — Evan's click. Tailgate Sept 25, turkey Oct 1. Add the "Order by Monday, November 23" line to the turkey page Oct 1; remove it Nov 23.
 7. Finn: kit share and gross profit per order weekly from launch (plan §3.3, §4.4).
+
+---
+
+## 2026-09-17: rebuild in the Shopify Bundles app (Jay via Evan)
+
+**Jay:** the kits look good but were built the wrong way. Rebuild them in the Shopify Bundles app so inventory isn't messed up. Evan swaps in the real photos once the rebuild is done. Logged in [decisions](../../my-desk%20(now)/decisions.md).
+
+**Read before planning** *(Shopify GraphQL, read-only, 2026-09-17)*:
+- **Platinum** (`Product/9799316111600`) is a product-level bundle: `bundleComponents` is filled (Triple Jet burner, centering brackets, and the *Performance Boiling Pots* product, with its 14 variants mapped to the bundle's size and valve options). **The three kit drafts have empty `bundleComponents`.** They carry only variant-level `productVariantComponents`. That is the structural difference from a Bundles-app bundle.
+- **This limits the turkey kit, but isn't confirmed in the app yet.** Bundles-app options map to the variants of *one* component product. The 30 QT turkey pot (`Product/8321395065072`) and the 60 QT Dual (`Product/6061729317040`) are separate products. So one Turkey Fry Kit page with a 30 QT / 60 QT choice probably can't be built in the app; it becomes two kit products. Confirm in the app before building.
+- **Skimmer `SC-7R` now reads 30 on hand** (was −1 on 2026-09-16), still policy DENY. The kits' computed quantity is 30. Someone corrected the count; that blocker looks cleared.
+- ⚠️ **Found in passing, not diagnosed:** the Platinum variant `60 QT / 1" Gate Valve - (Add $10)` (`ProductVariant/48820352123120`) lists only the burner and brackets as components, **with no pot**. Only Platinum's first 5 variants were read. Worth Evan's look in the Bundles app.
+
+**What carries over to the new bundle products** (from the drafts above): long titles · descriptions with the Prop 65 block · `custom.features_benefits` + `custom.frequently_asked_question` · tags (Bundle · Sale-NoDiscount · Tailgater/Turkey · no-wholesale · Fryer) · `BUNDLE-…` SKUs · prices and compare-at · type `Home & Garden`, vendor HPC.
+**Old drafts:** archived once the new ones are read back, never deleted by Atlas.
+
+---
+
+## 2026-09-17, late: the three Bundles-app kits are built and finished
+
+Evan created them in **Apps → Bundles**; Atlas finished them through the connector on his go. The old connector-built drafts are **ARCHIVED** (`Product/10292065861872`, `Product/10292066353392`) — archived, not deleted.
+
+| | Tailgate Fry Kit | Turkey Fry Kit (one-bird) | Turkey Fry Kit (two-bird) |
+|---|---|---|---|
+| Product | `Product/10298785661168` | `Product/10298800341232` | `Product/10298812006640` |
+| Option | Drain Valve · Basket (4 variants) | Add-Ons (3 variants) | Drain Valve (2 variants) |
+| Prices | $455 · $441 · $418 · $404 | $481 · $462 · $418 | $521 · $512 |
+| Compare-at | the parts total on each variant | ″ | ″ |
+| SKUs | `BUNDLE-18QT-TAILGATE[-VLV025B/-VLV025/-B]` | `BUNDLE-30QT-TURKEY-TFR[-B/-B-SBI]` | `BUNDLE-60QT-TURKEY-VLV075/-VLV100` |
+| Status | DRAFT, CONTINUE, qty 30 | ″ | ″ |
+
+**Pricing rule (Jay via Evan, 2026-09-17): about 6% off the parts total, on every variant**, rounded down to the dollar, replacing the original $19.98–$25.98 flat savings. Jay's headline prices survive it at the main variants: $455 tailgate, $462 one-bird, $512 two-bird. Titles now read "(Up to $X Savings)" because the saving differs by variant — Evan's call to keep a dollar figure rather than a percentage.
+
+**Also written:** descriptions with the Prop 65 block and per-variant price ranges · `custom.features_benefits` and `custom.frequently_asked_question` (split into one-bird and two-bird versions) · tags · product type · short option names in place of Shopify's auto-generated ones. Collections picked them up by tag rules: Tailgater/Turkey · fryers · Product Bundles · All Non Commercial Products.
+
+**Open before live:** kit photos (Evan) · `HIGH15` off, waiting on Biljana · `SMS25` deactivate (Evan, Biljana has switched) · the code exposure list → [code exposure](2026-09-17-kit-discount-code-exposure.md) · checkout test · status ACTIVE is Evan's click.

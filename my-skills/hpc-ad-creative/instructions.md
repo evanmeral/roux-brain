@@ -90,7 +90,7 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
 
 ---
 
-## ⛔ Evan's nine creative rules — check every creative against all of them
+## ⛔ Evan's twelve creative rules — check every creative against all of them
 
 1. **Logo always present** unless deliberately omitted for a reason.
 2. **Product centred — the product itself, not the image file.** Use `prod.py`, then measure the render:
@@ -112,6 +112,11 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
    line — and it keeps a 20px floor. **Check it before showing anyone:** look at the PNG at ~380px
    wide (how it lands in a phone feed); any non-fine-print line that needs a zoom gets sized up.
    Same lesson as Jay's 2026-09-15 note on the IW ads.
+   **Tightened 2026-09-17 (Evan, on the first tailgate kit ad: "the wording may be too small to read,
+   be cautious of that").** That ad met the minimums above and still read small. So the px numbers are
+   floors, not targets: **size up whenever there's room**. A footer or tagline line ("Hand-welded in
+   Louisiana") carries information and is **not** fine print. If a line isn't worth reading at phone
+   size, cut it rather than shrink it. Fewer words, bigger type.
    ⚠️ **Below the bar today, fix on next use and re-render:** `carousel.py` stat lines (26px), tags
    (21px), swipe cue (23px), frame counter (26px), CTA footer (24px); the `cw-2026-09-21` templates'
    spec labels (17px), review credit line (20px) and story footers (23–25px). The Sept 21–27 week
@@ -130,6 +135,37 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
    | Story, reel (organic) | 1080×1920 (9:16) · type out of the top 250px and bottom 340px · video as MP4 |
    | Paid static | 1:1 + 9:16 + 1.91:1 in one ad · never 4:5 |
    A raw photo gets cropped to the slot, never stretched or letterboxed.
+10. **No patent number on ads.** *(Evan, 2026-09-17.)* Never put "Patent No. 11,844,459" (or any
+    patent line) on a paid or organic ad creative. "Patented Tunnel Tubes" in copy is still allowed
+    where it earns its place; the number itself stays off the creative.
+11. **Keep up the creative variety.** *(Evan, 2026-09-17.)* Every new ad or static starts from a
+    **fresh idea and its own look** — never a copy-paste of the last creative's layout, palette and
+    type treatment. A new angle deserves a new composition, new colour, new typefaces, not the same
+    template with the words swapped.
+    **How to check it:** put the new render next to the **last two ads for the same product**.
+    If it reads as the same ad with new words, start over.
+12. **The product fills its space.** *(Evan, 2026-09-17: "fill as much of the empty space around the
+    product image as possible without covering words or boarders, as well as centering the image …
+    so that the customer can see the product better.")* A product image is sized to fill as much of
+    the empty space around it as it can **without covering type or crossing a border** — and it stays
+    **centred in the space it is given**. A small product floating in a big empty area is the fault
+    this fixes. They are buying the product; let them see it.
+    **How to check it:** measure the **product's own bounding box** against the **free area it sits
+    in** — the rectangle bounded by the nearest type, border, divider or frame edge on each side.
+    **If a side with no type on it carries a wide empty margin, the product is too small.** Grow it
+    until the tightest side sits about 15–20px off its neighbour, then stop. Work from the cutout's
+    silhouette, not the box: most HPC cutouts are narrow at the bottom (legs) and wide at the top
+    (pot), with a thermometer or handle as a thin spike, so the product can reach past a headline's
+    short second line where a plain rectangle could not.
+    **Then re-centre.** Rule 2 still applies and is still measured on the render
+    (`check-centering.py --band <y0> <y1>`), but on a layout like this the target is the centre of
+    **that free area**, not the frame centre — `check-centering.py` reports offsets from the frame
+    centre, so add the frame centre back and compare against the area centre yourself.
+    Rules 5 and 8 do not bend for this: **nothing touches type**, nothing crosses a printed border or
+    divider, and a cutout keeps its contact shadow (resize and re-place the shadow with the product,
+    or it reads as floating). A **photo's** subject gets the same treatment by scaling or re-cropping
+    the photo — judgement applies there, since a crop that wrecks the composition costs more than it
+    gains.
 
 ## Claims discipline (non-negotiable)
 
@@ -139,7 +175,7 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
 - Prices must match `my-business (context)/what-we-sell.md`. Re-pull before running a price.
 - **Tunnel Tube tech is the tubes hand-welded on the POT BOTTOM**, spreading the burner's heat across
   the whole base. Never imply the burner is what makes it fast.
-- Patent No. **11,844,459.**
+- Patent No. **11,844,459.** (For accuracy only. The number never goes on an ad, rule 10.)
 - **Lead with quality, not price** — 80% of customers buy on quality, 10% on price.
 
 ## Logo variants — pick for contrast, never force it

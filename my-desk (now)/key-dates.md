@@ -9,12 +9,10 @@
 | 2026-09-18 | IW lookalike checkpoint — `/hpc-campaign-checkpoint` (Day 7, ~$700), or sooner if Learning exits | board, Running · ROUX 2026-09-14 · skill built 2026-09-16 |
 | 2026-09-18 | Target: BFCM offer sent to Coalition (Connor) + Biljana, pending Jay's sign-off first | board, Now #3 · Evan 2026-09-16 |
 | 2026-09-21 | First automated `/content-week` run, 8:00 CT — week already approved and 4 of 6 scheduled, so it reports status only; first real proposal is Mon Sep 28 | task `content-week-monday` · PLAN.md read-back 2026-09-16 |
-| 2026-09-21 | Kit copy fixes group A (tailgate pages) — Evan/Jay click | PLAN.md · Finn re-check 2026-09-17 |
 | 2026-09-22 | Garrett shoot, HPC shop — 8 videos, $2,500, locked | board, Now #2 · Evan 2026-09-14 |
 | 2026-09-24 | Thursday scoreboard #1 · tailgate kit go/no-go | PLAN.md · Evan 2026-09-17 |
-| 2026-09-25 | Tailgate kit goes live — draft is built; needs Jay's approval of the page, Biljana's flow switch, the skimmer record fixed, photos, copy group A | board, Now #2 · Jay approved the price 2026-09-11 · Evan 2026-09-16 |
+| 2026-09-25 | Tailgate kit goes live — built in the Bundles app and finished; needs photos, `HIGH15` off and the checkout test | board, Running · Jay's prices 2026-09-11 · rebuilt 2026-09-17 |
 | 2026-09-28 | Retargeting launch (Evan's click) | PLAN.md · Evan 2026-09-17 |
-| 2026-09-29 | Kit copy fixes group B (turkey pages) — Evan/Jay click | PLAN.md · Finn re-check 2026-09-17 |
 | 2026-09-30 | Turkey kit go/no-go | PLAN.md · Evan 2026-09-17 |
 | 2026-10-01 | Turkey kit + ad live; turkey buyability checks start (Mon + Thu) | PLAN.md · Evan 2026-09-17 |
 | 2026-10-01 | Turkey demo video must be live | board, Now #2 · shoots Sept 14–18, Sept 21–23 at the latest |

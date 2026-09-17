@@ -22,7 +22,8 @@ in `attribution_setting` — write it in the checkpoint, do not assume 7-day cli
 | IDs | campaign — · ad set — · ads — **not on file; record on the Sept 18 pull** |
 | Live since | Fri 2026-09-11 *(decisions.md)* |
 | Budget | $100/day CBO *(board)* |
-| UTM tags | `utm_source=facebook&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{adset.name}}&utm_id={{campaign.id}}` on all three ads *(2026-09-10-iw-tracking-tags.md)*. ⚠️ Whether the campaign was renamed before publish, so the tag carries no `(DRAFT)` suffix, is **not confirmed on file** — step 3's match rule 2 covers it either way |
+| UTM tags | `utm_source=facebook&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{adset.name}}&utm_id={{campaign.id}}` set on all three ads *(2026-09-10-iw-tracking-tags.md)*. Tags arrive in Shopify with **no `(DRAFT)` suffix**; `utm_medium` arrives as both `paid_social` and `paid` (why: untested) *(Finn, Shopify sessions Sept 11–16, 2026-09-17-month-plan-baseline.md §3)* |
+| ⚠️ Tag blind spot | **`hpc-dark-evergreen`'s UTMs never arrive in Shopify.** 127 Meta landing-page views, 0 tagged sessions Sept 11–16 — no session carries its ad name, ad ID or an IW campaign name with it. The two 120 QT ads' tags **do** arrive (65 sessions vs 57 LPVs) *(Finn, 2026-09-17, baseline §3, tested)*. It took nearly all spend since Sept 15 *(board)*, so **a 0 in Shopify-matched orders for IW cannot include orders from that ad** — the report must say so. Its destination is probably `/products/18-qt-fish-fryer` (untagged FB sessions there rose 7.5 → 17/day) — **unconfirmed**; check the Ads Manager Review tab, not the edit panel |
 | Products in the ads | 120 QT Performance pot (rolling-boil), 120 QT Powered (crowd-math), general brand (dark-evergreen). Ceiling by the product the matched orders actually contain |
 | Ceilings that apply | Incremental rule, `2026-09-10-overhead-method-options.md`: **120 QT Powered $195.34** Jun–Aug basis / $165.64 12-mo (gate on Meta's count $78.14 / $66.26) · **Performance pots $189.23** / $183.14 (gate $75.69 / $73.25) · **18 QT** $99.55 / $73.86 / $73.39 (gate $39.82 / $29.54 / $29.36) if an 18 QT turns up |
 
@@ -60,8 +61,8 @@ CTR 2.17% · 14,176 impressions · 308 clicks.
 | | |
 |---|---|
 | Budget | $164/day *(board)*; Jay's +25% not applied *(board)* |
-| UTM tags | **None.** Ads carry an empty URL-parameters field *(Finn, Ads Manager, 2026-09-10)*; orders cannot be matched to it by name. Tagging a live ad sends it back through review — Evan's call, not made |
-| Decision rule | **None agreed.** A checkpoint on this campaign is a Meta-only read until it is tagged, and the report must say so |
+| UTM tags | **Yes, ID-based.** Sessions and orders arrive tagged `utm_source=facebook · utm_medium=paid · utm_campaign=<campaign ID> (6772105419387) · utm_content=<ad ID>`, seen on 7 BPM ad IDs; 10 Sept 1–16 orders match BPM's ID *(Finn, Shopify sessions + orders, 2026-09-17-month-plan-baseline.md §3)*. Matched by **ID, not name** — use step 3's match rule 4. *Corrects the 2026-09-10 entry "None — empty URL-parameters field" (Finn, Ads Manager): both can be true if the parameters sit in the website URL or are added by a template or Shopify's Facebook channel; which mechanism is untested.* |
+| Decision rule | **None agreed.** A checkpoint can include Shopify-matched orders by ad ID *(tags confirmed 2026-09-17, above)* |
 | Last read | Sept 11–14: $557.09 spend *(Finn, 2026-09-14)*. Best ad `Video_Jay 30qt Demo` $19.41 CPP (13), `Video_Jay 18qt Demo` $43.04 (30) *(board)* |
 
 ### 18qt-TOF-Prospecting
@@ -69,7 +70,7 @@ CTR 2.17% · 14,176 impressions · 308 clicks.
 | | |
 |---|---|
 | Budget | $50/day CBO *(board)* |
-| UTM tags | **None** on `18qt-001` *(Finn, 2026-09-10)* |
+| UTM tags | **Partly.** `18qt-004` arrives with the same ID-based tags as BPM; `18qt-001`–`003` are not seen under their ad IDs, but sessions with this campaign's ID and `utm_content=Facebook_UA` do arrive *(Finn, Shopify sessions Sept 11–16, 2026-09-17-month-plan-baseline.md §3)*. *Updates "None on `18qt-001`" (Finn, 2026-09-10).* Match by campaign ID, rule 4 |
 | Decision rule | The ladder gates, `2026-09-10-overhead-method-options.md`: **trailing-7 Meta CPP ≤ $30, frequency ≤ 2.5, +≤20% every 3 days, top out at $86/day.** At $40.56 (30 days to Sep 8) it does not pass, so it stays at $50 *(board)*. Sale-week CPP ($20.09, Sep 1–7) does not count |
 | Last read | Sept 11–14: $167.79 *(Finn, 2026-09-14)*. Learning limited *(board)* |
 

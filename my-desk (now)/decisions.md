@@ -11,6 +11,55 @@
 
 ## 2026-09
 
+**Pixel `491960645999331` is an old marketing company's, and we keep using it** — Jay via
+Evan, 2026-09-17. "Use it if it still works and can be helpful." It does: it sits in our own Shopify
+Business Manager portfolio, is named "4392736013287 Pixel" after the ad account, was created
+2022-05-10, fired as recently as today, and carries the 6,800–8,000 person `Website Visitors 30D (All)`
+audience that the Sept 28 pot retargeting uses. ⚠️ Browser events only, **PageView and AddToCart
+but no Purchase in the last 7 days** *(Meta connector, 2026-09-17)*, so it's a retargeting pool, not a
+conversion source. Conversions stay on `1861969194014116`, which also gets server events. It also
+fires on `meetings.hubspot.com` and `info.hpcookers.com`. Question closed.
+
+**The kits are built by Evan in the Bundles app; Atlas finishes them through the connector** —
+Evan, 2026-09-17. Three bundles: Tailgate, Turkey 30 QT, Turkey 60 QT. Steps and exact components →
+[rebuild steps](../my-work%20(outputs)/internal/2026-09-17-kit-rebuild-steps.md).
+
+**The skimmer was never an inventory fault** — Evan, 2026-09-17. "We had just got in more
+skimmers, so they needed to be put in for you to see them." `SC-7R` reads 30 on hand and sells on the
+storefront (checked 2026-09-17). It never blocked the kits.
+
+**`SMS25` can be deactivated now; `HIGH15` waits** — Biljana via Evan, 2026-09-17: she switched
+SMS25 and needs a few more days on the HIGH15 flows. ⚠️ The landmine says no kit goes live while
+either is active, so **HIGH15 is now the thing standing between us and the Sept 25 tailgate launch.**
+
+**Group A copy fixes dropped entirely** — Evan, 2026-09-17. "We don't mess with SEO stuff,
+that's Coalition's lane, we don't do any of that. So don't do anything from that section." That covers
+the whole Group A sheet, including the product-page and collection items. The live "Made in the USA"
+and warranty lines on the 18 QT page, `fryers` collection and Platinum no longer block the tailgate
+kit. Group B (turkey) is the same kind of work, so it's not raised either unless Evan says otherwise.
+The sheet stays on file, unused: `my-work (outputs)/content/website/2026-09-17-group-a-copy-fix-sheet.md`.
+
+**Turkey kit becomes two products; "Two-Bird" leaves the title** — Evan, 2026-09-17. The
+Bundles app can't offer a 30 QT / 60 QT choice on one page, since those pots are separate products.
+"Two-Bird" can go in the description or elsewhere, not the title.
+
+**Two new creative rules: no patent number on ads; type size is a floor, not a target** —
+Evan, 2026-09-17, reviewing the first tailgate kit ad, which he rejected as a knockoff of past ads. Rule 10 and the
+tightened rule 7 are in `my-skills/hpc-ad-creative/instructions.md`.
+
+**Kits get rebuilt in the Shopify Bundles app, replacing the connector-built drafts** —
+Jay via Evan, 2026-09-17. Jay approved how the kits look but said they were built the wrong
+way: built through the connector, they would mess up inventory. The Bundles app is the
+standard. Evan updates the photos once the rebuild is done. The rebuild plan and the new IDs
+go in the [build record](../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md).
+This supersedes the variant-level build choice of 2026-09-16 (below).
+
+**Live ads stay on for copy errors unless they are bleeding money** — Evan, 2026-09-17.
+"If it's working right now then no need to change anything for a couple of copy errors."
+So the plan's week-1 job to turn off the `Video_Jay 30qt (turkey) Fryer Demo` ad
+("patent-pending", crawfish on a fryer) is dropped. The rule for turning an ad off is its
+performance kill line in PLAN.md, not a copy error. New ads are still held to the copy rules.
+
 **First month plan locked: Sept 17 – Oct 31, 2026, with targets; a new plan every month from here** — Evan, 2026-09-17: approved all of ROUX's v2 recommendations ("all the recommendations look good"). **Why:** Evan wants Atlas working toward targets instead of finding things to do. **Headline target:** consumer sales (Shopify net minus commercial cookers, other commercial gear, custom jobs, Navimow) ≥ $110,485 vs last year's same window, stretch $123,000; total ≥ $169,339; turkey fryer sales ≥ $32,973 (Oct 15–31 ≥ $23,124); turkey fryers buyable every day in October; tailgate kit share and pot pace tracked; Meta read two ways, ≤ $350/day. Approved with it: IW becomes a 120 QT-only test (dark-evergreen off) · retargeting Sept 28 · tailgate kit go/no-go Sept 24, turkey kit Sept 30 · live 30 QT demo ad off · turkey weight decided Oct 15, live Oct 19 · every new ad fully tagged. **Still needs Jay:** low-ticket spend held at ~52% (not a 25% cap) · no public BFCM before Nov 16 · 30 QT stock/why it stopped Nov 2025. Meta writes still need Evan's yes at the time. **Cadence:** `/month-plan` skill; scheduled draft on the second-to-last day of each month (Oct 30 → November); Thursday scoreboard. Two working rules from the same review: calendar events never move plan work (Evan works M–F 6:30a–3p), and plans only ask Evan about decisions that need him or Jay, in plain words. → [PLAN.md](PLAN.md) · [draft v2](../my-work%20(outputs)/internal/2026-09-17-month-plan-sept17-oct31-DRAFT-v2.md)
 
 **Three standing checks on every piece of creative: product centred by the product, no gray box around a cutout, right size for the placement** — Evan, 2026-09-16, as notes for future content weeks. Written as creative rules 2 (sharpened), 8 and 9 in `my-skills/hpc-ad-creative/instructions.md`, mirrored in `how-we-sound.md` and the content-week pre-flight. **Cause of the gray box, tested the same day:** a drop-shadow on `.pbox img` gets clipped by `.pbox` into a rectangle; moving it to `.pbox` cut the box lines on the Powered frame from 71% to 3% of the bottom edge. `carousel.py` and `brand.css` fixed; `check-centering.py` gained `--band` so any layout can be measured. The approved Sept 21–27 posts stay as scheduled (Evan: "we'll keep it as is").

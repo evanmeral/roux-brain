@@ -24,15 +24,15 @@ All sales figures are Shopify net sales (after discounts and returns, before shi
 
 | Thursday | Total sales | Consumer sales | Turkey fryer sales |
 |---|---|---|---|
-| Sept 24 | $20,351 | Finn sets by Sept 21 | $3,176 |
-| Oct 1 | $33,969 | ″ | $4,539 |
-| Oct 8 | $62,375 | ″ | $6,017 |
-| Oct 15 | $85,718 | ″ | $9,849 |
-| Oct 22 | $107,886 | ″ | $18,159 |
+| Sept 24 | $20,351 | $14,747 | $3,176 |
+| Oct 1 | $33,969 | $25,941 | $4,539 |
+| Oct 8 | $62,375 | $41,695 | $6,017 |
+| Oct 15 | $85,718 | $59,974 | $9,849 |
+| Oct 22 | $107,886 | $78,920 | $18,159 |
 | Oct 29 | $137,783 | $101,643 | $27,713 |
 | Oct 31 (final, read Mon Nov 2) | $169,339 | $110,485 | $32,973 |
 
-Last year's total had big commercial weeks (Oct 1–7 and Oct 29–31), so judge the month on consumer sales.
+Consumer column: Finn, ShopifyQL re-bucketed by plan week, 2026-09-17; reconciles to $101,643 and $110,485 → [pace line](../my-work%20(outputs)/internal/reports/2026-09-17-consumer-pace-line-and-audience-sizes.md). Last year's total had big commercial weeks (Oct 1–7 and Oct 29–31), so judge the month on consumer sales.
 
 ## The four bets
 1. **Pots keep selling through October.** The IW lookalike becomes a real 120 QT pot test, pot retargeting runs, creative sells Performance pot + Triple Jet together.
@@ -47,7 +47,7 @@ Last year's total had big commercial weeks (Oct 1–7 and Oct 29–31), so judge
 ## Week by week
 | Week | Jobs · owner | Gates |
 |---|---|---|
-| **1 · Sept 17–23** | IW checkpoint pull (Finn) → call (ROUX) → one edit: `hpc-dark-evergreen` off + new 120 QT creative (Evan) · BFCM to Jay → Coalition + Biljana (Evan) · Jay text (Evan) · chase Biljana on `HIGH15B`/`SMS25B` (Evan) · kit copy fixes group A + `SC-7R` (Evan/Jay) · 30 QT demo ad off (Evan) · consumer-sales weekly pace + audience sizes (Finn) · Garrett shoot Tue 22 + ask for Triple Jet B-roll · tailgate kit ad + new pot static (Maya) · fix `campaigns.md` (Nova) | **Fri 18** IW call · BFCM signed · **Mon 21** Biljana + group A |
+| **1 · Sept 17–23** | IW checkpoint pull (Finn) → call (ROUX) → one edit: `hpc-dark-evergreen` off + new 120 QT creative (Evan) · BFCM to Jay → Coalition + Biljana (Evan) · Jay text (Evan) · ✅ Biljana chased, `SMS25` switched, `HIGH15` a few more days · ⛔ kit copy group A dropped (Evan 9/17); `SC-7R` cleared · ⛔ 30 QT demo ad stays on (Evan 9/17) · ✅ consumer-sales pace line + audience sizes (Finn) · Garrett shoot Tue 22 + ask for Triple Jet B-roll · tailgate kit ad, Evan picks a concept (Maya) · pot static still to render (Maya) · ✅ `campaigns.md` fixed (Nova) | **Fri 18** IW call · BFCM signed · **Mon 21** Biljana + group A |
 | **2 · Sept 24–30** | Scoreboard #1 (Finn → ROUX) · **tailgate kit live Fri 25** (Evan) · LSU–Texas A&M Sat 26 / Saints Sun 27 kit posts (Sage) · **retargeting live Mon 28** (Evan) · content: kit, Seafood Month, turkey teaser (Sage) · corrected turkey kit ad (Maya) · turkey demo edit (Garrett) · copy fixes group B (Evan/Jay) | **Thu 24** tailgate kit go/no-go · **Wed 30** turkey kit go/no-go |
 | **3 · Oct 1–7** | **Turkey kit + ad live Oct 1** (Evan) · scoreboard #2 + start buyability checks (Finn) · IW 120 QT read Fri Oct 2 · retargeting day-4 check (Finn) · content: Saints Monday Night Football Oct 5, gumbo, shrimp (Sage) · Garrett cuts into the ad queue (Leo, Maya) | **Fri Oct 2** IW |
 | **4 · Oct 8–14** | Scoreboard #3 · gumbo weekend → Sauce Cooker, shrimp → 60 QT boil, organic only (Sage) · National Gumbo Day Mon 12 · LSU Homecoming + Pasta Day Oct 17 → 4-Way, turkey how-to (Sage) · pot retargeting refresh (Maya) | **Mon Oct 12** retargeting day 14 |
@@ -95,4 +95,6 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 ## Off-plan log
 *Work Evan asks for that isn't in this plan: date · what · who.*
 
--
+- **2026-09-17 · Kits rebuilt in the Shopify Bundles app** (Jay via Evan) — Evan created the three bundles, Atlas finished them; prices moved to ~6% off the parts total. Not in the plan, which assumed the Sept 16 drafts were final.
+- **2026-09-17 · Discount-code exposure read** (Evan/Jay) — 70 active codes checked because the 6% sits inside the kit price. → [code exposure](../my-work%20(outputs)/internal/2026-09-17-kit-discount-code-exposure.md)
+- **2026-09-17 · Tailgate kit ad went four rounds** (Evan) — three fresh concepts, then craft and sizing passes; creative rules 10, 11 and 12 came out of it.

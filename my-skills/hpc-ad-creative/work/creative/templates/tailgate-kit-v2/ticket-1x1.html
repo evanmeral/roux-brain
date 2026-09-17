@@ -1,0 +1,140 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+html,body{width:1080px;height:1080px}
+:root{--stock:#FFC72C;--ink:#141210;--bg:#9C978D}
+
+/* ============ GROUND: stadium concrete ============ */
+.ad{background:var(--bg)}
+.concrete{position:absolute;inset:0;
+  background-image:
+    radial-gradient(rgba(0,0,0,.10) 1.3px,transparent 1.6px),
+    radial-gradient(rgba(255,255,255,.16) 1.1px,transparent 1.4px),
+    radial-gradient(rgba(0,0,0,.06) 2.6px,transparent 3px);
+  background-size:9px 9px,13px 13px,37px 41px;
+  background-position:0 0,4px 6px,11px 3px}
+.slab{position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,transparent 0 358px,rgba(0,0,0,.10) 358px 363px),
+             repeating-linear-gradient(90deg,transparent 0 402px,rgba(0,0,0,.08) 402px 407px)}
+.gvig{position:absolute;inset:0;
+  background:radial-gradient(86% 72% at 34% 18%,rgba(255,250,235,.26) 0%,rgba(255,250,235,0) 58%),
+             radial-gradient(110% 96% at 50% 46%,rgba(0,0,0,0) 38%,rgba(0,0,0,.30) 78%,rgba(0,0,0,.52) 100%)}
+
+/* ============ TICKET ============ */
+.tilt{position:absolute;left:44px;top:58px;width:992px;height:964px;transform:rotate(-1.55deg)}
+/* two-part shadow: broad ambient + tight contact */
+.shadow{position:absolute;inset:0;border-radius:20px;
+  box-shadow:0 34px 58px rgba(0,0,0,.40),0 6px 10px rgba(0,0,0,.34)}
+.ticket{position:absolute;inset:0;border-radius:20px;overflow:hidden;
+  background:linear-gradient(126deg,#FFD24E 0%,#FFC72C 42%,#F2B417 100%);
+  box-shadow:inset 0 0 80px rgba(150,95,0,.20)}
+
+/* paper fibre + press texture */
+.fibre{position:absolute;inset:0;opacity:.62;
+  background-image:
+    repeating-linear-gradient(104deg,rgba(255,255,255,.26) 0 1px,rgba(255,255,255,0) 1px 4px),
+    repeating-linear-gradient(17deg,rgba(90,55,0,.07) 0 1px,rgba(0,0,0,0) 1px 5px),
+    radial-gradient(rgba(90,55,0,.07) .9px,transparent 1.2px);
+  background-size:auto,auto,6px 6px}
+/* guilloche rosette */
+.rosette{position:absolute;inset:0;opacity:.13;
+  background-image:
+    repeating-radial-gradient(circle at 0 0,transparent 0 25px,rgba(20,18,16,.95) 25px 26.2px,transparent 26.2px 52px),
+    repeating-radial-gradient(circle at 56px 32px,transparent 0 25px,rgba(20,18,16,.95) 25px 26.2px,transparent 26.2px 52px);
+  background-size:112px 64px,112px 64px}
+/* printed frame */
+.frame{position:absolute;left:18px;right:18px;top:18px;bottom:18px;border:4px solid rgba(20,18,16,.62);border-radius:10px}
+.frame:after{content:"";position:absolute;left:9px;right:9px;top:9px;bottom:9px;border:1.5px solid rgba(20,18,16,.45);border-radius:5px}
+
+/* tear line: punched holes + dashes + side notches */
+.perf{position:absolute;left:34px;right:34px;top:645px;height:0;border-top:4px dashed rgba(20,18,16,.5)}
+.hole{position:absolute;top:632px;width:21px;height:21px;border-radius:50%;background:var(--bg);
+  box-shadow:inset 0 3px 4px rgba(0,0,0,.45),0 1px 0 rgba(255,255,255,.35)}
+.notch{position:absolute;width:62px;height:62px;border-radius:50%;background:var(--bg);top:612px;
+  box-shadow:inset 0 4px 6px rgba(0,0,0,.40)}
+
+/* ============ INK (multiplies into the stock) ============ */
+.ink{position:absolute;inset:0;mix-blend-mode:multiply;color:var(--ink)}
+.admit{position:absolute;left:52px;top:38px;font-family:'Space Mono',monospace;font-weight:700;
+  font-size:34px;letter-spacing:.04em;text-transform:uppercase}
+.serial{position:absolute;right:54px;top:38px;font-family:'Space Mono',monospace;font-weight:700;
+  font-size:30px;letter-spacing:.06em;color:#9E2B14;text-transform:uppercase}
+.hl{position:absolute;left:48px;top:100px;font-family:'Anton',sans-serif;font-size:108px;line-height:.96;
+  text-transform:uppercase;letter-spacing:.004em}
+.seats{position:absolute;left:52px;top:440px;display:flex;gap:16px}
+.seat{border:4px solid var(--ink);border-radius:4px;padding:10px 18px 8px;min-width:158px;
+  background:rgba(255,255,255,.14)}
+.seat i{display:block;font-style:normal;font-family:'Space Mono',monospace;font-weight:700;
+  font-size:30px;line-height:1;opacity:.8}
+.seat b{display:block;font-family:'Anton',sans-serif;font-weight:400;font-size:52px;line-height:1.06;
+  text-transform:uppercase}
+.made{position:absolute;left:54px;top:576px;font-family:'Oswald',sans-serif;font-weight:600;font-size:40px;
+  line-height:1;text-transform:uppercase;letter-spacing:.03em}
+
+.kit{position:absolute;left:52px;top:664px;font-family:'Anton',sans-serif;font-size:72px;line-height:1;
+  text-transform:uppercase}
+.what{position:absolute;left:54px;top:748px;font-family:'Oswald',sans-serif;font-weight:600;font-size:40px;
+  line-height:1;text-transform:uppercase;letter-spacing:.02em}
+.btn{position:absolute;left:54px;top:816px;z-index:7;background:var(--ink);color:var(--stock);
+  font-family:'Oswald',sans-serif;font-weight:700;font-size:46px;line-height:1;padding:16px 32px 14px;
+  text-transform:uppercase;letter-spacing:.03em;border-radius:4px}
+.fine{position:absolute;left:54px;top:908px;white-space:nowrap;font-family:'Space Mono',monospace;
+  font-weight:400;font-size:22px;letter-spacing:.06em;opacity:.62;text-transform:uppercase}
+
+.code{position:absolute;right:58px;top:818px;display:flex;align-items:flex-end;height:72px}
+.code i{display:block;height:72px;background:var(--ink)}
+.code u{display:block;height:72px;background:transparent}
+.codeno{position:absolute;right:58px;top:896px;font-family:'Space Mono',monospace;font-weight:700;
+  font-size:26px;letter-spacing:.22em}
+
+.logo{position:absolute;right:58px;top:660px;width:108px;z-index:6}
+.stage{position:absolute;left:614px;width:334px;top:85px;height:534px;
+  display:flex;align-items:center;justify-content:center;z-index:5}
+.pbox{filter:drop-shadow(0 20px 20px rgba(120,80,0,.38))}
+
+body.m .ad{background:#000}
+body.m .ticket{background:#000;box-shadow:none;border-radius:0}
+body.m .concrete,body.m .slab,body.m .gvig,body.m .shadow,body.m .fibre,body.m .rosette,
+body.m .frame,body.m .perf,body.m .hole,body.m .notch,body.m .ink,body.m .btn,
+body.m .logo{visibility:hidden}
+body.m .pbox{filter:none}
+</style></head><body><div class="ad">
+<div class="concrete"></div><div class="slab"></div>
+
+<div class="tilt">
+ <div class="shadow"></div>
+ <div class="ticket">
+  <div class="fibre"></div>
+  <div class="rosette"></div>
+  <div class="frame"></div>
+
+  <div class="ink">
+   <div class="admit">Admit: the whole crew</div>
+   <div class="serial">No. 018&nbsp;LA</div>
+   <div class="hl">Best seat&#39;s<br>next to<br>the fryer.</div>
+   <div class="seats">
+     <div class="seat"><i>SEC</i><b>Tailgate</b></div>
+     <div class="seat"><i>ROW</i><b>Front</b></div>
+     <div class="seat"><i>SEAT</i><b>Fryer</b></div>
+   </div>
+   <div class="made">Hand-welded in Louisiana</div>
+
+   <div class="kit">The Tailgate Fry Kit</div>
+   <div class="what">Fryer · legs · thermometer · skimmer</div>
+   <div class="code"><i style="width:8px"></i><u style="width:4px"></u><i style="width:4px"></i><u style="width:8px"></u><i style="width:4px"></i><u style="width:8px"></u><i style="width:5px"></i><u style="width:8px"></u><i style="width:4px"></i><u style="width:6px"></u><i style="width:5px"></i><u style="width:4px"></u><i style="width:6px"></i><u style="width:3px"></u><i style="width:8px"></i><u style="width:6px"></u><i style="width:3px"></i><u style="width:6px"></u><i style="width:4px"></i><u style="width:6px"></u><i style="width:3px"></i><u style="width:8px"></u><i style="width:10px"></i><u style="width:3px"></u><i style="width:3px"></i><u style="width:8px"></u><i style="width:6px"></i><u style="width:3px"></u><i style="width:3px"></i><u style="width:4px"></u><i style="width:8px"></i><u style="width:5px"></u><i style="width:6px"></i><u style="width:8px"></u><i style="width:3px"></i><u style="width:4px"></u><i style="width:5px"></i><u style="width:6px"></u><i style="width:8px"></i><u style="width:8px"></u><i style="width:3px"></i><u style="width:8px"></u><i style="width:5px"></i><u style="width:8px"></u><i style="width:4px"></i><u style="width:5px"></u><i style="width:4px"></i><u style="width:4px"></u><i style="width:4px"></i><u style="width:3px"></u><i style="width:6px"></i><u style="width:8px"></u><i style="width:4px"></i><u style="width:3px"></u></div>
+   <div class="codeno">018 QT LA</div>
+   <div class="fine">No refunds · rain or shine · non-transferable</div>
+  </div>
+
+  <div class="btn">Shop the kit</div>
+  <div class="perf"></div>
+  <div class="hole" style="left:40px"></div><div class="hole" style="left:78px"></div><div class="hole" style="left:116px"></div><div class="hole" style="left:154px"></div><div class="hole" style="left:192px"></div><div class="hole" style="left:230px"></div><div class="hole" style="left:267px"></div><div class="hole" style="left:305px"></div><div class="hole" style="left:343px"></div><div class="hole" style="left:381px"></div><div class="hole" style="left:419px"></div><div class="hole" style="left:457px"></div><div class="hole" style="left:495px"></div><div class="hole" style="left:533px"></div><div class="hole" style="left:571px"></div><div class="hole" style="left:609px"></div><div class="hole" style="left:647px"></div><div class="hole" style="left:685px"></div><div class="hole" style="left:722px"></div><div class="hole" style="left:760px"></div><div class="hole" style="left:798px"></div><div class="hole" style="left:836px"></div><div class="hole" style="left:874px"></div><div class="hole" style="left:912px"></div>
+  <div class="notch" style="left:-31px"></div><div class="notch" style="right:-31px"></div>
+
+  <img class="logo" src="../../../../assets/brand-refs/HPC-ShieldLogo-Black.png">
+  <div class="stage"><div class="pbox" style="width:334px;height:534px;transform:translate(0px,0px)"><img src="../../../../assets/product-cutouts/18qt_fryer_leg_extensions.PNG" style="width:513px;left:-121.98px;top:-55.86px"></div></div>
+ </div>
+</div>
+
+<div class="gvig"></div>
+</div></body></html>
