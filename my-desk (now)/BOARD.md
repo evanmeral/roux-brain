@@ -61,8 +61,7 @@ Priority: 30 QT turkey demo (Stephen, live by Oct 1) · 60 QT shrimp boil · 18 
 - **IntentWave and Coalition are advisors, not a work queue.** Parked IW ideas: On3 (Pete's lane) · Peter's paid proposal (Jay agreed to nothing) · 24-buyer audience (below Meta's 100 minimum).
 - **CAC ceilings: v3 + the incremental rule** (in the rulebook, 2026-09-16). 18 QT ceiling ~$73; `18qt-TOF` held at $50/day; $350/day holds. → [v3](../my-work%20(outputs)/internal/reports/2026-09-10-cac-ceilings-v3.md)
 - **Scoreboard skill (`hpc-scoreboard-report`)** lives in `my-skills/`; its Monday task no longer exists in the app (re-create if wanted). Per-product CAC rebuild is ROUX's open question, not urgent. The new Thursday plan scoreboard is separate.
-- **June–October off-season plan**: the real +$500K project. Starts after the post-mortem.
-- **Creator brief.** ~17 idle creators on UpPromote. ⛔ Paid content is discontinued. · **Digit connects in a few weeks.** Stock is fine, so don't gate plans on inventory (buyability is tracked, not gated).
+- **June–October off-season plan**: the real +$500K project, after the post-mortem. · **Creator brief.** ~17 idle creators on UpPromote. ⛔ Paid content is discontinued. · **Digit connects in a few weeks.** Stock is fine, so don't gate plans on inventory (buyability is tracked, not gated).
 - **Lanes:** Google Ads + SEO is Coalition's — read-only monitoring. **Email / SMS / Klaviyo is Biljana's**, and we stay out.
 - ✅ **NOLA Home & Garden Show, Feb 19–21 2027: booked and paid.** No propane in the hall. ⛔ Louisiana Outdoor Expo and the Nov 11 Cater-Event Expo are a **no**.
 - **Shopify cleanup (Evan's or Jay's click):** Triple Jet compare-at = price · Scratch & Dent Performance variants carry the Powered cost · SKU `PW30-VLV075-TFR-B-SBI` on two products · two 18 QT variants with compare-at below price · 25 active products not on the Online Store · a 40 QT turkey fryer exists unlisted with 0 stock. → [landed-cost pull](../my-work%20(outputs)/internal/reports/2026-09-10-landed-cost-by-variant.md)
@@ -86,8 +85,7 @@ Priority: 30 QT turkey demo (Stephen, live by Oct 1) · 60 QT shrimp boil · 18 
 - ⛔ **Meta connector: no write without Evan's explicit yes for that specific change; publishing is blocked outright.** HP Cookers ADs only. A locked plan does not authorize a write.
 - ⛔ **Use the real margin (~40.6%), not the booked 46%**, and **never the 44.5% August margin**.
 - ⛔ **Vendor call figures are not facts** until checked against Shopify. · ⛔ **No 30%-off legs in November.**
-- **Showroom cards carry no warranty line and no price date.** Before every print run, `/hpc-showroom-cards` Mode A.
-- **Never quote a price not in** [what-we-sell.md](../my-business%20(context)/what-we-sell.md); **Shopify prices always win.** **Never name a competitor, and never say "Yeti"** in anything customers see.
+- **Showroom cards carry no warranty line and no price date** (`/hpc-showroom-cards` Mode A before every print run). **Never quote a price not in** [what-we-sell.md](../my-business%20(context)/what-we-sell.md); **Shopify prices always win.** **Never name a competitor, and never say "Yeti"** in anything customers see.
 
 ---
 
@@ -105,8 +103,7 @@ Source of truth → [metrics-and-goals.md](../my-files%20(knowledge)/hpc-referen
 | **Turkey season 2025** | **171 of 318** turkey-fryer orders Oct–Nov came Nov 1–15 (old 164/294 not reproducible) | ShopifyQL, Finn, 2026-09-17 |
 | **Last 30 days, Aug 17–Sep 16** | 315 orders · $117,611.17 net | ShopifyQL, Finn, 2026-09-17 |
 | **Meta live daily caps** | **$314/day** (IW $100 · 18qt $50 · BPM $164) · +$30 retargeting Sept 28 = $344 of $350 | Ads Manager, 2026-09-11 · PLAN.md |
-| ⭐ **P&L, last 365 days** | Revenue **$4.3M booked · ~$3.9M real** · net **−5%** · marketing **$676k** · COGS **$1.68M** · margin **46% booked ≈ 40.6% real** | Jay, 2026-09-10 · real margin derived |
-| Overhead | **$49,550/mo, steady** · kept out of ad ceilings under the incremental rule | Jay 09-09/10 |
+| ⭐ **P&L, last 365 days** | Revenue **$4.3M booked · ~$3.9M real** · net **−5%** · marketing **$676k** · COGS **$1.68M** · margin **46% booked ≈ 40.6% real** · overhead **$49,550/mo**, kept out of ad ceilings | Jay, 2026-09-09/10 · real margin derived |
 | ⚠️ Break-even blended ROAS ~2.4 | **Under revision**: built on the stale 44.5% margin | `paid-media.md`, 2026-08-26 |
 
 ⚠️ **Not on file, and not to be invented:** actual CAC · Coalition's actual Google spend · the new-vs-returning split for Sept 1–8. Sessions for Aug 19–21 and 28–29 are bot-inflated (conversion rate unreliable).
