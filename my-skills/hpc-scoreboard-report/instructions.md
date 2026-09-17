@@ -3,7 +3,7 @@ name: hpc-scoreboard-report
 description: Generate High Performance Cookers' CAC/ROAS marketing scoreboard report from Meta Ads and Google Ads CSV exports. Use this skill whenever Evan asks to "run the scoreboard report," "build the CAC/ROAS report," "do the marketing scoreboard," or uploads Meta Ads and Google Ads export CSVs together for performance analysis. This produces a Jay-ready Word document comparing customer acquisition cost (CAC) and return on ad spend (ROAS) by channel.
 ---
 
-> Supersedes the plugin copy `anthropic-skills:hpc-scoreboard-report`, migrated 2026-09-16; Evan can remove the plugin one from the Claude skills settings.
+> Supersedes the plugin copy `anthropic-skills:hpc-scoreboard-report`, migrated 2026-09-16. Evan deleted the plugin copy from the Claude skills settings the same day (confirmed gone from disk); this is the only copy.
 
 # HPC Marketing Scoreboard Report
 

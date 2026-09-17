@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-16",
+  "runAt": "10:09",
+  "meta": {
+    "total": 288.55,
+    "byCampaign": [
+      { "name": "IW Lookalike 1% - Cold Prospecting - Sept 2026", "spend": 84.36 },
+      { "name": "18qt-TOF-Prospecting", "spend": 48.10 },
+      { "name": "BPM_TOF_Manual", "spend": 156.09 }
+    ],
+    "source": "Meta connector, HP Cookers ADs, read 10:12"
+  },
+  "shopify": {
+    "orders": 4,
+    "net": 1880.36,
+    "source": "ShopifyQL, read 10:13"
+  },
+  "problems": []
+}

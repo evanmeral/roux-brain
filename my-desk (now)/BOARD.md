@@ -1,4 +1,4 @@
-# Board — 2026-09-16 (Wednesday)
+# Board — 2026-09-17 (Thursday)
 
 > The one page. What is live, what is next, who is blocking, what must not be shipped.
 > **Rewritten in place at every `/wrap` — never appended.** Hard cap: 120 lines.

@@ -1,7 +1,9 @@
 # Tailgate + Thanksgiving bundles: the plan
 **2026-09-11 · ROUX · for Evan. Approver: Jay. Revised the same day after Jay's answers and Evan's kit changes.**
 
-Read-only throughout. Nothing was written to Shopify, Meta or Google. **Evan builds the kits** (Jay,
+✅ **Built 2026-09-16 as drafts, on Evan's go** → [build record](2026-09-16-kit-build-record.md) (IDs, what's set, what's left before activation).
+
+Read-only throughout when written. Nothing was written to Shopify, Meta or Google at that point. **Evan builds the kits** (Jay,
 2026-09-11). Changing discount codes and publishing ads are also Evan's click.
 Jay's version: [2026-09-11-bundles-for-jay.md](2026-09-11-bundles-for-jay.md) · Code to-do:
 [2026-09-11-bundle-discount-code-fix.md](2026-09-11-bundle-discount-code-fix.md) · Board item: Now #3.
