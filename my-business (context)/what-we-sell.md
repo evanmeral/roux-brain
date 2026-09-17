@@ -1,6 +1,6 @@
 # What We Sell
 
-**Last updated:** 2026.09.10
+**Last updated:** 2026.09.17
 **Price source:** Prices verified against Shopify, 2026-09-10 (Finn's variant pull) → [2026-09-10-landed-cost-by-variant.md](../my-work%20%28outputs%29/internal/reports/2026-09-10-landed-cost-by-variant.md), all 594 active variants, **price field, not compare-at**. Evan, 2026-09-10: *the Shopify prices are always correct.* Earlier source: `products.json`, pulled 2026-08-26 → `my-files (knowledge)/hpc-reference/research/2026-08-26-shopify-catalog.json`.
 **Priority tiers set by Evan 2026-09-01** (these supersede the 2026-08-26 tiers).
 
@@ -113,6 +113,8 @@ had no price in this file. Tier not set by Evan. These are not part of the small
 Scratch & Dent is a **margin-safe entry price point** — it lets a price-sensitive buyer into the brand without discounting the main line.
 
 ⛔ **Bundles take no discount codes.** The discount is built into the bundle price, so no code — welcome, sale or any other — applies on top. Example: the **Ultimate Boiling Bundle** discounts the Cooling Ring and Thermo Paddle for buying the Performance Pot and Boil Boss burner together. *(Evan, 2026-09-10.)* New bundles are **mainly HPC product**; an outside add-on item is fine if it helps sales, but don't build a sourcing project around one item *(Evan, 2026-09-10)*.
+
+🚧 **Three kits exist in Shopify as DRAFTS — not for sale, and not to be quoted to a customer until they go active** *(built 2026-09-16, read back from Shopify the same day; prices are Jay's, 2026-09-11)*: **Tailgate Fry Kit** $465 (`BUNDLE-18QT-TAILGATE`: 18 QT Powered 1/4" valve with basket · Leg Extensions · 5" thermometer · 20" skimmer) · **Turkey Fry Kit**, one page, two sizes: **30 QT** $469 (`BUNDLE-30QT-TURKEY`) and **60 QT Two-Bird** $519 (`BUNDLE-60QT-TURKEY`), each with its pot · 12" thermometer · Wind Shield · 20" skimmer. Evan, 2026-09-16: they stay drafts until Jay approves the built pages. **Bundle SKUs read `BUNDLE-<size>-<use>`** — "bundle" not "kit", and name what it is for *(Evan, 2026-09-16)*. → [build record](../my-work%20%28outputs%29/internal/2026-09-16-kit-build-record.md)
 
 | Scratch & Dent product | Price | Variants |
 |---|---|---|
@@ -252,7 +254,7 @@ Zydeco Fire Hot Sauce $5.95 · Seasoning Dust $6.95 · Combo Pack $11.99 · Seaf
 
 Skimmers $9.99–$19.99 · Paddles $9.99–$85 · Scoop $14.99 · Basket Buddy $10.50–$15.99 · Replacement Baskets $35–$120 · Replacement Lids $18.50–$34.75 · Regulators $25.99–$78 · Hose $19.99–$34.99 · Wind Shield $21 · Fry Thermometers $15.99–$18.99 · Turkey Fryer Racks $25–$65 · **Cooker Leg Extensions $119** · Add a Custom Logo $75
 
-> **Fryer accessory fitment (Evan, 2026-09-11):** the **5" fry thermometer** (`HP-5in-Therm`, $15.99) is the one for the **18 QT**, because the 12" doesn't fit it well. The **12"** is the one for the **30 QT turkey pot**. The **Wind Shield** is for a pot sitting on the ground, **not** a fryer standing on leg extensions. *(Wind Shield PDP: powered cookers 60 QT or smaller. Thermometer SKU and price from ROUX's Shopify read, 2026-09-11.)*
+> **Fryer accessory fitment (Evan, 2026-09-11):** the **5" fry thermometer** (`HP-5in-Therm`, $15.99) is the one for the **18 QT**, because the 12" doesn't fit it well. The **12"** is the one for the **30 QT turkey pot**. The **Wind Shield** is for a pot sitting on the ground, **not** a fryer standing on leg extensions. *(Wind Shield PDP: powered cookers 60 QT or smaller. Thermometer SKU and price from ROUX's Shopify read, 2026-09-11.)* **The 12" is also the thermometer for the 60 QT Dual turkey fryer** *(Evan, 2026-09-16, confirming it for the 60 QT Two-Bird kit)*.
 
 ---
 

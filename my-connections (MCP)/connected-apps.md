@@ -123,6 +123,17 @@ This is the same shape as the Venon problem Evan closed on 2026-08-26. **Evan's 
 
 ---
 
+### What the Shopify connector has been used to write, and what that taught us *(2026-09-16, each on Evan's go)*
+
+- **It can build native bundles.** The three kit drafts were built as **variant-level fixed bundles** (`productSet` → `productVariantRelationshipBulkUpdate`), because a product-level bundle (how Platinum is built) cannot put a different pot on each variant. ⚠️ **Whichever app attaches the components owns them** — so the kits' components can only be changed through this connector, not in the Shopify Bundles app. Price, copy, tags, images, status and metafields edit in admin as normal.
+- **Attaching components resets the parent variant's inventory policy to DENY.** Set it back to CONTINUE afterwards (Platinum's setting) and read it back.
+- **Product-page fields the theme uses** *(checked against the live 18 QT page)*: `custom.features_benefits` (rich text) renders as "Features & Benefits"; `custom.product_features` (metaobject cards) renders too; `custom.product_faqs` questions did **not** appear on the live 18 QT page; `custom.frequently_asked_question` (rich text) is filled on the kits only, so whether the theme shows it is **unverified**.
+- **It cannot see the "All Products - Eligible for Discounts" collection** (title search returns nothing). That check is always Evan's eye in admin.
+- **A storefront truth-check needs no login:** `/products/<handle>.js` returns `available` per variant. That is how the skimmer (`SC-7R`) was confirmed unbuyable online, rather than inferred from an admin count.
+- Every step and ID: [kit build record](../my-work%20%28outputs%29/internal/2026-09-16-kit-build-record.md).
+
+---
+
 ## 🗑️ HPC Meta and Google Ads Assistant — DELETED 2026-09-01
 
 **Deleted by Evan on 2026-09-01, after its knowledge was extracted.** Not a Venon-style ban — it was removed for redundancy, not misconduct.
