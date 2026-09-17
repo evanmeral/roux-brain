@@ -44,7 +44,7 @@ JAN  FEB  MAR  APR  MAY  JUN  JUL  AUG  SEP  OCT  NOV  DEC
 | **August** | Historically slowest — **the month to attack, not concede.** | Fryers + pasta/sauce cookers + accessories + merch. Also: shoot next season's content and seed creators. | Ongoing |
 | **September** | Tailgate season opens (LSU/Saints) | Fryer + tailgate rigs. Game-day content. | Aug 10 |
 | **October** | Peak tailgating | Fryers, portability, game-day. Halloween/fall boils. | Sep 10 |
-| **November** | **Turkey fry + Black Friday/Cyber Monday** | 30 QT & 60 QT turkey fryers. BFCM is the year's #2 revenue event. **Ship cutoff: 3 days before Thanksgiving morning, so Mon Nov 23, 2026 (Jay, 2026-09-11).** 164 of 294 turkey-fryer orders in the 2025 season came Nov 1–15 *(Shopify, checked two ways, 2026-09-11)*. | Oct 1 |
+| **November** | **Turkey fry + Black Friday/Cyber Monday** | 30 QT & 60 QT turkey fryers. BFCM is the year's #2 revenue event. **Ship cutoff: 3 days before Thanksgiving morning, so Mon Nov 23, 2026 (Jay, 2026-09-11).** 164 of 294 turkey-fryer orders in the 2025 season came Nov 1–15 *(Shopify, checked two ways, 2026-09-11)*. **Corrected 2026-09-17 (Finn):** the 164/294 split could not be reproduced; ShopifyQL all-channel distinct orders give **171 of 318** (53.8%) Nov 1–15, 159 online-store only — Nov 1–15 is the peak under every definition. Last year the 30 QT page kept traffic ~Nov 20–21 while add-to-carts collapsed (looks unbuyable; cause untested). | Oct 1 |
 | **December** | Gifting + holiday fries | Ultimate Combo gifting, gift cards, shipping cutoffs | Nov 15 |
 
 ## The two revenue peaks

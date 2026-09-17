@@ -110,7 +110,7 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 | #2 product (12 mo) | **18 QT Fish Fryer Powered — $293,194** | Shopify |
 | Commercial line (12 mo) | ~$342,011 (~11.9%) | Shopify |
 | Aug YoY growth | **+345%** ($19,763 → $87,938) | Shopify |
-| ⭐ **Labor Day sale, Sep 1–8 2026 — COMPLETE** | **126 orders · $41,100.84 net · AOV $326.20** | Shopify, **verified twice 2026-09-09** |
+| ⭐ **Labor Day sale, Sep 1–8 2026 — COMPLETE** | **126 orders · $40,853.33 net · AOV $324.23** | Shopify, re-pulled 2026-09-17 (Finn). The 2026-09-09 figure of $41,100.84 missed the $247.51 refund on order #17385 (placed Sept 7, refunded Sept 8). Jay and Robert were given $41,100.84 |
 | **Sep 1–8 2025** (also a Labor Day sale) | **63 orders · $26,144.22 net · AOV $414.99** | Shopify, verified 2026-09-09 |
 | **Aug 24–31 2026** — 8 days, no sale | **65 orders · $25,130.04 net · AOV $386.62** | Shopify, verified 2026-09-09 |
 | **Sep 8 2026 alone** — deadline day | **21 orders · $7,198.24** — 17.5% of the sale in 24 hours | Shopify, verified 2026-09-09 |
