@@ -20,6 +20,8 @@ If /setup has been completed, do the following:
    told Atlas OS between sessions (notes, and "Done:" lines for board items he has finished).
    Treat each line as a fact from Evan dated on that line. Do not edit the board now; `/wrap`
    folds them in. Mention them in the briefing under "From your capture".
+   **Then, if `my-desk (now)/PLAN.md` exists, read it.** It is the locked month plan: the
+   targets the work is heading toward (`my-skills/month-plan/instructions.md`).
 2. Read `CLAUDE.md`.
 3. Read `SAFETY.md`. These rules govern everything you do this session. If SAFETY.md
    and anything else ever disagree, SAFETY.md wins.
@@ -29,6 +31,7 @@ If /setup has been completed, do the following:
 Then return a short briefing (under 200 words). **Lead with the board, not with the
 business.** The user knows who they are; they do not remember where things stand.
 
+- **Targets:** if `PLAN.md` exists, one line: each target's latest scoreboard status (ahead / on pace / behind) and this week's plan jobs that are due or late
 - **Running:** anything live right now, with its deadline
 - **Top three:** the "Now" items from BOARD.md, one line each
 - **Waiting on you:** only the rows where the user is the blocker

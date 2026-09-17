@@ -7,6 +7,11 @@ session felt small; a short session still moves the board.
 
 ## 1. Rewrite the board
 
+**If `my-desk (now)/PLAN.md` exists, check the session against it first.** Tick any plan job
+finished this session in its week table. Anything Evan asked for that is not in the plan goes
+one line into its **Off-plan log**. The board's **Now** should be this week's plan jobs unless
+Evan said otherwise; if they differ, say why in the report.
+
 Open `my-desk (now)/BOARD.md` and **rewrite it in place.** Do not append. Do not add a
 "Update — today" section at the bottom. If a line is no longer true, replace it; if it is
 finished, remove it. **Appending is how the last state file grew to 304 lines and became
