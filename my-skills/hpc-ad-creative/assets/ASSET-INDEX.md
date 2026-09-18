@@ -37,7 +37,7 @@ that holds on the thermometer.
 |---|---|---|---|
 | **`hpc-team-crawfish-cookoff-booth-2026-04.jpg`** | 4032×3024 | Six of the team in matching red HPC shirts under the HPC tent at a crawfish cookoff, Apr 18 2026 (photo metadata). The canopy reads "Feel the Heat. See the Speed. Taste the Difference." There's a "Why buy an HP cooker?" A-frame sign, and an HPC shield yard sign. Horizontal, outdoor, bright. | The team-on-camera trust asset: organic posts, the about page, "real people build these." |
 
-⚠️ **Before using it in an ad:** the shield yard sign reads **"Built on patent pending Tunnel Tube technology"**, and patent-pending is a landmine (the patent is granted). The sign is readable at full size, so crop it out or cover it. An **LSU** tent and other people's trucks are in the background. It shows **six people, not the team of 12**, so never caption it as the whole team. The A-frame says "average raging boil in 7 minutes"; don't lift that claim from the photo.
+The shield yard sign reads "patent pending". That's fine: it's real signage in a photo, and the patent-pending rule covers copy we write, not photos (Evan, 2026-09-18). It shows **six people, not the team of 12**, so don't caption it as the whole team.
 
 ### Product-in-scene (studio lifestyle)
 `60-quart-lifestyle.png` · `80-quart-lifestlye.png` *(sic)* · `100-quart-lifestyle.png` ·

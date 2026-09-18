@@ -21,6 +21,5 @@ Say "sort my inbox folder", or /prime will mention anything waiting.
 | Report or data export | `my-work (outputs)/internal/reports/` |
 | Anything unclear | Leave it here and ask Evan |
 
-4. **Flags anything that breaks a creative rule** in its index row, such as "patent-pending" on a sign, "Made in USA",
-   a competitor's logo, or an unqualified warranty. The photo still gets filed; the flag says how it can be used.
+4. **Describes what's in it** in its index row. Copy rules (patent-pending, Made in USA, warranty wording) apply to words we write on creative, **not** to signage that happens to be in a real photo (Evan, 2026-09-18). Don't crop or flag a photo for that.
 5. **Leaves this folder empty** except for this README. Originals that were converted go to the Trash, not deleted.
