@@ -135,9 +135,11 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
    | Story, reel (organic) | 1080×1920 (9:16) · type out of the top 250px and bottom 340px · video as MP4 |
    | Paid static | 1:1 + 9:16 + 1.91:1 in one ad · never 4:5 |
    A raw photo gets cropped to the slot, never stretched or letterboxed.
-10. **No patent number on ads.** *(Evan, 2026-09-17.)* Never put "Patent No. 11,844,459" (or any
-    patent line) on a paid or organic ad creative. "Patented Tunnel Tubes" in copy is still allowed
-    where it earns its place; the number itself stays off the creative.
+10. **No patent number as written copy on ads.** *(Evan, 2026-09-17; narrowed 2026-09-18.)* Never write
+    "Patent No. 11,844,459" (or any patent line) as text on a paid or organic ad creative. "Patented
+    Tunnel Tubes" in copy is still allowed where it earns its place. **The coloured shield logo is fine,
+    even though the patent number is printed on it** (Evan, 2026-09-18). The rule covers words we set,
+    not the logo artwork.
 11. **Keep up the creative variety.** *(Evan, 2026-09-17.)* Every new ad or static starts from a
     **fresh idea and its own look** — never a copy-paste of the last creative's layout, palette and
     type treatment. A new angle deserves a new composition, new colour, new typefaces, not the same
@@ -175,8 +177,9 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
 - Prices must match `my-business (context)/what-we-sell.md`. Re-pull before running a price.
 - **Tunnel Tube tech is the tubes hand-welded on the POT BOTTOM**, spreading the burner's heat across
   the whole base. Never imply the burner is what makes it fast.
-- Patent No. **11,844,459.** (For accuracy only. The number never goes on an ad, rule 10.)
+- Patent No. **11,844,459.** (For accuracy only. The number is never written as ad copy, rule 10; the coloured shield logo that carries it is fine.)
 - **Lead with quality, not price** — 80% of customers buy on quality, 10% on price.
+- **Performance pot on the Boil Boss Triple Jet = the Platinum Boiling Bundle** *(Evan, 2026-09-18)*. Never call that image Powered, and never link it to a Powered pot. Link it to the Platinum Boiling Bundle, or to the Ultimate Boiling Bundle (same + Cooling Ring + Thermo Paddle). URL and details: `what-we-sell.md` §1A.
 
 ## Logo variants — pick for contrast, never force it
 
@@ -189,6 +192,8 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
 | `HPC-ShieldLogo-Black.png` | Light backgrounds, single-colour, print |
 | `HPC-CircleLogo-color.png` | Secondary — only if a round mark suits the composition |
 | `HPC-FlameLogo-Color/Black.png` | Icon-only: avatars, watermarks, small spaces |
+
+The coloured shield carries the patent number in its artwork. That's allowed (rule 10 covers written copy only, Evan 2026-09-18).
 
 Choose the variant that already has contrast. **Don't add glows or shadows to make a logo work.**
 ⚠️ The circle logo says "patent pending" — the patent has issued. Prefer the shield.

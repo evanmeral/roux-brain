@@ -72,6 +72,14 @@ flourish, and it is never widened past what this file documents.** → [decision
 
 **Already built for this:** the **Platinum Boiling Bundle** ($737–$940, saves $100) is exactly Performance Pot + Triple Jet + Electronic Ignition. It's the packaged version of the main push — lead with it.
 
+⛔ **The Performance-on-Triple-Jet image is the Platinum Boiling Bundle, never a Powered pot** *(Evan, 2026-09-18)*.
+Any creative showing the **120 QT Performance pot on the Boil Boss Triple Jet** is a Performance pot on our burner.
+Name it and link it as the **Platinum Boiling Bundle**:
+`highperformancecookers.com/products/platinum-boiling-bundle-performance-stock-pot-with-triple-jet-burner-and-electronic-ignition`
+(Shopify `Product/9799316111600`, $737–$940, ACTIVE, read 2026-09-18). Never call it Powered, and never
+route it to a Powered pot page. **The allowed swap is the Ultimate Boiling Bundle**: the same pot + burner
+plus a Boil Boss Cooling Ring and Thermo Paddle ($846.98–$1,049.98, Tier 1C).
+
 ### 1B. Powered pots — the small sizes, their own push
 
 Complete rigs, lower ticket, lower friction. A separate campaign from 1A, not a footnote to it.

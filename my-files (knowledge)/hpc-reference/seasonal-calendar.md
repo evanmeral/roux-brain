@@ -15,6 +15,8 @@
 
 Dates below are the *demand* windows; campaigns must launch 3–6 weeks ahead of each.
 
+**Outside Louisiana:** what seafood is in season, by region and month (blue crab, lobster, shrimp, oysters, king and Dungeness crab, boiled peanuts) → [seafood-seasons-by-region](seafood-seasons-by-region.md) *(Jay's printed sheet via Evan, 2026-09-18, unconfirmed)*.
+
 **✅ Capacity is NOT a constraint.** Per Evan: HPC can fill a demand spike — shipping may slow, but
 *"we will make it work, thats a great problem to have."* Commercial is even better: the metal
 manufacturer's warehouse is **directly next door**, with **2–3 day turnaround** on commercial builds.

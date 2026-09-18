@@ -1,5 +1,7 @@
 # Garrett shoot plan: Tuesday, Sept 22 (v4 — final 8)
 
+> ⚠️ **Moved to Wednesday, Sept 23** (Evan, 2026-09-18). Everything else below stands, except the tailgate kit contents. The kit as built is 18 QT Powered + Leg Extensions + 5" thermometer + 20" skimmer, with no wind shield (what-we-sell.md). → [shopping list](2026-09-18-garrett-shoot-shopping-list.md)
+
 **Status: all 8 videos defined and ready for Evan's final read.** One open detail — which seafood for Video
 7 (shrimp/fish/soft-shell crab) — is Evan's call, closer to the day. Built from the Sept 11 call-prep doc,
 the Sept 14 Fathom recap, and four rounds of Evan corrections/decisions the same day. Both the Google Sheet

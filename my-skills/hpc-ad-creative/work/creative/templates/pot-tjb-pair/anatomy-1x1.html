@@ -3,29 +3,37 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* Direction B: ANATOMY. A spec-sheet / blueprint read of the pair: navy grid, the rig centred,
-   labelled callouts with leader lines. For the retargeting set: they've seen it, now show them
-   what they're looking at. */
+   labelled callouts with leader lines. For the retargeting set.
+   2026-09-18 fix: no basket in this photo, so "lid, basket & drain valve" is an "in the box"
+   tag in the header, not a callout pointing at the picture. */
 body{width:1080px;height:1080px}
 .ad{background:#0B2239;color:#fff;font-family:'Barlow Condensed',sans-serif}
 .grid{position:absolute;inset:0;background-image:
   linear-gradient(rgba(156,195,230,.09) 1px,transparent 1px),
   linear-gradient(90deg,rgba(156,195,230,.09) 1px,transparent 1px);
   background-size:54px 54px;background-position:-1px -1px}
-.logo{top:48px;right:52px;width:132px}
-.head{position:absolute;left:56px;top:40px}
-.hl{font-weight:800;font-size:118px;line-height:.9;letter-spacing:-.01em;text-transform:uppercase}
+.hl{font-weight:800;line-height:.9;letter-spacing:-.01em;text-transform:uppercase}
 .hl span{color:#F69329}
-.sub{margin-top:14px;font-weight:600;font-size:38px;line-height:1.1;color:#BFD8EE}
-.stage{position:absolute;left:0;right:0;top:236px;height:704px;display:flex;align-items:center;justify-content:center}
+.sub{font-weight:600;line-height:1.1;color:#BFD8EE}
+.box{display:inline-block;border:3px solid #F69329;border-radius:6px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+.box b{color:#F69329;font-weight:800}
 .pbox{overflow:visible;filter:drop-shadow(0 30px 34px rgba(0,0,0,.55))}
-.co{position:absolute;font-weight:700;font-size:36px;line-height:1.02;text-transform:uppercase;letter-spacing:.01em}
-.co small{display:block;font-weight:500;font-size:31px;text-transform:none;color:#BFD8EE;letter-spacing:0;margin-top:4px}
+.co{position:absolute;font-weight:700;line-height:1.02;text-transform:uppercase;letter-spacing:.01em}
+.co small{display:block;font-weight:500;text-transform:none;color:#BFD8EE;letter-spacing:0;margin-top:4px}
 .co.r{text-align:left}.co.l{text-align:right}
 svg.lines{position:absolute;inset:0}
-.foot{position:absolute;left:0;right:0;bottom:0;height:128px;background:#F69329;color:#0B2239;display:flex;align-items:center;justify-content:space-between;padding:0 56px}
-.foot .s{font-weight:800;font-size:40px;text-transform:uppercase;line-height:1}
-.foot .s em{font-style:normal;display:block;font-weight:600;font-size:22px;text-transform:none;margin-top:6px;opacity:.85}
-.cta2{background:#0B2239;color:#fff;font-weight:800;font-size:38px;text-transform:uppercase;padding:18px 32px;border-radius:8px;letter-spacing:.02em}
+.foot{position:absolute;left:0;right:0;bottom:0;background:#F69329;color:#0B2239;display:flex;justify-content:space-between}
+.foot .s{font-weight:800;text-transform:uppercase;line-height:1}
+.foot .s em{font-style:normal;display:block;font-weight:600;text-transform:none;opacity:.85}
+.cta2{background:#0B2239;color:#fff;font-weight:800;text-transform:uppercase;border-radius:8px;letter-spacing:.02em;white-space:nowrap}
+.logo{top:48px;right:52px;width:132px}
+.head{position:absolute;left:56px;top:40px}
+.hl{font-size:118px}.sub{margin-top:14px;font-size:38px}
+.box{margin-top:18px;font-size:34px;padding:9px 16px 7px}
+.co{font-size:36px}.co small{font-size:31px}
+.foot{height:128px;align-items:center;padding:0 56px}
+.foot .s{font-size:40px}.foot .s em{font-size:22px;margin-top:6px}
+.cta2{font-size:38px;padding:18px 32px}
 </style></head><body>
 <div class="ad">
   <div class="grid"></div>
@@ -33,15 +41,13 @@ svg.lines{position:absolute;inset:0}
   <div class="head">
     <div class="hl">Look <span>closer.</span></div>
     <div class="sub">120 QT Performance pot on a Boil Boss Triple Jet</div>
+    <div class="box"><b>In the box:</b> lid, basket &amp; drain valve</div>
   </div>
-  <div class="stage">
-    <div class="pbox" id="p" style="width:444px;height:690px;transform:translate(0px,0)"><img src="../../../../assets/product-cutouts/updated-2026-09/120qt on Boilboss TJB - lid off, hose and regulator.png" style="width:656px;left:-112px;top:-92px"></div>
-  </div>
-  <svg class="lines" width="1080" height="1080"><line x1="796" y1="368" x2="708" y2="392" stroke="#F69329" stroke-width="3"/><circle cx="708" cy="392" r="9" fill="#F69329" stroke="#0B2239" stroke-width="3"/><circle cx="796" cy="368" r="4" fill="#F69329"/><line x1="796" y1="628" x2="664" y2="598" stroke="#F69329" stroke-width="3"/><circle cx="664" cy="598" r="9" fill="#F69329" stroke="#0B2239" stroke-width="3"/><circle cx="796" cy="628" r="4" fill="#F69329"/><line x1="286" y1="458" x2="380" y2="528" stroke="#F69329" stroke-width="3"/><circle cx="380" cy="528" r="9" fill="#F69329" stroke="#0B2239" stroke-width="3"/><circle cx="286" cy="458" r="4" fill="#F69329"/><line x1="286" y1="738" x2="470" y2="700" stroke="#F69329" stroke-width="3"/><circle cx="470" cy="700" r="9" fill="#F69329" stroke="#0B2239" stroke-width="3"/><circle cx="286" cy="738" r="4" fill="#F69329"/></svg>
-  <div class="co l" style="right:806px;top:420px">Lid, basket<br>&amp; valve<small>all included</small></div>
-  <div class="co l" style="right:806px;top:700px">Boil Boss<br>Triple Jet<small>built to pair</small></div>
-  <div class="co r" style="left:808px;top:330px">4mm<br>aluminum<small>built in Louisiana</small></div>
-  <div class="co r" style="left:808px;top:590px">Tunnel<br>Tubes<small>welded on<br>the bottom</small></div>
+  <div class="pbox" style="position:absolute;left:331px;top:288px;width:418px;height:650px"><img src="../../../../assets/product-cutouts/updated-2026-09/120qt on Boilboss TJB - lid off, hose and regulator.png" style="width:618px;left:-105px;top:-87px"></div>
+  <svg class="lines" width="1080" height="1080"><line x1="796" y1="404" x2="698" y2="428" stroke="#F69329" stroke-width="3"/><circle cx="698" cy="428" r="9" fill="#F69329" stroke="#0B2239" stroke-width="3"/><circle cx="796" cy="404" r="4" fill="#F69329"/><line x1="796" y1="652" x2="657" y2="622" stroke="#F69329" stroke-width="3"/><circle cx="657" cy="622" r="9" fill="#F69329" stroke="#0B2239" stroke-width="3"/><circle cx="796" cy="652" r="4" fill="#F69329"/><line x1="286" y1="756" x2="474" y2="718" stroke="#F69329" stroke-width="3"/><circle cx="474" cy="718" r="9" fill="#F69329" stroke="#0B2239" stroke-width="3"/><circle cx="286" cy="756" r="4" fill="#F69329"/></svg>
+  <div class="co r" style="left:808px;top:366px">4mm<br>aluminum<small>built in Louisiana</small></div>
+  <div class="co r" style="left:808px;top:614px">Tunnel<br>Tubes<small>welded on<br>the bottom</small></div>
+  <div class="co l" style="right:806px;top:718px">Boil Boss<br>Triple Jet<small>built to pair</small></div>
   <div class="foot">
     <div class="s">Rolling boil in as little as 7 min<em>Times vary with volume, ambient temperature and fuel pressure.</em></div>
     <div class="cta2">Shop the pair</div>
