@@ -1,7 +1,13 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand.css">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-html,body{width:1080px;height:1080px}
+/* C · Game Ticket · 9:16 story/reel. Same stock, rosette, printed frame, perforation, multiply ink,
+   barcode and concrete as ticket-1x1.html, re-laid out as a tall ticket: seats stack in a column
+   under the headline so the fryer gets the full right side; the shield fills the space beside the
+   headline. Type inside y 250-1580. */
+html,body{width:1080px;height:1920px}
+
+
 :root{--stock:#FFC72C;--ink:#141210;--bg:#9C978D}
 
 /* ============ GROUND: stadium concrete ============ */
@@ -21,7 +27,7 @@ html,body{width:1080px;height:1080px}
              radial-gradient(110% 96% at 50% 46%,rgba(0,0,0,0) 38%,rgba(0,0,0,.30) 78%,rgba(0,0,0,.52) 100%)}
 
 /* ============ TICKET ============ */
-.tilt{position:absolute;left:44px;top:58px;width:992px;height:964px;transform:none}
+.tilt{position:absolute;left:44px;top:58px;width:992px;height:964px;transform:rotate(-1.55deg)}
 /* two-part shadow: broad ambient + tight contact */
 .shadow{position:absolute;inset:0;border-radius:20px;
   box-shadow:0 34px 58px rgba(0,0,0,.40),0 6px 10px rgba(0,0,0,.34)}
@@ -53,58 +59,68 @@ html,body{width:1080px;height:1080px}
 .notch{position:absolute;width:62px;height:62px;border-radius:50%;background:var(--bg);top:612px;
   box-shadow:inset 0 4px 6px rgba(0,0,0,.40)}
 
+
+/* 9:16 overrides */
+.tilt{position:absolute;left:44px;top:150px;width:992px;height:1462px;transform:rotate(-1.2deg)}
+.slab{background:repeating-linear-gradient(0deg,transparent 0 474px,rgba(0,0,0,.10) 474px 479px),
+             repeating-linear-gradient(90deg,transparent 0 402px,rgba(0,0,0,.08) 402px 407px)}
+.gvig{background:radial-gradient(86% 60% at 34% 16%,rgba(255,250,235,.26) 0%,rgba(255,250,235,0) 58%),
+             radial-gradient(120% 90% at 50% 46%,rgba(0,0,0,0) 40%,rgba(0,0,0,.30) 78%,rgba(0,0,0,.54) 100%)}
+.perf{top:1112px}
+.notch{top:1081px}
+
 /* ============ INK (multiplies into the stock) ============ */
 .ink{position:absolute;inset:0;mix-blend-mode:multiply;color:var(--ink)}
-.admit{position:absolute;left:52px;top:38px;font-family:'Space Mono',monospace;font-weight:700;
-  font-size:34px;letter-spacing:.04em;text-transform:uppercase}
-.serial{position:absolute;right:54px;top:38px;font-family:'Space Mono',monospace;font-weight:700;
-  font-size:30px;letter-spacing:.06em;color:#9E2B14;text-transform:uppercase}
-.hl{position:absolute;left:48px;top:100px;font-family:'Anton',sans-serif;font-size:108px;line-height:.96;
+.admit{position:absolute;left:52px;top:92px;font-family:'Space Mono',monospace;font-weight:700;
+  font-size:38px;letter-spacing:.04em;text-transform:uppercase}
+.serial{position:absolute;right:54px;top:94px;font-family:'Space Mono',monospace;font-weight:700;
+  font-size:34px;letter-spacing:.06em;color:#9E2B14;text-transform:uppercase}
+.hl{position:absolute;left:48px;top:150px;font-family:'Anton',sans-serif;font-size:112px;line-height:.96;
   text-transform:uppercase;letter-spacing:.004em}
-.seats{position:absolute;left:52px;top:440px;display:flex;gap:16px}
-.seat{border:4px solid var(--ink);border-radius:4px;padding:10px 18px 8px;min-width:158px;
+.seats{position:absolute;left:52px;top:500px;display:flex;flex-direction:column;gap:16px}
+.seat{border:4px solid var(--ink);border-radius:4px;padding:12px 20px 8px;width:330px;
   background:rgba(255,255,255,.14)}
 .seat i{display:block;font-style:normal;font-family:'Space Mono',monospace;font-weight:700;
-  font-size:30px;line-height:1;opacity:.8}
-.seat b{display:block;font-family:'Anton',sans-serif;font-weight:400;font-size:52px;line-height:1.06;
+  font-size:34px;line-height:1;opacity:.8}
+.seat b{display:block;font-family:'Anton',sans-serif;font-weight:400;font-size:80px;line-height:1.06;
   text-transform:uppercase}
-.made{position:absolute;left:54px;top:576px;font-family:'Oswald',sans-serif;font-weight:600;font-size:40px;
-  line-height:1;text-transform:uppercase;letter-spacing:.03em}
+.made{position:absolute;left:54px;top:980px;font-family:'Oswald',sans-serif;font-weight:600;font-size:44px;
+  line-height:1.05;text-transform:uppercase;letter-spacing:.03em}
 
-.kit{position:absolute;left:52px;top:664px;font-family:'Anton',sans-serif;font-size:72px;line-height:1;
+.kit{position:absolute;left:52px;top:1138px;font-family:'Anton',sans-serif;font-size:80px;line-height:1;
   text-transform:uppercase}
-.what{position:absolute;left:54px;top:748px;font-family:'Oswald',sans-serif;font-weight:600;font-size:40px;
+.what{position:absolute;left:54px;top:1232px;font-family:'Oswald',sans-serif;font-weight:600;font-size:42px;
   line-height:1;text-transform:uppercase;letter-spacing:.02em}
-.btn{position:absolute;left:54px;top:816px;z-index:7;background:var(--ink);color:var(--stock);
-  font-family:'Oswald',sans-serif;font-weight:700;font-size:46px;line-height:1;padding:16px 32px 14px;
+.btn{position:absolute;left:54px;top:1296px;z-index:7;background:var(--ink);color:var(--stock);
+  font-family:'Oswald',sans-serif;font-weight:700;font-size:52px;line-height:1;padding:16px 34px 14px;
   text-transform:uppercase;letter-spacing:.03em;border-radius:4px}
-.fine{position:absolute;left:54px;top:908px;white-space:nowrap;font-family:'Space Mono',monospace;
+.fine{position:absolute;left:54px;top:1386px;white-space:nowrap;font-family:'Space Mono',monospace;
   font-weight:400;font-size:22px;letter-spacing:.06em;opacity:.62;text-transform:uppercase}
 
-.code{position:absolute;right:58px;top:818px;display:flex;align-items:flex-end;height:72px}
+.code{position:absolute;right:58px;top:1298px;display:flex;align-items:flex-end;height:72px}
 .code i{display:block;height:72px;background:var(--ink)}
 .code u{display:block;height:72px;background:transparent}
-.codeno{position:absolute;right:58px;top:896px;font-family:'Space Mono',monospace;font-weight:700;
+.codeno{position:absolute;right:58px;top:1376px;font-family:'Space Mono',monospace;font-weight:700;
   font-size:26px;letter-spacing:.22em}
 
-.logo{position:absolute;right:58px;top:660px;width:108px;z-index:6}
-.stage{position:absolute;left:614px;width:334px;top:85px;height:534px;
+.logo{position:absolute;right:92px;top:166px;width:172px;z-index:6}
+.stage{position:absolute;left:505px;width:450px;top:396px;height:687px;
   display:flex;align-items:center;justify-content:center;z-index:5}
-.pbox{filter:drop-shadow(0 20px 20px rgba(120,80,0,.38))}
+.pbox{filter:drop-shadow(0 22px 22px rgba(120,80,0,.38))}
 
+/* measurement modes (not rendered in the ad) */
 body.m .ad{background:#000}
 body.m .ticket{background:#000;box-shadow:none;border-radius:0}
 body.m .concrete,body.m .slab,body.m .gvig,body.m .shadow,body.m .fibre,body.m .rosette,
 body.m .frame,body.m .perf,body.m .hole,body.m .notch,body.m .ink,body.m .btn,
 body.m .logo{visibility:hidden}
 body.m .pbox{filter:none}
-
 body.k .ad{background:#fff}
 body.k .ticket{background:#fff;box-shadow:none}
 body.k .concrete,body.k .slab,body.k .gvig,body.k .shadow,body.k .fibre,
 body.k .rosette,body.k .stage{visibility:hidden}
 body.k .hole,body.k .notch{background:#000;box-shadow:none}
-</style></head><body class="k"><div class="ad">
+</style></head><body><div class="ad">
 <div class="concrete"></div><div class="slab"></div>
 
 <div class="tilt">
@@ -123,7 +139,7 @@ body.k .hole,body.k .notch{background:#000;box-shadow:none}
      <div class="seat"><i>ROW</i><b>Front</b></div>
      <div class="seat"><i>SEAT</i><b>Fryer</b></div>
    </div>
-   <div class="made">Hand-welded in Louisiana</div>
+   <div class="made">Hand-welded<br>in Louisiana</div>
 
    <div class="kit">The Tailgate Fry Kit</div>
    <div class="what">Fryer · legs · thermometer · skimmer</div>
@@ -134,11 +150,11 @@ body.k .hole,body.k .notch{background:#000;box-shadow:none}
 
   <div class="btn">Shop the kit</div>
   <div class="perf"></div>
-  <div class="hole" style="left:40px"></div><div class="hole" style="left:78px"></div><div class="hole" style="left:116px"></div><div class="hole" style="left:154px"></div><div class="hole" style="left:192px"></div><div class="hole" style="left:230px"></div><div class="hole" style="left:267px"></div><div class="hole" style="left:305px"></div><div class="hole" style="left:343px"></div><div class="hole" style="left:381px"></div><div class="hole" style="left:419px"></div><div class="hole" style="left:457px"></div><div class="hole" style="left:495px"></div><div class="hole" style="left:533px"></div><div class="hole" style="left:571px"></div><div class="hole" style="left:609px"></div><div class="hole" style="left:647px"></div><div class="hole" style="left:685px"></div><div class="hole" style="left:722px"></div><div class="hole" style="left:760px"></div><div class="hole" style="left:798px"></div><div class="hole" style="left:836px"></div><div class="hole" style="left:874px"></div><div class="hole" style="left:912px"></div>
+  <div class="hole" style="left:40px;top:1099px"></div><div class="hole" style="left:78px;top:1099px"></div><div class="hole" style="left:116px;top:1099px"></div><div class="hole" style="left:154px;top:1099px"></div><div class="hole" style="left:192px;top:1099px"></div><div class="hole" style="left:230px;top:1099px"></div><div class="hole" style="left:267px;top:1099px"></div><div class="hole" style="left:305px;top:1099px"></div><div class="hole" style="left:343px;top:1099px"></div><div class="hole" style="left:381px;top:1099px"></div><div class="hole" style="left:419px;top:1099px"></div><div class="hole" style="left:457px;top:1099px"></div><div class="hole" style="left:495px;top:1099px"></div><div class="hole" style="left:533px;top:1099px"></div><div class="hole" style="left:571px;top:1099px"></div><div class="hole" style="left:608px;top:1099px"></div><div class="hole" style="left:646px;top:1099px"></div><div class="hole" style="left:684px;top:1099px"></div><div class="hole" style="left:722px;top:1099px"></div><div class="hole" style="left:760px;top:1099px"></div><div class="hole" style="left:798px;top:1099px"></div><div class="hole" style="left:836px;top:1099px"></div><div class="hole" style="left:874px;top:1099px"></div><div class="hole" style="left:912px;top:1099px"></div>
   <div class="notch" style="left:-31px"></div><div class="notch" style="right:-31px"></div>
 
   <img class="logo" src="../../../../assets/brand-refs/HPC-ShieldLogo-Black.png">
-  <div class="stage"><div class="pbox" style="width:334px;height:534px;transform:translate(0px,0px)"><img src="../../../../assets/product-cutouts/18qt_fryer_leg_extensions.PNG" style="width:513px;left:-121.98px;top:-55.86px"></div></div>
+  <div class="stage"><div class="pbox" style="width:430px;height:687px;transform:translate(2px,0px)"><img src="../../../../assets/product-cutouts/18qt_fryer_leg_extensions.PNG" style="width:660.5px;left:-157.0px;top:-71.9px"></div></div>
  </div>
 </div>
 

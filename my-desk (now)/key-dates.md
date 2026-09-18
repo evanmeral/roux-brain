@@ -6,8 +6,6 @@
 
 | Date | What | Source |
 |---|---|---|
-| 2026-09-18 | IW lookalike checkpoint — `/hpc-campaign-checkpoint` (Day 7, ~$700), or sooner if Learning exits | board, Running · ROUX 2026-09-14 · skill built 2026-09-16 |
-| 2026-09-18 | Target: BFCM offer sent to Coalition (Connor) + Biljana, pending Jay's sign-off first | board, Now #3 · Evan 2026-09-16 |
 | 2026-09-21 | First automated `/content-week` run, 8:00 CT — week already approved and 4 of 6 scheduled, so it reports status only; first real proposal is Mon Sep 28 | task `content-week-monday` · PLAN.md read-back 2026-09-16 |
 | 2026-09-22 | Garrett shoot, HPC shop — 8 videos, $2,500, locked | board, Now #2 · Evan 2026-09-14 |
 | 2026-09-24 | Thursday scoreboard #1 · tailgate kit go/no-go | PLAN.md · Evan 2026-09-17 |
@@ -21,5 +19,7 @@
 | 2026-10-19 | Turkey weight live inside BPM (Evan's click) | PLAN.md · Evan 2026-09-17 |
 | 2026-10-22 | ROUX November pre-read (turkey peak, low-ticket policy, BFCM runway) | PLAN.md · Evan 2026-09-17 |
 | 2026-10-30 | Score the Sept 17–Oct 31 plan + draft November plan (scheduled task) | month-plan skill · Evan 2026-09-17 |
+| 2026-11-02 | BFCM landing page done (told Coalition + Biljana "around the beginning of November"; internal draft target Fri Oct 23) | Evan's messages 2026-09-18 |
+| 2026-11-16 | Earliest public BFCM mention (asked of Coalition + Biljana) | Evan's messages 2026-09-18 |
 | 2026-11-23 | Turkey fryer ship cutoff (Mon, 3 days before Thanksgiving) | seasonal-calendar · Jay 2026-09-11 |
 | 2027-02-19 | NOLA Home & Garden Show, Feb 19–21 (booked and paid, no propane in the hall) | board, Parked · Evan 2026-09-08 |

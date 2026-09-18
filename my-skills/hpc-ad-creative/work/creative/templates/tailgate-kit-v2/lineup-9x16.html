@@ -1,0 +1,113 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../brand.css">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+/* A · Starting Lineup · 9:16 story/reel. Same field, light and type system as lineup-1x1.html,
+   re-laid out for the tall frame: type kept inside y 250–1580 (story safe zone). */
+html,body{width:1080px;height:1920px}
+.ad{background:#07120A;font-family:'Saira Extra Condensed',sans-serif}
+
+/* ================= FIELD (same plane as 1x1, horizon dropped 300px) ================= */
+.turf{position:absolute;inset:0;overflow:hidden;perspective:1000px;perspective-origin:540px 322px}
+.plane{position:absolute;left:-1660px;top:0px;width:4400px;height:2500px;
+  transform-origin:50% 100%;transform:rotateX(64.5deg);background:#2E7233}
+.stripes{position:absolute;inset:0;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.085) 0 200px,rgba(0,0,0,.085) 200px 400px)}
+.grain{position:absolute;inset:0;opacity:.5;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 7px,transparent 7px 16px),
+             repeating-linear-gradient(0deg,rgba(0,0,0,.05) 0 5px,transparent 5px 13px)}
+.yards{position:absolute;left:0;right:0;top:300px;bottom:150px;
+  background:repeating-linear-gradient(90deg,transparent 0 195px,rgba(255,255,255,.88) 195px 205px)}
+.hash{position:absolute;left:400px;right:0;height:9px;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.85) 0 34px,transparent 34px 200px)}
+.side{position:absolute;left:0;right:0;height:13px;background:rgba(255,255,255,.92)}
+.oob{position:absolute;left:0;right:0;top:0;height:300px;
+  background:linear-gradient(180deg,#0E2411 0%,#1C3D1D 70%,#22481F 100%)}
+.ez{position:absolute;top:313px;bottom:163px;left:0;width:400px;
+  background:linear-gradient(90deg,#17491F 0%,#1B5423 100%)}
+.goal{position:absolute;top:313px;bottom:163px;left:400px;width:14px;background:#fff}
+.num{position:absolute;font-weight:900;color:rgba(255,255,255,.9);
+  font-size:200px;line-height:.78;letter-spacing:.12em;white-space:nowrap}
+.arw{position:absolute;width:0;height:0;border-top:36px solid transparent;border-bottom:36px solid transparent}
+
+/* ================= STADIUM LIGHT ================= */
+.haze{position:absolute;left:0;right:0;top:0;height:860px;
+  background:linear-gradient(180deg,rgba(6,14,8,.97) 0%,rgba(6,14,8,.90) 40%,rgba(8,20,10,.44) 72%,rgba(8,20,10,0) 100%)}
+.pool{position:absolute;inset:0;
+  background:radial-gradient(120% 60% at 56% 40%,rgba(255,246,214,.20) 0%,rgba(255,246,214,.06) 38%,rgba(0,0,0,0) 62%)}
+.vig{position:absolute;inset:0;
+  background:radial-gradient(118% 80% at 50% 46%,rgba(0,0,0,0) 42%,rgba(0,0,0,.30) 76%,rgba(0,0,0,.62) 100%)}
+.leftscrim{position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(4,12,6,.64) 0%,rgba(4,12,6,.44) 36%,rgba(4,12,6,0) 60%)}
+
+/* ================= CONTENT ================= */
+.eye{position:absolute;left:84px;top:262px;font-weight:800;font-size:46px;letter-spacing:.14em;
+  color:#FFE9A8;text-transform:uppercase}
+.eye:after{content:"";position:absolute;left:0;bottom:-18px;width:132px;height:7px;background:#FFC72C}
+.hl{position:absolute;left:76px;top:344px;font-weight:900;font-style:italic;font-size:164px;line-height:.84;
+  color:#fff;text-transform:uppercase;letter-spacing:-.012em;text-shadow:0 8px 26px rgba(0,0,0,.55)}
+
+/* roster: chip over name, stacked, so the fryer gets the whole right half */
+.roster{position:absolute;left:78px;top:700px;width:410px}
+.row{position:relative;padding:26px 0 24px;border-bottom:3px solid rgba(255,255,255,.34)}
+.row:first-child{padding-top:0}
+.pos{display:block;width:210px;background:#fff;color:#10240F;font-weight:900;font-size:42px;line-height:1;
+  padding:12px 0 9px;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.name{display:block;color:#fff;font-weight:800;font-size:62px;line-height:1;margin-top:14px;text-transform:uppercase;
+  text-shadow:0 4px 14px rgba(0,0,0,.6);white-space:nowrap}
+
+.stage{position:absolute;left:500px;width:560px;top:494px;height:945px;
+  display:flex;align-items:center;justify-content:center}
+.pbox{filter:drop-shadow(0 40px 38px rgba(0,0,0,.45))}
+.contact{position:absolute;left:478px;top:1366px;width:490px;height:92px;border-radius:50%;
+  background:radial-gradient(50% 50% at 50% 50%,rgba(0,0,0,.62) 0%,rgba(0,0,0,.26) 58%,rgba(0,0,0,0) 100%);
+  filter:blur(8px)}
+
+.logo{width:150px;top:250px;right:56px;opacity:.97}
+.foot{position:absolute;left:84px;right:56px;top:1470px;display:flex;align-items:center;justify-content:space-between}
+.made{color:#fff;font-weight:800;font-size:46px;text-transform:uppercase;letter-spacing:.06em;
+  text-shadow:0 4px 14px rgba(0,0,0,.6)}
+.btn{background:#FFC72C;color:#10240F;font-weight:900;font-size:58px;text-transform:uppercase;
+  padding:18px 42px 13px;letter-spacing:.04em;box-shadow:0 10px 24px rgba(0,0,0,.4)}
+
+/* measurement modes (not rendered in the ad) */
+body.m .ad{background:#000}
+body.m .turf,body.m .haze,body.m .pool,body.m .vig,body.m .leftscrim,
+body.m .logo,body.m .eye,body.m .hl,body.m .roster,body.m .foot,body.m .contact{visibility:hidden}
+body.m .pbox{filter:none}
+body.k .ad{background:#fff}
+body.k .turf,body.k .haze,body.k .pool,body.k .vig,body.k .leftscrim,body.k .stage,body.k .contact{visibility:hidden}
+body.k .eye,body.k .hl,body.k .name,body.k .made{color:#000;text-shadow:none}
+body.k .pos{background:#000}
+body.k .row{border-bottom-color:#000}
+body.k .btn{background:#000;box-shadow:none}
+</style></head><body><div class="ad">
+
+<div class="turf"><div class="plane">
+  <div class="stripes"></div><div class="grain"></div>
+  <div class="oob"></div><div class="ez"></div><div class="goal"></div>
+  <div class="yards"></div>
+  <div class="side" style="top:300px"></div><div class="side" style="bottom:150px"></div>
+  <div class="hash" style="top:920px"></div><div class="hash" style="top:1620px"></div>
+  <div class="arw" style="left:1180px;top:1052px;border-right:46px solid rgba(255,255,255,.9)"></div>
+  <div class="num" style="left:1290px;top:1010px">40</div>
+  <div class="num" style="left:2120px;top:1010px">50</div>
+  <div class="num" style="left:2900px;top:1010px">40</div>
+</div></div>
+<div class="haze"></div><div class="pool"></div><div class="vig"></div><div class="leftscrim"></div>
+
+<img class="logo" src="../../../../assets/brand-refs/HPC-ShieldLogo-White.png">
+<div class="eye">The Tailgate Fry Kit</div>
+<div class="hl">Your starting<br>lineup.</div>
+
+<div class="roster">
+ <div class="row"><span class="pos">QB</span><span class="name">18 QT Powered Fryer</span></div>
+ <div class="row"><span class="pos">O-Line</span><span class="name">Leg Extensions</span></div>
+ <div class="row"><span class="pos">Ref</span><span class="name">5" Fry Thermometer</span></div>
+ <div class="row"><span class="pos">Receiver</span><span class="name">20" Skimmer</span></div>
+</div>
+
+<div class="contact"></div>
+<div class="stage"><div class="pbox" style="width:548px;height:875px;transform:translate(9px,0px)"><img src="../../../../assets/product-cutouts/18qt_fryer_leg_extensions.PNG" style="width:841.7px;left:-200.1px;top:-91.7px"></div></div>
+
+<div class="foot"><div class="made">Hand-welded in Louisiana</div><div class="btn">Shop the kit</div></div>
+</div></body></html>

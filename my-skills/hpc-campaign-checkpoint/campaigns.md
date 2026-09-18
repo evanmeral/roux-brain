@@ -19,7 +19,7 @@ in `attribution_setting` — write it in the checkpoint, do not assume 7-day cli
 | Campaign name | `IW Lookalike 1% - Cold Prospecting - Sept 2026` *(board, 2026-09-16)* |
 | Ad set | `IW LAL 1% - Cold Prospecting` *(board)* — Finn: confirm whether the live name is the `- excl. retargeting, purchasers, dealers` build variant (`2026-09-09-finish-the-IW-draft.md`) |
 | Ads | `hpc-dark-evergreen` · `120qt-performance_rolling-boil` · `120qt-crowd-math` *(board)* |
-| IDs | campaign — · ad set — · ads — **not on file; record on the Sept 18 pull** |
+| IDs | campaign `52507989521191` · ad set `52507989521391` (`IW LAL 1% - Cold Prospecting`, the live name — not the "excl." build variant) · ads `hpc-dark-evergreen` `52508008680591` · `120qt-performance_rolling-boil` `52508008680391` · `120qt-crowd-math` `52507989521591` · creatives `2482806828877069` · `2117253225836825` · `3682355555262671` *(Finn, Meta connector `ads_get_ad_entities` name filter then `object_ids`, 2026-09-18)* |
 | Live since | Fri 2026-09-11 *(decisions.md)* |
 | Budget | $100/day CBO *(board)* |
 | UTM tags | `utm_source=facebook&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{adset.name}}&utm_id={{campaign.id}}` set on all three ads *(2026-09-10-iw-tracking-tags.md)*. Tags arrive in Shopify with **no `(DRAFT)` suffix**; `utm_medium` arrives as both `paid_social` and `paid` (why: untested) *(Finn, Shopify sessions Sept 11–16, 2026-09-17-month-plan-baseline.md §3)* |
@@ -48,7 +48,7 @@ attribution changes during the test *(board)*. $350/day account ceiling holds *(
 | Checkpoint | Spend · days | Meta purchases | Shopify tagged · net | Learning | Call | Decision |
 |---|---|---|---|---|---|---|
 | 2026-09-14, first read | $299.94 · 3 | 1 | 0 · $0 | In Learning, 1 conversion toward exit | **Hold**, do not cut, do not touch spend *(ROUX)* | Hold *(Evan, 2026-09-14)* |
-| **2026-09-18, Day 7** | | | | | | *pending* |
+| **2026-09-18, Day 7** | $682.55 · 7 | 2 ($341.28 each) | 0 · $0 (dark-evergreen, 79.5% of spend, unmatchable) | Learning, 2 conversions | **Continue.** Cut the ad, not the campaign *(ROUX)* | dark-evergreen paused (Atlas, on Evan's yes) + 120 QT creative swapped (Evan) · $100/day · **next read Fri Oct 2 on PLAN.md terms** *(Evan, 2026-09-18)* |
 
 Ad split at the first read *(Meta connector, 2026-09-14)*: `hpc-dark-evergreen` $179.69 ·
 `120qt-performance_rolling-boil` $70.47 · `120qt-crowd-math` $49.78. CPM $21.16 · CPC $0.97 ·

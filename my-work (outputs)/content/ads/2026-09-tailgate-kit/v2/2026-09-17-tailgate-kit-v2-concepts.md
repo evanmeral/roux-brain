@@ -33,8 +33,44 @@ Drafts only. Nothing was built or uploaded in Meta or Shopify.
 > The round-3 version also had the thermometer tip crossing the printed inner frame by ~10px; it is
 > now 20px inside it. A side benefit of the rebuild, and the reason to measure rather than eyeball.
 
+> **Round 5 (2026-09-18).** Evan likes all three and wants to run all of them. Each concept now has
+> the full paid set: **1:1 + 9:16 + 1.91:1**, one ad per concept with placement customization.
+> Headlines, primary text and each concept's look (palette, type, props) are unchanged. The 9:16 and
+> 1.91:1 are new layouts, not crops of the 1:1.
+>
+> **One copy change, C only, every size:** "No refunds" is out of the fine print. It could read as
+> HPC's real return policy. The line is now **"Rain or shine · Non-transferable"**, and C's 1:1 was
+> re-rendered with it. While I was there I also fixed a rule-5 miss from round 4: the fine print sat on
+> C's printed inner frame line. It moved up 13px and now clears the CTA and the frame line by about 10px each.
+>
+> | Concept | 9:16 layout | 1.91:1 layout |
+> |---|---|---|
+> | **A** Lineup | Same field and stadium light, with the horizon dropped. Headline at the top. The roster stacks chip over name on the left, and the fryer takes the right half at **545 × 873** (1:1: 374 × 598) | Headline and a 2 × 2 roster on the left. Fryer on the turf at the right, at **355 × 568**. The shield moves to the bottom right so the fryer can centre in its column. Yard numbers are hidden here because at this depth they sat behind the footer type |
+> | **B** Payoff | The photo is **portrait** once EXIF rotation is applied (3024 × 4032), so the 9:16 is a real cover crop at 0.95×. It needs no blurred underlay, which corrects the round-2 note. Skimmer **≈ 825px across** (1:1: ≈ 700), centred to +2px | Skimmer in the left half at **≈ 573px across**. Type stacks in a right column over a right-hand scrim. The source doesn't have enough image left of the basket to put the basket on the right at this scale without a letterbox |
+> | **C** Ticket | A tall ticket. The 3-line headline and the seats stack down the left, and the fryer fills the right at **426 × 689** (1:1: 330 × 536). The shield fills the gap beside the headline | A landscape ticket with a **vertical** perforation. The main body holds the headline, seats and the fryer at **297 × 479**. The stub holds the shield, serial, kit name, contents, CTA and barcode |
+>
+> Templates: `templates/tailgate-kit-v2/{lineup,photo,ticket}-{9x16,1.91x1}.html`. Each cutout template
+> has its own `body.m` / `body.k` measurement modes built in, so no extra `_m_` / `__ink_` files were added.
+>
+> **Checks, re-run on all nine round-5 PNGs**
+>
+> | Check | Result |
+> |---|---|
+> | Pixel size (rule 9) | ✅ All nine checked with `sips`. The 1:1s are 1080×1080, the 9:16s 1080×1920 and the 1.91:1s 1200×628. No 4:5 in the set. Drafts and v2 copies are byte-identical |
+> | Story safe zone (9:16) | ✅ All type sits inside y 250–1580 on A, B and C. C's top serial is at about y 250 and its fine print ends at about y 1568 |
+> | No patent number (rule 10) | ✅ Only the white and black shields are used, never the colour shield |
+> | Fresh look (rule 11) | ✅ Each size keeps its own concept's system. The three concepts stay as distinct from each other as they were in round 4 |
+> | Phone-readable (rule 7) | ✅ Checked at 380px wide. On the 9:16s, headlines are 112–164px and info lines 38–62px. On the 1.91:1s, headlines are 88–112px and every info line is 30–42px. Fine print is limited to C's "Rain or shine · Non-transferable" (20–22px) and its serial and barcode numbers (20–34px) |
+> | Product centred in its free area (rules 2 + 12), measured on product-only vs type-only renders | **A 9:16:** silhouette −2, mass −55 (split: the thermometer spike pulls the bbox right, and the fryer is limited by the frame edge). **A 1.91:1:** −1 / −36. **C 9:16:** −2 / −40. **C 1.91:1:** +6 / −21. **B** (photo): basket centre +2 on 9:16 and +9 on 1.91:1 |
+> | Product fills its space (rule 12) | Closest gaps from product to type, border or perforation: **A 9:16:** 17px left and 19px right (frame edge). **C 9:16:** 17px. **C 1.91:1:** 19px. **A 1.91:1:** 29–31px top and bottom (frame edge). On A 1.91:1, C 9:16 and C 1.91:1, height is the limit, so some empty width around the legs can't be avoided |
+> | Nothing touches type (rule 5) | ✅ Nothing overlaps. B's CTA sits on the photo over the lower rim of the basket, the same way it does on the 1:1 |
+> | No gray box (rule 8) | ✅ The shadow is on `.pbox`. All four cutout renders were checked at full size |
+> | Claims | ✅ No new copy. No price, warranty, competitor, "hard boil" or crawfish, and no numbers on any creative |
+>
+> **Next:** ROUX makes the budget call on running all three (one ad each, three sizes by placement). Before anything goes live, the gates in "Before it goes live" below still apply.
+
 - **Campaign:** `18qt-TOF-Prospecting` (cold). No price on any creative. $465 can't be quoted until the kit goes active (`what-we-sell.md`).
-- **Sizes:** 1:1 only, so Evan can pick one. The chosen concept then gets 9:16 and 1.91:1.
+- **Sizes:** rounds 2 to 4 were 1:1 only. Round 5 gives all three concepts 1:1, 9:16 and 1.91:1 (see above).
 - **Templates:** `my-skills/hpc-ad-creative/work/creative/templates/tailgate-kit-v2/`
   Alongside the three live templates sit `_m_*.html` (product only, on black — for measuring the
   cutout) and, new in round 4, `__ink_lineup.html` / `__ink_ticket.html` (type and borders only, on
@@ -154,4 +190,4 @@ Three changes only: the **top scrim is deeper and a second gradient holds the ri
 ## Before it goes live (unchanged from round 1)
 Kit go/no-go Thu Sept 24 · `SC-7R` at −1 with deny · `HIGH15`/`SMS25` still active · 18 QT page "Made in the USA" (Group A fix sheet, due Mon Sept 21).
 
-**Next:** Evan picks A, B or C. Maya renders 9:16 + 1.91:1 of the pick. Then ROUX makes the budget call.
+**Next (superseded by round 5, 2026-09-18):** Evan chose all three, and all three now have the full paid set. ROUX makes the budget call.

@@ -11,6 +11,14 @@
 
 ## 2026-09
 
+**The batched Jay text is closed, and nothing is left to ask** · Evan, 2026-09-18. **Jay signed off on BFCM**, which confirms the line in the entry below. **Low-ticket ad spend held at ~52%** ("looks good"); the real cap is set in the November plan. **The 30 QT November stock question is dropped** (not needed). **Labor Day net $40,853.33** has been given to Jay and Robert by Evan. The second pixel `491960645999331` was already settled (an old marketing company's, keep using it, entry further down); Atlas re-asked it from a stale PLAN.md line, now fixed. **The code-exposure rewrite is dropped** ("we can cross that bridge if we need to"). The 322-of-358 all-items count and the auto-generated `FB-EMAIL-*` codes stay on record in Finn's read, not acted on.
+
+**IW lookalike Day-7 checkpoint: continue, with `hpc-dark-evergreen` paused and the 120 QT creative swapped** · Evan, 2026-09-18. **Why:** the agreed rule fired ($682.55 spent, 0 Shopify-tagged orders, past the $73 ceiling). Dark-evergreen took 79.5% of spend at $271 per Meta purchase, its tags never reach Shopify, and it still said "cast", so it came off. The two 120 QT ads had only $140 between them, so they get the real test at $100/day. Read Fri Oct 2 on the PLAN.md terms. → [checkpoint report](../my-work%20(outputs)/internal/reports/2026-09-18-iw-lookalike-checkpoint.md)
+
+**BFCM offer sent to Coalition (Connor, Basecamp) and Biljana** · Evan, 2026-09-18. The offer is `BLKF26`, 10% sitewide, $100 minimum, Nov 23 to Dec 1, excluding kits, gift cards and Scratch & Dent. The Coalition message states Jay signed off *(Atlas has no separate record of that sign-off)*. Both ask for no BFCM mention before Mon Nov 16. **Evan's calls on the wording:** no landing-page link, only "done around the beginning of November", to leave room to add to the page; and no turkey-fryer reasoning, because "customers can order whatever, whenever." The landing page moved to v7 with two false lines fixed: "less than buying the welded version" (Performance + Triple Jet costs more than Powered) and "no exceptions within the category" (kits are excluded). → [v7](../my-work%20(outputs)/content/website/2026-09-18-bfcm-sitewide-draft-v7.html)
+
+**Tailgate kit ad: all three concepts approved, all three run** · Evan, 2026-09-18. A (lineup) and B (photo) run cold in `18qt-TOF` once the kit is live; C (ticket) runs in 18 QT retargeting from Sept 28. There is no new budget, and ROUX confirms the split. "No refunds" was cut from C because it could read as the real return policy. → [library log](../my-skills/hpc-ad-creative/work/creative/library/LIBRARY-LOG.md)
+
 **Pixel `491960645999331` is an old marketing company's, and we keep using it** — Jay via
 Evan, 2026-09-17. "Use it if it still works and can be helpful." It does: it sits in our own Shopify
 Business Manager portfolio, is named "4392736013287 Pixel" after the ad account, was created
