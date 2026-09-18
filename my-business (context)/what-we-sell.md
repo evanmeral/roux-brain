@@ -85,6 +85,8 @@ Complete rigs, lower ticket, lower friction. A separate campaign from 1A, not a 
 | **60 QT Powered Cooker** | $515–$535 |
 | 60 QT Dual Turkey Fryer Pot | $495–$505 |
 
+> ⚠️ **One kit, two prices.** SKU `PW30-VLV075-TFR-B-SBI` (pot, lid, basket, steamer rack, turkey rack) is **$462.50** as a variant of *30 Qt Turkey Fryer Powered Pot* and **$475.00** as a variant of *30 Qt Powered Pot With Drain Valve, Basket & Lid* *(Shopify connector, 2026-09-18)*. Unresolved; quote the listing the customer is on.
+
 > ⚠️ **60 QT Powered — discount discipline.** List margin is healthy (47.8%) but it's discounted at 21.8%, roughly 5× the 18 QT, dragging realized margin to ~29%. Decide its role deliberately. Detail: `my-work (outputs)/internal/reports/2026-08-26-discount-audit.md`.
 
 **The large Powered pots — price reference.** *Added 2026-09-10 from Finn's pull; the 80 and 100 QT

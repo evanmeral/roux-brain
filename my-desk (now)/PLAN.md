@@ -98,3 +98,4 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 - **2026-09-17 · Kits rebuilt in the Shopify Bundles app** (Jay via Evan) — Evan created the three bundles, Atlas finished them; prices moved to ~6% off the parts total. Not in the plan, which assumed the Sept 16 drafts were final.
 - **2026-09-17 · Discount-code exposure read** (Evan/Jay) — 70 active codes checked because the 6% sits inside the kit price. → [code exposure](../my-work%20(outputs)/internal/2026-09-17-kit-discount-code-exposure.md)
 - **2026-09-17 · Tailgate kit ad went four rounds** (Evan) — three fresh concepts, then craft and sizing passes; creative rules 10, 11 and 12 came out of it.
+- **2026-09-18 · Event giveaway table sign** (Evan) — Letter poster for the donated 30 QT powered full kit, retail value $475. → [sign](../my-work%20(outputs)/content/other/event-giveaway-sign/2026-09-18-30qt-kit-giveaway-sign-letter-v3.pdf)
