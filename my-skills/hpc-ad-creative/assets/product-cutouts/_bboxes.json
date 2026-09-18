@@ -1526,5 +1526,149 @@
   "y": 0.162,
   "bw": 0.9115,
   "bh": 0.676
+ },
+ "updated-2026-09/80gal commercial - propane - basket raised, basket open, regulator.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0,
+  "y": 0.1167,
+  "bw": 0.8861,
+  "bh": 0.845
+ },
+ "updated-2026-09/80gal commercial - propane - basket raised, regulator.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.1594,
+  "y": 0.0717,
+  "bw": 0.6606,
+  "bh": 0.7821
+ },
+ "updated-2026-09/80gal commercial - propane - burner.png": {
+  "w": 2400,
+  "h": 1800,
+  "x": 0.0013,
+  "y": 0.0,
+  "bw": 0.9592,
+  "bh": 0.7089
+ },
+ "updated-2026-09/80gal commercial - propane - lid off, empty, regulator.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.1317,
+  "y": 0.1462,
+  "bw": 0.7261,
+  "bh": 0.7208
+ },
+ "updated-2026-09/80gal commercial - propane - lid on, three-quarter.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0883,
+  "y": 0.2171,
+  "bw": 0.7644,
+  "bh": 0.6317
+ },
+ "updated-2026-09/80gal commercial basket - standalone.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.085,
+  "y": 0.23,
+  "bw": 0.7561,
+  "bh": 0.5671
+ },
+ "updated-2026-09/100gal commercial - propane - basket raised, basket open, regulator.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0,
+  "y": 0.0892,
+  "bw": 0.8861,
+  "bh": 0.8225
+ },
+ "updated-2026-09/100gal commercial - propane - basket raised, regulator.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.1206,
+  "y": 0.0887,
+  "bw": 0.7344,
+  "bh": 0.8142
+ },
+ "updated-2026-09/100gal commercial - propane - burner.png": {
+  "w": 2400,
+  "h": 1800,
+  "x": 0.0013,
+  "y": 0.0,
+  "bw": 0.9875,
+  "bh": 0.9978
+ },
+ "updated-2026-09/100gal commercial - propane - lid off, empty, regulator.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.105,
+  "y": 0.1787,
+  "bw": 0.7617,
+  "bh": 0.6404
+ },
+ "updated-2026-09/100gal commercial - propane - lid on, three-quarter.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.1078,
+  "y": 0.2058,
+  "bw": 0.8011,
+  "bh": 0.6196
+ },
+ "updated-2026-09/100gal commercial basket - standalone.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0444,
+  "y": 0.1487,
+  "bw": 0.8717,
+  "bh": 0.6179
+ },
+ "updated-2026-09/120gal commercial - propane - basket raised, basket open, regulator.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0017,
+  "y": 0.0896,
+  "bw": 0.8433,
+  "bh": 0.7817
+ },
+ "updated-2026-09/120gal commercial - propane - basket raised, regulator.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.1594,
+  "y": 0.1283,
+  "bw": 0.6194,
+  "bh": 0.7458
+ },
+ "updated-2026-09/120gal commercial - propane - burner.png": {
+  "w": 2400,
+  "h": 1800,
+  "x": 0.0013,
+  "y": 0.0,
+  "bw": 0.9862,
+  "bh": 0.8522
+ },
+ "updated-2026-09/120gal commercial - propane - lid off, empty, regulator.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.1444,
+  "y": 0.1633,
+  "bw": 0.7517,
+  "bh": 0.6512
+ },
+ "updated-2026-09/120gal commercial - propane - lid on, three-quarter.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0806,
+  "y": 0.1946,
+  "bw": 0.845,
+  "bh": 0.6483
+ },
+ "updated-2026-09/120gal commercial basket - standalone.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0539,
+  "y": 0.2233,
+  "bw": 0.8139,
+  "bh": 0.5696
  }
 }

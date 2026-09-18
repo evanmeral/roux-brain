@@ -11,6 +11,8 @@
 
 ## 2026-09
 
+**Commercial boiler photo names: "basket open", "burner", "regulator", and they're propane** · Evan, 2026-09-18. The 18 new 80/100/120 gal commercial shots (cutouts + studio) follow `[size]gal commercial - propane - [shot]`. Evan's words replace Atlas's first pass: the dropped front panel is "basket open" (not "front door open"), the burner shot is "burner" (not "burner underside"), and "regulator" covers the hose and regulator. The units in these photos are propane, not natural gas. Evan kept his inbox originals for other use → [asset index](../my-skills/hpc-ad-creative/assets/ASSET-INDEX.md).
+
 **Pot static A approved: cream, all sizes** · Evan, 2026-09-18. With B approved earlier the same day, both pot statics are filed in the library, linking to the Platinum Boiling Bundle. Closes the last creative job in plan week 1.
 
 **Rule 10 narrowed: the patent number is banned as written copy, not in the logo; pot static B approved, A goes cream** · Evan, 2026-09-18. "I meant, don't use the patent number as word copy. You can use the colored shield logo with the patent number on it." Creative rule 10, the logo notes and the board landmine are updated. **All three B ("Look closer") sizes are approved** for pot retargeting, linking to the Platinum Boiling Bundle. **A ("The fast part is the pot") uses the cream backdrop** with the coloured shield, rolled out to all sizes, pending Evan's final OK.

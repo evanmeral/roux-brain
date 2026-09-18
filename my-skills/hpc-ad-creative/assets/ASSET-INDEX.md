@@ -109,6 +109,24 @@ as `updated-2026-09/`, so the cutout and the studio version of any shot are foun
 Use for product-grid, catalogue and white-background layouts where a cutout on a coloured stage is
 wrong; use the cutout for everything else.
 
+### 80 / 100 / 120 gal commercial boilers (added 2026-09-18)
+**18 cutouts in `product-cutouts/updated-2026-09/` + the same 18 shots on white in `studio-product-images/`.**
+Same base names in both. Copied from Evan's two inbox folders, "commercial product cutouts" and
+"commercial product studio shots". He kept the originals to use elsewhere. Size comes from Evan's
+studio filenames (`80gallon001` etc.). Each cutout (`IMG_8324`–`8342`, no 8339) was matched to its
+studio shot by eye, pair by pair. Cutouts are 1800×2400 (burner shots 2400×1800). Studio shots are
+1512×2016 (120 gal door-open and basket-raised: 1414×2000). Bounds are in `_bboxes.json`.
+
+Six shots per size. All are propane, not natural gas (Evan, 2026-09-18):
+`[size]gal commercial - propane - lid on, three-quarter` · `- propane - lid off, empty, regulator` ·
+`- propane - basket raised, regulator` · `- propane - basket raised, basket open, regulator` ·
+`- propane - burner` · `[size]gal commercial basket - standalone`
+
+Naming words from Evan: the dropped front panel is "basket open", and the burner shot is "burner",
+not "burner underside". "Regulator" covers the regulator and hose.
+
+The 120 has its drain valve front right. The 80 and 100 have it on the left.
+
 ## ⭐ Logo set — `assets/brand-refs/` (complete as of 2026-08-27)
 
 **The shield is the primary mark. Use it unless there's a reason not to.**
