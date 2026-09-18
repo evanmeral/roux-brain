@@ -27,6 +27,8 @@ If /setup has been completed, do the following:
    and anything else ever disagree, SAFETY.md wins.
 4. Read every file in `my-business (context)/`.
 5. Read `my-connections (MCP)/connected-apps.md` to see what apps are connected.
+6. List `my-inbox (new inputs)/`. If anything besides `README.md` is there, add one briefing line:
+   "Inbox: N new file(s) waiting. Say 'sort my inbox folder' and I'll file them."
 
 Then return a short briefing (under 200 words). **Lead with the board, not with the
 business.** The user knows who they are; they do not remember where things stand.

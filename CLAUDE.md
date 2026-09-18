@@ -114,7 +114,8 @@ he wants a specific one.
 | Ad creative — render here, then approve | `my-skills/hpc-ad-creative/work/creative/drafts/` |
 | Approved creative | `my-skills/hpc-ad-creative/work/creative/library/` |
 | HPC reference (metrics, seasonal, competitors) | `my-files (knowledge)/hpc-reference/` |
-| Dropped files | `my-files (knowledge)/` |
+| New drops (photos, files) | Evan drops them in `my-inbox (new inputs)/`; sort each one by the routing table in its README |
+| Reference docs (brochures, specs) | `my-files (knowledge)/` |
 | New skill | `my-skills/[skill-name]/instructions.md` |
 | Workflow spec / deployed workflow | `my-workflows (automations)/[specs\|live]/` |
 
@@ -135,7 +136,7 @@ Naming conventions and client folder structure:
 ## Root folder rule
 
 The top level holds `CLAUDE.md`, `SAFETY.md`, `.claude/`, `.obsidian/`, `.gitignore` and
-the `my-*` folders. **That is the structure — do not remove or reorganize a `my-*`
+the `my-*` folders. `my-inbox (new inputs)/` is Evan's drop spot: empty it into the right folder, never work from it. **That is the structure — do not remove or reorganize a `my-*`
 folder.** Never save loose output files to the root; everything belongs in one of the
 folders above.
 

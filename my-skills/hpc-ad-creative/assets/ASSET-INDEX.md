@@ -32,6 +32,13 @@ and pour images are. **Use them where realness is the point.**
 under 5 minutes." A video showing the dial *is* that claim demonstrated. Worth shooting a version
 that holds on the thermometer.
 
+### 👥 Team — added 2026-09-18
+| File | Size | What it is | Use for |
+|---|---|---|---|
+| **`hpc-team-crawfish-cookoff-booth-2026-04.jpg`** | 4032×3024 | Six of the team in matching red HPC shirts under the HPC tent at a crawfish cookoff, Apr 18 2026 (photo metadata). The canopy reads "Feel the Heat. See the Speed. Taste the Difference." There's a "Why buy an HP cooker?" A-frame sign, and an HPC shield yard sign. Horizontal, outdoor, bright. | The team-on-camera trust asset: organic posts, the about page, "real people build these." |
+
+⚠️ **Before using it in an ad:** the shield yard sign reads **"Built on patent pending Tunnel Tube technology"**, and patent-pending is a landmine (the patent is granted). The sign is readable at full size, so crop it out or cover it. An **LSU** tent and other people's trucks are in the background. It shows **six people, not the team of 12**, so never caption it as the whole team. The A-frame says "average raging boil in 7 minutes"; don't lift that claim from the photo.
+
 ### Product-in-scene (studio lifestyle)
 `60-quart-lifestyle.png` · `80-quart-lifestlye.png` *(sic)* · `100-quart-lifestyle.png` ·
 `120-quart-lifestyle.png` · `BB-burner-lifestyle.png` · `BB-paddle-lifestyle.png` ·
@@ -41,7 +48,7 @@ that holds on the thermometer.
 Most are **928×1152** — fine for 4:5 and 1:1, **too small for 1080×1920 stories.**
 
 ### Still missing
-- **The team of 12**, on camera — the trust asset, still unusable
+- **The team of 12**, on camera. Partly filled: six of them at the Apr 2026 cookoff booth (above). A full-team shop shot is still missing
 - ✅ ~~Fried food~~ — covered by the wings set (2026-08-28)
 - **Finished fried food** — wings/fish *out* of the oil, plated or draining. The current set is all
   in-the-oil; there's no payoff shot.

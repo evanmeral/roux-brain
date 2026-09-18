@@ -18,6 +18,7 @@ Your AI assistant. It knows your business and gets smarter every time you use it
 
 - **my-desk (now)/** — the front page. What's live, what's next, what's waiting.
 - **my-business (context)/** — Who you are, what you sell, how you sound, how you write, the standing rules.
+- **my-inbox (new inputs)/** — Drop new photos or files here with any name. Atlas renames each one and files it where it belongs.
 - **my-files (knowledge)/** — Drop your files here. Brochures, docs, anything.
 - **my-connections (MCP)/** — The apps you have connected.
 - **my-skills/** — Ready-to-use skills plus any you teach it.
@@ -78,6 +79,7 @@ Atlas AI Brain/
 │   ├── our-clients.md
 │   └── hpc-standing-rules.md       <- the operating rules, single canonical copy
 │
+├── my-inbox (new inputs)/         <- drop new photos/files here; Atlas sorts them
 ├── my-files (knowledge)/           <- drop your files here
 │   ├── how-this-brain-works.md     <- this file
 │   ├── about-my-business/
