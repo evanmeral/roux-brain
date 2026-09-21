@@ -1670,5 +1670,45 @@
   "y": 0.2233,
   "bw": 0.8139,
   "bh": 0.5696
+ },
+ "updated-2026-09/140gal commercial - propane - basket raised, basket open, regulator.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0439,
+  "y": 0.1567,
+  "bw": 0.9539,
+  "bh": 0.7671
+ },
+ "updated-2026-09/140gal commercial - propane - basket raised.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0483,
+  "y": 0.0683,
+  "bw": 0.9,
+  "bh": 0.8321
+ },
+ "updated-2026-09/140gal commercial - propane - lid off, empty.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0711,
+  "y": 0.1733,
+  "bw": 0.8722,
+  "bh": 0.6025
+ },
+ "updated-2026-09/140gal commercial basket - standalone.png": {
+  "w": 1800,
+  "h": 2400,
+  "x": 0.0567,
+  "y": 0.2213,
+  "bw": 0.84,
+  "bh": 0.5679
+ },
+ "updated-2026-09/140gal commercial - propane - lid on, three-quarter.png": {
+  "w": 1512,
+  "h": 2016,
+  "x": 0.1012,
+  "y": 0.2579,
+  "bw": 0.7976,
+  "bh": 0.5685
  }
 }

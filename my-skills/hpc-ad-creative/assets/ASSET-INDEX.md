@@ -127,6 +127,23 @@ not "burner underside". "Regulator" covers the regulator and hose.
 
 The 120 has its drain valve front right. The 80 and 100 have it on the left.
 
+### 140 gal commercial boiler (added 2026-09-21)
+**5 cutouts in `product-cutouts/updated-2026-09/` + the same 5 shots on white in `studio-product-images/`.**
+Copied from Evan's inbox folders "140 gallon cutouts" and "140 gallon studio shots"; he kept the
+originals. Matched by eye, cutout to studio shot (the `IMG_83xx` numbers line up, except the
+basket-open cutout, which came in as `IMG_boo`). Cutouts 1800×2400, studio 1512×2016. Bounds in `_bboxes.json`.
+The lid-on cutout had no Photoroom version, so Atlas cut it from studio shot 8346 with macOS's
+subject lift (Vision), 2026-09-21. It stays 1512×2016, smaller than the other four cutouts.
+
+Same naming as the 80/100/120. Propane (Evan, 2026-09-21):
+`140gal commercial - propane - lid on, three-quarter` ·
+`- propane - lid off, empty` · `- propane - basket raised` · `- propane - basket raised, basket open, regulator` ·
+`140gal commercial basket - standalone`
+
+Differences from the 80/100/120 set: no burner shot (Evan left it out on purpose), and no hose and regulator on the floor. The
+regulator and hose sit inside the basket, visible only in the basket-open shot, so only that name
+carries "regulator". Drain valve front right, like the 120.
+
 ## ⭐ Logo set — `assets/brand-refs/` (complete as of 2026-08-27)
 
 **The shield is the primary mark. Use it unless there's a reason not to.**
