@@ -29,7 +29,7 @@ a different thing — lives in [my-voice.md](my-voice.md).
 
 ### ⛔ Non-negotiables in every piece of copy
 
-- **Tunnel Tubes are hand-welded tubes on the BOTTOM of the pot.** The burner sits at the center of the pot bottom; the tubes spread that energy across the whole base, so the pot absorbs more of it and heats faster. **The technology is in the pot, not the burner** — never imply the burner is what makes it fast. Patented by us, **No. 11,844,459**.
+- **Tunnel Tubes are hand-welded tubes on the BOTTOM of the pot.** The burner sits at the center of the pot bottom; the tubes spread that energy across the whole base, so the pot absorbs more of it and heats faster. **The technology is in the pot, not the burner** — never imply the burner is what makes it fast. Patented by us, **No. 11,844,459**. **Never write the number out as words on any ad, post, story or caption; the HPC shield logo that carries it is fine** (Evan, 2026-09-21; creative rule 10). Website pages may write it out.
 - **Powered** = tunnel tubes **+ burner** welded to the pot. **Performance** = tunnel tubes only; works on any burner, ours preferred.
 - **Never say "hard boil."** Use **rolling boil** or **raging boil**.
 - **Never pair fryers with crawfish.** Match the use case to the product.

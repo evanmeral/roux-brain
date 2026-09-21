@@ -102,6 +102,7 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 - **2026-09-18 · Event giveaway table sign** (Evan) — Letter poster for the donated 30 QT powered full kit, retail value $475. → [sign](../my-work%20(outputs)/content/other/event-giveaway-sign/2026-09-18-30qt-kit-giveaway-sign-letter-v3.pdf)
 - **2026-09-18 · Coalition's DataFeedWatch request approved** (Evan): Basecamp reply drafted and sent; Coalition runs the Google feed in their own account.
 - **2026-09-21 · Finn Monday checks → match rule 5** (Evan): IW tags verified, first tagged IW order, Meta Shop orders traced to BPM through cart links; rule 5 added to the checkpoint skill, Sept 1–16 Meta baseline restated $245 → $156.90, scoreboard task pointed at rules 1–5. → [report](../my-work%20(outputs)/internal/reports/2026-09-21-finn-monday-checks.md)
+- **2026-09-21 · Content week Sept 21–27 reviewed; patent-number rule restated** (Evan): all six posts kept as scheduled. Rule 10 now covers all creative and content (shield logo yes, written number never); website pages exempt.
 - **2026-09-18 · Team photo filed, `my-inbox (new inputs)/` drop folder built, Atlas app icon fixed** (Evan).
 - **2026-09-18 · 80/100/120 gal commercial photos renamed and filed** (Evan): 18 cutouts + 18 studio shots, copied into the asset library; Evan kept the originals.
 - **2026-09-21 · 140 gal commercial photos renamed and filed** (Evan): 5 cutouts + 5 studio shots, copied into the asset library; Atlas cut the lid-on cutout from the studio shot; Evan kept the originals.

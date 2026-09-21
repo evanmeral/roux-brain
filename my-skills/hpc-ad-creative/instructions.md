@@ -108,8 +108,8 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
    or story: **headlines 72px+ · body and sub-copy 36px+ · every other line that says something**
    (stats, labels, eyebrows, prices, codes, names, credits, tags, swipe cues, frame counters) **30px+**,
    heavier weight rather than lighter, and never faded below ~60% white. **Only fine print is exempt**
-   — a disclaimer like *"Times vary with volume, ambient temperature and fuel pressure"* or a patent
-   line — and it keeps a 20px floor. **Check it before showing anyone:** look at the PNG at ~380px
+   — a disclaimer like *"Times vary with volume, ambient temperature and fuel pressure"* — and it
+   keeps a 20px floor. (A patent-number line is not fine print; it is not written at all, rule 10.) **Check it before showing anyone:** look at the PNG at ~380px
    wide (how it lands in a phone feed); any non-fine-print line that needs a zoom gets sized up.
    Same lesson as Jay's 2026-09-15 note on the IW ads.
    **Tightened 2026-09-17 (Evan, on the first tailgate kit ad: "the wording may be too small to read,
@@ -135,11 +135,14 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
    | Story, reel (organic) | 1080×1920 (9:16) · type out of the top 250px and bottom 340px · video as MP4 |
    | Paid static | 1:1 + 9:16 + 1.91:1 in one ad · never 4:5 |
    A raw photo gets cropped to the slot, never stretched or letterboxed.
-10. **No patent number as written copy on ads.** *(Evan, 2026-09-17; narrowed 2026-09-18.)* Never write
-    "Patent No. 11,844,459" (or any patent line) as text on a paid or organic ad creative. "Patented
-    Tunnel Tubes" in copy is still allowed where it earns its place. **The coloured shield logo is fine,
-    even though the patent number is printed on it** (Evan, 2026-09-18). The rule covers words we set,
-    not the logo artwork.
+10. **The patent number is never written out as words on any creative or content.** *(Evan,
+    2026-09-17; narrowed 2026-09-18; restated 2026-09-21 to cover all content.)* Never set
+    "Patent No. 11,844,459" (or any patent-number line, fine print included) as text on a paid ad,
+    an organic post graphic, a story, a carousel frame, or in a post caption. **The HPC shield logo with
+    the patent number printed on it is allowed on all of them.** "Patented Tunnel Tubes" in words is
+    still fine where it earns its place. The rule covers words we set, not the logo artwork. Posts
+    scheduled before 2026-09-21 stay as they are (Evan, 2026-09-21). **Website pages are exempt:** a
+    product page or landing page may write the patent number out (Evan, 2026-09-21).
 11. **Keep up the creative variety.** *(Evan, 2026-09-17.)* Every new ad or static starts from a
     **fresh idea and its own look** — never a copy-paste of the last creative's layout, palette and
     type treatment. A new angle deserves a new composition, new colour, new typefaces, not the same
@@ -177,7 +180,7 @@ Organise as `templates/<concept>/{1x1,9x16,1.91x1}.html`, then:
 - Prices must match `my-business (context)/what-we-sell.md`. Re-pull before running a price.
 - **Tunnel Tube tech is the tubes hand-welded on the POT BOTTOM**, spreading the burner's heat across
   the whole base. Never imply the burner is what makes it fast.
-- Patent No. **11,844,459.** (For accuracy only. The number is never written as ad copy, rule 10; the coloured shield logo that carries it is fine.)
+- Patent No. **11,844,459.** (For accuracy only. The number is never written out on creative or content, rule 10; the shield logo that carries it is fine.)
 - **Lead with quality, not price** — 80% of customers buy on quality, 10% on price.
 - **Performance pot on the Boil Boss Triple Jet = the Platinum Boiling Bundle** *(Evan, 2026-09-18)*. Never call that image Powered, and never link it to a Powered pot. Link it to the Platinum Boiling Bundle, or to the Ultimate Boiling Bundle (same + Cooling Ring + Thermo Paddle). URL and details: `what-we-sell.md` §1A.
 

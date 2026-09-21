@@ -50,7 +50,8 @@ mix (30 · 25 · 20 · 15 · 10). If a week drifts past one offer slot, it is ou
    fill it. A strong four-post week beats a padded six.
 10. **Readable on a phone, without squinting** (Evan, 2026-09-16). Headlines 72px+, body 36px+,
     every other line that carries information 30px+ on a 1080-wide frame; only fine print (the
-    "times vary" line, a patent number) goes smaller. Check every PNG at ~380px wide before it goes
+    "times vary" line) goes smaller. The patent number is never written out, only carried by the
+    shield logo (creative rule 10). Check every PNG at ~380px wide before it goes
     in the plan. Creative rule 7 in `my-skills/hpc-ad-creative/instructions.md` has the detail.
 
 ---
@@ -63,7 +64,8 @@ The running log is `my-work (outputs)/content/social/LOG.md`. Read it before cho
 in about 7 minutes · back to a boil in roughly 90 seconds · up to 75% less propane · 4mm aluminum ·
 two sacks, forty people, one pot (120 QT) · 350° in under 5 minutes (**18 QT, 4-Way, 40 QT only**) ·
 350° in under 10 minutes (every other pot, frying mode) · built by a crew of twelve · most orders
-ship in 1–2 business days · patent No. 11,844,459. Every figure qualified: "about," "up to," "in as
+ship in 1–2 business days · patented tunnel tubes (the word only; the number appears only on the
+shield logo, creative rule 10). Every figure qualified: "about," "up to," "in as
 little as." The legal line on every Boil Math graphic: *Times vary with volume, ambient temperature
 and fuel pressure.*
 

@@ -11,6 +11,8 @@
 
 ## 2026-09
 
+**Patent number: shield logo yes, written words never, on all creative and content** · Evan, 2026-09-21. The HPC shield logo with the patent number printed on it can go on any ad, post, story or carousel. The number is never set as text anywhere on them, fine print and captions included. This widens rule 10 from "ads" to all content. Guidance that still treated a patent line as fine print is fixed (creative rule 7, content-week format, how-we-sound, standing rules). **This week's scheduled posts stay as they are** (Evan: "everything is good as is"), including Monday's graphic and caption, which carry the number. **Website pages are exempt** (Evan, same day, "website pages are fine") → [creative rule 10](../my-skills/hpc-ad-creative/instructions.md)
+
 **Kit photos: one shared gallery per kit, no per-option images** · Evan, 2026-09-21 ("we don't need to do that"). The tailgate and one-bird kit shots show a basket, including on the no-basket options; accepted. Photos attached the same day, 8–9 per kit → [build record](../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md).
 
 **Skills get offered mid-session, on the second run** · Evan, 2026-09-21 ("yes change it"). The rule used to be to propose at /wrap only, so photo filing ran three times by hand before it became a skill. Now: the second time a procedure runs by hand, Atlas offers the skill right then, and builds it on Evan's yes. When Evan corrects how a skill ran, its instructions get updated that same session. /wrap step 5 stays as the backstop. Written into CLAUDE.md (session rules) and `.claude/commands/wrap.md`.
