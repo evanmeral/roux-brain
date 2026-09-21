@@ -144,6 +144,27 @@ Differences from the 80/100/120 set: no burner shot (Evan left it out on purpose
 regulator and hose sit inside the basket, visible only in the basket-open shot, so only that name
 carries "regulator". Drain valve front right, like the 120.
 
+### Kit (bundle) items — the three fry kits and their parts (added 2026-09-21)
+**11 cutouts in `product-cutouts/updated-2026-09/` + the same 11 shots on white in `studio-product-images/`.**
+Copied from Evan's inbox folders "bundle items cutout shots" and "bundle items studio shots"; his
+originals there were renamed to match and left for him. The `IMG_83xx` numbers pair one to one.
+Cutouts 1800×2400, studio 1512×2016. Bounds in `_bboxes.json`. Parts named from the kit build record.
+
+| File | What it is | Kit |
+|---|---|---|
+| `Tailgate fry kit - 18qt pwd, leg extensions, thermometer, skimmer, regulator` | Full kit laid out: 18 QT powered fryer, lid, basket, legs, 5" thermometer, skimmer, hose and regulator | Tailgate Fry Kit |
+| `Turkey fry kit - 30qt pwd, basket, single rack, windshield, thermometer, skimmer, regulator` | Full kit: 30 QT turkey fryer, lid, basket, single rack on its hook, windshield, 12" thermometer, skimmer, hose and regulator | Turkey Fry Kit · 30 QT |
+| `Turkey fry kit - 60qt dual pwd, dual rack, windshield, thermometer, skimmer, regulator` | Full kit: 60 QT, lid, dual rack, windshield, 12" thermometer, skimmer, hose and regulator | Turkey Fry Kit · 60 QT Two-Bird |
+| `5in fry thermometer - in package` | HPC-branded 5" stainless fry thermometer, 50–400°F, on its card (`HP-5in-Therm`) | Tailgate |
+| `12in fry thermometer - in package` | 12" version on its card (`HP-12in-Therm`) | Both turkey kits |
+| `Skimmer - standalone` | Round mesh skimmer (`SC-7R`) | All three |
+| `Leg extensions - pair, standalone` · `Leg extensions - attached, close-up` | The pair alone; one bolted onto a fryer leg (`LegExtensions`) | Tailgate |
+| `Windshield - standalone` | Folding windshield panels (`ACC-Windshield`) | Both turkey kits |
+| `Hose and regulator - standalone` | Braided hose, gauge and red regulator | Comes with every powered pot |
+| `18qt - pwd - burner, close-up` | Tunnel tubes and burner under the 18 QT powered fryer, on its bar stand. The photo is the 18 QT, but every turkey fryer bottom is built the same way, so it can stand in for the 30 and 60 QT turkey fryer bottoms too (Evan, 2026-09-21) | Tailgate · fine for the turkey kits too |
+
+The kit shots show the hose and regulator, which come with the powered pot, not as a separate kit part.
+
 ## ⭐ Logo set — `assets/brand-refs/` (complete as of 2026-08-27)
 
 **The shield is the primary mark. Use it unless there's a reason not to.**

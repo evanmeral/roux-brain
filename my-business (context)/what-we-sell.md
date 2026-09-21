@@ -274,6 +274,8 @@ Skimmers $9.99–$19.99 · Paddles $9.99–$85 · Scoop $14.99 · Basket Buddy $
 
 > **Fryer accessory fitment (Evan, 2026-09-11):** the **5" fry thermometer** (`HP-5in-Therm`, $15.99) is the one for the **18 QT**, because the 12" doesn't fit it well. The **12"** is the one for the **30 QT turkey pot**. The **Wind Shield** is for a pot sitting on the ground, **not** a fryer standing on leg extensions. *(Wind Shield PDP: powered cookers 60 QT or smaller. Thermometer SKU and price from ROUX's Shopify read, 2026-09-11.)* **The 12" is also the thermometer for the 60 QT Dual turkey fryer** *(Evan, 2026-09-16, confirming it for the 60 QT Two-Bird kit)*.
 
+> **Fryer bottoms (Evan, 2026-09-21):** the 18 QT fryer and every turkey fryer have the same bottom: tunnel tubes and the burner, on a bar stand. A close-up of one can stand in for the others. The filed photo is the 18 QT (`18qt - pwd - burner, close-up`).
+
 ---
 
 ## TIER 3 — inbound only, no ad spend

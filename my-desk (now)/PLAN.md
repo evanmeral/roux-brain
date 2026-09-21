@@ -18,7 +18,7 @@ All sales figures are Shopify net sales (after discounts and returns, before shi
 | Turkey fryers buyable | 30 QT, 60 QT and both turkey kit versions can be added to cart every day | Last year the 30 QT stopped selling ~Nov 20–21 while traffic held | 0 days unbuyable, Oct 1–31 | — |
 | Tailgate kit share | Kit orders ÷ all 18 QT fryer orders, from Sept 25 | New product | Reported; flag if under 10% | ≥ 15% |
 | Pots hold pace | Pots 30–120 QT + Triple Jet, sales per week | Week 1 (Sept 17–23), set Sept 24 | Weeks 2–6 average ≥ 80% of week 1 | ≥ 100% |
-| Meta efficiency | Read two ways every time: Meta's own cost per purchase, and spend ÷ Shopify orders tagged to Meta | Sept 1–16: $40.44 Meta · $245 Shopify-tagged | No ad runs more than 7 days past its kill line · total ≤ $350/day | `18qt-TOF` ≤ $30 per Meta purchase |
+| Meta efficiency | Read two ways every time: Meta's own cost per purchase, and spend ÷ Shopify orders tagged to Meta | Sept 1–16: $40.44 Meta · $156.90 Shopify-tagged (match rules 1–5, Finn 2026-09-21; $245.15 under the old rules 1–4) | No ad runs more than 7 days past its kill line · total ≤ $350/day | `18qt-TOF` ≤ $30 per Meta purchase |
 
 **Pace line** (cumulative must-hit, checked each Thursday through the day before):
 
@@ -104,3 +104,4 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 - **2026-09-18 · Team photo filed, `my-inbox (new inputs)/` drop folder built, Atlas app icon fixed** (Evan).
 - **2026-09-18 · 80/100/120 gal commercial photos renamed and filed** (Evan): 18 cutouts + 18 studio shots, copied into the asset library; Evan kept the originals.
 - **2026-09-21 · 140 gal commercial photos renamed and filed** (Evan): 5 cutouts + 5 studio shots, copied into the asset library; Atlas cut the lid-on cutout from the studio shot; Evan kept the originals.
+- **2026-09-21 · Kit item photos renamed and filed** (Evan): 11 cutouts + 11 studio shots (the three fry kits laid out, plus thermometers, skimmer, legs, windshield, hose and regulator, 18 QT burner); Evan's originals renamed to match. Feeds Now #1 (kit photos).
