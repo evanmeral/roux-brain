@@ -13,13 +13,13 @@
 **Headline: consumer sales ≥ $110,485** (stretch $123,000). Also: total ≥ $169,339 · turkey fryers ≥ $32,973 (Oct 15–31 ≥ $23,124) · turkey buyable every day in October · tailgate kit share · pots hold pace · Meta read two ways, ≤ $350/day. Consumer pace line *(Finn, 2026-09-17)*: Sept 24 $14,747 · Oct 1 $25,941 · Oct 8 $41,695 · Oct 15 $59,974 · Oct 22 $78,920 · Oct 29 $101,643 · final $110,485. **Scored every Thursday 7:00**, first Sept 24. **Week 1 done; the Garrett shoot moved to Wed Sept 23 (week 2).** All Jay asks settled 2026-09-18, no text needed.
 
 ### 🟢 IW lookalike — now a 120 QT pot test · **read Fri Oct 2**
-`IW Lookalike 1% - Cold Prospecting - Sept 2026` `52507989521191` · $100/day CBO · Learning. **Day 7** *(Finn, Sept 11–17)*: $682.55 · 2 Meta purchases ($341.28) · 0 Shopify-tagged. The rule fired; **ROUX: cut the ad, not the campaign.**
-- 2026-09-18: `hpc-dark-evergreen` `52508008680591` **PAUSED** (Atlas, on Evan's yes). Evan swapped the `2026-09-15_*_v1` creative onto `120qt-performance_rolling-boil` `52508008680391` and `120qt-crowd-math` `52507989521591`, both **ACTIVE** after review (Meta connector, read at wrap).
-- Tags on the swapped ads **unverified**: the connector can't read URL tags. Finn checks Shopify sessions for `120qt-*` names Mon Sept 21; Evan can glance at the Review tab (optional). → [checkpoint report](../my-work%20(outputs)/internal/reports/2026-09-18-iw-lookalike-checkpoint.md)
+`IW Lookalike 1% - Cold Prospecting - Sept 2026` `52507989521191` · $100/day CBO. `hpc-dark-evergreen` paused 2026-09-18; only `120qt-crowd-math` `52507989521591` + `120qt-performance_rolling-boil` `52508008680391` run. **Tags verified** (Finn, 2026-09-21: 101 tagged sessions Sept 18–20, BPM tags as control).
+- **Since the Sept 18 swap** *(Finn, Meta + Shopify, 2026-09-21)*: $285.42 · 3 Meta purchases ($95.14) · **1 Shopify-tagged: #17482, Sept 19, $715, 120 QT Powered, new buyer, `crowd-math`**. Since launch: $967.97 · 5 Meta · 1 tagged. → [Finn Monday checks](../my-work%20(outputs)/internal/reports/2026-09-21-finn-monday-checks.md)
+- **Oct 2 read is scored on the Sept 18 window** (since-launch shown beside it) and #17482 counts as a pot order (Evan, 2026-09-21). Today that reads Continue; ⚠️ $285 per tagged order is still above the ~$195 ceiling for a 120 QT Powered, so one order proves nothing.
 - Oct 2 terms (PLAN.md): pause if 0 tagged pot / Triple Jet / kit orders or Meta CPP > $365 · hold to Oct 16 if ≥ 1 tagged and $189–$365 · continue if ≥ 1 tagged and ≤ $189.
 
 ### 📡 Also live — `BPM_TOF_Manual` ($164/day) + `18qt-TOF-Prospecting` ($50/day CBO)
-BPM ads carry ID-based UTMs. BPM Sept 1–16 by ad *(Finn)*: 18 QT videos $952 · Labor Day ads $1,082.79 · Tailgate Video $474.52 · 30 QT $63.94. **`Video_Jay 30qt (turkey) Fryer Demo` stays on** despite "patent-pending" and crawfish-on-a-fryer copy (Evan, 2026-09-17: ads only go off when they bleed money).
+BPM ads carry ID-based UTMs. BPM Sept 1–16 by ad *(Finn)*: 18 QT videos $952 · Labor Day ads $1,082.79 · Tailgate Video $474.52 · 30 QT $63.94. **Meta Shop orders** (cart built inside Facebook, no site visit) now count through their cart link, match rule 5, as a sub-line inside their campaign (Evan, 2026-09-21). `Video_UGC/Review18qt Fryer` reads its kill line on the ad that spends, `6772110395587`: $52.62 per Meta purchase Sept 7–20, under $189 (Finn). **`Video_Jay 30qt (turkey) Fryer Demo` stays on** despite "patent-pending" and crawfish-on-a-fryer copy (Evan, 2026-09-17: ads only go off when they bleed money).
 
 ### 🍳 The three kits — built, finished, **DRAFT** · tailgate live Fri Sept 25, turkey Oct 1
 Shopify Bundles app. **~6% off the parts total** (Jay): Tailgate `10298785661168` $455/$441/$418/$404 · Turkey one-bird `10298800341232` $481/$462/$418 · Turkey two-bird `10298812006640` $521/$512. Read back 2026-09-18 *(Finn)*: prices match, all variants CONTINUE, components attached, **0 images**. ✅ `SMS25` expired 10:11 today, `SMS25B` active (Shopify, read-back). All three kits were edited 02:32–04:03 CDT today; nothing Finn checked changed, source unknown. → [build record](../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md) · [rebuild steps](../my-work%20(outputs)/internal/2026-09-17-kit-rebuild-steps.md)
@@ -37,7 +37,7 @@ Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it
 
 ## 🔺 Now — top three (plan week 1 → 2)
 
-**1. Kits live Fri Sept 25.** Go/no-go Thu Sept 24. Left: **kit photos on the three kit pages** (shot and filed 2026-09-21, cutout + studio; Shopify write needs Evan's yes) · `HIGH15` off (Biljana, the one real blocker) · checkout test (kit + ordinary item, `FIRSTR10OFF` and one influence.io reward code) · preview a kit page for the FAQ field · check in admin that the eligible-discounts collection excludes `Bundle` and where `HPC10` points (the connector can't see either).
+**1. Kits live Fri Sept 25.** Go/no-go Thu Sept 24. Left: **kit photos on the three kit pages** (shot and filed 2026-09-21, cutout + studio; Shopify write needs Evan's yes. Before attaching: the 60 QT Dual's title names no basket, so a two-bird photo with a basket may over-promise. Check the listing, unverified) · `HIGH15` off (Biljana, the one real blocker) · checkout test (kit + ordinary item, `FIRSTR10OFF` and one influence.io reward code) · preview a kit page for the FAQ field · check in admin that the eligible-discounts collection excludes `Bundle` and where `HPC10` points (the connector can't see either).
 
 **2. Garrett shoot Wed Sept 23.** Evan shops Tue after work, then the shoot. Turkey demo must be live by Oct 1, which leaves Garrett one day less (7 days) to edit.
 
@@ -53,7 +53,6 @@ Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it
 |---|---|---|
 | **Biljana** | `HIGH15` flows. She switched `SMS25` on 2026-09-17 and needs a few more days on `HIGH15`. No kit goes live until it's off | 2026-09-15 |
 | **Evan** | Yes/no on putting the new kit photos on the three kit pages · checkout test · kit-page preview for the FAQ field · admin check of the eligible-discounts collection and `HPC10` | 2026-09-16 |
-| **Finn** | Mon Sept 21: confirm `120qt-*` tagged sessions reach Shopify · look into the 4 Facebook & Instagram channel orders with no visit data ($1,422.20, all 18 QT, Sept 11–17) | 2026-09-18 |
 | **Coalition (Connor)** | DataFeedWatch: what access they need from us (Shopify app, Merchant Center) and whether the feed goes dark during the switch. Approved 2026-09-18; they own the account. The copy rules (QT size in titles, warranty qualifiers, no competitors) were **not** sent, so check the rewritten titles once live | 2026-09-18 |
 | **Jay → Evan → Garrett** | Jay completes the dream-client-profile questionnaire (expected Sept 15, not received) | 2026-09-14 |
 
@@ -93,9 +92,10 @@ Source of truth → [metrics-and-goals.md](../my-files%20(knowledge)/hpc-referen
 | Figure | Value | Source · date |
 |---|---|---|
 | ⭐ **Plan baseline, Sept 17–Oct 31 2025** | **320 orders · $169,338.55 net** · consumer $110,484.95 · turkey fryers $32,973.12 | ShopifyQL, Finn, 2026-09-17 |
-| ⭐ **IW lookalike, Sept 11–17** | $682.55 · 2 Meta purchases ($341.28) · 0 Shopify-tagged · dark-evergreen 79.5% of spend | Meta connector + Shopify, Finn, 2026-09-18 |
+| ⭐ **IW lookalike since the Sept 18 swap** | $285.42 · 3 Meta purchases ($95.14) · **1 Shopify-tagged (#17482, $715)** · since launch $967.97 · 5 Meta · 1 tagged | Meta connector + Shopify, Finn, 2026-09-21 |
+| ⭐ **Weekend Sept 18–20** | 21 orders · $11,215.34 net · consumer Sept 17–20 **$15,543.09** vs $14,747 pace by Sept 24 (Finn's calculation) · Meta $909.12 | ShopifyQL + Meta connector, Finn, 2026-09-21 |
 | ⭐ **Sept 9–16 2026 (no sale)** | 52 orders · $23,302.87 · AOV $448.13 · vs 2025: 50 · $20,926.21 (+11.4%) | ShopifyQL, Finn, 2026-09-17 |
-| ⭐ **Meta Sept 1–16** | $3,922.45 spend · 97 Meta-claimed purchases ($40.44) · **16 Shopify orders tagged to Meta** ($245) | Meta connector + Shopify, Finn, 2026-09-17 |
+| ⭐ **Meta Sept 1–16** | $3,922.45 spend · 97 Meta-claimed purchases ($40.44) · **25 Shopify-tagged under rules 1–5 ($156.90)**; 16 ($245.15) under the old rules 1–4 | Meta connector + Shopify, Finn, 2026-09-17 · restated 2026-09-21 |
 | ⭐ **Marketing room at 20% net** | **$290,600/yr** 🔒 vs **$676k trailing actual** · forward run-rate ~$380k–$417k/yr → ~$89k–$126k/yr over | Jay, 2026-09-14 · ROUX model |
 | **Sale, Sept 1–8 2026** | **126 orders · $40,853.33 net · AOV $324.23** (given to Jay and Robert by Evan, 2026-09-18) | Shopify, Finn, 2026-09-17 |
 | **Turkey season 2025** | **171 of 318** turkey-fryer orders Oct–Nov came Nov 1–15 | ShopifyQL, Finn, 2026-09-17 |
@@ -110,7 +110,7 @@ Source of truth → [metrics-and-goals.md](../my-files%20(knowledge)/hpc-referen
 ## 🧭 Map
 
 - **Plan** — [PLAN.md](PLAN.md) · [pace line + audiences](../my-work%20(outputs)/internal/reports/2026-09-17-consumer-pace-line-and-audience-sizes.md) · [baseline](../my-work%20(outputs)/internal/reports/2026-09-17-month-plan-baseline.md) · **Atlas OS** — `localhost:4242` · pulse → [today.md](today.md) · notes → [capture.md](capture.md) · drop files → `my-inbox (new inputs)/` · [key-dates.md](key-dates.md)
-- **Paid** — [IW checkpoint 09-18](../my-work%20(outputs)/internal/reports/2026-09-18-iw-lookalike-checkpoint.md) · [campaign terms](../my-skills/hpc-campaign-checkpoint/campaigns.md) · [tailgate v2 concepts](../my-work%20(outputs)/content/ads/2026-09-tailgate-kit/v2/2026-09-17-tailgate-kit-v2-concepts.md) · [BFCM v7](../my-work%20(outputs)/content/website/2026-09-18-bfcm-sitewide-draft-v7.html)
+- **Paid** — [Finn Monday checks 09-21](../my-work%20(outputs)/internal/reports/2026-09-21-finn-monday-checks.md) · [IW checkpoint 09-18](../my-work%20(outputs)/internal/reports/2026-09-18-iw-lookalike-checkpoint.md) · [campaign terms](../my-skills/hpc-campaign-checkpoint/campaigns.md) · [tailgate v2 concepts](../my-work%20(outputs)/content/ads/2026-09-tailgate-kit/v2/2026-09-17-tailgate-kit-v2-concepts.md) · [BFCM v7](../my-work%20(outputs)/content/website/2026-09-18-bfcm-sitewide-draft-v7.html)
 - **Kits** — [build record](../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md) · [rebuild steps](../my-work%20(outputs)/internal/2026-09-17-kit-rebuild-steps.md) · [code exposure (stale, parked)](../my-work%20(outputs)/internal/2026-09-17-kit-discount-code-exposure.md) · [PDP copy](../my-work%20(outputs)/content/website/2026-09-16-kit-pdp-copy.md)
 - **Creative** — [twelve rules](../my-skills/hpc-ad-creative/instructions.md) · [library log](../my-skills/hpc-ad-creative/work/creative/library/LIBRARY-LOG.md) · [asset index](../my-skills/hpc-ad-creative/assets/ASSET-INDEX.md)
 - **Playbooks** — [weekly rhythm](../my-workflows%20(automations)/playbooks/weekly-operating-rhythm.md) · [paid media](../my-workflows%20(automations)/playbooks/paid-media.md) · [content engine](../my-workflows%20(automations)/playbooks/content-engine.md) · **content week:** [skill](../my-skills/content-week/instructions.md) · **checkpoint:** [skill](../my-skills/hpc-campaign-checkpoint/instructions.md)

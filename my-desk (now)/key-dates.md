@@ -6,7 +6,6 @@
 
 | Date | What | Source |
 |---|---|---|
-| 2026-09-21 | First automated `/content-week` run, 8:00 CT — week already approved and 4 of 6 scheduled, so it reports status only; first real proposal is Mon Sep 28 | task `content-week-monday` · PLAN.md read-back 2026-09-16 |
 | 2026-09-22 | Evan shops for the Garrett shoot, after work | shopping list · Evan 2026-09-18 |
 | 2026-09-23 | Garrett shoot, HPC shop — 8 videos, $2,500, locked (moved from Sept 22) | board, Now #2 · Evan 2026-09-18 |
 | 2026-09-24 | Thursday scoreboard #1 · tailgate kit go/no-go | PLAN.md · Evan 2026-09-17 |

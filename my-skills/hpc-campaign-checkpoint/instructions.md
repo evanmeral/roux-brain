@@ -79,8 +79,8 @@ Population and window as in `order-level-pulls.md` §1: the standard exclusion s
 Central time from launch 00:00 to today 00:00. Run Q5 for the journey fields and Q2's refund
 fields on the same population.
 
-**Match rules, in order.** An order is *tagged to the campaign* if any of these is true on
-its **last visit**:
+**Match rules, in order.** An order is *tagged to the campaign* if any of rules 1–4 is
+true on its **last visit**, or, failing those, rule 5 is true on the order record:
 
 1. `utmParameters.campaign` equals the campaign name in `campaigns.md`.
 2. `utmParameters.campaign` equals the name with a `(DRAFT)` suffix — Meta keeps the
@@ -89,6 +89,20 @@ its **last visit**:
 4. `utmParameters.campaign` equals the campaign **ID** — BPM and 18qt-TOF tag by ID, not
    name (`utm_campaign=<campaign ID>`, `utm_content=<ad ID>`), so split those by ad ID
    instead of `term` / `content` names *(Finn, 2026-09-17-month-plan-baseline.md §3)*.
+5. **Cart link, only when the last visit carries no tag from rules 1–4.** Meta Shop orders
+   (sales channel Facebook & Instagram, `sourceName` `2329312`) usually have no journey at
+   all, because the buyer builds the cart inside Facebook. Read the deprecated
+   `Order.landingPageUrl`: if it is a `/cart/…` permalink, credit the order to its
+   `campaign_id=`. If `campaign_id` is cut off (the field truncates at ~250 characters),
+   use `ad_id=` and look up that ad's campaign on Meta. Neither readable → unmatched, and
+   listed as such. **Each order counts once, journey first:** an order already matched by
+   rules 1–4 (e.g. #17466) is never counted again here. Report rule-5 orders as a
+   **Meta Shop sub-line** inside their campaign, so a break in the field shows as a change
+   in that line. ⚠️ The cart link's `ad_id` can be a zero-spend twin of the ad Meta
+   reports on (`6772116255587`/`6772116256187` → spend sits on `6772110395587`, the
+   link's `abid`), so match ads to Meta spend by `abid` where present, and never join
+   rule-5 ad IDs to Meta's ad-level CPP without checking. *(Evan, 2026-09-21, decisions.md;
+   Finn, 2026-09-21-finn-monday-checks.md.)*
 
 **Known blind spot.** An ad whose tags never reach Shopify is invisible to every rule above.
 Check `campaigns.md` for a "Tag blind spot" row (IW: `hpc-dark-evergreen`, Finn 2026-09-17)
