@@ -11,6 +11,8 @@
 
 ## 2026-09
 
+**Product photo filing is now a skill, `/file-product-photos`** · Evan, 2026-09-21 ("make sure this is a skill now"). It came from three runs by hand (commercial 80/100/120 gal, 140 gal, kit items). It carries Evan's naming words, the rule to rename his originals, and the Vision cutout script → [skill](../my-skills/file-product-photos/instructions.md).
+
 **Kit item photo names; the 18 QT and turkey fryer bottoms are built the same way** · Evan, 2026-09-21. 11 kit shots filed as cutout + studio, named from the kit build record. The burner close-up is the **18 QT** bottom (Evan), and every turkey fryer bottom is built the same way, so it can stand in for them. Filed to what-we-sell.md → [asset index](../my-skills/hpc-ad-creative/assets/ASSET-INDEX.md).
 
 **Sept 1–16 Meta baseline restated to $156.90 per Shopify-tagged order; Thursday scoreboard task pointed at match rules 1–5** · Evan, 2026-09-21 ("yes to both"). Under rule 5 (Meta Shop cart links) the baseline goes from 16 orders at $245.15 to 25 at $156.90, on the same $3,922.45 spend (Finn, Shopify GraphQL, 2026-09-21). PLAN.md shows both figures. Nova adds the rules pointer to the `month-plan-scoreboard` task so Thursday compares like with like. The kill line for `Video_UGC/Review18qt Fryer` reads on the ad that spends, `6772110395587` ($52.62 per Meta purchase Sept 7–20, under $189); the cart-link ad IDs never spent. → [Finn report](../my-work%20(outputs)/internal/reports/2026-09-21-finn-monday-checks.md)

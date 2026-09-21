@@ -158,6 +158,7 @@ Atlas AI Brain/
 | /write-a-post | Write a social media post |
 | /write-an-ad | Write ad copy with hooks, headlines, and CTA |
 | /carousel | Build a multi-frame Instagram/Facebook swipe post |
+| /file-product-photos | Name and file a product photo drop (cutout folder + studio folder): pair them, name them, copy them to the asset library with bounds and index, and rename Evan's originals to match |
 | /hpc-showroom-cards | Reprint, add, change or retire the showroom product cards: prices checked against Shopify, every card rendered and measured, then handed to Alexis to print |
 | /ask-for-review | Ask a happy customer for a review |
 

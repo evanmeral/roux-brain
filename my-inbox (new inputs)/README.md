@@ -23,6 +23,7 @@ Say "sort my inbox folder", or /prime will mention anything waiting.
 
 4. **Describes what's in it** in its index row. Copy rules (patent-pending, Made in USA, warranty wording) apply to words we write on creative, **not** to signage that happens to be in a real photo (Evan, 2026-09-18). Don't crop or flag a photo for that.
 5. **Leaves this folder empty** except for this README. Originals that were converted go to the Trash, not deleted.
-   **Exception: product photo batches Evan wants to keep** ("make copies so I can take them back out").
+   **Exception: product photo batches (a cutout folder + a studio folder) → run `/file-product-photos`**, which covers all of this.
+   **Product photo batches Evan wants to keep** ("make copies so I can take them back out").
    Copy them to the library, then **rename the originals here to the same names** and leave them for
    Evan to take out. Add any cutout Atlas made (e.g. from a studio shot) to his folder too (Evan, 2026-09-21).
