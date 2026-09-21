@@ -22,7 +22,7 @@
 BPM ads carry ID-based UTMs. BPM Sept 1–16 by ad *(Finn)*: 18 QT videos $952 · Labor Day ads $1,082.79 · Tailgate Video $474.52 · 30 QT $63.94. **Meta Shop orders** (cart built inside Facebook, no site visit) now count through their cart link, match rule 5, as a sub-line inside their campaign (Evan, 2026-09-21). `Video_UGC/Review18qt Fryer` reads its kill line on the ad that spends, `6772110395587`: $52.62 per Meta purchase Sept 7–20, under $189 (Finn). **`Video_Jay 30qt (turkey) Fryer Demo` stays on** despite "patent-pending" and crawfish-on-a-fryer copy (Evan, 2026-09-17: ads only go off when they bleed money).
 
 ### 🍳 The three kits — built, finished, **DRAFT** · tailgate live Fri Sept 25, turkey Oct 1
-Shopify Bundles app. **~6% off the parts total** (Jay): Tailgate `10298785661168` $455/$441/$418/$404 · Turkey one-bird `10298800341232` $481/$462/$418 · Turkey two-bird `10298812006640` $521/$512. Read back 2026-09-18 *(Finn)*: prices match, all variants CONTINUE, components attached, **0 images**. ✅ `SMS25` expired 10:11 today, `SMS25B` active (Shopify, read-back). All three kits were edited 02:32–04:03 CDT today; nothing Finn checked changed, source unknown. → [build record](../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md) · [rebuild steps](../my-work%20(outputs)/internal/2026-09-17-kit-rebuild-steps.md)
+Shopify Bundles app. **~6% off the parts total** (Jay): Tailgate `10298785661168` $455/$441/$418/$404 · Turkey one-bird `10298800341232` $481/$462/$418 · Turkey two-bird `10298812006640` $521/$512. Read back 2026-09-18 *(Finn)*: prices match, all variants CONTINUE, components attached. **Photos on 2026-09-21** (8–9 per kit, Shopify read-back). ✅ `SMS25` expired 10:11 today, `SMS25B` active (Shopify, read-back). All three kits were edited 02:32–04:03 CDT today; nothing Finn checked changed, source unknown. → [build record](../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md) · [rebuild steps](../my-work%20(outputs)/internal/2026-09-17-kit-rebuild-steps.md)
 
 ### 🟢 Content week — live · **Sept 21–27: all 6 scheduled**
 Six slots Mon–Sat, a ceiling not a quota; Monday 8:00 task proposes, Evan approves, Atlas schedules in Business Suite via Chrome. Plan moments: LSU–Texas A&M Sept 26 · Saints MNF Oct 5 · gumbo weekend Oct 9–11 · Pasta Day Oct 17 · Halloween Oct 31 → [fall moments](../my-files%20(knowledge)/hpc-reference/2026-fall-moments-calendar.md) · **Open, Evan's call:** keep Chrome scheduling, by hand, or a Nova-built scheduler.
@@ -37,7 +37,7 @@ Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it
 
 ## 🔺 Now — top three (plan week 1 → 2)
 
-**1. Kits live Fri Sept 25.** Go/no-go Thu Sept 24. Left: **kit photos on the three kit pages** (shot and filed 2026-09-21, cutout + studio; Shopify write needs Evan's yes. Before attaching: the 60 QT Dual's title names no basket, so a two-bird photo with a basket may over-promise. Check the listing, unverified) · `HIGH15` off (Biljana, the one real blocker) · checkout test (kit + ordinary item, `FIRSTR10OFF` and one influence.io reward code) · preview a kit page for the FAQ field · check in admin that the eligible-discounts collection excludes `Bundle` and where `HPC10` points (the connector can't see either).
+**1. Kits live Fri Sept 25.** Go/no-go Thu Sept 24. ✅ **Kit photos on all three kit pages** (2026-09-21, 8–9 each, read back READY, still DRAFT; the two-bird photos show no basket). Left: `HIGH15` off (Biljana, the one real blocker) · checkout test (kit + ordinary item, `FIRSTR10OFF` and one influence.io reward code) · preview a kit page for the FAQ field · check in admin that the eligible-discounts collection excludes `Bundle` and where `HPC10` points (the connector can't see either).
 
 **2. Garrett shoot Wed Sept 23.** Evan shops Tue after work, then the shoot. Turkey demo must be live by Oct 1, which leaves Garrett one day less (7 days) to edit.
 
@@ -52,7 +52,7 @@ Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it
 | Who | What | Since |
 |---|---|---|
 | **Biljana** | `HIGH15` flows. She switched `SMS25` on 2026-09-17 and needs a few more days on `HIGH15`. No kit goes live until it's off | 2026-09-15 |
-| **Evan** | Yes/no on putting the new kit photos on the three kit pages · checkout test · kit-page preview for the FAQ field · admin check of the eligible-discounts collection and `HPC10` | 2026-09-16 |
+| **Evan** | Checkout test · kit-page preview for the FAQ field · admin check of the eligible-discounts collection and `HPC10` | 2026-09-16 |
 | **Coalition (Connor)** | DataFeedWatch: what access they need from us (Shopify app, Merchant Center) and whether the feed goes dark during the switch. Approved 2026-09-18; they own the account. The copy rules (QT size in titles, warranty qualifiers, no competitors) were **not** sent, so check the rewritten titles once live | 2026-09-18 |
 | **Jay → Evan → Garrett** | Jay completes the dream-client-profile questionnaire (expected Sept 15, not received) | 2026-09-14 |
 
