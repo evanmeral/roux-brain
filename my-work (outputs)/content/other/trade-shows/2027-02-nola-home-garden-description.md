@@ -120,7 +120,7 @@ one pass so this is a single sitting:
 | Address | 17991 Painters Row, Ste 100, Covington, LA 70435 |
 | Phone for the public listing | 985-260-1505 |
 | Booth number | assigned by the show — may be blank until they confirm the corner |
-| Show special / attendee offer | many directories have this field. **Decide deliberately — do not fill it in reflexively.** We lead with quality, not discounts, and a directory-wide discount is a pricing decision. Route to ROUX before anything goes in this box. |
+| Show special / attendee offer | many directories have this field. **Decide deliberately — do not fill it in reflexively.** We lead with quality, not discounts, and a directory-wide discount is a pricing decision. Route to Beau before anything goes in this box. |
 | Photos for the listing | 2–3 lifestyle shots. Ask Evan which, and in what treatment. |
 | Certificate of insurance / booth staff list | usually a separate deadline from the directory. Note it when the form appears. |
 

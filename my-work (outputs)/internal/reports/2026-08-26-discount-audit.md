@@ -1,9 +1,9 @@
 # Discount Audit — and the February Mystery, Solved
-**Pulled 2026-08-26 by ROUX from Shopify (read-only, ShopifyQL). Nothing changed.**
+**Pulled 2026-08-26 by Beau from Shopify (read-only, ShopifyQL). Nothing changed.**
 
 ---
 
-# 🚨 PART 1 — Two of ROUX's earlier findings were WRONG. Here's the correction.
+# 🚨 PART 1 — Two of Beau's earlier findings were WRONG. Here's the correction.
 
 ## One Lowe's dealer order explains both December and February.
 
@@ -17,7 +17,7 @@ Discount title: **`Lowes dealer 25% and Rep 5%`**
 A single Lowe's dealer order — **$496,320 gross at a 30% dealer-plus-rep discount** — booked in
 December 2025 and **fully reversed in February 2026.**
 
-## What that means for the two alarms ROUX raised
+## What that means for the two alarms Beau raised
 
 ### ❌ RETRACTED: "December discounted 24.1% and may have been unprofitable"
 **The December consumer promo was fine.** Strip the Lowe's order out:
@@ -28,7 +28,7 @@ December 2025 and **fully reversed in February 2026.**
 | Discounts | −$169,721 (**24.1%**) | **−$20,825 (10.1%)** |
 | Net sales | $525,449 | **$178,025** |
 
-**10.1% is a normal December discount rate.** There is no promo problem. ROUX's recommendation to
+**10.1% is a normal December discount rate.** There is no promo problem. Beau's recommendation to
 audit the December promo before repeating it is withdrawn.
 
 ### ❌ RETRACTED: "February 2026 was a catastrophic negative month"
@@ -112,7 +112,7 @@ Good. Keep it that way.**
 Three 100%-off labels, all netting $0:
 `Influencer` $42,905 · `Influencer Discount 100%` $5,100 · `Influencer/Affiliate` $3,599
 
-**That is roughly 2.5× the ~$20K ROUX estimated from the affiliate spreadsheet.** Combined with the
+**That is roughly 2.5× the ~$20K Beau estimated from the affiliate spreadsheet.** Combined with the
 BM Digital account (see `my-files (knowledge)/hpc-reference/what-weve-tried.md`), this is the true cost of the influencer
 program — and there is still no revenue attributed against it.
 
@@ -129,7 +129,7 @@ program — and there is still no revenue attributed against it.
 | 60 QT (PW60-BSJ-VLV075) | $515.00 | **$268.63** | **47.8%** |
 | 80 QT (PW80-BDJ-VLV075) | $630.00 | **$331.76** | **47.3%** |
 
-**The 60 QT's list margin is 47.8% — right in line with the rest of the line.** ROUX's earlier
+**The 60 QT's list margin is 47.8% — right in line with the rest of the line.** Beau's earlier
 "mispriced or miscosted" warning is **withdrawn.**
 
 ## The real cause: it gets discounted harder than anything else.
@@ -177,8 +177,8 @@ on LTL freight is exactly where that shows up. **Worth a root-cause look at pack
 | 1 | **Explain the Lowe's reversal.** $496K booked and reversed distorts every report that spans it. | **Evan → Jay** |
 | 2 | **Decide the 60 QT's role.** It's healthy at list and thin when discounted. Either stop discounting it or accept it as a deliberate entry-price loss-leader — but do it on purpose. | **Evan** |
 | 3 | **Investigate shipping damage.** Three write-offs on one SKU, plus returns doubling since March. | **Evan** |
-| 4 | **Unique discount code per creator.** $51,603 of free product with no attribution. | **Evan / ROUX** |
-| 5 | **Re-baseline Nov–Feb planning** on corrected numbers. December is ~$178K, not $525K. | **ROUX** |
+| 4 | **Unique discount code per creator.** $51,603 of free product with no attribution. | **Evan / Beau** |
+| 5 | **Re-baseline Nov–Feb planning** on corrected numbers. December is ~$178K, not $525K. | **Beau** |
 | 6 | **Keep consumer discounting where it is.** ~$56K/yr on $2.88M is disciplined, and customers buy on quality anyway. | — |
 
 

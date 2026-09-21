@@ -55,7 +55,7 @@ SweepWidget landing page, Instagram carousel, teaser posts. Assets archived in
 Those subscribers are **still sitting in Klaviyo**. Segment by signup source or signup date window and
 check lifetime revenue against a normal-acquisition cohort. That answers "was the giveaway worth it?"
 retroactively — and settles whether to run another one. **Worth doing before the next giveaway is
-planned.** Owner: Biljana + ROUX, once Klaviyo access exists.
+planned.** Owner: Biljana + Beau, once Klaviyo access exists.
 
 **Guardrails if it runs again:** unique discount code or landing page so purchases are traceable ·
 official rules + no-purchase-necessary language + platform disclosure (legal review before launch) ·

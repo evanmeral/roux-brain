@@ -88,7 +88,7 @@ osascript -l JavaScript "my-skills/file-product-photos/lift-subject.js" "<studio
 It prints `ok instances=N`. Composite the result on a strong color (e.g. blue), read it,
 check the edges and that nothing was punched out, then compare a few product pixels with the
 source to confirm the colors held. File it like the others, and put a copy in Evan's inbox
-cutout folder too. The index row says Atlas made it and gives its size (it stays at studio
+cutout folder too. The index row says ROUX made it and gives its size (it stays at studio
 size, e.g. 1512×2016).
 
 Don't use `pngtool.py key` on studio shots. It keys by brightness, so it eats silver metal on

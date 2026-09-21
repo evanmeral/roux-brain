@@ -17,7 +17,7 @@ async function loadFeed(url) {
     if (/^https?:/i.test(url)) {
       const ac = new AbortController();
       const t = setTimeout(() => ac.abort(), 15000);
-      try { data = await ical.async.fromURL(url, { signal: ac.signal, headers: { 'User-Agent': 'AtlasOS/0.1' } }); }
+      try { data = await ical.async.fromURL(url, { signal: ac.signal, headers: { 'User-Agent': 'ROUXOS/0.1' } }); }
       finally { clearTimeout(t); }
     } else {
       data = await ical.async.parseFile(url.replace(/^file:\/\//, ''));

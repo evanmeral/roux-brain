@@ -1,5 +1,5 @@
-// Atlas OS — local server. Reads the brain's files and serves the cockpit at localhost:4242.
-// It never writes BOARD.md. The only files it writes are capture.md (Tell Atlas / Done) and its own log.
+// ROUX OS — local server. Reads the brain's files and serves the cockpit at localhost:4242.
+// It never writes BOARD.md. The only files it writes are capture.md (Tell ROUX / Done) and its own log.
 'use strict';
 const http = require('http');
 const fs = require('fs');
@@ -15,7 +15,7 @@ const PUBLIC = path.join(ROOT, 'public');
 const LOGO = path.join(VAULT, 'my-skills/hpc-ad-creative/assets/brand-refs/HPC-ShieldLogo-White.png');
 const CONFIG = JSON.parse(fs.readFileSync(path.join(ROOT, 'config.json'), 'utf8'));
 const TZ = CONFIG.timezone || 'America/Chicago';
-const PORT = Number(process.env.ATLAS_PORT) || CONFIG.port;
+const PORT = Number(process.env.ROUX_PORT) || CONFIG.port;
 const { execFile } = require('child_process');
 const VERSION = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')).version;
 
@@ -99,9 +99,9 @@ function buildState() {
 }
 
 // ---- capture.md: the only brain file the OS writes ----
-const CAPTURE_HEADER = `# Capture — Evan → Atlas
+const CAPTURE_HEADER = `# Capture — Evan → ROUX
 
-> Written by Atlas OS (the Tell Atlas box and the Done buttons). **\`/prime\` reads this first.**
+> Written by ROUX OS (the Tell ROUX box and the Done buttons). **\`/prime\` reads this first.**
 > \`/wrap\` folds each line into the board or decisions, then moves it to \`archive/captures.md\`.
 > Never edit the board from here; this is the inbox.
 
@@ -129,7 +129,7 @@ function startSession(prompt) {
   const asq = (str) => str.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
   // If Claude cannot start (usually: Terminal lacks Desktop-folder access), keep the window open
   // and say so, instead of closing before Evan can read anything.
-  const hint = 'Atlas OS: Claude could not read the vault from this Terminal window. Give Terminal access to your Desktop folder: System Settings > Privacy & Security > Files and Folders > Terminal > Desktop Folder. Then press the button again.';
+  const hint = 'ROUX OS: Claude could not read the vault from this Terminal window. Give Terminal access to your Desktop folder: System Settings > Privacy & Security > Files and Folders > Terminal > Desktop Folder. Then press the button again.';
   const shell = `cd '${VAULT.replace(/'/g, "'\\''")}' && clear && '${CLAUDE_BIN}' "$(cat '${file}')" || { echo; echo '${hint}'; exec $SHELL; }`;
   const script = [
     'tell application "Terminal"',
@@ -161,7 +161,7 @@ function routines() {
   const pulse = runs.filter((r) => r.kind === 'pulse');
   const last = pulse.find((r) => r.status !== 'started') || null;
   const running = pulse[0] && pulse[0].status === 'started' && (!last || pulse[0].at > last.at);
-  const pulseJob = fs.existsSync(path.join(process.env.HOME || '', 'Library/LaunchAgents/com.atlas.pulse.plist'));
+  const pulseJob = fs.existsSync(path.join(process.env.HOME || '', 'Library/LaunchAgents/com.roux.pulse.plist'));
   return {
     list: [{ key: 'pulse', name: 'Morning pulse', schedule: pulseJob ? '6:30 CT daily' : 'button only', last, running: !!running }],
     recent: runs.slice(0, 12),
@@ -251,7 +251,7 @@ try { fs.watch(ROOT, (evt, file) => { if (file === 'config.local.json') { ics.in
 
 // ---- request guard: this server listens on localhost only, but a web page in the browser could
 // still aim requests at it. Every request must carry a localhost Host header (defeats DNS
-// rebinding); every POST must come from this page (same-origin Origin) or carry the X-Atlas
+// rebinding); every POST must come from this page (same-origin Origin) or carry the X-ROUX
 // header, which a cross-site page cannot add without a preflight this server never answers.
 const LOCAL_HOSTS = new Set(['localhost', '127.0.0.1', '[::1]']);
 function hostOk(req) {
@@ -263,7 +263,7 @@ function postOk(req) {
   if (origin) {
     try { const u = new URL(origin); return LOCAL_HOSTS.has(u.hostname) && Number(u.port || 80) === PORT; } catch (_) { return false; }
   }
-  return typeof req.headers['x-atlas'] === 'string';
+  return typeof req.headers['x-roux'] === 'string';
 }
 
 // ---- http ----
@@ -343,4 +343,4 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, '127.0.0.1', () => log(`Atlas OS ${VERSION} on http://localhost:${PORT} · vault: ${VAULT}`));
+server.listen(PORT, '127.0.0.1', () => log(`ROUX OS ${VERSION} on http://localhost:${PORT} · vault: ${VAULT}`));

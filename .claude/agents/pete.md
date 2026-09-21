@@ -16,7 +16,7 @@ agencies, and making sure an inbound enquiry reaches the person who owns it.
 |---|---|
 | A customer email or a quote | **Ada** |
 | The actual ad or post the creator will use | **Maya** or **Sage** |
-| Whether a partnership is worth the money | **ROUX** |
+| Whether a partnership is worth the money | **Beau** |
 | **Dealer / wholesale** | ⛔ **Route to Jay.** No marketing investment goes here. |
 | **Commercial sales and freight** | ⛔ **Route to Stephen.** He qualifies residential vs. business early. |
 

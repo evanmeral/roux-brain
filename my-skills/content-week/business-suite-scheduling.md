@@ -45,7 +45,7 @@ this says, use `find` to locate it by label, and if the UI fights back twice, st
 2. **Placements:** confirm both Facebook and Instagram are selected, or only the one the plan says.
 3. **Media:** there is no file input in the page until *Add photo/video* is clicked, and a plain click
    opens a native dialog nobody can see. Paste `business-suite-helpers.js` first: it intercepts that
-   click, exposes the input as `atlas-upload-input`, and `file_upload` uses its ref. A carousel is
+   click, exposes the input as `roux-upload-input`, and `file_upload` uses its ref. A carousel is
    several files in one upload, in posting order (`_1-cover`, `_2-…`). Combined size under 10 MB per
    call; a larger video is Evan's upload, and the plan says so.
 4. **Caption:** paste the Facebook caption. If the plan has a different Instagram caption, turn on
@@ -67,7 +67,7 @@ else**; it holds the parts that work by script. Everything below it is what must
 
 **Feed post, about 3 browser calls once the recipe is loaded:**
 1. Composer open → paste helpers → click *Add photo/video* (the helper captures the hidden file input)
-   → `find "atlas-upload-input"` → `file_upload` to the **newest** ref (a carousel is all frames in one
+   → `find "roux-upload-input"` → `file_upload` to the **newest** ref (a carousel is all frames in one
    call, in posting order; order held on the Wednesday carousel).
 2. `await __A({day, fb, ig})` does both captions, story-share off, schedule on, both dates.
 3. **Real click on the story-share Confirm** if that dialog is still visible (it hangs half-faded and

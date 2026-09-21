@@ -87,9 +87,9 @@ also returns 326.)* 7 cancelled + 16 $0 warranty/replacement inside that (Finn h
    November. Undercuts the deadline finding. If "blast" means email → Biljana's lane.
 3. **Peter's managed-spend proposal** — changes the lane (Meta is Evan's; IW advises, free).
    Any incentive must pay on **incremental Shopify revenue**, never Meta-reported ROAS (BM Digital).
-   Money call → ROUX.
+   Money call → Beau.
 4. **Six videos** — recap says "$500 each, maybe $2,000 for 8." Garrett on file: $500 or **$2,500
-   for 8** *(our-team.md)*. Confirm who and what price. Money call → ROUX.
+   for 8** *(our-team.md)*. Confirm who and what price. Money call → Beau.
 
 ## Open questions — answered by Evan, 2026-09-10
 

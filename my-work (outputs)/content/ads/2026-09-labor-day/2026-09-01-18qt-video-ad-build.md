@@ -108,7 +108,7 @@ budget increase off the old table.
 It's a 9:16 talking head with burned-in captions — that's a Reel. Post it to IG and FB. Free
 distribution, and it gives the paid version a warm-audience sibling.
 
-## What ROUX needs from Evan
+## What Beau needs from Evan
 1. **Confirm this is the right file** — `~/Desktop/Home Fryer .mp4`, 9/1 8:07am. Name is "Home Fryer," not "18 QT."
 2. **Watch it once for claims risk** before it goes live. Listen specifically for:
    - a **flat** boil-time or fuel-savings number (must be "as little as" / "up to" / "in as fast as")

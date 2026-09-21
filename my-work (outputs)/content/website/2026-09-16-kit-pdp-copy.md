@@ -96,9 +96,9 @@ Option `Size` · values `30 QT` and `60 QT Two-Bird`.
 
 ## Checks before publishing
 
-- [CHECK: 12-inch thermometer on the 60 QT. The plan (§4.3) says this was ROUX's assumption from your 30 QT call, pending your confirmation. The copy assumes it.]
+- [CHECK: 12-inch thermometer on the 60 QT. The plan (§4.3) says this was Beau's assumption from your 30 QT call, pending your confirmation. The copy assumes it.]
 - [CHECK: "rolling boil in under 7 minutes" on the 60 QT Dual. `what-we-sell.md` says the 30 and 60 QT carry the claim "when set up to boil", and that the 60 QT Powered Cooker boils on a Single Jet while the 60 QT Dual ships with a 6-inch banjo. If the 60 QT Dual on its banjo doesn't hit 7 minutes, cut "in under 7 minutes" from the third paragraph and leave "Set it up to boil" as is.]
-- ~~"steaming in the summer"~~ — replaced with "a low-country boil for the Fourth" before the build (Atlas, 2026-09-16): nothing on file says a steamer insert fits the 60 QT Dual.
+- ~~"steaming in the summer"~~ — replaced with "a low-country boil for the Fourth" before the build (ROUX, 2026-09-16): nothing on file says a steamer insert fits the 60 QT Dual.
 - The 41-inch height is from the legs PDP as quoted in the plan (§3.3), qualified as "about".
 - "Two 20-pounders" is from the 60 QT Dual's PDP as given in the brief, qualified with "up to".
 

@@ -1,5 +1,5 @@
 # The 20%-net marketing budget model
-**2026-09-14 · ROUX · builds on [overhead-method-options](2026-09-10-overhead-method-options.md) and [cac-ceilings-v3](2026-09-10-cac-ceilings-v3.md), per Evan's go-ahead 2026-09-14**
+**2026-09-14 · Beau · builds on [overhead-method-options](2026-09-10-overhead-method-options.md) and [cac-ceilings-v3](2026-09-10-cac-ceilings-v3.md), per Evan's go-ahead 2026-09-14**
 
 **What this is.** The marketing team's own working budget — how we decide ad spend day to
 day. It is built FROM Jay's P&L, so it's grounded in his real numbers, but it is not an edit
@@ -8,7 +8,7 @@ decide what to spend, until Jay adopts pieces of it formally.
 
 **Hard constraints vs. judgment calls, marked throughout:**
 - 🔒 **Hard constraint** = a Shopify- or P&L-verified number, or a rule Jay has explicitly approved.
-- 🟡 **Judgment call** = ROUX's read, proposal, or an unadopted recommendation. Flagged every time.
+- 🟡 **Judgment call** = Beau's read, proposal, or an unadopted recommendation. Flagged every time.
 - ⚠️ **Gap** = a number this model needs but doesn't have. Not invented, not estimated.
 
 ---
@@ -127,7 +127,7 @@ against the annual ceiling cumulatively rather than divided into 12 equal slices
 2. **Google — Coalition's lane, monitor only.** We cannot allocate this budget directly.
    Current monthly spend still isn't on file (checked 2026-09-14, dropped per Evan's call —
    not chased further). A single vendor line at ~71% of the entire 20%-net room is a decision
-   for Jay and Coalition, not something ROUX can resolve by suggestion alone.
+   for Jay and Coalition, not something Beau can resolve by suggestion alone.
 3. **Agency fees — composition confirmed, 2026-09-14.** ~$81,600/yr forward, Coalition
    retainer only; the rest of the trailing $152k was one-time BM Digital cost and is gone.
    Allocatable as a known, fixed line — no longer an open flag.
@@ -173,7 +173,7 @@ we run directly.
 
 **Status: Jay formally adopted the incremental rule, 2026-09-14** (text via Evan, Q4: "yes" to
 "every ad has to clear 20% net profit after cost, fees, and the ad spend itself"). This is now
-Jay's rule, not a ROUX recommendation awaiting sign-off. It does not by itself reopen the 18 QT
+Jay's rule, not a Beau recommendation awaiting sign-off. It does not by itself reopen the 18 QT
 ladder — that still needs the 18 QT's own CPP to clear its gate (below), which it currently
 does not.
 
@@ -222,7 +222,7 @@ Meta further would shave at most ~$115k/yr off a now-much-smaller ~$89k–$126k/
    only); "other advertising" forward run-rate ~$10,300/yr (misc + November reviews.io
    renewal). Full detail and the trailing-vs-forward reconciliation → section 2.
 4. ✅ **ANSWERED, Jay 2026-09-14 (text via Evan, Q4: "yes"):** the incremental per-ad rule is
-   formally adopted, not just a ROUX recommendation. → section 4.
+   formally adopted, not just a Beau recommendation. → section 4.
 5. **Finn:** re-run the Pull-D business-level check monthly going forward (last run
    2026-09-10) so this model's "$290,600 room" gets checked against real, current
    contribution — not just re-derived from a single trailing-365-day P&L pull.

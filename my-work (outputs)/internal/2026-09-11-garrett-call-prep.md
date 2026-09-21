@@ -146,7 +146,7 @@ and `Commercial Boiler.mp4` already cover it, and commercial is inbound only.
 ### 4 · Tailgate: 18 QT fryer + 60 QT Powered Cooker
 
 - **Job:** October is peak tailgating, and September/October prospecting is already behind the calendar's Sept 10
-  launch. It feeds the **tailgate bundle** (ROUX, in progress).
+  launch. It feeds the **tailgate bundle** (Beau, in progress).
 - **Hook:** oil bubbling on the 18 QT, the thermometer at 350°, a basket of fish coming up. *"Before kickoff."*
 - **Shots:**
   1. 18 QT on **leg extensions** (they fit the 18 QT). Fish, wings, fries, hushpuppies coming out and draining. This payoff shot is a gap in the asset library.
@@ -253,7 +253,7 @@ creatives (Maya) → 1 article (Leo). Session A alone should give Maya cutdowns 
 2. **Watch the Founders Spotlight once**, so #5 doesn't repeat it.
 
 **Decide:**
-3. **Yes on the 8-pack and this slate.** The 8-pack is already ROUX's recommendation on file *(open-questions #18)*.
+3. **Yes on the 8-pack and this slate.** The 8-pack is already Beau's recommendation on file *(open-questions #18)*.
    If you want to cut the slate, cut from the bottom.
 4. **The tailgate location and date**, and who signs releases.
 5. **The menus for #7 and #8**, before session D.

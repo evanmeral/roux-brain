@@ -170,4 +170,4 @@ worse without a discount.
 - [ ] Promo creative live
 - [ ] **Hold budgets** — no changes on launch day
 
-⚠️ **Every one of these is a budget change in your ad account. That's your click, not ROUX's.**
+⚠️ **Every one of these is a budget change in your ad account. That's your click, not Beau's.**

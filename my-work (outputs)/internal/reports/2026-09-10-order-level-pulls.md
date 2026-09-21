@@ -1,7 +1,7 @@
 # Order-level pulls A and B: what real orders contain
 **2026-09-10 · Finn, read-only Shopify · input to [cac-ceilings-v3](2026-09-10-cac-ceilings-v3.md) section 5**
 
-Nothing was written to Shopify, Meta or Google. Every order figure comes from Shopify Admin GraphQL rows pulled 2026-09-10 (queries Q0–Q8 at the end). Averages, shares and gross profit are **derived by Finn** from those rows. **No CAC ceiling is computed here.** That's ROUX's job.
+Nothing was written to Shopify, Meta or Google. Every order figure comes from Shopify Admin GraphQL rows pulled 2026-09-10 (queries Q0–Q8 at the end). Averages, shares and gross profit are **derived by Finn** from those rows. **No CAC ceiling is computed here.** That's Beau's job.
 
 ---
 
@@ -46,7 +46,7 @@ Filter string used everywhere, Central time:
 - **Net revenue per order.** For each line still on the order (`currentQuantity` > 0): `currentQuantity × discountedUnitPriceAfterAllDiscounts`. That's after line and order discounts, and after items refunded or removed. Excluded:
   - Shipping charged and taxes.
   - **Shipping Protection** (Navidium, SKU `NVDPROTECTION*`): $22,079.84 over 12 months.
-  - **Accident Prevention**: 3 lines, $36.75. It's another $0-cost protection add-on. Same logic, and ROUX can reverse it.
+  - **Accident Prevention**: 3 lines, $36.75. It's another $0-cost protection add-on. Same logic, and Beau can reverse it.
   - **Money-only refunds**, meaning refunds where no item was removed: 75 orders, $5,576.36 deducted over 12 months. They may include refunded tax, so the deduction runs slightly high.
 - **Landed COGS per order.** `currentQuantity ×` the **current** `inventoryItem.unitCost` of the line's variant (Q3, 2026-09-10). The cost stored on the order line was not used.
   - Fallback for deleted variants: first the exact SKU in today's catalog, then the SKU with punctuation stripped.
@@ -229,7 +229,7 @@ Anchors among the 24: Legs 10, 18 QT powered 8, 30 QT 2, Cooling Ring 2, 120 QT 
    - Ring + paddle combos were only detected when the order also contained a Triple Jet.
 6. **18 QT lead variant.** Valve + basket (`PWFRBR-VLV025B`, $340 list, $182.05 landed) is 95% of Jun–Aug units. v3's floor row is the $285 base unit.
 7. **Money-only refunds:** $5,576.36 deducted, possibly including tax.
-8. **Not pulled:** ROUX's Pull C (card fees; the connector has no Payments scope) and Pull D (needs all channels).
+8. **Not pulled:** Beau's Pull C (card fees; the connector has no Payments scope) and Pull D (needs all channels).
 
 ---
 
@@ -322,6 +322,6 @@ The averages were computed in Python over the saved rows. The script was scratch
 
 ---
 
-**Next:** ROUX. The order-level inputs are real. Rebuilding the ceilings from them, and deciding whether they reopen the 18 QT ladder, is a call, not a query.
+**Next:** Beau. The order-level inputs are real. Rebuilding the ceilings from them, and deciding whether they reopen the 18 QT ladder, is a call, not a query.
 
 → [cac-ceilings-v3](2026-09-10-cac-ceilings-v3.md) · [landed cost](2026-09-10-landed-cost-by-variant.md) · [overhead orders](2026-09-10-orders-for-overhead-allocation.md) · [Board](../../../my-desk%20%28now%29/BOARD.md)

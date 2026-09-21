@@ -1,5 +1,5 @@
 # CAC ceilings v3: real inputs, per product line
-**2026-09-10 · ROUX · replaces the provisional ceilings in [cac-model-v2](2026-08-28-cac-model-v2.md)**
+**2026-09-10 · Beau · replaces the provisional ceilings in [cac-model-v2](2026-08-28-cac-model-v2.md)**
 
 Read-only throughout. Nothing was written to Shopify, Meta or Google. **No actual CAC is quoted
 anywhere in this doc.** There is no Google spend feed and no Sept 8 Meta spend. Meta figures below
@@ -15,7 +15,7 @@ and 54% landed COGS. Formula below.)* Every product under that line has a **nega
 when sold alone at full price: both 18 QT fryers, the 30 QT and 40 QT, the Triple Jet on its own,
 the legs and every Boil Boss accessory.
 
-**ROUX:** this is a finding about the target and the overhead, not about Meta. The provisional
+**Beau:** this is a finding about the target and the overhead, not about Meta. The provisional
 ceilings were about twice as generous because v2 reserved 20% for overhead *and* profit combined.
 v3 charges full overhead ($97.49) **and** a 20% net margin on top.
 
@@ -85,7 +85,7 @@ higher. So a zone read from Meta CPP is the optimistic read.
 ## 3. The ceiling table, by product line
 
 **Order basis: one unit, full list price, nothing attached.** This is **not** Robert's order-level
-figure. That needs Finn's pull (section 5). **ROUX:** in the no-discount case, this is the *floor* for
+figure. That needs Finn's pull (section 5). **Beau:** in the no-discount case, this is the *floor* for
 any full-price order containing the product. Attached items all carry positive margin, and overhead is
 charged per order rather than per item, so attachment can only raise the ceiling. **Discounted orders can fall below it.**
 
@@ -128,7 +128,7 @@ charged per order rather than per item, so attachment can only raise the ceiling
 *Why the 18 QT + legs basket is real: legs were the top add-on on 30 of 66 paid 18 QT orders, Aug 10–Sep 8
 (Finn, Shopify, [IW recap review](../2026-09-10-intentwave-recap-review.md)).*
 
-**ROUX, on the table:**
+**Beau, on the table:**
 - **The main push (Performance pots + Triple Jet) only works as a basket.** The pot alone is $8–23 and the burner alone is $7.
   Together they're $116, and the Platinum Bundle is $68–82. Creative for the main push should sell the pair.
   Selling either piece alone is barely above zero.
@@ -162,7 +162,7 @@ overhead. Here is what the method choice is worth, where revenue share = $594,60
 | **Leg Extensions** | $62.16 | **−$59.13** | Not advertised alone. None on file | Attach-only |
 | **Cooling Ring** | $39.82 | **−$69.67** | Not advertised alone. None on file | Attach-only |
 
-**ROUX:** only the 18 QT has a product-specific CPP, and it sits in Zone 2: above every ceiling
+**Beau:** only the 18 QT has a product-specific CPP, and it sits in Zone 2: above every ceiling
 scenario, and more than $85 under break-even on Meta's own count. `18qt-001` at $14.53 is under the
 with-legs ceiling on paper, but it's one ad, *Learning limited*, with no purchase count on file.
 Don't build on it.
@@ -210,7 +210,7 @@ and Robert: **is HPC at 20% net today, at current ad spend?** Finn can answer it
   The real one is −$26 alone and $15–18 with legs.
 - **Fact:** the ladder's own gate (CPP ≤ $30) sits *above* every 18 QT ceiling scenario. Passing the gate
   would still mean spending in Zone 2.
-- **ROUX:** the recommendation to override the BOM gate is withdrawn. The inputs landed, and they
+- **Beau:** the recommendation to override the BOM gate is withdrawn. The inputs landed, and they
   cut against it. The campaign is **not** a money-loser. It sits in Zone 2, adding profit dollars on
   Meta's count, but it doesn't meet the target Jay set. Two things reopen it:
   1. **Pull A** shows the real 18 QT order (with attach) clears the trailing-7 CPP. Then re-gate the ladder at that order-level ceiling.
@@ -241,7 +241,7 @@ and Robert: **is HPC at 20% net today, at current ad spend?** Finn can answer it
   ($65.07 → $36.02), so it needs to **lift legs per order by 81%** just to break even.
   Against the three no-code reference weeks, the code's result runs from **+$403 to −$925**. Only the most recent week
   says it lost, but nothing says it clearly paid. *(All derived, on assumed variable costs.)*
-- **ROUX:** keep the ⛔ on November. The landed-cost question is answered, and the answer is that there's no case for 30% off.
+- **Beau:** keep the ⛔ on November. The landed-cost question is answered, and the answer is that there's no case for 30% off.
   A leg attached at full price adds **$65.46**. Push attach at full price, e.g. a PDP bundle or a
   Shopify automatic discount if any discount at all. Not 30%.
 
@@ -249,7 +249,7 @@ and Robert: **is HPC at 20% net today, at current ad spend?** Finn can answer it
 
 ## 7. How mixed campaigns like `BPM_TOF_Manual` get held to a ceiling
 
-**Rule (ROUX):** hold a mixed campaign to the **average order-level ceiling of the Shopify orders it
+**Rule (Beau):** hold a mixed campaign to the **average order-level ceiling of the Shopify orders it
 actually drove** (Pull B). Not store mix, and not its best product.
 1. **Compute from its own orders, monthly.** The mix swings with the season. Meta's value per purchase on this
    campaign fell 33% from Jan–Jul to Jul–Aug ([meta-actuals](2026-08-28-meta-actuals.md); Meta-reported, so
@@ -279,7 +279,7 @@ actually drove** (Pull B). Not store mix, and not its best product.
 
 ## Addendum — order-level ceilings from Finn's Pull A (2026-09-10)
 
-*Claude, applying v3's formula unchanged to the per-order means in [order-level-pulls](2026-09-10-order-level-pulls.md). **Arithmetic, not a new ROUX judgment.** Variable = $3 packaging + 1% warranty + 2.9% + $0.30 card (all assumptions). Overhead $97.49/order. Target 20% of net. Means, all orders (full-price + discounted) unless noted.*
+*Claude, applying v3's formula unchanged to the per-order means in [order-level-pulls](2026-09-10-order-level-pulls.md). **Arithmetic, not a new Beau judgment.** Variable = $3 packaging + 1% warranty + 2.9% + $0.30 card (all assumptions). Overhead $97.49/order. Target 20% of net. Means, all orders (full-price + discounted) unless noted.*
 
 
 **Jun–Aug 2026**

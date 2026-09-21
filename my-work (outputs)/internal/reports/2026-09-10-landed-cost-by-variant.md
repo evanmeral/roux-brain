@@ -928,4 +928,4 @@ Source for every row: price, compare-at and landed cost from **Q1**, cost confir
 
 ---
 
-**Next:** ROUX. The costs are internally consistent but mostly predate Jay's stated update, so whether the CAC ceiling table can be built on them is a judgment call, not a query. Jay is the one person who can confirm which costs are landed.
+**Next:** Beau. The costs are internally consistent but mostly predate Jay's stated update, so whether the CAC ceiling table can be built on them is a judgment call, not a query. Jay is the one person who can confirm which costs are landed.

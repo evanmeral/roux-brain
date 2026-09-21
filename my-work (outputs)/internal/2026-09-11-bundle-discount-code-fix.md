@@ -1,5 +1,5 @@
 # Bundle discount-code fix: Evan's to-do
-**2026-09-11 · ROUX · for Evan.** Rule (Jay, 2026-09-11): **every code skips bundles. Military and first-responder 5% are the one exception.**
+**2026-09-11 · Beau · for Evan.** Rule (Jay, 2026-09-11): **every code skips bundles. Military and first-responder 5% are the one exception.**
 
 **Approved 2026-09-11 (Evan):**
 - The tailgate kit at $465 and the 60 QT kit at $519 (Jay).
@@ -118,7 +118,7 @@ the `Tailgater` tag, the turkey kits via `Turkey`, and all three via "All Non Co
      more (406 past uses on `HIGH10`).
    - **B. New name** (for example `HIGH10B`). History stays clean, but whatever sends the code (Biljana's flows)
      has to switch to the new name.
-   - **ROUX:** B for anything a flow sends; that's Biljana's choice. A for low-use codes that are Evan's own.
+   - **Beau:** B for anything a flow sends; that's Biljana's choice. A for low-use codes that are Evan's own.
 3. **Create:** Discounts → Create → **Amount off products** → the code → value → **Applies to: Specific
    collections → All Products - Eligible for Discounts.**
    - For fixed-dollar codes, **tick "Only apply discount once per order"**. Otherwise $25 comes off *each* item.

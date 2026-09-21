@@ -4,7 +4,7 @@
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 VAULT="$(cd "$ROOT/../../.." && pwd)"
 export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
-MODEL="${ATLAS_PULSE_MODEL:-claude-sonnet-5}"
+MODEL="${ROUX_PULSE_MODEL:-claude-sonnet-5}"
 STAMP="$(date +%Y-%m-%d_%H%M)"
 OUT="$ROOT/logs/pulse/$STAMP.json"
 mkdir -p "$ROOT/logs/pulse"

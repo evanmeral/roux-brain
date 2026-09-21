@@ -53,7 +53,7 @@ Fryer, legs, thermometer, skimmer. One kit.
 - **The picture proves it at thumb size.** A fryer at waist height is obvious before anyone reads a word.
 - **No number is carrying the claim,** so there's less that can break.
 - **Hook 3 speaks to the fryer, not the kit.** BPM's 18 QT videos already run that angle.
-- **Test hook 2 as the second ad** only if ROUX wants a test inside $50/day.
+- **Test hook 2 as the second ad** only if Beau wants a test inside $50/day.
 
 ### Destination URL: placeholder
 The handle may change when Jay's Bundles-app rebuild lands. Fill it in after the kit is live, then click through Preview and confirm the tags arrive in Shopify.
@@ -116,4 +116,4 @@ The current draft handle, for reference only (Shopify, 2026-09-17): `Product/102
 
 ---
 
-**Next:** ROUX, the copy is ready. The budget call is yours: whether hook 2 gets its own ad inside `18qt-TOF` at $50/day, and A or B for the pots retargeting static.
+**Next:** Beau, the copy is ready. The budget call is yours: whether hook 2 gets its own ad inside `18qt-TOF` at $50/day, and A or B for the pots retargeting static.

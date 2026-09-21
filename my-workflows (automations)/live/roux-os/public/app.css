@@ -1,4 +1,4 @@
-/* Atlas OS — HPC dark skin. Tokens from my-files (knowledge)/hpc-reference/design-system.md, darkened. */
+/* ROUX OS — HPC dark skin. Tokens from my-files (knowledge)/hpc-reference/design-system.md, darkened. */
 :root {
   --bg: #141313;
   --surface: #1E1D1D;
@@ -108,7 +108,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .week-note { grid-column: 1 / -1; color: var(--muted); font-size: 12px; padding: 4px 2px; }
 .week-note.bad { color: var(--flame); }
 
-/* tell atlas + buttons */
+/* tell roux + buttons */
 .capture { display: flex; gap: 6px; }
 .capture input { flex: 1; min-width: 0; background: var(--bg); border: 1px solid var(--border); border-radius: 7px; color: var(--text); font: inherit; padding: 7px 10px; }
 .capture input:focus { outline: none; border-color: var(--accent); }

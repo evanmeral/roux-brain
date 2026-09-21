@@ -27,7 +27,7 @@ in `attribution_setting` — write it in the checkpoint, do not assume 7-day cli
 | Products in the ads | 120 QT Performance pot (rolling-boil), 120 QT Powered (crowd-math), general brand (dark-evergreen). Ceiling by the product the matched orders actually contain |
 | Ceilings that apply | Incremental rule, `2026-09-10-overhead-method-options.md`: **120 QT Powered $195.34** Jun–Aug basis / $165.64 12-mo (gate on Meta's count $78.14 / $66.26) · **Performance pots $189.23** / $183.14 (gate $75.69 / $73.25) · **18 QT** $99.55 / $73.86 / $73.39 (gate $39.82 / $29.54 / $29.36) if an 18 QT turns up |
 
-**Decision rule, agreed in advance** *(ROUX, accepted by Evan 2026-09-14, decisions.md)*:
+**Decision rule, agreed in advance** *(Beau, accepted by Evan 2026-09-14, decisions.md)*:
 
 > Hold at 3 days / $300 in Learning. Re-check at **Day 7 / ~$700 spend, or on Learning exit,
 > whichever first.** At that point, **if Shopify-matched orders are still 0 and spend has
@@ -39,7 +39,7 @@ in `attribution_setting` — write it in the checkpoint, do not assume 7-day cli
    `hpc-dark-evergreen`, real headline on crowd-math) is staged in
    `my-skills/hpc-ad-creative/work/creative/library/` — swap it in at this checkpoint, not
    before, so Learning is disturbed once. Evan's click.
-2. Open question for ROUX: `hpc-dark-evergreen` took 60% of spend and 62% of impressions in
+2. Open question for Beau: `hpc-dark-evergreen` took 60% of spend and 62% of impressions in
    the first 3 days. Floor for the two 120 QT ads, their own ad set, or leave it.
 
 **Standing constraints:** Coalition and IntentWave are read-only advisors — no setting or
@@ -47,8 +47,8 @@ attribution changes during the test *(board)*. $350/day account ceiling holds *(
 
 | Checkpoint | Spend · days | Meta purchases | Shopify tagged · net | Learning | Call | Decision |
 |---|---|---|---|---|---|---|
-| 2026-09-14, first read | $299.94 · 3 | 1 | 0 · $0 | In Learning, 1 conversion toward exit | **Hold**, do not cut, do not touch spend *(ROUX)* | Hold *(Evan, 2026-09-14)* |
-| **2026-09-18, Day 7** | $682.55 · 7 | 2 ($341.28 each) | 0 · $0 (dark-evergreen, 79.5% of spend, unmatchable) | Learning, 2 conversions | **Continue.** Cut the ad, not the campaign *(ROUX)* | dark-evergreen paused (Atlas, on Evan's yes) + 120 QT creative swapped (Evan) · $100/day · **next read Fri Oct 2 on PLAN.md terms** *(Evan, 2026-09-18)* |
+| 2026-09-14, first read | $299.94 · 3 | 1 | 0 · $0 | In Learning, 1 conversion toward exit | **Hold**, do not cut, do not touch spend *(Beau)* | Hold *(Evan, 2026-09-14)* |
+| **2026-09-18, Day 7** | $682.55 · 7 | 2 ($341.28 each) | 0 · $0 (dark-evergreen, 79.5% of spend, unmatchable) | Learning, 2 conversions | **Continue.** Cut the ad, not the campaign *(Beau)* | dark-evergreen paused (ROUX, on Evan's yes) + 120 QT creative swapped (Evan) · $100/day · **next read Fri Oct 2 on PLAN.md terms** *(Evan, 2026-09-18)* |
 
 Ad split at the first read *(Meta connector, 2026-09-14)*: `hpc-dark-evergreen` $179.69 ·
 `120qt-performance_rolling-boil` $70.47 · `120qt-crowd-math` $49.78. CPM $21.16 · CPC $0.97 ·

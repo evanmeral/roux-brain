@@ -5,7 +5,7 @@
 
 ---
 
-## 🔴 Blocking — ROUX can answer these itself once browser access is live
+## 🔴 Blocking — Beau can answer these itself once browser access is live
 1. **Is Shopify's "Cost per item" field populated?** COGS is the last input needed for break-even ROAS.
 2. **Product-line revenue split** + the last full crawfish season (Shopify → Sales by product, 12 mo).
 3. **Real Meta + Google performance** — and Coalition's contribution reconciled against Shopify.
@@ -20,12 +20,12 @@
 10. **COGS per SKU** — if the Shopify field is blank. → Evan / Jay
 11. **Return / freight-damage rate** on LTL aluminum. → Evan
 12. **Is Coalition's $4,800/mo management-only or inclusive of ad spend?** Changes the ROI math entirely. → Evan
-13. **Coalition's contracted deliverables** — where ROUX stops and Coalition starts. → Evan
+13. **Coalition's contracted deliverables** — where Beau stops and Coalition starts. → Evan
 14. **Affiliate commission rate + platform**, and Ambassador vs. Affiliate distinction. → Evan
 15. **Biljana's contract rate**, and the current Klaviyo flow inventory. → Evan / Biljana
 16. **Military/first-responder discount** — what % and how verified? → Evan
 17. **Is the RENTAL crawfish boil trailer** a promotable program or a one-off? → Evan
-18. **Buy Garrett's 8-video bundle?** ROUX says yes — $312.50 vs $500/video. → Evan
+18. **Buy Garrett's 8-video bundle?** Beau says yes — $312.50 vs $500/video. → Evan
 
 ## 🟡 Analyses queued (need connector access)
 19. **Klaviyo giveaway-cohort analysis** — did the Sept 2025 signups ever buy? Settles whether to run another.

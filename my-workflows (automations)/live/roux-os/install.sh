@@ -1,5 +1,5 @@
 #!/bin/bash
-# Installs Atlas OS as a login item. Safe to re-run.
+# Installs ROUX OS as a login item. Safe to re-run.
 #
 # launchd runs node directly on server.js. The vault lives in ~/Desktop, which macOS protects, and
 # macOS files that permission under "node" in System Settings > Privacy & Security > Files and
@@ -13,24 +13,30 @@ NODE="$(command -v node)"
 mkdir -p "$ROOT/logs" "$HOME/Library/LaunchAgents"
 
 # stop anything from earlier installs (including the old app-bundle launcher)
+launchctl bootout "gui/$(id -u)/com.roux.os" 2>/dev/null || true
+launchctl bootout "gui/$(id -u)/com.roux.pulse" 2>/dev/null || true
+# legacy names from before the 2026-09-21 rename (Atlas OS); harmless if absent
 launchctl bootout "gui/$(id -u)/com.atlas.os" 2>/dev/null || true
 launchctl bootout "gui/$(id -u)/com.atlas.pulse" 2>/dev/null || true
 pkill -f "Atlas OS.app/Contents/MacOS/applet" 2>/dev/null || true
-[ -f "$HOME/Library/LaunchAgents/com.atlas.os.plist.disabled" ] && mv "$HOME/Library/LaunchAgents/com.atlas.os.plist.disabled" "$HOME/.Trash/com.atlas.os.plist.disabled" 2>/dev/null || true
+for f in com.atlas.os.plist com.atlas.pulse.plist com.atlas.os.plist.disabled; do
+  [ -f "$HOME/Library/LaunchAgents/$f" ] && mv "$HOME/Library/LaunchAgents/$f" "$HOME/.Trash/$f" 2>/dev/null || true
+done
+[ -f "$HOME/Library/LaunchAgents/com.roux.os.plist.disabled" ] && mv "$HOME/Library/LaunchAgents/com.roux.os.plist.disabled" "$HOME/.Trash/com.roux.os.plist.disabled" 2>/dev/null || true
 sleep 1
 
 # register the server job; launchd starts it now (RunAtLoad) under launchd's own context, which is
 # the context that matters for the Desktop grant
-PLIST="$HOME/Library/LaunchAgents/com.atlas.os.plist"
-sed -e "s|__NODE__|$NODE|g" -e "s|__ROOT__|$ROOT|g" -e "s|__HOME__|$HOME|g" "$ROOT/launchd/com.atlas.os.plist" > "$PLIST"
+PLIST="$HOME/Library/LaunchAgents/com.roux.os.plist"
+sed -e "s|__NODE__|$NODE|g" -e "s|__ROOT__|$ROOT|g" -e "s|__HOME__|$HOME|g" "$ROOT/launchd/com.roux.os.plist" > "$PLIST"
 launchctl bootstrap "gui/$(id -u)" "$PLIST"
 for i in 1 2 3 4 5 6 7 8; do
   sleep 1
   if curl -s -m 2 http://localhost:4242/health >/dev/null 2>&1; then break; fi
 done
 if ! curl -s -m 2 http://localhost:4242/health >/dev/null 2>&1; then
-  launchctl bootout "gui/$(id -u)/com.atlas.os" 2>/dev/null || true
-  mv "$PLIST" "$HOME/.Trash/com.atlas.os.plist" 2>/dev/null || true
+  launchctl bootout "gui/$(id -u)/com.roux.os" 2>/dev/null || true
+  mv "$PLIST" "$HOME/.Trash/com.roux.os.plist" 2>/dev/null || true
   echo "The server could not start, so nothing stays registered."
   echo "Most likely macOS has not let node read your Desktop folder yet:"
   echo "  System Settings > Privacy & Security > Files and Folders > node > turn on Desktop Folder"
@@ -38,11 +44,11 @@ if ! curl -s -m 2 http://localhost:4242/health >/dev/null 2>&1; then
   exit 1
 fi
 
-PULSE="$HOME/Library/LaunchAgents/com.atlas.pulse.plist"
+PULSE="$HOME/Library/LaunchAgents/com.roux.pulse.plist"
 if [ "$(python3 -c "import json;print(json.load(open('$ROOT/config.json')).get('pulse',{}).get('schedule','off'))")" = "daily" ]; then
-  sed -e "s|__ROOT__|$ROOT|g" "$ROOT/launchd/com.atlas.pulse.plist" > "$PULSE"
+  sed -e "s|__ROOT__|$ROOT|g" "$ROOT/launchd/com.roux.pulse.plist" > "$PULSE"
   launchctl bootstrap "gui/$(id -u)" "$PULSE"
-  echo "Atlas OS is running at http://localhost:4242, starts at login, and the 6:30 pulse is scheduled."
+  echo "ROUX OS is running at http://localhost:4242, starts at login, and the 6:30 pulse is scheduled."
 else
-  echo "Atlas OS is running at http://localhost:4242 and starts at login. The pulse is button-only (config.json: pulse.schedule)."
+  echo "ROUX OS is running at http://localhost:4242 and starts at login. The pulse is button-only (config.json: pulse.schedule)."
 fi

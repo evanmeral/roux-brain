@@ -1,6 +1,6 @@
 # Tailgate kit ad split: does it fit $50 + $10/day?
 
-**2026-09-18 · ROUX.** Meta connector reads only (HP Cookers ADs `4392736013287`), no writes.
+**2026-09-18 · Beau.** Meta connector reads only (HP Cookers ADs `4392736013287`), no writes.
 
 **Call: yes to TOF with no pauses. For retargeting, C replaces `rt-18qt-fry-it-all`. It does not run next to it.**
 

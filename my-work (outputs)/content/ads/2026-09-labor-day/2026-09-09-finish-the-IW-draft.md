@@ -41,7 +41,7 @@ That is an **opening position, not a recommendation to defend.** Where it comes 
 
 - Current caps across the account: **$214/day** ($60 + $62 + $42 in `BPM_TOF_Manual`, $50 in `18qt-TOF`)
 - Plus the planned **$30/day** retargeting campaign = **$244/day**
-- ROUX's hard ceiling until Jay's landed BOM arrives: **$350/day**
+- Beau's hard ceiling until Jay's landed BOM arrives: **$350/day**
 - $244 + $100 = **$344/day** — just inside it
 
 $100 is also the bottom of Dalton's suggested $100–150 range. **$150 would breach the ceiling.**
@@ -54,7 +54,7 @@ bigger number.
 
 **Set to Fri Sept 11, 6:30am PDT.** No end date. Evan's call, 2026-09-09.
 
-ROUX had proposed Sept 16 to protect a clean no-discount measurement week. Evan moved it
+Beau had proposed Sept 16 to protect a clean no-discount measurement week. Evan moved it
 earlier and that holds up: a separate campaign with its own audience and exclusions does not
 corrupt `BPM_TOF_Manual`'s own numbers — it adds some account-level noise and auction
 competition, in exchange for five extra days of learning. **Do not re-raise Sept 16.**

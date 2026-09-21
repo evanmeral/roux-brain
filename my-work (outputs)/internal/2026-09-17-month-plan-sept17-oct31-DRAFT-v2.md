@@ -1,6 +1,6 @@
 # Month plan: Thu Sept 17 – Sat Oct 31, 2026 · DRAFT v2
 
-**ROUX, 2026-09-17 (afternoon) · replaces [v1](2026-09-17-month-plan-sept17-oct17-DRAFT.md), which is kept.**
+**Beau, 2026-09-17 (afternoon) · replaces [v1](2026-09-17-month-plan-sept17-oct17-DRAFT.md), which is kept.**
 **Status:** Evan approved the direction ("everything looks good so far"). **The decisions in §6 are still open. Nothing is locked.**
 When Evan locks it, the ~150-line version, [PLAN candidate](2026-09-17-PLAN-candidate.md), moves to `my-desk (now)/PLAN.md` (month-plan skill, Mode B).
 Read-only. Nothing was written to Shopify, Meta or Google. Every Meta and Shopify change below is **Evan's click**, and a plan line never authorizes a write.
@@ -113,7 +113,7 @@ Read-only. Nothing was written to Shopify, Meta or Google. Every Meta and Shopif
   - Signed Sept 18, then to Coalition and Biljana.
   - Maya's concepts by **Oct 22**. Nova's v6 page as a Shopify **draft** by **Oct 23**.
   - Nothing published, nothing discounted in October.
-- **The November plan is drafted Fri Oct 30** and turkey peak starts Nov 1. **So the turkey-peak calls get pre-decided in October:** the low-ticket policy for turkey season, turkey weight, and daily availability checks Nov 1–23. **ROUX pre-read Thu Oct 22**, so Oct 30 is a formality on those.
+- **The November plan is drafted Fri Oct 30** and turkey peak starts Nov 1. **So the turkey-peak calls get pre-decided in October:** the low-ticket policy for turkey season, turkey weight, and daily availability checks Nov 1–23. **Beau pre-read Thu Oct 22**, so Oct 30 is a formality on those.
 - ⚠️ **Nov 23 is both the turkey ship cutoff and the start of BFCM.** An early BFCM announcement could stall turkey buyers (decision 12).
 
 **Not a bet: commercial.** Tier 3, inbound only, Stephen's. It's stripped from T2 on purpose.
@@ -133,10 +133,10 @@ Plan weeks run **Thursday to Wednesday**. **Fixed on Evan's calendar:**
 |---|---|---|---|
 | Thu 17 | Review v2 and answer §6 | **Evan** | Answers |
 | **Fri 18** | IW checkpoint pull, with IDs recorded in `campaigns.md` | **Finn** | Row |
-| Fri 18 | Call it on the rewritten terms (§4) | **ROUX** | Call |
+| Fri 18 | Call it on the rewritten terms (§4) | **Beau** | Call |
 | Fri 18 | One edit on IW: dark-evergreen off + 120 QT creative swap. Record dark-evergreen's destination from the **Review tab** | **Evan** (click) | Change and ID, confirmed in the activity log |
 | Fri 18 | BFCM sign-off → Coalition (Basecamp) + Biljana | **Jay → Evan** | Sent |
-| Fri 18 | **One batched text to Jay:** BFCM · pixel `491960645999331` · Nov 23 collision · low-ticket policy · 2025 turkey stop and stock for ~170 orders Nov 1–15 · Labor Day figure of record $40,853.33 | **Evan** (ROUX drafts) | One text |
+| Fri 18 | **One batched text to Jay:** BFCM · pixel `491960645999331` · Nov 23 collision · low-ticket policy · 2025 turkey stop and stock for ~170 orders Nov 1–15 · Labor Day figure of record $40,853.33 | **Evan** (Beau drafts) | One text |
 | By Mon 21 | Chase Biljana: `HIGH15B`/`SMS25B` switched? | **Evan** (Ada drafts) | Yes/no |
 | By Mon 21 | **Tailgate destination fixes (decision 4, group A):** `SC-7R` sellable · 18 QT "Made in the USA" card · `fryers` collection "Made in the USA" · 18 QT description warranty line · Platinum SEO title | **Evan or Jay** (clicks) | Fixed, read back by Finn |
 | By Mon 21 | Turn off the live `Video_Jay 30qt (turkey) Fryer Demo` ad (decision 6) | **Evan** (click) | Off |
@@ -156,7 +156,7 @@ Plan weeks run **Thursday to Wednesday**. **Fixed on Evan's calendar:**
 
 | When | Job | Owner | Deliverable |
 |---|---|---|---|
-| **Thu 24, by 10:00** | **Scoreboard #1:** week 1 sets T4, and T5's conservative target | **Finn → ROUX** | Scoreboard |
+| **Thu 24, by 10:00** | **Scoreboard #1:** week 1 sets T4, and T5's conservative target | **Finn → Beau** | Scoreboard |
 | **Thu 24, 10:00** | **Tailgate kit go/no-go:** Biljana confirmed · `SC-7R` sellable · group A fixes read back · real photos · eligible-discounts collection excludes `Bundle` · checkout test with `HIGH15` refused | **Evan** | Go, or a new date |
 | Thu 24, 12:00 | Coalition call: scoreboard + kit timing + suggestions from kits plan §7 | **Evan** | — |
 | **Fri 25** | Activate the tailgate kit · publish the kit block · publish the kit ad (full UTMs, Shop off) | **Evan** (clicks) | Live |
@@ -173,8 +173,8 @@ Plan weeks run **Thursday to Wednesday**. **Fixed on Evan's calendar:**
 | When | Job | Owner | Deliverable |
 |---|---|---|---|
 | **Thu Oct 1** | Activate the turkey kit · publish the corrected turkey kit ad in BPM (UTMs, Shop off) · turkey demo organic | **Evan** · **Sage** | Live |
-| Thu Oct 1, by 10:00 | **Scoreboard #2** · retargeting creative review · **first T3c availability check + the 30 QT add-to-cart baseline** | **Finn → ROUX** | Scoreboard |
-| **Fri Oct 2** | **IW 120 QT read** (§4 table) | **Finn → ROUX → Evan** | Continue / hold / pause |
+| Thu Oct 1, by 10:00 | **Scoreboard #2** · retargeting creative review · **first T3c availability check + the 30 QT add-to-cart baseline** | **Finn → Beau** | Scoreboard |
+| **Fri Oct 2** | **IW 120 QT read** (§4 table) | **Finn → Beau → Evan** | Continue / hold / pause |
 | Fri Oct 2 | Retargeting day-4 stop rules | **Finn** | Pass/fail |
 | **Mon Oct 5** | Content week, **all pre-scheduled:** **Saints vs Falcons, MNF 7:15 pm** (post that morning; Evan is at the game) · gumbo weekend · National Shrimp Festival Oct 8–11 | Automation → Evan (morning) → **Sage** | Scheduled |
 | Mon Oct 5 | T3c check | **Finn** | Pass/fail |
@@ -184,11 +184,11 @@ Plan weeks run **Thursday to Wednesday**. **Fixed on Evan's calendar:**
 
 | When | Job | Owner | Deliverable |
 |---|---|---|---|
-| **Thu Oct 8, by 10:00** | **Scoreboard #3** · T3c · turkey week vs 2025 (early read) | **Finn → ROUX** | Scoreboard |
+| **Thu Oct 8, by 10:00** | **Scoreboard #3** · T3c · turkey week vs 2025 (early read) | **Finn → Beau** | Scoreboard |
 | Thu Oct 8, 12:00 | Coalition call | **Evan** | — |
 | Thu Oct 8–Sun 11 | **Gumbo weekend** (Westwego, Chackbay, World Championship Gumbo Cookoff) → **40 QT Sauce Cooker, organic only** · **National Shrimp Festival** → 60 QT shrimp boil cut, organic | **Sage** | Posts |
 | **Mon Oct 12** | **National Gumbo Day** (Sauce Cooker, organic) · content week: **LSU Homecoming + National Pasta Day Sat Oct 17** (4-Way Pasta Cooker, organic) · turkey how-to begins | Automation → Evan → **Sage** | Week |
-| **Mon Oct 12** | **Retargeting day 14: the scaling gate.** Any raise is a swap | **Finn → ROUX → Evan** | Hold or swap |
+| **Mon Oct 12** | **Retargeting day 14: the scaling gate.** Any raise is a swap | **Finn → Beau → Evan** | Hold or swap |
 | By Mon Oct 12 | Pots retargeting refresh from Garrett cuts (clock boil or B-roll) | **Maya** | Ad, ready for Evan |
 | Mon Oct 12 | T3c check | **Finn** | Pass/fail |
 
@@ -196,7 +196,7 @@ Plan weeks run **Thursday to Wednesday**. **Fixed on Evan's calendar:**
 
 | When | Job | Owner | Deliverable |
 |---|---|---|---|
-| **Thu Oct 15, by 10:00** | **Scoreboard #4** · **turkey weight call:** 2026 turkey net Oct 8–14 vs **$3,832** · T3b first read, if ≥ 20 18 QT orders | **Finn → ROUX** | Call |
+| **Thu Oct 15, by 10:00** | **Scoreboard #4** · **turkey weight call:** 2026 turkey net Oct 8–14 vs **$3,832** · T3b first read, if ≥ 20 18 QT orders | **Finn → Beau** | Call |
 | By Fri Oct 16 | Second turkey ad: **60 QT two-bird kit** | **Maya** | Ad |
 | **Mon Oct 19** | **Turkey weight live inside BPM** (if Oct 15 says so): shift from BPM 18 QT videos, no new money (decision 7) | **Evan** (click) | Change and ID |
 | Mon Oct 19 | Content week: turkey how-to and safety (Scout's late-October lane: thaw, dry, outdoors, oil level) · **LSU @ Auburn Sat Oct 24, 11 am** (morning fry) · **Saints in Paris Sun Oct 25, 8:30 am** (beignet breakfast fry, footage from the Fried Foods shoot) | Automation → Evan → **Sage** | Week |
@@ -207,7 +207,7 @@ Plan weeks run **Thursday to Wednesday**. **Fixed on Evan's calendar:**
 
 | When | Job | Owner | Deliverable |
 |---|---|---|---|
-| **Thu Oct 22, by 10:00** | **Scoreboard #5** · **ROUX pre-read for November:** turkey peak weights, low-ticket policy in peak, daily T3c Nov 1–23, BFCM runway | **Finn → ROUX** | Scoreboard + pre-read |
+| **Thu Oct 22, by 10:00** | **Scoreboard #5** · **Beau pre-read for November:** turkey peak weights, low-ticket policy in peak, daily T3c Nov 1–23, BFCM runway | **Finn → Beau** | Scoreboard + pre-read |
 | Thu Oct 22, 12:00 | Coalition call: BFCM landing timing, turkey copy stops Nov 23, no BFCM mention before Nov 16 (their channels; a request) | **Evan** | — |
 | By Thu Oct 22 | BFCM ad concepts | **Maya** | Draft |
 | By Fri Oct 23 | BFCM v6 page as a **Shopify draft** | **Nova** · Evan reviews | Draft |
@@ -218,8 +218,8 @@ Plan weeks run **Thursday to Wednesday**. **Fixed on Evan's calendar:**
 
 | When | Job | Owner |
 |---|---|---|
-| **Thu Oct 29, by 10:00** | **Scoreboard #6** · T3c | Finn → ROUX |
-| **Fri Oct 30** | **Close-out + November draft day** (month-plan Mode A). Close-out runs **through Oct 29**, marked provisional. The final Oct 30–31 true-up comes **Mon Nov 2** | Finn → ROUX → Evan |
+| **Thu Oct 29, by 10:00** | **Scoreboard #6** · T3c | Finn → Beau |
+| **Fri Oct 30** | **Close-out + November draft day** (month-plan Mode A). Close-out runs **through Oct 29**, marked provisional. The final Oct 30–31 true-up comes **Mon Nov 2** | Finn → Beau → Evan |
 | Sat Oct 31 | Halloween posts already scheduled | Sage |
 
 **Evan's clicks for the month:** about 20, most of them Sept 18–Oct 1. Every one arrives pre-built, with a go/no-go.
@@ -351,7 +351,7 @@ Plan weeks run **Thursday to Wednesday**. **Fixed on Evan's calendar:**
 | The 30 QT goes unbuyable in peak, as in 2025 (cause untested; Digit not connected) | T3a, November | **T3c from Oct 1**, plus the question to Jay |
 | Commercial lumps ($13.5k in Oct 29–31, 2025) | T1 | Judge the month on T2 |
 | Close-out on Oct 30 misses Oct 30–31 | Scorecard | Marked provisional; true-up Mon Nov 2 |
-| Nov 1 turkey peak two days after the November draft | November | ROUX pre-read Oct 22 |
+| Nov 1 turkey peak two days after the November draft | November | Beau pre-read Oct 22 |
 | BFCM announced before Nov 16 | Turkey peak | Decision 12 |
 | Main push has no Triple Jet video | Bet 1 | Decision 13 |
 | External Whitelisting ad sets re-enabled by mistake ($450/day, no end dates) | Ceiling | Decision 11 (housekeeping) |
@@ -390,7 +390,7 @@ Merged and renumbered from v1. **v1's #8 (BM campaigns) is downgraded to #11.** 
 **Thursdays by 10:00 CT:** **Sept 24 · Oct 1 · Oct 8 · Oct 15 · Oct 22 · Oct 29.** Scoreboards on Coalition-call days go into the 12:00 call.
 **Close-out Fri Oct 30** (also November draft day), through Oct 29, provisional. **True-up Mon Nov 2.**
 **T3c checks** every Mon and Thu from Oct 1.
-Finn pulls → ROUX calls ahead, on pace or behind, with the gap → Evan decides anything a rule fired. Written into `PLAN.md`'s Scoreboard section once it's locked (month-plan Mode C).
+Finn pulls → Beau calls ahead, on pace or behind, with the gap → Evan decides anything a rule fired. Written into `PLAN.md`'s Scoreboard section once it's locked (month-plan Mode C).
 
 ### Pace lines: cumulative through each plan week
 

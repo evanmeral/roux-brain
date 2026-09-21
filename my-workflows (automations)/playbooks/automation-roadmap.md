@@ -1,12 +1,12 @@
 # Automation Roadmap
 
-**Goal:** move from *"Evan asks ROUX for something"* → *"ROUX runs it on a schedule and hands Evan a
+**Goal:** move from *"Evan asks Beau for something"* → *"Beau runs it on a schedule and hands Evan a
 decision."* Evan's time should go to judgment calls, not to production.
 
 ---
 
 ## Phase 0 — Where we are (Aug 2026)
-- ROUX has full read/write on `Atlas AI Brain/`
+- Beau has full read/write on `Atlas AI Brain/`
 - Context files built ✅
 - Two custom skills exist: `hpc-landing-page`, `hpc-scoreboard-report`
 - **No live data connections.** Everything is manual input.
@@ -21,7 +21,7 @@ decision."* Evan's time should go to judgment calls, not to production.
 | Klaviyo | Needs auth | Flow/campaign performance, list health, automated email drafting against real segments |
 | Google Analytics | Needs auth | Site behavior, CVR, traffic sources |
 | Ahrefs | Needs auth | Automated SEO monitoring, keyword tracking, competitor gaps |
-| Slack | Needs auth | ROUX posts reports/alerts to a channel |
+| Slack | Needs auth | Beau posts reports/alerts to a channel |
 | Canva | Needs auth | Generate on-brand creative from templates |
 | Google Drive / Gmail / Calendar | Available | Doc storage, campaign scheduling, approvals |
 
@@ -29,7 +29,7 @@ decision."* Evan's time should go to judgment calls, not to production.
 **Also needed:** Shopify + Meta Ads + Google Ads access. If no direct connector, set up a recurring
 manual export into `my-work (outputs)/internal/reports/raw/` — even weekly CSVs beat nothing.
 
-**Deliverable at end of Phase 1:** ROUX can answer "how did we do last week?" without Evan touching a dashboard.
+**Deliverable at end of Phase 1:** Beau can answer "how did we do last week?" without Evan touching a dashboard.
 
 ---
 
@@ -68,7 +68,7 @@ Use the `schedule` skill / scheduled tasks.
 ---
 
 ## Phase 4 — Closed-loop optimization (month 3+)
-- ROUX reads ad performance → drafts new creative → Evan approves → performance feeds back
+- Beau reads ad performance → drafts new creative → Evan approves → performance feeds back
 - Automated kill/scale *recommendations* (never automated spend changes — that stays Evan's click)
 - Automated post-campaign post-mortems written into `my-work (outputs)/content/ads/`
 - Automated context-file maintenance: prices, SKUs, benchmarks refreshed from source systems
@@ -76,7 +76,7 @@ Use the `schedule` skill / scheduled tasks.
 
 ---
 
-## Phase 5 — ROUX as a proactive operator
+## Phase 5 — Beau as a proactive operator
 - Monday: report lands in Slack, unprompted
 - Tuesday: creative briefs land, unprompted
 - Wednesday: content calendar + drafts, unprompted

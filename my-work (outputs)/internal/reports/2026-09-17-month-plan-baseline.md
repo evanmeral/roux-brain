@@ -212,13 +212,13 @@ Meta figures are **platform-reported**: 7-day click / 1-day view attribution, re
 **Sources:** ShopifyQL (`sales`, `sessions`, `inventory`) and Admin GraphQL, timezone America/Chicago · Meta Ads connector, **HP Cookers ADs `4392736013287` only** · the live storefront (`/products/<handle>.js` and page HTML, fetched 2026-09-17) · files named inline.
 **Labels:** *tested* = a query was run that separates the cause from the alternatives · *untested* = it wasn't, or couldn't be · *observation* = no baseline.
 
-## What changes ROUX's draft
+## What changes Beau's draft
 
 1. **The low-ticket share is much higher than "≥ $127/day".** Sept 11–16 it averaged **$165.88/day (51.8% of spend)** on ads whose landing page is verified as 18 QT or 30 QT. That excludes `hpc-dark-evergreen`. With it, **$240.37/day (75.0%)**. On Sept 15–16 alone: $149.78 (49.2%) verified, **$243.59 (80.0%)** with dark-evergreen. The cap works out to $78.50 at $314 of caps, $86 at $344. Most of it is **BPM**: its three 18 QT video ads average $107/day. **The cap is not on file as adopted** (§4).
 2. **The IW lookalike's "0 Shopify-tagged orders" can't see its main ad.** `hpc-dark-evergreen` took **$446.97 of $584.23** Sept 11–16, and **~100% of IW spend on Sept 15–16** (the two 120 QT ads got $1.49 and $0.07). It logged **127 Meta landing-page views and zero sessions tagged with its name** in Shopify. The two 120 QT ads' tags do arrive (65 sessions against 57 landing-page views). So the checkpoint rule "0 tagged orders" is structurally blind to 77%+ of IW's spend. *Tested* (§3).
 3. **The two "ACTIVE" BM campaigns can't deliver as they stand.** Each campaign is ACTIVE, but **every ad set under them is PAUSED** and Meta reports delivery `inactive: all ad sets off`. The board ("off") is right at the ad-set level. The draft ("ACTIVE, $0") is right at the campaign level. Decision 8 is housekeeping, not an open risk (§2).
 4. **`campaigns.md` is wrong that BPM carries no UTMs.** BPM ads arrive in Shopify tagged `utm_source=facebook · utm_medium=paid · utm_campaign=<campaign ID> · utm_content=<ad ID>`, and so does `18qt-004`. Per-ad Shopify matching is possible for BPM today (§3).
-5. **The 2025 extension through Oct 31 is lumpy.** Oct 29–31, 2025 alone did $31,555.08 net on 29 orders, **$13,532.30 of it commercial cookers**. Another **$6,430.75 was "commercial other"** (Crawcuzzi, sorting tables) and $2,750 custom product. **Those two stay inside T2 as ROUX defined it**, which excludes only gallon-sized cookers and Navimow (§1).
+5. **The 2025 extension through Oct 31 is lumpy.** Oct 29–31, 2025 alone did $31,555.08 net on 29 orders, **$13,532.30 of it commercial cookers**. Another **$6,430.75 was "commercial other"** (Crawcuzzi, sorting tables) and $2,750 custom product. **Those two stay inside T2 as Beau defined it**, which excludes only gallon-sized cookers and Navimow (§1).
 6. **The Triple Jet did sell in 2025**, first on **Oct 21, 2025** (3 orders, $1,275). "Didn't exist" is true only for the Sept 17–Oct 17 window.
 7. **Kit gates: every blocker is still live, and there are three more copy problems** on kit destination pages (§6). No new photos are on either kit.
 
@@ -258,7 +258,7 @@ Meta figures are **platform-reported**: 7-day click / 1-day view attribution, re
 
 *ShopifyQL `GROUP BY product_title, product_variant_title, product_type` for Oct 18–21, Oct 22–28 and Oct 29–31 (they sum to $75,231.42). Distinct-order counts come from filtered queries (`WHERE product_title CONTAINS …`, pots with `NOT CONTAINS 'Gallon'`). Full-window orders = §1a + Oct 18–31; the windows don't overlap, so they add.*
 
-**ROUX's T2 line (ex-commercial cookers, ex-Navimow; Navimow $0 in 2025):** Oct 18–31 **$54,850.12** · **Sept 17–Oct 31 $128,474.45**. *(Derived: net − gallon commercial cookers.)* ⚠️ That line still holds $10,783.25 of commercial other, $7,206.25 of custom product and $6,798.26 with no title.
+**Beau's T2 line (ex-commercial cookers, ex-Navimow; Navimow $0 in 2025):** Oct 18–31 **$54,850.12** · **Sept 17–Oct 31 $128,474.45**. *(Derived: net − gallon commercial cookers.)* ⚠️ That line still holds $10,783.25 of commercial other, $7,206.25 of custom product and $6,798.26 with no title.
 **Commercial cookers, Oct 18–31:** 140 gal $4,350.00 (1) · 60 gal $2,499.00 + $5,798.00 + $2,374.05 (3) · 120 gal $3,415.25 (1) · 40 gal / 160 QT $1,945.00 (1).
 
 ### 1c. Weekly, Thu–Wed plan weeks through Sat Oct 31 (2025 dates)
@@ -278,7 +278,7 @@ Meta figures are **platform-reported**: 7-day click / 1-day view attribution, re
 
 **Turkey orders by plan week** (orders containing the product; ShopifyQL daily): Oct 15–21: 30 QT **19**, 60 QT **4** · Oct 22–28: **26**, **3** · Oct 29–31: **11**, **3**.
 
-**Cumulative through each plan week, 2025 actuals** (inputs for pace lines; stretch multipliers are ROUX's):
+**Cumulative through each plan week, 2025 actuals** (inputs for pace lines; stretch multipliers are Beau's):
 
 | Through (2026 date) | T1 net | T2 net (ex gallon commercial) | T3a turkey net (30 + 60 QT) |
 |---|---|---|---|
@@ -416,12 +416,12 @@ The alternative is untagged organic Facebook traffic. Four tests:
 
 ### 4b. The 25% low-ticket cap: where it's defined
 
-- **Defined in:** `my-work (outputs)/internal/reports/2026-09-10-overhead-method-options.md`, §6a "A cap on low-ticket lines". **ROUX, 2026-09-10.**
+- **Defined in:** `my-work (outputs)/internal/reports/2026-09-10-overhead-method-options.md`, §6a "A cap on low-ticket lines". **Beau, 2026-09-10.**
 - **Exact wording:**
   > **Scope:** 18 QT powered and non-powered, 30 QT, 40 QT, and accessories.
   > **The cap:** combined, no more than **25% of the daily Meta budget**. At $350/day that's about **$86**.
-- **Restated with a different scope** in `2026-09-14-marketing-budget-model-20pct-net.md` §4 (ROUX): "Low-ticket lines (18/30/40/60 QT + accessories) capped combined at 25% of the daily Meta budget (~$86 of $350)". **That adds the 60 QT.** The retargeting plan §4 and the kits plan (§3.3, §4.4) cite §6a.
-- **Who set it: ROUX, as a guardrail recommendation.** **I found no record of adoption.** `decisions.md` has no entry for it. Jay's 2026-09-14 "yes" (Q4) covers the incremental per-ad rule only. The budget model lists the cap under "Current gates, unchanged from the overhead report", which is ROUX's framing, not a decision. **It's a proposal on file, not a rule.**
+- **Restated with a different scope** in `2026-09-14-marketing-budget-model-20pct-net.md` §4 (Beau): "Low-ticket lines (18/30/40/60 QT + accessories) capped combined at 25% of the daily Meta budget (~$86 of $350)". **That adds the 60 QT.** The retargeting plan §4 and the kits plan (§3.3, §4.4) cite §6a.
+- **Who set it: Beau, as a guardrail recommendation.** **I found no record of adoption.** `decisions.md` has no entry for it. Jay's 2026-09-14 "yes" (Q4) covers the incremental per-ad rule only. The budget model lists the cap under "Current gates, unchanged from the overhead report", which is Beau's framing, not a decision. **It's a proposal on file, not a rule.**
 
 ### 4c. Share of current daily Meta spend under the cap
 
@@ -436,8 +436,8 @@ Ad-level daily spend, Sept 10–16, mapped by landing page (§3). "18 QT" = the 
 *Meta `ads_get_ad_entities`, ad level, `time_increment=1`, 2026-09-10 → 09-16; arithmetic in scratchpad `cap.py`.*
 
 **Against the cap:** 25% = **$78.50** of today's $314 caps, **$86** of $344, or **$80.11** of Sept 11–16 actual spend.
-- **ROUX's "≥ $127/day" is corrected upward.** Verified low-ticket spend alone is **~$150–$166/day, about 2× the cap**. With dark-evergreen it is **~$240/day, about 3×**.
-- **Where ROUX's figure went wrong:** it counted `18qt-TOF` $50 + 77% of IW. It left out BPM's 18 QT videos, which are the largest block.
+- **Beau's "≥ $127/day" is corrected upward.** Verified low-ticket spend alone is **~$150–$166/day, about 2× the cap**. With dark-evergreen it is **~$240/day, about 3×**.
+- **Where Beau's figure went wrong:** it counted `18qt-TOF` $50 + 77% of IW. It left out BPM's 18 QT videos, which are the largest block.
 - **The one open input:** the collection video ($57/day) lands on `/collections/powered-cookers`. That page lists pots, some of which are in scope. It is counted outside the cap here.
 
 ---

@@ -1,5 +1,5 @@
 # Shopify Baseline — First Real Data Pull
-**Pulled 2026-08-26 by ROUX via Shopify Admin (read-only, ShopifyQL). Source: Shopify Analytics.**
+**Pulled 2026-08-26 by Beau via Shopify Admin (read-only, ShopifyQL). Source: Shopify Analytics.**
 Window: 2025-08-01 → 2026-08-25 (13 months). All figures USD.
 
 > This replaces every Venon-sourced number. Venon is not used.
@@ -193,10 +193,10 @@ Margins are healthier than feared. Core cookers, fryers, and Boil Boss accessori
 
 ## 5. Still open
 - Feb 2026 return event — cause? → **Evan / Jay**
-- Dec 2025 promo — was it profitable? → **ROUX can model once the promo terms are known**
+- Dec 2025 promo — was it profitable? → **Beau can model once the promo terms are known**
 - Return reasons / freight damage rate → **Evan**
-- Cost-per-item is still missing on ~13% of August sales → **Evan** (ROUX will not edit Shopify)
-- Meta + Google actuals, split at the 2026-07-12 vendor handover → **ROUX, next pull**
+- Cost-per-item is still missing on ~13% of August sales → **Evan** (Beau will not edit Shopify)
+- Meta + Google actuals, split at the 2026-07-12 vendor handover → **Beau, next pull**
 
 
 ---

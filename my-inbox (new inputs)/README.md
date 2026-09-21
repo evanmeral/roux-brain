@@ -1,9 +1,9 @@
 # Inbox: drop new files here
 
-**Evan drops files here, and Atlas sorts them.** Photos, videos, PDFs, screenshots, anything, with any filename.
+**Evan drops files here, and ROUX sorts them.** Photos, videos, PDFs, screenshots, anything, with any filename.
 Say "sort my inbox folder", or /prime will mention anything waiting.
 
-## What Atlas does with each file
+## What ROUX does with each file
 1. **Opens it and looks at it.** iPhone photos are often HEIC even when the name says `.PNG`, so check with `file`.
    Convert HEIC to full-resolution JPEG; the render pipeline can't read HEIC.
 2. **Names it** in lowercase with hyphens: what it shows, then the date. The date comes from the photo's own metadata
@@ -26,4 +26,4 @@ Say "sort my inbox folder", or /prime will mention anything waiting.
    **Exception: product photo batches (a cutout folder + a studio folder) → run `/file-product-photos`**, which covers all of this.
    **Product photo batches Evan wants to keep** ("make copies so I can take them back out").
    Copy them to the library, then **rename the originals here to the same names** and leave them for
-   Evan to take out. Add any cutout Atlas made (e.g. from a studio shot) to his folder too (Evan, 2026-09-21).
+   Evan to take out. Add any cutout ROUX made (e.g. from a studio shot) to his folder too (Evan, 2026-09-21).

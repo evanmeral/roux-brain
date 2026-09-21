@@ -1,6 +1,6 @@
 # Content week — Mon Sep 28 to Sun Oct 4, 2026
 
-**Proposed:** Mon 2026-09-21 CT, built a week early on Evan's ask ("preview next week's content") · **Status:** preview. Evan reviewed it 2026-09-21. **Final approval waits until after the Sept 23 shoot**: Evan shoots photos and video all day, Atlas sorts them and upgrades these pieces, then Evan approves and it gets scheduled
+**Proposed:** Mon 2026-09-21 CT, built a week early on Evan's ask ("preview next week's content") · **Status:** preview. Evan reviewed it 2026-09-21. **Final approval waits until after the Sept 23 shoot**: Evan shoots photos and video all day, ROUX sorts them and upgrades these pieces, then Evan approves and it gets scheduled
 **Season:** October is peak tailgating, and turkey content starts Oct 1 (`seasonal-calendar.md`). October is also National Seafood Month (fall-moments calendar).
 **Carrying from the board:** the **Turkey Fry Kits go live Wed Oct 1** (go/no-go Sept 30) and the **18 QT Tailgate Kit is due live Fri Sept 25**. Both are gated on `HIGH15` being off (Biljana). **Per the plan, both kits are live by these posts, so the kit lines run by default** (Evan, 2026-09-21). A kit line comes out only if its go/no-go (Thu Sept 24 tailgate, Wed Sept 30 turkey) says no. The Garrett shoot is **Wed Sept 23**, so this is the first week that can carry shoot footage and photos.
 **Planner hint:** not read. Business Suite → Content → Scheduled, read 2026-09-21: **nothing is scheduled after Fri Sep 25** (the six Sept 21–26 items are all there), so no clashes.
@@ -198,7 +198,7 @@ Who's frying this year?
 
 ## Needs from Evan
 
-- **Everything from the Sept 23 shoot** (Evan is shooting photos and video all day): Atlas sorts it, then upgrades Tuesday, Friday and anything else that improves. If no shoot photo fits Tuesday, the booth photo runs (all HPC employees, Evan confirmed).
+- **Everything from the Sept 23 shoot** (Evan is shooting photos and video all day): ROUX sorts it, then upgrades Tuesday, Friday and anything else that improves. If no shoot photo fits Tuesday, the booth photo runs (all HPC employees, Evan confirmed).
 - **Friday's footage:** Garrett's turkey demo, or your phone clip, by **Thu Oct 1 at noon**. If nothing arrives, Friday is dropped.
 - **Kits:** they run by default, per the plan (tailgate live Sept 25, turkey Oct 1). A kit line comes out only if a go/no-go says no.
 - ~~Wednesday frame 4~~: kept as is (Evan, 2026-09-21).

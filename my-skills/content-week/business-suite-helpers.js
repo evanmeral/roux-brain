@@ -7,21 +7,21 @@ const S = ms => new Promise(r => setTimeout(r, ms));
 const V = e => !!e && e.getBoundingClientRect().width > 0;
 
 // 1. The "Add photo/video" button creates a hidden <input type=file> and clicks it. Capture it and
-//    make it findable, so `find "atlas-upload-input"` + file_upload can use it. Use the NEWEST ref.
-if (!window.__atlasPatched) {
-  window.__atlasInputs = [];
+//    make it findable, so `find "roux-upload-input"` + file_upload can use it. Use the NEWEST ref.
+if (!window.__rouxPatched) {
+  window.__rouxInputs = [];
   const orig = HTMLInputElement.prototype.click;
   HTMLInputElement.prototype.click = function () {
     if (this.type === 'file') {
-      window.__atlasInputs.push(this);
+      window.__rouxInputs.push(this);
       if (!this.isConnected) document.body.appendChild(this);
-      this.setAttribute('aria-label', 'atlas-upload-input');
+      this.setAttribute('aria-label', 'roux-upload-input');
       this.style.cssText = 'display:block !important;position:fixed;left:8px;top:60px;width:220px;height:24px;opacity:1;z-index:99999;';
       return;
     }
     return orig.call(this);
   };
-  window.__atlasPatched = true;
+  window.__rouxPatched = true;
 }
 
 const sw = l => document.querySelector(`[role=switch][aria-label="${l}"]`);

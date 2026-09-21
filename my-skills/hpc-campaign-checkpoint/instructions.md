@@ -1,20 +1,20 @@
 ---
 name: hpc-campaign-checkpoint
-description: Re-reads one live paid Meta campaign at its agreed checkpoint — Meta's own numbers, Shopify's tagged orders, the gap between them, cost per purchase against the incremental ceiling, and ROUX's continue / hold / cut call for Evan to decide. Use when you hear "checkpoint", "re-check IW", "re-pull the campaign", "how is the lookalike doing", "Day 7", "has Learning exited", "/hpc-campaign-checkpoint", or when a checkpoint date in campaigns.md arrives.
+description: Re-reads one live paid Meta campaign at its agreed checkpoint — Meta's own numbers, Shopify's tagged orders, the gap between them, cost per purchase against the incremental ceiling, and Beau's continue / hold / cut call for Evan to decide. Use when you hear "checkpoint", "re-check IW", "re-pull the campaign", "how is the lookalike doing", "Day 7", "has Learning exited", "/hpc-campaign-checkpoint", or when a checkpoint date in campaigns.md arrives.
 ---
 
 # Campaign checkpoint
 
-**One campaign, one window, one call.** Finn pulls, ROUX judges, Evan decides. The first
+**One campaign, one window, one call.** Finn pulls, Beau judges, Evan decides. The first
 run is the IW lookalike on **Fri Sept 18, 2026** (Day 7 / ~$700, or the moment Learning
-exits, whichever comes first — ROUX's call, accepted by Evan 2026-09-14).
+exits, whichever comes first — Beau's call, accepted by Evan 2026-09-14).
 
 The sibling file **`campaigns.md`** holds every live campaign's checkpoint terms: names,
 IDs, launch date, budget, what was agreed in advance as the decision rule, and what the
 last checkpoint said. **Read it first and update it last.** The procedure below never
 changes per campaign; only that file does.
 
-Lanes: **Finn** owns steps 2–4 (read-only data). **ROUX** owns step 6 (the call). Any
+Lanes: **Finn** owns steps 2–4 (read-only data). **Beau** owns step 6 (the call). Any
 change to Meta is Evan's explicit yes per change, and publishing is his click — see step 7.
 Maya is involved only if a creative swap was bundled into the checkpoint.
 
@@ -26,7 +26,7 @@ Maya is involved only if a creative swap was bundled into the checkpoint.
 2. `campaigns.md` — the campaign's row. If the campaign is not there, add a row from the
    board before pulling anything, and say so.
 3. `my-desk (now)/BOARD.md` — the Running block for this campaign and any Waiting row tied
-   to it. What ROUX said last time is the baseline for this time.
+   to it. What Beau said last time is the baseline for this time.
 4. The previous checkpoint report for this campaign in `my-work (outputs)/internal/reports/`
    (`*-<campaign-slug>-checkpoint.md`). The first read of the IW lookalike lives in the
    board and `my-desk (now)/archive/2026-09-14-off-the-board.md`, not in a report.
@@ -153,7 +153,7 @@ Rules that bind this table:
   no CPP on Shopify's side — say "no orders", not "∞" and not "$0".
 - Every figure carries its source and date. An observation with no baseline is labelled one.
 
-Finn ends here with a **Next:** line naming ROUX.
+Finn ends here with a **Next:** line naming Beau.
 
 ---
 
@@ -164,7 +164,7 @@ Finn ends here with a **Next:** line naming ROUX.
 
 1. **The one line** — spend · days · Meta purchases · Shopify tagged · net · Learning status.
 2. **Against the agreed rule** — the decision rule from `campaigns.md`, quoted, and whether
-   each condition is met. Facts only; the call is ROUX's.
+   each condition is met. Facts only; the call is Beau's.
 3. **The Meta table** — campaign, ad set, ads. Spend share per ad.
 4. **The Shopify table** — tagged orders, split, product mix, prior customers, the
    "what else carries a Meta tag" check.
@@ -172,21 +172,21 @@ Finn ends here with a **Next:** line naming ROUX.
 6. **Change since last checkpoint** — same figures, last time vs this time.
 7. **Data problems, not business problems** — a draft edit found, a tag mismatch, a window
    edge, a field that came back empty.
-8. **ROUX's call** (added in step 6).
+8. **Beau's call** (added in step 6).
 9. **Evan's decision and what changed** (added in step 7, or "pending").
 
 ---
 
-## 6. ROUX's call
+## 6. Beau's call
 
-ROUX reads the report and `campaigns.md`, then gives **one of continue · hold · cut**, with
+Beau reads the report and `campaigns.md`, then gives **one of continue · hold · cut**, with
 the reasoning first and the budget number second. Also rule on anything bundled into this
 checkpoint (`campaigns.md` "Bundled actions" — for IW: the staged creative swap, and whether
 the two 120 QT ads get a floor or their own ad set).
 
-ROUX's constraints: the rule agreed in advance is the test, not a new one invented on the
+Beau's constraints: the rule agreed in advance is the test, not a new one invented on the
 day; a bundled change that would reset Learning is weighed against what Learning is worth
-at this spend; the $350/day ceiling holds unless the board says otherwise. ROUX writes
+at this spend; the $350/day ceiling holds unless the board says otherwise. Beau writes
 section 8 of the report and ends with a **Next:** line — usually Evan, sometimes Maya if a
 creative needs one more pass.
 
@@ -194,7 +194,7 @@ creative needs one more pass.
 
 ## 7. Evan decides, then the writes
 
-Present the one line, the rule check, and ROUX's call. Evan decides.
+Present the one line, the rule check, and Beau's call. Evan decides.
 
 - **Every Meta change needs Evan's explicit yes, in this conversation, for that specific
   change.** A yes to "cut" is not a yes to "pause the ad set"; ask for the action by name.
@@ -214,7 +214,7 @@ Present the one line, the rule check, and ROUX's call. Evan decides.
 1. **`campaigns.md`** — update the row: last checkpoint date, the one line, the call, the
    decision, and the **next checkpoint date and rule**. If the campaign was cut, move the
    row to the "Closed" table with its final figures.
-2. **The board** — the Running block gets the new one line and ROUX's call; the Waiting
+2. **The board** — the Running block gets the new one line and Beau's call; the Waiting
    table gets the next checkpoint as a Finn row with its date; a "do not touch" that ended
    comes off. Keep the H2 headings and the three Waiting columns exactly.
 3. **`my-desk (now)/decisions.md`** — the decision, who, when, why, one entry.

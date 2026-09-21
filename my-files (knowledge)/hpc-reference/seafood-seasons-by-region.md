@@ -54,14 +54,14 @@ printed.*
 | **Nov** | Lobster · blue crab (MD, NJ, GA, NC, SC, FL, TX, CA) · white shrimp · oysters · king crab · **Dungeness CA opens** |
 | Dec | Lobster (New England's last month, FL) · blue crab (SC, VA, FL, TX, CA) · white shrimp · oysters · king crab · Dungeness (CA, OR) |
 
-## How to use it *(Atlas's reading, not a decision)*
+## How to use it *(ROUX's reading, not a decision)*
 
 - **The June–October valley isn't empty.** From June through October there's always a boil in season
   somewhere: blue crab on the Atlantic and Gulf coasts, lobster in New England, Gulf shrimp, and boiled
   peanuts in the Southeast. Those are pot sales (30–120 QT), not fryer sales.
 - **Geo-targeted pot ads.** Once the pot creative has a proven winner, a region + season ad set is
   worth testing. Two examples: Maryland, New Jersey and Virginia on blue crab in spring and summer;
-  New England on lobster in summer and fall. That's a ROUX call, and it needs budget inside the
+  New England on lobster in summer and fall. That's a Beau call, and it needs budget inside the
   $350/day ceiling. It isn't in the current plan.
 - **Organic moments.** October is National Seafood Month, with Gulf shrimp and oysters in season.
   White shrimp runs through December. Boiled peanuts peak in late summer.

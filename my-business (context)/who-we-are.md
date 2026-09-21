@@ -124,7 +124,7 @@ That's the whole company. Jay Meral built HPC around it in Covington, Robert bro
 
 ## Future note
 
-Atlas is currently the brain for **HPC marketing**. Evan intends to start other businesses later and use this same brain for them. When that happens, keep HPC context scoped clearly so a second business doesn't inherit HPC's rules by accident.
+ROUX is currently the brain for **HPC marketing**. Evan intends to start other businesses later and use this same brain for them. When that happens, keep HPC context scoped clearly so a second business doesn't inherit HPC's rules by accident.
 
 
 ---

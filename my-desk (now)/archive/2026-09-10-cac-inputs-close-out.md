@@ -22,7 +22,7 @@ Came off the board: the **Jay: landed cost + monthly overhead** waiting row (ope
 | [cac-ceilings-v3](../../my-work%20%28outputs%29/internal/reports/2026-09-10-cac-ceilings-v3.md) | One-unit ceilings plus the order-level addendum |
 | [order-level-pulls](../../my-work%20%28outputs%29/internal/reports/2026-09-10-order-level-pulls.md) | What real orders contain (attach, discounts), Jun–Aug and 12 months |
 | [pull-d-business-contribution](../../my-work%20%28outputs%29/internal/reports/2026-09-10-pull-d-business-contribution.md) | Whole-business GP at current landed cost: 42.1% of costed revenue |
-| [overhead-method-options](../../my-work%20%28outputs%29/internal/reports/2026-09-10-overhead-method-options.md) | Three overhead methods, ROUX's incremental rule, and the P&L reconciliation |
+| [overhead-method-options](../../my-work%20%28outputs%29/internal/reports/2026-09-10-overhead-method-options.md) | Three overhead methods, Beau's incremental rule, and the P&L reconciliation |
 
 ## Where it ended
 - **The allocation method barely matters for the 18 QT.** Its average order ($449) sits near the

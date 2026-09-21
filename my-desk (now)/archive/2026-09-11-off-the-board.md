@@ -18,11 +18,11 @@ What came off `BOARD.md` at the 2026-09-11 wrap, and why. Nothing here is delete
 
 ## Moved Now → Parked
 
-- **Old Now #2, "Build the retargeting campaign. It decays daily."** Evan approved ROUX's plan and held the launch (wait before another new campaign). It now sits in Parked with the approved settings. The IntentWave pixel verdict: don't use it for retargeting; its audience keeps seeding the lookalike. The compliance point was closed by Evan (IntentWave proved CIPA compliance). → `content/ads/2026-09-retargeting/2026-09-11-retargeting-plan.md`
+- **Old Now #2, "Build the retargeting campaign. It decays daily."** Evan approved Beau's plan and held the launch (wait before another new campaign). It now sits in Parked with the approved settings. The IntentWave pixel verdict: don't use it for retargeting; its audience keeps seeding the lookalike. The compliance point was closed by Evan (IntentWave proved CIPA compliance). → `content/ads/2026-09-retargeting/2026-09-11-retargeting-plan.md`
 
 ## Superseded Now text
 
-- **Old Now #3, "ROUX: tailgate + Thanksgiving bundle plan."** Replaced by the approved plan and the re-OK. Original proposal: tailgate $479 (fryer, legs, 12" thermometer, wind shield, skimmer) and turkey $469. After Evan's fitment changes, tailgate $465 is recommended and the 60 QT is added at $519. → `internal/2026-09-11-tailgate-thanksgiving-bundles-plan.md`
+- **Old Now #3, "Beau: tailgate + Thanksgiving bundle plan."** Replaced by the approved plan and the re-OK. Original proposal: tailgate $479 (fryer, legs, 12" thermometer, wind shield, skimmer) and turkey $469. After Evan's fitment changes, tailgate $465 is recommended and the 60 QT is added at $519. → `internal/2026-09-11-tailgate-thanksgiving-bundles-plan.md`
 - **"Demoted: the Sept 1–8 Meta ad-level re-pull → Parked."** That note is dropped; the item itself stays in Parked.
 
 ## Later the same day (second wrap)

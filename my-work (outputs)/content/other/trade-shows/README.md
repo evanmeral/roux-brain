@@ -47,7 +47,7 @@ Nothing is blocking until the exhibitor kit arrives. When it does, it will want:
   not necessarily whoever signed.
 - **Categories** — a pick-list; it drives how attendees filter the directory.
 - **Listing photos** — 2–3 lifestyle shots, and the treatment for each.
-- **Show special field** — leave blank. Pricing is a ROUX call, not a copy one.
+- **Show special field** — leave blank. Pricing is a Beau call, not a copy one.
 - **COI and booth staff list** — usually a separate, earlier deadline than the directory.
 - **Electrical order** — a screen loop needs power, and hall electrical is almost always an
   extra line item with an early-bird price that expires. Watch for it in the kit.

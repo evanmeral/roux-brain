@@ -58,7 +58,7 @@ Most are **928×1152** — fine for 4:5 and 1:1, **too small for 1080×1920 stor
 > ✅ Renamed to `120qt-with-steam.png` by Evan — colon gone, no encoding needed.
 
 ### Video handling
-ROUX can pull a **poster frame** from video using macOS `qlmanage`, and read duration, dimensions and
+Beau can pull a **poster frame** from video using macOS `qlmanage`, and read duration, dimensions and
 codec. It **cannot watch video or scrub to a timestamp** — `ffmpeg` isn't installed. If pulling
 stills from video footage becomes routine, installing ffmpeg (`brew install ffmpeg`) would unlock it.
 
@@ -132,7 +132,7 @@ The 120 has its drain valve front right. The 80 and 100 have it on the left.
 Copied from Evan's inbox folders "140 gallon cutouts" and "140 gallon studio shots"; he kept the
 originals. Matched by eye, cutout to studio shot (the `IMG_83xx` numbers line up, except the
 basket-open cutout, which came in as `IMG_boo`). Cutouts 1800×2400, studio 1512×2016. Bounds in `_bboxes.json`.
-The lid-on cutout had no Photoroom version, so Atlas cut it from studio shot 8346 with macOS's
+The lid-on cutout had no Photoroom version, so ROUX cut it from studio shot 8346 with macOS's
 subject lift (Vision), 2026-09-21. It stays 1512×2016, smaller than the other four cutouts.
 
 Same naming as the 80/100/120. Propane (Evan, 2026-09-21):

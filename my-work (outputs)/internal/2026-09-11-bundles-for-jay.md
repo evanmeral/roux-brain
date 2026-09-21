@@ -1,5 +1,5 @@
 # Bundles approved, and the discount-code sheet
-**For Jay · prepared by Evan with ROUX · 2026-09-11, revised after your answers**
+**For Jay · prepared by Evan with Beau · 2026-09-11, revised after your answers**
 
 Detail: [plan](2026-09-11-tailgate-thanksgiving-bundles-plan.md) · [code fix](2026-09-11-bundle-discount-code-fix.md) ·
 [discount sheet (CSV)](reports/2026-09-11-discount-code-inventory.csv).

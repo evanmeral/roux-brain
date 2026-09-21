@@ -1,9 +1,9 @@
 # Overhead in the ad ceiling: per order, revenue share, or neither
-**2026-09-10 · ROUX · answers Evan and Jay's questions on [v3 and its addendum](2026-09-10-cac-ceilings-v3.md)**
+**2026-09-10 · Beau · answers Evan and Jay's questions on [v3 and its addendum](2026-09-10-cac-ceilings-v3.md)**
 
 Read-only throughout. Nothing was written to Shopify, Meta or Google. **No actual CAC is quoted.** Meta
 figures are **cost per purchase (CPP) on Meta's own purchase count**, not CAC. All ceiling arithmetic is
-derived by ROUX from the sourced inputs in section 2. **None of it is a Shopify number.**
+derived by Beau from the sourced inputs in section 2. **None of it is a Shopify number.**
 
 ---
 
@@ -90,7 +90,7 @@ overhead stays at 20.6% of sales forever.
 - Legs and Cooling Ring use v3's single-unit rows. The addendum's order-level figures for them are pot and
   fryer baskets that happen to carry the accessory, so they aren't ad ceilings (addendum, "Read before using").
 
-**What the table says (ROUX):**
+**What the table says (Beau):**
 - **Revenue share only rescues cheap single-unit orders**, like the $285 fryer and the accessories. It wrecks
   the main push, because it charges a $900 order $186 of overhead.
 - **The incremental rule leaves every line with roughly the same share of its order for ads.** That's 19–25%
@@ -191,7 +191,7 @@ exactly where three 20% ladder steps from $50 land ($60 → $72 → $86).
 - **Watch the IW campaign's 18 QT ad** as a share of that campaign's purchases. It counts toward the cap.
 - **Accessories stay attach-only.** Their incremental ceilings exist ($38.36 legs, $27.82 ring). But the
   gate on Meta's count would be **$11–$15**, which isn't a realistic cold-traffic CPP. And 35% of 12-month
-  ring orders are the ring alone (Pull A). **ROUX's judgment:** those buyers probably already own the pot.
+  ring orders are the ring alone (Pull A). **Beau's judgment:** those buyers probably already own the pot.
   Push attach at full price.
 
 ### 6b. Meta's claimed CPP vs the real cost of an incremental order
@@ -236,7 +236,7 @@ Business net margin **m = (C − A − $594,600) ÷ S**.
 - **Fact, derived from Pull A:** anchor orders run **38.5–45.0%** contribution before ads. The zero-ad threshold
   of **40.6%** sits inside that band. Accessories carry higher margins. Dealer and POS orders aren't in
   Pull A at all.
-- **ROUX's read, not a number:** it's close. **Nobody tells Jay or Robert the business is at 20% until Pull D says so.**
+- **Beau's read, not a number:** it's close. **Nobody tells Jay or Robert the business is at 20% until Pull D says so.**
 - **The Lowe's reversal:** it depresses S. Added back, overhead is about 18.2% of sales and the threshold falls to
   about 38.2%. **Finn reports both.**
 
@@ -284,7 +284,7 @@ Business net margin **m = (C − A − $594,600) ÷ S**.
 
 ## Addendum: Pull D result against section 7 (2026-09-10)
 
-*Claude, applying section 7's pre-set tests to Finn's Pull D ([pull-d](2026-09-10-pull-d-business-contribution.md)). **This is arithmetic on sourced inputs. It isn't a Shopify number or a new ROUX judgment.** The variable costs are the same assumptions as v3's.*
+*Claude, applying section 7's pre-set tests to Finn's Pull D ([pull-d](2026-09-10-pull-d-business-contribution.md)). **This is arithmetic on sourced inputs. It isn't a Shopify number or a new Beau judgment.** The variable costs are the same assumptions as v3's.*
 
 - **Fact (Finn, Shopify, 2026-09-10):** all 6,099 paid orders, Sep 2025–Aug 2026: net revenue **$2,863,027.44**, gross profit **$1,187,514.36** (**42.11%** of costed revenue; 1.50% or $42,912 is uncosted). The Lowe's order was **cancelled**, so it's out of every figure and there's no with/without split.
 - **Derived:** overhead ÷ net sales = 20.77%. **The zero-ad threshold for 20% net is 40.77%.**
@@ -301,7 +301,7 @@ Business net margin **m = (C − A − $594,600) ÷ S**.
 
 ⚠️ **This hasn't been confirmed against a second source.** Finn found that Shopify's own COGS figures don't reconcile, so cost has no second source inside Shopify. **The P&L, from Jay, is the check** (see the next addendum). Nobody should state HPC's net margin as a fact until it has been compared with the books.
 
-**What it means, from ROUX's section 7:** a conversation about the target or overhead. Ads can't fix it. The gap is price, landed cost or overhead, not the fryer. The incremental rule still holds for *new* spend, because an order that clears 20% after ads raises a margin that's below 20%.
+**What it means, from Beau's section 7:** a conversation about the target or overhead. Ads can't fix it. The gap is price, landed cost or overhead, not the fryer. The incremental rule still holds for *new* spend, because an order that clears 20% after ads raises a margin that's below 20%.
 
 ---
 
@@ -372,7 +372,7 @@ $1,632,600.87.
 
 **What holds either way:**
 - **$676k of marketing is well past what 20% net allows.** As described, 20% leaves ~$222,996/yr (~$304,596 if the overhead's $6,800/mo agencies sit inside the $152k agency fees). Under the other reading, 20% isn't reachable even at $0 marketing, and net at $0 marketing would be ~16.9%.
-- **The biggest controllable line is marketing, not the fryer and not the overhead method.** Re-testing the $676k against the incremental rule is the next ROUX job. Google ($206k) is Coalition's lane: monitor and suggest only.
+- **The biggest controllable line is marketing, not the fryer and not the overhead method.** Re-testing the $676k against the incremental rule is the next Beau job. Google ($206k) is Coalition's lane: monitor and suggest only.
 - **The per-product ceilings stand.** Shopify landed cost matches P&L COGS.
 
 ---
@@ -382,6 +382,6 @@ $1,632,600.87.
 - **The previous addendum's reading is ruled out.** With ~$3.9M of revenue, the 46% sits **after** card fees and freight, as Jay described. That reading used Shopify's $3.14M as the P&L revenue.
 - **Derived, on 46% of ~$3.9M:** overhead is 15.2% and marketing 17.3% of revenue. Net is **~13.5%** if the other expenses were one-time. 20% net leaves **~$421,220/yr** for all marketing (~$502,820 if the agencies are double-counted). Actual marketing was $676k, **~$254,780 over**.
 - **If the 46% was worked on the $4.3M booked:** the real margin is ~40.6%, net ~8.0% if the others were one-time, and the room is ~$209,000. **Asked Jay which.**
-- **Unreconciled:** P&L revenue ~$3.9M vs Shopify net sales + shipping $3,144,599 for the same window. That's a ~$760k gap while COGS matches within 1.4%. Parked for ROUX and Finn.
+- **Unreconciled:** P&L revenue ~$3.9M vs Shopify net sales + shipping $3,144,599 for the same window. That's a ~$760k gap while COGS matches within 1.4%. Parked for Beau and Finn.
 
 **Settled (Jay, 2026-09-10):** the 46% was worked on the **$4.3M booked** revenue. Real margin ≈ **40.6%** of ~$3.9M *(derived; assumes the double-booked $393k carried no COGS)*. At 20% net that leaves **~$209,000/yr** of marketing room (~$290,600 if agencies are double-counted), against $676k spent. Normal-year net is **~8.0%** if the ~$529,400 of other expense was one-time.

@@ -64,7 +64,7 @@ nearly doubled YoY. Top units were legs, thermometers, wind shields, seasoning, 
 That is a promotion recruiting the 10% who buy on price. Two data points on the same
 holiday with the same mechanic is a real signal, not yet a trend.
 
-**ROUX's recommendation, not yet an Evan decision:** no sitewide percentage discount
+**Beau's recommendation, not yet an Evan decision:** no sitewide percentage discount
 before November.
 
 ## Discount codes

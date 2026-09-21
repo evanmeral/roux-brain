@@ -67,7 +67,7 @@ Drafts only. Nothing was built or uploaded in Meta or Shopify.
 > | No gray box (rule 8) | ✅ The shadow is on `.pbox`. All four cutout renders were checked at full size |
 > | Claims | ✅ No new copy. No price, warranty, competitor, "hard boil" or crawfish, and no numbers on any creative |
 >
-> **Next:** ROUX makes the budget call on running all three (one ad each, three sizes by placement). Before anything goes live, the gates in "Before it goes live" below still apply.
+> **Next:** Beau makes the budget call on running all three (one ad each, three sizes by placement). Before anything goes live, the gates in "Before it goes live" below still apply.
 
 - **Campaign:** `18qt-TOF-Prospecting` (cold). No price on any creative. $465 can't be quoted until the kit goes active (`what-we-sell.md`).
 - **Sizes:** rounds 2 to 4 were 1:1 only. Round 5 gives all three concepts 1:1, 9:16 and 1.91:1 (see above).
@@ -163,9 +163,9 @@ Three changes only: the **top scrim is deeper and a second gradient holds the ri
 - **The kit is actually in the picture.** Thermometer on the rim, skimmer in hand, fryer underneath.
 - **It carries the fewest claims.** The creative has no number at all.
 - **Risk:** it's a countertop phone photo, not a parking lot, and the headline doesn't say where it is. For 9:16 the photo is 4032×3024, so it needs the blurred-underlay treatment (instructions, promo conventions). If Garrett's Sept 22 tailgate-kit footage gives a real game-day frame, swap it in.
-- **Second choice: C.** It's the most distinctive layout. **A** is the clearest about what's in the box, and it's a good second ad if ROUX wants a test.
+- **Second choice: C.** It's the most distinctive layout. **A** is the clearest about what's in the box, and it's a good second ad if Beau wants a test.
 
-**Round 3 changes the order slightly.** B is still the one I'd run cold — appetite beats craft for a first impression, and it carries no claims. But A and C are no longer "the clever ones that look basic." A now sells the season on sight before a word is read, and C is the kind of ad people screenshot. If ROUX funds two, run **B + A**: they fail differently (appetite vs. what's in the box), so the test tells you something either way. **C is the retargeting ad** — it rewards someone who already knows the product.
+**Round 3 changes the order slightly.** B is still the one I'd run cold — appetite beats craft for a first impression, and it carries no claims. But A and C are no longer "the clever ones that look basic." A now sells the season on sight before a word is read, and C is the kind of ad people screenshot. If Beau funds two, run **B + A**: they fail differently (appetite vs. what's in the box), so the test tells you something either way. **C is the retargeting ad** — it rewards someone who already knows the product.
 
 ## Checks (all three) — re-run on the round 4 renders
 
@@ -190,4 +190,4 @@ Three changes only: the **top scrim is deeper and a second gradient holds the ri
 ## Before it goes live (unchanged from round 1)
 Kit go/no-go Thu Sept 24 · `SC-7R` at −1 with deny · `HIGH15`/`SMS25` still active · 18 QT page "Made in the USA" (Group A fix sheet, due Mon Sept 21).
 
-**Next (superseded by round 5, 2026-09-18):** Evan chose all three, and all three now have the full paid set. ROUX makes the budget call.
+**Next (superseded by round 5, 2026-09-18):** Evan chose all three, and all three now have the full paid set. Beau makes the budget call.

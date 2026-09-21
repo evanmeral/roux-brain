@@ -2,7 +2,7 @@
 
 **2026-09-18 · Maya.** This is copy only. Nothing was built, uploaded or changed in Meta or Shopify. I ran one read-only Shopify lookup on the kit product (details below).
 
-**Where it runs:** `RT 30D - 18QT`, $10/day, launching Mon Sept 28. It **replaces** `rt-18qt-fry-it-all` and does not run next to it. That was ROUX's ruling on 2026-09-18 (`internal/reports/2026-09-18-tailgate-ad-split.md`). The 2026-09-11 retargeting plan says the set's $10/day can't carry a second ad (§5).
+**Where it runs:** `RT 30D - 18QT`, $10/day, launching Mon Sept 28. It **replaces** `rt-18qt-fry-it-all` and does not run next to it. That was Beau's ruling on 2026-09-18 (`internal/reports/2026-09-18-tailgate-ad-split.md`). The 2026-09-11 retargeting plan says the set's $10/day can't carry a second ad (§5).
 **Audience:** people who viewed the 18 QT in the last 30 days and didn't buy. They already know the fryer. The ad's job is to move them up to the kit.
 
 ---
@@ -91,9 +91,9 @@ The name follows the plan's `rt-<product>-<angle>` pattern. The `rt-` prefix kee
 
 ## Flags
 
-1. **The kit is still DRAFT with 0 images** (Shopify read-only, `get-product`, 2026-09-18). If it isn't active by Sept 28, C has nowhere to send people. Whether to hold C or keep fry-it-all running in that case is ROUX's call. The go/no-go is Thu Sept 24.
+1. **The kit is still DRAFT with 0 images** (Shopify read-only, `get-product`, 2026-09-18). If it isn't active by Sept 28, C has nowhere to send people. Whether to hold C or keep fry-it-all running in that case is Beau's call. The go/no-go is Thu Sept 24.
 2. **Two sources word the stat differently.** C's cold primary text (v2 concepts file) and the kit PDP both say "350° in **as little as** 5 minutes". `what-we-sell.md` says "**under** 5 minutes", which this file uses because the brief asked for it. It would be worth making those two match.
 3. **The live kit PDP prints "Patent No. 11,844,459".** That's allowed on a PDP, since rule 10 covers ads only. I'm noting it so no one lifts copy from that page into an ad.
-4. **Open, from ROUX:** `RT - Viewed 18 QT - 30D` isn't built yet, and every audience on pixel `1861969194014116` reads 20–20. Check its size before launch.
+4. **Open, from Beau:** `RT - Viewed 18 QT - 30D` isn't built yet, and every audience on pixel `1861969194014116` reads 20–20. Check its size before launch.
 
-**Next:** ROUX has the copy now. The budget and the swap are already ruled, so the only open call is flag 1 (hold or swap if the kit isn't live on Sept 28). Building it in Meta is Evan's click.
+**Next:** Beau has the copy now. The budget and the swap are already ruled, so the only open call is flag 1 (hold or swap if the kit isn't live on Sept 28). Building it in Meta is Evan's click.

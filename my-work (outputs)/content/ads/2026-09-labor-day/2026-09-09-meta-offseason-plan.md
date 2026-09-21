@@ -1,5 +1,5 @@
 # Meta from Sept 9 — the off-season plan
-**ROUX, 2026-09-08.** Companion to [2026-09-09-wind-down.md](2026-09-09-wind-down.md).
+**Beau, 2026-09-08.** Companion to [2026-09-09-wind-down.md](2026-09-09-wind-down.md).
 Recommendations only. **Every change below is Evan's click.**
 
 ---
@@ -205,7 +205,7 @@ signal is CPP rising past the gates below.
 daily breakdown to say whether it hit $50 every day. **If a raise doesn't move actual spend,
 the constraint is audience or creative, not budget** — and more money won't fix it.
 
-### On the BOM gate — ROUX is recommending you relax it, and saying so out loud
+### On the BOM gate — Beau is recommending you relax it, and saying so out loud
 
 The board says *"not past step one without landed BOM for the 18 QT."* The argument for going
 further anyway: 18 QT powered's provisional CAC ceiling is **~$63** *(cac-model-v2, 20%
@@ -213,7 +213,7 @@ overhead reserve)*. The campaign ran **$20.09 CPP** — **3.1× of headroom.** T
 have to be wrong by more than a factor of three before step 2 loses money, and the $30 gate is
 still under half the provisional ceiling.
 
-**This is ROUX overriding a board note. It is Evan's call, not ROUX's.** If you hold the line
+**This is Beau overriding a board note. It is Evan's call, not Beau's.** If you hold the line
 at step one, the cost is real: you cap the cheapest acquisition in the account at $60/day
 while it beats everything else by 32%.
 
@@ -255,7 +255,7 @@ money makes structure problems worse. Fix the audience, watch two weeks, revisit
 6. `18qt-TOF-Prospecting` — verified clean, then untouched
 7. Site sweep → [wind-down sheet](2026-09-09-wind-down.md), Section B2
 
-**Every one of those is a change in a live ad account. Evan's click, not ROUX's.**
+**Every one of those is a change in a live ad account. Evan's click, not Beau's.**
 
 ---
 

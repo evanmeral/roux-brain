@@ -1,8 +1,10 @@
-// Atlas OS — page script. Fetches /api/state and /api/calendar, renders, and listens for file changes.
+// ROUX OS — page script. Fetches /api/state and /api/calendar, renders, and listens for file changes.
 'use strict';
 const $ = (id) => document.getElementById(id);
 let STATE = null;
 let WEEK = null;
+// one-time carry-over of this browser's saved state from the pre-rename keys (atlas.* -> roux.*, 2026-09-21)
+try { for (const k of ['done', 'tab']) { const old = localStorage.getItem('atlas.' + k); if (old !== null) { if (localStorage.getItem('roux.' + k) === null) localStorage.setItem('roux.' + k, old); localStorage.removeItem('atlas.' + k); } } } catch (_) {}
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // ---- clock ----
@@ -106,13 +108,13 @@ function renderWaiting() {
   const mine = $('waiting-body'), others = $('others-body'), toggle = $('others-toggle');
   if (!b || !b.waiting) { mine.innerHTML = `<div class="empty bad">${esc(STATE.health.board)}</div>`; others.innerHTML = ''; toggle.textContent = ''; return; }
   const me = b.waiting.filter((w) => w.isEvan), rest = b.waiting.filter((w) => !w.isEvan);
-  const doneSet = new Set(JSON.parse(localStorage.getItem('atlas.done') || '[]'));
+  const doneSet = new Set(JSON.parse(localStorage.getItem('roux.done') || '[]'));
   mine.innerHTML = me.length ? me.map((w) => `<div class="wait-row ${doneSet.has(w.what) ? 'is-done' : ''}" data-what="${esc(w.what)}"><div class="wait-what">${w.whatHtml}${/→/.test(w.who) ? ` <span class="wait-who">${esc(w.who)}</span>` : ''}</div>${ageHtml(w)}<button class="wait-done" title="Tell the brain this landed">Done</button></div>`).join('') : '<div class="empty">Nothing waiting on you.</div>';
   mine.querySelectorAll('.wait-done').forEach((btn) => btn.addEventListener('click', async () => {
     const row = btn.closest('.wait-row'); const what = row.dataset.what;
     if (row.classList.contains('is-done')) return;
     const ok = await capture('Done', what);
-    if (ok) { row.classList.add('is-done'); doneSet.add(what); localStorage.setItem('atlas.done', JSON.stringify([...doneSet])); }
+    if (ok) { row.classList.add('is-done'); doneSet.add(what); localStorage.setItem('roux.done', JSON.stringify([...doneSet])); }
   }));
   others.innerHTML = rest.map((w) => `<div class="wait-row"><div class="wait-what"><span class="wait-who">${esc(w.who)}</span>${w.whatHtml}</div>${ageHtml(w)}</div>`).join('');
   toggle.textContent = `others · ${rest.length}`;
@@ -151,7 +153,7 @@ function renderWeek() {
   const broken = WEEK.feeds.filter((f) => f.error && f.error !== 'not configured');
   let note = '';
   if (WEEK.configError) note += `<div class="week-note bad">${esc(WEEK.configError)}</div>`;
-  if (notConf.length === WEEK.feeds.length && WEEK.feeds.length) note += `<div class="week-note">No calendar connected yet. Paste the two secret iCal addresses into <code>config.local.json</code> in the atlas-os folder. The page picks them up on its own.</div>`;
+  if (notConf.length === WEEK.feeds.length && WEEK.feeds.length) note += `<div class="week-note">No calendar connected yet. Paste the two secret iCal addresses into <code>config.local.json</code> in the roux-os folder. The page picks them up on its own.</div>`;
   else if (notConf.length) note += `<div class="week-note">${esc(notConf.map((f) => f.name).join(', '))}: not configured yet.</div>`;
   if (broken.length) note += broken.map((f) => `<div class="week-note bad">Cannot read the ${esc(f.name)} calendar: ${esc(f.error)}${f.stale ? ' (showing the last good copy)' : ''}</div>`).join('');
   el.insertAdjacentHTML('beforeend', note);
@@ -164,7 +166,7 @@ function renderStatus() {
   const bits = Object.entries(h).map(([k, v]) => `<span class="${v === 'ok' ? '' : /no brief/i.test(v) ? '' : 'bad'}">${esc(k)}: ${esc(v)}</span>`);
   bits.push(`<span>capture: ${STATE.captureLines} line${STATE.captureLines === 1 ? '' : 's'}</span>`);
   $('capture-stamp').textContent = STATE.captureLines ? `${STATE.captureLines} waiting for the next session` : '';
-  bits.push(`<span>atlas os ${esc(STATE.version)}</span>`);
+  bits.push(`<span>roux os ${esc(STATE.version)}</span>`);
   $('status').innerHTML = bits.join('');
 }
 
@@ -183,7 +185,7 @@ function toast(msg, bad) {
 }
 async function capture(kind, text) {
   try {
-    const r = await fetch('/api/capture', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Atlas': 'page' }, body: JSON.stringify({ kind, text }) });
+    const r = await fetch('/api/capture', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-ROUX': 'page' }, body: JSON.stringify({ kind, text }) });
     const j = await r.json();
     if (!r.ok) throw new Error(j.error || r.status);
     toast(kind === 'Done' ? 'Noted as done. The next wrap clears it from the board.' : 'Saved. The next session reads it first.');
@@ -195,7 +197,7 @@ async function startSession(prompt, btn) {
   if (btn) btn.disabled = true;
   st.textContent = 'opening…';
   try {
-    const r = await fetch('/api/session', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Atlas': 'page' }, body: JSON.stringify({ prompt }) });
+    const r = await fetch('/api/session', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-ROUX': 'page' }, body: JSON.stringify({ prompt }) });
     const j = await r.json();
     if (!r.ok) throw new Error(j.error || r.status);
     st.textContent = 'session opened in Terminal';
@@ -226,7 +228,7 @@ function wireActions() {
 function showTab(name) {
   document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('is-on', t.dataset.tab === name));
   document.querySelectorAll('.view').forEach((v) => v.classList.toggle('is-on', v.id === 'view-' + name));
-  try { localStorage.setItem('atlas.tab', name); } catch (_) {}
+  try { localStorage.setItem('roux.tab', name); } catch (_) {}
   if (name === 'board') renderBoard();
   if (name === 'files') { loadFiles($('files-q').value); setTimeout(() => $('files-q').focus(), 50); }
 }
@@ -306,7 +308,7 @@ function renderRoutine() {
 async function runPulse() {
   const btn = $('pulse-btn'); btn.disabled = true;
   try {
-    const r = await fetch('/api/run', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Atlas': 'page' }, body: JSON.stringify({ kind: 'pulse' }) });
+    const r = await fetch('/api/run', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-ROUX': 'page' }, body: JSON.stringify({ kind: 'pulse' }) });
     const j = await r.json();
     if (!r.ok) throw new Error(j.error || r.status);
     toast('Pulse started. It reads Meta, Shopify and the calendar, then writes the brief. About a minute and a half.');
@@ -334,7 +336,7 @@ async function boot() {
   await loadWeek();
   await loadRuns();
   await loadRecent();
-  try { const t = localStorage.getItem('atlas.tab'); if (t && t !== 'today') showTab(t); } catch (_) {}
+  try { const t = localStorage.getItem('roux.tab'); if (t && t !== 'today') showTab(t); } catch (_) {}
   setInterval(loadWeek, 5 * 60 * 1000);
   setInterval(() => loadState().catch(() => {}), 10 * 60 * 1000);
   const es = new EventSource('/api/events');

@@ -1,6 +1,6 @@
 # IntentWave — 1pm Wed Sept 9. What Evan walks in with.
 
-**ROUX, 2026-09-09.** Room: Dalton + Tommy (IntentWave), Jay, Peter.
+**Beau, 2026-09-09.** Room: Dalton + Tommy (IntentWave), Jay, Peter.
 **Recommendations only. Every change below is Evan's click.**
 
 > ⚠️ **The board's Meta section is stale and is superseded by Evan's live account read this

@@ -1,6 +1,6 @@
 # Weekly Operating Rhythm
 
-The default cadence. ROUX should proactively drive this, not wait to be asked.
+The default cadence. Beau should proactively drive this, not wait to be asked.
 
 ## Monday — Look back, then the week's content
 - **8:00 — `/content-week` fires as a scheduled task** (`content-week-monday`): the six FB/IG slots
@@ -44,7 +44,7 @@ The default cadence. ROUX should proactively drive this, not wait to be asked.
 - Creator roster prune + re-seed
 - Pricing / offer review
 
-## ROUX's standing prompt to itself
+## Beau's standing prompt to itself
 > What is the single highest-leverage thing I could hand Evan this week that he isn't asking for?
 
 

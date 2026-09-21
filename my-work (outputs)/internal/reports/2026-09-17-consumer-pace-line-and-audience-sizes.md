@@ -94,4 +94,4 @@ The pixel itself fires: 27,651 events on Aug 28 (Finn, 2026-09-10, per plan §3)
 
 ---
 
-**Next:** ROUX. The pace line is exact and ready for PLAN.md. The audience read shows the retargeting build rests on the unidentified pixel `491960645999331`, and every `1861969194014116` audience reads 20. Whether that changes the Sept 28 build is a call, not a query.
+**Next:** Beau. The pace line is exact and ready for PLAN.md. The audience read shows the retargeting build rests on the unidentified pixel `491960645999331`, and every `1861969194014116` audience reads 20. Whether that changes the Sept 28 build is a call, not a query.

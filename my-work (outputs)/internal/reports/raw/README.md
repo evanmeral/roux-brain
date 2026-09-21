@@ -1,7 +1,7 @@
 # Data drop folder
 
 **Put exported CSVs here — not in the chat.**
-Files in this folder are cheap for ROUX to read, persist across sessions, and can be re-read later.
+Files in this folder are cheap for Beau to read, persist across sessions, and can be re-read later.
 Chat attachments cost a lot of context and disappear when the session ends.
 
 ---
@@ -16,12 +16,12 @@ Examples:
 2026-09-09_meta_campaigns_2026-09-01_to_2026-09-08.csv
 ```
 
-If the export lands with Meta's own filename, that's fine — just drop it in and say so. ROUX will
+If the export lands with Meta's own filename, that's fine — just drop it in and say so. Beau will
 rename it.
 
 ---
 
-## What ROUX wants from Meta
+## What Beau wants from Meta
 
 ### Export 1 — the one that matters most
 - **Date range: Jul 12 – Aug 28, 2026** (everything since the vendor handover)
@@ -48,7 +48,7 @@ Ads Manager → set the date range → **Reports ▾ → Export** (or the ⬇ do
 ## Google Ads
 **Not needed as an export — that's Coalition's lane.**
 
-The only thing ROUX needs is **total Google ad spend per month**, one number, so blended MER is
+The only thing Beau needs is **total Google ad spend per month**, one number, so blended MER is
 correct. Without it, MER is calculated against Meta spend alone and overstates efficiency.
 Evan can relay it from Coalition's reporting. Add it to `my-files (knowledge)/hpc-reference/metrics-and-goals.md` when known.
 

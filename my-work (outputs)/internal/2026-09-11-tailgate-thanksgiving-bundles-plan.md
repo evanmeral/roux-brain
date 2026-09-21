@@ -1,5 +1,5 @@
 # Tailgate + Thanksgiving bundles: the plan
-**2026-09-11 · ROUX · for Evan. Approver: Jay. Revised the same day after Jay's answers and Evan's kit changes.**
+**2026-09-11 · Beau · for Evan. Approver: Jay. Revised the same day after Jay's answers and Evan's kit changes.**
 
 ✅ **Built 2026-09-16 as drafts, on Evan's go** → [build record](2026-09-16-kit-build-record.md) (IDs, what's set, what's left before activation).
 
@@ -19,7 +19,7 @@ Jay's version: [2026-09-11-bundles-for-jay.md](2026-09-11-bundles-for-jay.md) ·
 | 60 QT two-bird turkey kit, **$519** | ✅ **Approved** (Jay via Evan, 2026-09-11) |
 | Codes | ✅ **Every code skips bundles. Military and first responder are the one exception** (Jay). To-do → [code fix](2026-09-11-bundle-discount-code-fix.md) |
 | Code fix scope | ⚠️ Bigger than a settings change. Almost every code in use (HIGH10, HIGH15, SMS25, TEXT25, BOIL10, SPROM…) is an **"amount off order"** discount, which Shopify can't limit to a collection, so those get **recreated**. Several collection-scoped codes (HPC10, Stale30, KLUD40, NICESPICE) already reach bundles, and the new kits would inherit them via their `Tailgater` and `Turkey` tags. **Fix before any kit goes live** |
-| Welcome10 on bundles? | ✅ **Stays off bundles** (Evan, 2026-09-11; ROUX's recommendation, section 5). Military and first responder stay allowed |
+| Welcome10 on bundles? | ✅ **Stays off bundles** (Evan, 2026-09-11; Beau's recommendation, section 5). Military and first responder stay allowed |
 | Discount inventory | Every discount in Shopify, with a recommendation for each → [2026-09-11-discount-code-inventory.csv](reports/2026-09-11-discount-code-inventory.csv) |
 | 30 QT price ($345 last season → $442.50) | ✅ Deliberate (Jay). Last season it sold only as the full kit; now it comes in configurations |
 | Ship cutoff | ✅ **Mon Nov 23, 2026**, 3 days before Thanksgiving morning (Jay) |
@@ -46,7 +46,7 @@ Jay's version: [2026-09-11-bundles-for-jay.md](2026-09-11-bundles-for-jay.md) ·
 | Per-order ceiling (Jay's method) | +$16.69 (hero alone −$24.10) | +$6.98 (hero −$5.99) | +$30.55 (hero +$19.48) |
 | Live · seasonal ad push | Sep 25 · through the holidays, then Lent | Oct 1 · **ends Nov 23** | Oct 1 · **ends Nov 23** |
 
-*Prices and landed costs: live Shopify, read 2026-09-11. Ceilings derived by ROUX (section 1). Kits are evergreen.*
+*Prices and landed costs: live Shopify, read 2026-09-11. Ceilings derived by Beau (section 1). Kits are evergreen.*
 
 **The design hasn't changed:** the hero stays at full price, and small high-margin accessories pay for the
 saving. That's the opposite of 30%-off legs ([v3 §6c](reports/2026-09-10-cac-ceilings-v3.md)).
@@ -68,7 +68,7 @@ Refunds not modeled.
 
 ```
 Contribution before ads = net − landed cost − variable
-Incremental ceiling     = contribution − 20% × net              (ROUX's rule; Jay's decision still open, Q9)
+Incremental ceiling     = contribution − 20% × net              (Beau's rule; Jay's decision still open, Q9)
 Gate on Meta's count    = 40% × incremental ceiling
 Per-order ceiling       = contribution − $97.49 − 20% × net     (Jay's approved method)
 ```
@@ -157,7 +157,7 @@ Shopify agrees on the thermometer: 18 of 221 Jun–Aug fryer orders bought the 5
 - **Measurement (Finn, verdict Fri Nov 6):**
   - Track kit share of 18 QT orders, and gross profit per 18 QT order against $210.18 (Pull A, Jun–Aug) and the same weeks of 2025.
   - Discounts on kit lines should be military/responder only.
-  - **Keep** at ≥ 15% kit share with gross profit per order ≥ $210.18. **Rethink** under 10% *(ROUX's thresholds)*.
+  - **Keep** at ≥ 15% kit share with gross profit per order ≥ $210.18. **Rethink** under 10% *(Beau's thresholds)*.
 
 ---
 
@@ -228,7 +228,7 @@ Shopify agrees on the thermometer: 18 of 221 Jun–Aug fryer orders bought the 5
 
 ---
 
-## 5. Should Welcome10 apply to bundles for new customers? **ROUX: no. Keep it off.**
+## 5. Should Welcome10 apply to bundles for new customers? **Beau: no. Keep it off.**
 
 **Fact:** Welcome10 is "10% off All Products - Eligible for Discounts · One use per customer" *(Shopify)*. On
 order #17368 (Sep 5) it skipped the Ultimate bundle lines. **So today it already doesn't apply to bundles.**

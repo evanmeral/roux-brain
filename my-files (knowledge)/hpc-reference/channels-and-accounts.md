@@ -12,7 +12,7 @@
 | **TikTok** | — | **NOT ACTIVE** | Biggest open channel. See below. |
 | **Meta Ads** | **Evan** runs it. IntentWave advises (free) **and runs an identity pixel + audience syncs**. | **Active** — Evan took over 2026-07-20 | Primary paid acquisition |
 | **Google Ads** | **Coalition** (agency). Also 2+ yrs of HPC SEO. | **Active** — took over 2026-07-20, revamp began ~mid-Aug | Capture existing demand (search) + Shopping |
-| **Email/SMS** | **Klaviyo** — owned by **Biljana** | Active | ⛔ **Fully Biljana's. ROUX stays out entirely.** |
+| **Email/SMS** | **Klaviyo** — owned by **Biljana** | Active | ⛔ **Fully Biljana's. Beau stays out entirely.** |
 | **Affiliates/Ambassadors** | Master list in `HPC_affiliates_Master_List.xlsx` | Active | Creator-sourced content + sales |
 
 ## 📊 Self-reported first touch (reviews.io post-purchase survey, n=20, 2026-08-26)
@@ -57,7 +57,7 @@ Ask before launching: who owns posting, and do we want @highperformancecookers r
 | Meta Ads | Cold acquisition + retargeting. |
 | Google Ads | Harvest intent. Brand defense + Shopping + non-brand category terms. |
 
-## What ROUX needs to be useful on channels
+## What Beau needs to be useful on channels
 <!-- Tier-1 homework -->
 - Follower counts + engagement benchmarks per channel (baseline)
 - ~~Who posts, on what cadence, using what tool~~ — answered 2026-09-16: Evan, by hand, campaign-driven (nothing posted Sept 8–16). From 2026-09-21: `/content-week`, six slots a week, scheduled in Meta Business Suite.
@@ -77,8 +77,8 @@ Ask before launching: who owns posting, and do we want @highperformancecookers r
 | Source | Trust | Notes |
 |---|---|---|
 | **Meta Ads Manager** (direct) | ✅ Source of truth for Meta | **Readable through Meta's official connector since 2026-09-11** (HP Cookers ADs only). Every write needs Evan's yes; publishing is blocked. → `hpc-standing-rules.md` |
-| **Google Ads** (direct) | ✅ Source of truth for Google | ROUX has no access yet |
-| **Shopify admin** | ✅ Source of truth for orders/revenue/product mix | ROUX has no access yet |
+| **Google Ads** (direct) | ✅ Source of truth for Google | Beau has no access yet |
+| **Shopify admin** | ✅ Source of truth for orders/revenue/product mix | Beau has no access yet |
 | **Klaviyo** (direct) | ✅ Source of truth for email | Biljana owns. Connector unauthorized. |
 | **Venon** (Shopify app) | ⚠️ **Ad data NOT accurate — do not use.** | Biljana's email tool. Also: no COGS or shipping configured, so its profit numbers exclude COGS and freight. **Read-only. Never write.** |
 
@@ -100,7 +100,7 @@ Evan took Meta in-house; Coalition took Google. Any performance data spanning th
 > **Coalition: $4,800/mo is MANAGEMENT ONLY** — ad spend is separate (Evan, 2026-08-28).
 > That's ~27.5% of the ~$17.4K/mo Google spend, which is above the usual 10–20% for pure ad
 > management — **but it also covers SEO, and organic search is 50% of HPC's first-touch discovery.**
-> On that basis the fee looks reasonable. ROUX's earlier flag is withdrawn. Still worth reconciling
+> On that basis the fee looks reasonable. Beau's earlier flag is withdrawn. Still worth reconciling
 > results against Shopify periodically — hygiene, not distrust.
 
 ## IntentWave audience syncs (confirmed 2026-08-31)

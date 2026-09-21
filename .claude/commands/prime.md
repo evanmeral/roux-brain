@@ -17,7 +17,7 @@ If /setup has been completed, do the following:
 1. Read `my-desk (now)/BOARD.md`. **This is the most important file — read it first.**
    It is where work actually stands.
    **Then, if `my-desk (now)/capture.md` exists and has lines, read it.** Those are things Evan
-   told Atlas OS between sessions (notes, and "Done:" lines for board items he has finished).
+   told ROUX OS between sessions (notes, and "Done:" lines for board items he has finished).
    Treat each line as a fact from Evan dated on that line. Do not edit the board now; `/wrap`
    folds them in. Mention them in the briefing under "From your capture".
    **Then, if `my-desk (now)/PLAN.md` exists, read it.** It is the locked month plan: the

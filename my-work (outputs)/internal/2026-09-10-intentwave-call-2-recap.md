@@ -13,7 +13,7 @@ Previous call: [2026-09-10-intentwave-recap-review](2026-09-10-intentwave-recap-
 | Owner | Item | Our note |
 |---|---|---|
 | Evan *(recap says Jay)* | Send screenshots of the draft IW lookalike campaign to Loni via Slack for review | Recap calls it "remarketing" and "1% purchaser lookalike" — it is neither. It's a **cold** 1% lookalike off `IW - LA Audience`, excluding 30D visitors, 90D purchasers, dealers. Make the screenshots say so |
-| Loni + Tommy | Huddle on **bundle ideas** to raise margin and AOV | Lines up with our November plan and ROUX v3 (push attach at full price) |
+| Loni + Tommy | Huddle on **bundle ideas** to raise margin and AOV | Lines up with our November plan and Beau v3 (push attach at full price) |
 | Loni | Reach out to **On3** (college sports media, Nashville) re partnership / product placement | Pete's lane. ⛔ No seeded product without a signed deliverable and deadline |
 | Tommy | Review **Klaviyo** abandoner flows, maybe mock up emails | ⛔ Biljana's lane. We stay out |
 | Loni / team | Investigate **page-view discrepancy** — Meta 30,000 page views on Aug 27, Shopify doesn't show them | Finn testing Shopify sessions by day |
@@ -56,7 +56,7 @@ Aug 30 1,997. Aug 20–21 also elevated (6,257 · 7,325).
 
 ## Where the room and our work agree
 
-- **"The core issue is margin, not ad cost."** ROUX v3 reached the same finding independently:
+- **"The core issue is margin, not ad cost."** Beau v3 reached the same finding independently:
   it's the overhead and the 20% target, not Meta.
 - **Fix UTMs.** Our order-level pull hit exactly this wall.
 - **Bundles to lift AOV and margin.** Real 18 QT orders carry **$210.18** gross profit vs **$142.50**
@@ -73,7 +73,7 @@ Aug 30 1,997. Aug 20–21 also elevated (6,257 · 7,325).
   "Hand-welded in Louisiana" are the claims. See `decisions.md`.
 - Peter raised cost of money (cash advance) eating margin; suggested raising prices or bundling.
   **Pricing is Jay's call.**
-- Peter suggested sourcing Walmart items into bundles — brand risk; ROUX to weigh.
+- Peter suggested sourcing Walmart items into bundles — brand risk; Beau to weigh.
 
 ## Evan's answers on call 1 (2026-09-10)
 

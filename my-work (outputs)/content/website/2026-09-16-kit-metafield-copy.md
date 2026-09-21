@@ -74,7 +74,7 @@ Full 2-year warranty on everything, parts and labor under normal use. Both pots 
 
 ---
 
-## Set in Shopify 2026-09-16 (Atlas, on Evan's ask)
+## Set in Shopify 2026-09-16 (ROUX, on Evan's ask)
 
 Both blocks above were written to each draft product as rich text: `custom.features_benefits` (the bullets, as an unordered list) and `custom.frequently_asked_question` (each question bold, answer below). Metafield IDs: tailgate `63395259318512` / `63395259351280` · turkey `63395259384048` / `63395259416816`. The 7-minute boil claim was kept on both turkey sizes under Evan's 2026-09-14 rule (30 and 60 QT carry it when set up to boil). The other three CHECKs below were written so the copy is true either way and stay open for Evan.
 

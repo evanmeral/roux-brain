@@ -1,10 +1,10 @@
-# Atlas OS — build plan (v3) · BUILT 2026-09-14, two items on Evan
+# ROUX OS — build plan (v3) · BUILT 2026-09-14, two items on Evan
 
 **Date:** 2026-09-14 · **Status:** BUILT (phases 1–5). Waiting on Evan: the one-time Desktop-access click for
-`Atlas OS.app`, and the two calendar addresses in `config.local.json`. Both done 2026-09-14. **Pulse is button-only** (Evan's call, to keep plan usage down; `pulse.schedule`
+`ROUX OS.app`, and the two calendar addresses in `config.local.json`. Both done 2026-09-14. **Pulse is button-only** (Evan's call, to keep plan usage down; `pulse.schedule`
 in `config.json` turns the 6:30 run back on). Next: Weekly check as a headless button, the second-monitor
 layout when the monitor arrives.
-**Owner:** Nova (systems). **Where it will live:** `my-workflows (automations)/live/atlas-os/`
+**Owner:** Nova (systems). **Where it will live:** `my-workflows (automations)/live/roux-os/`
 **v2 → v3 (2026-09-14):** mapped against the ARMS guide (`~/Desktop/ARMS-Agentic-OS-Guide.pdf`,
 RoboNuggets). Changes: headless skill buttons with run status and a `runs.log`, a Routines panel,
 a Made-recently list, a Files tab as the searchable second brain, the Wrap button dropped.
@@ -26,13 +26,13 @@ around that: the screen shows only what he would not think to ask, and every car
    a brief he did not ask for. Read-only against every live system.
 4. **One laptop screen, no scrolling.** The full board is one tab away, not on the daily screen.
 
-## ARMS mapping — where Atlas sits, what this build adds
+## ARMS mapping — where ROUX sits, what this build adds
 
 The guide's frame: an OS is four standing parts (Applications, Routines, Memory, Skills), each at
 three levels, with the command centre as the face on top (its own words: 20 to 30% of the value).
-Atlas already has most of the structure. This build fills the level-3 gaps.
+ROUX already has most of the structure. This build fills the level-3 gaps.
 
-| Part | Where Atlas is today | What this build adds | After |
+| Part | Where ROUX is today | What this build adds | After |
 |---|---|---|---|
 | **S** Skills | L2. Twenty skills in `my-skills/` wired through `.claude/commands/`. `hpc-ad-creative` is a full file-set skill (assets, templates, scripts, brand.css). | **L3: skills as buttons.** File-producing skills run headless (`claude -p`) from the OS with run status and a `runs.log`. Conversation skills open a real session. | L3 |
 | **M** Memory | L2. `CLAUDE.md` is the master router (board, rules, manual, save-to table). `BOARD.md` is the live index with its Map section. `how-this-brain-works.md` is the manual. Obsidian graph view exists. | **L3: the Files tab.** The server indexes the vault live (no refresh script), search as you type, grouped by area, click for preview, path copy, open in Obsidian. Plus `capture.md` and `key-dates.md` as new routed files. | L3 |
@@ -80,7 +80,7 @@ underlying file in Obsidian with one click (`obsidian://` links, scheme verified
 
 ## What is on the Today screen (laptop, ~1440×900, one screen)
 
-**Top bar** — white shield · ATLAS wordmark · clock (large) · date · rhythm chip (Mon Look back ·
+**Top bar** — white shield · ROUX wordmark · clock (large) · date · rhythm chip (Mon Look back ·
 Tue Paid media · Wed Content · Thu Partners and follow-ups · Fri Build) · countdown chips for key
 dates beyond this week · feed-health dot.
 
@@ -98,7 +98,7 @@ dates beyond this week · feed-health dot.
 - **This week** — seven agenda columns, Monday start, both calendars color-coded, today
   highlighted, a now-line. Key dates from `key-dates.md` appear as all-day chips in their column.
 - **Running** — each live campaign with $/day and status, and the daily-cap bar ($314 of $350).
-- **Tell Atlas** — one text box. Enter writes to `capture.md`; `/prime` reads it first.
+- **Tell ROUX** — one text box. Enter writes to `capture.md`; `/prime` reads it first.
 - **Start** — Morning brief · Sort inbox · Wrap · Ask (free text → session with that prompt).
 - **Routines** — each routine, last run time, status, one-click output. Red if a run failed.
 - **Made recently** — the last ten files the brain wrote, open on click (Obsidian).
@@ -172,14 +172,14 @@ task. The read tools it needs are added to the allow list in `.claude/settings.j
   (publish denied in both) and denies the unverified n8n `ask_marketing_agent` in both. Its dead
   `Write(...)` rules were dropped (only `Edit(path)` rules are matched, and they cover Write).
 - **Found:** launchd-spawned processes cannot read `~/Desktop` until macOS grants it. The server
-  is hosted in `~/Applications/Atlas OS.app`, opened through LaunchServices so the prompt can
+  is hosted in `~/Applications/ROUX OS.app`, opened through LaunchServices so the prompt can
   appear; the 6:30 job is a `curl` to the server, so one grant covers both. Evan's one click.
 - **Found:** the desktop app's preview harness could not bind the port; launchd is the runner.
 - **Fixed after a teammate session flagged it (2026-09-14):** the first launcher relaunched every
   15 s and re-raised errors as dialogs while the Desktop grant was missing. Now the launcher checks
   the grant first, shows one dialog with an Open Settings button, and exits; launchd's KeepAlive is
   tied to a grant marker outside the Desktop; `install.sh` registers nothing until the server
-  answers. Also added the Host/Origin guard on the server (POSTs need same-origin or `X-Atlas`).
+  answers. Also added the Host/Origin guard on the server (POSTs need same-origin or `X-ROUX`).
 - **Then retired the app launcher entirely (2026-09-14, from Evan's screenshot):** an ad-hoc-signed
   applet never shows up in Files and Folders, so there was nothing for Evan to toggle. macOS *does*
   list **node** there (the very first launchd run put it there). launchd now runs node directly;
@@ -204,7 +204,7 @@ system (Shopify theme + live site) is orange/red/off-white with Poppins. Buildin
 - `/prime`: read `capture.md` first if it exists.
 - New: `key-dates.md` seeded from today's board · `.claude/commands/pulse.md` · allow-list entries
   for the read tools the pulse needs.
-- `decisions.md`: "Atlas OS is the daily cockpit; Obsidian stays the editor; BOARD.md stays the
+- `decisions.md`: "ROUX OS is the daily cockpit; Obsidian stays the editor; BOARD.md stays the
   single state. Only the brain writes the board; Evan writes to capture.md."
 - `.gitignore`: `node_modules/`, `config.local.json`.
 
@@ -212,7 +212,7 @@ system (Shopify theme + live site) is orange/red/off-white with Poppins. Buildin
 
 1. **Three panels.** Server, board parser, theme, clock. This morning (empty state until the routine
    exists), Now + Waiting on you, This week (needs the two calendar URLs). Start at login, dock app.
-2. **Buttons.** Work on this, Ask, Sort inbox as sessions. Done and Tell Atlas writing `capture.md`.
+2. **Buttons.** Work on this, Ask, Sort inbox as sessions. Done and Tell ROUX writing `capture.md`.
    `/prime` and `/wrap` hooks. `key-dates.md`. `runs.log`.
 3. **The first routine.** `.claude/commands/pulse.md`, the 6:30 launchd job, one test run, the
    Routines panel, the This-morning panel filled for real.

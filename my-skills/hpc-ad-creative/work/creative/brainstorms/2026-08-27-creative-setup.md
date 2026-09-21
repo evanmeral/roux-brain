@@ -1,7 +1,7 @@
 # HPC Creative Setup: Brainstorm / Discovery Notes
-Date: 2026-08-27 · Goal: Set up ROUX to produce static ad creative fluidly — capture Evan's rules, standards, brand latitude, and process so making a creative is a fast, repeatable request rather than a negotiation.
+Date: 2026-08-27 · Goal: Set up Beau to produce static ad creative fluidly — capture Evan's rules, standards, brand latitude, and process so making a creative is a fast, repeatable request rather than a negotiation.
 
-Interviewer: ROUX · Subject: Evan Meral
+Interviewer: Beau · Subject: Evan Meral
 
 ---
 
@@ -40,7 +40,7 @@ to Garrett Frazier**, produced as part of campaign planning so everything is spe
 - **Captured:** the six rules above, the brand-latitude note, the asset drop, and the video/Garrett
   instruction. Also: log every approved creative in a consistently-named folder; **do not save
   anything Evan hasn't approved or edited.**
-- **ROUX's fix from feedback:** the "Buy the cheap one twice" ad had the 80 QT low-right instead of
+- **Beau's fix from feedback:** the "Buy the cheap one twice" ad had the 80 QT low-right instead of
   centred in its black panel, and the timer ad's stats sat against the dividers. Root cause of the
   centring issue: **the cutouts contain large transparent margins**, so sizing the file does not
   centre the product. Solved systematically — measured the alpha bounding box of all 39 cutouts into
@@ -52,9 +52,9 @@ to Garrett Frazier**, produced as part of campaign planning so everything is spe
 - **Captured:**
   - **Channel: everything.** *"Really trying to feed everything, we can specify which when planning out the idea."* → Channel is a per-project decision made at planning time, not a standing default.
   - **⭐ Meta = all three sizes, always.** *"if its for meta ads i would want variations for each of the 3 sizes that meta requires for creatives so like 3 different sizes."* → 1080×1080, 1080×1350, 1080×1920 delivered as a set.
-  - **Copy variations: ROUX's call to propose.** *"if you think we should run different variations of copy on that campaign, then we'll do that, and you can make those different variations."* → Recommend the test, then build it. Don't wait to be asked.
+  - **Copy variations: Beau's call to propose.** *"if you think we should run different variations of copy on that campaign, then we'll do that, and you can make those different variations."* → Recommend the test, then build it. Don't wait to be asked.
   - **Prices/numbers: campaign-dependent.** *"We're about to start a Labor Day sale for those. I would probably want the numbers on there. If we're talking about one product, we could put numbers on there, but we don't have to."*
-- **ROUX's read:** default to **no price on cold prospecting** (80% buy on quality, 10% on price — putting $715 in a cold ad invites the objection before the value lands) and **numbers on offer/promo and retargeting creative**, where the buyer already knows the product.
+- **Beau's read:** default to **no price on cold prospecting** (80% buy on quality, 10% on price — putting $715 in a cold ad invites the objection before the value lands) and **numbers on offer/promo and retargeting creative**, where the buyer already knows the product.
 - **🚨 TIME-SENSITIVE: Labor Day sale is imminent** — Labor Day 2026 is **Monday 7 September**, 11 days out. Needs offer terms, dates, SKUs, and a creative set.
 - **Built in response:** `build-set.sh` renders one concept across all three Meta sizes in a single command; concepts organised as `templates/<concept>/{1x1,4x5,9x16}.html`.
 - **Flags:**

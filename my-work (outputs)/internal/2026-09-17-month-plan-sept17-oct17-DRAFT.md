@@ -1,6 +1,6 @@
 # Month plan: Thu Sept 17 – Sat Oct 17, 2026 · DRAFT v1
 
-**ROUX, 2026-09-17 · for Evan to work through with me · not a decision yet.**
+**Beau, 2026-09-17 · for Evan to work through with me · not a decision yet.**
 Read-only. Nothing was written to Shopify, Meta or Google. Every Meta change below is **Evan's click**.
 
 **Labels:** *(fact, source)* is on file · *(derived)* is my arithmetic on on-file figures · *(judgment)* is my call.
@@ -108,10 +108,10 @@ Plan weeks run **Thursday to Wednesday**, the same alignment as Finn's 2025 tabl
 |---|---|---|---|
 | Thu 17 | Read this draft, answer the §6 decisions | **Evan** | Answers |
 | **Fri 18** | IW checkpoint: Meta pull, Shopify tagged orders, IDs recorded in `campaigns.md` | **Finn** | Checkpoint row |
-| Fri 18 | Call the outcome against §4's pre-written terms | **ROUX** | A, B or C |
+| Fri 18 | Call the outcome against §4's pre-written terms | **Beau** | A, B or C |
 | Fri 18 | Decide, then make the edit in one pass: creative swap, plus `hpc-dark-evergreen` off if B | **Evan** (click) | Change and ID, confirmed in the activity log |
 | Fri 18 | BFCM sign-off, then send to Coalition (Connor, Basecamp) and Biljana | **Jay → Evan** | Sent |
-| Fri 18 | One batched text to Jay: BFCM sign-off, pixel `491960645999331`, the Nov 23 collision, the 25% cap in turkey season | **Evan** (ROUX drafts on request) | One text |
+| Fri 18 | One batched text to Jay: BFCM sign-off, pixel `491960645999331`, the Nov 23 collision, the 25% cap in turkey season | **Evan** (Beau drafts on request) | One text |
 | By Mon 21 | **Chase Biljana** on `HIGH15B`/`SMS25B`. This gates both kits | **Evan** (Ada can draft) | Confirmation |
 | By Mon 21 | Shopify fixes: `SC-7R` sellable online · 18 QT "Made in the USA" card · Platinum SEO title · 30 QT unqualified "5-year warranty" | **Evan or Jay** (click) | 4 fixes, read back by Finn |
 | By Mon 21 | Pause the two $0-spend BM campaigns showing ACTIVE (decision 8) | **Evan** (click) | Paused |
@@ -132,7 +132,7 @@ Plan weeks run **Thursday to Wednesday**, the same alignment as Finn's 2025 tabl
 
 | Day | Job | Owner | Deliverable |
 |---|---|---|---|
-| **Thu 24** | **Scoreboard #1** (§7). Week 1 sets T4's baseline and T5's conservative target | **Finn → ROUX** | Scoreboard |
+| **Thu 24** | **Scoreboard #1** (§7). Week 1 sets T4's baseline and T5's conservative target | **Finn → Beau** | Scoreboard |
 | **Thu 24, noon** | **Tailgate kit go/no-go.** All five, or it slips: Biljana confirmed · `SC-7R` sellable · photos up · eligible-discounts collection excludes `Bundle` (admin check) · checkout test passes with `HIGH15` refused | **Evan** | Go or new date |
 | **Fri 25** | Activate the tailgate kit · publish the kit block · publish the kit ad in `18qt-TOF` (full UTMs, Shop off) | **Evan** (clicks) | Live |
 | Fri 25 | Forward the kits plan §7 suggestions to Coalition on Basecamp, if not already sent | **Evan** | Sent |
@@ -151,8 +151,8 @@ Plan weeks run **Thursday to Wednesday**, the same alignment as Finn's 2025 tabl
 | Day | Job | Owner | Deliverable |
 |---|---|---|---|
 | **Thu Oct 1** | Activate the turkey kit · publish Jay's 30 QT demo ad in BPM (full UTMs, Shop off) · turkey demo live on organic | **Evan** (clicks) · **Sage** | Live |
-| Thu Oct 1 | **Scoreboard #2** · retargeting creative review (the plan's Oct 1 date) | **Finn → ROUX** | Scoreboard |
-| **Fri Oct 2** | **IW second checkpoint**, if outcome B. Kill terms in §4, written today | **Finn → ROUX → Evan** | Continue or pause |
+| Thu Oct 1 | **Scoreboard #2** · retargeting creative review (the plan's Oct 1 date) | **Finn → Beau** | Scoreboard |
+| **Fri Oct 2** | **IW second checkpoint**, if outcome B. Kill terms in §4, written today | **Finn → Beau → Evan** | Continue or pause |
 | Mon Oct 5 | Content week: turkey demo cuts, tailgate kit, boil content | Automation → **Evan** → Sage | Week |
 | By Wed 7 | Garrett's other cuts: the 60 QT shrimp boil and the 18 QT remake go into the creative queue | **Leo** (brief) · **Maya** (paid use) | Queue |
 | Ongoing | 18 QT ladder check: trailing-7 CPP ≤ $30, frequency ≤ 2.5 | **Finn** | Pass/fail |
@@ -163,19 +163,19 @@ Plan weeks run **Thursday to Wednesday**, the same alignment as Finn's 2025 tabl
 
 | Day | Job | Owner | Deliverable |
 |---|---|---|---|
-| **Thu Oct 8** | **Scoreboard #3** · first tailgate kit share read (2 weeks) · turkey orders for the week of Oct 5 vs 2025's 9 | **Finn → ROUX** | Scoreboard |
-| Thu Oct 8 | **Turkey weight call:** if the week of Oct 5 ≥ 2025, shift weight toward the turkey ad *inside BPM's $164 and the cap*. If not, hold | **ROUX** recommends · **Evan** clicks | Call |
-| Mon Oct 12 | **Retargeting day 14: the scaling gate** (frequency ≤ 2.5, CPP inside its working line, Shopify tagged orders > 0). Any raise is a swap | **Finn → ROUX → Evan** | Hold / raise-by-swap |
+| **Thu Oct 8** | **Scoreboard #3** · first tailgate kit share read (2 weeks) · turkey orders for the week of Oct 5 vs 2025's 9 | **Finn → Beau** | Scoreboard |
+| Thu Oct 8 | **Turkey weight call:** if the week of Oct 5 ≥ 2025, shift weight toward the turkey ad *inside BPM's $164 and the cap*. If not, hold | **Beau** recommends · **Evan** clicks | Call |
+| Mon Oct 12 | **Retargeting day 14: the scaling gate** (frequency ≤ 2.5, CPP inside its working line, Shopify tagged orders > 0). Any raise is a swap | **Finn → Beau → Evan** | Hold / raise-by-swap |
 | By Wed 14 | BFCM ad concepts (copy and angle, statics after approval) for the signed offer | **Maya** | Draft |
-| By Wed 14 | Draft of the Oct 18–Nov 23 plan: turkey peak, the 25% cap question, BFCM runway | **ROUX** | Draft |
+| By Wed 14 | Draft of the Oct 18–Nov 23 plan: turkey peak, the 25% cap question, BFCM runway | **Beau** | Draft |
 
 ### Stub · Thu Oct 15 – Sat Oct 17
 
 | Day | Job | Owner |
 |---|---|---|
-| Thu Oct 15 | **Scoreboard #4** · the Oct 18–Nov 23 plan to Evan | Finn → ROUX |
+| Thu Oct 15 | **Scoreboard #4** · the Oct 18–Nov 23 plan to Evan | Finn → Beau |
 | By Fri Oct 16 | BFCM v6 landing page built as a **Shopify draft**, not published | **Nova** · Evan reviews |
-| **Mon Oct 19** | **Month close:** T1–T5 final, one page for Jay via `hpc-scoreboard-report` framing | **Finn → ROUX → Evan → Jay** |
+| **Mon Oct 19** | **Month close:** T1–T5 final, one page for Jay via `hpc-scoreboard-report` framing | **Finn → Beau → Evan → Jay** |
 
 **Evan's clicks for the month:** about 15, listed in the tables above. Everything else is drafted, pulled or built before it reaches him.
 
@@ -211,7 +211,7 @@ Plan weeks run **Thursday to Wednesday**, the same alignment as Finn's 2025 tabl
 **The rule on file** *(campaigns.md, agreed 2026-09-14)*: if Shopify-matched orders are still 0 and spend has passed the $73 ceiling per real order, that's a real cut conversation.
 **Where it stands:** $593.89 lifetime · 2 Meta purchases · **0 Shopify-tagged orders** · still Learning *(fact)*.
 
-| Outcome on Sept 18 | Test | ROUX's recommendation |
+| Outcome on Sept 18 | Test | Beau's recommendation |
 |---|---|---|
 | **A: signal** | ≥ 1 Shopify-tagged order **and** Meta CPP ≤ **$189** (the Performance pots incremental ceiling) | Continue at $100. Swap in the approved creative, one edit. Next read Fri Oct 2 |
 | **B: no Shopify signal, still inside break-even** | 0 tagged orders · Meta CPP between $189 and **$365** (Performance pots break-even, 12 months) | **Refocus, don't just continue.** One edit: swap the creative **and switch off `hpc-dark-evergreen`**, so the $100 goes to the two 120 QT ads. That's the main-push test we meant to run. It accepts one Learning reset, which we'd take for the swap anyway. **Hard kill Fri Oct 2** (about $1,400 more): pause if there are still **0 Shopify-tagged pot, Triple Jet or bundle orders**, or if Meta CPP is **> $189** |
@@ -337,7 +337,7 @@ Plan weeks run **Thursday to Wednesday**, the same alignment as Finn's 2025 tabl
 ## 7. Weekly scoreboard
 
 **When:** every **Thursday by 10:00 CT**, covering the plan week that ended Wednesday: **Sept 24 · Oct 1 · Oct 8 · Oct 15**. Month close is **Mon Oct 19**.
-**Who:** Finn pulls → ROUX writes the calls (one line per target: on pace, behind, or act) → Evan decides anything marked "act".
+**Who:** Finn pulls → Beau writes the calls (one line per target: on pace, behind, or act) → Evan decides anything marked "act".
 **Automation:** Nova can schedule it as a task, which is Evan's call. The Monday scoreboard task is gone *(board)*. This replaces it for the month.
 
 ### The pull

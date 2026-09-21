@@ -1,6 +1,6 @@
 # Email & SMS Playbook
 
-> ⛔ **NOT ROUX'S LANE. Reference only — do not act on this.**
+> ⛔ **NOT Beau'S LANE. Reference only — do not act on this.**
 > **Biljana owns email and Klaviyo completely.** Evan, 2026-08-28: *"Don't be messing over there.
 > We don't need to do anything with email. She has it covered."*
 > Do not propose email work, request Klaviyo access, or analyse email performance. This file stays

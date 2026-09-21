@@ -1,11 +1,11 @@
-# Atlas OS
+# ROUX OS
 
 Evan's daily cockpit. A local page at **http://localhost:4242** that reads the brain's files and
 shows the day: the time, the week, what is due, what is waiting on Evan, what is live and spending,
-and what the brain found this morning. Spec: `../../specs/2026-09-14-atlas-os-plan.md`.
+and what the brain found this morning. Spec: `../../specs/2026-09-14-roux-os-plan.md`.
 
 **It never writes `BOARD.md`.** The only brain file it writes is `my-desk (now)/capture.md`
-(the Tell Atlas box and the Done buttons), which `/prime` reads and `/wrap` folds into the board.
+(the Tell ROUX box and the Done buttons), which `/prime` reads and `/wrap` folds into the board.
 It holds no Shopify, Meta or Google credentials and cannot reach them.
 
 ## Run
@@ -26,7 +26,7 @@ It holds no Shopify, Meta or Google credentials and cannot reach them.
   Settings → Privacy & Security → Files and Folders → Terminal → Desktop Folder. Without it the
   session fails at once; the window now stays open and says so.
 - **Request guard:** the server answers only requests with a localhost Host header, and accepts a
-  POST only from the page itself (same-origin) or with an `X-Atlas` header (the 6:30 curl). A web
+  POST only from the page itself (same-origin) or with an `X-ROUX` header (the 6:30 curl). A web
   page in the browser cannot reach the write endpoints.
 - **By hand:** `node server.js` in this folder.
 - **As a dock app:** open http://localhost:4242 in Safari, then File → Add to Dock. It gets its own
@@ -45,7 +45,7 @@ It holds no Shopify, Meta or Google credentials and cannot reach them.
 press. An old `today.md` is normal and is never reported as a fault.
 
 `.claude/commands/pulse.md` is the prompt; `pulse.sh` runs it headless (`claude -p`, Sonnet 5 by
-default, `ATLAS_PULSE_MODEL` overrides) and logs to `runs.log`. It runs on Evan's claude.ai Max
+default, `ROUX_PULSE_MODEL` overrides) and logs to `runs.log`. It runs on Evan's claude.ai Max
 plan (the CLI is signed in with that account, no API key), so it spends plan allowance, not money. Reads only: Meta (HP Cookers ADs),
 Shopify (ShopifyQL), both calendars, the board, key dates, capture. Writes `today.md` and
 `pulse/<date>.json`. First real run 2026-09-14: 97 s, about $0.82, no permission denials. The

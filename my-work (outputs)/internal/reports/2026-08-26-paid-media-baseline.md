@@ -1,5 +1,5 @@
 # Paid Media Baseline — Meta + Google
-**Pulled 2026-08-26 by ROUX, read-only, direct from Meta Ads Manager and Google Ads. Nothing changed.**
+**Pulled 2026-08-26 by Beau, read-only, direct from Meta Ads Manager and Google Ads. Nothing changed.**
 Accounts: Meta **HP Cookers ADs** (4392736013287) · Google **High Performance Cookers - (CT)** (579-879-1988)
 
 > Replaces all Venon figures. Venon is not used.
@@ -141,8 +141,8 @@ are claiming the same orders. **Never add them, and never report them to Jay as 
   question is only whether it stays above break-even.
 - **Capacity is not a constraint** — Evan confirmed HPC can fill a spike and will flag it if not.
 
-⚠️ **Every one of these is a budget change. Budget changes are Evan's click, not ROUX's.**
-ROUX has made no changes to either account.
+⚠️ **Every one of these is a budget change. Budget changes are Evan's click, not Beau's.**
+Beau has made no changes to either account.
 
 ---
 

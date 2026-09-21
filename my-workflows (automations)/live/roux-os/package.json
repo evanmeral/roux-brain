@@ -1,8 +1,8 @@
 {
-  "name": "atlas-os",
+  "name": "roux-os",
   "private": true,
   "version": "0.1.0",
-  "description": "Evan's daily cockpit for Atlas. Reads the brain's files and renders them. Never writes the board.",
+  "description": "Evan's daily cockpit for ROUX. Reads the brain's files and renders them. Never writes the board.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

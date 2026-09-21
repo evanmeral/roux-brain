@@ -1,5 +1,5 @@
 # Kit build record — three kits created in Shopify as drafts
-**2026-09-16 · Atlas, on Evan's go ("go, 12\" is right, long titles").** Every write below was approved in-conversation for this specific change. Copy: Maya, [2026-09-16-kit-pdp-copy.md](../content/website/2026-09-16-kit-pdp-copy.md). Spec: [bundles plan](2026-09-11-tailgate-thanksgiving-bundles-plan.md).
+**2026-09-16 · ROUX, on Evan's go ("go, 12\" is right, long titles").** Every write below was approved in-conversation for this specific change. Copy: Maya, [2026-09-16-kit-pdp-copy.md](../content/website/2026-09-16-kit-pdp-copy.md). Spec: [bundles plan](2026-09-11-tailgate-thanksgiving-bundles-plan.md).
 
 **Status: both products are DRAFT, and staying that way for now (Evan, 2026-09-16 afternoon): Jay approves the built kits first, then how they get used is a separate conversation.** Nothing is visible to customers. Also gating activation: Biljana's flows on `HIGH15B`/`SMS25B` with the old two off (board landmine).
 
@@ -33,10 +33,10 @@ Mutations, in order (all validated against the schema first): `productSet` ×2 (
 
 ## Things to know
 
-- ⚠️ **Bundle ownership sits with the Claude Shopify connector app** (Shopify assigns it to whichever app attaches components). Price, copy, tags, images and status are editable in admin as normal. **Changing a kit's components goes through Atlas** (`productVariantRelationshipBulkUpdate`), not the Shopify Bundles app.
+- ⚠️ **Bundle ownership sits with the Claude Shopify connector app** (Shopify assigns it to whichever app attaches components). Price, copy, tags, images and status are editable in admin as normal. **Changing a kit's components goes through ROUX** (`productVariantRelationshipBulkUpdate`), not the Shopify Bundles app.
 - ⚠️ **Skimmer `SC-7R` reads `availableForSale: false`** — inventory −1, tracked, policy DENY *(Shopify Admin, 2026-09-16)*. **Evan, 2026-09-16: skimmers are in stock**, so this is a wrong Shopify count, not a shelf problem. **Confirmed on the live site the same day:** the storefront's own product data (`/products/…skimmer.js`) returns `available: false`, so the standalone skimmer cannot be bought online today. All three kits contain it. Whether a DENY component at −1 also blocks the kit at checkout cannot be tested while the kits are drafts. **Fix before Sept 25, Evan's or Jay's click:** correct the count (Digit is the inventory truth) or set the skimmer to continue selling. Legs (`LegExtensions`) and the 30 QT pot (`PW30-VLV075-TFR-B`) are also at −1 but on CONTINUE, so they sell.
 - The **"All Products - Eligible for Discounts" collection is invisible to the connector** (title search returns nothing, as the code-fix doc recorded). The Bundle exclusion landed 2026-09-15 per the board; not re-verifiable from here. `Sale-NoDiscount` on every kit is the second guard. Evan's eye in admin before activation.
-- **Photos are placeholders** (the hero pot's own shot). **Evan is shooting the kits 2026-09-16.** Upload in admin, or hand them to Atlas to attach.
+- **Photos are placeholders** (the hero pot's own shot). **Evan is shooting the kits 2026-09-16.** Upload in admin, or hand them to ROUX to attach.
 - `wspricing-all-non-commercial-products` picked both kits up automatically. `HPC10` and `Stale30` were repointed away from it on 2026-09-15, so no code reaches the kits through it.
 
 ## Before going live (checklist)
@@ -62,13 +62,13 @@ Mutations, in order (all validated against the schema first): `productSet` ×2 (
 - ⚠️ **Found in passing, not diagnosed:** the Platinum variant `60 QT / 1" Gate Valve - (Add $10)` (`ProductVariant/48820352123120`) lists only the burner and brackets as components, **with no pot**. Only Platinum's first 5 variants were read. Worth Evan's look in the Bundles app.
 
 **What carries over to the new bundle products** (from the drafts above): long titles · descriptions with the Prop 65 block · `custom.features_benefits` + `custom.frequently_asked_question` · tags (Bundle · Sale-NoDiscount · Tailgater/Turkey · no-wholesale · Fryer) · `BUNDLE-…` SKUs · prices and compare-at · type `Home & Garden`, vendor HPC.
-**Old drafts:** archived once the new ones are read back, never deleted by Atlas.
+**Old drafts:** archived once the new ones are read back, never deleted by ROUX.
 
 ---
 
 ## 2026-09-17, late: the three Bundles-app kits are built and finished
 
-Evan created them in **Apps → Bundles**; Atlas finished them through the connector on his go. The old connector-built drafts are **ARCHIVED** (`Product/10292065861872`, `Product/10292066353392`) — archived, not deleted.
+Evan created them in **Apps → Bundles**; ROUX finished them through the connector on his go. The old connector-built drafts are **ARCHIVED** (`Product/10292065861872`, `Product/10292066353392`) — archived, not deleted.
 
 | | Tailgate Fry Kit | Turkey Fry Kit (one-bird) | Turkey Fry Kit (two-bird) |
 |---|---|---|---|
@@ -87,7 +87,7 @@ Evan created them in **Apps → Bundles**; Atlas finished them through the conne
 
 ---
 
-## 2026-09-21: kit photos on all three kits (Atlas, on Evan's go: "put the images on their products")
+## 2026-09-21: kit photos on all three kits (ROUX, on Evan's go: "put the images on their products")
 
 Written with `stagedUploadsCreate` + `productUpdate(media:)`; read back the same session *(Shopify GraphQL)*: every image READY, 2400×2400, the kit shot is the featured image, all three still **DRAFT**. Images are the 2026-09-21 cutouts set on pure white, square, to match the store's existing gallery (Platinum's are 3200 square on white). Each has alt text; file names are descriptive.
 

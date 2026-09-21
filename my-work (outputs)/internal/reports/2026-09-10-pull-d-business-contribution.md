@@ -1,7 +1,7 @@
 # Pull D: business-level gross profit, all orders
 **2026-09-10 · Finn, read-only Shopify · input to [cac-ceilings-v3](2026-09-10-cac-ceilings-v3.md) section 5, Pull D**
 
-Nothing was written to Shopify, Meta or Google. Window: **Sep 1 2025 – Aug 31 2026**, Central time, matching the overhead denominator. Every order figure is from Shopify Admin GraphQL rows pulled 2026-09-10. Totals and percentages are **derived by Finn** from those rows. **No overhead, variable cost, CAC or net-profit figure is computed here.** That's ROUX's.
+Nothing was written to Shopify, Meta or Google. Window: **Sep 1 2025 – Aug 31 2026**, Central time, matching the overhead denominator. Every order figure is from Shopify Admin GraphQL rows pulled 2026-09-10. Totals and percentages are **derived by Finn** from those rows. **No overhead, variable cost, CAC or net-profit figure is computed here.** That's Beau's.
 
 ⚠️ The window spans **2026-07-20** (BM Digital fired). That's irrelevant to gross profit totals, but it matters for the ad spend in section 5: two operators.
 
@@ -242,6 +242,6 @@ The totals were computed in Python over the saved rows, with the same line logic
 
 ---
 
-**Next:** ROUX. The business-level gross profit is real, and so is the ad-spend gap. Whether $1.19M of gross profit covers $594,600 of overhead after variable costs and ad spend, and what that means for per-ad ceilings, is a call, not a query.
+**Next:** Beau. The business-level gross profit is real, and so is the ad-spend gap. Whether $1.19M of gross profit covers $594,600 of overhead after variable costs and ad spend, and what that means for per-ad ceilings, is a call, not a query.
 
 → [cac-ceilings-v3](2026-09-10-cac-ceilings-v3.md) · [order-level pulls](2026-09-10-order-level-pulls.md) · [overhead orders](2026-09-10-orders-for-overhead-allocation.md) · [Board](../../../my-desk%20%28now%29/BOARD.md)

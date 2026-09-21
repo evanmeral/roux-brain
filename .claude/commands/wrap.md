@@ -19,7 +19,7 @@ useless.**
 
 Keep the existing section order: Running · Now · Waiting on · Parked · Landmines ·
 Numbers · Map.
-**Atlas OS parses the board by these H2 headings and the Waiting table's three columns
+**ROUX OS parses the board by these H2 headings and the Waiting table's three columns
 (Who · What · Since). Keep them exactly; the page goes red if one is missing.**
 
 Rules for each section:
@@ -36,7 +36,7 @@ Rules for each section:
 
 Update the date in the title.
 
-**Fold in `my-desk (now)/capture.md` first.** Every line there came from Evan through Atlas OS.
+**Fold in `my-desk (now)/capture.md` first.** Every line there came from Evan through ROUX OS.
 A `Done:` line clears its Waiting row (or Now item). A plain note becomes a board line, a
 decision, or a business-file fact, whichever it is. Then move the lines you processed to
 `my-desk (now)/archive/captures.md` (append, dated) and leave `capture.md` with only its header.
@@ -44,7 +44,7 @@ Nothing from capture is deleted, only moved.
 
 **Keep `my-desk (now)/key-dates.md` current.** One row per date that drives work, with its
 source. Add any new date that landed on the board this session; remove rows whose date has
-passed (to `archive/` if it mattered). Atlas OS reads this table for the countdown chips.
+passed (to `archive/` if it mattered). ROUX OS reads this table for the countdown chips.
 
 ## 2. Log any decisions
 

@@ -1,6 +1,6 @@
 # Metrics & Goals
 
-> **Status: mostly empty by necessity.** ROUX has no performance data access yet.
+> **Status: mostly empty by necessity.** Beau has no performance data access yet.
 > Filling this file is Tier-1 homework — see `CLAUDE.md` §5.
 
 ## The scoreboard (what we actually manage to)
@@ -28,7 +28,7 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 
 ## 🎯 CAC — always report this alongside ROAS (Evan, 2026-08-27)
 
-> 🚨 **SUPERSEDED AGAIN, 2026-09-14:** real landed cost, $49,550/mo overhead, and a 20% net target → `internal/reports/2026-09-10-cac-ceilings-v3.md` + `2026-09-10-overhead-method-options.md` + `internal/reports/2026-09-14-marketing-budget-model-20pct-net.md`. **The incremental rule is now Jay's official rule (2026-09-14, not just a ROUX recommendation):** no overhead in ad ceilings, each ad leaves ≥20% of the order after ad cost, 20% checked monthly at business level. The **20%-net annual marketing room is $290,600/yr** (confirmed 2026-09-14 — Jay confirmed the $6,800/mo agency retainer was double-counted inside both overhead and the P&L's agency-fees line; correcting it moved the room up from an earlier $209,000 read). **Don't use the tables below.**
+> 🚨 **SUPERSEDED AGAIN, 2026-09-14:** real landed cost, $49,550/mo overhead, and a 20% net target → `internal/reports/2026-09-10-cac-ceilings-v3.md` + `2026-09-10-overhead-method-options.md` + `internal/reports/2026-09-14-marketing-budget-model-20pct-net.md`. **The incremental rule is now Jay's official rule (2026-09-14, not just a Beau recommendation):** no overhead in ad ceilings, each ad leaves ≥20% of the order after ad cost, 20% checked monthly at business level. The **20%-net annual marketing room is $290,600/yr** (confirmed 2026-09-14 — Jay confirmed the $6,800/mo agency retainer was double-counted inside both overhead and the P&L's agency-fees line; correcting it moved the room up from an earlier $209,000 read). **Don't use the tables below.**
 >
 > 🚨 **SUPERSEDED IN PART — see `my-work (outputs)/internal/reports/2026-08-28-cac-model-v2.md`.**
 > Robert (co-owner) correctly identified that the "allowable CAC" below is **gross profit per unit**,
@@ -212,7 +212,7 @@ sorting tables · 100 QT steamer rack.
 **Who pays:** HPC fronts it, *"but the customer in the end pays all the shipping."*
 
 ### 🔑 What this changes
-**Freight is NOT a margin drag — it's passed through.** ROUX's earlier working assumption (that
+**Freight is NOT a margin drag — it's passed through.** Beau's earlier working assumption (that
 freight would eat 10–20% of contribution margin on big pots) was **wrong**. Contribution margin is
 materially better than feared, and **break-even ROAS is lower than the 3.3 previously estimated.**
 
@@ -231,7 +231,7 @@ section) walks every commercial buyer through what they're getting and how it sh
 fee is known well before it's incurred. No fix needed.
 
 ## The one number that matters most
-**Contribution margin, not ROAS.** ROUX will not recommend scaling anything on ROAS alone.
+**Contribution margin, not ROAS.** Beau will not recommend scaling anything on ROAS alone.
 
 **Break-even ROAS = 1 ÷ contribution margin.** With freight passed through, the only missing input is
 COGS:

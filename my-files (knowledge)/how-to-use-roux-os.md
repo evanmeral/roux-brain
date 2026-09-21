@@ -1,7 +1,7 @@
-# How to use Atlas OS
+# How to use ROUX OS
 
 **For Evan.** Two pages. Read once, then keep it in the Links strip on the page.
-Address: `localhost:4242`, or the Atlas icon in your Dock.
+Address: `localhost:4242`, or the ROUX icon in your Dock.
 
 ---
 
@@ -19,14 +19,14 @@ question you actually have. So this one follows two rules:
    library: ask in chat. The screen only shows what nobody asks for and everybody needs: the
    time, the week, what is waiting on you, what is live and spending, what the brain found.
 2. **Every card does something.** Work on this opens a session with the context loaded. Done
-   tells the brain. Tell Atlas is an inbox the next session reads first. Files finds anything in
+   tells the brain. Tell ROUX is an inbox the next session reads first. Files finds anything in
    the vault in two keystrokes.
 
 If a panel stops earning its place, say so in chat and it gets deleted. Small on purpose.
 
 ## The two-minute morning
 
-1. Open Atlas. Glance at the top bar: the clock, the countdown chips, the dot on the right.
+1. Open ROUX. Glance at the top bar: the clock, the countdown chips, the dot on the right.
    Gold chips are inside a week, red inside two days. A red dot means a feed is down and the
    bottom line says which.
 2. Press **Pulse now** and go get coffee. Ninety seconds later **This morning** holds your top
@@ -44,7 +44,7 @@ Then close it. That is the whole routine.
 
 | When | Do |
 |---|---|
-| Jay says something, or you think of something at 9pm | Type it in **Tell Atlas** and press Save. The next session reads it before anything else. Nothing said between sessions is lost anymore. |
+| Jay says something, or you think of something at 9pm | Type it in **Tell ROUX** and press Save. The next session reads it before anything else. Nothing said between sessions is lost anymore. |
 | You finished a thing that is on the board | Press **Done** on its row. It greys out, and the next wrap clears it from the board. You never edit the board by hand. |
 | You need a file and cannot remember where it is | **Files** tab, or Cmd+K. Type one word from the name or folder. Click to preview, Open in Obsidian, or Copy path to paste into chat. |
 | You need a number or a "what does this mean" | Ask in a Claude Code chat, as now. The page is not a chat and will not become one (Evan, 2026-09-14). |
@@ -75,7 +75,7 @@ page updates itself within a second. You never save, refresh, or sync anything.
 ## What it will never do
 
 - Write to Shopify, Meta, Google, or Gmail. It holds no logins for them and cannot reach them.
-- Write the board. Only the brain writes the board, at wrap. Your Done and Tell Atlas lines go to
+- Write the board. Only the brain writes the board, at wrap. Your Done and Tell ROUX lines go to
   `capture.md`, which is an inbox.
 - Cost money. The page is local code. The pulse and the buttons run on your Claude plan, same as
   chatting, and the pulse only runs when you press it.
@@ -84,9 +84,9 @@ page updates itself within a second. You never save, refresh, or sync anything.
 ## If it looks wrong
 
 - Red text under a panel names the broken feed. The bottom status line lists every feed.
-- The page is blank or will not load: it is not running. In Terminal, in the atlas-os folder,
+- The page is blank or will not load: it is not running. In Terminal, in the roux-os folder,
   `./install.sh` starts it and makes it start at login again. `./uninstall.sh` removes it.
-- The calendar is empty: the two addresses live in `config.local.json` in the atlas-os folder.
+- The calendar is empty: the two addresses live in `config.local.json` in the roux-os folder.
 - Logs are in `logs/` in that folder. Every pulse and session is one line in `runs.log`.
 
 ## The habit that keeps it alive
@@ -100,4 +100,4 @@ The page is built and edited by the brain, so every change is a sentence in chat
 
 ---
 
-Related: [how this brain works](how-this-brain-works.md) · [the OS spec and build log](../my-workflows%20%28automations%29/specs/2026-09-14-atlas-os-plan.md) · [README (technical)](../my-workflows%20%28automations%29/live/atlas-os/README.md)
+Related: [how this brain works](how-this-brain-works.md) · [the OS spec and build log](../my-workflows%20%28automations%29/specs/2026-09-14-roux-os-plan.md) · [README (technical)](../my-workflows%20%28automations%29/live/roux-os/README.md)

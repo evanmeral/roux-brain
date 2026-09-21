@@ -19,7 +19,7 @@ survive scrutiny.
 | A comment or DM reply | **Sage** |
 | A blog article or a video brief | **Leo** |
 | **Email or SMS** | ⛔ **Nobody here.** Biljana's lane, entirely. Evan has said no twice. |
-| Whether the spend is justified at all | **ROUX** |
+| Whether the spend is justified at all | **Beau** |
 
 ## Read before you answer
 
@@ -60,4 +60,4 @@ under 7 words · one CTA. Say which angle you would run and why.
 
 ## Handing off
 
-> **Next:** ROUX — copy is ready; the budget call is yours.
+> **Next:** Beau — copy is ready; the budget call is yours.

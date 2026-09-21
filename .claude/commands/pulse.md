@@ -1,4 +1,4 @@
-The pulse. **Button-only: it runs when Evan presses Pulse now in Atlas OS, and at no other time** (Evan, 2026-09-14). Nothing schedules it. It runs headless. **Reads only.**
+The pulse. **Button-only: it runs when Evan presses Pulse now in ROUX OS, and at no other time** (Evan, 2026-09-14). Nothing schedules it. It runs headless. **Reads only.**
 Writes exactly two files: `my-desk (now)/today.md` and `my-desk (now)/pulse/YYYY-MM-DD.json`.
 
 Do not run the /prime briefing and do not write a chat reply for Evan; nobody is reading the
@@ -70,7 +70,7 @@ chat. The two files are the whole output. Still read `my-desk (now)/BOARD.md`,
 - (each failed read, plainly: "Could not read Meta: <reason>", or "none")
 ```
 
-Keep headings exactly as shown; Atlas OS renders this file by them. Skip the Capture section
+Keep headings exactly as shown; ROUX OS renders this file by them. Skip the Capture section
 only if the file does not exist. Then write `my-desk (now)/pulse/YYYY-MM-DD.json` with the same
 figures as data: `{ "date", "runAt", "meta": { "total", "byCampaign": [...], "source" },
 "shopify": { "orders", "net", "source" }, "problems": [...] }`, using `null` for anything not read.

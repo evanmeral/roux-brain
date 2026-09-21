@@ -1,7 +1,7 @@
 # Key dates
 
 > One row per date that drives work. **Kept current by `/wrap`**: add a date when it lands on
-> the board, remove it once it has passed (to `archive/` if it mattered). Atlas OS reads this
+> the board, remove it once it has passed (to `archive/` if it mattered). ROUX OS reads this
 > table for the countdown chips and the week view. Every row names where the date came from.
 
 | Date | What | Source |
@@ -18,7 +18,7 @@
 | 2026-10-02 | IW lookalike 120 QT read (pause / hold / continue) | PLAN.md · Evan 2026-09-17 |
 | 2026-10-15 | Turkey weight call (Oct 8–14 turkey sales vs 2025 $3,832) | PLAN.md · Evan 2026-09-17 |
 | 2026-10-19 | Turkey weight live inside BPM (Evan's click) | PLAN.md · Evan 2026-09-17 |
-| 2026-10-22 | ROUX November pre-read (turkey peak, low-ticket policy, BFCM runway) | PLAN.md · Evan 2026-09-17 |
+| 2026-10-22 | Beau November pre-read (turkey peak, low-ticket policy, BFCM runway) | PLAN.md · Evan 2026-09-17 |
 | 2026-10-30 | Score the Sept 17–Oct 31 plan + draft November plan (scheduled task) | month-plan skill · Evan 2026-09-17 |
 | 2026-11-02 | BFCM landing page done (told Coalition + Biljana "around the beginning of November"; internal draft target Fri Oct 23) | Evan's messages 2026-09-18 |
 | 2026-11-16 | Earliest public BFCM mention (asked of Coalition + Biljana) | Evan's messages 2026-09-18 |

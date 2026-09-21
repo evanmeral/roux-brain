@@ -14,7 +14,7 @@
 > Report **blended MER** to Jay, not platform ROAS.
 
 ## 🚧 LANES — who owns what (Evan, 2026-08-26)
-| Channel | Owner | ROUX's role |
+| Channel | Owner | Beau's role |
 |---|---|---|
 | **Google Ads** | **Coalition** | **Monitor + report only.** Route suggestions through Evan, who relays. Never propose direct changes. |
 | **SEO** | **Coalition** (2+ yrs) | Same — monitor, suggest via Evan. |
@@ -27,7 +27,7 @@
 > may not have** (break-even ROAS, per-SKU margin), not as instructions.
 
 ## 🎯 Current priority: scale what already works
-**ROUX + Evan's lane (Meta)** — ⚠️ **revised 2026-08-28 on real CSV data:**
+**Beau + Evan's lane (Meta)** — ⚠️ **revised 2026-08-28 on real CSV data:**
 1. ⛔ **Do NOT raise `18qt-TOF-Prospecting`.** $72.24 CPP against a ~$63 ceiling — it's over.
    Its CPM ($23.72) is nearly double BPM_TOF_Manual's ($13.16). Fix cost first.
 2. `BPM_TOF_Manual` ($56.00 CPP, 7.60 ROAS) is the efficient campaign — but **frequency is 5.20**.
@@ -42,7 +42,7 @@
 - ⚠️ 60 QT Powered Cooker carries only 28.9% margin (break-even 3.9) — flag before it gets scaled
 
 **Guardrails:** ≤20–30% per campaign per week · stop if blended MER drops below **2.8** ·
-expect efficiency decay as spend rises · **every budget change is Evan's click, not ROUX's.**
+expect efficiency decay as spend rises · **every budget change is Evan's click, not Beau's.**
 
 ## Budget philosophy
 1. **Season-weighted, not flat.** Spend should roughly track the demand curve in

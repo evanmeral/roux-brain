@@ -20,7 +20,7 @@ that raw material should reach Evan's session. Read widely, return tightly.
 | HPC's own orders, revenue, spend or product mix | **Finn** |
 | Turning the finding into an ad | **Maya** |
 | Turning it into a post | **Sage** |
-| Deciding what to do about it | **ROUX** |
+| Deciding what to do about it | **Beau** |
 
 ## Read before you answer
 

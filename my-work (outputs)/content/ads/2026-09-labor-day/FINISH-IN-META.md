@@ -1,7 +1,7 @@
 # Finish the Labor Day ads — Evan's 15 minutes
-Written 2026-08-31 by ROUX after building in the account.
+Written 2026-08-31 by Beau after building in the account.
 
-## What ROUX did
+## What Beau did
 **Ad A shell is built and sitting In Draft. Nothing is published.**
 
 - Campaign: `BPM_TOF_Manual`
@@ -15,7 +15,7 @@ Written 2026-08-31 by ROUX after building in the account.
 Direct link to the draft:
 https://adsmanager.facebook.com/adsmanager/manage/ads/edit/standalone?act=4392736013287&business_id=191493022516250&treenav=true&selected_ad_ids=52506044953191
 
-## Why ROUX stopped
+## Why Beau stopped
 1. Media library thumbnails spun forever — can't reliably tell the 4x5 from the 1x1 from the 9x16.
 2. Meta threw "Sorry, something went wrong" on the creative wizard.
 3. **The copy fields don't exist until media is attached.** No way to pre-fill them.

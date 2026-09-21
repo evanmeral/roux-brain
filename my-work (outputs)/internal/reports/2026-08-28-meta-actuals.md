@@ -43,7 +43,7 @@ Robert's method puts the 18 QT ceiling at **~$63** with a 20% overhead reserve.
 
 **It's over by roughly $9 a sale — losing money once overhead is covered.**
 
-This is the campaign ROUX recommended raising **first**, on the basis of a "$61.63 CPP against a $131
+This is the campaign Beau recommended raising **first**, on the basis of a "$61.63 CPP against a $131
 ceiling." Both halves of that were wrong: the ceiling was a break-even line (Robert's correction),
 and the true CPP across the full period is $72.24, not $61.63.
 
@@ -64,7 +64,7 @@ doesn't bind — it needs a mix-weighted ceiling (see `2026-08-28-cac-model-v2.m
 | Jan 1 – Jul 11 | **$1,036/day** |
 | Jul 12 – Aug 28 | **$236/day** |
 
-**Now running at 23% of the prior rate.** ROUX's earlier 62% figure came from a browser view that
+**Now running at 23% of the prior rate.** Beau's earlier 62% figure came from a browser view that
 only showed some campaigns — the CSV is authoritative. The opportunity is bigger than stated, but
 Finding 1 means it isn't as simple as turning the dial up.
 
@@ -107,7 +107,7 @@ The agency spent **$132,115 at roughly a third of the efficiency** of the campai
 running — **3.07× the cost per purchase.** Their best campaign (External Whitelisting, 5.14) never
 matched the in-house workhorse; their worst (GUGC, 1.76) was below break-even at any margin.
 
-ROUX's earlier estimate ($60,738 at 4.20 ROAS) understated it because the browser view showed only
+Beau's earlier estimate ($60,738 at 4.20 ROAS) understated it because the browser view showed only
 part of the account.
 
 ---

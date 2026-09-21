@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.atlas.os</string>
+  <string>com.roux.os</string>
   <!-- node runs the server directly. macOS files the Desktop-folder grant under "node" in
        System Settings > Privacy & Security > Files and Folders; that toggle is what lets it
        read the vault. No dialogs: node has no UI, and a refused start just logs and retries

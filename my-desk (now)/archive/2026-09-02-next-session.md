@@ -4,7 +4,7 @@
 > immediately under this line are the open work, in priority order. Everything below the Labor Day
 > block is standing context.
 
-> 🆕 **This brain moved.** `~/Desktop/HPC/HPC-MKTG/` was migrated into Atlas and deleted on 2026-09-01.
+> 🆕 **This brain moved.** `~/Desktop/HPC/HPC-MKTG/` was migrated into ROUX and deleted on 2026-09-01.
 > All 256 files verified; the ad-render pipeline was re-tested and works. **`~/Desktop/HPC/` (the parent) must stay** — it holds the affiliates xlsx, Landing Page Code (incl. the savings calculator), and the lifestyle photo library.
 
 ## 🔺 TOP THREE FOR NEXT SESSION
@@ -55,15 +55,15 @@ as a fryer. No change needed.
 - 10 Labor Day creatives built, approved, archived (`my-skills/hpc-ad-creative/work/creative/library/`)
 - All 10 **uploaded to Meta's ad account media library** by Evan, named `AD-A_…` → `AD-D_…`
 - Zip handed over: `my-work (outputs)/content/ads/2026-09-labor-day/HPC-LaborDay-Meta-Upload.zip`
-- **Custom audience created by ROUX: `Website Visitors 30D (All)`** (pixel 4392736013287, all
+- **Custom audience created by Beau: `Website Visitors 30D (All)`** (pixel 4392736013287, all
   visitors, 30d). This is the retargeting pool that didn't previously exist.
 - Jay approved the budget change
 
 ## 🔴 NOT DONE — the ads are not built
-ROUX failed three times in Meta (file picker → Collection-ad format → **video ads cannot become image
+Beau failed three times in Meta (file picker → Collection-ad format → **video ads cannot become image
 ads**). Account was left clean each time; no drafts, no budget changes, nothing published.
 **Root cause of the last one: duplicating locks ad format. Must use `+ Create` → Single image or video.**
-**Key correction to ROUX's own reasoning: learning phase is per-AD SET, not per-ad — adding a new ad
+**Key correction to Beau's own reasoning: learning phase is per-AD SET, not per-ad — adding a new ad
 to an existing ad set is safe.**
 → **Evan is building them from `META-BUILD-GUIDE.md`** (tested click path, all quirks documented).
 
@@ -92,7 +92,7 @@ captions, built Aug 31 / updated Sep 1. Nothing was missing.
 | New retargeting | — | **$10–15/day** (audience is small — see below) |
 
 ## ⚠️ CAC ceilings are PROVISIONAL
-Robert (co-owner) corrected ROUX: "allowable CAC" was gross profit per unit = a **break-even line**,
+Robert (co-owner) corrected Beau: "allowable CAC" was gross profit per unit = a **break-even line**,
 not a spending ceiling. Real ceilings need landed BOM + monthly overhead. **Jay is building an Excel
 sheet with that.** Until it lands, do not justify budget increases from the old table.
 Full working: `my-work (outputs)/internal/reports/2026-08-28-cac-model-v2.md`.
@@ -109,7 +109,7 @@ Codes are manual-entry, so this could cut people reaching checkout without one. 
 
 ## 🆕 2026-09-01 — Garrett's 18 QT video landed
 File: `~/Desktop/Home Fryer .mp4` — 9:16 4K, 66.9s, HEVC, talking head w/ burned-in captions.
-**ROUX's call: build it as a new ad in `18qt-TOF-Prospecting` only** (that's the campaign flagged
+**Beau's call: build it as a new ad in `18qt-TOF-Prospecting` only** (that's the campaign flagged
 "Low results" at $63.86 CPP). **Do not add it to `BPM_TOF_Manual` before Sept 9** — don't siphon
 delivery off the $57.72 CPP / 10.96 ROAS workhorse mid-sale. Budget unchanged at $50/day.
 Full build sheet + copy (promo + evergreen) + kill thresholds:
@@ -148,7 +148,7 @@ Post-mortem Sept 9 · the June–October off-season plan (the real +$500K projec
 ## 🧠 Brain state
 
 `my-business (context)/` is complete and confirmed: who-we-are · how-we-sound · our-team · what-we-sell · our-clients · **my-voice** (built from 13 real sent emails, approved by Evan).
-**ROUX** is a real agent now — `.claude/agents/roux.md`. Say "ask ROUX."
+**Beau** is a real agent now — `.claude/agents/beau.md`. Say "ask Beau."
 Standing rules live in `CLAUDE.md` **and** `SAFETY.md`.
 
 **Product tiers were rewritten 2026-09-01** — the main push is now **Performance pots 80/100/120 QT + Boil Boss Triple Jet Burner** (not powered cookers). Small **powered** pots 18/30/40/60 QT are a separate Tier 1 push. Steamer units moved up to Tier 2. Navimow and Rugged Road are Tier 3 inbound-only. Only Predator grills are do-not-market.

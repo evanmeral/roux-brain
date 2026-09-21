@@ -5,13 +5,13 @@ Items removed from BOARD.md at the 2026-09-10 wrap (IntentWave session), kept he
 ## Waiting-on rows that landed or went moot
 
 - **Jay — landed cost per unit + monthly overhead** (open since 2026-08-28, "the highest-value unblock in the business"). **Landed 2026-09-09:** Shopify cost-per-item is landed cost; overhead ~$49,550/mo, steady year-round. → decisions.md, 2026-09-09 and 09-10 entries; `internal/reports/2026-09-10-cac-ceilings-v3.md`.
-- **Evan — decide the BOM-gate override (18 QT ladder)** (open since 2026-09-08). **Moot:** ROUX withdrew the override on the v3 ceilings, 2026-09-10.
+- **Evan — decide the BOM-gate override (18 QT ladder)** (open since 2026-09-08). **Moot:** Beau withdrew the override on the v3 ceilings, 2026-09-10.
 
 ## Now #3 as it stood on 2026-09-09
 
-> **The 18 QT ladder — Evan's call, still open.** Cheapest acquisition in the account, capped at $50/day for months. ROUX recommends going past step one **without** Jay's landed BOM, on 3.1× headroom against the ~$63 provisional ceiling. Gates: CPP ≤$30, frequency ≤2.5, ≤20% every 3 days.
+> **The 18 QT ladder — Evan's call, still open.** Cheapest acquisition in the account, capped at $50/day for months. Beau recommends going past step one **without** Jay's landed BOM, on 3.1× headroom against the ~$63 provisional ceiling. Gates: CPP ≤$30, frequency ≤2.5, ≤20% every 3 days.
 
-**Superseded:** the ~$63 ceiling no longer exists. v3 puts the 18 QT one-unit ceiling at −$26.40 to −$24.10, and $15–18 with legs. Moved to Parked; replaced in Now by the ROUX bundle plan.
+**Superseded:** the ~$63 ceiling no longer exists. v3 puts the 18 QT one-unit ceiling at −$26.40 to −$24.10, and $15–18 with legs. Moved to Parked; replaced in Now by the Beau bundle plan.
 
 ## Running line
 

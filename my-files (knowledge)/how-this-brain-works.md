@@ -18,7 +18,7 @@ Your AI assistant. It knows your business and gets smarter every time you use it
 
 - **my-desk (now)/** — the front page. What's live, what's next, what's waiting.
 - **my-business (context)/** — Who you are, what you sell, how you sound, how you write, the standing rules.
-- **my-inbox (new inputs)/** — Drop new photos or files here with any name. Atlas renames each one and files it where it belongs.
+- **my-inbox (new inputs)/** — Drop new photos or files here with any name. ROUX renames each one and files it where it belongs.
 - **my-files (knowledge)/** — Drop your files here. Brochures, docs, anything.
 - **my-connections (MCP)/** — The apps you have connected.
 - **my-skills/** — Ready-to-use skills plus any you teach it.
@@ -30,9 +30,9 @@ Your AI assistant. It knows your business and gets smarter every time you use it
 
 ## The daily cockpit
 
-Atlas OS at `localhost:4242` is the front door: the time, the week, what is waiting on you,
+ROUX OS at `localhost:4242` is the front door: the time, the week, what is waiting on you,
 what is live, and a brief the brain writes when you press Pulse now. Every card starts the
-work. Read [how to use Atlas OS](how-to-use-atlas-os.md) once; it is two pages.
+work. Read [how to use ROUX OS](how-to-use-roux-os.md) once; it is two pages.
 
 ## How to start a session
 
@@ -79,7 +79,7 @@ Atlas AI Brain/
 │   ├── our-clients.md
 │   └── hpc-standing-rules.md       <- the operating rules, single canonical copy
 │
-├── my-inbox (new inputs)/         <- drop new photos/files here; Atlas sorts them
+├── my-inbox (new inputs)/         <- drop new photos/files here; ROUX sorts them
 ├── my-files (knowledge)/           <- drop your files here
 │   ├── how-this-brain-works.md     <- this file
 │   ├── about-my-business/
@@ -154,7 +154,7 @@ Atlas AI Brain/
 | Type this | What it does |
 |---|---|
 | /content-week | Plan the week's Facebook + Instagram posts in one Monday session, approve them, and have them scheduled in Meta Business Suite. Also fires on its own every Monday at 8:00. |
-| /hpc-campaign-checkpoint | Re-read a live paid campaign at its checkpoint: Meta's numbers, Shopify's tagged orders, the gap between them, and ROUX's continue / hold / cut call. The decision stays Evan's. |
+| /hpc-campaign-checkpoint | Re-read a live paid campaign at its checkpoint: Meta's numbers, Shopify's tagged orders, the gap between them, and Beau's continue / hold / cut call. The decision stays Evan's. |
 | /write-a-post | Write a social media post |
 | /write-an-ad | Write ad copy with hooks, headlines, and CTA |
 | /carousel | Build a multi-frame Instagram/Facebook swipe post |

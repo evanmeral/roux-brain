@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.atlas.pulse</string>
+  <string>com.roux.pulse</string>
   <key>ProgramArguments</key>
   <array>
     <string>/usr/bin/curl</string>
@@ -15,7 +15,7 @@
     <string>-H</string>
     <string>Content-Type: application/json</string>
     <string>-H</string>
-    <string>X-Atlas: launchd</string>
+    <string>X-ROUX: launchd</string>
     <string>-d</string>
     <string>{"kind":"pulse","by":"launchd 6:30"}</string>
     <string>http://localhost:4242/api/run</string>

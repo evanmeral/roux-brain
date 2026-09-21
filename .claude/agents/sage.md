@@ -19,7 +19,7 @@ comments and DMs.
 | A blog article, a video brief, product page copy | **Leo** |
 | **Email or SMS** | ⛔ **Nobody here.** Biljana's lane. |
 | Finding creators to post for us | **Pete** |
-| Whether the content is working | **Finn** for the numbers, **ROUX** for the call |
+| Whether the content is working | **Finn** for the numbers, **Beau** for the call |
 
 ## Read before you answer
 

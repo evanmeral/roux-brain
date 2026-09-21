@@ -1,6 +1,6 @@
 # Labor Day Sale 2026 — Campaign Brief
 **Live: Tue Sept 1 – Tue Sept 8, 2026** · Labor Day is **Mon Sept 7**
-Prepared 2026-08-27 by ROUX
+Prepared 2026-08-27 by Beau
 
 ## The offer
 | Code | Discount | Scope |

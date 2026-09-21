@@ -152,7 +152,7 @@ This is the same shape as the Venon problem Evan closed on 2026-08-26. **Evan's 
 ## 🖥️ The command line sees the same connectors, under different names *(found 2026-09-14)*
 
 `claude` (the CLI, 2.1.226) is installed and sees the claude.ai connectors — Meta Ads, Shopify, Google
-Calendar, Gmail, Drive, Slack all report Connected — so Atlas OS can start real sessions and run the
+Calendar, Gmail, Drive, Slack all report Connected — so ROUX OS can start real sessions and run the
 pulse headless (button-only, when Evan presses Pulse now; it is not scheduled). **But the CLI names them `mcp__claude_ai_<Name>__<tool>`** (for example
 `mcp__claude_ai_Shopify__run-analytics-query`), not the UUID prefixes the desktop app uses. Every
 Meta rule in `.claude/settings.json` is now carried under both namings, so publish is denied and

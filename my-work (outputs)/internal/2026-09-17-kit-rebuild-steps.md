@@ -1,6 +1,6 @@
 # Kit rebuild in the Shopify Bundles app — Evan's steps
 
-**Why:** Jay, via Evan 2026-09-17 — the kits get built in the Bundles app instead of through the connector. A bundle belongs to the app that made it, so the Bundles app can only manage bundles created in the Bundles app. Evan does the create step; Atlas does the rest through the connector.
+**Why:** Jay, via Evan 2026-09-17 — the kits get built in the Bundles app instead of through the connector. A bundle belongs to the app that made it, so the Bundles app can only manage bundles created in the Bundles app. Evan does the create step; ROUX does the rest through the connector.
 **Not an inventory fault.** The skimmer count was only ever a stock entry: more skimmers came in and had to be entered (Evan, 2026-09-17). `SC-7R` reads 30 on hand and sells on the storefront, checked 2026-09-17.
 **Source for the flow:** help.shopify.com, Shopify Bundles, read 2026-09-17. Fixed bundles allow up to 30 components, 3 options, 100 variants. New bundles save as **Draft** by default.
 
@@ -42,7 +42,7 @@ No "Two-Bird" in the title (Evan, 2026-09-17); it goes in the description instea
 
 **Price $519.00** · compare-at **$544.98**
 
-## What Atlas does after, through the connector (on Evan's go)
+## What ROUX does after, through the connector (on Evan's go)
 
 1. SKUs: `BUNDLE-18QT-TAILGATE` · `BUNDLE-30QT-TURKEY` · `BUNDLE-60QT-TURKEY`.
 2. Descriptions (Maya's copy) with the California Prop 65 block in Platinum's markup, and the two-bird line inside the 60 QT description.

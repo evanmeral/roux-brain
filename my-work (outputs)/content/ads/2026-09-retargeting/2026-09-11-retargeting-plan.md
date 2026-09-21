@@ -1,5 +1,5 @@
 # Retargeting campaign — the plan
-**ROUX, 2026-09-11.** **Status: approved by Evan 2026-09-11, launch held. No date set.**
+**Beau, 2026-09-11.** **Status: approved by Evan 2026-09-11, launch held. No date set.**
 
 This is a plan only. **Nothing has been built.** Writing it made no writes to Meta, Shopify or Google;
 two read-only Shopify lookups were run (product handles, page handles). Every build step below,
@@ -9,7 +9,7 @@ It starts from [BOARD](../../../../my-desk%20%28now%29/BOARD.md) Now #2 and the
 [paid-media playbook](../../../../my-workflows%20%28automations%29/playbooks/paid-media.md).
 
 > **Labels used throughout.** *(fact — source)* is on file or read live. *(derived)* is arithmetic on
-> on-file figures. *(inference)* is ROUX's reasoning, untested. *(judgment)* is a call, not a finding.
+> on-file figures. *(inference)* is Beau's reasoning, untested. *(judgment)* is a call, not a finding.
 > No performance number in this plan is a forecast of results.
 
 ---
@@ -341,7 +341,7 @@ Read per ad set, trailing 7 days, **once a day, not hourly**.
 
 | Signal | Action |
 |---|---|
-| Frequency > **3.5** | **Cut that ad set's budget by a third.** Don't widen the audience: widening past 30 days crosses the IW campaign *(the "by a third" is ROUX's detail)* |
+| Frequency > **3.5** | **Cut that ad set's budget by a third.** Don't widen the audience: widening past 30 days crosses the IW campaign *(the "by a third" is Beau's detail)* |
 | CPP > **$60** after 4 days | **Pause** that ad set |
 | CPP < **$40** | Working. Keep it |
 
@@ -468,7 +468,7 @@ sources, trailing 14 days, against the prior 14 and the same weeks of 2025. Dire
 | 15–20s 18 QT cut · clock boil · Tunnel Tube still | **Evan** to book Garrett (waiting since 09-01) · **Garrett** for the still (since 09-08) | Later creative |
 | The two questions (§1) | **IntentWave**, via Evan | Any use of the IW list beyond the seed |
 | Adopt the incremental rule | **Jay** | Whether the incremental gates behind §8 become formal company-wide |
-| The $350 ceiling (Now #1 rebuild) | **ROUX → Jay** | Any raise |
+| The $350 ceiling (Now #1 rebuild) | **Beau → Jay** | Any raise |
 
 ---
 

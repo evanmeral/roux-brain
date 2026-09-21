@@ -57,7 +57,7 @@ producing. That was the right call and it's why 24 converted.
 
 Full account: `my-files (knowledge)/hpc-reference/what-weve-tried.md`.
 
-## ROUX's read on this program
+## Beau's read on this program
 
 **The salvage is done. The question now is what replaces it.**
 

@@ -51,7 +51,7 @@
 ## What Evan should do with this
 
 - **Reply to Connor on Meta access** before he acts on it (flag 1).
-- **Review the Google copy spreadsheet** when it lands. Suggestions only, packaged for Coalition. Check it against the non-negotiables and the tailgate bundle plan (in progress, ROUX).
+- **Review the Google copy spreadsheet** when it lands. Suggestions only, packaged for Coalition. Check it against the non-negotiables and the tailgate bundle plan (in progress, Beau).
 - **Hand Jay the creative files** rather than letting him pick (flag 3).
 
 → [Board](../../my-desk%20%28now%29/BOARD.md)

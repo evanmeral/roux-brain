@@ -18,7 +18,7 @@ The whole window is after 2026-07-20, so one operator.
 
 ## 2. Against the agreed rule
 
-The rule, quoted from `campaigns.md` *(ROUX, accepted by Evan 2026-09-14)*:
+The rule, quoted from `campaigns.md` *(Beau, accepted by Evan 2026-09-14)*:
 
 > Hold at 3 days / $300 in Learning. Re-check at **Day 7 / ~$700 spend, or on Learning exit, whichever first.** At that point, **if Shopify-matched orders are still 0 and spend has passed the $73/real-order ceiling, that becomes a real cut conversation.** Do not touch spend before then.
 
@@ -29,7 +29,7 @@ The rule, quoted from `campaigns.md` *(ROUX, accepted by Evan 2026-09-14)*:
 | Spend has passed the $73/real-order ceiling | **Met** | $682.55 is 9.3× $73. It is also above the highest incremental ceiling that applies to any product in these ads ($195.34, 120 QT Powered) |
 | Do not touch spend before the checkpoint | **Met, as far as the log shows** | The account activity log, Sept 9 22:00 → Sept 18 01:00 (200 events), has no IW budget, status, targeting or creative change after the Sept 11 launch. Daily budget reads $100.00 *(Meta)*. See data problem 6 on the log filter |
 
-All conditions of the agreed rule are met. The call is ROUX's.
+All conditions of the agreed rule are met. The call is Beau's.
 
 ---
 
@@ -211,9 +211,9 @@ No matched order exists, so there's no product mix to pick the ceiling. Each pro
 
 ---
 
-## 8. ROUX's call
+## 8. Beau's call
 
-*ROUX, 2026-09-18. Reads sections 1–7 above and `campaigns.md`. No Meta or Shopify write made.*
+*Beau, 2026-09-18. Reads sections 1–7 above and `campaigns.md`. No Meta or Shopify write made.*
 
 ### The call: **continue, on the plan's one edit.** Cut the ad, not the campaign.
 
@@ -272,7 +272,7 @@ The budget doesn't change, so there's no budget action.
 ## 9. Evan's decision and what changed
 
 **Decision: continue at $100/day, one edit today, read Fri Oct 2** *(Evan, 2026-09-18)*.
-- **Paused `hpc-dark-evergreen` `52508008680591`.** Atlas did it through the connector on Evan's "yes", changing status only. Read back as PAUSED, and the two 120 QT ads stayed ACTIVE *(Meta connector, 2026-09-18 morning)*.
+- **Paused `hpc-dark-evergreen` `52508008680591`.** ROUX did it through the connector on Evan's "yes", changing status only. Read back as PAUSED, and the two 120 QT ads stayed ACTIVE *(Meta connector, 2026-09-18 morning)*.
 - **Swapped creatives, Evan's click in Ads Manager:** `120qt-performance_rolling-boil` `52508008680391` and `120qt-crowd-math` `52507989521591` now carry the `2026-09-15_*_v1` creative. Meta's preview shows the new images, and both ads read PENDING_REVIEW afterwards (Meta's standard review after an image change). The activity log shows the images added at 6:37 and 6:42 AM. The ad-level change and the pause had not appeared in it yet at read time.
 - **Unverified:** tracking tags on the swapped ads. The connector returns no URL tags, and the draft-state read is still unavailable (rollout). Evan to glance at the Review tab. Finn confirms from Shopify sessions carrying `120qt-*` names on the next pull.
 - Budget unchanged at $100/day. Next read **Fri Oct 2**, on the PLAN.md terms.

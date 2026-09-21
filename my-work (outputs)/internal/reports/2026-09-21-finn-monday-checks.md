@@ -126,7 +126,7 @@ No other campaign spent. No ROAS is given, by rule: don't divide Shopify net by 
 # Prep for scoreboard #1 (Evan-approved rules)
 
 **Read-only.** Nothing was written to Shopify or Meta. Reads 2026-09-21, 07:55–08:15 CDT.
-**Rule applied:** Evan approved ROUX's calls 2026-09-21 (`decisions.md`, top entry). Match rule 5 is now in `my-skills/hpc-campaign-checkpoint/instructions.md` §3.
+**Rule applied:** Evan approved Beau's calls 2026-09-21 (`decisions.md`, top entry). Match rule 5 is now in `my-skills/hpc-campaign-checkpoint/instructions.md` §3.
 **Sources:** Shopify GraphQL `orders` (`sourceName`, `customerJourneySummary.lastVisit.utmParameters`, `landingPageUrl`, `currentSubtotalPriceSet`), store time America/Chicago · Meta `ads_get_ad_entities`, HP Cookers ADs `4392736013287` only (`amount_spent`, `omni_purchase`, `cost_per_omni_purchase`, `adset_id`, `created_time`). No Meta revenue figure is used anywhere.
 
 ## 1. Where the rule went

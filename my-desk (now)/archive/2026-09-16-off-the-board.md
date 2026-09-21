@@ -10,11 +10,11 @@ What closed or changed shape this session, kept here so the board stays at 120 l
 
 **Evan deleted it from the app the same afternoon.** Checked after the click: the folder is gone from the app's skills store on disk and no other copy exists outside `my-skills/`. Only [my-skills/hpc-scoreboard-report/instructions.md](../../my-skills/hpc-scoreboard-report/instructions.md) remains. → [decision](../decisions.md)
 
-**Still open, carried on the board under Parked:** the skill's per-channel CSV method cannot give per-product CAC (ROUX's question, not urgent).
+**Still open, carried on the board under Parked:** the skill's per-channel CSV method cannot give per-product CAC (Beau's question, not urgent).
 
 ---
 
-## "Evan builds the three kits" — closed the same day, by Atlas on Evan's go
+## "Evan builds the three kits" — closed the same day, by ROUX on Evan's go
 
 **Was Now #1 and a Waiting-on-Evan row since 2026-09-15.** Built 2026-09-16 as two draft products, three kits: `Tailgate Fry Kit` and `Turkey Fry Kit` (30 QT / 60 QT Two-Bird), at Jay's $465 · $469 · $519. Variant-level native bundles, all twelve component links read back correct, compare-at at parts-at-list, tags placing them in the right collections, Maya's copy, then on Evan's asks the `BUNDLE-` SKUs, the Prop 65 block, and the Features & Benefits and FAQ metafields. **Evan: they stay drafts until Jay approves the built pages.** The month plan locked the next day set the go/no-go dates (tailgate Sept 24, turkey Sept 30).
 

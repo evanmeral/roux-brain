@@ -1,14 +1,14 @@
 # Building the Labor Day ads in Meta — tested click path
-**Written 2026-08-31 after ROUX worked through the account. Every quirk below was hit for real.**
+**Written 2026-08-31 after Beau worked through the account. Every quirk below was hit for real.**
 
 ---
 
-## ✅ Done by ROUX
+## ✅ Done by Beau
 **Custom audience created: `Website Visitors 30D (All)`**
 Source: 4392736013287 Pixel · Event: All website visitors · Retention: 30 days · Status: Populating.
 This is permanent and correct. It's the retargeting pool that didn't exist before.
 
-## ❌ What ROUX could not do, and why
+## ❌ What Beau could not do, and why
 1. **Upload images** — native macOS file picker, not automatable. *(Evan did this; all 10 are in.)*
 2. **Duplicate an ad and swap in the static creative** — **a video ad cannot become an image ad.**
    All six active ads in `BPM_TOF_Manual` are video. Duplicating one locks the format: the media

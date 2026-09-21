@@ -31,7 +31,7 @@ $290,600**) · Jay's formal adoption of the incremental rule.
 
 Full figures live in the board's Running section and in [decisions.md](../decisions.md). Summary: 3 days,
 **$299.94**, **1 Meta-claimed purchase vs 0 Shopify UTM-matched orders**, **$0 real revenue**, ad set still in
-Learning. **ROUX's call, accepted by Evan: hold — do not cut, do not touch spend.** Re-check Sept 18 (Day 7 /
+Learning. **Beau's call, accepted by Evan: hold — do not cut, do not touch spend.** Re-check Sept 18 (Day 7 /
 ~$700) or on Learning exit.
 
 **Two things worth remembering past the re-check:**

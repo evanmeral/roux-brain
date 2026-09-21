@@ -5,13 +5,13 @@
 
 ## 🔒 The blocking dependency, first
 
-**ROUX cannot upload images to Meta.** The upload button opens the native macOS file picker, which
+**Beau cannot upload images to Meta.** The upload button opens the native macOS file picker, which
 browser automation can't drive. Everything else waits on this.
 
 **Evan, ~10 minutes:** Ads Manager → **Media Library** → **Upload** → select all 10 files from
 `my-skills/hpc-ad-creative/work/creative/library/2026-08-27_laborday-*.png` → done. No ads, no campaign setup, just the files.
 
-Once they're in Meta's library, ROUX can select them freely and build everything else.
+Once they're in Meta's library, Beau can select them freely and build everything else.
 
 ---
 
@@ -20,7 +20,7 @@ Once they're in Meta's library, ROUX can select them freely and build everything
 ### BLOCK 1 — Creative into Meta *(Evan, 10 min)* 🔒 blocking
 Upload the 10 PNGs to the media library. Nothing else.
 
-### BLOCK 2 — Build the ads *(ROUX or Evan, ~45 min)*
+### BLOCK 2 — Build the ads *(Beau or Evan, ~45 min)*
 Four ads, each carrying all three sizes via **Edit placements → Customize by placement.**
 
 | Ad | Creative | Campaign | Schedule |
@@ -35,8 +35,8 @@ All copy is written and paste-ready in `deployment.md`. Ad A has two text versio
 > ⏰ **Publish tonight.** Meta ad review takes hours and occasionally rejects first pass. Scheduled
 > for Sept 1 means review happens overnight.
 
-### BLOCK 3 — Organic pack *(ROUX, ~30 min)*
-ROUX produces and hands over, ready to post:
+### BLOCK 3 — Organic pack *(Beau, ~30 min)*
+Beau produces and hands over, ready to post:
 - **Tonight's teaser story** — vintage 9×16, "tomorrow"
 - **Tomorrow's launch post** — vintage 4×5 + caption
 - The rest of the week's posts and captions, dated
@@ -50,7 +50,7 @@ ROUX produces and hands over, ready to post:
 
 ---
 
-## 💰 Budget — ROUX's recommendation
+## 💰 Budget — Beau's recommendation
 
 **Raise `BPM_TOF_Manual` +25%. Hold `18qt-TOF-Prospecting` flat. Add retargeting.**
 
@@ -88,14 +88,14 @@ increase is deliberately modest for that reason.
 
 ---
 
-## ❓ Three decisions ROUX needs from Evan
+## ❓ Three decisions Beau needs from Evan
 
-1. **Budget:** approve +25% on BPM only, or hold everything flat? *(ROUX recommends the +25%)*
-2. **Retargeting:** build it, yes or no? *(ROUX recommends yes, at $60–80/day)*
-3. **Who builds the ads** — ROUX in Ads Manager again, or Evan? ROUX can do it once the images are in
+1. **Budget:** approve +25% on BPM only, or hold everything flat? *(Beau recommends the +25%)*
+2. **Retargeting:** build it, yes or no? *(Beau recommends yes, at $60–80/day)*
+3. **Who builds the ads** — Beau in Ads Manager again, or Evan? Beau can do it once the images are in
    the library, and will build in draft only. Last attempt was reverted, so Evan's call.
 
-## What ROUX needs to proceed
+## What Beau needs to proceed
 - 🔒 **The 10 images in Meta's media library** — everything waits on this
 - Answers to the three decisions above
 - Nothing else. Copy, creative, schedule and captions are all done.

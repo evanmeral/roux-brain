@@ -22,7 +22,7 @@ Both live and scheduled in Shopify. **They stack.** **Manual entry at checkout**
 | **Biljana** | Email/Klaviyo — already built. **Don't duplicate; just make sure codes and dates match.** |
 | **Coalition** | Google Ads + SEO. ⚠️ **See below — they need to be told about this sale.** |
 | **Stephen** | Commercial enquiries — ✅ briefed and ready. 10% approved by him and Jay for commercial orders. |
-| **ROUX** | Creative, copy, monitoring readouts, Sept 9 post-mortem |
+| **Beau** | Creative, copy, monitoring readouts, Sept 9 post-mortem |
 
 ### ✅ Coalition — Evan is notifying them (2026-08-28)
 So Google Ads can run the promo on their end. Useful for them to have: dates (Sept 1–8), both codes,
@@ -112,10 +112,10 @@ Nothing scheduled. If ads were rejected, fix and resubmit.
 ## Wed Sept 9 — wind down
 - [ ] **Pause all Labor Day ads**
 - [ ] Swap evergreen creative back into both TOF campaigns
-- [ ] Decide: keep the retargeting campaign running with evergreen creative? *(ROUX's rec: yes)*
+- [ ] Decide: keep the retargeting campaign running with evergreen creative? *(Beau's rec: yes)*
 - [ ] **Remove the announcement bar** — an expired code on the site is worse than no banner
 - [ ] Roll budgets back to the level MER supports — **not automatically to where they started**
-- [ ] ROUX runs the post-mortem
+- [ ] Beau runs the post-mortem
 
 ---
 
@@ -163,7 +163,7 @@ Pull five numbers:
 | MER **≥ 3.2** and CPP under ceiling | ✅ Take the next ramp step |
 | MER **2.8 – 3.2** | Hold. Don't raise, don't cut. |
 | MER **2.4 – 2.8** for 2 days | ⚠️ Roll back one step |
-| MER **below 2.4** for 2 days | 🛑 Roll back to Aug 28 levels and tell ROUX |
+| MER **below 2.4** for 2 days | 🛑 Roll back to Aug 28 levels and tell Beau |
 | CPP over **$114** (combo) or **$102** (fryer) | 🛑 Stop raising that campaign |
 | Retargeting frequency over **3.5** | Cut its budget or widen the audience |
 
@@ -197,7 +197,7 @@ and confirm the maths. Five minutes, and it's the difference between a sale and 
 
 ---
 
-# Post-mortem — ROUX runs this Sept 9
+# Post-mortem — Beau runs this Sept 9
 Written into `my-work (outputs)/content/ads/2026-09-labor-day/postmortem.md`:
 - Net sales Sept 1–8 vs. the prior 8 days, and vs. Sept 2025
 - Redemptions per code · how many orders used **both**

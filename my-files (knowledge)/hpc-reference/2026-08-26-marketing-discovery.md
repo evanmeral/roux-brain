@@ -1,7 +1,7 @@
 # HPC Marketing Discovery: Brainstorm / Discovery Notes
-Date: 2026-08-26 · Goal: Extract everything in Evan's head about HPC's business, marketing operations, and constraints so ROUX can make profitable, specific recommendations instead of generic ones.
+Date: 2026-08-26 · Goal: Extract everything in Evan's head about HPC's business, marketing operations, and constraints so Beau can make profitable, specific recommendations instead of generic ones.
 
-Interviewer: ROUX · Subject: Evan Meral, Lead Marketer, High Performance Cookers
+Interviewer: Beau · Subject: Evan Meral, Lead Marketer, High Performance Cookers
 Feeds: `my-files (knowledge)/hpc-reference/open-questions.md` (40 questions, sorted by leverage)
 
 ---
@@ -19,7 +19,7 @@ Feeds: `my-files (knowledge)/hpc-reference/open-questions.md` (40 questions, sor
 7. **"Nothing really comes to mind"** when asked what's ever worked best. A $3M brand with no identifiable winner has a **measurement problem**, not a creative one. This is the case for the weekly scoreboard.
 8. **BM Digital burned HPC** by inflating attribution (claimed 3/4 of annual revenue) while shipping free product to creators who never posted. **Fired 2026-07-20.** → Vendor numbers get reconciled against Shopify. Always.
 9. **Capacity is not a constraint** — and commercial builds ship in 2–3 days from the warehouse next door. **Push hard; the downside risk isn't fulfillment.**
-10. **Evan has 40 hrs/week but no system** — *"everything is kind of all over the place."* The constraint is structure, not time. ROUX's job is a rhythm plus removing manual repetition.
+10. **Evan has 40 hrs/week but no system** — *"everything is kind of all over the place."* The constraint is structure, not time. Beau's job is a rhythm plus removing manual repetition.
 
 ## STANDING RULES
 - 🚫 **Never use Venon for anything.** Stale, unreliable.
@@ -49,7 +49,7 @@ bundles + gift card (already live since 2026-07-13) · "August is a build month"
 - **Posture: PROFIT over volume.** Jay's own words, per Evan: he'd take **$2M at 20% net over $3M at 8%**. Margin discipline governs every recommendation.
 - **But NOT a "protect the peak" strategy.** Evan explicitly rejects seasonal fatalism: *"don't settle for slow season... growth can only happen through selling year round."*
 - **The growth thesis is de-seasonalization**, not peak maximization. Fill Jun–Oct with the fryer line, steamers, and versatility messaging.
-- **⚠️ Product catalog in `my-business (context)/what-we-sell.md` is INCOMPLETE.** Net-new to ROUX: **steamers**, **banjo burners**, and large pots positioned as fryers. Needs a full catalog pull.
+- **⚠️ Product catalog in `my-business (context)/what-we-sell.md` is INCOMPLETE.** Net-new to Beau: **steamers**, **banjo burners**, and large pots positioned as fryers. Needs a full catalog pull.
 - **Positioning shift:** HPC is not a crawfish appliance. It's a modular outdoor cooking *system* — crawfish, crab, shrimp, peanuts, steaming, frying — where pot + burner + accessory combinations create year-round use cases.
 
 ---
@@ -61,13 +61,13 @@ bundles + gift card (already live since 2026-07-13) · "August is a build month"
 - **Captured:**
   - Last year: **~$3M revenue**. Next-year goal: **$3.5M at minimum**.
   - Jay's stated preference: **$2M at 20% over $3M at 8%.** → Profit posture confirmed. Margin is the constraint, revenue is the goal.
-  - ROUX's proposed "spend into the crawfish peak, treat August as a build month" strategy was **rejected**. Evan: *"Main point: don't settle for slow season, we want to grow and growth can only happen through selling year round."*
+  - Beau's proposed "spend into the crawfish peak, treat August as a build month" strategy was **rejected**. Evan: *"Main point: don't settle for slow season, we want to grow and growth can only happen through selling year round."*
   - **The off-season plan is product-led, not budget-led.** Push in non-crawfish months:
     - Fryer line: 18 QT, 30 QT, 60 QT
     - **Any large pot + banjo burner** configured as a fryer
-    - **Steamers** (product category ROUX did not previously know existed)
+    - **Steamers** (product category Beau did not previously know existed)
   - Evan's framing of the catalog: *"there is so much you could do with all the different variations of pots and accessories... the options are up to the imagination"* — crab boiling, peanut boiling, steaming, frying, not just crawfish.
-- **ROUX's read:** The target is +$500K on a profit-constrained budget. That math almost certainly has to come from **months 6–10**, because Jan–May is already worked and incremental spend into a peak hits diminishing returns fastest. So Evan's instinct and the arithmetic agree. The strategic job is **de-seasonalizing the brand** — moving HPC from "the crawfish cooker people" to "the people who cook for a crowd, whatever's in season."
+- **Beau's read:** The target is +$500K on a profit-constrained budget. That math almost certainly has to come from **months 6–10**, because Jan–May is already worked and incremental spend into a peak hits diminishing returns fastest. So Evan's instinct and the arithmetic agree. The strategic job is **de-seasonalizing the brand** — moving HPC from "the crawfish cooker people" to "the people who cook for a crowd, whatever's in season."
 - **Flags:**
   - Full product catalog including steamers, banjo burners, and all pot/burner/accessory configurations -> **Evan** (Shopify export or collection URLs)
   - Confirm whether "$3.5M minimum" is a Jay-set target or Evan's own -> **Evan**
@@ -75,11 +75,11 @@ bundles + gift card (already live since 2026-07-13) · "August is a build month"
 
 ### Q2 — Where does the $3M come from? → Evan asked: *"How can I give you this easier — can you gather it yourself?"*
 - **Asked:** Revenue split by product line, channel, and month.
-- **Evan's response:** Asked whether ROUX could self-serve the data instead.
-- **ROUX ACTION:** Found a **live, already-authorized profit-analytics MCP server** connected to Shopify + Meta Ads + Google Ads. Pulled real numbers directly. No export needed.
+- **Evan's response:** Asked whether Beau could self-serve the data instead.
+- **Beau ACTION:** Found a **live, already-authorized profit-analytics MCP server** connected to Shopify + Meta Ads + Google Ads. Pulled real numbers directly. No export needed.
 
-#### ✅ What ROUX can now pull unaided
-Channel performance (spend, attributed orders/revenue, ROAS, net profit, new-customer split), campaign / ad-set / ad performance, COGS rules, shipping profiles, payment gateway fees. **Read AND write** — ROUX can configure COGS and shipping cost itself.
+#### ✅ What Beau can now pull unaided
+Channel performance (spend, attributed orders/revenue, ROAS, net profit, new-customer split), campaign / ad-set / ad performance, COGS rules, shipping profiles, payment gateway fees. **Read AND write** — Beau can configure COGS and shipping cost itself.
 
 #### 📊 Data pulled 2026-08-26
 
@@ -115,7 +115,7 @@ Channel performance (spend, attributed orders/revenue, ROAS, net profit, new-cus
 
 **F1 — Google Ads conversion tracking was broken May–July.** $51,632 of Google spend recorded **zero** attributed revenue for three straight months, then attribution starts working Aug 1 and immediately shows 2.47 ROAS. Ads do not go from 0.00 to 2.47 overnight. This is a **tracking break, not a performance collapse.** Roughly $52K of spend ran blind. → Needs root-cause: when was the conversion tag / GA4 link / gclid capture changed?
 
-**F2 — The profit dashboard thinks COGS is $0.** `list_cogs_rules` = empty. `get_cogs_global.fallbackPercent` = null. `list_shipping_profiles` = empty. **Every "net profit" number in the tool is revenue minus ad spend and fees only — no cost of goods, no freight.** For a company shipping 4mm aluminum pots, freight alone is material. June's reported "+$10,541 Meta net profit" is almost certainly negative once real COGS lands. → **ROUX can fix this directly** with `set_product_cogs` / `set_shipping_tiers` once Evan supplies costs.
+**F2 — The profit dashboard thinks COGS is $0.** `list_cogs_rules` = empty. `get_cogs_global.fallbackPercent` = null. `list_shipping_profiles` = empty. **Every "net profit" number in the tool is revenue minus ad spend and fees only — no cost of goods, no freight.** For a company shipping 4mm aluminum pots, freight alone is material. June's reported "+$10,541 Meta net profit" is almost certainly negative once real COGS lands. → **Beau can fix this directly** with `set_product_cogs` / `set_shipping_tiers` once Evan supplies costs.
 
 **F3 — Klaviyo is 5.9% of tracked revenue ($37,254 of $631,739).** Healthy DTC is 25–30%. On this revenue base that's roughly **$120–160K/yr of un-earned email revenue** — and it needs no ad spend, which is exactly what a 20%-margin mandate wants.
 
@@ -128,7 +128,7 @@ Channel performance (spend, attributed orders/revenue, ROAS, net profit, new-cus
 
 - **Flags:**
   - Root cause of Google Ads attribution break, May–Jul 2026 -> **Evan** (what changed ~Aug 1?)
-  - COGS per SKU + real freight cost per SKU/weight band -> **Evan / Jay** — unblocks ROUX writing it straight into the tool
+  - COGS per SKU + real freight cost per SKU/weight band -> **Evan / Jay** — unblocks Beau writing it straight into the tool
   - Product-line revenue split (not available in this server) -> **Evan** via Shopify admin export
   - Reconcile $631K tracked vs $3M reported — how much is phone/commercial/wholesale outside Shopify? -> **Evan**
   - Pre-May 2026 history (last crawfish season) not in the connector -> **Evan**, Shopify + platform exports
@@ -136,7 +136,7 @@ Channel performance (spend, attributed orders/revenue, ROAS, net profit, new-cus
 ### Q3 — What changed around August 1? → Evan corrected the premise
 - **Asked:** Why did Google Ads jump from $0 attributed revenue to 2.47 ROAS on ~Aug 1?
 - **Captured — the premise was wrong:**
-  - The MCP server ROUX queried is **Venon**, a Shopify app HPC runs. Primary user: **Biljana**, HPC's **Klaviyo / email marketing associate**, who uses it to grow revenue via email flows.
+  - The MCP server Beau queried is **Venon**, a Shopify app HPC runs. Primary user: **Biljana**, HPC's **Klaviyo / email marketing associate**, who uses it to grow revenue via email flows.
   - **Venon's Meta and Google ad data is NOT accurate.** Evan: *"you could read the meta/google ad information but it is not correct."* A prior chat independently reached the same conclusion.
   - **New standing rule from Evan:** *"ALWAYS ASK BEFORE YOU CHANGE ANY DATA IN THE SHOPIFY/VENON/META/GOOGLE INTERFACES... the best thing for you to do is read everything you need theres no reason for you to actually change anything without permission."*
 - **RETRACTED from Q2** (all Venon-sourced paid-media figures):
@@ -146,7 +146,7 @@ Channel performance (spend, attributed orders/revenue, ROAS, net profit, new-cus
   - ⚠️ AOV ≈ $465 and Klaviyo at 5.9% of revenue — hold loosely, verify at source. (Email attribution is Venon's actual job, so 5.9% is the most plausible survivor, but it is unconfirmed.)
 - **SURVIVES** (configuration facts, not attribution):
   - Venon has **zero COGS rules, null COGS fallback, and zero shipping profiles**. Any "net profit" Venon displays excludes cost of goods and freight. If Jay or Biljana reads profit numbers there, they are overstated. **Flag to Evan — do not fix without permission.**
-- **ROUX's process error:** presented Venon output as fact without first establishing what the tool was or whether anyone trusted it. **Corrected behavior: name the source of every number, and verify a source is trusted before building conclusions on it.** Written to memory + `CLAUDE.md`.
+- **Beau's process error:** presented Venon output as fact without first establishing what the tool was or whether anyone trusted it. **Corrected behavior: name the source of every number, and verify a source is trusted before building conclusions on it.** Written to memory + `CLAUDE.md`.
 - **Flags:**
   - Direct Meta Ads Manager + Google Ads access (or exports) -> **Evan**. Now the top data priority.
   - Is Venon's *email/Klaviyo* attribution trusted, or is that suspect too? -> **Evan / Biljana**
@@ -166,24 +166,24 @@ Channel performance (spend, attributed orders/revenue, ROAS, net profit, new-cus
     - Videos 2–3: shoot in week of 17 Aug — **18 QT fryer** + **commercial cookers**
   - **Social posting — Evan, manually, all platforms.** No scheduling tool.
   - **Design — no one.** Defaults to Evan.
-- **ROUX's read:**
+- **Beau's read:**
   - **Evan is the bottleneck, not the strategy.** He personally runs Meta ads, does all posting by hand, does all design, and is the approval gate for Biljana, IntentWave, Coalition, and Garrett. Any plan that adds to his manual load will fail regardless of quality. **Every recommendation must be evaluated on what it costs Evan in hours.**
   - **Video economics:** the bundle is **$312.50/video vs $500 — 37.5% cheaper.** Break-even at 5 videos. Given a year-round content mandate across IG/FB/YT/TikTok, 8 videos is nearly certain. **Recommend buying the bundle and pre-planning all 8 against the seasonal calendar** rather than commissioning ad hoc.
-  - **Coalition's Google revamp started ~mid-Aug**, which means any before/after read on Google needs that date as the dividing line. Also raises the question of what ROUX's role is vs. Coalition's — overlap risk on SEO and Google.
-  - **Two agencies + one contractor + one videographer, all coordinated by one person, with no shared reporting layer.** The scoreboard ROUX builds may be as valuable for vendor management as for Jay.
+  - **Coalition's Google revamp started ~mid-Aug**, which means any before/after read on Google needs that date as the dividing line. Also raises the question of what Beau's role is vs. Coalition's — overlap risk on SEO and Google.
+  - **Two agencies + one contractor + one videographer, all coordinated by one person, with no shared reporting layer.** The scoreboard Beau builds may be as valuable for vendor management as for Jay.
 - **Flags:**
-  - Design capacity is zero — is Canva + ROUX enough, or is a designer needed? -> **Evan**
-  - What is Coalition's scope/retainer, and where does ROUX stop and Coalition start? -> **Evan**
-  - Should ROUX recommend buying Garrett's 8-video bundle now? -> **Evan** (ROUX says yes)
+  - Design capacity is zero — is Canva + Beau enough, or is a designer needed? -> **Evan**
+  - What is Coalition's scope/retainer, and where does Beau stop and Coalition start? -> **Evan**
+  - Should Beau recommend buying Garrett's 8-video bundle now? -> **Evan** (Beau says yes)
   - Are the 3 existing Garrett videos in hand? Where do the files live? -> **Evan**
   - Is Evan open to a scheduling tool to cut manual posting time? -> **Evan**
-  - New data pipeline to replace Venon — what does it look like? -> **Evan + ROUX, joint project**
+  - New data pipeline to replace Venon — what does it look like? -> **Evan + Beau, joint project**
 
-### Q5 — Catalog (ROUX self-served; no question asked of Evan)
+### Q5 — Catalog (Beau self-served; no question asked of Evan)
 - **Action:** Chrome extension unreachable → pivoted to the **public** `highperformancecookers.com/products.json`. No login, no permission needed, read-only. **122 products** retrieved.
 - **Saved:** `my-files (knowledge)/hpc-reference/research/2026-08-26-shopify-catalog.json` · `my-business (context)/what-we-sell.md` fully rewritten.
 
-#### Entire lines ROUX did not know existed
+#### Entire lines Beau did not know existed
 | Line | Price | Why it matters |
 |---|---|---|
 | **Steamers** — 28 QT $1,325 · 100 QT $1,525–$1,725 | **$1,325–$1,725** | Among the highest-ticket non-commercial SKUs. Non-seasonal. 13 products tagged `Steamer`. Under-marketed. |
@@ -198,13 +198,13 @@ Channel performance (spend, attributed orders/revenue, ROAS, net profit, new-cus
 | **Scratch & Dent line**, 6 SKUs at ~30% off | $185.50–$607.75 | Margin-safe entry price. Real acquisition tool. |
 | **Pull-Behind Trailer Pkg** $7,299 · Custom Cooking Trailer | Highest ticket in catalog | |
 | **RENTAL — Crawfish Boil Trailer** $385–$600 | Rental revenue model | Not in any marketing plan |
-| **Gift Card** $25–$500 | — | ROUX had flagged this as a gap. It already exists. |
+| **Gift Card** $25–$500 | — | Beau had flagged this as a gap. It already exists. |
 | **Dealer/trade materials** (banners, foam boards, pop-up display, selection chart) at $0–$0.01 | — | **Implies a dealer/wholesale channel** never mentioned in the brief |
 
-#### Bundles already live (contradicts an earlier ROUX assumption)
+#### Bundles already live (contradicts an earlier Beau assumption)
 - **Ultimate Boiling Bundle** — pot + burner + ring + paddle, $846.98–$1,049.98, $120 savings, **64 variants**
 - **Platinum Boiling Bundle** — pot + triple jet + electronic ignition, $737–$940, $100 savings
-- Both published **2026-07-13**. ROUX's "you should test a bundle" idea was already done, six weeks ago.
+- Both published **2026-07-13**. Beau's "you should test a bundle" idea was already done, six weeks ago.
 
 #### Tag taxonomy findings
 `Tailgater` **31** (2nd-largest tag) · `Custom Logo Available` **22** + "Add a Custom Logo" $75 ·
@@ -217,7 +217,7 @@ Channel performance (spend, attributed orders/revenue, ROAS, net profit, new-cus
 18 QT non-powered $220–$265 (brief: $212) · 18 QT powered $285–$340 (brief: $300) · commercial 60–140 gal
 $2,550–$5,775 (brief: $2,550–$3,875) · Crawcuzzi $2,465–$4,595 (brief: $2,465)
 
-- **ROUX's read:** Evan's year-round mandate is **not a product problem — the products already exist.**
+- **Beau's read:** Evan's year-round mandate is **not a product problem — the products already exist.**
   Steamers, pasta cookers, sauce cookers, banjo burners, grills, coolers, consumables, and merch are
   all non-seasonal and already listed. **This is a merchandising, positioning, and traffic problem.**
   The brand says "crawfish cooker company"; the catalog says "outdoor cooking company with a crawfish
@@ -231,7 +231,7 @@ $2,550–$5,775 (brief: $2,550–$3,875) · Crawcuzzi $2,465–$4,595 (brief: $2
 
 ### Q6 — Why isn't the marketing selling what the catalog sells?
 - **Asked:** Are steamers / resale lines / dealer channel / Tailgater deliberate choices or bandwidth?
-- **Captured — ROUX's "bandwidth not strategy" guess was WRONG. These are deliberate calls.**
+- **Captured — Beau's "bandwidth not strategy" guess was WRONG. These are deliberate calls.**
 
 | Line | Evan's ruling |
 |---|---|
@@ -243,8 +243,8 @@ $2,550–$5,775 (brief: $2,550–$3,875) · Crawcuzzi $2,465–$4,595 (brief: $2
 | **Dealer / wholesale** | **Jay's lane.** Open to genuinely willing dealers but not chasing — most won't pay full price up front, and **HPC does not do consignment on dealer orders.** Not a growth priority. |
 | **`Tailgater` tag** | Origin unknown. Probably a collection-grouping tag, **not an intentional position.** Untested hypothesis, not existing strategy. |
 
-- 🚨 **RISK FOUND:** the Predator Gas Grills are **live and purchasable** — all 4 variants return `available: true` at $3,800–$4,350, plus 2 side burners at $1,200–$1,750. If it's a mock-up, a customer can order a product that doesn't exist. → **Evan's call to unpublish/draft. ROUX will not touch it.**
-- **ROUX's revised read:** the year-round plan narrows considerably and gets more realistic. It is **not** steamers or grills. It is: **fryer line (18/30/60 QT) + 4-Way Pasta Cooker + Sauce Cooker + banjo burners + steamer trays as an attach + Zydeco Fire consumables + merch.** Plus Scratch & Dent as a margin-safe entry price.
+- 🚨 **RISK FOUND:** the Predator Gas Grills are **live and purchasable** — all 4 variants return `available: true` at $3,800–$4,350, plus 2 side burners at $1,200–$1,750. If it's a mock-up, a customer can order a product that doesn't exist. → **Evan's call to unpublish/draft. Beau will not touch it.**
+- **Beau's revised read:** the year-round plan narrows considerably and gets more realistic. It is **not** steamers or grills. It is: **fryer line (18/30/60 QT) + 4-Way Pasta Cooker + Sauce Cooker + banjo burners + steamer trays as an attach + Zydeco Fire consumables + merch.** Plus Scratch & Dent as a margin-safe entry price.
 - **Steamer trays reframed:** not a campaign — an **AOV lever on every pot sale.** $24.99–$159.99 attached to a $515–$805 cooker is pure margin with no new traffic required. Should be in the PDP cross-sell, the post-purchase email, and the checkout upsell.
 - **Priority tiers written into `my-business (context)/what-we-sell.md`** (Tier 1 push / Tier 2 year-round fillers / Tier 3 inbound-only / Tier 4 do-not-market).
 - **Flags:**
@@ -259,21 +259,21 @@ $2,550–$5,775 (brief: $2,550–$3,875) · Crawcuzzi $2,465–$4,595 (brief: $2
 ### Q8 — Unit economics → Evan asked whether browser access removes the need to hand these over
 - **Captured — three corrections + an access decision:**
   - **40 QT steamer insert:** discontinued, because the **40 QT pot it fit was discontinued**. Not a stock issue. ⚠️ *Open:* a 40 QT **Sauce Cooker** ($289.99) and 40 QT **Sauce Stock Pot** ($258) are still live — presumed a separate line; confirm.
-  - **Predator grills — ROUX's risk flag was unfounded.** They are a **real, viable product**, but *"someone else does it through us and does everything regarding that product."* Third-party operated end-to-end through HPC's storefront. Purchasable by design. **No action needed.** Corrected in `my-business (context)/what-we-sell.md`.
+  - **Predator grills — Beau's risk flag was unfounded.** They are a **real, viable product**, but *"someone else does it through us and does everything regarding that product."* Third-party operated end-to-end through HPC's storefront. Purchasable by design. **No action needed.** Corrected in `my-business (context)/what-we-sell.md`.
   - **✅ BROWSER ACCESS GRANTED — broad.** Evan: *"Im fine opening up the everything on a browser and giving you access. Just don't want you to actually change things on it. You can search and look and gather information, but I don't want anything physically changed, like budgets or prices."* **Willing to open Shopify admin too.**
 - **Evan's question:** with the Chrome extension + Shopify + Meta Ad Library open, would he still need to hand over the Q8 unit-economics data manually?
-- **ROUX's answer (given in-session):**
+- **Beau's answer (given in-session):**
 
 | Q8 item | Self-serve with Shopify access? |
 |---|---|
 | Product-level revenue, AOV, repeat rate, geography, order counts | ✅ Yes — Shopify Analytics reports |
 | Payment processing fees | ✅ Yes — actual fees in Shopify Payments payouts |
-| **COGS per SKU** | ⚠️ **Only if the "Cost per item" field is populated on variants.** ROUX can check this itself once inside. If blank, a human must supply it. |
+| **COGS per SKU** | ⚠️ **Only if the "Cost per item" field is populated on variants.** Beau can check this itself once inside. If blank, a human must supply it. |
 | **Freight cost per SKU** | ❌ **Probably not.** Shopify records what the *customer paid*, not what HPC paid the carrier — unless labels are bought through Shopify Shipping. Big pots likely ship LTL/freight, outside Shopify. Likely needs Evan/Jay. |
 
-- **Plan agreed:** Evan installs the extension → ROUX runs a **discovery pass** across Shopify admin, the ad accounts, and the live site → ROUX returns a **precise, short list** of what genuinely still needs a human. Beats Evan hunting for numbers ROUX may already be able to read.
+- **Plan agreed:** Evan installs the extension → Beau runs a **discovery pass** across Shopify admin, the ad accounts, and the live site → Beau returns a **precise, short list** of what genuinely still needs a human. Beats Evan hunting for numbers Beau may already be able to read.
 - **Flags:**
-  - Is Shopify "Cost per item" populated? -> **ROUX to verify once access is live**
+  - Is Shopify "Cost per item" populated? -> **Beau to verify once access is live**
   - Freight cost per SKU / weight band -> **Evan or Jay** (likely the one true manual input)
   - Who pays freight — HPC or customer? -> **Evan**
   
@@ -282,7 +282,7 @@ $2,550–$5,775 (brief: $2,550–$3,875) · Crawcuzzi $2,465–$4,595 (brief: $2
   - **Every HPC pot comes in two forms:**
     - **POWERED** = pot + legs + burner **mounted to the pot as one piece.** A complete, self-contained rig.
     - **PERFORMANCE** = **just the pot**, carrying Tunnel Tube technology. Runs on **any burner** the customer already owns, or HPC's Boil Boss Triple Jet Burner.
-  - **🔑 Tunnel Tube technology is in the POT, not the burner.** ROUX had this wrong — had it filed as burner tech. Corrected in `my-business (context)/who-we-are.md` and `my-business (context)/what-we-sell.md`.
+  - **🔑 Tunnel Tube technology is in the POT, not the burner.** Beau had this wrong — had it filed as burner tech. Corrected in `my-business (context)/who-we-are.md` and `my-business (context)/what-we-sell.md`.
   - **Why it matters commercially:**
     1. A Performance pot is a **~$180 cheaper entry** into the technology (120 QT: $532–$580 vs. $715–$805 powered). Much easier first purchase for a skeptic who already owns a burner.
     2. Creates an ownable **upgrade ladder**: Performance pot → add Triple Jet Burner ($425) → full rig. Two transactions instead of one lost sale.
@@ -308,7 +308,7 @@ he restated unprompted that the burner is **not** the key focus. (New detail: tu
 > This Styrofoam ice chest might work, but you'll just end up buying another one later. The Yeti ice
 > chest can last a lifetime."*
 
-ROUX's read: this is the best objection-killer in the business. It **reframes price as frequency of
+Beau's read: this is the best objection-killer in the business. It **reframes price as frequency of
 purchase rather than size of purchase** — "why is this $715?" becomes "how many $200 pots will you
 buy?" It borrows a mental model the Gulf Coast audience already owns, it's emotionally true for a
 product used at family gatherings, and it came from the operator rather than a copywriter. **Use
@@ -321,18 +321,18 @@ these last generations" and let the 5-yr warranty carry the hard proof.
 3. ⭐ **"a small team of 12 that do everything. No big corporate entity here."**
 4. **Best in class** — Boil Boss Triple Jet Burner: fast, *"almost 75%, maybe even more"* fuel savings, Bluetooth electronic ignition
 
-**ROUX's read on "team of 12":** badly under-used. A specific number beats a vague claim, it's
+**Beau's read on "team of 12":** badly under-used. A specific number beats a vague claim, it's
 verifiable and human, and it is **the exact inverse of Bayou Classic's big-box profile.** Pairs with
 Made-in-Louisiana to convert the origin story from decoration into a reason to buy. Put the 12 on
 camera; name the person who answers the phone.
 
-**🔧 Connection ROUX made:** the **propane savings calculator already exists** in
+**🔧 Connection Beau made:** the **propane savings calculator already exists** in
 `~/Desktop/HPC/Landing Page Code/` (`HPC_Savings_Calculator_Page_3.txt`, `commercial-savings-calculator.txt`).
 It is the direct, quantified answer to the #1 objection in the business — and it's a buried page
 rather than a front-line asset. **Should be in ads, email, PDPs, and comment replies.** Likely the
 single highest-leverage existing asset HPC owns.
 
-**Reviews: reviews.io.** Evan offered to open it for ROUX to mine — top priority once browser is live.
+**Reviews: reviews.io.** Evan offered to open it for Beau to mine — top priority once browser is live.
 
 - **Flags:**
   - Price objection is being litigated **publicly in post comments** — is anyone answering them, and with what? -> **Evan**
@@ -352,28 +352,28 @@ single highest-leverage existing asset HPC owns.
 | North, residential **w/ lift gate** | **$350–$500** |
 
   - **Who pays:** HPC fronts it, *"but the customer in the end pays all the shipping."*
-- **🔑 ROUX's prior assumption was WRONG.** ROUX had been modeling freight as a 10–20% margin drag on big pots and had estimated break-even ROAS near 3.3. **Freight is passed through, so it isn't a margin drag at all.** Contribution margin is materially better than feared and **break-even ROAS is more likely in the 1.8–2.4 range**, depending entirely on COGS — now the single remaining unknown.
+- **🔑 Beau's prior assumption was WRONG.** Beau had been modeling freight as a 10–20% margin drag on big pots and had estimated break-even ROAS near 3.3. **Freight is passed through, so it isn't a margin drag at all.** Contribution margin is materially better than feared and **break-even ROAS is more likely in the 1.8–2.4 range**, depending entirely on COGS — now the single remaining unknown.
 - **The problem relocates rather than disappearing: shipping is a CONVERSION risk.**
   - $80 at checkout on a $715 pot = **~11% price increase revealed at the final step**, landing right after the buyer already swallowed the price objection once. Textbook cart-abandonment driver.
   - Commercial residential + lift gate at $350–$500 is a large, late, variable surprise → **qualify residential vs. business early** in the sales conversation, not at quote time.
 - **⛔ Free-shipping-in-price test — DECLINED.** Evan: *"changing the price is not a move jay is willing to make at this point in time, maybe something we could look at later."* Consumer shipping stays as-is. Do not re-propose unprompted.
-- **⛔ Commercial freight surprise — NOT a concern.** **Stephen** (manager of HPC's commercial product section) talks each commercial customer through what they're getting and how it ships, so the fee is known before it's incurred. ROUX's "qualify residential early" recommendation is already handled by existing process.
+- **⛔ Commercial freight surprise — NOT a concern.** **Stephen** (manager of HPC's commercial product section) talks each commercial customer through what they're getting and how it ships, so the fee is known before it's incurred. Beau's "qualify residential early" recommendation is already handled by existing process.
 - Written to `my-files (knowledge)/hpc-reference/metrics-and-goals.md` with a break-even ROAS sensitivity table.
 - **Flags:**
-  - **COGS per SKU is now the last missing input for profitability.** -> ROUX to check Shopify "Cost per item"; Evan/Jay if blank.
+  - **COGS per SKU is now the last missing input for profitability.** -> Beau to check Shopify "Cost per item"; Evan/Jay if blank.
   - Return / freight-damage rate on LTL aluminum -> **Evan**
-  - Is checkout abandonment at the shipping step already measurable? -> ROUX via Shopify once live
+  - Is checkout abandonment at the shipping step already measurable? -> Beau via Shopify once live
 
 ### Q12 — Time budget and posting workflow
 - **Captured:**
-  - **Evan is full-time on marketing — all 40 hours a week are available.** ROUX's "20–25 hours" guess was low.
+  - **Evan is full-time on marketing — all 40 hours a week are available.** Beau's "20–25 hours" guess was low.
   - *"The ads and posting take a fair amount of time but i really am doing a bunch of things at once so everything is kind of all over the place."*
   - **Posts through native apps, one post at a time, every channel.** No scheduler, ever.
   - **Open to a scheduling tool** — *"Im just not sure how they work so ive never done it before."*
-- **🔑 ROUX's read — this reframes the whole engagement.** The constraint is **not hours, it's structure.** Evan has a full week; it's fragmented across ads, posting, design, and four vendors with no operating rhythm. So the highest-value thing ROUX can provide is **not finding him time — it's imposing a system and removing manual repetition.** `my-workflows (automations)/playbooks/weekly-operating-rhythm.md` moves from nice-to-have to the core deliverable.
+- **🔑 Beau's read — this reframes the whole engagement.** The constraint is **not hours, it's structure.** Evan has a full week; it's fragmented across ads, posting, design, and four vendors with no operating rhythm. So the highest-value thing Beau can provide is **not finding him time — it's imposing a system and removing manual repetition.** `my-workflows (automations)/playbooks/weekly-operating-rhythm.md` moves from nice-to-have to the core deliverable.
 - **Scheduling recommendation (given in-session):** start with **Meta Business Suite — free**, already tied to his accounts, schedules Instagram + Facebook (his two biggest channels) together. Prove the habit at zero cost before paying for anything. Add a paid unified tool (e.g. Metricool, ~$20–30/mo, covers IG/FB/LinkedIn/YouTube/TikTok + analytics) only once TikTok launches or the free tool's limits bite.
 - **Flags:**
-  - Does Evan want ROUX to write captions in batch for scheduling? -> **Evan**
+  - Does Evan want Beau to write captions in batch for scheduling? -> **Evan**
   - Set up Meta Business Suite scheduling this week? -> **Evan**
   - **Stephen** added to team roster (commercial product manager)
 
@@ -390,7 +390,7 @@ Hired to source influencers, monitor their content output, and turn that content
 Evan salvaged the creators who actually delivered by moving them into the affiliate program so their
 existing free gear could keep producing.
 
-- **🔑 MAJOR CORRECTION to ROUX's earlier analysis.** ROUX had called the affiliate list *"the most fixable line item in the marketing budget"* — 75 creators, ~$20K product, 44 unresponsive. **That was the agency's wreckage, not a program Evan ran badly.** Evan already triaged it correctly. `my-files (knowledge)/hpc-reference/affiliates-influencers.md` rewritten to reflect this.
+- **🔑 MAJOR CORRECTION to Beau's earlier analysis.** Beau had called the affiliate list *"the most fixable line item in the marketing budget"* — 75 creators, ~$20K product, 44 unresponsive. **That was the agency's wreckage, not a program Evan ran badly.** Evan already triaged it correctly. `my-files (knowledge)/hpc-reference/affiliates-influencers.md` rewritten to reflect this.
 - **Three rules extracted (now standing):**
   1. **Vendor-reported attribution gets independently verified against Shopify.** A 75%-of-revenue claim was checkable in an afternoon. **Live relevance: Coalition runs Google Ads + SEO; IntentWave advises on Meta.** Written to memory as [[hpc-verify-vendor-numbers]].
   2. **Never ship seeded product without a signed deliverable and a deadline.**
@@ -400,22 +400,22 @@ existing free gear could keep producing.
 - ✅ *"a ton of new emails for the email list on klaviyo"*
 - ❓ Sales impact unknown — no attribution
 - 🤷 *"generated some interest i'm assuming"*
-- **🔑 ROUX's read: the verdict is unmeasured, not unknowable — and it's still recoverable.** Those subscribers are still in Klaviyo. Segment by signup source/date and compare lifetime revenue against a normal-acquisition cohort. **That retroactively answers "was it worth it" and settles whether to run another.** Owner: Biljana + ROUX once Klaviyo access exists.
+- **🔑 Beau's read: the verdict is unmeasured, not unknowable — and it's still recoverable.** Those subscribers are still in Klaviyo. Segment by signup source/date and compare lifetime revenue against a normal-acquisition cohort. **That retroactively answers "was it worth it" and settles whether to run another.** Owner: Biljana + Beau once Klaviyo access exists.
 
 **⭐ Best thing that's ever worked: "Nothing really comes to mind."**
-- **ROUX's read — this is the most important sentence in the session.** A $3M brand with no identifiable winner does not have a creative problem. It has a **measurement problem.** You cannot repeat what you cannot identify, so every campaign restarts from zero. This is the strongest possible case for the weekly scoreboard: not reporting for its own sake, but the mechanism that finally lets HPC say *"that one worked — do it again."*
+- **Beau's read — this is the most important sentence in the session.** A $3M brand with no identifiable winner does not have a creative problem. It has a **measurement problem.** You cannot repeat what you cannot identify, so every campaign restarts from zero. This is the strongest possible case for the weekly scoreboard: not reporting for its own sake, but the mechanism that finally lets HPC say *"that one worked — do it again."*
 - **Flags:**
-  - Run the Klaviyo giveaway-cohort analysis -> **Biljana + ROUX**, needs Klaviyo access
-  - Reconcile Coalition's reported Google results against Shopify -> **ROUX**, needs access
-  - Build `my-work (outputs)/internal/reports/creative-benchmarks.md` from real ad data -> **ROUX**, needs access
+  - Run the Klaviyo giveaway-cohort analysis -> **Biljana + Beau**, needs Klaviyo access
+  - Reconcile Coalition's reported Google results against Shopify -> **Beau**, needs access
+  - Build `my-work (outputs)/internal/reports/creative-benchmarks.md` from real ad data -> **Beau**, needs access
 
 ### Q14 — Capacity and vendor scope *(final question)*
 - **Captured:**
-  - **✅ Capacity is NOT a constraint.** *"Yes we will be able to fill it, now if orders really go crazy than we may slow down on shipping times but we will make it work, thats a great problem to have."* Evan will proactively tell ROUX if marketing outruns the shop.
+  - **✅ Capacity is NOT a constraint.** *"Yes we will be able to fill it, now if orders really go crazy than we may slow down on shipping times but we will make it work, thats a great problem to have."* Evan will proactively tell Beau if marketing outruns the shop.
   - **Commercial capacity is a genuine advantage:** the **metal manufacturer's warehouse is directly next door**, with **2–3 day turnaround** to build and ship commercial units.
   - **Coalition: $4,800/month** (~$57,600/yr) for Google Ads management + SEO.
   - **⭐ TIMELINE:** **BM Digital ran BOTH Meta and Google until they were fired 2026-07-20.** Evan took Meta in-house; Coalition — already doing HPC's SEO — offered a team for Google and took it over. Coalition's Google *revamp* began ~mid-Aug 2026.
-- **ROUX's read:**
+- **Beau's read:**
   - **Marketing is not capacity-constrained. Push hard, don't self-limit.** Rare for a manufacturer — most $3M brands hit a production ceiling first. Removes the main downside risk from the year-round growth plan.
   - **"2–3 day commercial builds, next door" is an unmarketed competitive advantage.** No national competitor can promise a custom commercial rig that fast. Belongs in commercial sales copy.
   - **July 20, 2026 is the analytical dividing line.** Any data spanning it reflects two different operators. Never read across it as one trend. Also means Evan and Coalition each have only ~6 weeks of ownership — too early to judge either.
@@ -423,11 +423,11 @@ existing free gear could keep producing.
 - **Flags:**
   - Is Coalition's $4,800/mo management-only or inclusive of ad spend? -> **Evan**
   - What is Coalition's deliverable list / contract scope? -> **Evan**
-  - Reconcile Coalition's reported results against Shopify -> **ROUX**, needs access
+  - Reconcile Coalition's reported results against Shopify -> **Beau**, needs access
 
 ### Q15 — First real data pull (browser live)
-- **Access confirmed.** Shopify admin reachable read-only. **ShopifyQL queries can be run via URL** — ROUX can now self-serve arbitrary read-only analytics. Nothing was changed.
-- **Evan's pushback, both fair:** the Garrett video bundle needs a *plan* (what videos, what for) before it can be bought; scheduling needs *content* before it can be scheduled. **Both are now ROUX deliverables, not Evan homework.** Sequencing agreed: data first, then the video plan and content pipeline built from it.
+- **Access confirmed.** Shopify admin reachable read-only. **ShopifyQL queries can be run via URL** — Beau can now self-serve arbitrary read-only analytics. Nothing was changed.
+- **Evan's pushback, both fair:** the Garrett video bundle needs a *plan* (what videos, what for) before it can be bought; scheduling needs *content* before it can be scheduled. **Both are now Beau deliverables, not Evan homework.** Sequencing agreed: data first, then the video plan and content pipeline built from it.
 - **Full report written: `my-work (outputs)/internal/reports/2026-08-26-shopify-baseline.md`.**
 
 **Headlines:**
@@ -444,14 +444,14 @@ existing free gear could keep producing.
 | 9 | **60 QT Powered Cooker = 28.9% margin** (break-even 3.9) vs 43–49% for every other cooker. Mispriced or miscosted. **Do not advertise until reviewed.** |
 | 10 | **13-mo net sales $2,884,025** — corroborates Evan's ~$3M. Data is credible. |
 
-- **Methodology note:** cost-per-item coverage was only 20–45% before Aug 2026 and 86.8% in August, so **trailing-12-month margins are unusable.** All margin figures are August-only. ROUX checked this before publishing rather than reporting the bad ratios — an earlier draft would have wrongly claimed the Cooling Ring ran a 13% margin.
+- **Methodology note:** cost-per-item coverage was only 20–45% before Aug 2026 and 86.8% in August, so **trailing-12-month margins are unusable.** All margin figures are August-only. Beau checked this before publishing rather than reporting the bad ratios — an earlier draft would have wrongly claimed the Cooling Ring ran a 13% margin.
 - **Flags:**
   - ~~Explain the Feb 2026 −$383K return event~~ ✅ **SOLVED in Q19** — Lowe's dealer order reversal
   - ~~Was the Dec 2025 promo profitable?~~ ✅ **RESOLVED in Q19** — no promo problem; 10.1% consumer rate
   - Return reasons / freight-damage rate -> **Evan**
-  - Cost-per-item still missing on ~13% of Aug sales -> **Evan** (ROUX will not edit Shopify)
+  - Cost-per-item still missing on ~13% of Aug sales -> **Evan** (Beau will not edit Shopify)
   - 60 QT Powered costing/pricing review -> **Evan**
-  - Meta + Google actuals, split at 2026-07-12 -> **ROUX, next pull**
+  - Meta + Google actuals, split at 2026-07-12 -> **Beau, next pull**
 
 ### Q16 — Meta + Google actuals (browser pull)
 - **Accounts found:** Meta **HP Cookers ADs** (4392736013287, under the "Shopify Business Manager" portfolio — note the "High Performance Cookers" portfolio has **0** ad accounts). Google **High Performance Cookers - (CT)** (579-879-1988). A second Google account exists: 624-239-8327, "Setup in progress" — unidentified.
@@ -469,7 +469,7 @@ existing free gear could keep producing.
 - **🔎 Quantified the BM Digital underperformance:** the agency's own `BM |` campaigns spent **$60,738 at 4.20 ROAS** while the account's existing workhorse `BPM_TOF_Manual` ran **$66,548 at 10.98 ROAS** — roughly **38% of the efficiency**. Independent support for Evan's account of that relationship.
 - **⚠️ Attribution caveat, stated plainly:** Meta's $74,778 + Google's $93,551 ≈ *all* of HPC's revenue for the period. **Both platforms claim the same orders. Never sum them; never report platform ROAS to Jay as revenue.** Google additionally reports **46% of its conversion value as modeled** ($64,024 observed vs $93,551 modeled) — conservative Google ROAS is **3.67**.
 - **✅ The honest number — blended MER.** August: ~$87,938 net sales ÷ ~$23,000 spend = **~3.8 MER** against a **2.25 break-even**. Gross profit ~$39,100 − $23,000 spend = **~+$16,100 contribution before overhead.** Profitable with real headroom.
-- **RECOMMENDATION — scale what already works** (all require Evan's click; ROUX changed nothing):
+- **RECOMMENDATION — scale what already works** (all require Evan's click; Beau changed nothing):
   1. Lift both Google PMAX budgets — budget-limited at 4.72–5.91 ROAS
   2. Raise `Standard Shop | Overflow` off $10/day — **8.95 ROAS, best in account, smallest budget**
   3. Rebuild Meta toward ~$20K/mo — ~7 ROAS survived the cut
@@ -484,7 +484,7 @@ existing free gear could keep producing.
 
 ### Q17 — reviews.io (final browser pull)
 - **Account health:** 4.83★ · 91% five-star · 3% one-star · **752 product reviews** · 40 company reviews · 919 timeline items · **1 complaint all time.**
-- **Discovered:** reviews.io runs a **post-purchase survey** asking exactly the two questions ROUX most needed — why they chose HPC, and where they first heard of it. Sampled n=20. No PII recorded.
+- **Discovered:** reviews.io runs a **post-purchase survey** asking exactly the two questions Beau most needed — why they chose HPC, and where they first heard of it. Sampled n=20. No PII recorded.
 
 **🚨 "What made you choose us over other brands?" (n=20)**
 | Factor | % |
@@ -520,14 +520,14 @@ existing free gear could keep producing.
 - **Pattern: two separate reviewers volunteer that it "worked like advertised."** Buyers arrive **skeptical of the 7-minute claim** and are relieved it's true. → Lean into unedited demonstration; the timer on camera is the ad.
 - **Still unmined: ~730 of the 752 product reviews.** Worth a deeper pass later.
 - **Flags:**
-  - Mine the remaining ~730 product reviews -> **ROUX**, needs browser again
+  - Mine the remaining ~730 product reviews -> **Beau**, needs browser again
   - Reviews are tagged "incentivized" — confirm FTC-compliant disclosure is in place -> **Evan**
 
 ### Q18 — Vendor lanes: Coalition owns Google Ads + SEO
 - **Evan:** *"We can monitor what coalition is doing with the seo and the google ads but lets let them do it so we arent crossing wires. If you have suggestions on what they could do you can let me know and ill notify them."*
 - **Standing boundary recorded:**
 
-| Channel | Owner | ROUX's role |
+| Channel | Owner | Beau's role |
 |---|---|---|
 | Google Ads | **Coalition** | Monitor + report only. Suggestions routed through Evan. |
 | SEO | **Coalition** | Same |
@@ -535,7 +535,7 @@ existing free gear could keep producing.
 | Email/Klaviyo | **Biljana** | Coordinate, don't duplicate |
 | Video | **Garrett / Frazier Media** | Brief, don't shoot |
 
-- **Impact on the paid-media recommendation:** the Google budget increases ROUX proposed are **not Evan's unilateral call.** They become suggestions for Coalition. Only the Meta rebuild stays in Evan's lane.
+- **Impact on the paid-media recommendation:** the Google budget increases Beau proposed are **not Evan's unilateral call.** They become suggestions for Coalition. Only the Meta rebuild stays in Evan's lane.
 - **Delivered:** `my-work (outputs)/internal/drafts/2026-08-26-coalition-suggestions.md` — a forwardable document framed as *data Coalition may not have* rather than instructions. Contents: break-even ROAS 2.4 · per-SKU margin table · the 60 QT Powered 28.9% margin warning · Standard Shop\|Overflow at 8.95 ROAS on $10/day · product mix + the June–Oct year-round goal · do-not-advertise list · Scratch & Dent full margin · the 46%-modeled conversion-value question · organic = 50% of first touch + seasonal & off-season keyword directions · the 80%-quality/10%-price positioning note + claims guardrails.
 - Written to memory as [[hpc-vendor-lanes]].
 - **Flags:**
@@ -545,7 +545,7 @@ existing free gear could keep producing.
 ### Q19 — "What is up with the 60 QT Powered Cooker?" (Evan's question)
 - **Answer: nothing is wrong with the product. It's a discounting problem — and chasing it solved two much bigger mysteries.**
 
-**A. The 60 QT is NOT miscosted. ROUX's earlier warning is withdrawn.**
+**A. The 60 QT is NOT miscosted. Beau's earlier warning is withdrawn.**
 | SKU | Price | Cost per item | List margin |
 |---|---|---|---|
 | 60 QT (PW60-BSJ-VLV075) | $515.00 | **$268.63** | **47.8%** |
@@ -556,7 +556,7 @@ and 100 QT took **zero** discount. 47.8% list minus 21.8% discount = the 28.9% r
 Sources: wholesale at 25%, three **"damaged pot" 100% write-offs**, BM Digital + Influencer freebies,
 and stacked consumer codes (HIGH10, LABOR15, Military, Christmas10…).
 
-**B. 🚨 THE FEBRUARY AND DECEMBER MYSTERIES ARE SOLVED — both ROUX findings RETRACTED.**
+**B. 🚨 THE FEBRUARY AND DECEMBER MYSTERIES ARE SOLVED — both Beau findings RETRACTED.**
 
 Discount title **`Lowes dealer 25% and Rep 5%`**:
 | Month | Gross | Discount | Returns | Net |
@@ -580,7 +580,7 @@ Discount title **`Lowes dealer 25% and Rep 5%`**:
 - **$1.78M of gross sales carried no discount at all.**
 - All consumer codes combined ≈ **$56K/yr** on $2.88M. Disciplined.
 - **Over half of all discounting is dealer/wholesale** ($209,185: Lowes $148,896 + Distributor $33,093 + Wholesale Price $18,109 + Wholesale Discount $9,087).
-- 🚨 **Influencer giveaways = $51,603 at retail** across three 100%-off codes (`Influencer` $42,905, `Influencer Discount 100%` $5,100, `Influencer/Affiliate` $3,599) — **~2.5× ROUX's earlier ~$20K estimate** from the spreadsheet, and still zero attributed revenue.
+- 🚨 **Influencer giveaways = $51,603 at retail** across three 100%-off codes (`Influencer` $42,905, `Influencer Discount 100%` $5,100, `Influencer/Affiliate` $3,599) — **~2.5× Beau's earlier ~$20K estimate** from the spreadsheet, and still zero attributed revenue.
 
 **D. 🔴 Shipping damage signal**
 Three separate "damaged" write-offs on the 60 QT alone, two explicitly shipping-related; one booked
@@ -592,8 +592,8 @@ since March. Aluminum on LTL. **Root-cause packaging/carrier review warranted.**
   - **What happened with the Lowe's deal?** $496K booked and reversed -> **Evan → Jay. Business question, not marketing.**
   - Decide the 60 QT's role — stop discounting it, or accept it as a deliberate entry loss-leader -> **Evan**
   - Investigate shipping damage / packaging / carrier -> **Evan**
-  - Unique discount code per seeded creator -> **Evan / ROUX**
-  - Re-baseline Nov–Feb planning on corrected numbers -> **ROUX**
+  - Unique discount code per seeded creator -> **Evan / Beau**
+  - Re-baseline Nov–Feb planning on corrected numbers -> **Beau**
 
 ---
 
@@ -602,10 +602,10 @@ since March. Aluminum on LTL. **Root-cause packaging/carrier review warranted.**
 - **Direct Meta Ads Manager + Google Ads access or exports -> Evan. TOP DATA PRIORITY.** Venon cannot be used for paid media.
 - Is Venon's email/Klaviyo attribution trusted? -> Evan / Biljana
 - Does anyone read Venon's profit numbers? They exclude COGS + freight -> Evan
-- COGS per SKU + freight cost per SKU -> Evan/Jay (ROUX will write these into the profit tool)
+- COGS per SKU + freight cost per SKU -> Evan/Jay (Beau will write these into the profit tool)
 - Product-line revenue split -> Evan, Shopify export
 - Reconcile $631K tracked vs $3M reported -> Evan
-- ~~Full product catalog~~ ✅ RESOLVED — ROUX pulled all 122 products from public Shopify JSON
+- ~~Full product catalog~~ ✅ RESOLVED — Beau pulled all 122 products from public Shopify JSON
 - Current net margin % vs. the 20% goal -> Evan / Jay
 - `HPC_MEGA_Audit.pdf` won't extract (subsetted fonts, no local PDF tooling) -> Evan to re-share as .docx/.md or approve `brew install poppler`
 - Connectors unauthorized: Klaviyo, Google Analytics, Ahrefs, Canva, Slack -> Evan, via claude.ai connector settings

@@ -21,9 +21,9 @@ Evan asked for everything to be put back. **"Discard drafts" run and confirmed.*
 
 ---
 
-## What went wrong with ROUX's approach
+## What went wrong with Beau's approach
 
-1. **Executed before validating the binding constraint.** ROUX should have tested whether it could
+1. **Executed before validating the binding constraint.** Beau should have tested whether it could
    attach an image to a throwaway draft *first*, then designed the plan around the answer. Instead it
    built the ad and discovered the file-picker blocker at the end.
 2. **Wrong base ad.** Duplicated `18qt-001`, a **Collection** ad, to host a single-image promo. Clean
@@ -32,13 +32,13 @@ Evan asked for everything to be put back. **"Discard drafts" run and confirmed.*
    because it needed auditing rather than just building.
 
 ## The thing that changes the plan
-Meta's media picker has **Account images** and **Instagram images** libraries. ROUX can select from
+Meta's media picker has **Account images** and **Instagram images** libraries. Beau can select from
 those freely — **the native file picker is only a blocker for getting new files in.**
 
 **Correct division of labour:**
 - **Evan, once (~2 min):** bulk-upload the 10 Labor Day PNGs to the Meta media library. No ads, no
   setup, just the files.
-- **ROUX, after that:** build all four ads properly — right format, creative selected from the
+- **Beau, after that:** build all four ads properly — right format, creative selected from the
   library, placement customisation across all three sizes, copy, URLs, schedules. No file picker touched.
 
 ## Nothing is staged. Budget ramp not started.

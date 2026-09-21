@@ -5,7 +5,7 @@ description: The monthly plan cycle. Near the end of each month, build next mont
 
 # Month plan
 
-**Why this exists (Evan, 2026-09-17):** once a plan is approved, Atlas works *toward targets*
+**Why this exists (Evan, 2026-09-17):** once a plan is approved, ROUX works *toward targets*
 instead of finding things to do. Every month gets one plan, drafted on one of the last days of the
 month before, collaborated on, then locked. The first plan covers Sept 17 – Oct 31, 2026; from then on each plan covers one calendar month.
 
@@ -33,11 +33,11 @@ Runs from the scheduled task `month-plan-draft` or when Evan asks.
    appointments and games are reference or a short absence, and tasks go before or after them.
    Only an event labeled as a trip counts as unavailable. Evan works M–F 6:30 am–3:00 pm,
    sometimes until 4:30 pm.
-5. **ROUX drafts.** Brief ROUX with the scorecard, baseline, moments, calendar, `BOARD.md`,
+5. **Beau drafts.** Brief Beau with the scorecard, baseline, moments, calendar, `BOARD.md`,
    `key-dates.md`, `seasonal-calendar.md` and the standing rules. The draft uses the shape below.
    Save to `my-work (outputs)/internal/YYYY-MM-DD-month-plan-<month>-DRAFT.md`.
 6. **Check the draft before showing it.** Every number traces to a source in the baseline. Any
-   claim ROUX makes about a live system (a campaign's status, an ad's destination, a product
+   claim Beau makes about a live system (a campaign's status, an ad's destination, a product
    page) is verified by a read, not repeated. Fix what doesn't hold.
 7. **Present to Evan:** the last month's scorecard in five lines, then the draft's targets table,
    the bets, and **only the asks that truly need Evan's or Jay's approval** (money, policy,
@@ -91,7 +91,7 @@ Runs from the scheduled task `month-plan-scoreboard`, or when Evan asks "how are
   Revenue is Shopify net. Meta is read two ways (Meta-claimed, Shopify-tagged), never as
   Shopify net ÷ Meta spend. Say which CAC.
 - **Nothing in a plan authorizes a write.** A plan line that says "launch retargeting Sept 28"
-  means Atlas prepares it and Evan clicks. Every Shopify, Meta and Google write still needs his
+  means ROUX prepares it and Evan clicks. Every Shopify, Meta and Google write still needs his
   yes in that conversation.
 - **Stay in lane.** No email, SMS or Klaviyo work in any plan. Google Ads and SEO are Coalition's:
   requests to them, not jobs.
