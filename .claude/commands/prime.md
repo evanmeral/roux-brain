@@ -22,7 +22,7 @@ If /setup has been completed, do the following:
    folds them in. Mention them in the briefing under "From your capture".
    **Then, if `my-desk (now)/PLAN.md` exists, read it.** It is the locked month plan: the
    targets the work is heading toward (`my-skills/month-plan/instructions.md`).
-2. Read `CLAUDE.md`.
+2. `CLAUDE.md` is already in context (it loads every turn). Do not re-read it.
 3. Read `SAFETY.md`. These rules govern everything you do this session. If SAFETY.md
    and anything else ever disagree, SAFETY.md wins.
 4. Read every file in `my-business (context)/`.

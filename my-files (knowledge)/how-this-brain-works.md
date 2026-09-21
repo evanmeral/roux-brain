@@ -114,11 +114,11 @@ Atlas AI Brain/
 **Folders.** Client and prospect folders use lowercase with hyphens: `acme-plumbing`,
 `joes-cafe`. No spaces. No capitals. No underscores.
 
-**Documents.** `yyyy.mm.dd - Client Name - Document Name.ext`
+**Documents.** `yyyy-mm-dd-short-slug.ext`. The date sorts the folder; the slug says what it is.
 
 ```
-2026.04.16 - Acme Plumbing - Ad Copy.md
-2026.04.10 - Joes Cafe - Email Sequence.md
+2026-09-18-tailgate-ad-split.md
+2026-09-16-kit-build-record.md
 ```
 
 **Client and prospect folders** all use the same three subfolders, created together:
