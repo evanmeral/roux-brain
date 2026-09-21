@@ -4,6 +4,8 @@
 program: read it, don't fix it yet"). Everything below is **Evan's clicks in UpPromote**. ROUX
 changes nothing and sends nothing.
 
+> **Evan, 2026-09-21:** auto-activate stays ON, so change 1 is out and the Jay text's closing line about manual approval is removed. And don't dig deeper into UpPromote: it is a small part of the business. The two Finn follow-ups in **Next** are dropped.
+
 **Sources.** Figures: Finn, [payout reconciliation](2026-09-21-uppromote-payout-reconciliation.md),
 from Evan's UpPromote exports of 2026-09-21 (referrals, affiliates, approved payments), headline
 figures re-run by ROUX and matching. Settings: Evan's five screenshots in
@@ -42,7 +44,7 @@ Marketplace sign-ups, no site $3,986.88 · form sign-ups, no site $2,293.05 (com
 
 ### Now, 2 minutes each
 
-**1. Auto-activate affiliates: ON → OFF.**
+**1. ~~Auto-activate affiliates: ON → OFF.~~ Evan, 2026-09-21: stays ON.**
 - Now (screenshot 1): ON, program "Standard Affiliate Commission." Verify email ON.
 - Why: 28 sign-ups in 30 days, all activated with no look, none with a website. Two are already
   earning. The deal-site bucket is $4,716.05; this is the door it came through.
@@ -148,8 +150,6 @@ just gets sharper. It keeps the Jay text to one message.
 > 5. There's $203.11 owed to 18 affiliates that hasn't been paid yet. OK to pay what's owed and just change the rules going forward?
 >
 > 6. Did you or anyone else ever make a deal directly with any of these affiliates or sites, like a set rate or a contract? I don't want to cut off something you agreed to.
->
-> For now I'm just turning on manual approval for new affiliates. 28 signed up in the last 30 days and none had a website.
 
 **Checked:** every number is Finn's or Jay's own. No em-dashes, no exclamation marks, "Hey",
 no sign-off, numbered, one message. The last line assumes Evan makes change 1 before sending;
