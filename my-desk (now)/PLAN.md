@@ -105,3 +105,4 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 - **2026-09-18 · 80/100/120 gal commercial photos renamed and filed** (Evan): 18 cutouts + 18 studio shots, copied into the asset library; Evan kept the originals.
 - **2026-09-21 · 140 gal commercial photos renamed and filed** (Evan): 5 cutouts + 5 studio shots, copied into the asset library; Atlas cut the lid-on cutout from the studio shot; Evan kept the originals.
 - **2026-09-21 · Kit item photos renamed and filed** (Evan): 11 cutouts + 11 studio shots (the three fry kits laid out, plus thermometers, skimmer, legs, windshield, hose and regulator, 18 QT burner); Evan's originals renamed to match. Feeds Now #1 (kit photos).
+- **2026-09-21 · `/file-product-photos` skill built; skills now offered mid-session on the second hand run** (Evan). → [skill](../my-skills/file-product-photos/instructions.md) · decisions.md
