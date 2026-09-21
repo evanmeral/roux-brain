@@ -79,7 +79,7 @@ in this kit and does not fix a missing Git.
 ## Folder structure
 
 ```
-Atlas AI Brain/
+ROUX/
 ├── CLAUDE.md                       <- loaded every turn. Keep it short.
 ├── SAFETY.md                       <- the constitution (only you edit it)
 ├── .claude/                        <- settings, agents, commands

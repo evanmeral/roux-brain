@@ -1,7 +1,7 @@
 {
   "port": 4242,
   "timezone": "America/Chicago",
-  "vaultName": "Atlas AI Brain",
+  "vaultName": "ROUX",
   "weekStartsOn": 1,
   "metaDailyCeiling": {
     "value": 350,

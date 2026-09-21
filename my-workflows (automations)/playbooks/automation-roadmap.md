@@ -6,7 +6,7 @@ decision."* Evan's time should go to judgment calls, not to production.
 ---
 
 ## Phase 0 — Where we are (Aug 2026)
-- Beau has full read/write on `Atlas AI Brain/`
+- Beau has full read/write on `ROUX/`
 - Context files built ✅
 - Two custom skills exist: `hpc-landing-page`, `hpc-scoreboard-report`
 - **No live data connections.** Everything is manual input.
