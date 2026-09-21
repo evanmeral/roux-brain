@@ -29,6 +29,26 @@ Sunday dark. Pillars: Proof 1½ (Mon, Thu) · People 1 (Tue) · How 1 (Wed) · B
 ## Previews
 
 ### 1 · Mon Sep 28 · 12:00 · Boil Math Monday
+```schedule
+{
+ "id": "1-feed",
+ "type": "feed",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-28",
+ "time": "12:00",
+ "media": [
+  "01_MON-0928_FEED_boil-math-4mm.png"
+ ],
+ "graphicText": [
+  "4mm",
+  "Thin pots warp. Ours are 4mm.",
+  "Hand-welded in Louisiana."
+ ]
+}
+```
 ![](01_MON-0928_FEED_boil-math-4mm.png)
 **Visual:** the four-pot Powered lineup on a patio (`assets/lifestyle/hf_20260716_…png`), faded into charcoal. Big "4mm" stat, headline "Thin pots warp. Ours are 4mm." Foot line "Hand-welded in Louisiana." Shield logo; no patent number written anywhere. Template `templates/cw-2026-09-28/mon-boilmath-4x5.html`. This is a new layout: a photo band over a stat, unlike last Monday's full-bleed photo with a spec strip.
 **Caption — Facebook**
@@ -55,6 +75,42 @@ Take care of it and your kids will boil in it.
 **Claims check:** "4mm aluminum", never "cast" (standing rules). "With good care, these last generations" is Evan's register (how-we-sound); no specific lifespan is claimed. The ice-chest idea is used without naming the brand. No warranty (four pots in frame), no price, no time claim, so no legal line. "Hand-welded in Louisiana", not "Made in USA."
 
 ### 2 · Tue Sep 29 · 5:30 pm · Shop Floor Tuesday
+```schedule
+{
+ "id": "2-feed",
+ "type": "feed",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-29",
+ "time": "17:30",
+ "media": [
+  "02_TUE-0929_FEED_shop-floor-crew-RAW.png"
+ ],
+ "notes": [
+  "Fallback photo (team cook-off booth, Apr 2026). If a Sept 23 shoot photo replaces it, the media AND the caption change (swap caption is in PLAN.md): update PLAN.md, rebuild, and Evan approves the new version."
+ ]
+}
+```
+```schedule
+{
+ "id": "2-story",
+ "type": "story",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-29",
+ "time": "17:30",
+ "media": [
+  "02_TUE-0929_STORY_shop-floor-crew-RAW.png"
+ ],
+ "notes": [
+  "Story repost of the Tuesday photo, blurred band. Swaps with the feed photo."
+ ]
+}
+```
 ![](02_TUE-0929_FEED_shop-floor-crew-RAW.png)
 **Visual:** the team cook-off booth photo (Apr 2026, six of the krewe in red shirts, all HPC employees (Evan, 2026-09-21) under the HPC tent). **Raw: no type, no logo.** The story repost `02_TUE-0929_STORY_shop-floor-crew-RAW.png` uses the blurred band. **Preferred swap:** a phone photo from the Sept 23 shoot (the crew, a pot on the bench, Garrett's lights). The scheduled post's media gets replaced, and so does the caption (swap version below).
 **Caption — Facebook (fallback photo)**
@@ -89,6 +145,28 @@ We're a krewe of about twelve. The same people who weld the tunnel tubes also pa
 **Claims check:** "about twelve" is Evan's wording (who-we-are); "krewe" for our own people (Evan, 2026-09-21). "Camera crew" stays "crew", since that's Garrett's team. Everyone in the booth photo is an HPC employee (Evan, 2026-09-21). Nobody is named (no permission on file). The shoot date (Sept 23) is from the board. Nothing sells on Tuesday.
 
 ### 3 · Wed Sep 30 · 12:00 · How-To Wednesday: carousel, 7 frames in this order
+```schedule
+{
+ "id": "3-carousel",
+ "type": "carousel",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-30",
+ "time": "12:00",
+ "media": [
+  "03_WED-0930_CAROUSEL_1-cover.png",
+  "03_WED-0930_CAROUSEL_2-one-bird.png",
+  "03_WED-0930_CAROUSEL_3-two-birds.png",
+  "03_WED-0930_CAROUSEL_4-measure-oil.png",
+  "03_WED-0930_CAROUSEL_5-prep-bird.png",
+  "03_WED-0930_CAROUSEL_6-temp-time.png",
+  "03_WED-0930_CAROUSEL_7-cta.png"
+ ],
+ "graphicTextFrom": "howto.json"
+}
+```
 ![](03_WED-0930_CAROUSEL_1-cover.png)
 1. `_1-cover`: flame under the tunnel tubes. "Frying a turkey this year? **Start here.**" "Which pot, how much oil, how hot, how long. Save it for November."
 2. `_2-one-bird`: 30 QT Turkey Fryer Powered with the single rack. "One turkey? The 30 QT." · 350° in under 10 min · 12″ thermometer fits
@@ -133,6 +211,24 @@ Questions? Drop them below. 🔥
 **Claims check:** rack fitment is from what-we-sell (single upright for the 30 QT, dual for the 60 QT). The 12″ thermometer fits the 30 QT and the 60 QT Dual (Evan, 2026-09-11 and 2026-09-16). "350° in under 10 minutes" is the frying figure for every pot outside the 18 QT, 4-Way and 40 QT (what-we-sell), so it's on the 30 QT frame only. **Cooking figures are USDA FSIS, "Deep Fat Frying and Food Safety"**, read by Scout 2026-09-21 from a government-hosted copy (the FSIS page blocked automated reads): 350°F · "approximately 3 to 5 minutes per pound" · 165°F at the thigh, wing and breast · "completely thawed", not stuffed, "12 pounds or less" · water-displacement oil measure. "Pat dry … prevent oil splatter" is USDA's general frying line, not turkey-specific. ⚠️ **"Dump the water and dry the pot" is common-sense safety that Scout did not source.** Say if you'd rather cut it. No crawfish, no prices, no warranty.
 
 ### 4 · Thu Oct 1 · 5:30 pm · Word of Mouth Thursday
+```schedule
+{
+ "id": "4-feed",
+ "type": "feed",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-10-01",
+ "time": "17:30",
+ "media": [
+  "04_THU-1001_FEED_review-robert-60qt-turkey.png"
+ ],
+ "notes": [
+  "Turkey kit tail runs by default (plan has the kits live Oct 1). It comes out only if the Sept 30 go/no-go says no: edit PLAN.md, rebuild, re-approve."
+ ]
+}
+```
 ![](04_THU-1001_FEED_review-robert-60qt-turkey.png)
 **Visual:** the Turkey Fry Kit (60 QT Dual) laid out, over Robert's words, with a gold rule and "60 QT DUAL TURKEY FRYER · REVIEWS.IO." The layout puts the product on top and the quote below, the reverse of last week's card. Centering measured 0 px.
 **Caption — Facebook**
@@ -162,6 +258,26 @@ The Turkey Fry Kits are live. Link in bio. 🔥
 **Claims check:** verbatim from reviews.io: Robert, 60 Qt Dual Turkey Fryer Pot, 2023-11-26 (Scout, 2026-09-21; the star came from the data feed, not the page, so none is shown). ⚠️ **Trimmed with "…": the dropped words are "Fast heating time (35-40 min)"**, since 35–40 minutes to heat reads against our "350° in under 10 minutes" line. Nothing is reworded. ⚠️ The 16.5 lb bird is over USDA's 12 lb guidance on Wednesday's frame 5; Evan chose this review knowing that (2026-09-21). Kit contents are from what-we-sell. No price in the tail. The kit line runs by default because the plan has the turkey kits live Oct 1; it comes out only if the Sept 30 go/no-go says no.
 
 ### 5 · Fri Oct 2 · 12:00 · Friday Fire (conditional)
+```schedule
+{
+ "id": "5-reel",
+ "type": "reel",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-10-02",
+ "time": "12:00",
+ "media": [
+  "05_FRI-1002_REEL_turkey-30qt.mp4"
+ ],
+ "conditional": "Footage not delivered yet. No footage by Thu Oct 1 noon → mark dropped and the week runs five.",
+ "notes": [
+  "Captions are drafts; re-read every line against the clip before approval.",
+  "Over 10 MB is Evan's upload."
+ ]
+}
+```
 **Visual:** Garrett's 30 QT turkey demo cut to 9:16, under 30 s, with the bird going in and the thermometer in frame. **Or** Evan's phone clip from the Sept 23 shoot. Over 10 MB is Evan's upload. **No footage by Thu Oct 1 noon → dropped, and the week runs five.**
 **Caption — Facebook (draft; checked against the clip before scheduling)**
 ```
@@ -189,6 +305,39 @@ Who's frying this year?
 **Claims check:** no time figure unless the clip shows the clock. Every line is re-read against what the footage actually shows.
 
 ### 6 · Sat Oct 3 · 9:00 am · Game Day story
+```schedule
+{
+ "id": "6-story",
+ "type": "story",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-10-03",
+ "time": "09:00",
+ "media": [
+  "06_SAT-1003_STORY_game-day-KIT.png"
+ ],
+ "graphicText": [
+  "Tigers vs McNeese tonight, 6:45.",
+  "Saints Monday, 7:15.",
+  "Two game days. What are you frying?",
+  "18 QT TAILGATE KIT · FROM $404 · LINK IN BIO"
+ ],
+ "alternates": [
+  {
+   "label": "plain (no kit) — runs if the Sept 24 tailgate go/no-go says no",
+   "media": [
+    "06_SAT-1003_STORY_game-day.png"
+   ]
+  }
+ ],
+ "notes": [
+  "KIT variant is the default (plan has the tailgate kit live Sept 25). Re-read the live kit price Saturday morning.",
+  "A poll sticker, if Evan wants one, is added by hand: Business Suite cannot schedule stickers."
+ ]
+}
+```
 ![](06_SAT-1003_STORY_game-day.png)
 **Visual:** the 18 QT on leg extensions under a gold glow. "Tigers vs McNeese tonight, 6:45. **Saints Monday, 7:15.**" · "Two game days. What are you frying?" Type sits inside the story safe zones. Centering measured at 36 px. **KIT variant** `06_SAT-1003_STORY_game-day-KIT.png` adds "18 QT TAILGATE KIT · FROM $404 · LINK IN BIO." Stories carry no caption. A poll sticker, if you want one, is added by hand.
 **Why this one:** LSU is at home Saturday night, and the Saints play their only primetime game Monday.

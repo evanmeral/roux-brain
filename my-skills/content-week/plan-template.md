@@ -20,12 +20,17 @@ launching this week that the content rides, with its condition}
 | 6 | Sat {d} · 9:00 am | Game Day / Weekend Cook | story 9:16 | ✅ | ✅ | `06_…_STORY_{slug}.png` | proposed |
 
 Status values: `proposed` · `approved` · `revised` · `dropped` · `scheduled ✔ {time read back}`.
+The table is for reading. The record of what is approved, queued, scheduled and verified is
+`schedule.json` in this folder (`cli.js status <Monday>`).
 
 ---
 
 ## Previews
 
 ### 1 · Mon {date} · 12:00 · Boil Math Monday
+```schedule
+{"id": "1-feed", "type": "feed", "placements": ["facebook", "instagram"], "date": "{YYYY-MM-DD}", "time": "12:00", "media": ["01_MON-{mmdd}_FEED_{slug}.png"]}
+```
 ![]({file})
 **Visual:** {what is on the graphic, which asset, which template}
 **Caption — Facebook**
@@ -42,6 +47,37 @@ Status values: `proposed` · `approved` · `revised` · `dropped` · `scheduled 
 ### 2 · Tue …
 *(same shape, six times; a carousel lists every frame in posting order)*
 
+### The `schedule` block — one per piece, the scheduler reads it
+
+`node "my-workflows (automations)/live/post-scheduler/cli.js" build <Monday>` turns this plan into
+`schedule.json`. It reads **only** the `schedule` blocks and the two caption fences in the same
+section, so the rest of the plan can be written for Evan. Rules:
+
+- The section heading starts `### <slot number> · `. The block sits anywhere inside that section.
+  Tuesday has two blocks (`2-feed` and `2-story`); every other slot has one.
+- The captions are the fences under the lines that start `**Caption — Facebook` and
+  `**Caption — Instagram` (a note in brackets after the name is fine). The first of each is what
+  posts. Any other fence ("Swap caption…") is ignored. **Never type a caption into the block.**
+- Valid JSON, double quotes. Fields:
+
+| Field | Required | What |
+|---|---|---|
+| `id` | yes | `<slot>-<type>`: `1-feed`, `2-story`, `3-carousel`, `5-reel` |
+| `type` | yes | `feed` · `carousel` · `reel` · `story` |
+| `placements` | yes | `["facebook", "instagram"]`, or one of them |
+| `date`, `time` | yes | `YYYY-MM-DD` and 24-hour `HH:MM`, Central |
+| `media` | yes | file names in this folder, **in posting order** |
+| `ifLines` | when the caption has `[IF …]` lines | `"omit"` or `"include"`. Left undecided, the marker stays in and preflight fails it, so it can never post by accident |
+| `graphicText` / `graphicTextFrom` | no | the words set on the graphic, as a list, or `"howto.json"` for a carousel, so the copy rules read them too |
+| `alternates` | no | `[{"label": "plain, if the kit is not live", "media": ["…"]}]` — checked, never scheduled |
+| `conditional` | no | one line: what has to happen for this piece to run, and the deadline |
+| `notes` | no | for the runner and for Evan: "Evan adds the sticker", "swap if a shoot photo lands" |
+| `firstComment` | no | `{"instagram": "…"}` |
+| `commercial` | no | `true` on steamer or commercial content (a 5-year warranty line then always fails) |
+
+After any change to a caption, a file or a time: rebuild. A piece Evan had already approved goes
+back to draft, because his approval covered the old version.
+
 ---
 
 ## Needs from Evan
@@ -54,8 +90,11 @@ Status values: `proposed` · `approved` · `revised` · `dropped` · `scheduled 
 
 ## After approval — filled in by the skill
 
+Paste the output of `cli.js status <Monday>` here once the run is verified, then one row per piece:
+
 | # | Scheduled for (CT) | Read back in Planner | Notes |
 |---|---|---|---|
 | 1 | | | |
 
-Anything that could not be scheduled is written here as *not scheduled: {reason}*, never left blank.
+Anything that could not be scheduled is written here as *not scheduled: {reason}* (the manifest's
+`failed` note), never left blank.

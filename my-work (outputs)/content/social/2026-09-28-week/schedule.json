@@ -1,0 +1,385 @@
+{
+  "schema": 1,
+  "week": "2026-09-28",
+  "timezone": "America/Chicago",
+  "source": "PLAN.md",
+  "builtAt": "2026-09-21T17:56:17.866Z",
+  "createdAt": "2026-09-21T17:56:17.866Z",
+  "pieces": [
+    {
+      "id": "1-feed",
+      "slot": 1,
+      "segment": "Boil Math Monday",
+      "type": "feed",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "01_MON-0928_FEED_boil-math-4mm.png"
+      ],
+      "caption": {
+        "facebook": "Boil Math Monday.\n\nOne number today: 4mm.\n\nThat's how thick the aluminum is on every pot we build. Thin pots warp. Ours are 4mm, with the tunnel tubes hand-welded across the bottom here in Louisiana.\n\nIt's the same call as the cheap ice chest you replace every couple of summers versus the good one you keep. Take care of one of these and your kids will boil in it.",
+        "instagram": "Boil Math Monday.\n\n4mm aluminum on every pot we build. Thin pots warp. Ours get handed down. 🔥\n\nTake care of it and your kids will boil in it.\n\n#louisiana #seafoodboil #outdoorcooking #builtinlouisiana #cajuncooking #highperformancecookers"
+      },
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-28",
+        "time": "12:00",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-28T12:00:00-05:00",
+        "epoch": 1790614800
+      },
+      "approved": false,
+      "approval": null,
+      "status": "draft",
+      "scheduledBy": null,
+      "conditional": null,
+      "alternates": [],
+      "notes": [],
+      "commercial": false,
+      "graphicText": [
+        "4mm",
+        "Thin pots warp. Ours are 4mm.",
+        "Hand-welded in Louisiana."
+      ],
+      "waivers": [],
+      "evidence": [],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.853Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        }
+      ]
+    },
+    {
+      "id": "2-feed",
+      "slot": 2,
+      "segment": "Shop Floor Tuesday",
+      "type": "feed",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "02_TUE-0929_FEED_shop-floor-crew-RAW.png"
+      ],
+      "caption": {
+        "facebook": "Shop Floor Tuesday.\n\nOff the shop floor for this one. That's part of our krewe at a crawfish cook-off this spring, tent up, table ready.\n\nWe're a krewe of about twelve in Covington, Louisiana. The same people who weld the tunnel tubes also pack your freight, answer the phone and show up at the cook-offs.\n\nLast week a camera crew spent a day in the shop with us. You'll see what they caught soon.",
+        "instagram": "Shop Floor Tuesday.\n\nPart of the krewe, cook-off season. About twelve of us in Covington, Louisiana, doing everything from the welds to the phones. 🔥\n\nCamera crew was in the shop last week. More soon.\n\n#builtinlouisiana #louisiana #outdoorcooking #cajuncooking #highperformancecookers"
+      },
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-29",
+        "time": "17:30",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-29T17:30:00-05:00",
+        "epoch": 1790721000
+      },
+      "approved": false,
+      "approval": null,
+      "status": "draft",
+      "scheduledBy": null,
+      "conditional": null,
+      "alternates": [],
+      "notes": [
+        "Fallback photo (team cook-off booth, Apr 2026). If a Sept 23 shoot photo replaces it, the media AND the caption change (swap caption is in PLAN.md): update PLAN.md, rebuild, and Evan approves the new version."
+      ],
+      "commercial": false,
+      "graphicText": [],
+      "waivers": [],
+      "evidence": [],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.853Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        }
+      ]
+    },
+    {
+      "id": "2-story",
+      "slot": 2,
+      "segment": "Shop Floor Tuesday",
+      "type": "story",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "02_TUE-0929_STORY_shop-floor-crew-RAW.png"
+      ],
+      "caption": null,
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-29",
+        "time": "17:30",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-29T17:30:00-05:00",
+        "epoch": 1790721000
+      },
+      "approved": false,
+      "approval": null,
+      "status": "draft",
+      "scheduledBy": null,
+      "conditional": null,
+      "alternates": [],
+      "notes": [
+        "Story repost of the Tuesday photo, blurred band. Swaps with the feed photo."
+      ],
+      "commercial": false,
+      "graphicText": [],
+      "waivers": [],
+      "evidence": [],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.853Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        }
+      ]
+    },
+    {
+      "id": "3-carousel",
+      "slot": 3,
+      "segment": "How-To Wednesday",
+      "type": "carousel",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "03_WED-0930_CAROUSEL_1-cover.png",
+        "03_WED-0930_CAROUSEL_2-one-bird.png",
+        "03_WED-0930_CAROUSEL_3-two-birds.png",
+        "03_WED-0930_CAROUSEL_4-measure-oil.png",
+        "03_WED-0930_CAROUSEL_5-prep-bird.png",
+        "03_WED-0930_CAROUSEL_6-temp-time.png",
+        "03_WED-0930_CAROUSEL_7-cta.png"
+      ],
+      "caption": {
+        "facebook": "How-To Wednesday.\n\nFrying a turkey this year? Save this one for November.\n\nONE BIRD: the 30 QT Turkey Fryer and its single upright rack.\nTWO BIRDS: the 60 QT Dual Turkey Fryer and its dual rack. Two turkeys at once.\n\nStep 1, before any oil: measure with water. Set the bird in the empty pot and add water until it's covered. Take the bird out. That water line is how much oil you need. Dump the water and dry the pot all the way.\n\nStep 2, the bird: fully thawed, patted dry, not stuffed. USDA's guidance is 12 pounds or less for frying.\n\nStep 3, heat and time: oil at 350°, about 3 to 5 minutes a pound. It's done at 165° in the thickest part of the breast and the innermost thigh and wing. Clip the 12\" thermometer to the rim and keep an eye on it.\n\nCooking figures are USDA guidance. Questions about your setup? Comment and we'll answer.",
+        "instagram": "How-To Wednesday.\n\nFrying a turkey this year? Swipe, then save it for November. →\n\nOne bird: 30 QT. Two birds: 60 QT Dual.\nMeasure your oil with water first. Thawed, dry, not stuffed. 350°, about 3 to 5 minutes a pound, done at 165°. (USDA guidance.)\n\nQuestions? Drop them below. 🔥\n\n#turkeyfry #louisiana #outdoorcooking #cajuncooking #builtinlouisiana #highperformancecookers"
+      },
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-30",
+        "time": "12:00",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-30T12:00:00-05:00",
+        "epoch": 1790787600
+      },
+      "approved": false,
+      "approval": null,
+      "status": "draft",
+      "scheduledBy": null,
+      "conditional": null,
+      "alternates": [],
+      "notes": [],
+      "commercial": false,
+      "graphicText": [
+        "HOW-TO WEDNESDAY",
+        "WED 09.30",
+        "Frying a turkey this year?",
+        "Start here.",
+        "Which pot, how much oil, how hot, how long. Save it for November.",
+        "ONE BIRD",
+        "One turkey? The 30 QT.",
+        "Built for one bird on the single upright rack.",
+        "350° IN UNDER 10 MIN",
+        "12″ THERMOMETER FITS",
+        "30 QT TURKEY FRYER",
+        "TWO BIRDS",
+        "Feeding a crowd? The 60 QT.",
+        "The dual rack fries two turkeys at once.",
+        "DUAL RACK",
+        "12″ THERMOMETER FITS",
+        "60 QT DUAL TURKEY FRYER",
+        "STEP 1   BEFORE ANY OIL",
+        "Measure your oil with water.",
+        "Bird in the empty pot, water to cover it. Take the bird out. That water line is your oil line. Then dump the water and dry the pot.",
+        "STEP 2   THE BIRD",
+        "Fully thawed. Patted dry. Not stuffed.",
+        "USDA says 12 pounds or less for a fried turkey. Dry skin means less spatter.",
+        "STEP 3   HEAT AND TIME",
+        "350°",
+        "About 3 to 5 minutes a pound.",
+        "Done at 165° in the thickest part of the breast and the innermost thigh and wing. Source: USDA.",
+        "Save this for Thanksgiving.",
+        "Questions about your setup? Comment and we ll answer.",
+        "HAND-WELDED IN LOUISIANA MOST ORDERS SHIP IN 1 2 BUSINESS DAYS"
+      ],
+      "waivers": [],
+      "evidence": [],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.853Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        }
+      ]
+    },
+    {
+      "id": "4-feed",
+      "slot": 4,
+      "segment": "Word of Mouth Thursday",
+      "type": "feed",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "04_THU-1001_FEED_review-robert-60qt-turkey.png"
+      ],
+      "caption": {
+        "facebook": "Word of Mouth Thursday.\n\n\"Awesome experience frying our turkey this year! … cooked a 16.5 lb turkey in 47 min. Definitely recommend!\"\n— Robert, 60 QT Dual Turkey Fryer\n\nThanksgiving's about eight weeks out. If you're thinking about frying one this year, Robert's already done the homework.\n\nThanks, Robert.\n\nThe Turkey Fry Kits are live today. The 30 QT kit comes with the rack, a 12\" thermometer, a wind shield and a skimmer, for one bird. The 60 QT Dual kit does the same for two. At highperformancecookers.com.",
+        "instagram": "Word of Mouth Thursday.\n\n\"Awesome experience frying our turkey this year! … cooked a 16.5 lb turkey in 47 min. Definitely recommend!\" — Robert, 60 QT Dual Turkey Fryer\n\nThe Turkey Fry Kits are live. Link in bio. 🔥\n\n#turkeyfry #louisiana #outdoorcooking #builtinlouisiana #highperformancecookers"
+      },
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-10-01",
+        "time": "17:30",
+        "timezone": "America/Chicago",
+        "iso": "2026-10-01T17:30:00-05:00",
+        "epoch": 1790893800
+      },
+      "approved": false,
+      "approval": null,
+      "status": "draft",
+      "scheduledBy": null,
+      "conditional": null,
+      "alternates": [],
+      "notes": [
+        "Turkey kit tail runs by default (plan has the kits live Oct 1). It comes out only if the Sept 30 go/no-go says no: edit PLAN.md, rebuild, re-approve."
+      ],
+      "commercial": false,
+      "graphicText": [],
+      "waivers": [],
+      "evidence": [],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.855Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        }
+      ]
+    },
+    {
+      "id": "5-reel",
+      "slot": 5,
+      "segment": "Friday Fire",
+      "type": "reel",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "05_FRI-1002_REEL_turkey-30qt.mp4"
+      ],
+      "caption": {
+        "facebook": "Friday Fire.\n\nTurkey going into 350° oil in the 30 QT. Sound on.\n\nWatch the thermometer. The bird goes in, the oil dips, and the tunnel tubes on the bottom of the pot pull it right back up.\n\nWho's frying this year?\n\nThe Turkey Fry Kits are live at highperformancecookers.com.",
+        "instagram": "Friday Fire. 🔥\n\nTurkey into 350° oil, 30 QT. Sound on. Watch it dip and come right back.\n\nWho's frying this year?\n\n#turkeyfry #outdoorcooking #louisiana #builtinlouisiana #highperformancecookers"
+      },
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-10-02",
+        "time": "12:00",
+        "timezone": "America/Chicago",
+        "iso": "2026-10-02T12:00:00-05:00",
+        "epoch": 1790960400
+      },
+      "approved": false,
+      "approval": null,
+      "status": "draft",
+      "scheduledBy": null,
+      "conditional": "Footage not delivered yet. No footage by Thu Oct 1 noon → mark dropped and the week runs five.",
+      "alternates": [],
+      "notes": [
+        "Captions are drafts; re-read every line against the clip before approval.",
+        "Over 10 MB is Evan's upload."
+      ],
+      "commercial": false,
+      "graphicText": [],
+      "waivers": [],
+      "evidence": [],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.855Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        }
+      ]
+    },
+    {
+      "id": "6-story",
+      "slot": 6,
+      "segment": "Game Day",
+      "type": "story",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "06_SAT-1003_STORY_game-day-KIT.png"
+      ],
+      "caption": null,
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-10-03",
+        "time": "09:00",
+        "timezone": "America/Chicago",
+        "iso": "2026-10-03T09:00:00-05:00",
+        "epoch": 1791036000
+      },
+      "approved": false,
+      "approval": null,
+      "status": "draft",
+      "scheduledBy": null,
+      "conditional": null,
+      "alternates": [
+        {
+          "label": "plain (no kit) — runs if the Sept 24 tailgate go/no-go says no",
+          "media": [
+            "06_SAT-1003_STORY_game-day.png"
+          ]
+        }
+      ],
+      "notes": [
+        "KIT variant is the default (plan has the tailgate kit live Sept 25). Re-read the live kit price Saturday morning.",
+        "A poll sticker, if Evan wants one, is added by hand: Business Suite cannot schedule stickers."
+      ],
+      "commercial": false,
+      "graphicText": [
+        "Tigers vs McNeese tonight, 6:45.",
+        "Saints Monday, 7:15.",
+        "Two game days. What are you frying?",
+        "18 QT TAILGATE KIT · FROM $404 · LINK IN BIO"
+      ],
+      "waivers": [],
+      "evidence": [],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.855Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-09-21T17:56:17.866Z"
+}

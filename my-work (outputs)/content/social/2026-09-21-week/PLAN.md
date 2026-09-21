@@ -29,6 +29,21 @@ Sunday dark. Pillar count: Proof 1½ · People 1½ · How 1 · Boil 2 · Offer 0
 ## Previews
 
 ### 1 · Mon Sep 21 · 12:00 · Boil Math Monday
+```schedule
+{
+ "id": "1-feed",
+ "type": "feed",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-21",
+ "time": "12:00",
+ "media": [
+  "01_MON-0921_FEED_boil-math-pot-not-burner.png"
+ ]
+}
+```
 ![](01_MON-0921_FEED_boil-math-pot-not-burner.png)
 **Visual:** the lit powered burner seen from underneath, flame through the tunnel tubes (`assets/lifestyle/pwd-burner-lit.png`). Headline "The speed isn't in the burner. It's in the pot." Spec strip: about 7 min to a rolling boil · about 90 sec back to a boil · up to 75% less propane. Legal line and patent number. Template `templates/cw-2026-09-21/mon-boilmath-4x5.html`.
 **Caption — Facebook**
@@ -61,6 +76,36 @@ Already got a burner? You only need the pot.
 **Claims check:** "about 7 minutes," "roughly 90 seconds," "up to 75%" — all qualified (who-we-are proof points). Performance pot runs on any burner (what-we-sell, Tier 1A). Patent No. 11,844,459 (standing rules). "Hand-welded in Covington" — allowed wording; no "Made in USA." No price, no warranty line, no competitor.
 
 ### 2 · Tue Sep 22 · 5:30 pm · Shop Floor Tuesday
+```schedule
+{
+ "id": "2-feed",
+ "type": "feed",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-22",
+ "time": "17:30",
+ "media": [
+  "02_TUE-0922_FEED_shop-floor-weld-RAW.png"
+ ]
+}
+```
+```schedule
+{
+ "id": "2-story",
+ "type": "story",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-22",
+ "time": "17:30",
+ "media": [
+  "02_TUE-0922_STORY_shop-floor-weld-RAW.png"
+ ]
+}
+```
 ![](02_TUE-0922_FEED_shop-floor-weld-RAW.png)
 **Visual:** the welder photo, cropped 4:5, **raw — no type, no logo** (the format's one deliberate logo omission). Story repost `02_TUE-0922_STORY_shop-floor-weld-RAW.png` uses the blurred band so the landscape photo is not sliced. **Preferred swap:** one phone photo from the shoot morning (Garrett's setup, Stephen at the 60 QT, the crew) sent by Tue 3:00 pm — the scheduled post's media gets replaced, caption unchanged.
 **Caption — Facebook**
@@ -89,6 +134,27 @@ Camera crew's in the shop this week. More of these folks soon.
 **Claims check:** "crew of about twelve" — Evan's wording (who-we-are, our-team). "Camera crew in the shop this week" — true only if the Sept 22 shoot holds; **confirm before approval.** No performance number in the caption beyond "seven-minute boil" as the name of the thing (the qualified figure ran Monday). No "we make the pots."
 
 ### 3 · Wed Sep 23 · 12:00 · How-To Wednesday — carousel, 6 frames in this order
+```schedule
+{
+ "id": "3-carousel",
+ "type": "carousel",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-23",
+ "time": "12:00",
+ "media": [
+  "03_WED-0923_CAROUSEL_1-cover.png",
+  "03_WED-0923_CAROUSEL_2-same-tubes.png",
+  "03_WED-0923_CAROUSEL_3-powered.png",
+  "03_WED-0923_CAROUSEL_4-performance.png",
+  "03_WED-0923_CAROUSEL_5-which-one.png",
+  "03_WED-0923_CAROUSEL_6-cta.png"
+ ],
+ "graphicTextFrom": "howto.json"
+}
+```
 ![](03_WED-0923_CAROUSEL_1-cover.png)
 1. `_1-cover` — steam photo, "Powered or Performance? Which one do you need." kicker HOW-TO WEDNESDAY · WED 09.23
 2. `_2-same-tubes` — flame through the tubes, "Same tubes on both."
@@ -132,6 +198,25 @@ Comment how many people you feed and we'll tell you the pot. 🔥
 **Claims check:** Powered/Performance definitions, "works on any burner," basket + lid + drain valve included (Evan, 2026-09-08), 18 QT Performance fryer exists — from `what-we-sell.md`. ❌ **Missed on first pass:** it also said Powered runs to 160 QT. The 160 QT is commercial; consumer pots top out at 120 QT (Evan, 2026-09-16). Frame 3 re-rendered and the Facebook caption corrected. The caption's "rolling boil in about 7 minutes" line was also dropped, since the range starts at the 18 QT fryer (boiling and frying claims never share a line). **Both scheduled posts edited in Business Suite 2026-09-16 on Evan's go**, read back still scheduled Wed Sep 23 12:00 PM with no 160 anywhere. No Triple Jet fitment line (would need "60 QT and up"). No prices. Frame 3 says "about 7 min," frames 3–4 "up to 75%." Comment CTA replaces an offer.
 
 ### 4 · Thu Sep 24 · 5:30 pm · Word of Mouth Thursday
+```schedule
+{
+ "id": "4-feed",
+ "type": "feed",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-24",
+ "time": "17:30",
+ "media": [
+  "04_THU-0924_FEED_review-kendall-18qt.png"
+ ],
+ "ifLines": "omit",
+ "notes": [
+  "[IF KIT LIVE] lines were left out at scheduling: the kit was still a Shopify draft (PLAN.md, 2026-09-16)."
+ ]
+}
+```
 ![](04_THU-0924_FEED_review-kendall-18qt.png)
 **Visual:** review card on charcoal — Kendall's words, name and product, "review via reviews.io," the 18 QT Powered cutout below (nudged 18 px right for the leaning lid). Template `templates/cw-2026-09-21/thu-review-4x5.html`.
 **Caption — Facebook**
@@ -163,6 +248,25 @@ Nobody told Kendall it was a fish fryer. That's the point. 350° in under 5 minu
 **Claims check:** quote is verbatim from `customer-language.md` (reviews.io, pulled 2026-08-26); the graphic trims the first sentence with nothing reworded. "350° in under 5 minutes" is the documented frying stat for the 18 QT / 4-Way / 40 QT only (what-we-sell). No star rating shown (not on file). Kit contents as on the board; **check the live kit page before the tail runs.** Fryer, no crawfish anywhere near it.
 
 ### 5 · Fri Sep 25 · 12:00 · Friday Fire — reel
+```schedule
+{
+ "id": "5-reel",
+ "type": "reel",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-25",
+ "time": "12:00",
+ "media": [
+  "05_FRI-0925_REEL_wings-18qt.MOV"
+ ],
+ "ifLines": "omit",
+ "notes": [
+  "Scheduled by Evan by hand: the .MOV hung on Processing media in the browser, 2026-09-16."
+ ]
+}
+```
 **Visual:** `05_FRI-0925_REEL_wings-18qt.MOV` — wings frying in the 18 QT, thermometer clipped to the rim, 1080×1920, 7 s, H.264 with audio, 9.6 MB (uploads through the browser tool). Post with sound on; pick a cover frame with the thermometer visible.
 **Caption — Facebook**
 ```
@@ -194,6 +298,32 @@ What's going in the fryer this weekend?
 **Claims check:** "in under 5 minutes" — 18 QT frying stat. Fried-food list is the documented one (fish, wings, fries, hushpuppies, soft-shell crab). ~~$465~~ **Corrected 2026-09-21:** the Bundles-app rebuild priced the kit by variant, $404 / $418 / $441 / $455 (Shopify `Product/10298785661168`, read-only 2026-09-21; what-we-sell.md), so "from $404". Contents are fryer, legs, 5" thermometer, skimmer; **no wind shield** (that is the turkey kits). Re-read the live page before the tail runs. No crawfish.
 
 ### 6 · Sat Sep 26 · 9:00 am · Game Day — story
+```schedule
+{
+ "id": "6-story",
+ "type": "story",
+ "placements": [
+  "facebook",
+  "instagram"
+ ],
+ "date": "2026-09-26",
+ "time": "09:00",
+ "media": [
+  "06_SAT-0926_STORY_game-day.png"
+ ],
+ "alternates": [
+  {
+   "label": "KIT variant, only if the tailgate kit is live",
+   "media": [
+    "06_SAT-0926_STORY_game-day-KIT.png"
+   ]
+  }
+ ],
+ "notes": [
+  "Scheduled by Evan by hand (plain version asked for): the story date picker failed twice. Which version went up is not readable from the thumbnail."
+ ]
+}
+```
 ![](06_SAT-0926_STORY_game-day.png)
 **Visual:** wings-in-the-fryer photo up top, "Tigers at home today. Saints tomorrow, 3:25." · "What's going in the fryer?" Type inside the story safe zones. **Kit variant** `06_SAT-0926_STORY_game-day-KIT.png` adds the badge "18 QT TAILGATE KIT · NOW LIVE," the four contents and "FROM $404 · link in bio" *(corrected 2026-09-21: was five contents incl. a wind shield, and $465)*. Stories carry no caption. If Evan wants a poll sticker ("Wings or fish?") he adds it by hand — Business Suite cannot schedule stickers.
 **Why this one:** first game-day story of the format; LSU hosts Texas A&M Sat Sept 26 (kickoff TBA — tigerrag.com, read 2026-09-16); Saints host the Raiders Sun Sept 27 at 3:25 pm CT (neworleanssaints.com, read 2026-09-16).

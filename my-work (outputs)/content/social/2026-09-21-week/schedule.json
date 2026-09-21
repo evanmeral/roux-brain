@@ -1,0 +1,638 @@
+{
+  "schema": 1,
+  "week": "2026-09-21",
+  "timezone": "America/Chicago",
+  "source": "PLAN.md",
+  "builtAt": "2026-09-21T17:56:17.915Z",
+  "createdAt": "2026-09-21T17:56:17.915Z",
+  "pieces": [
+    {
+      "id": "1-feed",
+      "slot": 1,
+      "segment": "Boil Math Monday",
+      "type": "feed",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "01_MON-0921_FEED_boil-math-pot-not-burner.png"
+      ],
+      "caption": {
+        "facebook": "Boil Math Monday.\n\nThe speed isn't in the burner. It's in the pot.\n\nFlip one of ours over and you'll see it: tunnel tubes, welded by hand across the bottom. The burner sits in the middle, and without them that heat hammers one spot. The tubes catch the flame and spread it over the whole base, so the pot soaks up a lot more of the heat it's given.\n\nThat's what gets you to a rolling boil in about 7 minutes, and back to a boil roughly 90 seconds after the next sack goes in. Same reason you burn up to 75% less propane doing it.\n\nAlready got a burner you like? Then you only need the pot. Our Performance pots carry the same tubes and run on whatever you've got.\n\nBuilt and hand-welded in Covington, Louisiana. Patent No. 11,844,459.",
+        "instagram": "Boil Math Monday.\n\nThe speed isn't in the burner. It's in the pot. 🔥\n\nTunnel tubes, hand-welded across the bottom, spread the flame over the whole base so the pot soaks up more of the heat. Rolling boil in about 7 minutes. Back to a boil in roughly 90 seconds. Up to 75% less propane.\n\nAlready got a burner? You only need the pot.\n\n#louisiana #crawfishboil #seafoodboil #outdoorcooking #builtinlouisiana #cajuncooking #highperformancecookers"
+      },
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-21",
+        "time": "12:00",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-21T12:00:00-05:00",
+        "epoch": 1790010000
+      },
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-16T16:05:00.000Z",
+        "recordedAt": "2026-09-21T17:57:30.197Z",
+        "via": "chat",
+        "words": "i like this first round, it is approved so go ahead and schedule it",
+        "contentHash": "f91c51bced6a80c213dea5f3e07ccb15a0e36254b79e20e86380b1b503915d88"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
+      "conditional": null,
+      "alternates": [],
+      "notes": [],
+      "commercial": false,
+      "graphicText": [],
+      "waivers": [
+        {
+          "rule": "patent-number",
+          "field": "facebook",
+          "by": "Evan",
+          "at": "2026-09-21",
+          "words": "everything is good as is",
+          "source": "my-desk (now)/decisions.md, 2026-09-21: this week's scheduled posts stay as they are, including Monday's graphic and caption, which carry the number"
+        }
+      ],
+      "evidence": [
+        {
+          "at": "2026-09-21T17:57:30.344Z",
+          "source": "Content → Scheduled, read 2026-09-16 ~3:00 pm CT (PLAN.md)",
+          "platform": "both",
+          "readBack": "Mon Sep 21, 12:00 PM · Facebook + Instagram both listed",
+          "note": null
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.913Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-21T17:57:30.201Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "i like this first round, it is approved so go ahead and schedule it"
+        },
+        {
+          "at": "2026-09-21T17:57:30.345Z",
+          "from": "approved",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "backfilled from the week's PLAN.md 'After approval' table; scheduled in Business Suite before the manifest existed",
+          "backfill": true
+        },
+        {
+          "at": "2026-09-21T17:57:30.555Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": "read-back on record in PLAN.md; backfilled 2026-09-21"
+        },
+        {
+          "at": "2026-09-21T17:57:30.772Z",
+          "from": "verified",
+          "to": "verified",
+          "by": "Evan",
+          "note": "waived patent-number: \"everything is good as is\""
+        }
+      ]
+    },
+    {
+      "id": "2-feed",
+      "slot": 2,
+      "segment": "Shop Floor Tuesday",
+      "type": "feed",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "02_TUE-0922_FEED_shop-floor-weld-RAW.png"
+      ],
+      "caption": {
+        "facebook": "Shop Floor Tuesday.\n\nThis is where the seven-minute boil actually comes from. Not a marketing department. A welder, a torch, and a stack of tubes going onto the bottom of a pot one at a time.\n\nEvery tunnel tube on every pot we sell gets welded by hand here in Covington, Louisiana, by a crew of about twelve who do everything else too: pack the freight, answer the phone, load the truck.\n\nWe've got a camera crew in the shop this week, so you'll be seeing more of these folks soon.\n\nTuesdays here are for the shop floor. Say hi.",
+        "instagram": "Shop Floor Tuesday.\n\nEvery tunnel tube, welded by hand, one at a time, in Covington, Louisiana. A crew of about twelve who do everything else too. 🔥\n\nCamera crew's in the shop this week. More of these folks soon.\n\n#builtinlouisiana #louisiana #outdoorcooking #crawfishboil #highperformancecookers"
+      },
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-22",
+        "time": "17:30",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-22T17:30:00-05:00",
+        "epoch": 1790116200
+      },
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-16T16:05:00.000Z",
+        "recordedAt": "2026-09-21T17:57:30.231Z",
+        "via": "chat",
+        "words": "i like this first round, it is approved so go ahead and schedule it",
+        "contentHash": "34a890c4b2ba407aed341080462209ba5bfd5615ab7d1ea925ab255781e064d2"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
+      "conditional": null,
+      "alternates": [],
+      "notes": [],
+      "commercial": false,
+      "graphicText": [],
+      "waivers": [],
+      "evidence": [
+        {
+          "at": "2026-09-21T17:57:30.374Z",
+          "source": "Content → Scheduled, read 2026-09-16 (PLAN.md)",
+          "platform": "both",
+          "readBack": "Tue Sep 22, 5:30 PM · Facebook + Instagram both listed",
+          "note": null
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.913Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-21T17:57:30.233Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "i like this first round, it is approved so go ahead and schedule it"
+        },
+        {
+          "at": "2026-09-21T17:57:30.375Z",
+          "from": "approved",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "backfilled from the week's PLAN.md 'After approval' table; scheduled in Business Suite before the manifest existed",
+          "backfill": true
+        },
+        {
+          "at": "2026-09-21T17:57:30.586Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": "read-back on record in PLAN.md; backfilled 2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "2-story",
+      "slot": 2,
+      "segment": "Shop Floor Tuesday",
+      "type": "story",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "02_TUE-0922_STORY_shop-floor-weld-RAW.png"
+      ],
+      "caption": null,
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-22",
+        "time": "17:30",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-22T17:30:00-05:00",
+        "epoch": 1790116200
+      },
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-16T16:05:00.000Z",
+        "recordedAt": "2026-09-21T17:57:30.237Z",
+        "via": "chat",
+        "words": "i like this first round, it is approved so go ahead and schedule it",
+        "contentHash": "4791f1cb41832b491de4ebdf9ed9d7bbe6960c92551c9b5a14ad330a80d0652d"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
+      "conditional": null,
+      "alternates": [],
+      "notes": [],
+      "commercial": false,
+      "graphicText": [],
+      "waivers": [],
+      "evidence": [
+        {
+          "at": "2026-09-21T17:57:30.404Z",
+          "source": "Planner week view, read 2026-09-16 (PLAN.md)",
+          "platform": "both",
+          "readBack": "two more 5:30 PM items on Tue Sep 22 (the story on Facebook + Instagram)",
+          "note": null
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.913Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-21T17:57:30.239Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "i like this first round, it is approved so go ahead and schedule it"
+        },
+        {
+          "at": "2026-09-21T17:57:30.404Z",
+          "from": "approved",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "backfilled from the week's PLAN.md 'After approval' table; scheduled in Business Suite before the manifest existed",
+          "backfill": true
+        },
+        {
+          "at": "2026-09-21T17:57:30.617Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": "read-back on record in PLAN.md; backfilled 2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "3-carousel",
+      "slot": 3,
+      "segment": "How-To Wednesday",
+      "type": "carousel",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "03_WED-0923_CAROUSEL_1-cover.png",
+        "03_WED-0923_CAROUSEL_2-same-tubes.png",
+        "03_WED-0923_CAROUSEL_3-powered.png",
+        "03_WED-0923_CAROUSEL_4-performance.png",
+        "03_WED-0923_CAROUSEL_5-which-one.png",
+        "03_WED-0923_CAROUSEL_6-cta.png"
+      ],
+      "caption": {
+        "facebook": "How-To Wednesday.\n\nPowered or Performance? The question we get most, answered in six swipes.\n\nEvery pot we build comes two ways. Both have the same hand-welded tunnel tubes on the bottom, and the tubes are what make it fast.\n\nPOWERED: tubes and burner welded to the pot as one piece. The complete rig. Set it down, hook up the propane, cook. 18 QT to 120 QT.\n\nPERFORMANCE: tubes only. It runs on the burner you already own, and it ships with the basket, the lid and the drain valve. 18 QT to 120 QT.\n\nStarting from scratch? Powered. Already got a burner you trust? Performance. Either way the tubes are on the pot, and either way it burns up to 75% less propane doing it.\n\nStill not sure which size? Comment how many people you usually feed and we'll tell you the pot.",
+        "instagram": "How-To Wednesday.\n\nPowered or Performance? Swipe. →\n\nSame hand-welded tunnel tubes on both. Powered = tubes + burner, one piece, the complete rig. Performance = tubes only, runs on the burner you already own (basket, lid and drain valve included).\n\nStarting from scratch? Powered. Already got a burner? Performance.\n\nComment how many people you feed and we'll tell you the pot. 🔥\n\n#crawfishboil #seafoodboil #louisiana #outdoorcooking #builtinlouisiana #cajuncooking #highperformancecookers"
+      },
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-23",
+        "time": "12:00",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-23T12:00:00-05:00",
+        "epoch": 1790182800
+      },
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-16T16:05:00.000Z",
+        "recordedAt": "2026-09-21T17:57:30.246Z",
+        "via": "chat",
+        "words": "i like this first round, it is approved so go ahead and schedule it",
+        "contentHash": "f8729859a0a54c6674fc347e01bdcbf541800a8cf0811fd0a86a795be25663bb"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
+      "conditional": null,
+      "alternates": [],
+      "notes": [],
+      "commercial": false,
+      "graphicText": [
+        "HOW-TO WEDNESDAY",
+        "WED 09.23",
+        "Powered or Performance?",
+        "Which one do you need.",
+        "Every pot we build comes two ways. The difference, in four swipes.",
+        "THE PART THAT DOES THE WORK",
+        "Same tubes on both.",
+        "Hand-welded tunnel tubes across the bottom spread the flame over the whole base. That s where the speed comes from   not the burner.",
+        "POWERED",
+        "Tubes and burner, welded as one.",
+        "The complete rig. Set it down, hook up the propane, cook.",
+        "ROLLING BOIL IN ABOUT 7 MIN",
+        "UP TO 75% LESS PROPANE",
+        "18 QT TO 120 QT",
+        "PERFORMANCE",
+        "Tubes only. Bring your burner.",
+        "Same speed on the burner you already own. Basket, lid and drain valve included.",
+        "WORKS ON ANY BURNER",
+        "UP TO 75% LESS PROPANE",
+        "18 QT TO 120 QT",
+        "SO WHICH ONE?",
+        "Starting from scratch? Powered. Already got a burner? Performance.",
+        "Either way the tubes are on the pot. Either way it boils fast.",
+        "Still not sure?",
+        "Comment how many people you feed and we ll tell you the pot.",
+        "BUILT IN COVINGTON, LOUISIANA MOST ORDERS SHIP IN 1 2 BUSINESS DAYS"
+      ],
+      "waivers": [],
+      "evidence": [
+        {
+          "at": "2026-09-21T17:57:30.434Z",
+          "source": "Content → Scheduled, read 2026-09-16 (PLAN.md)",
+          "platform": "both",
+          "readBack": "Wed Sep 23, 12:00 PM · Facebook + Instagram both listed · 6 frames, cover first · no 160 anywhere",
+          "note": null
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.913Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-21T17:57:30.252Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "i like this first round, it is approved so go ahead and schedule it"
+        },
+        {
+          "at": "2026-09-21T17:57:30.434Z",
+          "from": "approved",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "backfilled from the week's PLAN.md 'After approval' table; scheduled in Business Suite before the manifest existed. Frame 3 + FB caption corrected 160→120 QT on Evan's go, 2026-09-16, and read back still scheduled.",
+          "backfill": true
+        },
+        {
+          "at": "2026-09-21T17:57:30.650Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": "read-back on record in PLAN.md; backfilled 2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "4-feed",
+      "slot": 4,
+      "segment": "Word of Mouth Thursday",
+      "type": "feed",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "04_THU-0924_FEED_review-kendall-18qt.png"
+      ],
+      "caption": {
+        "facebook": "Word of Mouth Thursday.\n\n\"Everything was great with the cooker. I got it out of the box and put it together within 10 minutes. I cooked some steak fingers, fries and okra in it and everything turned out perfect.\"\n— Kendall, 18 QT Fish Fryer / Brazier Powered Pot\n\nSteak fingers, fries and okra. Nobody told Kendall it was a fish fryer, and that's exactly the point. The 18 QT gets the oil to 350° in under 5 minutes and holds it there, so whatever goes in comes out the same every time.\n\nThanks, Kendall. Reviews like this are the whole reason we build them here.",
+        "instagram": "Word of Mouth Thursday.\n\n\"I cooked some steak fingers, fries and okra in it and everything turned out perfect.\" — Kendall, 18 QT Fish Fryer\n\nNobody told Kendall it was a fish fryer. That's the point. 350° in under 5 minutes, and it holds there. 🔥\n\n#fishfry #tailgate #louisiana #outdoorcooking #builtinlouisiana #highperformancecookers"
+      },
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-24",
+        "time": "17:30",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-24T17:30:00-05:00",
+        "epoch": 1790289000
+      },
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-16T16:05:00.000Z",
+        "recordedAt": "2026-09-21T17:57:30.263Z",
+        "via": "chat",
+        "words": "i like this first round, it is approved so go ahead and schedule it",
+        "contentHash": "6760f23d9c0ec9a31fd7b812e0651d94996f6cb6287a816eee3401d886f23533"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
+      "conditional": null,
+      "alternates": [],
+      "notes": [
+        "[IF KIT LIVE] lines were left out at scheduling: the kit was still a Shopify draft (PLAN.md, 2026-09-16)."
+      ],
+      "commercial": false,
+      "graphicText": [],
+      "waivers": [],
+      "evidence": [
+        {
+          "at": "2026-09-21T17:57:30.464Z",
+          "source": "Content → Scheduled, read 2026-09-16 (PLAN.md)",
+          "platform": "both",
+          "readBack": "Thu Sep 24, 5:30 PM · Facebook + Instagram both listed",
+          "note": null
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.914Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-21T17:57:30.263Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "i like this first round, it is approved so go ahead and schedule it"
+        },
+        {
+          "at": "2026-09-21T17:57:30.464Z",
+          "from": "approved",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "backfilled from the week's PLAN.md 'After approval' table; scheduled in Business Suite before the manifest existed. Kit lines left out (kit still a draft).",
+          "backfill": true
+        },
+        {
+          "at": "2026-09-21T17:57:30.681Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": "read-back on record in PLAN.md; backfilled 2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "5-reel",
+      "slot": 5,
+      "segment": "Friday Fire",
+      "type": "reel",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "05_FRI-0925_REEL_wings-18qt.MOV"
+      ],
+      "caption": {
+        "facebook": "Friday Fire.\n\nWings in the 18 QT. Sound on.\n\nWatch the thermometer clipped to the rim, because that's the whole trick to frying outside: get the oil to 350° and hold it there. The tunnel tubes on the bottom of this pot get it there in under 5 minutes and bring it right back after every basket.\n\nFish, wings, fries, hushpuppies, soft-shell crab. Same pot, all fall.\n\nWhat's going in the fryer this weekend?",
+        "instagram": "Friday Fire. 🔥\n\nWings in the 18 QT. Sound on. Watch the thermometer: 350°, hold it there. The tunnel tubes get it there in under 5 minutes and bring it right back after every basket.\n\nWhat's going in the fryer this weekend?\n\n#fishfry #tailgate #gameday #louisiana #outdoorcooking #builtinlouisiana #highperformancecookers"
+      },
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-25",
+        "time": "12:00",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-25T12:00:00-05:00",
+        "epoch": 1790355600
+      },
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-16T16:05:00.000Z",
+        "recordedAt": "2026-09-21T17:57:30.272Z",
+        "via": "chat",
+        "words": "i like this first round, it is approved so go ahead and schedule it",
+        "contentHash": "c37a2a3e4a58d1454c37106a1732262f6b70621defc58a6e5bc250f1f0606392"
+      },
+      "status": "verified",
+      "scheduledBy": "Evan",
+      "conditional": null,
+      "alternates": [],
+      "notes": [
+        "Scheduled by Evan by hand: the .MOV hung on Processing media in the browser, 2026-09-16."
+      ],
+      "commercial": false,
+      "graphicText": [],
+      "waivers": [],
+      "evidence": [
+        {
+          "at": "2026-09-21T17:57:30.495Z",
+          "source": "Content → Scheduled, read 2026-09-21 ~7:45 CT (PLAN.md)",
+          "platform": "both",
+          "readBack": "Fri Sep 25, 12:00 PM · Reel · Facebook + Instagram both listed",
+          "note": null
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.914Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-21T17:57:30.282Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "i like this first round, it is approved so go ahead and schedule it"
+        },
+        {
+          "at": "2026-09-21T17:57:30.496Z",
+          "from": "approved",
+          "to": "scheduled",
+          "by": "Evan",
+          "note": "Evan uploaded and scheduled it by hand; the .MOV hung on Processing media in the browser session (PLAN.md)"
+        },
+        {
+          "at": "2026-09-21T17:57:30.712Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": "read-back on record in PLAN.md; backfilled 2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "6-story",
+      "slot": 6,
+      "segment": "Game Day",
+      "type": "story",
+      "placements": [
+        "facebook",
+        "instagram"
+      ],
+      "media": [
+        "06_SAT-0926_STORY_game-day.png"
+      ],
+      "caption": null,
+      "firstComment": null,
+      "scheduledFor": {
+        "date": "2026-09-26",
+        "time": "09:00",
+        "timezone": "America/Chicago",
+        "iso": "2026-09-26T09:00:00-05:00",
+        "epoch": 1790431200
+      },
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-16T16:05:00.000Z",
+        "recordedAt": "2026-09-21T17:57:30.295Z",
+        "via": "chat",
+        "words": "i like this first round, it is approved so go ahead and schedule it",
+        "contentHash": "2e5a3f5462e91eae44c6ee4db829b400e8022100d3c5d6c0a31990a6c0671758"
+      },
+      "status": "verified",
+      "scheduledBy": "Evan",
+      "conditional": null,
+      "alternates": [
+        {
+          "label": "KIT variant, only if the tailgate kit is live",
+          "media": [
+            "06_SAT-0926_STORY_game-day-KIT.png"
+          ]
+        }
+      ],
+      "notes": [
+        "Scheduled by Evan by hand (plain version asked for): the story date picker failed twice. Which version went up is not readable from the thumbnail."
+      ],
+      "commercial": false,
+      "graphicText": [],
+      "waivers": [],
+      "evidence": [
+        {
+          "at": "2026-09-21T17:57:30.525Z",
+          "source": "Stories → Scheduled, read 2026-09-21 ~7:45 CT (PLAN.md)",
+          "platform": "both",
+          "readBack": "two 9:00 AM items on Sat Sep 26 · plain or KIT version not readable from the thumbnail",
+          "note": null
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-09-21T17:56:17.914Z",
+          "from": null,
+          "to": "draft",
+          "by": "build-manifest",
+          "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-21T17:57:30.297Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "i like this first round, it is approved so go ahead and schedule it"
+        },
+        {
+          "at": "2026-09-21T17:57:30.526Z",
+          "from": "approved",
+          "to": "scheduled",
+          "by": "Evan",
+          "note": "Evan scheduled it by hand; the story date picker failed twice (PLAN.md)"
+        },
+        {
+          "at": "2026-09-21T17:57:30.741Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": "read-back on record in PLAN.md; backfilled 2026-09-21"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-09-21T17:57:30.772Z"
+}
