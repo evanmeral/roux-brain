@@ -47,7 +47,7 @@ already signed in to Facebook; nothing was typed or saved.
   *Publish now*; Boost stays off; every schedule is read back in the Planner before it is called done.
 - ⚠️ `ads_get_ig_accounts` on HP Cookers ADs returns **no linked Instagram account** (2026-09-16).
   That only matters for boosting through the connector; organic scheduling in Business Suite is fine.
-- The Planner shows a "followers most active at" hint each week — `/content-week` reads it Monday.
+- The Planner shows a "followers most active at" hint each week. `/content-week` no longer reads it (Evan, 2026-09-21).
 - The Business Suite drafts URL (`/latest/posts/drafts`) redirects to Home; drafts are reached from
   Content → Drafts in the UI, not by URL.
 
@@ -153,7 +153,7 @@ This is the same shape as the Venon problem Evan closed on 2026-08-26. **Evan's 
 
 `claude` (the CLI, 2.1.226) is installed and sees the claude.ai connectors — Meta Ads, Shopify, Google
 Calendar, Gmail, Drive, Slack all report Connected — so Atlas OS can start real sessions and run the
-6:30 pulse headless. **But the CLI names them `mcp__claude_ai_<Name>__<tool>`** (for example
+pulse headless (button-only, when Evan presses Pulse now; it is not scheduled). **But the CLI names them `mcp__claude_ai_<Name>__<tool>`** (for example
 `mcp__claude_ai_Shopify__run-analytics-query`), not the UUID prefixes the desktop app uses. Every
 Meta rule in `.claude/settings.json` is now carried under both namings, so publish is denied and
 writes prompt in a Terminal session too. Any new permission rule must be added in both forms.

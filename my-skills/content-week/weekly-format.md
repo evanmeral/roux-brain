@@ -37,9 +37,9 @@ mix (30 · 25 · 20 · 15 · 10). If a week drifts past one offer slot, it is ou
    #cajuncooking #builtinlouisiana #tailgate #gameday #turkeyfry #boilboss #highperformancecookers
    #seafoodboil #lowcountryboil`. ⛔ **Never `#madeinusa`** — the "Made in USA" landmine applies to
    hashtags too (the Labor Day captions carried it; do not repeat). Never a competitor's tag.
-6. **Times are starting assumptions, not data.** Every Monday, read the Planner's "your followers
-   are most active at…" hint and note it in the plan. After four weeks, compare Insights by slot and
-   move a slot here if the numbers say so, with the date and the source.
+6. **Times are starting assumptions, not data.** After four weeks, compare Insights by slot and
+   move a slot here if the numbers say so, with the date and the source. (The weekly "followers
+   most active at" Planner read was dropped by Evan, 2026-09-21. Do not read it or note it.)
 7. **A slot is never faked.** No video → say so and run a raw Boil photo in Friday's place. No shop
    photo → the library fallback, said plainly. Never a still pretending to be a reel.
 8. **Sunday stays dark.** Rest day for the feed. A Saturday game-day story can run into Sunday when

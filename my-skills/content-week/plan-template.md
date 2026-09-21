@@ -2,8 +2,7 @@
 
 **Proposed:** {DATE_TIME} CT · **Status:** proposed → approved → scheduled
 **Season:** {one line from seasonal-calendar.md} · **Carrying from the board:** {what is live or
-launching this week that the content rides, with its condition} · **Planner hint:** {"followers most
-active at …" as read from Business Suite, with the read time}
+launching this week that the content rides, with its condition}
 
 **Missing this week, and the fallback used:** {plain statement, or "nothing"}
 

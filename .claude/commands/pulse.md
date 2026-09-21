@@ -1,4 +1,4 @@
-The 6:30 pulse. Runs headless every morning (and on demand from Atlas OS). **Reads only.**
+The pulse. **Button-only: it runs when Evan presses Pulse now in Atlas OS, and at no other time** (Evan, 2026-09-14). Nothing schedules it. It runs headless. **Reads only.**
 Writes exactly two files: `my-desk (now)/today.md` and `my-desk (now)/pulse/YYYY-MM-DD.json`.
 
 Do not run the /prime briefing and do not write a chat reply for Evan; nobody is reading the

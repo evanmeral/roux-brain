@@ -126,6 +126,6 @@ with the reason — never left blank, never assumed.
 ## What the Planner tells us
 
 The week view carries a hint — *"This week, your Instagram followers are most active at this time"*
-(read 2026-09-16, it said 4:00 PM for that Friday). Read it every Monday and note it in the plan.
-After four weeks, compare the slot times in `weekly-format.md` against Insights and move a slot if
+(read 2026-09-16, it said 4:00 PM for that Friday). **The weekly read was dropped by Evan,
+2026-09-21: do not read it or note it.** After four weeks, compare the slot times in `weekly-format.md` against Insights and move a slot if
 the data says so.

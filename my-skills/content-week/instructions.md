@@ -55,7 +55,8 @@ marked *not scheduled* and whether Evan has handled it, and stop.
    for anything new.
 10. **Business Suite, read-only** (Claude in Chrome, URLs in `business-suite-scheduling.md`):
     Content → published, last two weeks — what actually went out, including anything Evan posted by
-    hand. Planner → anything already scheduled this week, and the "followers most active at" hint.
+    hand. Planner → anything already scheduled this week. (The "followers most active at" hint is no
+    longer read: dropped by Evan, 2026-09-21.)
     If Chrome is not reachable, say so in the plan and carry on; the read is a courtesy, not a gate.
 
 Ask Scout (or search) for the weekend's LSU and Saints fixtures with the source when the Game Day

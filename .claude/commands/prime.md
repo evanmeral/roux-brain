@@ -39,6 +39,10 @@ business.** The user knows who they are; they do not remember where things stand
 - **Waiting on you:** only the rows where the user is the blocker
 - **Anything broken:** a connector that is down, a landmine that is still open. Say it
   plainly — a broken inbox connection is "I cannot read your inbox," never "no new mail."
+  ⛔ **An old `today.md` is never "broken."** The pulse is button-only by Evan's choice
+  (2026-09-14): it runs when he presses Pulse now and at no other time. Its date says when
+  he last pressed it, nothing more. Never flag it, never offer to fix it. Wrongly raised
+  2026-09-18 and 2026-09-21.
 - **From your capture:** each line from `capture.md`, one per bullet, if any.
 
 Do **not** recite the business, the product line, or the full skill list. That is in

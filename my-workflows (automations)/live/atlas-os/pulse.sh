@@ -1,5 +1,5 @@
 #!/bin/bash
-# The 6:30 routine. Runs /pulse headless in the vault and logs the run. Reads only; writes
+# The pulse. Button-only (Evan, 2026-09-14): runs when Pulse now is pressed. Runs /pulse headless in the vault and logs the run. Reads only; writes
 # my-desk (now)/today.md and my-desk (now)/pulse/<date>.json (see .claude/commands/pulse.md).
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 VAULT="$(cd "$ROOT/../../.." && pwd)"

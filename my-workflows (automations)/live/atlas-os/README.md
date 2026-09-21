@@ -39,7 +39,10 @@ It holds no Shopify, Meta or Google credentials and cannot reach them.
   by design; reset them in Google Calendar settings if one ever leaks. The page picks up edits on
   its own.
 
-## The 6:30 pulse
+## The pulse (button-only)
+
+**It is not scheduled.** It runs when Evan presses Pulse now, so `today.md` is as old as his last
+press. An old `today.md` is normal and is never reported as a fault.
 
 `.claude/commands/pulse.md` is the prompt; `pulse.sh` runs it headless (`claude -p`, Sonnet 5 by
 default, `ATLAS_PULSE_MODEL` overrides) and logs to `runs.log`. It runs on Evan's claude.ai Max
@@ -53,7 +56,7 @@ Shopify (ShopifyQL), both calendars, the board, key dates, capture. Writes `toda
 | File | Panel |
 |---|---|
 | `my-desk (now)/BOARD.md` | Now · Waiting on you · Running · the Board tab |
-| `my-desk (now)/today.md` | This morning (written by the 6:30 routine) |
+| `my-desk (now)/today.md` | This morning (written by the pulse, when Evan presses Pulse now) |
 | `my-desk (now)/key-dates.md` | Countdown chips and the red chips in the week |
 | `my-desk (now)/capture.md` | Line count in the status bar |
 
