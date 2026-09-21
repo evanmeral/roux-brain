@@ -73,14 +73,21 @@ Every fact carries its source. A fact and a conclusion are never written the sam
 If Evan supplied a product fact mid-conversation, that is durable — file it, do not just
 use it once.
 
-## 5. Name any repeatable procedure
+## 5. Name any repeatable procedure (the backstop)
+
+The main check happens **mid-session**, not here. CLAUDE.md's "Skills as we go" rule: the
+second time a procedure is run by hand, offer the skill right then. This step catches what slipped.
 
 Ask one question before committing: **did this session run a procedure that has been done
 before, or build one that will run again?** A re-pull, an audit, a Shopify build, a print run,
-a plan that follows a fixed shape. If yes, and nothing in `my-skills/` covers it, say so in
-the report and propose the skill in one line: its name, what it would produce, what it would
-read. Evan decides. Do not build it inside /wrap; if he says yes, it is Nova's job next
-session and sits in Nova's queue on the board until it exists.
+a plan that follows a fixed shape. If yes, nothing in `my-skills/` covers it, and it wasn't
+already offered mid-session, say so in the report and propose the skill in one line: its name,
+what it would produce, what it would read. Evan decides. Do not build it inside /wrap; if he
+says yes, build it right after the wrap in this session, or put it in Nova's queue on the board
+if the session is ending.
+
+**If a skill was used this session and Evan corrected how it ran, fold the correction into its
+`instructions.md` now**, so the next run starts right.
 
 A procedure that ran once and will not run again is not a skill. Do not propose one just to
 fill the line.

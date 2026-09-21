@@ -11,6 +11,8 @@
 
 ## 2026-09
 
+**Skills get offered mid-session, on the second run** · Evan, 2026-09-21 ("yes change it"). The rule used to be to propose at /wrap only, so photo filing ran three times by hand before it became a skill. Now: the second time a procedure runs by hand, Atlas offers the skill right then, and builds it on Evan's yes. When Evan corrects how a skill ran, its instructions get updated that same session. /wrap step 5 stays as the backstop. Written into CLAUDE.md (session rules) and `.claude/commands/wrap.md`.
+
 **Product photo filing is now a skill, `/file-product-photos`** · Evan, 2026-09-21 ("make sure this is a skill now"). It came from three runs by hand (commercial 80/100/120 gal, 140 gal, kit items). It carries Evan's naming words, the rule to rename his originals, and the Vision cutout script → [skill](../my-skills/file-product-photos/instructions.md).
 
 **Kit item photo names; the 18 QT and turkey fryer bottoms are built the same way** · Evan, 2026-09-21. 11 kit shots filed as cutout + studio, named from the kit build record. The burner close-up is the **18 QT** bottom (Evan), and every turkey fryer bottom is built the same way, so it can stand in for them. Filed to what-we-sell.md → [asset index](../my-skills/hpc-ad-creative/assets/ASSET-INDEX.md).

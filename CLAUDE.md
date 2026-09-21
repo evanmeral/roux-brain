@@ -33,6 +33,13 @@ to `my-desk (now)/archive/` — **never deleted**.
 up, or the conversation has been substantive), proactively run the /wrap flow without
 being asked. Say "Wrapping up the session." then execute /wrap. Do not wait to be told.
 
+**Skills as we go.** The **second** time a procedure is run by hand (same steps, new
+inputs), say so right then, mid-session, and offer to turn it into a skill: its name, what it
+produces, what it reads. Evan decides; on a yes, build it in `my-skills/` and wire the
+`.claude/commands/` file then and there, while the job is fresh. When Evan corrects how a
+skill ran, update its `instructions.md` in the same session. `/wrap` step 5 is only the
+backstop (Evan, 2026-09-21).
+
 ---
 
 ## Communication rules
