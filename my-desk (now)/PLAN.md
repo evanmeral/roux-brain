@@ -112,4 +112,5 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 - **2026-09-21 · System renamed ROUX, head of marketing renamed Beau; pulse wording fixed; structure audit** (Evan). → decisions.md
 - **2026-09-21 · Post scheduler built** (Evan; Beau advised keeping Chrome as it was). → [README](../my-workflows%20(automations)/live/post-scheduler/README.md)
 - **2026-09-21 · ROUX OS 0.2: Affiliates, Launches, Waiting, Approvals, Posts, Score** (Evan). Affiliate roster (116) seeded by Pete; tagged sales confirmed by Finn; program read by Beau.
+- **2026-09-21 · UpPromote read from Evan's exports** (Evan). $11,718.37 paid in Jay's window vs his ~$4k, gap cause not proven; 8% → 5% Jan 2026; settings checklist (auto-activate stays ON) and one Jay text drafted; OS importer fixed. No deeper digging (Evan). → decisions.md
 - **2026-09-21 · Kit photos attached to all three kit drafts in Shopify** (Evan): 8–9 square white-background images each, alt text, kit shot first; no per-option images (Evan). Clears the photo line in Now #1.

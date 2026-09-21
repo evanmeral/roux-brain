@@ -98,7 +98,7 @@ See `my-files (knowledge)/hpc-reference/affiliates-influencers.md`.
 |---|---|
 | **Military & First Responder discount** | Active. Veterans Day, Memorial Day, First Responders Day, always-on landing page. |
 | **Financing via ShopPay** | Critical for $700+ and commercial. Should be visible on every PDP and in high-ticket ad copy. |
-| **Affiliate program** | **Live on UpPromote. 5% commission, free to join.** Self-serve signup: `https://af.uppromote.com/high-performance-cookers/register` |
+| **Affiliate program** | **Live on UpPromote. 5% commission, free to join.** Rate confirmed from UpPromote's referrals export: 5% on every paid row since 2026-01-15, 8% through 2026-01-07; paid on Shopify net; new sign-ups auto-activate (kept ON, Evan 2026-09-21) (Finn, 2026-09-21). Self-serve signup: `https://af.uppromote.com/high-performance-cookers/register` |
 | **Creator seeding** | Free product to creators who post. **Not** a paid-content program — see below. |
 | **Fast shipping** | Most orders 1–2 business days. Urgency lever: "Order by X, boil by Y." |
 

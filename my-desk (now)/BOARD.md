@@ -1,4 +1,4 @@
-# Board — 2026-09-21 (Monday, night)
+# Board — 2026-09-21 (Monday, night · UpPromote read closed)
 
 > The one page. What is live, what is next, who is blocking, what must not be shipped.
 > **Rewritten in place at every `/wrap` — never appended.** Hard cap: 120 lines.

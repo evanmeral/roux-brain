@@ -58,7 +58,7 @@ Found in the inbox 2026-09-01. These run real parts of the business and the brai
 | System | What it's for | Why it matters |
 |---|---|---|
 | **Basecamp** | The shared workspace with Coalition — project `\| High Performance Cookers \| // Joint // SEO & PPC` | **This is the monitoring window into Coalition's lane.** Copy batches, PPC strategy, to-dos and PR opportunities all land here, not in email. Email just mirrors the notifications. |
-| **UpPromote** | Affiliate platform — 5% commission program | Source of truth for affiliate signups and creator-attributed sales |
+| **UpPromote** | Affiliate platform — 5% commission program (8% before 2026-01-15; UpPromote referrals export, Finn, 2026-09-21). No connector: Evan exports .xlsx, and ROUX OS reads it | Source of truth for affiliate signups and creator-attributed sales |
 | **HubSpot** | Connected 2026-08-05 to `evan@highperformancecookers.com` | Evan's email signature routes through HubSpot sales-engage tracking links |
 | **Digit** (`digit-software.com`) ⭐ | **Inventory management system.** Jay sent MCP access 2026-08-26; Evan confirmed 2026-09-01 he is connecting it within days | **Will become the SOURCE OF TRUTH for inventory, overriding Shopify.** Also expected to supply **specific overhead numbers** and more. See the source-of-truth table below. |
 | **IntentWave cookie-consent tool** | Consent banner on highperformancecookers.com | Coalition flagged it during a **CIPA compliance review** and asked for login access. Compliance item, not a marketing one. |
