@@ -84,3 +84,17 @@ Evan created them in **Apps → Bundles**; Atlas finished them through the conne
 **Also written:** descriptions with the Prop 65 block and per-variant price ranges · `custom.features_benefits` and `custom.frequently_asked_question` (split into one-bird and two-bird versions) · tags · product type · short option names in place of Shopify's auto-generated ones. Collections picked them up by tag rules: Tailgater/Turkey · fryers · Product Bundles · All Non Commercial Products.
 
 **Open before live:** kit photos (Evan) · `HIGH15` off, waiting on Biljana · `SMS25` deactivate (Evan, Biljana has switched) · the code exposure list → [code exposure](2026-09-17-kit-discount-code-exposure.md) · checkout test · status ACTIVE is Evan's click.
+
+---
+
+## 2026-09-21: kit photos on all three kits (Atlas, on Evan's go: "put the images on their products")
+
+Written with `stagedUploadsCreate` + `productUpdate(media:)`; read back the same session *(Shopify GraphQL)*: every image READY, 2400×2400, the kit shot is the featured image, all three still **DRAFT**. Images are the 2026-09-21 cutouts set on pure white, square, to match the store's existing gallery (Platinum's are 3200 square on white). Each has alt text; file names are descriptive.
+
+| Kit | Gallery, in order |
+|---|---|
+| Tailgate `10298785661168` (8) | full kit · 18 QT on leg extensions · leg extension attached · leg extensions pair · 5" thermometer · skimmer · Tunnel Tubes/burner · hose and regulator |
+| Turkey one-bird `10298800341232` (9) | full kit · 30 QT with basket and rack · 30 QT with steamer rack + turkey rack · single rack · wind shield · 12" thermometer · skimmer · Tunnel Tubes/burner (18 QT shot, same build, Evan) · hose and regulator |
+| Turkey two-bird `10298812006640` (9) | full kit · 60 QT with dual rack · top-down with dual rack · dual rack on hook · wind shield · 12" thermometer · skimmer · Tunnel Tubes/burner · hose and regulator |
+
+**Not done:** no variant images. The kit shots show a basket, so the tailgate "No Basket" variants and the 30 QT "Only Turkey Fryer Rack" variant show more than they include. Evan's call whether to map variant images or leave it.
