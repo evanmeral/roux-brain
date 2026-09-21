@@ -995,3 +995,6 @@ Navimow and Rugged Road are Tier 3 inbound-only. Only Predator grills are do-not
 The affiliate program stays (UpPromote, 5% commission, free product). Judge partners on
 *incremental* revenue, never activity metrics — BM Digital claimed three-quarters of
 annual revenue while shipping free product to creators who never posted.
+
+## 2026-09-21 — Kit photos: no per-variant images
+**Decision:** the three kits keep one shared gallery; no photo mapped to each option, even though the kit shots show a basket on no-basket options. **Why:** Evan, "we don't need to do that." **Source:** Evan, in session.

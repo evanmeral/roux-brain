@@ -97,4 +97,4 @@ Written with `stagedUploadsCreate` + `productUpdate(media:)`; read back the same
 | Turkey one-bird `10298800341232` (9) | full kit · 30 QT with basket and rack · 30 QT with steamer rack + turkey rack · single rack · wind shield · 12" thermometer · skimmer · Tunnel Tubes/burner (18 QT shot, same build, Evan) · hose and regulator |
 | Turkey two-bird `10298812006640` (9) | full kit · 60 QT with dual rack · top-down with dual rack · dual rack on hook · wind shield · 12" thermometer · skimmer · Tunnel Tubes/burner · hose and regulator |
 
-**Not done:** no variant images. The kit shots show a basket, so the tailgate "No Basket" variants and the 30 QT "Only Turkey Fryer Rack" variant show more than they include. Evan's call whether to map variant images or leave it.
+**No variant images, by design** (Evan, 2026-09-21: "we don't need to do that"). The kit shots show a basket on every option; that's accepted.
