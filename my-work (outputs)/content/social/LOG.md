@@ -15,5 +15,5 @@ that window. Newest at the bottom. Status: `scheduled` · `posted` · `swapped` 
 | 2026-09-22 | Shop Floor Tuesday | Welder photo, raw (fallback) + story repost | 2026-09-21-week/02 feed + story | scheduled 5:30 PM FB + IG · Scheduled list + Planner 2026-09-16 |
 | 2026-09-23 | How-To Wednesday | Powered or Performance? 6 frames | 2026-09-21-week/03 | scheduled 12:00 PM FB + IG · Scheduled list 2026-09-16 · frame 3 + FB caption corrected 160 → 120 QT in Business Suite 2026-09-16, read back |
 | 2026-09-24 | Word of Mouth Thursday | Kendall, 18 QT, steak fingers/fries/okra | 2026-09-21-week/04 | scheduled 5:30 PM FB + IG · Scheduled list 2026-09-16 |
-| 2026-09-25 | Friday Fire | Wings in the 18 QT, thermometer (library clip) | 2026-09-21-week/05 | scheduled 12:00 PM FB + IG by Evan (his word, 2026-09-16) |
-| 2026-09-26 | Game Day story | Tigers home vs Texas A&M, Saints Sun 3:25 | 2026-09-21-week/06 | scheduled 9:00 AM FB + IG by Evan (his word, 2026-09-16) |
+| 2026-09-25 | Friday Fire | Wings in the 18 QT, thermometer (library clip) | 2026-09-21-week/05 | scheduled 12:00 PM FB + IG by Evan · read back 2026-09-21 |
+| 2026-09-26 | Game Day story | Tigers home vs Texas A&M, Saints Sun 3:25 | 2026-09-21-week/06 | scheduled 9:00 AM FB + IG by Evan · read back 2026-09-21 |

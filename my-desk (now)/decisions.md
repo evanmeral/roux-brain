@@ -11,6 +11,8 @@
 
 ## 2026-09
 
+**Kit photos: one shared gallery per kit, no per-option images** · Evan, 2026-09-21 ("we don't need to do that"). The tailgate and one-bird kit shots show a basket, including on the no-basket options; accepted. Photos attached the same day, 8–9 per kit → [build record](../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md).
+
 **Skills get offered mid-session, on the second run** · Evan, 2026-09-21 ("yes change it"). The rule used to be to propose at /wrap only, so photo filing ran three times by hand before it became a skill. Now: the second time a procedure runs by hand, Atlas offers the skill right then, and builds it on Evan's yes. When Evan corrects how a skill ran, its instructions get updated that same session. /wrap step 5 stays as the backstop. Written into CLAUDE.md (session rules) and `.claude/commands/wrap.md`.
 
 **Product photo filing is now a skill, `/file-product-photos`** · Evan, 2026-09-21 ("make sure this is a skill now"). It came from three runs by hand (commercial 80/100/120 gal, 140 gal, kit items). It carries Evan's naming words, the rule to rename his originals, and the Vision cutout script → [skill](../my-skills/file-product-photos/instructions.md).
@@ -995,6 +997,3 @@ Navimow and Rugged Road are Tier 3 inbound-only. Only Predator grills are do-not
 The affiliate program stays (UpPromote, 5% commission, free product). Judge partners on
 *incremental* revenue, never activity metrics — BM Digital claimed three-quarters of
 annual revenue while shipping free product to creators who never posted.
-
-## 2026-09-21 — Kit photos: no per-variant images
-**Decision:** the three kits keep one shared gallery; no photo mapped to each option, even though the kit shots show a basket on no-basket options. **Why:** Evan, "we don't need to do that." **Source:** Evan, in session.

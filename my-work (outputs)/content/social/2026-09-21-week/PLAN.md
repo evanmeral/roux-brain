@@ -1,9 +1,9 @@
 # Content week — Mon Sep 21 to Sun Sep 27, 2026
 
-**Proposed:** Wed 2026-09-16, 10:50 CT (built as the first run of `/content-week`, ahead of the Monday task) · **Status:** **approved** — Evan, 2026-09-16, 11:05 CT in chat ("i like this first round, it is approved so go ahead and schedule it"), all six as proposed · **4 of 6 scheduled** in Business Suite, read back 2026-09-16 ~3:00 pm CT · Friday reel and Saturday story **not scheduled** (see the table at the bottom)
+**Proposed:** Wed 2026-09-16, 10:50 CT (built as the first run of `/content-week`, ahead of the Monday task) · **Status:** **approved** — Evan, 2026-09-16, 11:05 CT in chat ("i like this first round, it is approved so go ahead and schedule it"), all six as proposed · **6 of 6 scheduled**: 1–4 read back 2026-09-16; **5 (reel) and 6 (story) read back 2026-09-21 ~7:45 CT** in Content → Scheduled (Posts & reels, Stories), FB + IG each
 **Kit condition at scheduling time:** the Tailgate Kit is still a Shopify **draft** (board, Now #1), so every `[IF KIT LIVE]` line is **left out** of the scheduled captions and the **plain** Saturday story is scheduled. If the kit goes live before Thursday, edit the Thu/Fri captions and swap the Saturday story in the Planner.
 **Season:** tailgate season open, October peak ahead, turkey content starts Oct 1 (`seasonal-calendar.md`).
-**Carrying from the board:** the Garrett shoot is Tue Sept 22 at the shop (Tuesday's caption mentions the camera crew) · the **18 QT Tailgate Kit is due live Fri Sept 25 at $465** (Jay approved) **but is gated** — no kit goes live while `HIGH15`/`SMS25` are still active (Biljana switching flows). Every kit line below is marked `[IF KIT LIVE]` and comes out if it is not.
+**Carrying from the board:** the Garrett shoot is ~~Tue Sept 22~~ **Wed Sept 23** (moved 2026-09-18) at the shop (Tuesday's caption mentions the camera crew) · the **18 QT Tailgate Kit is due live Fri Sept 25, from $404** ($404–$455 by variant, Shopify 2026-09-21; was $465 before the Bundles-app rebuild) **but is gated** — no kit goes live while `HIGH15`/`SMS25` are still active (Biljana switching flows). Every kit line below is marked `[IF KIT LIVE]` and comes out if it is not.
 **Planner hint:** "This week, your Instagram followers are most active at 4:00 PM" (Business Suite Planner, for Fri Sept 18, read 2026-09-16). Slot times below are the standing format's starting times; revisit after four weeks.
 **Baseline, for the record:** nothing has posted since Tue Sept 8 (Business Suite → Content, read 2026-09-16). Last organic reads there: Labor Day carousel Sept 2 — 391 reach · 10 interactions (FB); Jay's 18 QT reel Sept 2 — 573 reach · 30 interactions (IG); cookwithbill creator reel Aug 29 — 502 reach · 92 interactions. Platform-reported, small numbers, not a trend.
 
@@ -145,7 +145,7 @@ Steak fingers, fries and okra. Nobody told Kendall it was a fish fryer, and that
 
 Thanks, Kendall. Reviews like this are the whole reason we build them here.
 
-[IF KIT LIVE] Tomorrow the 18 QT Tailgate Kit goes live: fryer, leg extensions, thermometer, wind shield, skimmer. One box, ready for Saturday.
+[IF KIT LIVE] Tomorrow the 18 QT Tailgate Kit goes live: the 18 QT fryer, leg extensions, a thermometer and a skimmer. One box, ready for Saturday.
 ```
 **Caption — Instagram**
 ```
@@ -176,7 +176,7 @@ Fish, wings, fries, hushpuppies, soft-shell crab. Same pot, all fall.
 
 What's going in the fryer this weekend?
 
-[IF KIT LIVE] The 18 QT Tailgate Kit is live today: fryer, leg extensions, thermometer, wind shield, skimmer. $465 at highperformancecookers.com.
+[IF KIT LIVE] The 18 QT Tailgate Kit is live today: the 18 QT fryer, leg extensions, a thermometer and a skimmer. From $404 at highperformancecookers.com.
 ```
 **Caption — Instagram**
 ```
@@ -191,11 +191,11 @@ What's going in the fryer this weekend?
 #fishfry #tailgate #gameday #louisiana #outdoorcooking #builtinlouisiana #highperformancecookers
 ```
 **Why this one:** the only native-vertical video on file, and it is the right product on kit-launch day. From Oct 2 the Friday slot runs Garrett's footage.
-**Claims check:** "in under 5 minutes" — 18 QT frying stat. Fried-food list is the documented one (fish, wings, fries, hushpuppies, soft-shell crab). $465 is Jay's approved kit price (board, Now #1) — **only if the kit is live and the price on the live page reads $465.** No crawfish.
+**Claims check:** "in under 5 minutes" — 18 QT frying stat. Fried-food list is the documented one (fish, wings, fries, hushpuppies, soft-shell crab). ~~$465~~ **Corrected 2026-09-21:** the Bundles-app rebuild priced the kit by variant, $404 / $418 / $441 / $455 (Shopify `Product/10298785661168`, read-only 2026-09-21; what-we-sell.md), so "from $404". Contents are fryer, legs, 5" thermometer, skimmer; **no wind shield** (that is the turkey kits). Re-read the live page before the tail runs. No crawfish.
 
 ### 6 · Sat Sep 26 · 9:00 am · Game Day — story
 ![](06_SAT-0926_STORY_game-day.png)
-**Visual:** wings-in-the-fryer photo up top, "Tigers at home today. Saints tomorrow, 3:25." · "What's going in the fryer?" Type inside the story safe zones. **Kit variant** `06_SAT-0926_STORY_game-day-KIT.png` adds the badge "18 QT TAILGATE KIT · NOW LIVE," the five contents and "$465 · link in bio." Stories carry no caption. If Evan wants a poll sticker ("Wings or fish?") he adds it by hand — Business Suite cannot schedule stickers.
+**Visual:** wings-in-the-fryer photo up top, "Tigers at home today. Saints tomorrow, 3:25." · "What's going in the fryer?" Type inside the story safe zones. **Kit variant** `06_SAT-0926_STORY_game-day-KIT.png` adds the badge "18 QT TAILGATE KIT · NOW LIVE," the four contents and "FROM $404 · link in bio" *(corrected 2026-09-21: was five contents incl. a wind shield, and $465)*. Stories carry no caption. If Evan wants a poll sticker ("Wings or fish?") he adds it by hand — Business Suite cannot schedule stickers.
 **Why this one:** first game-day story of the format; LSU hosts Texas A&M Sat Sept 26 (kickoff TBA — tigerrag.com, read 2026-09-16); Saints host the Raiders Sun Sept 27 at 3:25 pm CT (neworleanssaints.com, read 2026-09-16).
 **Claims check:** fixtures sourced above; team names in text only, no logos, brand colors (Evan's shoot rule, applied to organic). Kit variant only `[IF KIT LIVE]`; price as on the board, to be re-read on the live page Saturday morning.
 
@@ -219,7 +219,15 @@ What's going in the fryer this weekend?
 | 2 | Tue Sep 22, 5:30 PM · feed on Facebook + Instagram · story on Facebook + Instagram | ✔ feed: Scheduled list, both · ✔ story: Planner shows two more 5:30 PM items that day | Share-to-Facebook-Story switched off on every feed post (the separate story covers it) |
 | 3 | Wed Sep 23, 12:00 PM · Facebook + Instagram · 6 frames | ✔ Scheduled list, both · Instagram preview showed the cover as frame 1 | |
 | 4 | Thu Sep 24, 5:30 PM · Facebook + Instagram | ✔ Scheduled list, both | Kit lines left out (kit still a draft) |
-| 5 | Fri Sep 25, 12:00 PM · scheduled **by Evan**, 2026-09-16 (his word, not read back) | — | The `.MOV` sat on "Processing media" for 4+ minutes with no error. **Evan:** upload `05_FRI-0925_REEL_wings-18qt.MOV` for Fri Sep 25, 12:00 PM with the captions above, or re-export as MP4 and Atlas retries. |
-| 6 | Sat Sep 26, 9:00 AM · scheduled **by Evan**, 2026-09-16 (his word, not read back) | — | The story composer's date picker failed twice; stopped under the two-strikes rule. **Evan:** schedule `06_SAT-0926_STORY_game-day.png` as a story on both, Sat Sep 26, 9:00 AM. |
+| 5 | Fri Sep 25, 12:00 PM · Reel · Facebook + Instagram (scheduled by Evan) | ✔ Content → Scheduled lists both, 2026-09-21 ~7:45 CT | The `.MOV` sat on "Processing media" for 4+ minutes with no error. **Evan:** upload `05_FRI-0925_REEL_wings-18qt.MOV` for Fri Sep 25, 12:00 PM with the captions above, or re-export as MP4 and Atlas retries. |
+| 6 | Sat Sep 26, 9:00 AM · story · Facebook + Instagram (scheduled by Evan) | ✔ Stories → Scheduled shows two 9:00 AM items, 2026-09-21 ~7:45 CT · which version (plain or KIT) not readable from the thumbnail | The story composer's date picker failed twice; stopped under the two-strikes rule. **Evan:** schedule `06_SAT-0926_STORY_game-day.png` as a story on both, Sat Sep 26, 9:00 AM. |
 
 **Active times Business Suite suggested** (read 2026-09-16, Schedule panel): Facebook Sun 9/20, Mon 9/21, Tue 9/22 at 8:00 PM · Instagram Thu 9/17 8:00 PM, Fri 9/18 4:00 PM, Wed 9/23 9:00 AM. Evenings lead on both. One data point; revisit slot times after four weeks as rule 6 says.
+
+---
+
+## Monday review, 2026-09-21 (scheduled task, propose mode, no writes to Business Suite)
+
+- **All six read back as scheduled** (above). Nothing re-proposed.
+- **Shoot moved to Wed Sept 23** (board). Tuesday's "camera crew in the shop this week" is still true. There's no shoot-morning photo before Tuesday 5:30 pm now, so the welder photo runs unless Evan sends a shop phone photo by Tue 3:00 pm.
+- **Kit lines were stale:** $465 and a wind shield. Fixed in this file and in `06_SAT-0926_STORY_game-day-KIT.png` (re-rendered, looked at). Nothing scheduled carries them. Kit still **DRAFT** in Shopify (read 2026-09-21).
