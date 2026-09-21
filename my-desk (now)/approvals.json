@@ -1,0 +1,4 @@
+{
+  "_format": "The approvals queue behind the Approvals tab in ROUX OS. One source of truth. Agents add items with: node \"my-workflows (automations)/live/roux-os/approvals.js\" add '<json>' (never hand-edit). Evan resolves them on the page. kind is one of creative, content, recommendation, rule, live-write. A live-write is only ever 'queued': it does NOT authorize a Shopify, Meta or Google write; the session still asks Evan. Full format: my-files (knowledge)/how-this-brain-works.md.",
+  "items": []
+}

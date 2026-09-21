@@ -103,6 +103,9 @@ function ageHtml(w) {
   const cls = w.ageDays >= 5 ? 'is-stale' : w.ageDays >= 2 ? 'is-old' : '';
   return `<span class="age ${cls}" title="since ${esc(w.since)}">${w.ageDays}d</span>`;
 }
+// Who a nudge is for, in plain words. "Jay → Evan → Garrett" waits on Jay; Jay's asks go in one batch text.
+function waitTarget(who) { return who.split('→')[0].replace(/\s+/g, ' ').trim(); }
+function shortAsk(what) { const s = what.replace(/\s+/g, ' ').trim(); const cut = s.search(/[.;:]\s/); const t = cut > 12 && cut < 110 ? s.slice(0, cut) : s; return t.length > 110 ? t.slice(0, 109) + '…' : t; }
 function renderWaiting() {
   const b = STATE.board;
   const mine = $('waiting-body'), others = $('others-body'), toggle = $('others-toggle');
@@ -116,10 +119,42 @@ function renderWaiting() {
     const ok = await capture('Done', what);
     if (ok) { row.classList.add('is-done'); doneSet.add(what); localStorage.setItem('roux.done', JSON.stringify([...doneSet])); }
   }));
-  others.innerHTML = rest.map((w) => `<div class="wait-row"><div class="wait-what"><span class="wait-who">${esc(w.who)}</span>${w.whatHtml}</div>${ageHtml(w)}</div>`).join('');
-  toggle.textContent = `others · ${rest.length}`;
+  // Waiting on others: the age, and a one-tap request for a drafted nudge. Drafts only; Evan sends.
+  let nudged = {}; try { nudged = JSON.parse(localStorage.getItem('roux.nudged') || '{}'); } catch (_) {}
+  const key = (w) => `${w.who}|${w.what}`.slice(0, 200);
+  others.innerHTML = rest.length ? `<div class="others-h mono stamp">Waiting on others</div>` + rest.map((w, i) => {
+    const jay = /^jay\b/i.test(waitTarget(w.who)); const when = nudged[key(w)];
+    return `<div class="wait-row"><div class="wait-what" title="${esc(w.what)}"><span class="wait-who">${esc(w.who)}</span>${w.whatHtml}</div>${ageHtml(w)}<button class="wait-done" data-nudge="${i}" title="${jay ? "Questions for Jay go in one text. This adds it to the batch for the next session." : 'Sends nothing. Leaves a note so the next session drafts the nudge. You send it.'}">${when === STATE.today ? 'asked today' : jay ? 'Add to Jay batch' : 'Draft nudge'}</button></div>`;
+  }).join('') : '';
+  others.querySelectorAll('[data-nudge]').forEach((btn) => btn.addEventListener('click', async () => {
+    const w = rest[Number(btn.dataset.nudge)]; const target = waitTarget(w.who); const jay = /^jay\b/i.test(target);
+    btn.disabled = true;
+    const text = jay ? `Add to the Jay batch (one text, not a chain): ${shortAsk(w.what)} — Ada` : `Draft a nudge to ${target} re ${shortAsk(w.what)}${w.ageDays != null ? ` (waiting ${w.ageDays} days, since ${w.since})` : ''} — Ada`;
+    const ok = await capture('', text, jay ? 'Added to the Jay batch. The next session builds the one text. Nothing was sent.' : 'Noted. The next session drafts the nudge for you to send. Nothing was sent.');
+    btn.disabled = false;
+    if (ok) { nudged[key(w)] = STATE.today; try { localStorage.setItem('roux.nudged', JSON.stringify(nudged)); } catch (_) {} btn.textContent = 'asked today'; loadState().catch(() => {}); }
+  }));
+  toggle.textContent = rest.length ? `others · ${rest.length}` : '';
+  others.classList.toggle('is-hidden', localStorage.getItem('roux.others') === 'hide');
 }
-$('others-toggle').addEventListener('click', () => $('others-body').classList.toggle('is-hidden'));
+$('others-toggle').addEventListener('click', () => { const hid = $('others-body').classList.toggle('is-hidden'); try { localStorage.setItem('roux.others', hid ? 'hide' : 'show'); } catch (_) {} });
+
+// ---- the desk strip: three counts, each one click from its tab ----
+function renderDeskStrip() {
+  const d = STATE.desk || {}; const L = d.launches || {}, A = d.approvals || {}, F = d.affiliates || {};
+  const tile = (tab, label, main, sub, cls) => `<button class="desk-tile ${cls || ''}" data-goto="${tab}"><span class="eyebrow">${label}</span><span class="desk-main">${main}</span><span class="desk-sub">${sub}</span></button>`;
+  let html = '';
+  if (L.error) html += tile('launches', 'Next launch', `<span class="bad">${esc(L.error)}</span>`, '', '');
+  else if (L.next) html += tile('launches', 'Next launch', `${esc(L.next.title)} · ${L.next.daysOut === 0 ? 'today' : L.next.daysOut + 'd'}`, `${L.next.open} of ${L.next.total} gates open${L.overdue ? ` · <span class="bad">${L.overdue} overdue</span>` : ''}`, L.next.daysOut <= 2 ? 'is-urgent' : L.next.daysOut <= 7 ? 'is-soon' : '');
+  else html += tile('launches', 'Next launch', 'Nothing dated ahead', '', '');
+  if (A.error) html += tile('approvals', 'Approvals', `<span class="bad">${esc(A.error)}</span>`, '', '');
+  else html += tile('approvals', 'Approvals', A.pending ? `${A.pending} waiting on your yes or no` : 'Nothing waiting', A.pending ? 'decide with a line note' : 'agents queue items here', A.pending ? 'is-soon' : '');
+  if (F.error) html += tile('affiliates', 'Affiliates', `<span class="bad">${esc(F.error)}</span>`, '', '');
+  else html += tile('affiliates', 'Affiliates', `${F.sold30} sold in 30 days · ${F.quiet30} gone quiet`, `${F.unknownUp} on UpPromote, not on your list · ${F.salesFrom === 'finn' ? "Finn's read" : 'seed read, unconfirmed'}`, '');
+  $('desk-strip').innerHTML = html;
+  $('desk-strip').querySelectorAll('[data-goto]').forEach((b) => b.addEventListener('click', () => showTab(b.dataset.goto)));
+  const n = $('tab-approvals-n'); n.textContent = A.pending || ''; n.classList.toggle('is-hidden', !A.pending);
+}
 
 function renderRunning() {
   const b = STATE.board, body = $('running-body');
@@ -171,7 +206,7 @@ function renderStatus() {
 }
 
 function renderAll() {
-  tickClock(); renderCountdowns(); renderMorning(); renderNow(); renderWaiting(); renderRunning(); renderWeek(); renderStatus(); renderLinks();
+  tickClock(); renderCountdowns(); renderDeskStrip(); renderMorning(); renderNow(); renderWaiting(); renderRunning(); renderWeek(); renderStatus(); renderLinks();
   if (document.querySelector('#view-board.is-on')) renderBoard();
 }
 
@@ -183,14 +218,19 @@ function toast(msg, bad) {
   el.textContent = msg; el.classList.toggle('bad', !!bad); el.style.display = 'block';
   clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.style.display = 'none'; }, bad ? 6000 : 2500);
 }
-async function capture(kind, text) {
+// One POST helper for the panel scripts: JSON in, JSON out, a red toast with the server's words on any refusal.
+async function postJson(url, body) {
   try {
-    const r = await fetch('/api/capture', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-ROUX': 'page' }, body: JSON.stringify({ kind, text }) });
-    const j = await r.json();
-    if (!r.ok) throw new Error(j.error || r.status);
-    toast(kind === 'Done' ? 'Noted as done. The next wrap clears it from the board.' : 'Saved. The next session reads it first.');
-    return true;
-  } catch (e) { toast('Could not save: ' + e.message, true); return false; }
+    const r = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-ROUX': 'page' }, body: JSON.stringify(body) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(j.error || 'the server said ' + r.status);
+    return j;
+  } catch (e) { toast('Could not save: ' + e.message, true); return null; }
+}
+async function capture(kind, text, okMsg) {
+  const j = await postJson('/api/capture', { kind, text });
+  if (j) toast(okMsg || (kind === 'Done' ? 'Noted as done. The next wrap clears it from the board.' : 'Saved. The next session reads it first.'));
+  return !!j;
 }
 async function startSession(prompt, btn) {
   const st = $('session-status');
@@ -230,6 +270,10 @@ function showTab(name) {
   document.querySelectorAll('.view').forEach((v) => v.classList.toggle('is-on', v.id === 'view-' + name));
   try { localStorage.setItem('roux.tab', name); } catch (_) {}
   if (name === 'board') renderBoard();
+  if (name === 'launches') loadLaunches();
+  if (name === 'approvals') loadApprovals();
+  if (name === 'affiliates') loadAffiliates();
+  if (name === 'score') loadScore();
   if (name === 'files') { loadFiles($('files-q').value); setTimeout(() => $('files-q').focus(), 50); }
 }
 function renderLinks() {
@@ -244,7 +288,7 @@ function ago(iso) {
 }
 async function loadRecent() {
   try {
-    const r = await fetch('/api/recent', { cache: 'no-store' }); const j = await r.json(); j.files = j.files.slice(0, 8);
+    const r = await fetch('/api/recent', { cache: 'no-store' }); const j = await r.json(); j.files = j.files.slice(0, 5);   // five, not eight: the desk strip took that height (v0.2)
     $('recent-body').innerHTML = j.files.map((f) => `<div class="recent-row"><a href="${esc(f.obsidian)}" title="${esc(f.rel)}"><span class="area">${esc(f.area.replace(/\s*\(.*?\)/, ''))}</span>${esc(f.name)}</a><span class="when">${ago(f.modified)}</span></div>`).join('') || '<div class="empty">Nothing yet.</div>';
   } catch (e) { $('recent-body').innerHTML = `<div class="empty bad">Cannot list files: ${esc(e.message)}</div>`; }
 }
@@ -330,8 +374,17 @@ async function loadWeek() {
   } catch (e) { WEEK = { days: [], byDay: {}, feeds: [], configError: 'Cannot reach the calendar endpoint: ' + e.message }; }
   if (STATE) renderWeek();
 }
+// A file changed: refresh whichever panel tab is open. The affiliates drawer is left alone so a
+// half-typed edit is never thrown away; only the table behind it refreshes.
+function refreshOpenTab(what) {
+  const on = (id) => document.querySelector('#view-' + id + '.is-on');
+  if (on('launches')) loadLaunches();
+  if (on('approvals')) loadApprovals();
+  if (on('score')) loadScore();
+  if (on('affiliates') && what === 'affiliates' && !$('aff-drawer').classList.contains('is-on')) loadAffiliates();
+}
 async function boot() {
-  wireActions();
+  wireActions(); initAffiliates();
   try { await loadState(); } catch (e) { $('status').innerHTML = `<span class="bad">Cannot load state: ${esc(e.message)}</span>`; }
   await loadWeek();
   await loadRuns();
@@ -340,7 +393,7 @@ async function boot() {
   setInterval(loadWeek, 5 * 60 * 1000);
   setInterval(() => loadState().catch(() => {}), 10 * 60 * 1000);
   const es = new EventSource('/api/events');
-  es.onmessage = (m) => { if (m.data === 'hello') return; if (m.data === 'runs') { loadRuns(); return; } loadState().catch(() => {}); loadRecent(); if (m.data === 'config') loadWeek(); };
+  es.onmessage = (m) => { if (m.data === 'hello') return; if (m.data === 'runs') { loadRuns(); return; } loadState().catch(() => {}); loadRecent(); refreshOpenTab(m.data); if (m.data === 'config') loadWeek(); };
   es.onerror = () => { $('status').insertAdjacentHTML('beforeend', '<span class="bad">live updates disconnected, retrying</span>'); };
 }
 boot();

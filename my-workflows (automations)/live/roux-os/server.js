@@ -1,5 +1,10 @@
 // ROUX OS — local server. Reads the brain's files and serves the cockpit at localhost:4242.
-// It never writes BOARD.md. The only files it writes are capture.md (Tell ROUX / Done) and its own log.
+// It never writes BOARD.md, PLAN.md or decisions.md. The brain files it writes are:
+//   my-desk (now)/capture.md      (Tell ROUX, Done, draft requests, launch ticks, approval results)
+//   my-desk (now)/launches.md     (a gate's checkbox, from the Launches tab)
+//   my-desk (now)/approvals.json  (Evan's approve / reject / note, from the Approvals tab)
+//   my-files (knowledge)/hpc-reference/affiliates/affiliates.json (+ backups/), from the Affiliates tab
+// It holds no Shopify, Meta or Google credentials and no code path here may call them.
 'use strict';
 const http = require('http');
 const fs = require('fs');
@@ -7,6 +12,7 @@ const path = require('path');
 const { parseBoard, parseKeyDates } = require('./board');
 const md = require('./md');
 const ics = require('./ics');
+const { HttpError, cleanStr } = require('./util');
 
 const ROOT = __dirname;
 const VAULT = path.resolve(ROOT, '../../..');
@@ -37,6 +43,11 @@ function readText(p) {
   try { return { text: fs.readFileSync(p, 'utf8'), error: null }; }
   catch (e) { return { text: null, error: e.code === 'ENOENT' ? 'missing' : e.message }; }
 }
+
+const affiliates = require('./affiliates')({ vault: VAULT, todayIso });
+const launches = require('./launches')({ desk: DESK, vault: VAULT, vaultName: CONFIG.vaultName, todayIso });
+const approvals = require('./approvals')({ desk: DESK, todayIso });
+const score = require('./score')({ desk: DESK, vault: VAULT, vaultName: CONFIG.vaultName, todayIso });
 
 function buildState() {
   const ctx = { baseDir: DESK, vaultDir: VAULT, vaultName: CONFIG.vaultName };
@@ -95,6 +106,7 @@ function buildState() {
     captureLines,
     calendars,
     health,
+    desk: { launches: launches.summary(), approvals: approvals.summary(), affiliates: affiliates.summary() },
   };
 }
 
@@ -246,6 +258,10 @@ function onDeskChange(evt, file) {
   watchTimer = setTimeout(() => broadcast('desk:' + file), 300);
 }
 try { fs.watch(DESK, { recursive: true }, onDeskChange); } catch (e) { log('watch failed', e.message); }
+// The affiliates folder sits outside the desk, so it gets its own watcher (a fresh Finn sales read
+// or an edit shows up on the page by itself). Backups and temp files are ignored.
+let affTimer = null;
+try { fs.watch(affiliates.DIR, (evt, file) => { if (!file || file.startsWith('.') || !/\.json$/.test(file)) return; clearTimeout(affTimer); affTimer = setTimeout(() => broadcast('affiliates'), 300); }); } catch (e) { log('affiliates watch failed', e.message); }
 try { fs.watch(ROOT, (evt, file) => { if (file === 'config.local.json') { ics.invalidate(); broadcast('config'); } if (file === 'runs.log') broadcast('runs'); }); } catch (_) {}
 
 
@@ -273,14 +289,24 @@ function send(res, code, body, type = 'application/json; charset=utf-8') {
   res.writeHead(code, { 'Content-Type': type, 'Cache-Control': 'no-store' });
   res.end(typeof body === 'string' || Buffer.isBuffer(body) ? body : JSON.stringify(body));
 }
+// Every POST body is JSON, an object, and small. Anything else is refused before it is parsed.
+const MAX_BODY = 64 * 1024;
 function readBody(req) {
   return new Promise((resolve, reject) => {
-    let data = '';
-    req.on('data', (c) => { data += c; if (data.length > 1e5) req.destroy(); });
-    req.on('end', () => { try { resolve(data ? JSON.parse(data) : {}); } catch (e) { reject(e); } });
+    if (Number(req.headers['content-length'] || 0) > MAX_BODY) { req.resume(); return reject(new HttpError(413, 'That is too large to save')); }
+    const chunks = []; let size = 0, over = false;
+    req.on('data', (c) => { size += c.length; if (size > MAX_BODY) over = true; else chunks.push(c); });
+    req.on('end', () => {
+      if (over) return reject(new HttpError(413, 'That is too large to save'));
+      let body;
+      try { body = chunks.length ? JSON.parse(Buffer.concat(chunks).toString('utf8')) : {}; } catch (_) { return reject(new HttpError(400, 'The request was not valid JSON')); }
+      if (!body || typeof body !== 'object' || Array.isArray(body)) return reject(new HttpError(400, 'The request was not a JSON object'));
+      resolve(body);
+    });
     req.on('error', reject);
   });
 }
+const CAPTURE_KINDS = new Set(['', 'Done', 'Undo', 'Approval']);
 
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://localhost');
@@ -306,8 +332,11 @@ const server = http.createServer(async (req, res) => {
     }
     if (p === '/api/capture' && req.method === 'POST') {
       const body = await readBody(req);
-      if (!body.text || !body.text.trim()) return send(res, 400, { error: 'Nothing to capture' });
-      const line = appendCapture(body.kind || '', body.text);
+      const kind = body.kind === undefined || body.kind === null ? '' : body.kind;
+      if (typeof kind !== 'string' || !CAPTURE_KINDS.has(kind)) return send(res, 400, { error: 'Unknown capture kind' });
+      let text; try { text = cleanStr(body.text, 600); } catch (e) { return send(res, 400, { error: 'Capture: ' + e.message }); }
+      if (!text) return send(res, 400, { error: 'Nothing to capture' });
+      const line = appendCapture(kind, text);
       return send(res, 200, { ok: true, line });
     }
     if (p === '/api/runs') return send(res, 200, routines());
@@ -325,10 +354,45 @@ const server = http.createServer(async (req, res) => {
     }
     if (p === '/api/session' && req.method === 'POST') {
       const body = await readBody(req);
-      if (!body.prompt || !body.prompt.trim()) return send(res, 400, { error: 'Nothing to send' });
+      if (typeof body.prompt !== 'string' || !body.prompt.trim()) return send(res, 400, { error: 'Nothing to send' });
+      if (body.prompt.length > 2000) return send(res, 400, { error: 'That prompt is too long' });
       try { return send(res, 200, await startSession(body.prompt)); }
       catch (e) { return send(res, 500, { error: 'Could not open Terminal: ' + e.message }); }
     }
+    // ---- affiliates ----
+    if (p === '/api/affiliates' && req.method === 'GET') return send(res, 200, affiliates.view());
+    if (p.startsWith('/api/affiliates/') && req.method === 'POST') {
+      const body = await readBody(req);
+      const act = p.slice('/api/affiliates/'.length);
+      if (act === 'save') { const r = affiliates.save(body); log('affiliate save', r.id); return send(res, 200, r); }
+      if (act === 'create') { const r = affiliates.create(body); log('affiliate create', r.id); return send(res, 200, r); }
+      if (act === 'archive') { const r = affiliates.archive(body); log('affiliate archive', r.id, r.archived); return send(res, 200, r); }
+      if (act === 'contact') { const r = affiliates.logContact(body); log('affiliate contact', r.id); return send(res, 200, r); }
+      if (act === 'accept') { const r = affiliates.acceptSuggestion(body); log('affiliate accept', r.id); return send(res, 200, r); }
+      if (act === 'checkin') {
+        // Never sends anything. Leaves a note for the next session, or opens a session that asks Pete for a draft.
+        const words = affiliates.checkinRequest(body);
+        if (body.mode === 'session') { try { await startSession(words.session); return send(res, 200, { ok: true, mode: 'session' }); } catch (e) { return send(res, 500, { error: 'Could not open Terminal: ' + e.message }); } }
+        return send(res, 200, { ok: true, mode: 'capture', line: appendCapture('', words.capture) });
+      }
+      return send(res, 404, { error: 'not found' });
+    }
+    // ---- launches ----
+    if (p === '/api/launches' && req.method === 'GET') return send(res, 200, launches.view());
+    if (p === '/api/launches/tick' && req.method === 'POST') {
+      const r = launches.tick(await readBody(req));
+      if (r.changed) r.line = appendCapture(r.done ? 'Done' : 'Undo', `${r.done ? '' : 'not done after all: '}${r.launch}: ${r.gate}`);
+      return send(res, 200, r);
+    }
+    // ---- approvals ----  (a live-write approval is only ever "queued": see approvals.js)
+    if (p === '/api/approvals' && req.method === 'GET') return send(res, 200, approvals.view());
+    if (p === '/api/approvals/resolve' && req.method === 'POST') {
+      const r = approvals.resolve(await readBody(req));
+      if (r.changed) r.line = appendCapture('Approval', r.capture);
+      return send(res, 200, r);
+    }
+    // ---- score (read-only) ----
+    if (p === '/api/score' && req.method === 'GET') return send(res, 200, score.view());
     if (p === '/logo.png') return send(res, 200, fs.readFileSync(LOGO), 'image/png');
     if (p === '/health') return send(res, 200, { ok: true, version: VERSION, vault: VAULT });
     // static
@@ -338,6 +402,7 @@ const server = http.createServer(async (req, res) => {
     if (abs.startsWith(PUBLIC) && fs.existsSync(abs) && fs.statSync(abs).isFile()) return send(res, 200, fs.readFileSync(abs), MIME[path.extname(abs)] || 'application/octet-stream');
     return send(res, 404, { error: 'not found' });
   } catch (e) {
+    if (e instanceof HttpError) { log('refused', p, e.status, e.message); return send(res, e.status, { error: e.message }); }
     log('error', p, e.stack || e.message);
     return send(res, 500, { error: e.message });
   }

@@ -16,7 +16,7 @@
   <div class="brand">
     <img src="/logo.png" alt="HPC" class="shield">
     <span class="wordmark">ROUX</span>
-    <nav class="tabs" id="tabs"><button class="tab is-on" data-tab="today">Today</button><button class="tab" data-tab="board">Board</button><button class="tab" data-tab="files">Files</button></nav>
+    <nav class="tabs" id="tabs"><button class="tab is-on" data-tab="today">Today</button><button class="tab" data-tab="launches">Launches</button><button class="tab" data-tab="approvals">Approvals<span class="tab-n is-hidden" id="tab-approvals-n"></span></button><button class="tab" data-tab="affiliates">Affiliates</button><button class="tab" data-tab="score">Score</button><button class="tab" data-tab="board">Board</button><button class="tab" data-tab="files">Files</button></nav>
   </div>
   <div class="clock">
     <div class="time" id="clock-time">--:--</div>
@@ -26,6 +26,7 @@
 </header>
 
 <main class="grid view is-on" id="view-today">
+  <div class="desk-strip" id="desk-strip"></div>
   <section class="col">
     <article class="panel panel-morning" id="panel-morning">
       <header class="panel-head"><span class="eyebrow">This morning</span><span class="head-right"><span class="mono stamp" id="morning-stamp"></span><span class="mono stamp" id="routine-status"></span><button class="btn btn-sm" id="pulse-btn" title="Run the morning pulse now (reads only, a minute or two)">Pulse now</button></span></header>
@@ -40,7 +41,7 @@
     <article class="panel" id="panel-waiting">
       <header class="panel-head"><span class="eyebrow">Waiting on you</span><button class="ghost mono" id="others-toggle"></button></header>
       <div class="panel-body" id="waiting-body"></div>
-      <div class="panel-body is-hidden" id="others-body"></div>
+      <div class="panel-body others" id="others-body"></div>
     </article>
   </section>
 
@@ -82,6 +83,25 @@
   <div class="board-grid" id="board-body"></div>
 </main>
 
+<main class="view board" id="view-launches">
+  <div class="board-grid" id="launches-body"></div>
+</main>
+
+<main class="view board" id="view-approvals">
+  <div class="board-grid" id="approvals-body"></div>
+</main>
+
+<main class="view board" id="view-score">
+  <div class="board-grid" id="score-body"></div>
+</main>
+
+<main class="view affiliates" id="view-affiliates">
+  <div id="aff-head"></div>
+  <div id="aff-body"></div>
+  <div class="aff-shade" id="aff-shade"></div>
+  <aside class="aff-drawer" id="aff-drawer" aria-label="Affiliate details"></aside>
+</main>
+
 <main class="view files" id="view-files">
   <div class="files-left">
     <input type="search" id="files-q" placeholder="Search the vault: a word from the file name or folder" autocomplete="off">
@@ -92,6 +112,10 @@
 </main>
 
 <footer class="status mono" id="status"></footer>
+<script src="/affiliates.js"></script>
+<script src="/launches.js"></script>
+<script src="/approvals.js"></script>
+<script src="/score.js"></script>
 <script src="/app.js"></script>
 </body>
 </html>
