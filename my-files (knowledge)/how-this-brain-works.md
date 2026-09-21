@@ -34,6 +34,26 @@ ROUX OS at `localhost:4242` is the front door: the time, the week, what is waiti
 what is live, and a brief the brain writes when you press Pulse now. Every card starts the
 work. Read [how to use ROUX OS](how-to-use-roux-os.md) once; it is two pages.
 
+### Files ROUX OS owns or reads (formats)
+
+The page writes four brain files besides `capture.md`. Agents may read all of them. Keep the formats
+exact; the page parses them.
+
+| File | Format | Who writes it |
+|---|---|---|
+| `my-desk (now)/launches.md` | One `## Title · YYYY-MM-DD` per launch, optional `>` note lines, then one line per gate: `- [ ] the gate · **Owner** · due YYYY-MM-DD · _source: where it came from_`. A ticked gate gets `[x]` and `· done YYYY-MM-DD`. Every gate is a fact from the plan or the board with its source; nobody invents one. | The page flips checkboxes. Agents add, reword and retire launches at `/wrap`. |
+| `my-desk (now)/approvals.json` | `{ "items": [ { id, created, from, kind, recommendation, change, source, status, note, resolved_at } ] }`. `kind` is `creative` · `content` · `recommendation` · `rule` · `live-write`. `status` is `pending` · `approved` · `rejected` · `queued`. **Agents add items only with** `node "my-workflows (automations)/live/roux-os/approvals.js" add '<json>'` (fields: `from`, `kind`, `recommendation` in one or two lines, `change` = the exact change, `source`). Never hand-edit it. ⛔ **`queued` is what Evan's yes on a `live-write` becomes. It is not permission to write to Shopify, Meta or Google:** the session still asks Evan, in the conversation, at the moment of the change. | Agents add. The page records Evan's decision and note. `/wrap` runs `approvals.js archive`, which moves resolved items to `archive/approvals.md`. |
+| `my-files (knowledge)/hpc-reference/affiliates/affiliates.json` | A list of people. Fields and sources: the `README.md` beside it. Holds emails and phone numbers: it stays on this machine. | The page (Evan's edits), stamped `updated_by: "Evan (OS)"`. |
+| `…/affiliates/sales-by-affiliate.json` | `{ read_at, source, window, rows: [ { affiliate_name, orders, net_sales, first_sale, last_sale, orders_30d, net_30d, orders_90d, net_90d } ] }`. Optional `affiliate_id`. Joined by id or name when the page renders, so a new read never touches Evan's edits. | **Finn**, whole file replaced per read. |
+| `…/affiliates/flags.json` | `{ read_at, source, note, calc_commission_rate: {value, label, source}, rows: [ { affiliate_name, flags: [ { flag, label, fact, source } ], top_referrer: {name, orders, of, source}, returning: {orders, of, source} } ] }`. `flag` is `COUPON SITE` · `NO VISIBLE REFERRAL` · `PAID-AD OVERLAP` · `NEW SIGN-UP` · `HIGH RETURNS`. **A flag is a fact with a count and a source, never a verdict.** Set one only where a read states it for that name. A flag with no fact or no source is not shown. | Whoever transcribes a Finn report (Nova built the first one, 2026-09-21). |
+| `…/affiliates/uppromote-import.json` | Parsed from Evan's own UpPromote CSV exports by the page. Only mapped columns are kept. | The page. |
+| `my-desk (now)/pulse/kill-lines.json` | `{ read_at, source, window, rows: [ { name, id, metric, value, kill_at, status, note } ] }`. Shown as written on the Score tab; the page works out no status of its own. | The Thursday scoreboard task, when it is pointed at it. |
+
+Capture lines the page writes, so a session knows what it is reading: `Done: …` · `Undo: not done
+after all: …` · `Draft a nudge to <who> re <what> — Ada` · `Add to the Jay batch …— Ada` ·
+`Draft a check-in to <name> (<handle>) — Pete` · `Content note, <week> <piece>: <note> — Sage` ·
+`Approval: APPROVED | REJECTED | QUEUED, CONFIRM IN SESSION · <id> …` · `Approval: APPROVED post <week> <piece> …`.
+
 ## How to start a session
 
 1. Open the Claude app

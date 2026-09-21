@@ -20,6 +20,10 @@ If /setup has been completed, do the following:
    told ROUX OS between sessions (notes, and "Done:" lines for board items he has finished).
    Treat each line as a fact from Evan dated on that line. Do not edit the board now; `/wrap`
    folds them in. Mention them in the briefing under "From your capture".
+   **Then read `my-desk (now)/approvals.json` if it exists.** Items whose `status` is `approved`,
+   `rejected` or `queued` are Evan's answers from ROUX OS since the last wrap; his `note` is the
+   reason. Brief them under "From your approvals". ⛔ `queued` (a `live-write`) is **not**
+   permission to change Shopify, Meta or Google: still ask Evan in this conversation first.
    **Then, if `my-desk (now)/PLAN.md` exists, read it.** It is the locked month plan: the
    targets the work is heading toward (`my-skills/month-plan/instructions.md`).
 2. `CLAUDE.md` is already in context (it loads every turn). Do not re-read it.
@@ -44,6 +48,7 @@ business.** The user knows who they are; they do not remember where things stand
   he last pressed it, nothing more. Never flag it, never offer to fix it. Wrongly raised
   2026-09-18 and 2026-09-21.
 - **From your capture:** each line from `capture.md`, one per bullet, if any.
+- **From your approvals:** each item Evan approved, rejected or queued in ROUX OS since the last session, with his note, if any.
 
 Do **not** recite the business, the product line, or the full skill list. That is in
 context already and repeating it every session is noise. Mention connected apps only

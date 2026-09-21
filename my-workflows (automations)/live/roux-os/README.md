@@ -4,9 +4,22 @@ Evan's daily cockpit. A local page at **http://localhost:4242** that reads the b
 shows the day: the time, the week, what is due, what is waiting on Evan, what is live and spending,
 and what the brain found this morning. Spec: `../../specs/2026-09-14-roux-os-plan.md`.
 
-**It never writes `BOARD.md`.** The only brain file it writes is `my-desk (now)/capture.md`
-(the Tell ROUX box and the Done buttons), which `/prime` reads and `/wrap` folds into the board.
-It holds no Shopify, Meta or Google credentials and cannot reach them.
+**It never writes `BOARD.md`, `PLAN.md` or `decisions.md`.** Since v0.2 (2026-09-21) it is more than
+a reader: Evan can tick launch gates, decide approvals, edit the affiliate roster, approve posts and
+ask for drafted nudges. Every one of those is local code with **zero model runs**, and every one
+leaves a line in `my-desk (now)/capture.md`, which `/prime` reads and `/wrap` folds into the board.
+**It holds no Shopify, Meta or Google credentials, makes no call to any of them, and no code path
+may be added that does.** It sends nothing to anyone: "draft" buttons only leave a note for the
+next session, and Evan sends everything himself.
+
+## ⛔ The approvals rule (also in `approvals.js`)
+
+An approval of kind **`live-write`** (anything that would change Shopify, Meta or Google) **does not
+authorize the write.** The standing rule needs Evan's explicit yes in the conversation where the
+write happens. The OS never marks a live-write "approved": it marks it `queued` ("Queued, confirm in
+session"), says so on the card and in the capture line, and the session still asks. Same idea on the
+Posts tab: **Approve marks the manifest only.** No button, route or module here schedules or
+publishes a post; publishing is one of the four things that are never automated.
 
 ## Run
 
@@ -51,20 +64,68 @@ Shopify (ShopifyQL), both calendars, the board, key dates, capture. Writes `toda
 `pulse/<date>.json`. First real run 2026-09-14: 97 s, about $0.82, no permission denials. The
 "Pulse now" button on the page runs the same thing on demand.
 
-## Files it reads
+## Files it reads and writes
 
-| File | Panel |
-|---|---|
-| `my-desk (now)/BOARD.md` | Now · Waiting on you · Running · the Board tab |
-| `my-desk (now)/today.md` | This morning (written by the pulse, when Evan presses Pulse now) |
-| `my-desk (now)/key-dates.md` | Countdown chips and the red chips in the week |
-| `my-desk (now)/capture.md` | Line count in the status bar |
+| File | Panel | Reads | Writes |
+|---|---|---|---|
+| `my-desk (now)/BOARD.md` | Now · Waiting (with ages and nudges) · Running · Board tab | yes | **never** |
+| `my-desk (now)/PLAN.md` | Score tab: pace line, scoreboard, kill rules | yes | **never** |
+| `my-desk (now)/today.md` | This morning (written by the pulse, when Evan presses Pulse now) | yes | no |
+| `my-desk (now)/key-dates.md` | Countdown chips and the red chips in the week | yes | no |
+| `my-desk (now)/capture.md` | Tell ROUX · Done · Draft nudge · Add to Jay batch · Draft a check-in · launch ticks · approval results · post approvals and send-backs | count | **appends** |
+| `my-desk (now)/launches.md` | Launches tab and the Next launch tile | yes | **one checkbox per tick** (and its `· done <date>`) |
+| `my-desk (now)/approvals.json` | Approvals tab and tile | yes | **status, note, resolved_at** on the item decided |
+| `my-desk (now)/pulse/kill-lines.json` | Score tab, latest kill-line read (optional drop-in from the Thursday task) | yes | no |
+| `my-files (knowledge)/hpc-reference/affiliates/affiliates.json` | Affiliates tab | yes | **yes**: atomic, last five versions in `backups/` |
+| `…/affiliates/sales-by-affiliate.json` | Affiliates money columns and header tiles (Finn's drop-in) | yes | no |
+| `…/affiliates/flags.json` | Affiliates evidence flags, top referrer, returning, the calc rate (drop-in) | yes | no |
+| `…/affiliates/uppromote-import.json` | Paid column, Paid out tile, UpPromote site / sign-up / status | yes | **yes**, from a CSV Evan exported |
+| `my-inbox (new inputs)/*.csv` | Offered for import on the Affiliates tab. Read, never moved | names | no |
+| `my-work (outputs)/content/social/<Monday>-week/schedule.json` | Posts tab and tile, **through `live/post-scheduler/` only** | yes | **`approve()` only** |
+
+Every write is a temp file plus rename, so a crash cannot leave half a file. Nothing is ever deleted:
+affiliates are archived, approvals move to `archive/approvals.md` at wrap, backups rotate by rename.
 
 The board parser keys on the H2 headings `/wrap` keeps fixed (Running · Now · Waiting on · Parked ·
 Landmines · Numbers). If one goes missing, the page says so in red rather than guessing.
 
+## Endpoints
+
+All answer only to a localhost Host header. Every POST needs the page's own Origin or the `X-ROUX`
+header, carries a JSON object of at most 64 KB (the CSV import alone allows 8 MB), and has each
+field checked and length-capped on the server. A refusal comes back as `{error}` with 400, 403,
+404, 409, 413 or 422, and the page shows the words.
+
+| Route | Does |
+|---|---|
+| `GET /api/state` | Board, key dates, brief, and `desk`: the four home-tile counts |
+| `GET /api/calendar` · `/api/events` (SSE) · `/api/runs` · `/api/recent` · `/api/files` · `/api/preview` · `/api/raw` · `/health` | as before |
+| `POST /api/capture` | `{kind, text}`; kind is one of `""`, `Done`, `Undo`, `Approval`; text ≤ 600 |
+| `POST /api/session` · `POST /api/run` | open a Claude session in Terminal · run the pulse (button only) |
+| `GET /api/affiliates` | records joined at read time with sales, flags and the import; header totals; counts |
+| `POST /api/affiliates/save` · `create` · `archive` · `contact` · `accept` | edit · add · archive or restore · last contact = today · accept a seed status suggestion. `save` takes `seen_updated_at` and refuses (409) if the record changed underneath |
+| `POST /api/affiliates/checkin` | `{id, mode}`: `capture` leaves "Draft a check-in to … — Pete"; `session` opens a session that asks Pete. Sends nothing |
+| `POST /api/affiliates/import` | `{from:"inbox", file}` or `{from:"upload", name, text}`, optional `kind`. Parses the CSV locally; keeps mapped columns only; reports the rest as unmapped |
+| `GET /api/launches` · `POST /api/launches/tick` | `{line, raw, done}`; refused (409) if that line changed since the page read it |
+| `GET /api/approvals` · `POST /api/approvals/resolve` | `{id, decision: approve, reject or reopen, note}`; a reject needs a note; a `live-write` becomes `queued`, never `approved` |
+| `GET /api/posts` · `/api/posts/week?id=` · `/api/posts/media?week=&file=` | weeks · one week with preflight · media, served only via the scheduler's `mediaPath()` and only for files a piece lists |
+| `POST /api/posts/approve` · `/api/posts/sendback` | `approve(week, piece, note, {via:'os'})`, refused for a non-draft or a piece failing preflight · a "Content note, … — Sage" capture line; the piece is left as it is |
+| `GET /api/score` | PLAN.md's pace line, scoreboard and kill rules as written, plus the kill-line drop-in |
+
+**For agents:** `node approvals.js add '<json>'` · `list` · `archive` (run from anywhere; never hand-edit
+`approvals.json`). Formats for every file above: `my-files (knowledge)/how-this-brain-works.md`.
+
 ## Code
 
-`server.js` (http, SSE file watch, capture) · `board.js` (board parser) · `md.js` (markdown to
-HTML, relative links become `obsidian://` links) · `ics.js` (calendar feeds via node-ical, cached
-5 min) · `public/` (one page, vanilla JS). One dependency: `node-ical`, pinned.
+`server.js` (http, guard, routes, SSE file watch, capture, sessions) · `util.js` (atomic write,
+rolling backup, input cleaning) · `board.js` (board parser) · `affiliates.js` (roster, sales / flags /
+import join) · `uppromote.js` (CSV parser and tolerant column mapper) · `launches.js` · `approvals.js`
+(queue + the agents' CLI) · `posts.js` (thin wrapper over `../post-scheduler`) · `score.js` ·
+`md.js` (markdown to HTML; relative links become `obsidian://`) · `ics.js` (calendars, cached 5 min) ·
+`public/` (one page, vanilla JS, one script per tab: `app.js`, `affiliates.js`, `launches.js`,
+`approvals.js`, `posts.js`, `score.js`). Still one dependency: `node-ical`, pinned. After any change:
+`launchctl kickstart -k gui/$(id -u)/com.roux.os`, then check `/health`.
+
+**One thing to know when editing these files by tool:** write regex escapes such as `\u0000` or
+`\uFEFF` through a script, not a direct file write. A direct write once turned them into raw control
+bytes in `util.js` (2026-09-21); it still ran, and would have been a mess to debug.

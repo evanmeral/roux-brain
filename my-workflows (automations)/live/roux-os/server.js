@@ -44,9 +44,11 @@ function readText(p) {
   catch (e) { return { text: null, error: e.code === 'ENOENT' ? 'missing' : e.message }; }
 }
 
-const affiliates = require('./affiliates')({ vault: VAULT, todayIso });
+const uppromote = require('./uppromote')({ vault: VAULT });
+const affiliates = require('./affiliates')({ vault: VAULT, todayIso, uppromote });
 const launches = require('./launches')({ desk: DESK, vault: VAULT, vaultName: CONFIG.vaultName, todayIso });
 const approvals = require('./approvals')({ desk: DESK, todayIso });
+const posts = require('./posts')({ todayIso });
 const score = require('./score')({ desk: DESK, vault: VAULT, vaultName: CONFIG.vaultName, todayIso });
 
 function buildState() {
@@ -106,7 +108,7 @@ function buildState() {
     captureLines,
     calendars,
     health,
-    desk: { launches: launches.summary(), approvals: approvals.summary(), affiliates: affiliates.summary() },
+    desk: { launches: launches.summary(), approvals: approvals.summary(), affiliates: affiliates.summary(), posts: posts.summary() },
   };
 }
 
@@ -262,6 +264,8 @@ try { fs.watch(DESK, { recursive: true }, onDeskChange); } catch (e) { log('watc
 // or an edit shows up on the page by itself). Backups and temp files are ignored.
 let affTimer = null;
 try { fs.watch(affiliates.DIR, (evt, file) => { if (!file || file.startsWith('.') || !/\.json$/.test(file)) return; clearTimeout(affTimer); affTimer = setTimeout(() => broadcast('affiliates'), 300); }); } catch (e) { log('affiliates watch failed', e.message); }
+let postTimer = null;
+if (posts.socialDir) { try { fs.watch(posts.socialDir, { recursive: true }, (evt, file) => { if (!file || !/schedule\.json$/.test(file)) return; clearTimeout(postTimer); postTimer = setTimeout(() => broadcast('posts'), 400); }); } catch (e) { log('posts watch failed', e.message); } }
 try { fs.watch(ROOT, (evt, file) => { if (file === 'config.local.json') { ics.invalidate(); broadcast('config'); } if (file === 'runs.log') broadcast('runs'); }); } catch (_) {}
 
 
@@ -291,11 +295,11 @@ function send(res, code, body, type = 'application/json; charset=utf-8') {
 }
 // Every POST body is JSON, an object, and small. Anything else is refused before it is parsed.
 const MAX_BODY = 64 * 1024;
-function readBody(req) {
+function readBody(req, limit = MAX_BODY) {   // only the CSV import route asks for a larger limit
   return new Promise((resolve, reject) => {
-    if (Number(req.headers['content-length'] || 0) > MAX_BODY) { req.resume(); return reject(new HttpError(413, 'That is too large to save')); }
+    if (Number(req.headers['content-length'] || 0) > limit) { req.resume(); return reject(new HttpError(413, 'That is too large to save')); }
     const chunks = []; let size = 0, over = false;
-    req.on('data', (c) => { size += c.length; if (size > MAX_BODY) over = true; else chunks.push(c); });
+    req.on('data', (c) => { size += c.length; if (size > limit) over = true; else chunks.push(c); });
     req.on('end', () => {
       if (over) return reject(new HttpError(413, 'That is too large to save'));
       let body;
@@ -307,6 +311,18 @@ function readBody(req) {
   });
 }
 const CAPTURE_KINDS = new Set(['', 'Done', 'Undo', 'Approval']);
+
+// Post media (images, reels). Streams the file, with Range support so Safari will play a video.
+function sendMedia(req, res, m) {
+  const range = /^bytes=(\d*)-(\d*)$/.exec(req.headers.range || '');
+  let start = 0, end = m.size - 1;
+  if (range && (range[1] || range[2])) {
+    if (range[1]) { start = Number(range[1]); if (range[2]) end = Math.min(Number(range[2]), m.size - 1); } else start = Math.max(0, m.size - Number(range[2]));
+    if (!(start <= end) || start >= m.size) { res.writeHead(416, { 'Content-Range': `bytes */${m.size}` }); return res.end(); }
+    res.writeHead(206, { 'Content-Type': m.type, 'Content-Length': end - start + 1, 'Content-Range': `bytes ${start}-${end}/${m.size}`, 'Accept-Ranges': 'bytes', 'Cache-Control': 'no-store' });
+  } else res.writeHead(200, { 'Content-Type': m.type, 'Content-Length': m.size, 'Accept-Ranges': 'bytes', 'Cache-Control': 'no-store' });
+  fs.createReadStream(m.abs, { start, end }).on('error', () => res.destroy()).pipe(res);
+}
 
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://localhost');
@@ -361,6 +377,12 @@ const server = http.createServer(async (req, res) => {
     }
     // ---- affiliates ----
     if (p === '/api/affiliates' && req.method === 'GET') return send(res, 200, affiliates.view());
+    if (p === '/api/affiliates/import' && req.method === 'POST') {
+      // Evan's own UpPromote CSV, parsed on this machine. A CSV is bigger than a form, so this one route allows more.
+      const r = uppromote.importCsv(await readBody(req, uppromote.MAX_CSV + 64 * 1024));
+      log('uppromote import', r.kind, r.rows, 'rows', 'unmapped:', r.unmapped.length);
+      return send(res, 200, r);
+    }
     if (p.startsWith('/api/affiliates/') && req.method === 'POST') {
       const body = await readBody(req);
       const act = p.slice('/api/affiliates/'.length);
@@ -389,6 +411,21 @@ const server = http.createServer(async (req, res) => {
     if (p === '/api/approvals/resolve' && req.method === 'POST') {
       const r = approvals.resolve(await readBody(req));
       if (r.changed) r.line = appendCapture('Approval', r.capture);
+      return send(res, 200, r);
+    }
+    // ---- posts ----  (approve marks the manifest; nothing here schedules or publishes)
+    if (p === '/api/posts' && req.method === 'GET') return send(res, 200, posts.weeks());
+    if (p === '/api/posts/week' && req.method === 'GET') return send(res, 200, posts.week(url.searchParams.get('id') || ''));
+    if (p === '/api/posts/media' && req.method === 'GET') return sendMedia(req, res, posts.media(url.searchParams.get('week') || '', url.searchParams.get('file') || ''));
+    if (p === '/api/posts/approve' && req.method === 'POST') {
+      const r = posts.approve(await readBody(req));
+      r.line = appendCapture('Approval', `APPROVED post ${r.week} ${r.piece}${r.segment ? ` (${r.segment})` : ''}${r.when ? `, set for ${r.when} CT` : ''}${r.note ? ` · Evan's note: ${r.note}` : ''} · Approval only. Nothing is scheduled until a scheduling session runs.`);
+      log('post approved', r.week, r.piece);
+      return send(res, 200, r);
+    }
+    if (p === '/api/posts/sendback' && req.method === 'POST') {
+      const r = posts.sendBack(await readBody(req));
+      r.line = appendCapture('', r.capture);
       return send(res, 200, r);
     }
     // ---- score (read-only) ----

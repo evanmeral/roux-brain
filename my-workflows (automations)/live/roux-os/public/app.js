@@ -141,7 +141,7 @@ $('others-toggle').addEventListener('click', () => { const hid = $('others-body'
 
 // ---- the desk strip: three counts, each one click from its tab ----
 function renderDeskStrip() {
-  const d = STATE.desk || {}; const L = d.launches || {}, A = d.approvals || {}, F = d.affiliates || {};
+  const d = STATE.desk || {}; const L = d.launches || {}, A = d.approvals || {}, F = d.affiliates || {}, P = d.posts || {};
   const tile = (tab, label, main, sub, cls) => `<button class="desk-tile ${cls || ''}" data-goto="${tab}"><span class="eyebrow">${label}</span><span class="desk-main">${main}</span><span class="desk-sub">${sub}</span></button>`;
   let html = '';
   if (L.error) html += tile('launches', 'Next launch', `<span class="bad">${esc(L.error)}</span>`, '', '');
@@ -149,11 +149,14 @@ function renderDeskStrip() {
   else html += tile('launches', 'Next launch', 'Nothing dated ahead', '', '');
   if (A.error) html += tile('approvals', 'Approvals', `<span class="bad">${esc(A.error)}</span>`, '', '');
   else html += tile('approvals', 'Approvals', A.pending ? `${A.pending} waiting on your yes or no` : 'Nothing waiting', A.pending ? 'decide with a line note' : 'agents queue items here', A.pending ? 'is-soon' : '');
+  if (P.error) html += tile('posts', 'Posts', `<span class="bad">${esc(P.error)}</span>`, '', '');
+  else html += tile('posts', 'Posts', P.waiting ? `${P.waiting} waiting on your approval` : 'Nothing waiting on approval', P.failing ? `<span class="bad">${P.failing} failing preflight</span>` : 'none failing preflight', P.waiting ? 'is-soon' : '');
   if (F.error) html += tile('affiliates', 'Affiliates', `<span class="bad">${esc(F.error)}</span>`, '', '');
   else html += tile('affiliates', 'Affiliates', `${F.sold30} sold in 30 days · ${F.quiet30} gone quiet`, `${F.unknownUp} on UpPromote, not on your list · ${F.salesFrom === 'finn' ? "Finn's read" : 'seed read, unconfirmed'}`, '');
   $('desk-strip').innerHTML = html;
   $('desk-strip').querySelectorAll('[data-goto]').forEach((b) => b.addEventListener('click', () => showTab(b.dataset.goto)));
   const n = $('tab-approvals-n'); n.textContent = A.pending || ''; n.classList.toggle('is-hidden', !A.pending);
+  const pn = $('tab-posts-n'); pn.textContent = P.waiting || ''; pn.classList.toggle('is-hidden', !P.waiting);
 }
 
 function renderRunning() {
@@ -274,6 +277,7 @@ function showTab(name) {
   if (name === 'approvals') loadApprovals();
   if (name === 'affiliates') loadAffiliates();
   if (name === 'score') loadScore();
+  if (name === 'posts') loadPosts(true);
   if (name === 'files') { loadFiles($('files-q').value); setTimeout(() => $('files-q').focus(), 50); }
 }
 function renderLinks() {
@@ -381,6 +385,7 @@ function refreshOpenTab(what) {
   if (on('launches')) loadLaunches();
   if (on('approvals')) loadApprovals();
   if (on('score')) loadScore();
+  if (on('posts') && what === 'posts' && !document.querySelector('#posts-body [data-note]:focus')) loadPosts(true);
   if (on('affiliates') && what === 'affiliates' && !$('aff-drawer').classList.contains('is-on')) loadAffiliates();
 }
 async function boot() {

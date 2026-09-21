@@ -42,6 +42,14 @@ decision, or a business-file fact, whichever it is. Then move the lines you proc
 `my-desk (now)/archive/captures.md` (append, dated) and leave `capture.md` with only its header.
 Nothing from capture is deleted, only moved.
 
+**Fold in resolved approvals.** Every item in `my-desk (now)/approvals.json` that is `approved`,
+`rejected` or `queued` is a decision Evan made in ROUX OS: write it to `decisions.md` or the board,
+whichever it is, with his note as the why. Then run
+`node "my-workflows (automations)/live/roux-os/approvals.js" archive`, which moves them to
+`my-desk (now)/archive/approvals.md`. A `queued` live-write that was not carried out stays a board line.
+**Keep `my-desk (now)/launches.md` current** too: tick nothing yourself, but add gates for a new
+launch (each with owner, due date and source) and move a launch that has passed to `archive/`.
+
 **Keep `my-desk (now)/key-dates.md` current.** One row per date that drives work, with its
 source. Add any new date that landed on the board this session; remove rows whose date has
 passed (to `archive/` if it mattered). ROUX OS reads this table for the countdown chips.

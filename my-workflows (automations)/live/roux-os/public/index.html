@@ -16,7 +16,7 @@
   <div class="brand">
     <img src="/logo.png" alt="HPC" class="shield">
     <span class="wordmark">ROUX</span>
-    <nav class="tabs" id="tabs"><button class="tab is-on" data-tab="today">Today</button><button class="tab" data-tab="launches">Launches</button><button class="tab" data-tab="approvals">Approvals<span class="tab-n is-hidden" id="tab-approvals-n"></span></button><button class="tab" data-tab="affiliates">Affiliates</button><button class="tab" data-tab="score">Score</button><button class="tab" data-tab="board">Board</button><button class="tab" data-tab="files">Files</button></nav>
+    <nav class="tabs" id="tabs"><button class="tab is-on" data-tab="today">Today</button><button class="tab" data-tab="launches">Launches</button><button class="tab" data-tab="approvals">Approvals<span class="tab-n is-hidden" id="tab-approvals-n"></span></button><button class="tab" data-tab="posts">Posts<span class="tab-n is-hidden" id="tab-posts-n"></span></button><button class="tab" data-tab="affiliates">Affiliates</button><button class="tab" data-tab="score">Score</button><button class="tab" data-tab="board">Board</button><button class="tab" data-tab="files">Files</button></nav>
   </div>
   <div class="clock">
     <div class="time" id="clock-time">--:--</div>
@@ -91,6 +91,10 @@
   <div class="board-grid" id="approvals-body"></div>
 </main>
 
+<main class="view board" id="view-posts">
+  <div class="posts" id="posts-body"></div>
+</main>
+
 <main class="view board" id="view-score">
   <div class="board-grid" id="score-body"></div>
 </main>
@@ -116,6 +120,7 @@
 <script src="/launches.js"></script>
 <script src="/approvals.js"></script>
 <script src="/score.js"></script>
+<script src="/posts.js"></script>
 <script src="/app.js"></script>
 </body>
 </html>

@@ -15,7 +15,9 @@ paste it into an outside tool. It is committed to this repo only because the rep
 |---|---|---|
 | `affiliates.json` | ROUX OS (Evan's edits) | One record per person. A list. |
 | `sales-by-affiliate.json` | **Finn** (drop-in, optional) | Orders and net sales per affiliate. The OS only reads it and joins it by `affiliate_id` or name when the page renders, so a fresh read never touches Evan's edits. |
-| `backups/affiliates.1.json` … `.5.json` | ROUX OS | The last five versions before each save. `.1` is the newest. |
+| `flags.json` | Whoever transcribes a Finn report (Nova, 2026-09-21) | Per-name **evidence**: flags with their fact and source, top referrer, returning customers, and the rate the "calc commission" column uses. Facts with counts, never verdicts. Kept out of `affiliates.json` on purpose, so evidence never mixes with Evan's edits. `NOT ON OUR LIST` is not stored: the page derives it from `uppromote` and `on_list`. |
+| `uppromote-import.json` | ROUX OS, from a CSV **Evan** exported | Affiliates (site, email, sign-up date, status), referrals (affiliate, order, tracking method, commission, status) and payments. Only columns the mapper recognized are kept; the rest are listed as unmapped on the page. Does not exist until the first import. Until then "Paid out" reads "not read". |
+| `backups/` | ROUX OS | The last five versions of `affiliates.json` and the last three of the import, before each save. `.1` is the newest. Gitignored. |
 
 ## Sources of the seed (Pete, 2026-09-21, read-only)
 
@@ -55,7 +57,10 @@ paste it into an outside tool. It is committed to this repo only because the rep
 ```
 
 Optional per row: `affiliate_id` (matches `id`, wins over the name), `orders_30d`, `net_sales_30d`.
-The OS shows these numbers as they are. It never adds, averages or estimates. A row that matches
+The OS shows these numbers as they are and never estimates one. It does two sums and one
+multiplication, each labeled where it shows: the header tiles add up the rows of this file
+("Credited by UpPromote", "On our list"); "Paid out" adds up imported payment rows; and "Calc at 5%"
+is net sales times the rate in `flags.json`, **labeled "not a payout" and never shown as one**. A row that matches
 nobody, or matches two people, is listed on the page instead of being guessed at.
 
 Related: [affiliates & influencers reference](../affiliates-influencers.md) · [how to use ROUX OS](../../how-to-use-roux-os.md)

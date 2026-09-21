@@ -1,6 +1,6 @@
 # How to use ROUX OS
 
-**For Evan.** Two pages. Read once, then keep it in the Links strip on the page.
+**For Evan.** Three pages now. Read once, then keep it in the Links strip on the page.
 Address: `localhost:4242`, or the ROUX icon in your Dock.
 
 ---
@@ -24,6 +24,12 @@ question you actually have. So this one follows two rules:
 
 If a panel stops earning its place, say so in chat and it gets deleted. Small on purpose.
 
+**New on 2026-09-21: you can decide things here, not just read them.** You said the brain works
+fast and you had become the bottleneck, because every yes cost a chat session. So five things now
+take one click on the page and no session: tick a launch gate, approve or reject what an agent
+proposes, approve a post, ask for a drafted nudge, and keep the affiliate list. None of it runs a
+model. None of it sends anything. None of it touches Shopify, Meta or Google.
+
 ## The two-minute morning
 
 1. Open ROUX. Glance at the top bar: the clock, the countdown chips, the dot on the right.
@@ -33,8 +39,11 @@ If a panel stops earning its place, say so in chat and it gets deleted. Small on
    three, yesterday's Meta spend by campaign and Shopify orders with sources, today's calendar
    with flags, and anything waiting on you past two days. That is your morning brief. Nobody
    wrote it for you; the brain read the systems.
-3. Look at **This week** and **Waiting on you**. Ages turn gold at two days and red at five.
-4. Pick the thing and open a Claude Code chat here in the app, as you do today. (The **Work on
+3. Read the strip of four tiles under the top bar: the next launch and its open gates, approvals
+   waiting on you, posts waiting on you, and the affiliate count. Gold means it wants you. Click a
+   tile to go to its tab.
+4. Look at **This week** and **Waiting on you**. Ages turn gold at two days and red at five.
+5. Pick the thing and open a Claude Code chat here in the app, as you do today. (The **Work on
    this**, **Ask**, **Morning brief** and **Sort inbox** buttons open the same session in a Terminal
    window instead; they are optional, and they need Terminal's Desktop-folder permission.)
 
@@ -46,6 +55,11 @@ Then close it. That is the whole routine.
 |---|---|
 | Jay says something, or you think of something at 9pm | Type it in **Tell ROUX** and press Save. The next session reads it before anything else. Nothing said between sessions is lost anymore. |
 | You finished a thing that is on the board | Press **Done** on its row. It greys out, and the next wrap clears it from the board. You never edit the board by hand. |
+| Someone else is sitting on something | Under **Waiting on others**, press **Draft nudge**. It sends nothing. The next session has Ada draft the nudge and you send it. A Jay row says **Add to Jay batch**, because questions for Jay go in one text, not a chain. |
+| A launch gate is done | **Launches** tab, tick the box. The file updates and the next wrap hears about it. Untick if you were wrong; the brain is told that too. |
+| An agent wants a yes or a no | **Approvals** tab. Approve, or Reject with a line saying why. The why is what stops the same idea coming back. |
+| The week's posts are ready to look at | **Posts** tab. Read the captions, look at the graphic, Approve or send it back with a note. |
+| You talked to an affiliate | **Affiliates** tab, hover their row, **Log contact today**. Or open the row and change anything. |
 | You need a file and cannot remember where it is | **Files** tab, or Cmd+K. Type one word from the name or folder. Click to preview, Open in Obsidian, or Copy path to paste into chat. |
 | You need a number or a "what does this mean" | Ask in a Claude Code chat, as now. The page is not a chat and will not become one (Evan, 2026-09-14). |
 | You want the whole board | **Board** tab. Every section, readable, one click to Obsidian. Read only, on purpose. |
@@ -56,18 +70,74 @@ Then close it. That is the whole routine.
 Nothing. Wrap happens inside the session you worked in, the board is rewritten there, and the
 page updates itself within a second. You never save, refresh, or sync anything.
 
+## The new tabs
+
+**Launches.** One card per launch with a countdown, the gates, who owns each one and when it is
+due. Red means overdue. Hover a gate to see where it came from; every gate is a line from the plan
+or the board, never made up. Ticking a box writes `launches.md` and leaves a "Done:" note for the
+next wrap. It does not touch the board.
+
+**Approvals.** Agents put things here instead of waiting for a session: a creative, a post, a
+recommendation, a rule change. Each card shows who is asking, the recommendation, the exact change
+and the source. Approve, or Reject with a note. The next session reads your answers first, under
+"From your approvals."
+⛔ **One hard rule.** If the card says `live-write`, it would change Shopify, Meta or Google. The
+button says **Queue it**, not Approve. Queuing it does not authorize anything. ROUX still asks for
+your yes in the session, at the moment of the change, exactly as it does today.
+
+**Posts.** The week's Facebook and Instagram posts from the post scheduler. Each card shows the
+graphic (every carousel frame, in order), both captions in full, the date and time in Central, the
+status, and the preflight checks. Red is a fail, gold is "a human should look," and a waived check
+shows your own words. **Approve** marks the piece approved in the queue. That is all it does.
+Nothing on the page schedules or publishes; a scheduling session does that later, and only for
+pieces you approved. A piece that is failing preflight cannot be approved. **Send back with a
+note** leaves the piece alone and puts your note in front of Sage next session.
+
+**Affiliates.** Everyone HPC has gifted, everyone UpPromote credits, and the prospects.
+- The four tiles on top: what UpPromote has credited in total, how much of that is people on your
+  list, what has actually been paid, and the import. All of it is **credited, not incremental**:
+  UpPromote gave someone credit for the order, which is not the same as causing it.
+  **Paid out reads "not read"** until you import an UpPromote export. It never shows a 5% guess.
+- **Money** view (the default, sorted by the last 90 days): flags, net 90 days, net all time,
+  orders, last sale, top referrer, returning customers, a commission **calculation** at 5% that is
+  labeled "not a payout," and what was paid.
+- **People** view: status, type, UpPromote, last contact, and Log contact today.
+- **Flags are facts with counts, not verdicts.** "37 of 55 from deal domains" is what Finn read in
+  Shopify. It does not say anyone is a coupon site. Hover a flag for the full fact and its source.
+  No flag means nobody has read evidence for that person, not that they are clean.
+- The chips across the top filter the list. Click a column to sort. Search finds a name, handle,
+  email, city or note.
+- Click a row to open it. Every field is yours to edit: name, handles, email, phone, city, status,
+  type, code, commission, product gifted, last contact, next step, notes. Handles open the profile.
+  Save stamps the record with the time and "Evan (OS)."
+- A dashed status like "idle?" is a **suggestion** from the first import, with its reason. Press
+  Accept to make it real, or set your own.
+- **Archive** hides someone. Nothing is ever deleted; tick "show archived" to bring them back.
+- **Draft a check-in** sends nothing. It leaves a note so the next session has Pete draft it, one
+  person, one ask, for you to send. There is no bulk message feature and there will not be one.
+- **Import UpPromote export:** in UpPromote, export Affiliates, Referrals and Payments as CSV. Drop
+  them in the inbox folder or pick the file on the page. The page reads it on this machine, keeps
+  only the columns it recognizes, and lists the ones it could not place. It never logs in anywhere.
+- Finn's sales numbers live in their own file, so a fresh read from Finn never overwrites your edits.
+
+**Score.** The plan's pace line next to the Thursday scoreboard, straight from `PLAN.md`, plus the
+kill and scale rules as written. It shows "First score Thu Sept 24" until a Thursday is filled in.
+It works nothing out on its own.
+
 ## What the panels mean
 
 - **This morning** — the last pulse, with its run time. The top three are the brain's call on what
   matters today, each with its reason. Press "more" for waiting rows, key dates, capture, problems.
 - **Now** — the board's three priorities. Chips pull out the dates and dollar amounts. The small
   orange tags open the linked documents in Obsidian. "details" shows the full text.
-- **Waiting on you** — only your rows. "others" shows everyone else's.
+- **The strip of four tiles** — next launch, approvals, posts, affiliates. Counts only. Click to open the tab.
+- **Waiting on you** — your rows, then **Waiting on others** with each row's age and a Draft nudge
+  button. "others" in the corner hides that part.
 - **This week** — Monday start, both calendars, orange is HPC and grey is personal. Red chips are
   key dates from the board. Today has the orange border.
 - **Running** — each live campaign with its daily budget and status. The bar is live spend against
   the $350 ceiling, from the board's own numbers.
-- **Made recently** — the last files the brain wrote. Review means opening the page, not hunting
+- **Made recently** — the last five files the brain wrote (it was eight; the strip took that room). Review means opening the page, not hunting
   folders.
 - **Links** — Shopify admin, Ads Manager, Basecamp, UpPromote, reviews.io, Canva, Drive, the site,
   the warranty page, the vault, and this manual.
@@ -75,8 +145,11 @@ page updates itself within a second. You never save, refresh, or sync anything.
 ## What it will never do
 
 - Write to Shopify, Meta, Google, or Gmail. It holds no logins for them and cannot reach them.
-- Write the board. Only the brain writes the board, at wrap. Your Done and Tell ROUX lines go to
-  `capture.md`, which is an inbox.
+- Write the board, the plan or the decisions log. Only the brain writes those, at wrap. Your clicks
+  go to `capture.md`, which is an inbox, and to four files the page owns: `launches.md`,
+  `approvals.json`, the affiliates list, and the approved mark on a post.
+- Send anything to anyone. "Draft" buttons leave a note for the next session. You send it.
+- Schedule or publish a post, or stand in for your yes on a live change. See the hard rule above.
 - Cost money. The page is local code. The pulse and the buttons run on your Claude plan, same as
   chatting, and the pulse only runs when you press it.
 - Show a number it did not read. A dead feed is red text that says which one.

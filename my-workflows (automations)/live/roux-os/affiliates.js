@@ -5,8 +5,16 @@
 //         the OS only reads it and joins it by id or name at render time, so a fresh read never
 //         touches Evan's edits)
 //
+// Facts:  .../affiliates/flags.json   (drop-in; per-name evidence from Finn's reports, each flag with its
+//         fact and source. Kept out of Evan's editable records on purpose. Also names the 5% calc rate.)
+// Import: .../affiliates/uppromote-import.json   (written by uppromote.js from Evan's CSV exports)
+//
 // Rules this module keeps:
-//  - It never computes or estimates a sales figure. It shows what a file holds, with its source.
+//  - It never estimates a sales figure. It shows what a file holds, with its source. The two sums it
+//    does make (header totals = the rows of Finn's file added up; paid = payment rows added up) say so.
+//  - "Calc commission" is net sales x the rate on file. It is a calculation and is labelled "not a
+//    payout" everywhere. The payout tile reads "not read" until an UpPromote export is imported.
+//  - Flags are facts with counts, never verdicts. No evidence on file = nothing rendered.
 //  - Nothing is hard-deleted. Archive sets archived: true with a date.
 //  - Every write is atomic (temp file + rename) and the previous version is kept in backups/.
 //  - It sends nothing to anyone. "Draft a check-in" only leaves a note for the next session.
@@ -20,11 +28,12 @@ const TYPES = ['creator', 'affiliate', 'prospect', 'ugc', 'other'];
 const HANDLES = ['handle_instagram', 'handle_facebook', 'handle_tiktok', 'handle_youtube'];
 const EDITOR = 'Evan (OS)';
 
-module.exports = function makeAffiliates({ vault, todayIso }) {
+module.exports = function makeAffiliates({ vault, todayIso, uppromote }) {
   const DIR = path.join(vault, 'my-files (knowledge)', 'hpc-reference', 'affiliates');
   const STORE = path.join(DIR, 'affiliates.json');
   const SALES = path.join(DIR, 'sales-by-affiliate.json');
   const BACKUPS = path.join(DIR, 'backups');
+  const FLAGS = path.join(DIR, 'flags.json');
 
   // ---- store ----
   function load() {
@@ -113,11 +122,83 @@ module.exports = function makeAffiliates({ vault, todayIso }) {
     };
   }
 
+  // ---- evidence (flags.json) ----
+  const FLAG_KINDS = ['COUPON SITE', 'NO VISIBLE REFERRAL', 'PAID-AD OVERLAP', 'NOT ON OUR LIST', 'NEW SIGN-UP', 'HIGH RETURNS'];
+  function readEvidence(list) {
+    const r = readJson(FLAGS);
+    const ev = { present: false, error: null, read_at: null, source: null, note: null, rate: null, unmatched: [], byId: new Map() };
+    if (r.error === 'missing') return ev;
+    if (r.error) { ev.error = 'flags.json will not parse: ' + r.error; return ev; }
+    const d = r.data || {};
+    ev.present = true; ev.read_at = cleanish(d.read_at); ev.source = cleanish(d.source); ev.note = typeof d.note === 'string' ? d.note.slice(0, 1200) : null;
+    const rate = d.calc_commission_rate;
+    if (rate && typeof rate.value === 'number' && rate.value > 0 && rate.value < 1) ev.rate = { value: rate.value, label: cleanish(rate.label) || `${rate.value * 100}%`, source: cleanish(rate.source) };
+    const byName = new Map();
+    for (const rec of list) { const k = norm(rec.name); if (k) (byName.get(k) || byName.set(k, []).get(k)).push(rec); }
+    const frac = (x) => (x && Number.isInteger(x.orders) && Number.isInteger(x.of) ? { name: cleanish(x.name), orders: x.orders, of: x.of, source: cleanish(x.source) } : null);
+    for (const row of Array.isArray(d.rows) ? d.rows : []) {
+      if (!row || typeof row !== 'object') continue;
+      const hits = (row.affiliate_id && list.filter((x) => x.id === row.affiliate_id)) || byName.get(norm(row.affiliate_name)) || [];
+      if (hits.length !== 1) { ev.unmatched.push(cleanish(row.affiliate_name) || '(no name)'); continue; }
+      ev.byId.set(hits[0].id, {
+        flags: (Array.isArray(row.flags) ? row.flags : []).filter((f) => f && FLAG_KINDS.includes(f.flag) && f.fact && f.source).slice(0, 8)   // a flag with no fact or no source is not shown
+          .map((f) => ({ flag: f.flag, label: cleanish(f.label) || f.flag.toLowerCase(), fact: cleanish(f.fact), source: cleanish(f.source) })),
+        top_referrer: frac(row.top_referrer), returning: frac(row.returning),
+      });
+    }
+    return ev;
+  }
+
+  // ---- UpPromote import join: email first, then name ----
+  function readImport(list) {
+    const out = { byId: new Map(), paidTotal: null, error: null, info: null };
+    if (!uppromote) return out;
+    out.info = uppromote.info();
+    if (!out.info.present) { out.error = out.info.error || null; return out; }
+    let d; try { d = uppromote.load(); } catch (e) { out.error = e.message; return out; }
+    const byEmail = new Map(), byName = new Map();
+    for (const rec of list) { if (rec.email) byEmail.set(rec.email.toLowerCase(), rec); const k = norm(rec.name); if (k) (byName.get(k) || byName.set(k, []).get(k)).push(rec); }
+    const match = (email, name) => { const e = email && byEmail.get(String(email).toLowerCase()); if (e) return e; const h = byName.get(norm(name)) || []; return h.length === 1 ? h[0] : null; };
+    const slot = (rec) => out.byId.get(rec.id) || out.byId.set(rec.id, { site: null, signed_up: null, up_status: null, paid: null, unpaid: null, paid_rows: 0, source: null }).get(rec.id);
+    const file = (kind) => (d.files || []).find((f) => f.kind === kind);
+    const src = (kind) => { const f = file(kind); return f ? `UpPromote ${kind} export "${f.name}", imported ${String(f.imported_at).slice(0, 10)}` : null; };
+    for (const a of d.affiliates || []) { const rec = match(a.email, a.name); if (!rec) continue; const s = slot(rec); s.site = a.site; s.signed_up = a.signed_up; s.up_status = a.status; if (a.paid != null) s.paid = a.paid; if (a.unpaid != null) s.unpaid = a.unpaid; s.source = src('affiliates'); }
+    // Payment rows: add up the ones marked paid, per person and overall. Rows whose amount did not parse are left out and counted by the importer.
+    const pays = d.payments || [];
+    if (pays.length) {
+      let total = 0, n = 0;
+      for (const pmt of pays) {
+        if (pmt.amount == null || !/paid|complete|success/i.test(pmt.status || '') || /unpaid|pending/i.test(pmt.status || '')) continue;
+        total += pmt.amount; n++;
+        const rec = match(pmt.affiliate_email, pmt.affiliate); if (!rec) continue;
+        const s = slot(rec); s.paid = (s.paid_rows ? s.paid : 0) + pmt.amount; s.paid_rows++; s.source = src('payments');
+      }
+      out.paidTotal = { value: Math.round(total * 100) / 100, rows: n, source: src('payments'), how: `sum of ${n} payment rows marked paid` };
+    } else if ((d.affiliates || []).some((a) => a.paid != null)) {
+      const withPaid = d.affiliates.filter((a) => a.paid != null);
+      out.paidTotal = { value: Math.round(withPaid.reduce((t, a) => t + a.paid, 0) * 100) / 100, rows: withPaid.length, source: src('affiliates'), how: `sum of the paid column over ${withPaid.length} affiliates` };
+    }
+    return out;
+  }
+
   function view() {
     const today = todayIso();
     const list = load();
     const sales = readSales();
     const { out, info } = joinSales(list, sales);
+    const evidence = readEvidence(list);
+    const imp = readImport(list);
+    const cents = (n) => Math.round(n * 100) / 100;
+    const money = { credited: null, on_list: null, paid: imp.paidTotal, rate: evidence.rate };
+    if (sales.present) {
+      // Header totals: Finn's rows added up. Nothing is hardcoded; a new read changes them.
+      let all = 0, mine = 0, nAll = 0, nMine = 0;
+      for (const row of sales.rows) if (typeof row.net_sales === 'number' && isFinite(row.net_sales)) { all += row.net_sales; nAll++; }
+      for (const rec of list) { const s = out.get(rec.id); if (s && s.net_sales != null && rec.on_list === true) { mine += s.net_sales; nMine++; } }
+      const base = { source: sales.source, read_at: sales.read_at, window: sales.window };
+      money.credited = { value: cents(all), rows: nAll, how: `sum of the ${nAll} rows in Finn's file`, ...base };
+      money.on_list = { value: cents(mine), rows: nMine, how: `sum of the ${nMine} rows that match someone on your list`, ...base };
+    }
     const counts = { total: 0, archived: 0, sold30: 0, quiet30: 0, unknownUp: 0, noContactInfo: 0, neverContacted: 0, suggestions: 0 };
     const records = list.map((rec) => {
       const s = out.get(rec.id) || (sales.present ? null : seedSales(rec));
@@ -137,10 +218,17 @@ module.exports = function makeAffiliates({ vault, todayIso }) {
         for (const k of ['sold30', 'quiet30', 'unknownUp', 'noContactInfo', 'neverContacted']) if (flags[k]) counts[k]++;
         if (!rec.status && rec.status_suggested) counts.suggestions++;
       }
-      return { ...rec, _sales: s, _flags: flags };
+      // evidence flags: from flags.json, plus NOT ON OUR LIST which comes from the record itself
+      const e = evidence.byId.get(rec.id) || { flags: [], top_referrer: null, returning: null };
+      const evFlags = [...e.flags];
+      if (flags.unknownUp) evFlags.push({ flag: 'NOT ON OUR LIST', label: 'not on our list', fact: 'On UpPromote, and not on your spreadsheet list.', source: 'this record: uppromote = yes, on_list = no' });
+      const calc = s && s.from === 'finn' && s.net_sales != null && evidence.rate ? { value: cents(s.net_sales * evidence.rate.value), rate: evidence.rate.label, source: evidence.rate.source } : null;
+      return { ...rec, _sales: s, _flags: flags, _evidence: { flags: evFlags, top_referrer: e.top_referrer, returning: e.returning }, _calc: calc, _up: imp.byId.get(rec.id) || null };
     });
     return {
-      today, records, counts, statuses: STATUSES, types: TYPES,
+      today, records, counts, statuses: STATUSES, types: TYPES, money,
+      evidence: { present: evidence.present, error: evidence.error, read_at: evidence.read_at, source: evidence.source, note: evidence.note, unmatched: evidence.unmatched },
+      upImport: imp.info ? { ...imp.info, error: imp.error || imp.info.error || null } : null,
       sales: { present: !!sales.present, error: sales.error || null, read_at: sales.read_at || null, source: sales.source || null, window: sales.window || null, note: sales.note || null, unmatched: info.unmatched, ambiguous: info.ambiguous },
     };
   }

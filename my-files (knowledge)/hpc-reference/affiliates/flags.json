@@ -1,0 +1,450 @@
+{
+  "read_at": "2026-09-21",
+  "source": "my-work (outputs)/internal/reports/2026-09-21-affiliate-tagged-sales.md (Finn, Shopify read 2026-09-21) and Pete's UpPromote screen read of 2026-09-21. Transcribed by Nova.",
+  "note": "Facts, not verdicts. A flag is set only where the report states the fact for that name; no flag means no evidence was read, not a clean bill. Nobody here is labelled a coupon site or a fraud. Evidence lives in this drop-in so it never touches Evan's editable records. NOT ON OUR LIST is not stored here: the page derives it from each record's on_list and uppromote fields.",
+  "calc_commission_rate": {
+    "value": 0.05,
+    "label": "5%",
+    "source": "Program-wide rate on file: our-clients.md ('Live on UpPromote. 5% commission'), connected-apps.md, decisions.md. Not read from UpPromote. Custom per-affiliate rates, the base UpPromote pays on, and clawbacks are not read, so this is a calculation, never a payout."
+  },
+  "rows": [
+    {
+      "affiliate_name": "Huynh Lam",
+      "flags": [
+        {
+          "flag": "COUPON SITE",
+          "label": "37 of 55 from deal domains",
+          "fact": "37 of 55 orders were referred from deal-named domains, as the last click, onto the homepage. Whether the account is run by a deal site is not confirmed.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5c"
+        }
+      ],
+      "top_referrer": {
+        "name": "dailydealreview",
+        "orders": 36,
+        "of": 55,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Edith Ludewig",
+      "flags": [
+        {
+          "flag": "COUPON SITE",
+          "label": "20 of 33 from deal domains",
+          "fact": "20 of 33 orders were referred from deal-named domains, as the last click, onto the homepage. Whether the account is run by a deal site is not confirmed.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5c"
+        }
+      ],
+      "top_referrer": {
+        "name": "mimoni",
+        "orders": 17,
+        "of": 33,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Jimmy Doheny",
+      "flags": [
+        {
+          "flag": "COUPON SITE",
+          "label": "16 of 20 from deal domains",
+          "fact": "16 of 20 orders were referred from deal-named domains, as the last click, onto the homepage. Whether the account is run by a deal site is not confirmed.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5c"
+        },
+        {
+          "flag": "PAID-AD OVERLAP",
+          "label": "paid Meta ad first in 3 of 5 sampled",
+          "fact": "First sessions for the 5 newest orders: facebook paid x3, Google x1, direct x1. Sample: newest 5 orders opened, not a random draw.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b"
+        }
+      ],
+      "top_referrer": {
+        "name": "dealspotr",
+        "orders": 12,
+        "of": 20,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Aktug Dogan",
+      "flags": [
+        {
+          "flag": "COUPON SITE",
+          "label": "7 of 10 from deal domains",
+          "fact": "7 of 10 orders were referred from deal-named domains, as the last click, onto the homepage. Whether the account is run by a deal site is not confirmed.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5c"
+        }
+      ],
+      "top_referrer": {
+        "name": "refermate",
+        "orders": 5,
+        "of": 10,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Coupon Reals",
+      "flags": [
+        {
+          "flag": "COUPON SITE",
+          "label": "3 of 6 from deal domains",
+          "fact": "3 of 6 orders were referred from deal-named domains, as the last click, onto the homepage. Whether the account is run by a deal site is not confirmed.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5c"
+        },
+        {
+          "flag": "HIGH RETURNS",
+          "label": "$7,305.51 of $13,671.14 gross returned",
+          "fact": "Gross $13,671.14, returns -$7,305.51, net $5,609.95. More than half its gross came back.",
+          "source": "Finn, Shopify, 2026-09-21, report section 4 data notes"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "Vu dangvu248@gmail.com",
+      "flags": [
+        {
+          "flag": "COUPON SITE",
+          "label": "3 of 6 from deal domains",
+          "fact": "3 of 6 orders were referred from deal-named domains, as the last click, onto the homepage. Whether the account is run by a deal site is not confirmed.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5c"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "Hoang Dang Huy",
+      "flags": [
+        {
+          "flag": "COUPON SITE",
+          "label": "1 of 1 from deal domains",
+          "fact": "1 of 1 orders were referred from deal-named domains, as the last click, onto the homepage. Whether the account is run by a deal site is not confirmed.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5c"
+        }
+      ],
+      "top_referrer": {
+        "name": "thetopcoupon",
+        "orders": 1,
+        "of": 1,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Andhi Ermawan",
+      "flags": [
+        {
+          "flag": "COUPON SITE",
+          "label": "2 of 11 from deal domains",
+          "fact": "2 of 11 orders were referred from deal-named domains, as the last click, onto the homepage. Whether the account is run by a deal site is not confirmed.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5c"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "Xiri Zana",
+      "flags": [
+        {
+          "flag": "NO VISIBLE REFERRAL",
+          "label": "no outside referrer seen",
+          "fact": "56 orders: 36 google, 10 none, 5 own site, 2 android, 1 each qr1, shopify, manula. No outside site recorded. Shopify cannot tell a browser extension from a privately shared link.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b and 5c"
+        }
+      ],
+      "top_referrer": {
+        "name": "google",
+        "orders": 36,
+        "of": 56,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      },
+      "returning": {
+        "orders": 27,
+        "of": 56,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Noah Primeaux",
+      "flags": [
+        {
+          "flag": "NO VISIBLE REFERRAL",
+          "label": "no outside referrer seen",
+          "fact": "27 orders: 15 google, 8 none, 3 own site, 1 syndicatedsearch. No outside site in any sampled journey. Shopify cannot tell a browser extension from a privately shared link.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b and 5c"
+        },
+        {
+          "flag": "PAID-AD OVERLAP",
+          "label": "Google Ads first in 5 of 5 sampled",
+          "fact": "5 of the 5 newest orders began with a Google Ads click (pMax, DSA, Feed Focus). Sample: newest 5 orders opened, not a random draw.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b"
+        }
+      ],
+      "top_referrer": {
+        "name": "google",
+        "orders": 15,
+        "of": 27,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      },
+      "returning": {
+        "orders": 8,
+        "of": 27,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Thomas Nordeide",
+      "flags": [
+        {
+          "flag": "NO VISIBLE REFERRAL",
+          "label": "no outside referrer seen",
+          "fact": "46 orders: 31 google, 10 none, 5 own site. No outside site in any sampled journey. Shopify cannot tell a browser extension from a privately shared link.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b and 5c"
+        },
+        {
+          "flag": "PAID-AD OVERLAP",
+          "label": "Google Ads last in 2 of 5 sampled",
+          "fact": "Last session on the 5 newest orders: Google Ads x2, direct to homepage x2, Google Business Profile x1. Sample: newest 5 orders opened, not a random draw.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b"
+        }
+      ],
+      "top_referrer": {
+        "name": "google",
+        "orders": 31,
+        "of": 46,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      },
+      "returning": {
+        "orders": 23,
+        "of": 46,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Nguyen Tran",
+      "flags": [
+        {
+          "flag": "NO VISIBLE REFERRAL",
+          "label": "no outside referrer seen",
+          "fact": "19 orders: 13 google, 3 none, 2 own site, 1 verifypass. Shopify cannot tell a browser extension from a privately shared link.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b and 5c"
+        },
+        {
+          "flag": "PAID-AD OVERLAP",
+          "label": "Google Ads in 4 of 5 sampled",
+          "fact": "4 of the 5 newest orders had a Google Ads click as both first and last session. Sample: newest 5 orders opened, not a random draw.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b"
+        }
+      ],
+      "top_referrer": {
+        "name": "google",
+        "orders": 13,
+        "of": 19,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Tran Tinh",
+      "flags": [
+        {
+          "flag": "NO VISIBLE REFERRAL",
+          "label": "no outside referrer seen",
+          "fact": "20 orders: 13 google, 5 none, 2 own site. Shopify cannot tell a browser extension from a privately shared link.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b and 5c"
+        },
+        {
+          "flag": "PAID-AD OVERLAP",
+          "label": "Google Ads last in 3 of 5 sampled",
+          "fact": "4 of the 5 newest orders had a last session from Google, 3 of them Google Ads. Sample: newest 5 orders opened, not a random draw.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b"
+        }
+      ],
+      "top_referrer": {
+        "name": "google",
+        "orders": 13,
+        "of": 20,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Zidean Le",
+      "flags": [
+        {
+          "flag": "NO VISIBLE REFERRAL",
+          "label": "no outside referrer seen",
+          "fact": "21 orders: 15 google, 4 none, 2 own site. Shopify cannot tell a browser extension from a privately shared link.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b and 5c"
+        },
+        {
+          "flag": "PAID-AD OVERLAP",
+          "label": "Google Ads first in 3 of 5 sampled",
+          "fact": "First session was a Google Ads click on 3 of the 5 newest orders. Sample: newest 5 orders opened, not a random draw.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b"
+        }
+      ],
+      "top_referrer": {
+        "name": "google",
+        "orders": 15,
+        "of": 21,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Chadrick McKenzie",
+      "flags": [
+        {
+          "flag": "NO VISIBLE REFERRAL",
+          "label": "no outside referrer seen",
+          "fact": "8 orders: 5 google, 2 none, 1 own site. Shopify cannot tell a browser extension from a privately shared link.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b and 5c"
+        },
+        {
+          "flag": "PAID-AD OVERLAP",
+          "label": "Google Ads first in 3 of 5 sampled",
+          "fact": "First session was a Google Ads click on 3 of the 5 newest orders. Sample: newest 5 orders opened, not a random draw.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b"
+        }
+      ],
+      "top_referrer": {
+        "name": "google",
+        "orders": 5,
+        "of": 8,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Hernan Slodowicz",
+      "flags": [
+        {
+          "flag": "NO VISIBLE REFERRAL",
+          "label": "no outside referrer seen",
+          "fact": "28 orders: 18 none, 7 bing, 1 yahoo, 2 own site, 0 google. No discount on any of the 5 sampled. Shopify cannot tell a browser extension from a privately shared link.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b and 5c"
+        },
+        {
+          "flag": "PAID-AD OVERLAP",
+          "label": "paid Meta ad in 1 of 5 sampled",
+          "fact": "1 of the 5 newest orders had a last session carrying facebook paid UTMs. Sample: newest 5 orders opened, not a random draw.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b"
+        }
+      ],
+      "top_referrer": {
+        "name": "none recorded",
+        "orders": 18,
+        "of": 28,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (order referrer, all orders)"
+      },
+      "returning": {
+        "orders": 10,
+        "of": 28,
+        "source": "Finn, Shopify, 2026-09-21, report section 5b (all orders)"
+      }
+    },
+    {
+      "affiliate_name": "Layla Evan",
+      "flags": [
+        {
+          "flag": "NO VISIBLE REFERRAL",
+          "label": "no outside referrer seen",
+          "fact": "4 newest orders opened (sample only; the full referrer split was not run): Klaviyo email, google, Google Business Profile, direct. No outside site in any journey. Shopify cannot tell a browser extension from a privately shared link.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b and 5c"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "Magaly Rivera",
+      "flags": [
+        {
+          "flag": "NO VISIBLE REFERRAL",
+          "label": "no outside referrer seen",
+          "fact": "3 orders opened (sample only; the full referrer split was not run): bing to homepage x2, Klaviyo email x1. Shopify cannot tell a browser extension from a privately shared link.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b and 5c"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "Clair Cook",
+      "flags": [
+        {
+          "flag": "PAID-AD OVERLAP",
+          "label": "paid Meta ad in 3 of 5 sampled",
+          "fact": "3 of the 5 newest orders had a last session from facebook/instagram with paid UTMs (BM 'External Whitelisting', 'Creative Testing', campaign 6772105419387). Sample: newest 5 orders opened, not a random draw.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "Brandon Griffin",
+      "flags": [
+        {
+          "flag": "PAID-AD OVERLAP",
+          "label": "paid Meta ad in 4 of 5 sampled",
+          "fact": "4 of the 5 newest orders had a last session from facebook/instagram with paid UTMs (BM 'External Whitelisting', 'Creative Testing', 'UGC', campaign 6772105419387). Sample: newest 5 orders opened, not a random draw.",
+          "source": "Finn, Shopify, 2026-09-21, report section 5b"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "ha giang",
+      "flags": [
+        {
+          "flag": "NEW SIGN-UP",
+          "label": "signed up 2026-09-19",
+          "fact": "Registered on UpPromote 2026-09-19. Seen on the first screen of the affiliates list only. No Shopify orders tagged to this name.",
+          "source": "Pete, UpPromote admin > Affiliates, first 6 rows, screen read 2026-09-21"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "Beaute Cosmetic",
+      "flags": [
+        {
+          "flag": "NEW SIGN-UP",
+          "label": "signed up 2026-09-15",
+          "fact": "Registered on UpPromote 2026-09-15. Seen on the first screen of the affiliates list only. No Shopify orders tagged to this name.",
+          "source": "Pete, UpPromote admin > Affiliates, first 6 rows, screen read 2026-09-21"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "Doris J Rozell",
+      "flags": [
+        {
+          "flag": "NEW SIGN-UP",
+          "label": "signed up 2026-09-11",
+          "fact": "Registered on UpPromote 2026-09-11. Seen on the first screen of the affiliates list only. No Shopify orders tagged to this name.",
+          "source": "Pete, UpPromote admin > Affiliates, first 6 rows, screen read 2026-09-21"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "David Ho",
+      "flags": [
+        {
+          "flag": "NEW SIGN-UP",
+          "label": "signed up 2026-09-11",
+          "fact": "Registered on UpPromote 2026-09-11. Seen on the first screen of the affiliates list only. No Shopify orders tagged to this name.",
+          "source": "Pete, UpPromote admin > Affiliates, first 6 rows, screen read 2026-09-21"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "Berthe Bandiougoud",
+      "flags": [
+        {
+          "flag": "NEW SIGN-UP",
+          "label": "signed up 2026-09-11",
+          "fact": "Registered on UpPromote 2026-09-11. Seen on the first screen of the affiliates list only. No Shopify orders tagged to this name.",
+          "source": "Pete, UpPromote admin > Affiliates, first 6 rows, screen read 2026-09-21"
+        }
+      ]
+    },
+    {
+      "affiliate_name": "Tan Vu Nhan",
+      "flags": [
+        {
+          "flag": "NEW SIGN-UP",
+          "label": "signed up 2026-09-10",
+          "fact": "Registered on UpPromote 2026-09-10. Seen on the first screen of the affiliates list only. No Shopify orders tagged to this name.",
+          "source": "Pete, UpPromote admin > Affiliates, first 6 rows, screen read 2026-09-21"
+        }
+      ]
+    }
+  ]
+}
