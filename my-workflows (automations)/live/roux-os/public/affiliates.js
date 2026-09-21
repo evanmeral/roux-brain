@@ -85,10 +85,20 @@ function renderAffiliates() {
   const tile = (label, x) => x
     ? `<div class="money-tile" title="${esc([x.how, x.window ? 'window ' + x.window : '', x.source].filter(Boolean).join(' · '))}"><span class="eyebrow">${label}</span><span class="money-n">${affMoney(x.value)}</span><span class="money-sub">credited, not incremental · Finn, Shopify, read ${esc(readDay(x))}</span></div>`
     : `<div class="money-tile"><span class="eyebrow">${label}</span><span class="money-n dim">no sales read</span><span class="money-sub">waiting on sales-by-affiliate.json from Finn</span></div>`;
+  // Paid / approved / denied come from the Referrals export (commission by status). The Approved-payments
+  // export is UpPromote's approved balance: shown as such, never as paid. No file behind a tile = "not read", never $0.
+  const upTip = (x) => esc([x.how, x.source].filter(Boolean).join(' · '));
   const paid = m.paid
-    ? `<div class="money-tile" title="${esc([m.paid.how, m.paid.source].filter(Boolean).join(' · '))}"><span class="eyebrow">Paid out</span><span class="money-n">${affMoney(m.paid.value)}</span><span class="money-sub">${esc(m.paid.how || '')} · ${esc(m.paid.source || '')}</span></div>`
-    : `<div class="money-tile is-unread"><span class="eyebrow">Paid out</span><span class="money-n">not read</span><span class="money-sub">needs an UpPromote export. A 5% calculation is not a payout and is never shown here.</span></div>`;
-
+    ? `<div class="money-tile" title="${upTip(m.paid)}"><span class="eyebrow">Paid out</span><span class="money-n">${affMoney(m.paid.value)}</span><span class="money-sub">${esc(m.paid.rows)} referral rows with status Paid, commission column · ${esc(m.paid.source || '')}</span></div>`
+    : `<div class="money-tile is-unread"><span class="eyebrow">Paid out</span><span class="money-n">not read</span><span class="money-sub">needs the UpPromote Referrals export (status + commission). The Approved-payments file cannot say what was paid. A 5% calculation is not a payout and is never shown here.</span></div>`;
+  const owedBits = [];
+  if (m.balance) owedBits.push(`<span title="${upTip(m.balance)}">Approved-payments balance ${affMoney(m.balance.value)} (total_amount, ${esc(m.balance.rows)} affiliates)</span>`);
+  if (m.denied) owedBits.push(`<span title="${upTip(m.denied)}">Denied, not owed: ${esc(m.denied.rows)} rows, ${affMoney(m.denied.value)}</span>`);
+  const owed = m.approved
+    ? `<div class="money-tile" title="${upTip(m.approved)}"><span class="eyebrow">Approved, not paid</span><span class="money-n">${affMoney(m.approved.value)}</span><span class="money-sub">${esc(m.approved.rows)} referral rows with status Approved, commission column${owedBits.length ? ' · ' + owedBits.join(' · ') : ''}</span></div>`
+    : m.balance
+      ? `<div class="money-tile" title="${upTip(m.balance)}"><span class="eyebrow">Approved balance</span><span class="money-n">${affMoney(m.balance.value)}</span><span class="money-sub">UpPromote Approved-payments export, total_amount over ${esc(m.balance.rows)} affiliates. Not paid. ${esc(m.balance.source || '')}</span></div>`
+      : `<div class="money-tile is-unread"><span class="eyebrow">Approved, not paid</span><span class="money-n">not read</span><span class="money-sub">needs the UpPromote Referrals export</span></div>`;
   let sales;
   if (d.sales.error) sales = `<span class="bad">${esc(d.sales.error)}</span>`;
   else if (d.sales.present) sales = `Sales: Finn's read${d.sales.read_at ? ' of ' + esc(String(d.sales.read_at).slice(0, 16).replace('T', ' ')) : ''}${d.sales.window ? ' · window ' + esc(d.sales.window) : ''} · <span class="aff-src" title="${esc([d.sales.source, d.sales.note].filter(Boolean).join(' · '))}">source and method on hover</span>. Credited by order tag, not incremental.`;
@@ -103,8 +113,8 @@ function renderAffiliates() {
   const live = d.records.filter((r) => !r.archived);
   const evCount = (f) => live.filter((r) => r._evidence.flags.some((x) => x.flag === f)).length;
   head.innerHTML = `
-    <div class="money-row">${tile('Credited by UpPromote', m.credited)}${tile('On our list', m.on_list)}${paid}
-      <button class="money-tile is-action" id="aff-import-toggle"><span class="eyebrow">UpPromote export</span><span class="money-n">${d.upImport && d.upImport.present ? 'Imported' : 'Import'}</span><span class="money-sub">${d.upImport && d.upImport.present ? esc(d.upImport.files.map((f) => `${f.kind}: ${f.rows} rows`).join(' · ')) : 'you export the CSV, the page reads it on this machine'}${d.upImport && d.upImport.inbox.length ? ` · <b>${d.upImport.inbox.length} CSV in your inbox</b>` : ''}</span></button></div>
+    <div class="money-row">${tile('Credited by UpPromote', m.credited)}${tile('On our list', m.on_list)}${paid}${owed}
+      <button class="money-tile is-action" id="aff-import-toggle"><span class="eyebrow">UpPromote export</span><span class="money-n">${d.upImport && d.upImport.present ? 'Imported' : 'Import'}</span><span class="money-sub">${d.upImport && d.upImport.present ? esc(d.upImport.files.map((f) => `${f.kind}: ${f.rows} rows`).join(' · ')) : 'you export from UpPromote (.xlsx or CSV), the page reads it on this machine'}${d.upImport && d.upImport.inbox.length ? ` · <b>${d.upImport.inbox.length} export file${d.upImport.inbox.length === 1 ? '' : 's'} in your inbox</b>` : ''}${d.upImport && d.upImport.flagCheck && d.upImport.flagCheck.not_flagged.length ? ` · <b>${d.upImport.flagCheck.not_flagged.length} On UpPromote flags to check</b>` : ''}</span></button></div>
     <div id="aff-import" class="${AFF.importOpen ? '' : 'is-hidden'}"></div>
     <div class="aff-flags">${AFF_FLAGS.map(([k, label, ck]) => `<button class="flag ${AFF.flags.has(k) ? 'is-on' : ''} ${k === 'sold30' ? 'is-good' : ''}" data-flag="${k}">${ck ? `<b>${c[ck]}</b>` : ''}${esc(label)}</button>`).join('')}
       <span class="flag-sep"></span>${AFF_EVIDENCE.map((f) => { const n = evCount(f); return n ? `<button class="flag is-evidence ${AFF.flags.has(f) ? 'is-on' : ''}" data-flag="${esc(f)}" title="A fact from Finn's report, with counts. Not a verdict."><b>${n}</b>${esc(AFF_EVIDENCE_LABEL[f])}</button>` : ''; }).join('')}</div>
@@ -131,20 +141,22 @@ function renderAffiliates() {
   renderAffTable();
 }
 
-// ---- Import UpPromote export: Evan's own CSV, parsed by the local server. Nothing leaves this machine. ----
+// ---- Import UpPromote export: Evan's own .xlsx or CSV, parsed by the local server. Nothing leaves this machine. ----
 function renderAffImport() {
   const box = $('aff-import'), up = AFF.data.upImport || { files: [], inbox: [] };
-  const kindSel = (id) => `<select id="${id}"><option value="auto">work out the kind</option><option value="affiliates">affiliates list</option><option value="referrals">referrals (orders)</option><option value="payments">payments</option></select>`;
+  const kindSel = (id) => `<select id="${id}"><option value="auto">work out the kind</option><option value="affiliates">affiliates list</option><option value="referrals">referrals (orders)</option><option value="approved_balance">approved balance (Payments &gt; Approved)</option></select>`;
   const fileCard = (f) => `<div class="imp-file"><strong>${esc(f.name)}</strong> <span class="pill is-kind">${esc(f.kind)}</span> <span class="mono stamp">${esc(f.rows)} rows · imported ${esc(String(f.imported_at).slice(0, 10))}</span>
       <div class="dr-src">Used: ${Object.entries(f.mapped || {}).map(([k, v]) => `${esc(v)} → ${esc(k)}`).join(' · ') || 'nothing'}</div>
       ${f.unmapped && f.unmapped.length ? `<div class="imp-warn">Unmapped columns, left out rather than guessed at: ${f.unmapped.map(esc).join(' · ')}. If one of these matters, tell ROUX its name and Nova adds it to the mapper.</div>` : '<div class="dr-src">Every column was mapped.</div>'}
       ${f.unparsed_amounts ? `<div class="imp-warn">${esc(f.unparsed_amounts)} money value${f.unparsed_amounts === 1 ? '' : 's'} did not read as a number and were left blank.</div>` : ''}</div>`;
   box.innerHTML = `<div class="imp">
     <div class="imp-how"><span class="eyebrow">Import an UpPromote export</span>
-      <p>In UpPromote, export <strong>Affiliates</strong>, <strong>Referrals</strong> (all time) and <strong>Payments</strong> as CSV. Drop them in <code>my-inbox (new inputs)/</code> or pick a file here. The page reads the file on this machine and keeps only the columns it recognizes. It never logs in to UpPromote and sends nothing anywhere. A new export of a kind replaces the last one.</p></div>
-    <div class="imp-row">${up.inbox.length ? up.inbox.map((n) => `<span class="imp-inbox"><code>${esc(n)}</code><button class="btn btn-sm" data-inbox="${esc(n)}">Import</button></span>`).join('') : '<span class="dim">No CSV in the inbox folder right now.</span>'}</div>
-    <div class="imp-row"><input type="file" id="imp-pick" accept=".csv,text/csv"> ${kindSel('imp-kind')} <button class="btn" id="imp-go">Import the picked file</button></div>
+      <p>In UpPromote, export <strong>Affiliates</strong>, <strong>Referrals</strong> (all time) and, if you want the approved balance, <strong>Payments &gt; Approved</strong>. The .xlsx files UpPromote gives you work as they are; CSV works too. Drop them in <code>my-inbox (new inputs)/</code> or pick a file here. The page reads the file on this machine and keeps only the columns it recognizes. It never logs in to UpPromote and sends nothing anywhere. A new export of a kind replaces the last one. <strong>Paid out comes from the Referrals export</strong> (commission where status is Paid); the Approved-payments file has no status or date, so it is shown as a balance, never as paid.</p></div>
+    <div class="imp-row">${up.inbox.length ? up.inbox.map((n) => `<span class="imp-inbox"><code>${esc(n)}</code><button class="btn btn-sm" data-inbox="${esc(n)}">Import</button></span>`).join('') : '<span class="dim">No .xlsx or .csv in the inbox folder right now.</span>'}</div>
+    <div class="imp-row"><input type="file" id="imp-pick" accept=".xlsx,.csv,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"> ${kindSel('imp-kind')} <button class="btn" id="imp-go">Import the picked file</button></div>
     ${up.error ? `<div class="bad">${esc(up.error)}</div>` : ''}
+    ${up.legacy_payments_dropped ? '<div class="imp-warn">An older import read the Approved-payments file as payouts. That part is ignored now. Import that file again as "approved balance".</div>' : ''}
+    ${affFlagCheck(up.flagCheck)}
     ${(up.files || []).map(fileCard).join('') || '<div class="dim">Nothing imported yet. Until then "Paid out" reads "not read".</div>'}</div>`;
   const run = async (payload, btn) => {
     btn.disabled = true;
@@ -155,10 +167,22 @@ function renderAffImport() {
   box.querySelectorAll('[data-inbox]').forEach((b) => b.addEventListener('click', () => run({ from: 'inbox', file: b.dataset.inbox }, b)));
   $('imp-go').addEventListener('click', async () => {
     const f = $('imp-pick').files[0];
-    if (!f) { toast('Pick a CSV file first.', true); return; }
+    if (!f) { toast('Pick an .xlsx or CSV file first.', true); return; }
     if (f.size > 8 * 1024 * 1024) { toast('That file is too large to be an UpPromote export.', true); return; }
-    run({ from: 'upload', name: f.name, text: await f.text() }, $('imp-go'));
+    // Send the raw bytes as base64 so an .xlsx arrives intact; the server tells .xlsx from CSV itself.
+    const bytes = new Uint8Array(await f.arrayBuffer()); let bin = '';
+    for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+    run({ from: 'upload', name: f.name, b64: btoa(bin) }, $('imp-go'));
   });
+}
+
+// Records an UpPromote export matched whose own "On UpPromote" is not yes. Listed for Evan to fix by hand; the OS never edits them.
+function affFlagCheck(fc) {
+  if (!fc) return '';
+  const out = [];
+  if (fc.not_flagged.length) out.push(`<details class="aff-odd"><summary>${fc.not_flagged.length} of your records appear in an UpPromote export but are not marked On UpPromote (${fc.matched} matched, ${fc.flagged} marked). Open each to fix; nothing is changed for you.</summary>${fc.not_flagged.map((r) => `${esc(r.name)} <span class="dim">(${r.uppromote === false ? 'marked no' : 'unknown'})</span>`).join(' · ')}</details>`);
+  if (fc.flagged_not_in_affiliates_export && fc.flagged_not_in_affiliates_export.length) out.push(`<details class="aff-odd"><summary>${fc.flagged_not_in_affiliates_export.length} records marked On UpPromote were not found in the Affiliates export by email or name</summary>${fc.flagged_not_in_affiliates_export.map((r) => esc(r.name)).join(' · ')}</details>`);
+  return out.join('');
 }
 
 function affFlagChips(r, max) {
@@ -176,7 +200,7 @@ function renderAffTable() {
     : [['name', 'Name'], ['status', 'Status'], ['type', 'Type'], ['up', 'UpPromote'], ['flags', 'Flags'], ['net', 'Net all', 'num'], ['last', 'Last sale'], ['contact', 'Last contact']];
   const th = cols.map(([k, l, cls]) => `<th data-sort="${k}" class="${cls || ''} ${AFF.sort.key === k ? 'is-sorted' : ''}">${l}${AFF.sort.key === k ? (AFF.sort.dir > 0 ? ' ↑' : ' ↓') : ''}</th>`).join('') + (money ? '' : '<th></th>');
   const today = d.today;
-  const paidRead = !!(d.money && d.money.paid) || !!(d.upImport && d.upImport.present);
+  const paidRead = !!(d.money && d.money.paid);   // only the Referrals export (or a paid column) can say what was paid
   const rows = list.map((r) => {
     const s = r._sales, seed = s && s.from === 'seed', sc = seed ? 'is-seed' : '', st = esc(affSalesTitle(s));
     const handle = r.handle_instagram || r.handle_tiktok || r.handle_facebook || r.handle_youtube || '';
@@ -193,7 +217,7 @@ function renderAffTable() {
         <td title="${esc(e.top_referrer ? e.top_referrer.source : 'Finn’s report gives no referrer split for this name')}">${e.top_referrer ? `${esc(e.top_referrer.name)} <span class="dim">${esc(affFrac(e.top_referrer))}</span>` : '<span class="dim">—</span>'}</td>
         <td title="${esc(e.returning ? 'Returning customers. ' + e.returning.source : 'Finn’s report gives no returning-customer count for this name')}">${e.returning ? esc(affFrac(e.returning)) : '<span class="dim">—</span>'}</td>
         <td class="num is-calc" title="${esc(r._calc ? `A calculation, not a payout: net sales x ${r._calc.rate}. ${r._calc.source}` : 'No calculation without a Finn sales row')}">${r._calc ? affMoney(r._calc.value) : '—'}</td>
-        <td class="num" title="${esc(up && up.source ? up.source : 'Paid amounts come only from an UpPromote export')}">${up && up.paid != null ? affMoney(up.paid) : `<span class="dim">${paidRead ? '—' : 'not read'}</span>`}</td></tr>`;
+        <td class="num" title="${esc(up && up.source ? up.source : paidRead ? 'No Paid referral rows matched this person by email or name' : 'Paid amounts come only from the UpPromote Referrals export')}">${up && up.paid != null ? affMoney(up.paid) : `<span class="dim">${paidRead ? '—' : 'not read'}</span>`}</td></tr>`;
     }
     const status = r.status ? `<span class="pill is-${esc(r.status)}">${esc(r.status)}</span>` : r.status_suggested ? `<span class="pill is-suggest" title="A suggestion from the seed, not a fact. Open the row to accept it or set your own.">${esc(r.status_suggested)}?</span>` : '<span class="dim">—</span>';
     const contactAge = r.last_contact ? Math.round((new Date(today) - new Date(r.last_contact)) / 86400000) : null;
@@ -295,8 +319,21 @@ function openAffDrawer(id) {
     if (rec._evidence.top_referrer) fact('Top referrer', `${rec._evidence.top_referrer.name}: ${affFrac(rec._evidence.top_referrer)} orders`, rec._evidence.top_referrer.source);
     if (rec._evidence.returning) fact('Returning customers', `${affFrac(rec._evidence.returning)} orders`, rec._evidence.returning.source);
     if (rec._calc) fact(`Calc commission at ${rec._calc.rate}. Not a payout`, affMoney(rec._calc.value), rec._calc.source);
-    fact('Paid by UpPromote', rec._up && rec._up.paid != null ? affMoney(rec._up.paid) + (rec._up.unpaid != null ? ` paid · ${affMoney(rec._up.unpaid)} unpaid` : '') : 'not read', rec._up && rec._up.source ? rec._up.source : 'Comes only from an UpPromote export. Import one from the top of this tab.');
-    if (rec._up && (rec._up.site || rec._up.signed_up || rec._up.up_status)) fact('From the UpPromote export', [rec._up.site ? 'site ' + rec._up.site : '', rec._up.signed_up ? 'signed up ' + rec._up.signed_up : '', rec._up.up_status ? 'status ' + rec._up.up_status : ''].filter(Boolean).join(' · '), rec._up.source);
+    {
+      // Paid / approved / denied: the Referrals export's commission by status. Balance: the Approved-payments export. Missing = "not read".
+      const u = rec._up, paidOn = !!(AFF.data.money && AFF.data.money.paid);
+      const bits = [];
+      if (u && u.paid != null) bits.push(`${affMoney(u.paid)} paid (${u.paid_rows} rows)`);
+      if (u && u.unpaid != null) bits.push(`${affMoney(u.unpaid)} approved, not paid${u.unpaid_rows ? ` (${u.unpaid_rows} rows)` : ''}`);
+      if (u && u.denied != null) bits.push(`${affMoney(u.denied)} denied (${u.denied_rows} rows, not owed)`);
+      if (u && u.balance != null) bits.push(`${affMoney(u.balance)} approved balance`);
+      fact('Commission in UpPromote', bits.length ? bits.join(' · ') : paidOn ? 'no referral rows matched this person by email or name' : 'not read',
+        u && u.source ? u.source : 'Comes only from the UpPromote Referrals export. Import one from the top of this tab.');
+    }
+    if (rec._up && (rec._up.site || rec._up.signed_up || rec._up.up_status || rec._up.signup_source || rec._up.last_login)) fact('From the UpPromote export', [rec._up.up_status ? 'status ' + rec._up.up_status : '', rec._up.signed_up ? 'signed up ' + rec._up.signed_up : '', rec._up.signup_source ? 'via ' + rec._up.signup_source : '', rec._up.last_login ? 'last login ' + rec._up.last_login : '', rec._up.site ? 'site ' + rec._up.site : ''].filter(Boolean).join(' · '), rec._up.source);
+    if (rec._up && rec._up.socials) fact('Socials in UpPromote', rec._up.socials.map((x) => `${x.k} ${x.v}`).join(' · '), 'UpPromote Affiliates export');
+    if (rec._up && (rec._up.custom_referral_link || rec._up.referral_link)) fact('Referral link', rec._up.custom_referral_link || rec._up.referral_link, 'UpPromote Affiliates export');
+    if (rec._up && rec._up.tracking) fact('How their referrals were tracked', Object.entries(rec._up.tracking).map(([k, n]) => `${k}: ${n}`).join(' · '), 'UpPromote Referrals export, tracking_by');
     const s = rec._sales;
     if (s) fact(s.from === 'finn' ? "Sales, Finn's read" : "Sales, Pete's seed read (hand-summed, unconfirmed)", `${s.orders == null ? '—' : s.orders} orders · ${affMoney(s.net_sales)} net${s.first_sale ? ' · first ' + s.first_sale : ''}${s.last_sale ? ' · last ' + s.last_sale : ''}${s.orders_30d != null ? ` · last 30 days: ${s.orders_30d} orders` + (s.net_sales_30d != null ? ', ' + affMoney(s.net_sales_30d) : '') : ''}${s.orders_90d != null ? ` · last 90 days: ${s.orders_90d} orders` + (s.net_sales_90d != null ? ', ' + affMoney(s.net_sales_90d) : '') : ''}`, [s.read_at ? 'Read ' + s.read_at : '', s.window ? 'Window ' + s.window : '', s.source, s.caveat || 'Credited by order tag. Attribution, not incremental revenue.'].filter(Boolean).join(' · '));
     else fact('Sales', d.sales.present ? "Not in Finn's sales read." : 'No sales read yet.', '');

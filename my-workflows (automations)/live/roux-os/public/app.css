@@ -330,7 +330,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .score-table tr.dim td { color: var(--dim); }
 
 /* affiliates: money header, views, evidence flags, import (Beau's panel spec, 2026-09-21) */
-.money-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 8px; }
+.money-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-bottom: 8px; }
 .money-tile { display: flex; flex-direction: column; gap: 1px; text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 7px 12px; min-width: 0; }
 .money-n { font-size: 19px; font-weight: 700; letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
 .money-sub { font-size: 11px; color: var(--muted); line-height: 1.3; }

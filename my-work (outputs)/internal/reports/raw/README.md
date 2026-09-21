@@ -60,3 +60,18 @@ Evan can relay it from Coalition's reporting. Add it to `my-files (knowledge)/hp
 | Shopify → Analytics → Reports → **Sales by product**, 12 months | Product mix without a browser session |
 | Shopify → **Discounts** export during/after a promo | Redemptions per code |
 | reviews.io export | More customer verbatims for the copy file |
+
+---
+
+## UpPromote exports (2026-09-21, Evan)
+
+| File | Rows | What it is |
+|---|---|---|
+| `2026-09-21_uppromote_referrals.xlsx` | 563 | Every referral UpPromote recorded: order, affiliate, sales, commission, status, `tracking_by`, `google_ads` |
+| `2026-09-21_uppromote_affiliates.xlsx` | 252 | Every affiliate account: email, website, socials, links, coupon, status, sign-up date and source |
+| `2026-09-21_uppromote_approved-payments.xlsx` | 21 | Approved commission not yet paid, per affiliate |
+| `2026-09-21_uppromote_settings-screenshots/` | 5 | Settings screens, 2:06–2:11 PM: notifications and affiliate review, referral review and Google Ads detection, cookie, sign-up restriction and sales detection, sign-up fraud detection |
+
+⚠️ **Personal data:** customer names and emails, affiliate PayPal addresses. Same rule as
+`hpc-reference/affiliates/README.md`: it stays on this machine and comes out of git history
+before a remote is ever added. Read by Finn → `../2026-09-21-uppromote-payout-reconciliation.md`.

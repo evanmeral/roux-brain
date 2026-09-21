@@ -79,8 +79,8 @@ Shopify (ShopifyQL), both calendars, the board, key dates, capture. Writes `toda
 | `my-files (knowledge)/hpc-reference/affiliates/affiliates.json` | Affiliates tab | yes | **yes**: atomic, last five versions in `backups/` |
 | `…/affiliates/sales-by-affiliate.json` | Affiliates money columns and header tiles (Finn's drop-in) | yes | no |
 | `…/affiliates/flags.json` | Affiliates evidence flags, top referrer, returning, the calc rate (drop-in) | yes | no |
-| `…/affiliates/uppromote-import.json` | Paid column, Paid out tile, UpPromote site / sign-up / status | yes | **yes**, from a CSV Evan exported |
-| `my-inbox (new inputs)/*.csv` | Offered for import on the Affiliates tab. Read, never moved | names | no |
+| `…/affiliates/uppromote-import.json` | Paid column, Paid out and Approved tiles (Referrals export, commission by status), approved balance, UpPromote site / sign-up / socials / status, On UpPromote flag check | yes | **yes**, from an UpPromote export Evan made (.xlsx or CSV) |
+| `my-inbox (new inputs)/*.xlsx`, `*.csv` | Offered for import on the Affiliates tab. Read, never moved | names | no |
 | `my-work (outputs)/content/social/<Monday>-week/schedule.json` | Posts tab and tile, **through `live/post-scheduler/` only** | yes | **`approve()` only** |
 
 Every write is a temp file plus rename, so a crash cannot leave half a file. Nothing is ever deleted:
@@ -92,7 +92,7 @@ Landmines · Numbers). If one goes missing, the page says so in red rather than 
 ## Endpoints
 
 All answer only to a localhost Host header. Every POST needs the page's own Origin or the `X-ROUX`
-header, carries a JSON object of at most 64 KB (the CSV import alone allows 8 MB), and has each
+header, carries a JSON object of at most 64 KB (the UpPromote import alone allows an 8 MB file, sent as base64), and has each
 field checked and length-capped on the server. A refusal comes back as `{error}` with 400, 403,
 404, 409, 413 or 422, and the page shows the words.
 
@@ -105,7 +105,7 @@ field checked and length-capped on the server. A refusal comes back as `{error}`
 | `GET /api/affiliates` | records joined at read time with sales, flags and the import; header totals; counts |
 | `POST /api/affiliates/save` · `create` · `archive` · `contact` · `accept` | edit · add · archive or restore · last contact = today · accept a seed status suggestion. `save` takes `seen_updated_at` and refuses (409) if the record changed underneath |
 | `POST /api/affiliates/checkin` | `{id, mode}`: `capture` leaves "Draft a check-in to … — Pete"; `session` opens a session that asks Pete. Sends nothing |
-| `POST /api/affiliates/import` | `{from:"inbox", file}` or `{from:"upload", name, text}`, optional `kind`. Parses the CSV locally; keeps mapped columns only; reports the rest as unmapped |
+| `POST /api/affiliates/import` | `{from:"inbox", file}` or `{from:"upload", name, b64}` (or `text` for CSV), optional `kind` (`affiliates`, `referrals`, `approved_balance`). Parses .xlsx or CSV locally; keeps mapped columns only; reports the rest as unmapped |
 | `GET /api/launches` · `POST /api/launches/tick` | `{line, raw, done}`; refused (409) if that line changed since the page read it |
 | `GET /api/approvals` · `POST /api/approvals/resolve` | `{id, decision: approve, reject or reopen, note}`; a reject needs a note; a `live-write` becomes `queued`, never `approved` |
 | `GET /api/posts` · `/api/posts/week?id=` · `/api/posts/media?week=&file=` | weeks · one week with preflight · media, served only via the scheduler's `mediaPath()` and only for files a piece lists |
@@ -119,7 +119,7 @@ field checked and length-capped on the server. A refusal comes back as `{error}`
 
 `server.js` (http, guard, routes, SSE file watch, capture, sessions) · `util.js` (atomic write,
 rolling backup, input cleaning) · `board.js` (board parser) · `affiliates.js` (roster, sales / flags /
-import join) · `uppromote.js` (CSV parser and tolerant column mapper) · `launches.js` · `approvals.js`
+import join) · `uppromote.js` (CSV parser and tolerant column mapper) · `xlsx.js` (.xlsx reader on built-in zlib, no dependency) · `launches.js` · `approvals.js`
 (queue + the agents' CLI) · `posts.js` (thin wrapper over `../post-scheduler`) · `score.js` ·
 `md.js` (markdown to HTML; relative links become `obsidian://`) · `ics.js` (calendars, cached 5 min) ·
 `public/` (one page, vanilla JS, one script per tab: `app.js`, `affiliates.js`, `launches.js`,

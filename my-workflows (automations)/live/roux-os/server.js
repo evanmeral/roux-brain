@@ -295,7 +295,7 @@ function send(res, code, body, type = 'application/json; charset=utf-8') {
 }
 // Every POST body is JSON, an object, and small. Anything else is refused before it is parsed.
 const MAX_BODY = 64 * 1024;
-function readBody(req, limit = MAX_BODY) {   // only the CSV import route asks for a larger limit
+function readBody(req, limit = MAX_BODY) {   // only the UpPromote import route asks for a larger limit
   return new Promise((resolve, reject) => {
     if (Number(req.headers['content-length'] || 0) > limit) { req.resume(); return reject(new HttpError(413, 'That is too large to save')); }
     const chunks = []; let size = 0, over = false;
@@ -378,8 +378,8 @@ const server = http.createServer(async (req, res) => {
     // ---- affiliates ----
     if (p === '/api/affiliates' && req.method === 'GET') return send(res, 200, affiliates.view());
     if (p === '/api/affiliates/import' && req.method === 'POST') {
-      // Evan's own UpPromote CSV, parsed on this machine. A CSV is bigger than a form, so this one route allows more.
-      const r = uppromote.importCsv(await readBody(req, uppromote.MAX_CSV + 64 * 1024));
+      // Evan's own UpPromote export (.xlsx sent as base64, or CSV), parsed on this machine. A file is bigger than a form, so this one route allows more.
+      const r = uppromote.importFile(await readBody(req, uppromote.MAX_BODY));
       log('uppromote import', r.kind, r.rows, 'rows', 'unmapped:', r.unmapped.length);
       return send(res, 200, r);
     }

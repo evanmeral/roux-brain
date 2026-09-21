@@ -1,0 +1,1681 @@
+{
+ "read_at": "2026-09-21",
+ "read_by": "Finn",
+ "source": "UpPromote exports by Evan, 2026-09-21: my-work (outputs)/internal/reports/raw/2026-09-21_uppromote_referrals.xlsx (563 rows) and 2026-09-21_uppromote_affiliates.xlsx (252 rows). Commission and total_sales are UpPromote's figures, not Shopify's. Buckets are Finn's conclusions from the affiliates export plus the Shopify referrer read of 2026-09-21; each carries its basis.",
+ "report": "my-work (outputs)/internal/reports/2026-09-21-uppromote-payout-reconciliation.md",
+ "definitions": {
+  "orders": "distinct order_name with a non-negative row; negative rows are return clawbacks on the same order",
+  "last_90d": "referral date 2026-06-23 to 2026-09-21",
+  "jay_window": "referral date 2025-09-11 to 2026-09-10 inclusive",
+  "rate": "8.0% on every commissioned row dated 2025-04-21 to 2026-01-07; 5.0% from 2026-01-15 on (rounding aside)",
+  "buckets": {
+   "A": "real creator, on Evan's list",
+   "B": "creator-type presence, not on Evan's list (unverified)",
+   "C": "deal / coupon / review site",
+   "D": "marketplace sign-up, no visible site",
+   "E": "registration-form sign-up, no visible site (unknown)"
+  }
+ },
+ "totals": {
+  "referral_rows": 563,
+  "orders": 523,
+  "total_sales": 230582.37,
+  "commission": 12692.19,
+  "commission_by_status": {
+   "Paid": 12648.08,
+   "Approved": 44.11,
+   "Denied": 0.0
+  },
+  "commission_in_jay_window_by_status": {
+   "Paid": 11718.37,
+   "Approved": -22.02,
+   "Denied": 0.0
+  },
+  "google_ads_detected": {
+   "rows": 193,
+   "total_sales": 89971.96,
+   "commission": 4821.14
+  }
+ },
+ "affiliates": [
+  {
+   "affiliate_name": "Xiri Zana",
+   "bucket": "D",
+   "bucket_label": "marketplace sign-up, no visible site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: gmail, Marketplace, no site or socials. UpPromote: 44 of 56 referrals Google-Ads-detected.",
+   "signup_source": "Marketplace",
+   "date_created": "2025-11-13 3:28 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 63,
+   "orders": 56,
+   "total_sales": 27946.37,
+   "commission": 1490.96,
+   "commission_in_jay_window": 1469.11,
+   "by_status": {
+    "Paid": {
+     "rows": 58,
+     "total_sales": 26580.24,
+     "commission": 1422.65
+    },
+    "Approved": {
+     "rows": 5,
+     "total_sales": 1366.13,
+     "commission": 68.31
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 63
+   },
+   "google_ads_detected": {
+    "rows": 44,
+    "total_sales": 24483.14,
+    "commission": 1263.02
+   },
+   "last_90d": {
+    "rows": 13,
+    "total_sales": 5427.16,
+    "commission": 271.36,
+    "google_ads_detected_rows": 13
+   },
+   "first_referral": "2025-11-16",
+   "last_referral": "2026-09-17"
+  },
+  {
+   "affiliate_name": "Huynh Lam",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: gmail, Marketplace, no site. Shopify: 36 of 55 orders referred by dailydealreview (the evidence is the referrer, not the profile).",
+   "signup_source": "Marketplace",
+   "date_created": "2025-10-27 4:42 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 57,
+   "orders": 55,
+   "total_sales": 24722.28,
+   "commission": 1312.62,
+   "commission_in_jay_window": 1312.62,
+   "by_status": {
+    "Paid": {
+     "rows": 57,
+     "total_sales": 24722.28,
+     "commission": 1312.62
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 57
+   },
+   "google_ads_detected": {
+    "rows": 1,
+    "total_sales": 948.6,
+    "commission": 75.89
+   },
+   "last_90d": {
+    "rows": 3,
+    "total_sales": 1003.95,
+    "commission": 50.21,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2025-12-01",
+   "last_referral": "2026-08-02"
+  },
+  {
+   "affiliate_name": "Clair Cook",
+   "bucket": "A",
+   "bucket_label": "real creator, on Evan's list",
+   "bucket_is": "conclusion",
+   "bucket_basis": "On Evan's creator list. Shopify: 60 of 63 facebook-referred tagged orders belong to the 4 listed creators.",
+   "signup_source": "Registration form",
+   "date_created": "2026-01-26 10:12 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 64,
+   "orders": 59,
+   "total_sales": 19736.79,
+   "commission": 1006.9,
+   "commission_in_jay_window": 1006.9,
+   "by_status": {
+    "Paid": {
+     "rows": 64,
+     "total_sales": 19736.79,
+     "commission": 1006.9
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 63,
+    "Performance bonus": 1
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-03-13",
+   "last_referral": "2026-06-14"
+  },
+  {
+   "affiliate_name": "Edith Ludewig",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: login and payout info@mimoni.com, Marketplace. Shopify: 17 of 33 orders referred by mimoni.",
+   "signup_source": "Marketplace",
+   "date_created": "2025-10-02 7:01 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 36,
+   "orders": 33,
+   "total_sales": 17557.01,
+   "commission": 976.71,
+   "commission_in_jay_window": 976.71,
+   "by_status": {
+    "Paid": {
+     "rows": 36,
+     "total_sales": 17557.01,
+     "commission": 976.71
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 36
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2025-10-27",
+   "last_referral": "2026-06-15"
+  },
+  {
+   "affiliate_name": "Noah Primeaux",
+   "bucket": "D",
+   "bucket_label": "marketplace sign-up, no visible site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: hotmail login, payout email does not match the name, Marketplace, no site. UpPromote: 21 of 27 Google-Ads-detected.",
+   "signup_source": "Marketplace",
+   "date_created": "2025-05-22 9:17 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 27,
+   "orders": 27,
+   "total_sales": 16025.68,
+   "commission": 931.93,
+   "commission_in_jay_window": 928.53,
+   "by_status": {
+    "Paid": {
+     "rows": 27,
+     "total_sales": 16025.68,
+     "commission": 931.93
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 27
+   },
+   "google_ads_detected": {
+    "rows": 21,
+    "total_sales": 11531.58,
+    "commission": 608.24
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2025-06-19",
+   "last_referral": "2026-06-22"
+  },
+  {
+   "affiliate_name": "Nguyen Tran",
+   "bucket": "D",
+   "bucket_label": "marketplace sign-up, no visible site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: gmail, payout email does not match the name, Marketplace, no site. UpPromote: 14 of 19 Google-Ads-detected.",
+   "signup_source": "Marketplace",
+   "date_created": "2025-06-17 3:09 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 22,
+   "orders": 19,
+   "total_sales": 13226.79,
+   "commission": 876.14,
+   "commission_in_jay_window": 743.68,
+   "by_status": {
+    "Paid": {
+     "rows": 21,
+     "total_sales": 13226.79,
+     "commission": 876.14
+    },
+    "Denied": {
+     "rows": 1,
+     "total_sales": 0.0,
+     "commission": 0.0
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 22
+   },
+   "google_ads_detected": {
+    "rows": 14,
+    "total_sales": 12103.07,
+    "commission": 770.28
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 499.23,
+    "commission": 24.96,
+    "google_ads_detected_rows": 1
+   },
+   "first_referral": "2025-06-28",
+   "last_referral": "2026-07-13"
+  },
+  {
+   "affiliate_name": "Thomas Nordeide",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2025-12-25 3:46 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 48,
+   "orders": 46,
+   "total_sales": 15417.73,
+   "commission": 783.34,
+   "commission_in_jay_window": 783.34,
+   "by_status": {
+    "Paid": {
+     "rows": 47,
+     "total_sales": 15288.75,
+     "commission": 776.89
+    },
+    "Approved": {
+     "rows": 1,
+     "total_sales": 128.98,
+     "commission": 6.45
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 48
+   },
+   "google_ads_detected": {
+    "rows": 40,
+    "total_sales": 12255.76,
+    "commission": 625.24
+   },
+   "last_90d": {
+    "rows": 6,
+    "total_sales": 1764.65,
+    "commission": 88.24,
+    "google_ads_detected_rows": 6
+   },
+   "first_referral": "2025-12-28",
+   "last_referral": "2026-08-20"
+  },
+  {
+   "affiliate_name": "Hernan Slodowicz",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: login on the domain dailyhernan.com, payout mailbox named 'imarketdiscovery', Marketplace. Shopify: 0 google, 7 bing, 18 no referrer of 28. Weak: what dailyhernan.com is was not checked (Scout).",
+   "signup_source": "Marketplace",
+   "date_created": "2026-04-23 1:01 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 30,
+   "orders": 28,
+   "total_sales": 14756.3,
+   "commission": 737.83,
+   "commission_in_jay_window": 745.08,
+   "by_status": {
+    "Paid": {
+     "rows": 28,
+     "total_sales": 14866.55,
+     "commission": 743.34
+    },
+    "Approved": {
+     "rows": 2,
+     "total_sales": -110.25,
+     "commission": -5.51
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 30
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 11,
+    "total_sales": 3094.96,
+    "commission": 154.76,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-05-18",
+   "last_referral": "2026-09-15"
+  },
+  {
+   "affiliate_name": "Zidean Le",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2025-05-25 1:27 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 22,
+   "orders": 21,
+   "total_sales": 9514.58,
+   "commission": 557.08,
+   "commission_in_jay_window": 398.32,
+   "by_status": {
+    "Paid": {
+     "rows": 22,
+     "total_sales": 9514.58,
+     "commission": 557.08
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 22
+   },
+   "google_ads_detected": {
+    "rows": 16,
+    "total_sales": 4642.74,
+    "commission": 253.95
+   },
+   "last_90d": {
+    "rows": 2,
+    "total_sales": 469.07,
+    "commission": 23.45,
+    "google_ads_detected_rows": 2
+   },
+   "first_referral": "2025-06-12",
+   "last_referral": "2026-06-27"
+  },
+  {
+   "affiliate_name": "Tran Tinh",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-02-05 5:32 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 21,
+   "orders": 20,
+   "total_sales": 9921.19,
+   "commission": 496.08,
+   "commission_in_jay_window": 496.08,
+   "by_status": {
+    "Paid": {
+     "rows": 18,
+     "total_sales": 9765.5,
+     "commission": 488.3
+    },
+    "Approved": {
+     "rows": 3,
+     "total_sales": 155.69,
+     "commission": 7.78
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 21
+   },
+   "google_ads_detected": {
+    "rows": 19,
+    "total_sales": 10570.3,
+    "commission": 528.54
+   },
+   "last_90d": {
+    "rows": 2,
+    "total_sales": 139.7,
+    "commission": 6.98,
+    "google_ads_detected_rows": 2
+   },
+   "first_referral": "2026-02-08",
+   "last_referral": "2026-07-06"
+  },
+  {
+   "affiliate_name": "Brandon Griffin",
+   "bucket": "A",
+   "bucket_label": "real creator, on Evan's list",
+   "bucket_is": "conclusion",
+   "bucket_basis": "On Evan's creator list. Login email is a cooking-handle address. Shopify: facebook/instagram referrers with BM Digital paid UTMs.",
+   "signup_source": "Registration form",
+   "date_created": "2025-12-13 7:52 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 30,
+   "orders": 28,
+   "total_sales": 9597.66,
+   "commission": 479.89,
+   "commission_in_jay_window": 479.89,
+   "by_status": {
+    "Paid": {
+     "rows": 30,
+     "total_sales": 9597.66,
+     "commission": 479.89
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 30
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-03-11",
+   "last_referral": "2026-06-20"
+  },
+  {
+   "affiliate_name": "Jimmy Doheny",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: login affiliate@demand.io, payout payments@demand.io, company Demand.io, website knoji.com, socials 'simplycodes'. Shopify: 12 dealspotr + 2 knoji + 1 couponreals + 1 joincheckmate of 20 orders.",
+   "signup_source": "Marketplace",
+   "date_created": "2025-03-20 1:09 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 20,
+   "orders": 20,
+   "total_sales": 5405.9,
+   "commission": 400.37,
+   "commission_in_jay_window": 229.66,
+   "by_status": {
+    "Paid": {
+     "rows": 19,
+     "total_sales": 5311.9,
+     "commission": 395.67
+    },
+    "Approved": {
+     "rows": 1,
+     "total_sales": 94.0,
+     "commission": 4.7
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 20
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 94.0,
+    "commission": 4.7,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2025-04-21",
+   "last_referral": "2026-08-08"
+  },
+  {
+   "affiliate_name": "Andhi Ermawan",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: login referral@rank.id, payout on a different .id domain, Marketplace. Shopify: 2 of 11 orders referred by myprosandcons.",
+   "signup_source": "Marketplace",
+   "date_created": "2025-03-16 9:56 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 11,
+   "orders": 11,
+   "total_sales": 6577.72,
+   "commission": 359.29,
+   "commission_in_jay_window": 359.29,
+   "by_status": {
+    "Paid": {
+     "rows": 10,
+     "total_sales": 6552.73,
+     "commission": 358.04
+    },
+    "Approved": {
+     "rows": 1,
+     "total_sales": 24.99,
+     "commission": 1.25
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 11
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2025-11-12",
+   "last_referral": "2026-06-11"
+  },
+  {
+   "affiliate_name": "Vu dangvu248@gmail.com",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: registered with an email as the name, Marketplace. Shopify: 3 of 6 orders referred by coupontigo.",
+   "signup_source": "Marketplace",
+   "date_created": "2025-06-08 9:39 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 6,
+   "orders": 6,
+   "total_sales": 3632.54,
+   "commission": 265.08,
+   "commission_in_jay_window": 47.32,
+   "by_status": {
+    "Paid": {
+     "rows": 5,
+     "total_sales": 3587.55,
+     "commission": 262.83
+    },
+    "Approved": {
+     "rows": 1,
+     "total_sales": 44.99,
+     "commission": 2.25
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 6
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 44.99,
+    "commission": 2.25,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2025-06-26",
+   "last_referral": "2026-07-26"
+  },
+  {
+   "affiliate_name": "Chadrick McKenzie",
+   "bucket": "D",
+   "bucket_label": "marketplace sign-up, no visible site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: gmail, payout email does not match the name, Marketplace, no site. UpPromote: 8 of 8 Google-Ads-detected.",
+   "signup_source": "Marketplace",
+   "date_created": "2026-03-04 8:58 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 9,
+   "orders": 8,
+   "total_sales": 5284.14,
+   "commission": 264.2,
+   "commission_in_jay_window": 264.2,
+   "by_status": {
+    "Paid": {
+     "rows": 9,
+     "total_sales": 5284.14,
+     "commission": 264.2
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 9
+   },
+   "google_ads_detected": {
+    "rows": 8,
+    "total_sales": 5352.14,
+    "commission": 267.6
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-04-06",
+   "last_referral": "2026-06-08"
+  },
+  {
+   "affiliate_name": "Gyorgi Muchev",
+   "bucket": "D",
+   "bucket_label": "marketplace sign-up, no visible site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Marketplace, coupon SPROM, no site. UpPromote: 9 of 9 'Tracked by coupon'.",
+   "signup_source": "Marketplace",
+   "date_created": "2026-04-14 4:48 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 9,
+   "orders": 9,
+   "total_sales": 5250.6,
+   "commission": 262.53,
+   "commission_in_jay_window": 262.53,
+   "by_status": {
+    "Paid": {
+     "rows": 9,
+     "total_sales": 5250.6,
+     "commission": 262.53
+    }
+   },
+   "tracking_by": {
+    "Tracked by coupon": 9
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 6,
+    "total_sales": 3823.96,
+    "commission": 191.2,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-04-17",
+   "last_referral": "2026-08-14"
+  },
+  {
+   "affiliate_name": "Aktug Dogan",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: login and payout help@refermate.com, Marketplace. Shopify: 5 of 10 orders referred by refermate.",
+   "signup_source": "Marketplace",
+   "date_created": "2025-05-10 11:55 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 12,
+   "orders": 10,
+   "total_sales": 3962.01,
+   "commission": 252.9,
+   "commission_in_jay_window": 137.12,
+   "by_status": {
+    "Paid": {
+     "rows": 10,
+     "total_sales": 3962.01,
+     "commission": 252.9
+    },
+    "Denied": {
+     "rows": 2,
+     "total_sales": 0.0,
+     "commission": 0.0
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 12
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2025-08-21",
+   "last_referral": "2026-03-30"
+  },
+  {
+   "affiliate_name": "Coupon Reals",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: registered as 'Coupon Reals', payout on a couponreals address. Shopify: couponreals and hotpromocodes referrers.",
+   "signup_source": "Registration form",
+   "date_created": "2025-03-19 10:06 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 9,
+   "orders": 6,
+   "total_sales": 2353.84,
+   "commission": 188.31,
+   "commission_in_jay_window": 111.07,
+   "by_status": {
+    "Paid": {
+     "rows": 6,
+     "total_sales": 5158.71,
+     "commission": 328.55
+    },
+    "Denied": {
+     "rows": 1,
+     "total_sales": 0.0,
+     "commission": 0.0
+    },
+    "Approved": {
+     "rows": 2,
+     "total_sales": -2804.87,
+     "commission": -140.24
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 9
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2025-05-11",
+   "last_referral": "2026-06-03"
+  },
+  {
+   "affiliate_name": "Sharon Monahan",
+   "bucket": "D",
+   "bucket_label": "marketplace sign-up, no visible site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: gmail, payout email does not match the name, Marketplace, no site. UpPromote: 6 of 7 Google-Ads-detected.",
+   "signup_source": "Marketplace",
+   "date_created": "2026-04-14 10:02 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 7,
+   "orders": 7,
+   "total_sales": 2874.63,
+   "commission": 143.74,
+   "commission_in_jay_window": 143.74,
+   "by_status": {
+    "Paid": {
+     "rows": 5,
+     "total_sales": 2705.03,
+     "commission": 135.25
+    },
+    "Approved": {
+     "rows": 2,
+     "total_sales": 169.6,
+     "commission": 8.49
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 7
+   },
+   "google_ads_detected": {
+    "rows": 6,
+    "total_sales": 2451.18,
+    "commission": 122.57
+   },
+   "last_90d": {
+    "rows": 4,
+    "total_sales": 1335.83,
+    "commission": 66.8,
+    "google_ads_detected_rows": 4
+   },
+   "first_referral": "2026-04-27",
+   "last_referral": "2026-09-02"
+  },
+  {
+   "affiliate_name": "Magaly Rivera",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-06-08 12:47 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 12,
+   "orders": 9,
+   "total_sales": 2847.44,
+   "commission": 142.38,
+   "commission_in_jay_window": 136.43,
+   "by_status": {
+    "Paid": {
+     "rows": 10,
+     "total_sales": 2285.94,
+     "commission": 114.3
+    },
+    "Approved": {
+     "rows": 2,
+     "total_sales": 561.5,
+     "commission": 28.08
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 12
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 12,
+    "total_sales": 2847.44,
+    "commission": 142.38,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-06-28",
+   "last_referral": "2026-09-19"
+  },
+  {
+   "affiliate_name": "Melba Graham",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: login address is a coupontigo mailbox. 1 of 3 referrals Google-Ads-detected.",
+   "signup_source": "Registration form",
+   "date_created": "2025-07-08 7:12 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 3,
+   "orders": 3,
+   "total_sales": 1507.68,
+   "commission": 120.61,
+   "commission_in_jay_window": 120.61,
+   "by_status": {
+    "Paid": {
+     "rows": 3,
+     "total_sales": 1507.68,
+     "commission": 120.61
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 3
+   },
+   "google_ads_detected": {
+    "rows": 1,
+    "total_sales": 804.18,
+    "commission": 64.33
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2025-11-15",
+   "last_referral": "2025-12-25"
+  },
+  {
+   "affiliate_name": "Layla Evan",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-06-09 4:28 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 11,
+   "orders": 11,
+   "total_sales": 2222.71,
+   "commission": 111.15,
+   "commission_in_jay_window": 111.15,
+   "by_status": {
+    "Paid": {
+     "rows": 10,
+     "total_sales": 2115.61,
+     "commission": 105.79
+    },
+    "Approved": {
+     "rows": 1,
+     "total_sales": 107.1,
+     "commission": 5.36
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 11
+   },
+   "google_ads_detected": {
+    "rows": 11,
+    "total_sales": 2222.71,
+    "commission": 111.15
+   },
+   "last_90d": {
+    "rows": 11,
+    "total_sales": 2222.71,
+    "commission": 111.15,
+    "google_ads_detected_rows": 11
+   },
+   "first_referral": "2026-08-01",
+   "last_referral": "2026-09-08"
+  },
+  {
+   "affiliate_name": "Rickie Moore",
+   "bucket": "A",
+   "bucket_label": "real creator, on Evan's list",
+   "bucket_is": "conclusion",
+   "bucket_basis": "On Evan's creator list. Affiliates export: instagram + tiktok 'Moore2grill', US.",
+   "signup_source": "Registration form",
+   "date_created": "2026-02-07 9:36 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 6,
+   "orders": 4,
+   "total_sales": 1543.0,
+   "commission": 77.15,
+   "commission_in_jay_window": 77.15,
+   "by_status": {
+    "Paid": {
+     "rows": 6,
+     "total_sales": 1543.0,
+     "commission": 77.15
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 6
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-04-09",
+   "last_referral": "2026-05-01"
+  },
+  {
+   "affiliate_name": "Joshua Flores",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-05-04 2:27 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 2,
+   "orders": 2,
+   "total_sales": 1299.15,
+   "commission": 64.96,
+   "commission_in_jay_window": 64.96,
+   "by_status": {
+    "Paid": {
+     "rows": 2,
+     "total_sales": 1299.15,
+     "commission": 64.96
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 2
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-05-07",
+   "last_referral": "2026-05-11"
+  },
+  {
+   "affiliate_name": "Michelle Solomon",
+   "bucket": "B",
+   "bucket_label": "creator-type presence, not on Evan's list (unverified)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: login email on the domain recipesfrommichelle.com; no socials listed. Spreadsheet 'Michelle' match unconfirmed.",
+   "signup_source": "Registration form",
+   "date_created": "2026-02-14 6:01 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 6,
+   "orders": 5,
+   "total_sales": 1111.51,
+   "commission": 55.57,
+   "commission_in_jay_window": 55.57,
+   "by_status": {
+    "Paid": {
+     "rows": 5,
+     "total_sales": 1376.51,
+     "commission": 68.82
+    },
+    "Approved": {
+     "rows": 1,
+     "total_sales": -265.0,
+     "commission": -13.25
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 6
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 2,
+    "total_sales": 156.88,
+    "commission": 7.84,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-04-21",
+   "last_referral": "2026-07-09"
+  },
+  {
+   "affiliate_name": "Javaris Donnett",
+   "bucket": "B",
+   "bucket_label": "creator-type presence, not on Evan's list (unverified)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: website chefjayvoo.com, facebook/instagram/tiktok 'chefjayvoo', company Boil Master LLC, US. Shopify: 1 order, instagram referrer. Not on Evan's list.",
+   "signup_source": "Registration form",
+   "date_created": "2025-03-19 11:32 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 670.0,
+   "commission": 53.6,
+   "commission_in_jay_window": 0,
+   "by_status": {
+    "Paid": {
+     "rows": 1,
+     "total_sales": 670.0,
+     "commission": 53.6
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2025-07-02",
+   "last_referral": "2025-07-02"
+  },
+  {
+   "affiliate_name": "Patrick John",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: login contact@couponmycart.com, Marketplace; payout email does not match the name.",
+   "signup_source": "Marketplace",
+   "date_created": "2026-05-23 5:25 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 884.69,
+   "commission": 44.23,
+   "commission_in_jay_window": 44.23,
+   "by_status": {
+    "Paid": {
+     "rows": 1,
+     "total_sales": 884.69,
+     "commission": 44.23
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 884.69,
+    "commission": 44.23,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-07-30",
+   "last_referral": "2026-07-30"
+  },
+  {
+   "affiliate_name": "Anna Rippin",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-04-01 9:22 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 789.98,
+   "commission": 39.5,
+   "commission_in_jay_window": 39.5,
+   "by_status": {
+    "Paid": {
+     "rows": 1,
+     "total_sales": 789.98,
+     "commission": 39.5
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 789.98,
+    "commission": 39.5,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-08-17",
+   "last_referral": "2026-08-17"
+  },
+  {
+   "affiliate_name": "david nguyen",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-05-05 3:38 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 3,
+   "orders": 3,
+   "total_sales": 698.68,
+   "commission": 34.94,
+   "commission_in_jay_window": 34.94,
+   "by_status": {
+    "Paid": {
+     "rows": 3,
+     "total_sales": 698.68,
+     "commission": 34.94
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 3
+   },
+   "google_ads_detected": {
+    "rows": 3,
+    "total_sales": 698.68,
+    "commission": 34.94
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 533.19,
+    "commission": 26.66,
+    "google_ads_detected_rows": 1
+   },
+   "first_referral": "2026-05-22",
+   "last_referral": "2026-07-01"
+  },
+  {
+   "affiliate_name": "Find Reviews",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: registered under the name 'Find Reviews', sign-up 2026-08-28. Weak: registered name only.",
+   "signup_source": "Registration form",
+   "date_created": "2026-08-28 6:59 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 563.99,
+   "commission": 28.2,
+   "commission_in_jay_window": 0,
+   "by_status": {
+    "Approved": {
+     "rows": 1,
+     "total_sales": 563.99,
+     "commission": 28.2
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 1,
+    "total_sales": 563.99,
+    "commission": 28.2
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 563.99,
+    "commission": 28.2,
+    "google_ads_detected_rows": 1
+   },
+   "first_referral": "2026-09-20",
+   "last_referral": "2026-09-20"
+  },
+  {
+   "affiliate_name": "Mia William",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2025-10-11 12:28 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 2,
+   "orders": 2,
+   "total_sales": 559.54,
+   "commission": 27.98,
+   "commission_in_jay_window": 27.98,
+   "by_status": {
+    "Paid": {
+     "rows": 2,
+     "total_sales": 559.54,
+     "commission": 27.98
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 2
+   },
+   "google_ads_detected": {
+    "rows": 2,
+    "total_sales": 559.54,
+    "commission": 27.98
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-05-17",
+   "last_referral": "2026-05-24"
+  },
+  {
+   "affiliate_name": "Hoang Dang Huy",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: gmail, Marketplace; the name is registered twice. Shopify: 1 of 1 order referred by thetopcoupon.",
+   "signup_source": "Marketplace",
+   "date_created": "2026-02-02 10:05 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 526.5,
+   "commission": 26.33,
+   "commission_in_jay_window": 26.33,
+   "by_status": {
+    "Paid": {
+     "rows": 1,
+     "total_sales": 526.5,
+     "commission": 26.33
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-04-23",
+   "last_referral": "2026-04-23"
+  },
+  {
+   "affiliate_name": "Roddy Davis",
+   "bucket": "A",
+   "bucket_label": "real creator, on Evan's list",
+   "bucket_is": "conclusion",
+   "bucket_basis": "On Evan's creator list. Affiliates export: facebook, youtube, instagram, tiktok 'kountry_kuisine', company Kountry Kuisine LLC, US.",
+   "signup_source": "Registration form",
+   "date_created": "2025-10-07 5:04 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 2,
+   "orders": 2,
+   "total_sales": 445.9,
+   "commission": 22.3,
+   "commission_in_jay_window": 22.3,
+   "by_status": {
+    "Paid": {
+     "rows": 1,
+     "total_sales": 330.0,
+     "commission": 16.5
+    },
+    "Approved": {
+     "rows": 1,
+     "total_sales": 115.9,
+     "commission": 5.8
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 2
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-02-06",
+   "last_referral": "2026-03-27"
+  },
+  {
+   "affiliate_name": "Cristy Rodriguez",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-06-03 10:53 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 418.95,
+   "commission": 20.95,
+   "commission_in_jay_window": 20.95,
+   "by_status": {
+    "Paid": {
+     "rows": 1,
+     "total_sales": 418.95,
+     "commission": 20.95
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 1,
+    "total_sales": 418.95,
+    "commission": 20.95
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 418.95,
+    "commission": 20.95,
+    "google_ads_detected_rows": 1
+   },
+   "first_referral": "2026-08-02",
+   "last_referral": "2026-08-02"
+  },
+  {
+   "affiliate_name": "ARTURO LIZAMA",
+   "bucket": "D",
+   "bucket_label": "marketplace sign-up, no visible site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Marketplace, no payout set, no site.",
+   "signup_source": "Marketplace",
+   "date_created": "2026-06-05 7:45 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 347.5,
+   "commission": 17.38,
+   "commission_in_jay_window": 0,
+   "by_status": {
+    "Approved": {
+     "rows": 1,
+     "total_sales": 347.5,
+     "commission": 17.38
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 347.5,
+    "commission": 17.38,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-09-14",
+   "last_referral": "2026-09-14"
+  },
+  {
+   "affiliate_name": "Rupy Aujla",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-05-20 10:44 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 122.0,
+   "commission": 6.1,
+   "commission_in_jay_window": 6.1,
+   "by_status": {
+    "Approved": {
+     "rows": 1,
+     "total_sales": 122.0,
+     "commission": 6.1
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 1,
+    "total_sales": 122.0,
+    "commission": 6.1
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 122.0,
+    "commission": 6.1,
+    "google_ads_detected_rows": 1
+   },
+   "first_referral": "2026-07-01",
+   "last_referral": "2026-07-01"
+  },
+  {
+   "affiliate_name": "Daniel Foster",
+   "bucket": "C",
+   "bucket_label": "deal / coupon / review site",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: login mailbox named 'greatfindsreviews'; the name is registered twice (2026-05-05 and 2026-08-30). Weak: name of mailbox only.",
+   "signup_source": "Registration form",
+   "date_created": "2026-05-05 6:44 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 71.49,
+   "commission": 3.57,
+   "commission_in_jay_window": 3.57,
+   "by_status": {
+    "Approved": {
+     "rows": 1,
+     "total_sales": 71.49,
+     "commission": 3.57
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 1,
+    "total_sales": 71.49,
+    "commission": 3.57
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-06-13",
+   "last_referral": "2026-06-13"
+  },
+  {
+   "affiliate_name": "Hue Duong",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-05-20 10:53 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 64.35,
+   "commission": 3.22,
+   "commission_in_jay_window": 3.22,
+   "by_status": {
+    "Approved": {
+     "rows": 1,
+     "total_sales": 64.35,
+     "commission": 3.22
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 1,
+    "total_sales": 64.35,
+    "commission": 3.22
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 64.35,
+    "commission": 3.22,
+    "google_ads_detected_rows": 1
+   },
+   "first_referral": "2026-07-05",
+   "last_referral": "2026-07-05"
+  },
+  {
+   "affiliate_name": "Lisa Trúc",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-05-07 10:09 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 61.49,
+   "commission": 3.07,
+   "commission_in_jay_window": 3.07,
+   "by_status": {
+    "Approved": {
+     "rows": 1,
+     "total_sales": 61.49,
+     "commission": 3.07
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 1,
+    "total_sales": 61.49,
+    "commission": 3.07
+   },
+   "last_90d": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-06-12",
+   "last_referral": "2026-06-12"
+  },
+  {
+   "affiliate_name": "Scarlett Miller",
+   "bucket": "E",
+   "bucket_label": "registration-form sign-up, no visible site (unknown)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: Registration form, no website or socials; login and payout emails are personal webmail. No outside referrer in Shopify evidence.",
+   "signup_source": "Registration form",
+   "date_created": "2026-08-30 2:03 PM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 46.07,
+   "commission": 2.3,
+   "commission_in_jay_window": 2.3,
+   "by_status": {
+    "Approved": {
+     "rows": 1,
+     "total_sales": 46.07,
+     "commission": 2.3
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 1,
+    "total_sales": 46.07,
+    "commission": 2.3
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 46.07,
+    "commission": 2.3,
+    "google_ads_detected_rows": 1
+   },
+   "first_referral": "2026-09-04",
+   "last_referral": "2026-09-04"
+  },
+  {
+   "affiliate_name": "Brittany Sansone",
+   "bucket": "B",
+   "bucket_label": "creator-type presence, not on Evan's list (unverified)",
+   "bucket_is": "conclusion",
+   "bucket_basis": "Affiliates export: login email on the domain brittanyksansone.com; Shopify referrer 'brittanyksansone' on her 1 order. Payout email does not match the name.",
+   "signup_source": "Registration form",
+   "date_created": "2026-06-12 5:04 AM",
+   "affiliate_status": "Active",
+   "referral_rows": 1,
+   "orders": 1,
+   "total_sales": 15.99,
+   "commission": 0.8,
+   "commission_in_jay_window": 0.8,
+   "by_status": {
+    "Approved": {
+     "rows": 1,
+     "total_sales": 15.99,
+     "commission": 0.8
+    }
+   },
+   "tracking_by": {
+    "Tracked by affiliate link": 1
+   },
+   "google_ads_detected": {
+    "rows": 0,
+    "total_sales": 0,
+    "commission": 0
+   },
+   "last_90d": {
+    "rows": 1,
+    "total_sales": 15.99,
+    "commission": 0.8,
+    "google_ads_detected_rows": 0
+   },
+   "first_referral": "2026-06-23",
+   "last_referral": "2026-06-23"
+  }
+ ]
+}
