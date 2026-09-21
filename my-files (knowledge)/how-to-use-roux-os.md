@@ -115,8 +115,9 @@ note** leaves the piece alone and puts your note in front of Sage next session.
 - **Archive** hides someone. Nothing is ever deleted; tick "show archived" to bring them back.
 - **Draft a check-in** sends nothing. It leaves a note so the next session has Pete draft it, one
   person, one ask, for you to send. There is no bulk message feature and there will not be one.
-- **Import UpPromote export:** in UpPromote, export Affiliates, Referrals and Payments as CSV. Drop
-  them in the inbox folder or pick the file on the page. The page reads it on this machine, keeps
+- **Import UpPromote export:** in UpPromote, export Affiliates and Referrals (and Payments > Approved
+  if you want the approved balance). The .xlsx files work as they come. Drop them in the inbox folder
+  or pick the file on the page. Paid out comes from the Referrals file (status Paid). The page reads it on this machine, keeps
   only the columns it recognizes, and lists the ones it could not place. It never logs in anywhere.
 - Finn's sales numbers live in their own file, so a fresh read from Finn never overwrites your edits.
 

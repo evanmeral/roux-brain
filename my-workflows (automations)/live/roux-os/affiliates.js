@@ -7,11 +7,12 @@
 //
 // Facts:  .../affiliates/flags.json   (drop-in; per-name evidence from Finn's reports, each flag with its
 //         fact and source. Kept out of Evan's editable records on purpose. Also names the 5% calc rate.)
-// Import: .../affiliates/uppromote-import.json   (written by uppromote.js from Evan's CSV exports)
+// Import: .../affiliates/uppromote-import.json   (written by uppromote.js from Evan's UpPromote .xlsx / CSV exports)
 //
 // Rules this module keeps:
 //  - It never estimates a sales figure. It shows what a file holds, with its source. The two sums it
-//    does make (header totals = the rows of Finn's file added up; paid = payment rows added up) say so.
+//    does make (header totals = the rows of Finn's file added up; paid / approved / denied = the UpPromote
+//    Referrals export's commission added up by status) say so, and name the file and column.
 //  - "Calc commission" is net sales x the rate on file. It is a calculation and is labelled "not a
 //    payout" everywhere. The payout tile reads "not read" until an UpPromote export is imported.
 //  - Flags are facts with counts, never verdicts. No evidence on file = nothing rendered.
@@ -150,8 +151,16 @@ module.exports = function makeAffiliates({ vault, todayIso, uppromote }) {
   }
 
   // ---- UpPromote import join: email first, then name ----
+  //
+  // Where each money figure comes from (the only honest sources in UpPromote's exports):
+  //   paid      = referrals export, sum of `commission` where `status` = Paid
+  //   approved  = referrals export, sum of `commission` where `status` = Approved (earned, not yet paid)
+  //   denied    = referrals export, `status` = Denied, shown apart and never added to anything
+  //   balance   = approved-payments export, sum of `total_amount` (UpPromote's approved balance; negative = clawback)
+  // The approved-payments export has no status and no date, so it is never read as paid.
+  // A tile with no file behind it is null, and the page shows "not read" — never 0.
   function readImport(list) {
-    const out = { byId: new Map(), paidTotal: null, error: null, info: null };
+    const out = { byId: new Map(), paidTotal: null, approvedTotal: null, deniedTotal: null, balanceTotal: null, flagCheck: null, error: null, info: null };
     if (!uppromote) return out;
     out.info = uppromote.info();
     if (!out.info.present) { out.error = out.info.error || null; return out; }
@@ -159,25 +168,80 @@ module.exports = function makeAffiliates({ vault, todayIso, uppromote }) {
     const byEmail = new Map(), byName = new Map();
     for (const rec of list) { if (rec.email) byEmail.set(rec.email.toLowerCase(), rec); const k = norm(rec.name); if (k) (byName.get(k) || byName.set(k, []).get(k)).push(rec); }
     const match = (email, name) => { const e = email && byEmail.get(String(email).toLowerCase()); if (e) return e; const h = byName.get(norm(name)) || []; return h.length === 1 ? h[0] : null; };
-    const slot = (rec) => out.byId.get(rec.id) || out.byId.set(rec.id, { site: null, signed_up: null, up_status: null, paid: null, unpaid: null, paid_rows: 0, source: null }).get(rec.id);
+    const cents = (n) => Math.round(n * 100) / 100;
+    const blank = () => ({ site: null, signed_up: null, signup_source: null, up_status: null, last_login: null, socials: null, referral_link: null, custom_referral_link: null,
+      paid: null, paid_rows: 0, unpaid: null, unpaid_rows: 0, denied: null, denied_rows: 0, balance: null, tracking: null, sources: [] });
+    const slot = (rec) => out.byId.get(rec.id) || out.byId.set(rec.id, blank()).get(rec.id);
     const file = (kind) => (d.files || []).find((f) => f.kind === kind);
-    const src = (kind) => { const f = file(kind); return f ? `UpPromote ${kind} export "${f.name}", imported ${String(f.imported_at).slice(0, 10)}` : null; };
-    for (const a of d.affiliates || []) { const rec = match(a.email, a.name); if (!rec) continue; const s = slot(rec); s.site = a.site; s.signed_up = a.signed_up; s.up_status = a.status; if (a.paid != null) s.paid = a.paid; if (a.unpaid != null) s.unpaid = a.unpaid; s.source = src('affiliates'); }
-    // Payment rows: add up the ones marked paid, per person and overall. Rows whose amount did not parse are left out and counted by the importer.
-    const pays = d.payments || [];
-    if (pays.length) {
-      let total = 0, n = 0;
-      for (const pmt of pays) {
-        if (pmt.amount == null || !/paid|complete|success/i.test(pmt.status || '') || /unpaid|pending/i.test(pmt.status || '')) continue;
-        total += pmt.amount; n++;
-        const rec = match(pmt.affiliate_email, pmt.affiliate); if (!rec) continue;
-        const s = slot(rec); s.paid = (s.paid_rows ? s.paid : 0) + pmt.amount; s.paid_rows++; s.source = src('payments');
-      }
-      out.paidTotal = { value: Math.round(total * 100) / 100, rows: n, source: src('payments'), how: `sum of ${n} payment rows marked paid` };
-    } else if ((d.affiliates || []).some((a) => a.paid != null)) {
-      const withPaid = d.affiliates.filter((a) => a.paid != null);
-      out.paidTotal = { value: Math.round(withPaid.reduce((t, a) => t + a.paid, 0) * 100) / 100, rows: withPaid.length, source: src('affiliates'), how: `sum of the paid column over ${withPaid.length} affiliates` };
+    const LABEL = { affiliates: 'Affiliates', referrals: 'Referrals', approved_balance: 'Approved payments' };
+    const src = (kind, col) => { const f = file(kind); return f ? `UpPromote ${LABEL[kind]} export "${f.name}"${col ? ', ' + col : ''}, imported ${String(f.imported_at).slice(0, 10)}` : null; };
+    const cite = (s, kind) => { const x = src(kind); if (x && !s.sources.includes(x)) s.sources.push(x); };
+    const seen = new Set();   // record ids that any UpPromote export matched
+
+    for (const a of d.affiliates || []) {
+      const rec = match(a.email, a.name); if (!rec) continue;
+      seen.add(rec.id);
+      const s = slot(rec);
+      Object.assign(s, { site: a.site, signed_up: a.signed_up, signup_source: a.signup_source || null, up_status: a.status, last_login: a.last_login || null, referral_link: a.referral_link || null, custom_referral_link: a.custom_referral_link || null });
+      const soc = ['instagram', 'tiktok', 'facebook', 'youtube'].filter((k) => a[k]).map((k) => ({ k, v: a[k] }));
+      s.socials = soc.length ? soc : null;
+      if (a.paid != null) s.paid = a.paid;
+      if (a.unpaid != null) s.unpaid = a.unpaid;
+      cite(s, 'affiliates');
     }
+
+    // Referrals: the one file that carries paid / approved / denied per credited order.
+    const refs = d.referrals || [];
+    if (refs.length) {
+      const t = { paid: [0, 0, 0], approved: [0, 0, 0], denied: [0, 0, 0] };   // [sum, rows, negative rows]
+      let other = 0, noAmount = 0, adjust = 0; const currencies = new Set();
+      for (const r of refs) {
+        const st = String(r.status || '').trim().toLowerCase();
+        const key = st === 'paid' ? 'paid' : st === 'approved' ? 'approved' : st === 'denied' ? 'denied' : null;
+        if (!key) { other++; continue; }
+        if (r.commission == null) { noAmount++; continue; }
+        if (r.currency) currencies.add(r.currency);
+        t[key][0] += r.commission; t[key][1]++; if (r.commission < 0) t[key][2]++;
+        if (key === 'paid' && r.commission_adjustment) adjust += r.commission_adjustment;
+        const rec = match(r.affiliate_email, r.affiliate); if (!rec) continue;
+        seen.add(rec.id);
+        const s = slot(rec); cite(s, 'referrals');
+        const f = key === 'approved' ? 'unpaid' : key;
+        s[f] = cents((s[f + '_rows'] ? s[f] : 0) + r.commission); s[f + '_rows']++;
+        if (r.tracking) { s.tracking = s.tracking || {}; s.tracking[r.tracking] = (s.tracking[r.tracking] || 0) + 1; }
+      }
+      const cur = currencies.size > 1 ? ` Mixed currencies (${[...currencies].join(', ')}), added as-is.` : '';
+      const neg = (n) => (n ? `, ${n} of them negative (refund clawbacks)` : '');
+      const tail = `${other ? ` ${other} rows with another status left out.` : ''}${noAmount ? ` ${noAmount} rows with no readable commission left out.` : ''}${cur}`;
+      out.paidTotal = { value: cents(t.paid[0]), rows: t.paid[1], source: src('referrals', 'column commission'), how: `sum of commission on ${t.paid[1]} referral rows with status Paid${neg(t.paid[2])}.${adjust ? ` commission_adjustment on those rows sums to ${cents(adjust)} and is not added.` : ''}${tail}` };
+      out.approvedTotal = { value: cents(t.approved[0]), rows: t.approved[1], source: src('referrals', 'column commission'), how: `sum of commission on ${t.approved[1]} referral rows with status Approved${neg(t.approved[2])}. Earned, not yet paid.` };
+      out.deniedTotal = { value: cents(t.denied[0]), rows: t.denied[1], source: src('referrals', 'column commission'), how: `${t.denied[1]} referral rows with status Denied. Not owed, not added to anything.` };
+    } else if ((d.affiliates || []).some((a) => a.paid != null)) {
+      // Only if a future Affiliates export carries its own paid column.
+      const withPaid = d.affiliates.filter((a) => a.paid != null);
+      out.paidTotal = { value: cents(withPaid.reduce((x, a) => x + a.paid, 0)), rows: withPaid.length, source: src('affiliates', 'column paid'), how: `sum of the paid column over ${withPaid.length} affiliates` };
+    }
+
+    // Approved-payments export: a per-affiliate approved balance. Labelled as such, never as paid.
+    const bal = d.approved_balance || [];
+    if (bal.length) {
+      let sum = 0, n = 0, negs = 0;
+      for (const b of bal) {
+        if (b.amount == null) continue;
+        sum += b.amount; n++; if (b.amount < 0) negs++;
+        const rec = match(b.affiliate_email, b.affiliate); if (!rec) continue;
+        seen.add(rec.id);
+        const s = slot(rec); s.balance = cents((s.balance || 0) + b.amount); cite(s, 'approved_balance');
+      }
+      out.balanceTotal = { value: cents(sum), rows: n, source: src('approved_balance', 'column total_amount'), how: `sum of total_amount over ${n} affiliates${negs ? `, ${negs} negative (clawbacks)` : ''}. UpPromote's approved balance. This file has no status or date, so none of it is counted as paid.` };
+    }
+
+    // Records an export matched whose own "On UpPromote" flag is not yes. Listed for Evan; never auto-edited.
+    const stale = list.filter((r) => seen.has(r.id) && r.uppromote !== true && !r.archived).map((r) => ({ id: r.id, name: r.name, uppromote: r.uppromote ?? null }));
+    const flagged = list.filter((r) => r.uppromote === true && !r.archived);
+    const missing = (d.affiliates || []).length ? flagged.filter((r) => !out.byId.get(r.id) || !out.byId.get(r.id).up_status).map((r) => ({ id: r.id, name: r.name })) : null;
+    out.flagCheck = { matched: seen.size, flagged: flagged.length, not_flagged: stale, flagged_not_in_affiliates_export: missing };
+    for (const s of out.byId.values()) s.source = s.sources.join(' · ') || null;
     return out;
   }
 
@@ -189,7 +253,7 @@ module.exports = function makeAffiliates({ vault, todayIso, uppromote }) {
     const evidence = readEvidence(list);
     const imp = readImport(list);
     const cents = (n) => Math.round(n * 100) / 100;
-    const money = { credited: null, on_list: null, paid: imp.paidTotal, rate: evidence.rate };
+    const money = { credited: null, on_list: null, paid: imp.paidTotal, approved: imp.approvedTotal, denied: imp.deniedTotal, balance: imp.balanceTotal, rate: evidence.rate };
     if (sales.present) {
       // Header totals: Finn's rows added up. Nothing is hardcoded; a new read changes them.
       let all = 0, mine = 0, nAll = 0, nMine = 0;
@@ -228,7 +292,7 @@ module.exports = function makeAffiliates({ vault, todayIso, uppromote }) {
     return {
       today, records, counts, statuses: STATUSES, types: TYPES, money,
       evidence: { present: evidence.present, error: evidence.error, read_at: evidence.read_at, source: evidence.source, note: evidence.note, unmatched: evidence.unmatched },
-      upImport: imp.info ? { ...imp.info, error: imp.error || imp.info.error || null } : null,
+      upImport: imp.info ? { ...imp.info, error: imp.error || imp.info.error || null, flagCheck: imp.flagCheck } : null,
       sales: { present: !!sales.present, error: sales.error || null, read_at: sales.read_at || null, source: sales.source || null, window: sales.window || null, note: sales.note || null, unmatched: info.unmatched, ambiguous: info.ambiguous },
     };
   }
