@@ -37,7 +37,7 @@ Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it
 
 ## 🔺 Now — top three (plan week 1 → 2)
 
-**1. Kits live Fri Sept 25.** Go/no-go Thu Sept 24. ✅ **Kit photos on all three kit pages** (2026-09-21, 8–9 each, read back READY, still DRAFT; the two-bird photos show no basket). Left: `HIGH15` off (Biljana, the one real blocker) · checkout test (kit + ordinary item, `FIRSTR10OFF` and one influence.io reward code) · preview a kit page for the FAQ field · check in admin that the eligible-discounts collection excludes `Bundle` and where `HPC10` points (the connector can't see either).
+**1. Kits live Fri Sept 25.** Go/no-go Thu Sept 24. ✅ Kit photos on all three (2026-09-21). ✅ **Kit checks run 2026-09-21 (ROUX, Shopify admin + GraphQL, read-only):** `HPC10` → "All Products - Eligible for Discounts" (142 products), which excludes tags `Sale-NoDiscount`, `scratch` and `Bundle`; all three kits carry `Bundle` + `Sale-NoDiscount`, so `HPC10` cannot reach them. FAQ field renders on the tailgate preview. ⚠️ `FIRSTR10OFF`, `HIGH15` and the influence.io reward codes are set to **all items**, so they will discount a kit (first responder is exempt by design; reward codes are the parked exposure). ⚠️ **The kit FAQ says "codes don't apply to it", which is not true for those codes.** Evan's call: soften the line or accept it. **Checkout test cannot run while the kits are DRAFT** (storefront: "Cannot find variant"); it runs in the minutes after Evan sets the tailgate kit active on Sept 25. Left: `HIGH15` off (Biljana, the one real blocker).
 
 **2. Garrett shoot Wed Sept 23.** Evan shops Tue after work, then the shoot. Turkey demo must be live by Oct 1, which leaves Garrett one day less (7 days) to edit.
 
@@ -50,7 +50,7 @@ Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it
 | Who | What | Since |
 |---|---|---|
 | **Biljana** | `HIGH15` flows. She switched `SMS25` on 2026-09-17 and needs a few more days on `HIGH15`. No kit goes live until it's off | 2026-09-15 |
-| **Evan** | Checkout test · kit-page preview for the FAQ field · admin check of the eligible-discounts collection and `HPC10` | 2026-09-16 |
+| **Evan** | Kit FAQ line "codes don't apply to it": soften or accept (reward codes and `FIRSTR10OFF` do apply) · set the tailgate kit active Sept 25, then ROUX runs the checkout test at once | 2026-09-21 |
 | **Coalition (Connor)** | DataFeedWatch: what access they need from us (Shopify app, Merchant Center) and whether the feed goes dark during the switch. Approved 2026-09-18; they own the account. The copy rules (QT size in titles, warranty qualifiers, no competitors) were **not** sent, so check the rewritten titles once live | 2026-09-18 |
 | **Evan** | UpPromote, ten minutes: export referrals (all time) + the affiliate list · note Payments paid/unpaid · read, don't change, auto-approve, cookie window, repeat-order crediting, coupon-site terms · Beau recommends switching new affiliates to manual approval. Drop the exports in the inbox → [Beau's memo](../my-work%20(outputs)/internal/reports/2026-09-21-affiliate-program-read-beau.md) | 2026-09-21 |
 | **Evan** | Shoot-day photos and video (Sept 23) into `my-inbox (new inputs)/` → sort, upgrade the Sept 28 content week, then final approval | 2026-09-21 |
