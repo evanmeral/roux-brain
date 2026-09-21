@@ -108,4 +108,7 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 - **2026-09-21 · 140 gal commercial photos renamed and filed** (Evan): 5 cutouts + 5 studio shots, copied into the asset library; ROUX cut the lid-on cutout from the studio shot; Evan kept the originals.
 - **2026-09-21 · Kit item photos renamed and filed** (Evan): 11 cutouts + 11 studio shots (the three fry kits laid out, plus thermometers, skimmer, legs, windshield, hose and regulator, 18 QT burner); Evan's originals renamed to match. Feeds Now #1 (kit photos).
 - **2026-09-21 · `/file-product-photos` skill built; skills now offered mid-session on the second hand run** (Evan). → [skill](../my-skills/file-product-photos/instructions.md) · decisions.md
+- **2026-09-21 · System renamed ROUX, head of marketing renamed Beau; pulse wording fixed; structure audit** (Evan). → decisions.md
+- **2026-09-21 · Post scheduler built** (Evan; Beau advised keeping Chrome as it was). → [README](../my-workflows%20(automations)/live/post-scheduler/README.md)
+- **2026-09-21 · ROUX OS 0.2: Affiliates, Launches, Waiting, Approvals, Posts, Score** (Evan). Affiliate roster (116) seeded by Pete; tagged sales confirmed by Finn; program read by Beau.
 - **2026-09-21 · Kit photos attached to all three kit drafts in Shopify** (Evan): 8–9 square white-background images each, alt text, kit shot first; no per-option images (Evan). Clears the photo line in Now #1.
