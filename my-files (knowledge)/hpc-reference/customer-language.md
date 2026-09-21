@@ -214,3 +214,19 @@ are real, and here's the guy who checked.* Lean into demonstration — timers on
 ## Related
 
 [how-we-sound](../../my-business%20%28context%29/how-we-sound.md) · [our-clients](../../my-business%20%28context%29/our-clients.md) · [competitors](competitors.md) · [content-engine](../../my-workflows%20%28automations%29/playbooks/content-engine.md)
+
+
+---
+
+## Turkey fryer verbatims — reviews.io, read by Scout 2026-09-21 (read-only)
+
+Word for word, typos kept. "Page ★" = star seen on the product page; "feed ★" = from reviews.io's data feed only (unconfirmed). Source: reviews.io store `hp-cookers` (product pages PW30-VLV075-TFR-B and PT60-VLV100-TFR, plus the public timeline feed).
+
+- **Robert Brenner**, 30 Qt Turkey Fryer Powered Pot, 2025-11-28, page ★5: *"When I received my turkey fryer the gas connection was broke off burner. I called high performance and they sent me a complete new burner. I have been frying turkeys for 40 yrs and I can honestly say this is the best turkey fryer yet. I will be buying other products from high performance. GREAT JOB GUYS!!!!!"*
+- **SamTC**, 30 Qt Turkey Fryer, 2024-12-12, page ★5: *"This is going to be a short review. This cooked took far less time to bring the oil to 350 degrees and when we "slowly" lowered the bird into the oil, there was only a 10 degree loss in temp; the cooker was back at 350 within minutes."*
+- **Jessie T**, 30 Qt Turkey Fryer, 2024-11-28, page ★5: *"30qt turkey cooker is LEGIT.  Heated up in about 10 minutes with a cold breeze blowing.  Only dropped about 20 degrees after turkey went in and was back to 350 after 5-6 minutes."*
+- **Robert**, 60 Qt Dual Turkey Fryer Pot, 2023-11-26, feed ★5: *"Awesome experience frying our turkey this year! Fast heating time (35-40 min) cooked a 16.5 lb turkey in 47 min. Definitely recommend!"* ⚠️ "35-40 min" heat time reads against our "350° in under 10 minutes"; trimmed with "…" when used (Sept 28 content week, Evan's pick).
+- **Eric**, 60 Qt Dual Turkey Fryer, 2021-11-26, feed ★5: *"I will never cook a turkey in the oven again. One of the best things we bought in a while"*
+- Backups, fryers: **Earl**, 18 QT Fish Fryer / Brazier Powered Pot, 2026-06-30, feed ★5: *"Higher quality than I expected. Best wings and fish I ever had. Think I might order 2 more for the kids."* · **Kelly**, 4-Way 20 QT Fryer, 2021-01-12, feed ★5: *"We have been using this 4-Way Fryer to fry fish, hush-puppies, onion rings and french fries at the same time.  The convenience of frying all at one time has been time saving.  Also the fact that the oil gets to the right tempature much quicker with this pot."*
+
+**Used:** Robert (60 QT) is on the Thu Oct 1 Word of Mouth card, pending approval. Several reviewers fried birds over USDA's 12 lb guidance (Robert 16.5 lb, Rhonda 20 lb and 20–23 lb). A 3★ 60 QT review (Matthew, 2021-01-12) says the pot "was NOT made in the USA", which is one more reason the "Made in USA" landmine stands.

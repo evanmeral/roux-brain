@@ -56,8 +56,8 @@ html,body{width:1080px;height:1350px}
 .vig{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,7,6,.62) 0%%,rgba(8,7,6,.30) 26%%,rgba(8,7,6,.68) 62%%,rgba(8,7,6,.95) 100%%)}
 .logo{width:138px;top:56px;left:56px}
 .kick{position:absolute;top:74px;right:56px;z-index:4;text-align:right;font-family:'JetBrains Mono',monospace;
-  font-weight:800;font-size:25px;color:#fff;letter-spacing:.16em;line-height:1.5}
-.kick span{display:block;color:var(--gold);font-size:21px}
+  font-weight:800;font-size:28px;color:#fff;letter-spacing:.16em;line-height:1.5}
+.kick span{display:block;color:var(--gold);font-size:26px}
 .mid{position:absolute;left:70px;right:70px;top:50%%;transform:translateY(-50%%);z-index:4}
 .hl{color:#fff;font-size:%(hlsize)spx;font-weight:900;letter-spacing:-.042em;line-height:1.0;
   text-shadow:0 6px 30px rgba(0,0,0,.6)}
@@ -98,15 +98,15 @@ html,body{width:1080px;height:1350px}
 .eyebrow{color:var(--accent);font-size:26px;letter-spacing:.2em;display:block}
 .hl{color:#fff;font-size:72px;font-weight:900;letter-spacing:-.035em;line-height:1.0;margin-top:22px}
 .rule{width:88px;height:4px;background:var(--accent);border-radius:2px;margin:26px auto 0}
-.sub{color:rgba(255,255,255,.82);font-size:32px;font-weight:600;margin-top:26px;line-height:1.34}
+.sub{color:rgba(255,255,255,.82);font-size:36px;font-weight:600;margin-top:26px;line-height:1.34}
 .stats{position:absolute;left:70px;right:70px;bottom:112px;z-index:5;text-align:center;
   border-top:1px solid rgba(255,255,255,.14);padding-top:28px}
-.stat{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:26px;color:#fff;
+.stat{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:30px;color:#fff;
   letter-spacing:.09em;line-height:1.62}
 .stat b{color:var(--gold)}
 .stat s{color:rgba(255,255,255,.42);font-weight:700}
 .tag{display:block;margin-top:14px;font-family:'JetBrains Mono',monospace;font-weight:700;
-  font-size:21px;color:var(--accent);letter-spacing:.13em}
+  font-size:30px;color:var(--accent);letter-spacing:.13em}
 .swipe{position:absolute;left:0;right:0;bottom:50px;z-index:5;text-align:center;
   font-family:'JetBrains Mono',monospace;font-weight:800;font-size:23px;color:rgba(255,255,255,.42);
   letter-spacing:.2em}
@@ -145,10 +145,10 @@ html,body{width:1080px;height:1350px}
 .codes{margin-top:52px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:34px;
   color:#fff;line-height:1.9;letter-spacing:.02em}
 .codes b{color:var(--gold);display:block}
-.codes small{display:block;font-size:24px;font-weight:700;color:rgba(255,255,255,.55);
+.codes small{display:block;font-size:30px;font-weight:700;color:rgba(255,255,255,.55);
   letter-spacing:.14em;margin-top:18px}
 .foot{position:absolute;left:70px;right:70px;bottom:78px;z-index:5;text-align:center;
-  font-family:'JetBrains Mono',monospace;font-weight:700;font-size:24px;
+  font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;
   color:rgba(255,255,255,.5);letter-spacing:.14em;line-height:1.7}
 </style></head>
 <body><div class="ad">

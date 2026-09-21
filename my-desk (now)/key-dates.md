@@ -11,6 +11,7 @@
 | 2026-09-24 | Thursday scoreboard #1 · tailgate kit go/no-go | PLAN.md · Evan 2026-09-17 |
 | 2026-09-25 | Tailgate kit goes live — built in the Bundles app and finished; needs photos, `HIGH15` off and the checkout test | board, Running · Jay's prices 2026-09-11 · rebuilt 2026-09-17 |
 | 2026-09-28 | Retargeting launch (Evan's click) | PLAN.md · Evan 2026-09-17 |
+| 2026-09-28 | Content week Sept 28–Oct 4 starts; needs shoot-material sort + Evan's approval first | content-week plan · Evan 2026-09-21 |
 | 2026-09-30 | Turkey kit go/no-go | PLAN.md · Evan 2026-09-17 |
 | 2026-10-01 | Turkey kit + ad live; turkey buyability checks start (Mon + Thu) | PLAN.md · Evan 2026-09-17 |
 | 2026-10-01 | Turkey demo video must be live | board, Now #2 · shoot moved to Wed Sept 23, 7 days to edit |

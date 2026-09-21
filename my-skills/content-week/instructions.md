@@ -68,7 +68,9 @@ season turn. **Six is the ceiling, not a quota** (Evan, 2026-09-16) — drop a s
 not there, and say which one and why. Rules that decide ties:
 
 - The Offer slot is a passenger (Thursday tail, Saturday story), one a week at most, live windows only.
-  Write the conditional version too ("if the kit is live by Thursday…") and say which condition.
+  **Whether an offer is live comes from `my-desk (now)/PLAN.md` and the board, not from asking Evan**
+  (Evan, 2026-09-21): if the plan has it live by the post, the kit line runs by default and comes out only
+  if its go/no-go says no. Keep the plain version as the backup.
 - A slot is never faked. No video means a raw Boil photo in Friday's place, said plainly.
 - Shop Floor Tuesday always schedules **something** on Monday. If Evan sends a fresh photo by
   Tuesday 3:00 pm, swap the media on the scheduled post; the fallback is never left in by accident.

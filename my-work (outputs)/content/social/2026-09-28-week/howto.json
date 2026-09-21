@@ -1,0 +1,67 @@
+{
+  "_comment": "Content week 2026-09-28 · How-To Wednesday · Frying a turkey, start here. Product facts from what-we-sell.md (racks, 12in thermometer, 350 in under 10 min on the 30 QT). Cooking figures are general USDA FSIS guidance ('Deep Fat Frying and Food Safety', Scout 2026-09-21), labelled as such. No prices.",
+  "name": "cw-2026-09-30-howto",
+  "kicker": "HOW-TO WEDNESDAY",
+  "kickerSub": "WED 09.30",
+  "cover": {
+    "photo": "TunnelTubeBottom-BlueFlame.jpeg",
+    "position": "50% 50%",
+    "brightness": ".85",
+    "size": 92,
+    "headline": "Frying a turkey<br>this year?",
+    "accent": "Start here.",
+    "sub": "Which pot, how much oil, how hot, how long. Save it for November."
+  },
+  "frames": [
+    {
+      "slug": "one-bird",
+      "cutout": "updated-2026-09/30qt turkey fryer - pwd - lid off, single rack beside.png",
+      "eyebrow": "ONE BIRD",
+      "headline": "One turkey?<br>The 30 QT.",
+      "sub": "Built for one bird on the<br>single upright rack.",
+      "stats": ["350&deg; IN UNDER <b>10 MIN</b>", "12&Prime; THERMOMETER FITS"],
+      "tag": "30 QT TURKEY FRYER"
+    },
+    {
+      "slug": "two-birds",
+      "cutout": "updated-2026-09/60qt turkey fryer - pwd - lid off, dual rack beside.png",
+      "eyebrow": "TWO BIRDS",
+      "headline": "Feeding a crowd?<br>The 60 QT.",
+      "sub": "The dual rack fries<br>two turkeys at once.",
+      "stats": ["DUAL RACK", "12&Prime; THERMOMETER FITS"],
+      "tag": "60 QT DUAL TURKEY FRYER"
+    },
+    {
+      "kind": "tip",
+      "slug": "measure-oil",
+      "eyebrow": "STEP 1 &middot; BEFORE ANY OIL",
+      "headline": "Measure your oil<br>with water.",
+      "size": 80,
+      "sub": "Bird in the empty pot, water to cover it. Take the bird out. That water line is your oil line. Then dump the water and dry the pot."
+    },
+    {
+      "kind": "tip",
+      "slug": "prep-bird",
+      "eyebrow": "STEP 2 &middot; THE BIRD",
+      "headline": "Fully thawed.<br>Patted dry.<br>Not stuffed.",
+      "size": 80,
+      "sub": "USDA says 12 pounds or less for a fried turkey. Dry skin means less spatter."
+    },
+    {
+      "kind": "tip",
+      "slug": "temp-time",
+      "eyebrow": "STEP 3 &middot; HEAT AND TIME",
+      "big": "350&deg;",
+      "headline": "About 3 to 5<br>minutes a pound.",
+      "size": 76,
+      "sub": "Done at 165&deg; in the thickest part of the breast and the innermost thigh and wing. Source: USDA."
+    }
+  ],
+  "cta": {
+    "photo": "18qt-frying-wings.jpeg",
+    "headline": "Save this for<br>Thanksgiving.",
+    "sub": "Questions about your setup?<br>Comment and we&rsquo;ll answer.",
+    "codes": [],
+    "foot": "HAND-WELDED IN LOUISIANA<br>MOST ORDERS SHIP IN 1&ndash;2 BUSINESS DAYS"
+  }
+}

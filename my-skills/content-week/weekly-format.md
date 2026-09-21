@@ -63,7 +63,7 @@ The running log is `my-work (outputs)/content/social/LOG.md`. Read it before cho
 **Boil Math Monday** — the pot is the tech (tubes on the pot bottom, not the burner) · rolling boil
 in about 7 minutes · back to a boil in roughly 90 seconds · up to 75% less propane · 4mm aluminum ·
 two sacks, forty people, one pot (120 QT) · 350° in under 5 minutes (**18 QT, 4-Way, 40 QT only**) ·
-350° in under 10 minutes (every other pot, frying mode) · built by a crew of twelve · most orders
+350° in under 10 minutes (every other pot, frying mode) · built by a krewe of about twelve · most orders
 ship in 1–2 business days · patented tunnel tubes (the word only; the number appears only on the
 shield logo, creative rule 10). Every figure qualified: "about," "up to," "in as
 little as." The legal line on every Boil Math graphic: *Times vary with volume, ambient temperature
@@ -134,4 +134,5 @@ ones that bite on social:
 |---|---|---|
 | 2026-09-16 | Format created: six slots, Mon–Sat, Sunday dark | Evan: one Monday planning session, uniform week to week, so the page becomes something people check |
 | 2026-09-16 | Rule 9: the six slots are a ceiling, not a quota | Evan, on approving week 1: no need to post every day; Atlas's discretion |
+| 2026-09-21 | "Krewe," never "crew," for a group of people (a camera crew stays "crew") | Evan: flash a little south Louisiana culture. Voice rule lives in `how-we-sound.md` |
 | 2026-09-16 | Rule 10: readable at phone size, fine print the only exception | Evan: customers should never strain to read our content |

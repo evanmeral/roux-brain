@@ -47,7 +47,7 @@ Bold, playful, warm, confident, a little cheeky. Never a caricature, never a cor
 |---|---|
 | pot, cooker, rig, setup | "unit," "appliance," "cookware system" |
 | boil, fry, cook | "culinary experience" |
-| crowd, crew, family, cook team | "consumers," "users" |
+| crowd, **krewe**, family, cook team | "consumers," "users" · "crew" for a group of people (Evan, 2026-09-21: *krewe*, a little of our culture. Our own team and a customer's cook team alike. A film or camera crew stays "crew.") |
 | fast, hot, tough, built | "premium," "high-end," "luxury" |
 | Louisiana / Gulf Coast | "the South" (too vague) |
 | Built in Louisiana, hand-welded in Louisiana, built in the USA | ⛔ "Made in USA" (blocked until the pots are made in-house, Evan 2026-09-11) · "domestically manufactured" |
