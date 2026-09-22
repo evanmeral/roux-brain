@@ -11,6 +11,8 @@
 
 ## 2026-09
 
+**UpPromote auto-approve delay set to 30 days** · Evan, 2026-09-22 (his click; the embedded app ignored ROUX's Chrome clicks). Auto-approve itself stays on.
+
 **UpPromote trimmed to one switch and one text** · Evan, 2026-09-22. Do: auto-approve delay 0 → 30 days. Keep the sign-up form public ("i don't see why it would be a large deal especially if they are getting sales even if it is only a few"). Skip the payments export, the Google-detection and draft-order settings, and the cleanup. The Jay text is held until Wed Sept 23 morning (Jay out of office Sept 22). Supersedes Beau's changes 3–5 in the [checklist](../my-work%20(outputs)/internal/reports/2026-09-21-uppromote-settings-and-jay-text-beau.md).
 
 **Patent-number rule softened to a preference** · Evan, 2026-09-22 ("the patent number is fine there, lets make that more of a suggestion than a hard no to cross in the brain"). Creative rule 10 now prefers the shield logo over a written number on ads, posts, stories and captions; writing it out is a judgment call, never a block or a re-flag. Product pages writing it out were already exempt (ROUX flagged the kit pages by mistake). Updated: creative instructions, creative README, content-week format, how-we-sound, board landmine, post-scheduler linter (`patent-number` error → warning, tests 50/50 + 37/37).

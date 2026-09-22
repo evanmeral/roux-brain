@@ -51,7 +51,7 @@ Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it
 |---|---|---|
 | **Evan** | Set the tailgate kit active Sept 25, then ROUX runs the checkout test at once | 2026-09-21 |
 | **Coalition (Connor)** | DataFeedWatch: what access they need from us (Shopify app, Merchant Center) and whether the feed goes dark during the switch. Approved 2026-09-18; they own the account. The copy rules (QT size in titles, warranty qualifiers, no competitors) were **not** sent, so check the rewritten titles once live | 2026-09-18 |
-| **Evan** | **UpPromote:** auto-approve delay 0 → 30 days (Evan's click). Sign-up form stays public, auto-activate stays ON, everything else skipped (Evan, 2026-09-22). **Jay text: send Wed Sept 23 morning** when Jay is back in the office (out Sept 22), as drafted, no payments export first → [text](../my-work%20(outputs)/internal/reports/2026-09-21-uppromote-settings-and-jay-text-beau.md). ROUX changes nothing in UpPromote | 2026-09-21 |
+| **Evan** | **UpPromote Jay text: send Wed Sept 23 morning** when Jay is back in the office (out Sept 22), as drafted, no payments export first. ✅ Auto-approve delay now 30 days (Evan, 2026-09-22); form stays public, auto-activate ON, the rest skipped → [text](../my-work%20(outputs)/internal/reports/2026-09-21-uppromote-settings-and-jay-text-beau.md). ROUX changes nothing in UpPromote | 2026-09-21 |
 | **Evan** | Shoot-day photos and video (Sept 23) into `my-inbox (new inputs)/` → sort, upgrade the Sept 28 content week, then final approval | 2026-09-21 |
 | **Jay → Evan → Garrett** | Jay completes the dream-client-profile questionnaire (expected Sept 15, not received) | 2026-09-14 |
 
