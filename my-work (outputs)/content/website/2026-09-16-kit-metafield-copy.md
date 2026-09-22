@@ -22,7 +22,7 @@ Plain Markdown; convert to whatever the metafield takes. Every number qualified.
 ### Frequently Asked Questions
 
 **Can I use a discount code on the kit?**
-No. The kit price already includes the saving, so codes don't apply to it. Military and first-responder discounts still do, and welcome codes still work on everything else in your cart.
+Usually not. The kit price already includes the saving, so most codes won't apply to it. Military and first-responder discounts still do, and welcome codes still work on everything else in your cart.
 
 **What burner comes with it?**
 It's a Powered pot, so the burner is welded to the pot. That's what Powered means. There's nothing to bolt on.
@@ -55,7 +55,7 @@ Full 2-year warranty on everything, parts and labor under normal use. The pot al
 ### Frequently Asked Questions
 
 **Can I use a discount code on the kit?**
-No. The kit price already includes the saving, so codes don't apply to it. Military and first-responder discounts still do, and welcome codes still work on everything else in your cart.
+Usually not. The kit price already includes the saving, so most codes won't apply to it. Military and first-responder discounts still do, and welcome codes still work on everything else in your cart.
 
 **How many turkeys, and how big?**
 The 30 QT fries one turkey. The 60 QT Two-Bird fries two at once, up to two 20-pounders, on the dual rack that comes with it. One table, the 30 QT. Two birds or a big crowd, the 60 QT.

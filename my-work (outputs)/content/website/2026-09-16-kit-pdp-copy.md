@@ -40,7 +40,7 @@ One variant. No option needed (Shopify's default single variant). If you want a 
 </ul>
 <p><strong>Kit price: $465.</strong> Bought separately: $484.98. You save $19.98.</p>
 
-<p>The kit price already includes the saving, so discount codes don't apply to it. Welcome codes still work on everything else in your cart, and military and first-responder discounts still apply.</p>
+<p>The kit price already includes the saving, so most discount codes won't apply to it. Welcome codes still work on everything else in your cart, and military and first-responder discounts still apply.</p>
 ```
 
 **Build notes (from the plan, §3.3):** native bundle with a line-item group so Finn can count it · compare-at exactly $484.98 (don't inherit the fryer's $313 compare-at) · tags `Bundle`, `Sale-NoDiscount`, `Tailgater`, `no-wholesale` · collections `tailgater-tools`, `fryers`, `product-bundles` · live Fri Sep 25, evergreen.
@@ -84,7 +84,7 @@ Option `Size` · values `30 QT` and `60 QT Two-Bird`.
 <p><strong>30 QT kit: $469.</strong> Bought separately: $492.48. You save $23.48.<br>
 <strong>60 QT Two-Bird kit: $519.</strong> Bought separately: $544.98. You save $25.98.</p>
 
-<p>The kit price already includes the saving, so discount codes don't apply to it. Welcome codes still work on everything else in your cart, and military and first-responder discounts still apply.</p>
+<p>The kit price already includes the saving, so most discount codes won't apply to it. Welcome codes still work on everything else in your cart, and military and first-responder discounts still apply.</p>
 ```
 
 **Build notes (from the plan, §4.4):** native bundle with 30 QT and 60 QT variants · compare-at $492.48 and $544.98 · tags `Bundle`, `Sale-NoDiscount`, `Turkey`, `no-wholesale` · collections `turkey-frying-pots-cookers`, `fryers`, `product-bundles` · live Thu Oct 1, evergreen. 60 QT variant is the 3/4-inch valve only; the 1-inch valve (+$10) stays optional and is not in the kit.
