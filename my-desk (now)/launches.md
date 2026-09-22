@@ -31,7 +31,7 @@
 
 - [ ] Turkey demo video live by Oct 1, from the Sept 23 Garrett shoot (7 days to edit) · **Garrett** · due 2026-10-01 · _source: BOARD.md Now #2; key-dates.md_
 - [ ] Corrected turkey kit ad · **Maya** · due 2026-09-30 · _source: PLAN.md week 2 jobs; due = go/no-go day_
-- [ ] `HIGH15` off · **Biljana** · due 2026-09-30 · _source: BOARD.md Landmines "no kit goes live while HIGH15 stays active"; due = go/no-go day_
+- [x] `HIGH15` off · **Biljana** · due 2026-09-30 · _source: BOARD.md Landmines "no kit goes live while HIGH15 stays active"; due = go/no-go day_ · done 2026-09-22
 
 ## IW lookalike read · 2026-10-02
 > Pause if 0 Shopify-tagged pot, Triple Jet or kit orders, or Meta cost per purchase > $365 · hold to Oct 16 if ≥ 1 tagged and $189–$365 · continue if ≥ 1 tagged and ≤ $189 (PLAN.md, paid media). Scored on the Sept 18 window with since-launch beside it; #17482 counts as a pot order (Evan, 2026-09-21, BOARD.md).
