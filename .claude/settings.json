@@ -15,7 +15,7 @@
       "Bash(mkdir:*)",
       "Bash(ls:*)",
       "Bash(pwd)",
-      "Read(//Users/evanmeral/Desktop/Atlas-AI-Brain/**)",
+      "Read(//Users/evanmeral/ROUX-AI-Brain/ROUX/**)",
       "Read(//Users/evanmeral/Desktop/HPC/**)",
       "Bash(./build.sh:*)",
       "Bash(./build-set.sh:*)",
