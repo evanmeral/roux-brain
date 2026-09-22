@@ -20,7 +20,8 @@ brand.css              Shared design tokens + component classes. Import in every
 build.sh               The renderer:  ./build.sh <tpl> <WxH> <out.png>
 prod.py                Product-centring helper (see below). ALWAYS use this for product images.
 build-set.sh           Renders one concept across all 3 Meta sizes.
-approve.sh             Archives an APPROVED draft into library/ + logs it.
+approve.sh             Archives an APPROVED draft into library/ + logs it (runs rubric-check first).
+rubric-check/          The pre-show gate: PASS/WARN/FAIL per creative rule. See rubric-check/README.md.
 templates/             Ad templates, one per creative angle × format.
 drafts/                Working renders. Not archived. Overwrite freely.
 library/               Approved creatives only + LIBRARY-LOG.md

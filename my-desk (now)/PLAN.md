@@ -117,3 +117,4 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 - **2026-09-22 · Brain health check after the move** (Evan): old iCloud-damaged Desktop copy deleted by Evan, merged worktree removed, settings path fixed; nothing broken in the brain. → decisions.md
 - **2026-09-22 · Patent-number rule 10 softened to a preference** (Evan); linter check now a warning. → decisions.md
 - **2026-09-22 · UpPromote: auto-approve delay 30 days** (Evan's click); form stays public; Jay text held to Wed. → decisions.md
+- **2026-09-22 · Creative rubric check + `/tidy-brain` built; Mac disk freed** (Evan, after Anthropic's Managed Agents talk): rubric-check gates paid/carousel builds and approvals; `/tidy-brain` trashed 246 brain files (166 MB); Mac went from 6.8 GB to 64 GB free (Dropbox online-only, macOS 27, app leftovers). → decisions.md

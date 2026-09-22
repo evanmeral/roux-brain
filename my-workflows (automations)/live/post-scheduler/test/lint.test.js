@@ -38,6 +38,7 @@ expectHit('the word cast alone', 'The burner has a cast part.', 'cast-word', 'wa
 expectHit('competitor by name', 'Twice as fast as a Bayou Classic.', 'competitor-name', 'error');
 expectHit('competitor as a hashtag', 'Friday Fire.\n#bayouclassic #louisiana', 'competitor-name', 'error', 'instagram');
 expectHit('competitor, common spelling', 'Better than a King Kooker.', 'competitor-name', 'error');
+expectNo('"warranty" is not a competitor (Why-HPC-wins table)', '5-YR RESIDENTIAL WARRANTY on pots 120 QT or smaller. Fuel, speed, material.', 'competitor-name');
 expectHit('Yeti', "It's the Yeti of boil pots.", 'yeti', 'error');
 expectHit('5-year, no qualifiers', 'Backed by a 5-year warranty.', 'warranty-5yr', 'error');
 expectHit('5-year, residential only', 'A 5-year residential warranty on every pot.', 'warranty-5yr', 'error');

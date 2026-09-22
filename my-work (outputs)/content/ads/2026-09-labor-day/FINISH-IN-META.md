@@ -1,4 +1,6 @@
 # Finish the Labor Day ads — Evan's 15 minutes
+
+> tidy-brain: 2026-09-22: some files this page names were moved to the Trash (duplicates or superseded rounds). List: my-desk (now)/archive/tidy/2026-09-22-removed.md. Recover any of them with git checkout 7b3b0c5 -- "<path>".
 Written 2026-08-31 by Beau after building in the account.
 
 ## What Beau did

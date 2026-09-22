@@ -1,4 +1,6 @@
 # Pull D: business-level gross profit, all orders
+
+> tidy-brain: 2026-09-22: some files this page names were moved to the Trash (duplicates or superseded rounds). List: my-desk (now)/archive/tidy/2026-09-22-removed.md. Recover any of them with git checkout 7b3b0c5 -- "<path>".
 **2026-09-10 · Finn, read-only Shopify · input to [cac-ceilings-v3](2026-09-10-cac-ceilings-v3.md) section 5, Pull D**
 
 Nothing was written to Shopify, Meta or Google. Window: **Sep 1 2025 – Aug 31 2026**, Central time, matching the overhead denominator. Every order figure is from Shopify Admin GraphQL rows pulled 2026-09-10. Totals and percentages are **derived by Finn** from those rows. **No overhead, variable cost, CAC or net-profit figure is computed here.** That's Beau's.

@@ -43,7 +43,14 @@ function competitorNames() {
   const names = new Set(COMPETITOR_ALIASES);
   let error = null;
   try {
-    const t = fs.readFileSync(COMPETITOR_FILE, 'utf8');
+    const all = fs.readFileSync(COMPETITOR_FILE, 'utf8');
+    // Only the "## The field" table names competitors. The "Why HPC wins" table below it has bold
+    // first cells too (Speed, Fuel, Material, Warranty ...) and reading those flagged every
+    // "warranty" as a competitor name (found by rubric-check, 2026-09-22).
+    const i = all.indexOf('## The field');
+    if (i < 0) throw new Error('no "## The field" section');
+    const j = all.indexOf('\n## ', i + 1);
+    const t = all.slice(i, j < 0 ? undefined : j);
     for (const m of t.matchAll(/^\|\s*\*\*([^*|]+)\*\*\s*\|/gm)) names.add(m[1].trim());
   } catch (e) { error = `cannot read competitors.md: ${e.message}`; }
   return { names: [...names], error };

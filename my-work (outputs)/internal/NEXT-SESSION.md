@@ -1,4 +1,6 @@
 > ⛔ **SUPERSEDED 2026-09-02 — do not read this as current.**
+
+> tidy-brain: 2026-09-22: some files this page names were moved to the Trash (duplicates or superseded rounds). List: my-desk (now)/archive/tidy/2026-09-22-removed.md. Recover any of them with git checkout 7b3b0c5 -- "<path>".
 > Work now lives on the board: **`my-desk (now)/BOARD.md`**.
 > This file is kept only until Evan confirms nothing was lost in the move.
 > A verbatim copy is preserved at `my-desk (now)/archive/2026-09-02-next-session.md`.

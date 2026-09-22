@@ -15,3 +15,6 @@ ABS="$(cd "$(dirname "$OUT")" && pwd)/$(basename "$OUT")"
 printf "%-42s " "$(basename "$OUT")"; sips -g pixelWidth -g pixelHeight "$ABS" 2>/dev/null | tail -2 | tr -d ' \n' | sed 's/pixelWidth:/ /;s/pixelHeight:/ x /'
 BYTES=$(stat -f%z "$ABS" 2>/dev/null || echo 0)
 if [ "$BYTES" -lt 20000 ]; then echo "  ⚠️  ONLY ${BYTES}B — LIKELY BLANK. Check the template."; else echo "  (${BYTES}B)"; fi
+# Remember which template made this PNG, so rubric-check can pair them (render<TAB>template<TAB>size).
+# Hidden file beside the render; the latest line for a file wins. Never fails the build.
+printf '%s\t%s\t%s\n' "$(basename "$OUT")" "$DIR/$(basename "$TPL")" "$SIZE" >> "$(dirname "$ABS")/.rubric-sources.tsv" 2>/dev/null || true

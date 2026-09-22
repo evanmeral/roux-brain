@@ -45,3 +45,19 @@ if [ "$MISSING" -eq 1 ]; then
   echo "⚠️  Incomplete set. Every paid Meta static ad ships 1x1 + 9x16 + 1.91x1."
   exit 1
 fi
+
+# Rubric gate (Evan, 2026-09-22): every render passes rubric-check before Evan sees it.
+# Exits 1 on any FAIL, so a failing set cannot be reported as done. Paid sizes are pinned to
+# --placement paid; the organic 4:5 is checked without a pin.
+echo ""
+RC=0
+for e in "${S[@]}"; do
+  n="${e%%:*}"
+  PL="--placement paid"; [ "$n" = "4x5" ] && PL=""
+  python3 rubric-check/rubric_check.py "templates/$C/$n.html" "drafts/${PRE}-${n}.png" $PL --quiet || RC=1
+done
+if [ "$RC" -ne 0 ]; then
+  echo ""
+  echo "⛔ rubric-check FAILED — fix and re-render before showing Evan."
+  exit 1
+fi

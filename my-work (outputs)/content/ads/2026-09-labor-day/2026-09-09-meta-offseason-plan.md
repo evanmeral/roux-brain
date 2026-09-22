@@ -1,4 +1,6 @@
 # Meta from Sept 9 — the off-season plan
+
+> tidy-brain: 2026-09-22: some files this page names were moved to the Trash (duplicates or superseded rounds). List: my-desk (now)/archive/tidy/2026-09-22-removed.md. Recover any of them with git checkout 7b3b0c5 -- "<path>".
 **Beau, 2026-09-08.** Companion to [2026-09-09-wind-down.md](2026-09-09-wind-down.md).
 Recommendations only. **Every change below is Evan's click.**
 

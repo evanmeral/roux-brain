@@ -1,4 +1,6 @@
 # Labor Day — Organic Pack V2
+
+> tidy-brain: 2026-09-22: some files this page names were moved to the Trash (duplicates or superseded rounds). List: my-desk (now)/archive/tidy/2026-09-22-removed.md. Recover any of them with git checkout 7b3b0c5 -- "<path>".
 **Built Wed 2026-09-02.** Adds to the original 12-post pack, does not replace it.
 Instagram + Facebook. Captions are paste-ready.
 

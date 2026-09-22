@@ -29,7 +29,7 @@ LUM_MIN, SAT_MAX = 95, 42
 BAND = (200, 660)
 
 PAGE = """<!doctype html><html><body><pre id="out">working</pre><script>
-const files=%(files)s, Y0=%(y0)d, Y1=%(y1)d;
+const files=%(files)s, Y0=%(y0)d, Y1=%(y1)d, X0=%(x0)d, X1=%(x1)d;
 (async()=>{const res=[];
 for(const f of files){
   const img=new Image(); img.src=f;
@@ -40,7 +40,7 @@ for(const f of files){
   const x=c.getContext("2d");x.drawImage(img,0,0);
   const d=x.getImageData(0,0,W,H).data;
   let minx=W,maxx=0,sx=0,sw=0,n=0;
-  for(let py=Math.max(0,Y0);py<Math.min(H,Y1);py++)for(let px=0;px<W;px++){
+  for(let py=Math.max(0,Y0);py<Math.min(H,Y1);py++)for(let px=Math.max(0,X0);px<Math.min(W,X1);px++){
     const i=(py*W+px)*4,r=d[i],g=d[i+1],b=d[i+2];
     const lum=.299*r+.587*g+.114*b, sat=Math.max(r,g,b)-Math.min(r,g,b);
     if(lum<%(lum)d||sat>%(sat)d)continue;
@@ -54,10 +54,14 @@ document.getElementById("out").textContent=JSON.stringify(res);})();
 </script></body></html>"""
 
 
-def measure(pngs, band=BAND):
+def measure(pngs, band=BAND, xband=None):
+    """xband=(x0, x1) limits the scan to a column (rubric-check uses the product's own box, so
+    type beside it is not counted). Offsets are still reported from the FRAME centre."""
+    xband = xband or (0, 1 << 20)
     d = os.path.dirname(os.path.abspath(pngs[0]))
     names = json.dumps([os.path.basename(p) for p in pngs])
-    html = PAGE % dict(files=names, y0=band[0], y1=band[1], lum=LUM_MIN, sat=SAT_MAX)
+    html = PAGE % dict(files=names, y0=band[0], y1=band[1], x0=xband[0], x1=xband[1],
+                       lum=LUM_MIN, sat=SAT_MAX)
     fh = tempfile.NamedTemporaryFile("w", suffix=".html", dir=d, delete=False)
     fh.write(html); fh.close()
     try:

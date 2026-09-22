@@ -244,13 +244,26 @@ defaults to **no price** — 80% buy on quality. Offer and retargeting ads carry
 
 1. Render to `drafts/`.
 2. **Look at the PNG.**
-3. Show Evan. **Never archive unapproved work.**
-4. On approval:
+3. **Run rubric-check. Every item must be PASS, or WARN you have looked at, before showing Evan.**
+   *(Evan, 2026-09-22.)* No FAIL ever reaches him.
+   ```bash
+   python3 rubric-check/rubric_check.py drafts/x.png [--placement paid|organic|story]   # or a drafts folder
+   ```
+   It checks the canvas size for the placement, the type floors (rule 7), the copy rules through
+   `lint.js`, optical centring (rule 2), the `.pbox` shadow (rule 8), logo, image loads, story safe
+   zones and a fresh-idea WARN (rule 11). It exits 1 on any FAIL. `build-set.sh` and
+   `build-carousel.sh` run it on their own and exit 1 on a FAIL. What it **cannot** judge (rule 12
+   fill, rule 5 collisions, type baked into images) is listed in `work/creative/rubric-check/README.md`.
+   Those still need step 2. A PASS is a floor, not a verdict.
+4. Show Evan. **Never archive unapproved work.**
+5. On approval:
    ```bash
    ./approve.sh drafts/x.png <product-slug> <angle-slug> [channel] [notes]
    ```
    → copies into `library/` as `YYYY-MM-DD_<product>_<angle>_<WxH>_v<N>.png` and logs it in
-   `library/LIBRARY-LOG.md`.
+   `library/LIBRARY-LOG.md`. `approve.sh` runs rubric-check first and **refuses on a FAIL**. If Evan
+   approved the piece as it is, add `--waive "<Evan's words>"`. His words are logged. Never waive
+   on your own judgment.
 
 ## Angle bank (grounded in HPC data)
 
@@ -276,6 +289,7 @@ my-skills/hpc-ad-creative/
 │   └── product-cutouts/     <- transparent PNGs + _bboxes.json
 └── work/creative/
     ├── build.sh  build-set.sh  approve.sh  prod.py  brand.css
+    ├── rubric-check/        <- the pre-show gate (README says what it can't check)
     ├── templates/           <- author here
     ├── drafts/              <- render here, unapproved
     └── library/             <- approved only, + LIBRARY-LOG.md

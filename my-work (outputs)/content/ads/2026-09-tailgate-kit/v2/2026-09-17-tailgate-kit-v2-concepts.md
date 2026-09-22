@@ -1,5 +1,7 @@
 # Tailgate Fry Kit ad, round 2: three concepts (1:1 only)
 
+> tidy-brain: 2026-09-22: some files this page names were moved to the Trash (duplicates or superseded rounds). List: my-desk (now)/archive/tidy/2026-09-22-removed.md. Recover any of them with git checkout 7b3b0c5 -- "<path>".
+
 **2026-09-17 · Maya.** Evan turned down round 1 (`../2026-09-17-tailgate-kit-ad-copy.md`, "Fry standing up"). These are new ideas with new copy. Nothing from round 1 carries over: no navy, no orange glow, no Poppins or mono-eyebrow system, no patent line.
 Drafts only. Nothing was built or uploaded in Meta or Shopify.
 

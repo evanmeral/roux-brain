@@ -200,6 +200,7 @@ ROUX/
 | /teach-me | Teach it a new skill — it asks what the task does, what it produces, what it needs |
 | /hand-off | Save your place so a fresh conversation can continue |
 | /support | Get help if something is not working |
+| /tidy-brain | Free disk space: finds duplicate images, superseded render rounds, helper files and old exports, shows you the list by size, and moves only what you approve to the Trash (you empty it). Text history gets archived, never deleted. Suggested monthly, first Monday |
 
 ---
 

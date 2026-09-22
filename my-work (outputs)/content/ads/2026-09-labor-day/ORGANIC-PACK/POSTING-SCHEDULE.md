@@ -1,4 +1,6 @@
 # Labor Day — Organic Posting Pack
+
+> tidy-brain: 2026-09-22: some files this page names were moved to the Trash (duplicates or superseded rounds). List: my-desk (now)/archive/tidy/2026-09-22-removed.md. Recover any of them with git checkout 7b3b0c5 -- "<path>".
 **12 posts, Aug 31 → Sept 8. Files numbered in posting order. Captions paste-ready.**
 Instagram + Facebook unless noted.
 

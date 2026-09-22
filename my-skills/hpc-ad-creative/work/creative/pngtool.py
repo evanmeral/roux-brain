@@ -119,10 +119,12 @@ def bbox(path, alpha=120):
             "bw": round((x1 - x0 + 1) / w, 4), "bh": round((y1 - y0 + 1) / h, 4)}
 
 
-cmd = sys.argv[1]
-if cmd == "key":
-    key_flat(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else "black")
-elif cmd == "bbox":
-    print(json.dumps({os.path.basename(p): bbox(p) for p in sys.argv[2:]}, indent=1))
-else:
-    sys.exit(__doc__)
+# Guarded so rubric-check can import read_png without running the command line.
+if __name__ == "__main__":
+    cmd = sys.argv[1] if len(sys.argv) > 1 else ""
+    if cmd == "key":
+        key_flat(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else "black")
+    elif cmd == "bbox":
+        print(json.dumps({os.path.basename(p): bbox(p) for p in sys.argv[2:]}, indent=1))
+    else:
+        sys.exit(__doc__)
