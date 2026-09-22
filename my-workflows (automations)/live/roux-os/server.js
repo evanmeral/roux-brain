@@ -50,6 +50,8 @@ const launches = require('./launches')({ desk: DESK, vault: VAULT, vaultName: CO
 const approvals = require('./approvals')({ desk: DESK, todayIso });
 const posts = require('./posts')({ todayIso });
 const score = require('./score')({ desk: DESK, vault: VAULT, vaultName: CONFIG.vaultName, todayIso });
+const plan = require('./plan')({ desk: DESK, vault: VAULT, vaultName: CONFIG.vaultName, todayIso });
+const graph = require('./graph')({ vault: VAULT, home: process.env.HOME || require('os').homedir() });
 
 function buildState() {
   const ctx = { baseDir: DESK, vaultDir: VAULT, vaultName: CONFIG.vaultName };
@@ -430,6 +432,9 @@ const server = http.createServer(async (req, res) => {
     }
     // ---- score (read-only) ----
     if (p === '/api/score' && req.method === 'GET') return send(res, 200, score.view());
+    // ---- this month's plan + the brain graph (read-only) ----
+    if (p === '/api/plan' && req.method === 'GET') return send(res, 200, plan.view());
+    if (p === '/api/graph' && req.method === 'GET') return send(res, 200, graph.view());
     if (p === '/logo.png') return send(res, 200, fs.readFileSync(LOGO), 'image/png');
     if (p === '/health') return send(res, 200, { ok: true, version: VERSION, vault: VAULT });
     // static

@@ -39,8 +39,10 @@ function renderCountdowns() {
   const items = (STATE.keyDates || []).map((k) => ({ ...k, d: daysUntil(k.date, STATE.today) })).filter((k) => k.d >= 0).sort((a, b) => a.d - b.d).slice(0, 4);
   const health = Object.values(STATE.health || {}).filter((v) => v !== 'ok');
   const bad = health.filter((h) => /cannot|missing|fail/i.test(h) && !/no brief yet/i.test(h));
-  el.innerHTML = items.map((k) => `<span class="chip ${k.d <= 2 ? 'is-urgent' : k.d <= 7 ? 'is-soon' : ''}" title="${esc(k.what)} · ${esc(k.source)}">${esc(shortWhat(k.what))} ${k.d === 0 ? 'today' : k.d + 'd'}</span>`).join('')
-    + `<span class="dot ${bad.length ? 'is-bad' : health.length ? 'is-warn' : ''}" title="${esc(health.join(' · ') || 'all feeds ok')}"></span>`;
+  el.innerHTML = items.map((k) => `<span class="chip ${k.d <= 2 ? 'is-urgent' : k.d <= 7 ? 'is-soon' : ''}" title="${esc(k.what)} · ${esc(k.source)}">${esc(shortWhat(k.what, 34))} · ${k.d === 0 ? 'today' : k.d === 1 ? 'tomorrow' : k.d + ' days'}</span>`).join('');
+  $('health-dot').className = `dot ${bad.length ? 'is-bad' : health.length ? 'is-warn' : ''}`;
+  $('health-text').textContent = bad.length ? bad[0] : health.length ? health[0] : 'All feeds OK';
+  $('health-text').title = health.join(' · ') || 'all feeds ok';
 }
 
 function renderMorning() {
@@ -204,12 +206,13 @@ function renderStatus() {
   const bits = Object.entries(h).map(([k, v]) => `<span class="${v === 'ok' ? '' : /no brief/i.test(v) ? '' : 'bad'}">${esc(k)}: ${esc(v)}</span>`);
   bits.push(`<span>capture: ${STATE.captureLines} line${STATE.captureLines === 1 ? '' : 's'}</span>`);
   $('capture-stamp').textContent = STATE.captureLines ? `${STATE.captureLines} waiting for the next session` : '';
+  $('capture-stamp-home').textContent = STATE.captureLines ? `${STATE.captureLines} waiting` : '';
   bits.push(`<span>roux os ${esc(STATE.version)}</span>`);
   $('status').innerHTML = bits.join('');
 }
 
 function renderAll() {
-  tickClock(); renderCountdowns(); renderDeskStrip(); renderMorning(); renderNow(); renderWaiting(); renderRunning(); renderWeek(); renderStatus(); renderLinks();
+  tickClock(); renderCountdowns(); renderDeskStrip(); renderMorning(); renderNow(); renderWaiting(); renderRunning(); renderWeek(); renderStatus(); renderLinks(); renderHome(); renderKey();
   if (document.querySelector('#view-board.is-on')) renderBoard();
 }
 
@@ -255,6 +258,18 @@ function wireActions() {
     if (!text) return;
     if (await capture('', text)) { inp.value = ''; loadState().catch(() => {}); }
   });
+  $('capture-form-home').addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const inp = $('capture-text-home'); const text = inp.value.trim();
+    if (!text) return;
+    if (await capture('', text)) { inp.value = ''; loadState().catch(() => {}); }
+  });
+  $('ask-btn-home').addEventListener('click', () => {
+    const text = $('capture-text-home').value.trim();
+    if (!text) { toast('Type the question first.', true); $('capture-text-home').focus(); return; }
+    startSession(text, $('ask-btn-home')).then(() => { $('capture-text-home').value = ''; });
+  });
+  document.querySelectorAll('.widget [data-goto]').forEach((b) => b.addEventListener('click', () => showTab(b.dataset.goto)));
   $('ask-btn').addEventListener('click', () => {
     const text = $('capture-text').value.trim();
     if (!text) { toast('Type the question first.', true); $('capture-text').focus(); return; }
@@ -268,10 +283,20 @@ function wireActions() {
 }
 
 // ---- tabs, links, recent, board, files ----
+const TAB_TITLES = { home: 'Home', today: 'Today', plan: "This Month's Plan", launches: 'Launches', approvals: 'Approvals', posts: 'Posts', affiliates: 'Affiliates', score: 'Score', board: 'Board', files: 'Files' };
+let TAB = 'home';
 function showTab(name) {
+  if (!TAB_TITLES[name]) name = 'home';
+  TAB = name;
   document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('is-on', t.dataset.tab === name));
   document.querySelectorAll('.view').forEach((v) => v.classList.toggle('is-on', v.id === 'view-' + name));
-  try { localStorage.setItem('roux.tab', name); } catch (_) {}
+  $('page-title').textContent = TAB_TITLES[name];
+  document.body.classList.toggle('on-home', name === 'home');
+  window.scrollTo(0, 0);
+  renderKey();
+  try { localStorage.setItem('roux.tab3', name); } catch (_) {}
+  if (name === 'home') GRAPH.load();
+  if (name === 'plan') loadPlan();
   if (name === 'board') renderBoard();
   if (name === 'launches') loadLaunches();
   if (name === 'approvals') loadApprovals();
@@ -376,7 +401,7 @@ async function loadWeek() {
     const r = await fetch('/api/calendar', { cache: 'no-store' });
     WEEK = await r.json();
   } catch (e) { WEEK = { days: [], byDay: {}, feeds: [], configError: 'Cannot reach the calendar endpoint: ' + e.message }; }
-  if (STATE) renderWeek();
+  if (STATE) { renderWeek(); renderHome(); }
 }
 // A file changed: refresh whichever panel tab is open. The affiliates drawer is left alone so a
 // half-typed edit is never thrown away; only the table behind it refreshes.
@@ -385,16 +410,20 @@ function refreshOpenTab(what) {
   if (on('launches')) loadLaunches();
   if (on('approvals')) loadApprovals();
   if (on('score')) loadScore();
+  if (what && /PLAN\.md/.test(what)) loadPlan();
+  if (on('home') && what && /\.md$/.test(what)) { GRAPH.invalidate(); }
   if (on('posts') && what === 'posts' && !document.querySelector('#posts-body [data-note]:focus')) loadPosts(true);
   if (on('affiliates') && what === 'affiliates' && !$('aff-drawer').classList.contains('is-on')) loadAffiliates();
 }
 async function boot() {
-  wireActions(); initAffiliates();
+  wireActions(); initAffiliates(); GRAPH.wire();
   try { await loadState(); } catch (e) { $('status').innerHTML = `<span class="bad">Cannot load state: ${esc(e.message)}</span>`; }
   await loadWeek();
   await loadRuns();
   await loadRecent();
-  try { const t = localStorage.getItem('roux.tab'); if (t && t !== 'today') showTab(t); } catch (_) {}
+  loadPlan();   // feeds the Plan pace widget on Home
+  let first = 'home'; try { first = localStorage.getItem('roux.tab3') || 'home'; } catch (_) {}
+  showTab(first);
   setInterval(loadWeek, 5 * 60 * 1000);
   setInterval(() => loadState().catch(() => {}), 10 * 60 * 1000);
   const es = new EventSource('/api/events');
@@ -402,3 +431,127 @@ async function boot() {
   es.onerror = () => { $('status').insertAdjacentHTML('beforeend', '<span class="bad">live updates disconnected, retrying</span>'); };
 }
 boot();
+
+
+// ---- Home widgets (v0.3) ----
+function renderHome() {
+  if (!STATE) return;
+  // today's schedule: key dates + calendar events for today
+  const tb = $('w-today-body');
+  if (!WEEK) tb.innerHTML = '<div class="w-empty">Loading the calendar…</div>';
+  else {
+    const keys = (STATE.keyDates || []).filter((k) => k.date === STATE.today).map((k) => `<div class="w-row"><span class="t" style="color:var(--flame)">KEY</span><span class="x">${esc(k.what)}</span></div>`);
+    const evs = (WEEK.byDay[STATE.today] || []).map((e) => `<div class="w-row"><span class="t">${e.allDay ? 'all day' : esc(e.time)}</span><span class="x" style="border-left:3px solid ${esc(e.color)};padding-left:8px">${esc(e.summary)}</span></div>`);
+    const broken = (WEEK.feeds || []).filter((f) => f.error && f.error !== 'not configured');
+    tb.innerHTML = (keys.concat(evs).join('') || '<div class="w-empty">Nothing on the calendar today.</div>')
+      + broken.map((f) => `<div class="bad" style="margin-top:8px">Cannot read the ${esc(f.name)} calendar.</div>`).join('');
+  }
+  // waiting on you
+  const wb = $('w-waiting-body'); const b = STATE.board;
+  if (!b || !b.waiting) wb.innerHTML = `<div class="bad">${esc(STATE.health.board || 'Cannot read the board')}</div>`;
+  else {
+    const me = b.waiting.filter((w) => w.isEvan);
+    wb.innerHTML = me.length ? `<div style="display:flex;align-items:center;margin-bottom:6px"><span class="w-count">${me.length}</span><span class="w-sub" style="margin:0">item${me.length === 1 ? '' : 's'} need you</span></div>`
+      + me.slice(0, 3).map((w) => `<div class="w-row"><span class="x">${esc(shortAsk(w.what))}</span>${w.ageDays != null ? `<span class="t" style="min-width:0">${w.ageDays}d</span>` : ''}</div>`).join('')
+      : '<div class="w-empty">Nothing waiting on you.</div>';
+  }
+  // plan pace (what PLAN.md says; nothing computed)
+  const pb = $('w-plan-body'); const v = typeof PLANV !== 'undefined' ? PLANV : null;
+  if (!pb) { /* plan pace widget not on the page */ }
+  else if (!v) pb.innerHTML = '<div class="w-empty">Loading the plan…</div>';
+  else if (v.error) pb.innerHTML = `<div class="bad">${esc(v.error)}</div>`;
+  else {
+    const col = v.pace ? v.pace.head.findIndex((h) => /consumer/i.test(h)) : -1;
+    const next = v.pace && v.pace.rows.find((r) => r.date && r.date >= STATE.today);
+    const wk = (v.weeks || []).find((w) => w.status === 'current');
+    const d = next ? Math.round((Date.parse(next.date + 'T12:00:00Z') - Date.parse(STATE.today + 'T12:00:00Z')) / 86400000) : null;
+    pb.innerHTML = (next && col >= 0 ? `<div class="w-big">${esc(next.cells[col])}</div><div class="w-sub">consumer sales needed by ${esc(new Date(next.date + 'T12:00:00Z').toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' }))}${d === 0 ? ', today' : ` · ${d} day${d === 1 ? '' : 's'}`}</div>` : '<div class="w-empty">No score date ahead.</div>')
+      + (wk ? `<div class="w-row" style="margin-top:10px;border-top:1px solid var(--border)"><span class="x">Week ${esc(wk.n || '')} jobs</span><span class="t" style="min-width:0">${wk.jobs.filter((j) => j.state === 'done').length} of ${wk.jobs.filter((j) => j.state !== 'dropped').length} done</span></div>` : '');
+  }
+  // Meta caps vs the ceiling (the board's own figures)
+  const mb = $('w-meta-body');
+  if (!mb) { /* Meta caps widget not on the page */ }
+  else if (!b || !b.running) mb.innerHTML = `<div class="bad">${esc(STATE.health.board || 'Cannot read the board')}</div>`;
+  else {
+    const live = b.caps ? b.caps.value : b.running.reduce((t, r) => t + r.perDayTotal, 0);
+    const ceiling = STATE.ceiling.value; const pct = Math.min(100, Math.round(live / ceiling * 100));
+    mb.innerHTML = `<div class="w-big">$${live}<span style="font-size:15px;font-weight:500;color:var(--muted)"> /day</span></div><div class="w-sub">live daily caps · ceiling $${ceiling}/day</div>
+      <div class="bar"><i class="${live > ceiling ? 'is-over' : ''}" style="width:${pct}%"></i></div>
+      <div class="w-sub" style="margin-top:8px">${esc(b.caps ? 'From the board: ' + b.caps.source : 'Summed from the board')}</div>`;
+  }
+}
+
+// ---- the color key: one spot, under the menu; its rows change with the page ----
+function keyItems(tab) {
+  const R = (color, label, sub, kind) => ({ color, label, sub, kind });
+  switch (tab) {
+    case 'home': return null;   // the graph's groups, drawn as toggles below
+    case 'today': return [
+      R('#FFA41C', 'Date within 7 days', 'countdown chips, top right', 'box'),
+      R('#FF6A4D', 'Date within 2 days', 'or a broken feed', 'box'),
+      R('#E13418', 'Key date', 'from key-dates.md, in the week', 'line'),
+      ...((STATE && STATE.calendars) || []).filter((c) => c.color).map((c) => R(c.color, `${c.name} calendar`, 'event bar color', 'line')),
+      R('#F69329', 'Today', 'outlined day in the week', 'ring'),
+      R('#FFA41C', 'Waiting 2+ days', 'age on a waiting row'),
+      R('#E13418', 'Waiting 5+ days', 'chase it'),
+      R('#198754', 'Feeds OK', 'dot at the bottom of the menu'),
+    ];
+    case 'plan': return [
+      R('#198754', 'Job done', '✓ in the week list', 'box'),
+      R('#FF6A4D', 'Job dropped', '× and struck through', 'box'),
+      R('#8C8681', 'Job open', 'empty box', 'ring'),
+      R('#F69329', 'This week / today', 'outlined week, orange line', 'ring'),
+      R('#7FCB99', 'Week finished', 'green on the timeline'),
+      R('#FFA41C', 'Thursday score · gate', 'gold dots and chips'),
+      R('#6FD69E', 'Gate passed', 'green chip'),
+    ];
+    case 'launches': return [
+      R('#F69329', "Evan's job", 'owner tag'),
+      R('#E13418', 'Overdue gate', 'due date in red'),
+      R('#8C8681', 'Done or past', 'struck through / faded'),
+    ];
+    case 'approvals': return [
+      R('#F69329', 'Live write', 'Shopify, Meta or Google: still needs your yes in a session', 'ring'),
+      R('#FFA41C', 'Queued', 'confirm in session'),
+      R('#4CC38A', 'Approved'),
+      R('#8C8681', 'Rejected'),
+    ];
+    case 'posts': return [
+      R('#4CC38A', 'Pass · approved · scheduled', 'preflight and status'),
+      R('#FFA41C', 'Warning · queued', 're-check before it posts'),
+      R('#FF6A4D', 'Fail', 'blocks scheduling'),
+    ];
+    case 'affiliates': return [
+      R('#4CC38A', 'Active · sold in 30 days', 'green pill and dot'),
+      R('#F69329', 'Prospect', ''),
+      R('#FFA41C', 'Paused · evidence flag', "a fact from Finn's report, not a verdict"),
+      R('#FF6A4D', 'High returns', 'flag'),
+      R('#8C8681', 'Ended or archived', ''),
+    ];
+    case 'score': return [
+      R('#F69329', 'Next score', 'highlighted row', 'line'),
+      R('#8C8681', 'Past, not scored', 'faded row'),
+    ];
+    case 'board': return [
+      R('#F69329', 'Section', 'as the board names it'),
+      R('#E13418', 'Landmines', 'do not ship these'),
+    ];
+    case 'files': return [
+      R('#F69329', 'Folder', 'files grouped by top folder'),
+      R('#363333', 'Selected', 'the file in the preview', 'box'),
+    ];
+    default: return [];
+  }
+}
+function renderKey() {
+  const body = $('key-body'); if (!body) return;
+  $('key-page').textContent = TAB_TITLES[TAB] || '';
+  if (TAB === 'home') {
+    body.innerHTML = GRAPH.keyRows().map((r) => `<div class="key-row is-toggle ${r.off ? 'is-off' : ''}" data-group="${r.group}" title="Click to ${r.off ? 'show' : 'hide'}"><span class="sw" style="background:${r.color}"></span><span>${esc(r.label)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}</span></div>`).join('')
+      + `<div class="key-note">ROUX glows at the core; the six named lights are the hubs. Arcs over the surface are real links between files. Click a color to hide or show it.</div>`;
+    body.querySelectorAll('[data-group]').forEach((el) => el.addEventListener('click', () => GRAPH.toggleGroup(el.dataset.group)));
+    return;
+  }
+  const items = keyItems(TAB);
+  body.innerHTML = items.length ? items.map((r) => `<div class="key-row"><span class="sw ${r.kind ? 'is-' + r.kind : ''}" style="${r.kind === 'ring' ? 'border-color' : 'background'}:${r.color}"></span><span>${esc(r.label)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}</span></div>`).join('') : '<div class="key-note">No colors on this page.</div>';
+}

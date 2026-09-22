@@ -4,8 +4,25 @@
     {
       "name": "bfcm-draft-preview",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8743", "--directory", "my-work (outputs)/content/website"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8743",
+        "--directory",
+        "my-work (outputs)/content/website"
+      ],
       "port": 8743
+    },
+    {
+      "name": "roux-os-test",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "my-workflows (automations)/live/roux-os/server.js"
+      ],
+      "env": {
+        "ROUX_PORT": "4243"
+      },
+      "port": 4243
     }
   ]
 }

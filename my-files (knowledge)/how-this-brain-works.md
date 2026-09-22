@@ -157,50 +157,53 @@ ROUX/
 ### Sales
 | Type this | What it does |
 |---|---|
-| /reply | Respond to a customer enquiry in your voice |
-| /quote | Turn job notes into a professional quote or proposal |
-| /follow-up | Chase leads, sent quotes, or lapsed customers |
+| [/reply](../my-skills/reply/instructions.md) | Respond to a customer enquiry in your voice |
+| [/quote](../my-skills/quote/instructions.md) | Turn job notes into a professional quote or proposal |
+| [/follow-up](../my-skills/follow-up/instructions.md) | Chase leads, sent quotes, or lapsed customers |
 
 ### Operations
 | Type this | What it does |
 |---|---|
-| /morning-brief | Prep your whole day: inbox sorted, calendar checked, top 3 priorities |
-| /sort-my-inbox | Go through your unread email and draft replies for the ones waiting on you |
-| /chase-payment | Send a friendly payment reminder |
-| /meeting-notes | Turn messy notes into actions and deadlines |
-| /weekly-check | See how your week went (revenue, appointments, highlights) |
+| [/morning-brief](../my-skills/morning-brief/instructions.md) | Prep your whole day: inbox sorted, calendar checked, top 3 priorities |
+| [/sort-my-inbox](../my-skills/sort-my-inbox/instructions.md) | Go through your unread email and draft replies for the ones waiting on you |
+| [/chase-payment](../my-skills/chase-payment/instructions.md) | Send a friendly payment reminder |
+| [/meeting-notes](../my-skills/meeting-notes/instructions.md) | Turn messy notes into actions and deadlines |
+| [/weekly-check](../my-skills/weekly-check/instructions.md) | See how your week went (revenue, appointments, highlights) |
 
 ### Marketing
 | Type this | What it does |
 |---|---|
-| /content-week | Plan the week's Facebook + Instagram posts in one Monday session, approve them, and have them scheduled in Meta Business Suite. Also fires on its own every Monday at 8:00. |
-| /hpc-campaign-checkpoint | Re-read a live paid campaign at its checkpoint: Meta's numbers, Shopify's tagged orders, the gap between them, and Beau's continue / hold / cut call. The decision stays Evan's. |
-| /write-a-post | Write a social media post |
-| /write-an-ad | Write ad copy with hooks, headlines, and CTA |
-| /carousel | Build a multi-frame Instagram/Facebook swipe post |
-| /file-product-photos | Name and file a product photo drop (cutout folder + studio folder): pair them, name them, copy them to the asset library with bounds and index, and rename Evan's originals to match |
-| /hpc-showroom-cards | Reprint, add, change or retire the showroom product cards: prices checked against Shopify, every card rendered and measured, then handed to Alexis to print |
-| /ask-for-review | Ask a happy customer for a review |
+| [/content-week](../my-skills/content-week/instructions.md) | Plan the week's Facebook + Instagram posts in one Monday session, approve them, and have them scheduled in Meta Business Suite. Also fires on its own every Monday at 8:00. |
+| [/hpc-campaign-checkpoint](../my-skills/hpc-campaign-checkpoint/instructions.md) | Re-read a live paid campaign at its checkpoint: Meta's numbers, Shopify's tagged orders, the gap between them, and Beau's continue / hold / cut call. The decision stays Evan's. |
+| [/write-a-post](../my-skills/write-a-post/instructions.md) | Write a social media post |
+| [/write-an-ad](../my-skills/write-an-ad/instructions.md) | Write ad copy with hooks, headlines, and CTA |
+| [/carousel](../my-skills/carousel/instructions.md) | Build a multi-frame Instagram/Facebook swipe post |
+| [/file-product-photos](../my-skills/file-product-photos/instructions.md) | Name and file a product photo drop (cutout folder + studio folder): pair them, name them, copy them to the asset library with bounds and index, and rename Evan's originals to match |
+| [/hpc-showroom-cards](../my-skills/hpc-showroom-cards/instructions.md) | Reprint, add, change or retire the showroom product cards: prices checked against Shopify, every card rendered and measured, then handed to Alexis to print |
+| [/ask-for-review](../my-skills/ask-for-review/instructions.md) | Ask a happy customer for a review |
+| [/month-plan](../my-skills/month-plan/instructions.md) | Build next month's plan with targets, lock it, then score it every Thursday |
+| [/hpc-scoreboard-report](../my-skills/hpc-scoreboard-report/instructions.md) | The CAC/ROAS-by-channel report for Jay, from Meta and Google exports |
+| [hpc-ad-creative](../my-skills/hpc-ad-creative/instructions.md) | No slash command. The render pipeline behind every static ad and post image (Maya drives it) |
 
 ### Team & big jobs
 | Type this | What it does |
 |---|---|
-| /write-a-process | Turn how you do something into a step-by-step guide |
-| /plan | Give it a goal too big for one skill. It plans the steps, shows you the plan, then runs your skills and agents |
+| [/write-a-process](../my-skills/write-a-process/instructions.md) | Turn how you do something into a step-by-step guide |
+| [/plan](../my-skills/plan/instructions.md) | Give it a goal too big for one skill. It plans the steps, shows you the plan, then runs your skills and agents |
 
 ### System
 | Type this | What it does |
 |---|---|
 | /setup | First-time setup. Learns your business, connects your apps, demos itself. ~20–25 min, once. |
-| /fill-my-brain | Fills your business files from your real email (read-only), website, and documents. Shows you everything before saving a word. |
+| [/fill-my-brain](../my-skills/fill-my-brain/instructions.md) | Fills your business files from your real email (read-only), website, and documents. Shows you everything before saving a word. |
 | /prime | Loads the board and your business info at the start of a session. Runs automatically. |
 | /wrap | Rewrites the board, logs decisions, saves what was learned. Runs automatically at the end. |
 | /connect | Connect or reconnect apps |
-| /learn-my-voice | Teach it how you write, from your real sent emails |
-| /teach-me | Teach it a new skill — it asks what the task does, what it produces, what it needs |
-| /hand-off | Save your place so a fresh conversation can continue |
-| /support | Get help if something is not working |
-| /tidy-brain | Free disk space: finds duplicate images, superseded render rounds, helper files and old exports, shows you the list by size, and moves only what you approve to the Trash (you empty it). Text history gets archived, never deleted. Suggested monthly, first Monday |
+| [/learn-my-voice](../my-skills/learn-my-voice/instructions.md) | Teach it how you write, from your real sent emails |
+| [/teach-me](../my-skills/teach-me/instructions.md) | Teach it a new skill — it asks what the task does, what it produces, what it needs |
+| [/hand-off](../my-skills/hand-off/instructions.md) | Save your place so a fresh conversation can continue |
+| [/support](../my-skills/support/instructions.md) | Get help if something is not working |
+| [/tidy-brain](../my-skills/tidy-brain/instructions.md) | Free disk space: finds duplicate images, superseded render rounds, helper files and old exports, shows you the list by size, and moves only what you approve to the Trash (you empty it). Text history gets archived, never deleted. Suggested monthly, first Monday |
 
 ---
 

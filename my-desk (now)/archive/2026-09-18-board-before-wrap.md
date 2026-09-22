@@ -2,14 +2,14 @@
 
 > The one page. What is live, what is next, who is blocking, what must not be shipped.
 > **Rewritten in place at every `/wrap` — never appended.** Hard cap: 120 lines.
-> Anything that falls off goes to [archive/](archive/), never deleted.
-> Decisions and their reasons go to [decisions.md](decisions.md).
+> Anything that falls off goes to [archive/](.), never deleted.
+> Decisions and their reasons go to [decisions.md](../decisions.md).
 
 ---
 
 ## 🟢 Running
 
-### 🎯 The plan — Sept 17 to Oct 31, locked 2026-09-17 → [PLAN.md](PLAN.md)
+### 🎯 The plan — Sept 17 to Oct 31, locked 2026-09-17 → [PLAN.md](../PLAN.md)
 **Headline: consumer sales ≥ $110,485** (stretch $123,000). Also: total ≥ $169,339 · turkey fryers ≥ $32,973 (Oct 15–31 ≥ $23,124) · turkey buyable every day in October · tailgate kit share · pots hold pace · Meta read two ways, ≤ $350/day. **The consumer pace line is now complete** *(Finn, 2026-09-17: Sept 24 $14,747 · Oct 1 $25,941 · Oct 8 $41,695 · Oct 15 $59,974 · Oct 22 $78,920 · Oct 29 $101,643 · final $110,485)*. **Scored every Thursday 7:00**, first Sept 24. **November plan drafted Fri Oct 30.**
 
 ### 🟢 IW lookalike — live since Fri Sept 11 · **checkpoint tomorrow, Fri Sept 18**
@@ -21,23 +21,23 @@
 BPM ads **do** carry UTMs (campaign + ad ID reach Shopify). BPM Sept 1–16 by ad *(Finn)*: 18 QT videos $952 · Labor Day ads $1,082.79 · Tailgate Video $474.52 · 30 QT $63.94. **`Video_Jay 30qt (turkey) Fryer Demo` stays on** despite "patent-pending" and crawfish-on-a-fryer copy — Evan, 2026-09-17: ads only go off when they bleed money.
 
 ### 🍳 The three kits — built, finished, **DRAFT** · tailgate live Fri Sept 25, turkey Oct 1
-Rebuilt in the **Shopify Bundles app** (Evan) and finished through the connector (ROUX), 2026-09-17. Old connector-built drafts archived. Prices now **~6% off the parts total on every variant** (Jay): Tailgate `10298785661168` $455/$441/$418/$404 · Turkey one-bird `10298800341232` $481/$462/$418 · Turkey two-bird `10298812006640` $521/$512. Descriptions, Prop 65, Features & Benefits, FAQ, tags, `BUNDLE-` SKUs, short option names, continue-selling, collections — all written and read back. → [build record](../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md) · [rebuild steps](../my-work%20(outputs)/internal/2026-09-17-kit-rebuild-steps.md)
+Rebuilt in the **Shopify Bundles app** (Evan) and finished through the connector (ROUX), 2026-09-17. Old connector-built drafts archived. Prices now **~6% off the parts total on every variant** (Jay): Tailgate `10298785661168` $455/$441/$418/$404 · Turkey one-bird `10298800341232` $481/$462/$418 · Turkey two-bird `10298812006640` $521/$512. Descriptions, Prop 65, Features & Benefits, FAQ, tags, `BUNDLE-` SKUs, short option names, continue-selling, collections — all written and read back. → [build record](../../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md) · [rebuild steps](../../my-work%20(outputs)/internal/2026-09-17-kit-rebuild-steps.md)
 
 ### 🟢 Content week — live · **Sept 21–27: all 6 scheduled**
-Six slots Mon–Sat, a ceiling not a quota; Monday 8:00 task proposes, Evan approves, ROUX schedules in Business Suite via Chrome. Plan moments: LSU–Texas A&M Sept 26 · Saints MNF Oct 5 · gumbo weekend Oct 9–11 · Pasta Day Oct 17 · Halloween Oct 31 → [fall moments](../my-files%20(knowledge)/hpc-reference/2026-fall-moments-calendar.md) · **Open, Evan's call:** keep Chrome scheduling, by hand, or a Nova-built scheduler.
+Six slots Mon–Sat, a ceiling not a quota; Monday 8:00 task proposes, Evan approves, ROUX schedules in Business Suite via Chrome. Plan moments: LSU–Texas A&M Sept 26 · Saints MNF Oct 5 · gumbo weekend Oct 9–11 · Pasta Day Oct 17 · Halloween Oct 31 → [fall moments](../../my-files%20(knowledge)/hpc-reference/2026-fall-moments-calendar.md) · **Open, Evan's call:** keep Chrome scheduling, by hand, or a Nova-built scheduler.
 
 ### 🎬 Garrett shoot — Tue Sept 22, HPC shop · 8 videos, $2,500, locked
-Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it-all · 18 QT tailgate kit · "buy it once" 60 QT · shop interviews · Fried Foods · Monte Cristo. **Ask for free Triple Jet + Performance pot B-roll during setup**, and get a real tailgate frame for the kit ad. Shopping pull Monday (skip Oreos). → [shoot plan v4](../my-work%20(outputs)/internal/2026-09-14-garrett-shoot-plan-sept22.md)
+Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it-all · 18 QT tailgate kit · "buy it once" 60 QT · shop interviews · Fried Foods · Monte Cristo. **Ask for free Triple Jet + Performance pot B-roll during setup**, and get a real tailgate frame for the kit ad. Shopping pull Monday (skip Oreos). → [shoot plan v4](../../my-work%20(outputs)/internal/2026-09-14-garrett-shoot-plan-sept22.md)
 
 ---
 
 ## 🔺 Now — top three (plan week 1)
 
-**1. IW checkpoint Fri Sept 18.** Finn pulls (incl. untagged FB orders on the 18 QT page, and BPM matched by campaign + ad ID under the new rule 4) → Beau's call → Evan's one edit: dark-evergreen off + 120 QT creative swap. → [checkpoint skill](../my-skills/hpc-campaign-checkpoint/instructions.md)
+**1. IW checkpoint Fri Sept 18.** Finn pulls (incl. untagged FB orders on the 18 QT page, and BPM matched by campaign + ad ID under the new rule 4) → Beau's call → Evan's one edit: dark-evergreen off + 120 QT creative swap. → [checkpoint skill](../../my-skills/hpc-campaign-checkpoint/instructions.md)
 
-**2. Kits to live Fri Sept 25.** Everything ROUX can do is done. What's left is Evan's: **kit photos · `HIGH15` off (Biljana) · `SMS25` deactivated · the discount-code fixes · a checkout test**. ⚠️ **`HIGH15` is the one real blocker** — Biljana needs "a few more days" as of 2026-09-17, and go/no-go is Thu Sept 24. → [code exposure](../my-work%20(outputs)/internal/2026-09-17-kit-discount-code-exposure.md)
+**2. Kits to live Fri Sept 25.** Everything ROUX can do is done. What's left is Evan's: **kit photos · `HIGH15` off (Biljana) · `SMS25` deactivated · the discount-code fixes · a checkout test**. ⚠️ **`HIGH15` is the one real blocker** — Biljana needs "a few more days" as of 2026-09-17, and go/no-go is Thu Sept 24. → [code exposure](../../my-work%20(outputs)/internal/2026-09-17-kit-discount-code-exposure.md)
 
-**3. Tailgate kit ad — Evan picks a concept.** Three at 1:1: **A Starting Lineup** (football field, roster) · **B The Payoff** (real fried chicken photo, Maya's pick) · **C Game Ticket**. Round 5 sizing pass was still rendering at wrap. Then 9:16 + 1.91:1, then Beau's budget call inside `18qt-TOF`'s $50/day. Pot static still to render. → [v2 concepts](../my-work%20(outputs)/content/ads/2026-09-tailgate-kit/v2/2026-09-17-tailgate-kit-v2-concepts.md)
+**3. Tailgate kit ad — Evan picks a concept.** Three at 1:1: **A Starting Lineup** (football field, roster) · **B The Payoff** (real fried chicken photo, Maya's pick) · **C Game Ticket**. Round 5 sizing pass was still rendering at wrap. Then 9:16 + 1.91:1, then Beau's budget call inside `18qt-TOF`'s $50/day. Pot static still to render. → [v2 concepts](../../my-work%20(outputs)/content/ads/2026-09-tailgate-kit/v2/2026-09-17-tailgate-kit-v2-concepts.md)
 
 *(Demoted: BFCM + the batched Jay text. Evan took both on himself for today, so they sit under Waiting on rather than Now.)*
 
@@ -60,7 +60,7 @@ Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it
 
 ## ⏸️ Parked — deliberately, do not re-raise
 
-- **Retargeting: launch Mon Sept 28** (in the plan). $20/day pots + $10/day 18 QT, fits $344 of $350. ⚠️ **Build note, Finn 2026-09-17:** `Website Visitors 30D (All)` (6,800–8,000) runs on pixel `491960645999331` — now identified, an old marketing company's, kept because it works. Every audience on our own pixel `1861969194014116` reads 20–20, untested what that means, and both exclusions sit there. `RT - Viewed 18 QT - 30D` **doesn't exist yet** and must be built first. → [plan](../my-work%20(outputs)/content/ads/2026-09-retargeting/2026-09-11-retargeting-plan.md)
+- **Retargeting: launch Mon Sept 28** (in the plan). $20/day pots + $10/day 18 QT, fits $344 of $350. ⚠️ **Build note, Finn 2026-09-17:** `Website Visitors 30D (All)` (6,800–8,000) runs on pixel `491960645999331` — now identified, an old marketing company's, kept because it works. Every audience on our own pixel `1861969194014116` reads 20–20, untested what that means, and both exclusions sit there. `RT - Viewed 18 QT - 30D` **doesn't exist yet** and must be built first. → [plan](../../my-work%20(outputs)/content/ads/2026-09-retargeting/2026-09-11-retargeting-plan.md)
 - **Group A and B kit copy fixes: dropped entirely** — Evan, 2026-09-17, "that's Coalition's lane." The sheet stays on file, unused. Do not re-raise.
 - **Low-ticket cap: never adopted.** Hold ~52%, real cap in the November plan, Jay asked. · **CAC ceilings: v3 + the incremental rule.** 18 QT ceiling ~$73; `18qt-TOF` held at $50/day; $350/day holds.
 - **IntentWave and Coalition are advisors, not a work queue.** Parked IW ideas: On3 · Peter's paid proposal · the 24-buyer audience.
@@ -85,13 +85,13 @@ Priority: 30 QT turkey demo (live by Oct 1) · 60 QT shrimp boil · 18 QT fry-it
 - ⛔ **Do not say which Labor Day creative won** until Finn re-pulls Sept 1–8 ad-level data. ⛔ **Never show Shopify net ÷ Meta spend as ROAS**, and never quote a cost-per-customer figure as CAC.
 - ⛔ **Meta connector: no write without Evan's explicit yes for that specific change; publishing is blocked outright.** HP Cookers ADs only. A locked plan does not authorize a write.
 - ⛔ **Use the real margin (~40.6%), not the booked 46%**, and **never the 44.5% August margin**.
-- ⛔ **Vendor call figures are not facts** until checked against Shopify. ⛔ **No 30%-off legs in November.** **Showroom cards carry no warranty line and no price date.** **Never quote a price not in** [what-we-sell.md](../my-business%20(context)/what-we-sell.md); **Shopify prices always win.** **Never name a competitor, and never say "Yeti"** in anything customers see.
+- ⛔ **Vendor call figures are not facts** until checked against Shopify. ⛔ **No 30%-off legs in November.** **Showroom cards carry no warranty line and no price date.** **Never quote a price not in** [what-we-sell.md](../../my-business%20(context)/what-we-sell.md); **Shopify prices always win.** **Never name a competitor, and never say "Yeti"** in anything customers see.
 
 ---
 
 ## 📊 Numbers at a glance
 
-Source of truth → [metrics-and-goals.md](../my-files%20(knowledge)/hpc-reference/metrics-and-goals.md). **AOV is net ÷ orders throughout.**
+Source of truth → [metrics-and-goals.md](../../my-files%20(knowledge)/hpc-reference/metrics-and-goals.md). **AOV is net ÷ orders throughout.**
 
 | Figure | Value | Source · date |
 |---|---|---|
@@ -111,10 +111,10 @@ Source of truth → [metrics-and-goals.md](../my-files%20(knowledge)/hpc-referen
 
 ## 🧭 Map
 
-- **Plan** — [PLAN.md](PLAN.md) · [pace line + audiences](../my-work%20(outputs)/internal/reports/2026-09-17-consumer-pace-line-and-audience-sizes.md) · [baseline](../my-work%20(outputs)/internal/reports/2026-09-17-month-plan-baseline.md) · **ROUX OS** — `localhost:4242` · pulse → [today.md](today.md) · notes → [capture.md](capture.md) · [key-dates.md](key-dates.md)
-- **Kits** — [build record](../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md) · [rebuild steps](../my-work%20(outputs)/internal/2026-09-17-kit-rebuild-steps.md) · [code exposure](../my-work%20(outputs)/internal/2026-09-17-kit-discount-code-exposure.md) · [PDP copy](../my-work%20(outputs)/content/website/2026-09-16-kit-pdp-copy.md)
-- **Creative** — [twelve rules](../my-skills/hpc-ad-creative/instructions.md) · [tailgate v2](../my-work%20(outputs)/content/ads/2026-09-tailgate-kit/v2/) · [asset index](../my-skills/hpc-ad-creative/assets/ASSET-INDEX.md)
-- **Playbooks** — [weekly rhythm](../my-workflows%20(automations)/playbooks/weekly-operating-rhythm.md) · [paid media](../my-workflows%20(automations)/playbooks/paid-media.md) · [content engine](../my-workflows%20(automations)/playbooks/content-engine.md) · **content week:** [skill](../my-skills/content-week/instructions.md) · **checkpoint:** [skill](../my-skills/hpc-campaign-checkpoint/instructions.md) · [terms](../my-skills/hpc-campaign-checkpoint/campaigns.md)
-- **The business** — [who we are](../my-business%20(context)/who-we-are.md) · [what we sell](../my-business%20(context)/what-we-sell.md) · [our team](../my-business%20(context)/our-team.md) · [how we sound](../my-business%20(context)/how-we-sound.md) · [metrics & goals](../my-files%20(knowledge)/hpc-reference/metrics-and-goals.md) · [connected apps](../my-connections%20(MCP)/connected-apps.md)
+- **Plan** — [PLAN.md](../PLAN.md) · [pace line + audiences](../../my-work%20(outputs)/internal/reports/2026-09-17-consumer-pace-line-and-audience-sizes.md) · [baseline](../../my-work%20(outputs)/internal/reports/2026-09-17-month-plan-baseline.md) · **ROUX OS** — `localhost:4242` · pulse → [today.md](../today.md) · notes → [capture.md](../capture.md) · [key-dates.md](../key-dates.md)
+- **Kits** — [build record](../../my-work%20(outputs)/internal/2026-09-16-kit-build-record.md) · [rebuild steps](../../my-work%20(outputs)/internal/2026-09-17-kit-rebuild-steps.md) · [code exposure](../../my-work%20(outputs)/internal/2026-09-17-kit-discount-code-exposure.md) · [PDP copy](../../my-work%20(outputs)/content/website/2026-09-16-kit-pdp-copy.md)
+- **Creative** — [twelve rules](../../my-skills/hpc-ad-creative/instructions.md) · [tailgate v2](../../my-work%20(outputs)/content/ads/2026-09-tailgate-kit/v2) · [asset index](../../my-skills/hpc-ad-creative/assets/ASSET-INDEX.md)
+- **Playbooks** — [weekly rhythm](../../my-workflows%20(automations)/playbooks/weekly-operating-rhythm.md) · [paid media](../../my-workflows%20(automations)/playbooks/paid-media.md) · [content engine](../../my-workflows%20(automations)/playbooks/content-engine.md) · **content week:** [skill](../../my-skills/content-week/instructions.md) · **checkpoint:** [skill](../../my-skills/hpc-campaign-checkpoint/instructions.md) · [terms](../../my-skills/hpc-campaign-checkpoint/campaigns.md)
+- **The business** — [who we are](../../my-business%20(context)/who-we-are.md) · [what we sell](../../my-business%20(context)/what-we-sell.md) · [our team](../../my-business%20(context)/our-team.md) · [how we sound](../../my-business%20(context)/how-we-sound.md) · [metrics & goals](../../my-files%20(knowledge)/hpc-reference/metrics-and-goals.md) · [connected apps](../../my-connections%20(MCP)/connected-apps.md)
 
-*Standing rules: [hpc-standing-rules](../my-business%20(context)/hpc-standing-rules.md), under [SAFETY.md](../SAFETY.md) which wins on any conflict. Full history → [archive/](archive/)*
+*Standing rules: [hpc-standing-rules](../../my-business%20(context)/hpc-standing-rules.md), under [SAFETY.md](../../SAFETY.md) which wins on any conflict. Full history → [archive/](.)*

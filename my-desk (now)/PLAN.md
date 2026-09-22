@@ -75,6 +75,9 @@ Ceiling **$350/day**. These are caps, not spend targets. No new money. Moment ad
 | Turkey kit ad 30 QT / 60 QT | > $198 / > $232 | ≤ $41.79 / ≤ $51.22 **and** Oct 15 turkey sales ≥ last year |
 | IW 120 QT ads, **Oct 2** | **Pause:** 0 Shopify-tagged pot, Triple Jet or kit orders, or Meta cost per purchase > $365 · **Hold** to Oct 16: ≥ 1 tagged and $189–$365 | **Continue:** ≥ 1 tagged and ≤ $189 |
 | Retargeting pots / 18 QT | Frequency > 3.5 → cut ⅓ · > $60 per purchase after 4 days → pause | Day 14+: frequency ≤ 2.5 · ≤ $40 / $30 · tagged orders > 0 |
+| **Any ad, no-sale rule** *(Evan, 2026-09-22)* | Spend reaches **3× its incremental ceiling with 0 Shopify-tagged new customers**, or **2×** if Meta's purchase count is also 0. Taggable ads only — an ad whose ad ID does not reach Shopify is read on Meta's count alone | — |
+
+Ceilings for that rule: 18 QT $73–$100 · 120 QT Powered $195.34 · Platinum bundle $194.58 · Performance pots $189.23 · Triple Jet alone $130.06 *(incremental rule, [overhead-method-options](../my-work%20(outputs)/internal/reports/2026-09-10-overhead-method-options.md), 2026-09-10)*.
 
 A kill that fires goes to Evan within 4 days. One edit per ad set per checkpoint. Every new ad: full UTMs, Shop off, Messenger off.
 
@@ -118,3 +121,5 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 - **2026-09-22 · Patent-number rule 10 softened to a preference** (Evan); linter check now a warning. → decisions.md
 - **2026-09-22 · UpPromote: auto-approve delay 30 days** (Evan's click); form stays public; Jay text held to Wed. → decisions.md
 - **2026-09-22 · Creative rubric check + `/tidy-brain` built; Mac disk freed** (Evan, after Anthropic's Managed Agents talk): rubric-check gates paid/carousel builds and approvals; `/tidy-brain` trashed 246 brain files (166 MB); Mac went from 6.8 GB to 64 GB free (Dropbox online-only, macOS 27, app leftovers). → decisions.md
+- **2026-09-22 · Obsidian graph cleaned up** (Evan): archive links fixed, skills linked, graph settings; CLAUDE.md left unlinked. → decisions.md
+- **2026-09-22 · ROUX OS 0.3** (Evan): left menu + color key, Home = the brain globe, This Month's Plan tab, bigger type. → decisions.md

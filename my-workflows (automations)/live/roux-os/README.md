@@ -12,7 +12,16 @@ leaves a line in `my-desk (now)/capture.md`, which `/prime` reads and `/wrap` fo
 may be added that does.** It sends nothing to anyone: "draft" buttons only leave a note for the
 next session, and Evan sends everything himself.
 
-## ⛔ The approvals rule (also in `approvals.js`)
+## v0.3 (2026-09-22)
+
+Left sidebar (bigger logo, clock, menu, and a **color key** under the menu that changes with the
+page), larger type and more room everywhere. **Home** is now the brain as a graph (`graph.js` on
+the server walks the vault; `public/graph.js` draws it: agents, skills, memory, routines, apps and
+work around ROUX, with markdown links between files as an overlay) plus five widgets. The old front
+page is the **Today** tab, unchanged in what it does. **This Month's Plan** draws `PLAN.md`
+(`plan.js`, read-only, same rule as Score: it shows what the file says). Both new routes are GET only.
+
+ (also in `approvals.js`)
 
 An approval of kind **`live-write`** (anything that would change Shopify, Meta or Google) **does not
 authorize the write.** The standing rule needs Evan's explicit yes in the conversation where the

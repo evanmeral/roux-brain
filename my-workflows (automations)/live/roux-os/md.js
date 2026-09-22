@@ -31,7 +31,7 @@ function inline(text, ctx) {
   const codes = [];
   let s = escapeHtml(text);
   s = s.replace(/`([^`]+)`/g, (_, c) => { codes.push(c); return CODE_OPEN + (codes.length - 1) + CODE_CLOSE; });
-  s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, t, u) => {
+  s = s.replace(/\[([^\]]+)\]\(((?:[^()\s]|\([^()\s]*\))+)\)/g, (_, t, u) => {   // one level of (parens) in a link: the vault's folder names have them
     const r = resolveHref(u, ctx);
     const tgt = r.external ? ' target="_blank" rel="noopener"' : '';
     return '<a href="' + escapeHtml(r.href) + '"' + tgt + '>' + t + '</a>';
