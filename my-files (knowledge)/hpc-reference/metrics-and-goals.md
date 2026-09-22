@@ -89,6 +89,25 @@ the number for Jay. Full detail: `my-work (outputs)/internal/reports/2026-08-26-
 > $33.00–$38.79 CPP while the dark treatment ran $19.76 on $138. That gap rests on 7 purchases —
 > a hypothesis, not proof. → [analysis](../../my-desk%20%28now%29/archive/2026-09-08-labor-day-sale-analysis.md)
 
+> **Sept 2026, per product, Shopify-tagged** *(Finn, Meta connector + Shopify GraphQL, 2026-09-22;
+> match rules 1–5)*. **Tagged CAC = Meta spend ÷ new customers whose Shopify order carries that ad's
+> tag.** It is an **upper bound on actual CAC, not actual CAC**: a buyer who clicks an ad and returns
+> through Google, direct or email is credited elsewhere, and untagged ads (`hpc-dark-evergreen`,
+> $569.10) can't appear at all. Against the incremental-rule ceilings in
+> [overhead-method-options](../../my-work%20%28outputs%29/internal/reports/2026-09-10-overhead-method-options.md):
+>
+> | Product | Sept 15–21 | Sept 1–21 | Ceiling |
+> |---|---|---|---|
+> | 18 QT fryer | $118.01 (9 new) | $151.93 (15 new) | $73–$100 |
+> | 120 QT Powered | $293.41 (1) | $348.87 (1) | $195.34 |
+> | Platinum bundle | 0 tagged on $82.68 | 0 tagged on $162.92 | $194.58 |
+> | 30 QT turkey | 0 tagged on $57.41 | 0 tagged on $115.65 | $198 kill line |
+> | Powered-cookers collection (BPM Tailgate Video) | $387.60 (1) | $741.60 (1) | no product ceiling |
+>
+> Meta's own cost per purchase over the same week was $53.10 blended on the 18 QT — under the $189
+> kill line, which is why nothing was killed on it. **Two counts, two different things: the kill line
+> runs on Meta's count, the ceiling on Shopify's.** → [ad review](../../my-work%20%28outputs%29/internal/reports/2026-09-22-meta-ad-review-finn.md)
+
 > ⚠️ **Google's $91.28 cost/conversion exceeds the allowable CAC for every accessory and both 18 QT
 > fryers at a discount.** Fine when it's selling $500–$800 cookers; a problem if it's selling
 > accessories. Worth asking Coalition for cost-per-conversion split by product.
