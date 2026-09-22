@@ -11,6 +11,8 @@
 
 ## 2026-09
 
+**Unexplained kit `updatedAt` bumps: don't chase** · Evan, 2026-09-22 ("not a big deal, if it happens again then we can look into it"). The tailgate bump was a stock refresh from a component sale; the one turkey-kit bump with no matching part is left alone unless it recurs.
+
 **UpPromote auto-approve delay set to 30 days** · Evan, 2026-09-22 (his click; the embedded app ignored ROUX's Chrome clicks). Auto-approve itself stays on.
 
 **UpPromote trimmed to one switch and one text** · Evan, 2026-09-22. Do: auto-approve delay 0 → 30 days. Keep the sign-up form public ("i don't see why it would be a large deal especially if they are getting sales even if it is only a few"). Skip the payments export, the Google-detection and draft-order settings, and the cleanup. The Jay text is held until Wed Sept 23 morning (Jay out of office Sept 22). Supersedes Beau's changes 3–5 in the [checklist](../my-work%20(outputs)/internal/reports/2026-09-21-uppromote-settings-and-jay-text-beau.md).
