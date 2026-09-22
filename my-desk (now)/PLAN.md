@@ -114,3 +114,6 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 - **2026-09-21 · ROUX OS 0.2: Affiliates, Launches, Waiting, Approvals, Posts, Score** (Evan). Affiliate roster (116) seeded by Pete; tagged sales confirmed by Finn; program read by Beau.
 - **2026-09-21 · UpPromote read from Evan's exports** (Evan). $11,718.37 paid in Jay's window vs his ~$4k, gap cause not proven; 8% → 5% Jan 2026; settings checklist (auto-activate stays ON) and one Jay text drafted; OS importer fixed. No deeper digging (Evan). → decisions.md
 - **2026-09-21 · Kit photos attached to all three kit drafts in Shopify** (Evan): 8–9 square white-background images each, alt text, kit shot first; no per-option images (Evan). Clears the photo line in Now #1.
+- **2026-09-22 · Brain health check after the move** (Evan): old iCloud-damaged Desktop copy deleted by Evan, merged worktree removed, settings path fixed; nothing broken in the brain. → decisions.md
+- **2026-09-22 · Patent-number rule 10 softened to a preference** (Evan); linter check now a warning. → decisions.md
+- **2026-09-22 · UpPromote: auto-approve delay 30 days** (Evan's click); form stays public; Jay text held to Wed. → decisions.md
