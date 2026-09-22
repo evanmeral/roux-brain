@@ -133,7 +133,7 @@ Season urgency · Commercial throughput · Boil Boss accessory attach
 - **Prices must match `context/products-catalog.md`.** Re-pull before running a price in an ad.
 - **Lead with quality, not price.** 80% of customers buy on quality; 10% on price.
 - **Tunnel Tube tech is in the POT, not the burner.** Never imply the burner makes it fast.
-- Patent No. **11,844,459** (for accuracy only; never written out on creative or content, only on the shield logo, rule 10).
+- Patent No. **11,844,459** (for accuracy; on creative, prefer the shield logo over writing it out, rule 10, a preference not a hard rule).
 
 ## Gotchas (learned the hard way)
 - **Never write `open(p,'w').write(open(p).read()...)`.** Python opens for writing *first*, which

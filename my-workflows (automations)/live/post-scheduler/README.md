@@ -77,7 +77,7 @@ segment name on line one · the copy rules · the approval still matches the con
 Levels: ✅ pass · `·` info · ⚠️ warn (a human looks) · 🟡 waived (an error Evan accepted, with his
 words) · ❌ fail (blocks queueing).
 
-**Copy rules** (`lint.js`; ❌ unless marked): `patent-pending` · `patent-number` · `made-in-usa`
+**Copy rules** (`lint.js`; ❌ unless marked): `patent-pending` · `patent-number` ⚠️ (a preference since 2026-09-22) · `made-in-usa`
 (and `#madeinusa`) · `american-made` ⚠️ · `we-make-the-pots` · `cast-aluminum` · `cast-word` ⚠️ ·
 `competitor-name` · `yeti` · `warranty-5yr` (both qualifiers; never on steamer or commercial) ·
 `hard-boil` · `hashtag-on-facebook` · `placeholder` (`[IF …]`, `{…}`, TODO) · `price-not-on-file` ·

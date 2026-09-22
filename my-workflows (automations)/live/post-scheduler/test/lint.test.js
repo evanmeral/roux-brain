@@ -25,8 +25,8 @@ function expectNo(name, text, rule, field) {
 // ---- each rule, caught
 expectHit('patent-pending', 'Our patent-pending tunnel tubes spread the flame.', 'patent-pending', 'error');
 expectHit('patent pending, two words', 'Patent Pending design.', 'patent-pending', 'error');
-expectHit('patent number written out', 'Built in Covington. Patent No. 11,844,459.', 'patent-number', 'error');
-expectHit('patent number, bare digits', 'US 11844459 B2', 'patent-number', 'error');
+expectHit('patent number written out', 'Built in Covington. Patent No. 11,844,459.', 'patent-number', 'warn');
+expectHit('patent number, bare digits', 'US 11844459 B2', 'patent-number', 'warn');
 expectHit('Made in USA', 'Proudly made in the USA.', 'made-in-usa', 'error');
 expectHit('Made in America', 'Made in America by a krewe of twelve.', 'made-in-usa', 'error');
 expectHit('#madeinusa on IG', 'Boil Math Monday.\n\n#louisiana #MadeInUSA', 'made-in-usa', 'error', 'instagram');

@@ -85,8 +85,8 @@ const RULES = [
     run: (t) => hits(/patent[\s-]*pending/i, t),
   },
   {
-    id: 'patent-number', severity: 'error',
-    source: 'hpc-standing-rules.md: "Never write the number out as words on any ad, post, story or caption; the HPC shield logo that carries it is fine" (Evan, 2026-09-21; creative rule 10).',
+    id: 'patent-number', severity: 'warn',
+    source: 'Creative rule 10: prefer the HPC shield logo to a written patent number (a preference, not a hard no, Evan 2026-09-22).',
     // one pattern, so "Patent No. 11,844,459" is one finding, not two
     run: (t) => hits(/(?:patent\s*(?:no\.?|number|num\.?|#)\s*)?11[\s,.]?844[\s,.]?459|patent\s*(?:no\.?|number|num\.?|#)\s*\d[\d,.]*/i, t),
   },
