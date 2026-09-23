@@ -1,0 +1,279 @@
+<title>Garrett Shoot Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f5f3ee; --card:#ffffff; --ink:#1f1d1a; --muted:#6b655c; --line:#e2ddd3;
+  --gold:#b8862b; --gold-soft:#f3e8d2; --flame:#c2452d; --flame-soft:#f8e3de;
+  --ok:#3d7a4a; --clip:#fbf7ee;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#16140f; --card:#1f1c17; --ink:#efeae0; --muted:#a39b8d; --line:#35302a;
+    --gold:#e0ad52; --gold-soft:#3a2f1b; --flame:#ef7a5f; --flame-soft:#3d221c;
+    --ok:#7cc08a; --clip:#26221b;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#16140f; --card:#1f1c17; --ink:#efeae0; --muted:#a39b8d; --line:#35302a;
+  --gold:#e0ad52; --gold-soft:#3a2f1b; --flame:#ef7a5f; --flame-soft:#3d221c;
+  --ok:#7cc08a; --clip:#26221b;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:16px/1.5 "Barlow",system-ui,sans-serif;padding-inline:16px;padding-block:20px 60px}
+.wrap{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;margin:0;line-height:1.1;text-wrap:balance}
+h1{font-size:2.3rem;letter-spacing:.01em}
+h2{font-size:1.35rem;text-transform:uppercase;letter-spacing:.06em;color:var(--gold)}
+h3{font-size:1.55rem}
+p{margin:0}
+.meta{color:var(--muted);font-size:.95rem}
+.progress{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);padding-block:10px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;font-weight:600}
+.bar{flex:1;height:8px;border-radius:4px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--gold);transition:width .2s}
+.count{font-variant-numeric:tabular-nums;font-size:.95rem;white-space:nowrap}
+section.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.warn{background:var(--flame-soft);border-color:transparent}
+.warn h2{color:var(--flame)}
+ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:4px}
+.vid{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.vid header{padding:14px 16px 10px;display:flex;gap:12px;align-items:baseline;border-bottom:1px solid var(--line)}
+.num{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.plan{padding:12px 16px;display:grid;grid-template-columns:5.2em 1fr;gap:6px 10px;font-size:.97rem}
+.plan dt{font-weight:600;color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;padding-top:2px}
+.plan dd{margin:0}
+.hook{font-style:italic}
+.clips{background:var(--clip);border-top:2px solid var(--gold);padding:12px 16px 14px;display:flex;flex-direction:column;gap:8px}
+.clips .lbl{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.07em;font-size:.95rem;color:var(--gold)}
+label.ck{display:flex;gap:10px;align-items:flex-start;cursor:pointer;line-height:1.4}
+label.ck input{width:22px;height:22px;flex:none;margin-top:1px;accent-color:var(--ok)}
+label.ck:has(input:checked) span{color:var(--muted);text-decoration:line-through}
+.star{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--gold-soft);color:var(--gold);border-radius:4px;padding:1px 6px;margin-left:4px;vertical-align:1px;text-decoration:none}
+.tag{font-size:.8rem;color:var(--muted)}
+.block{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.1rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);display:flex;align-items:center;gap:10px;margin-top:6px}
+.block::after{content:"";flex:1;height:1px;background:var(--line)}
+.fry{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.92rem}
+.fry span{background:var(--gold-soft);border-radius:4px;padding:2px 8px}
+.fry b{color:var(--muted);font-weight:400}
+.reset{align-self:flex-start;background:none;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:6px 12px;font:inherit;font-size:.9rem;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+
+<div class="wrap">
+  <div>
+    <p class="meta">Wed Sept 23 · HPC shop · Garrett / Frazier Media · 8 videos</p>
+    <h1>Shoot Day Sheet</h1>
+  </div>
+
+  <div class="progress"><span>Your clips</span><div class="bar"><i id="fill"></i></div><span class="count" id="count">0 / 0</span></div>
+
+  <section class="box">
+    <h2>Before Garrett gets here</h2>
+    <label class="ck"><input type="checkbox" id="s-turkey"><span>Turkey fully thawed</span></label>
+    <label class="ck"><input type="checkbox" id="s-oil"><span>Peanut oil for <b>both</b> the 30 QT and the 18 QT · full propane</span></label>
+    <label class="ck"><input type="checkbox" id="s-onion"><span>Batter or dredge for the blooming onion (flour, eggs, milk)</span></label>
+    <label class="ck"><input type="checkbox" id="s-props"><span>Big timer · oil + water thermometers · calipers · savings calculator on a laptop · unbranded ice chest · extinguisher + gloves</span></label>
+  </section>
+
+  <section class="box">
+    <h2>Tell Garrett at setup</h2>
+    <label class="ck"><input type="checkbox" id="g-kit"><span>Tailgate kit is now: 18 QT Powered · Leg Extensions · 5" thermometer · 20" skimmer. No wind shield.</span></label>
+    <label class="ck"><input type="checkbox" id="g-edit"><span>Turkey demo gets edited first. Live Oct 1, so ask for it by Mon Sept 28–29.</span></label>
+    <label class="ck"><input type="checkbox" id="g-broll"><span>Free Triple Jet + Performance pot B-roll</span></label>
+    <label class="ck"><input type="checkbox" id="g-frame"><span>A real tailgate frame for the kit ad</span></label>
+  </section>
+
+  <section class="box warn">
+    <h2>Never on camera</h2>
+    <ul>
+      <li><b>One claim per pot:</b> 30 QT "350° in under 10 min" · 18 QT "350° in under 5 min" · 60 QT boil "boils in under 7 min"</li>
+      <li>Nobody says "Made in USA" or "patent-pending." "Built in Louisiana" is fine.</li>
+      <li>No crawfish near a fryer · no team/school logos · no beer, soda or other-brand labels · no warranty talk</li>
+    </ul>
+  </section>
+
+  <section class="box">
+    <h2>How to shoot your clips</h2>
+    <ul>
+      <li>Phone <b>vertical (9:16)</b> unless it says photo. Hold still 3 seconds before and after.</li>
+      <li>Sound on. Stand beside Garrett's camera, not in front of it.</li>
+      <li><span class="star">Post</span> means a scheduled post is waiting on it.</li>
+    </ul>
+  </section>
+
+  <div class="block">Run order</div>
+
+  <article class="vid">
+    <header><span class="num">1st · Video 5</span><h3>"Buy it once"</h3></header>
+    <dl class="plan">
+      <dt>Why first</dt><dd>The 60 QT is still dry and clean for close-ups</dd>
+      <dt>Pot</dt><dd>60 QT Performance, in hand the whole time. 2–3 pots in the background.</dd>
+      <dt>On cam</dt><dd>Jay or Evan</dd>
+      <dt>Hook</dt><dd class="hook">"You can buy a cheap pot twice. Or buy this one once."</dd>
+      <dt>Shots</dt><dd>Unbranded ice chest · calipers on the 4mm wall · weld bead · savings calculator · Tunnel Tubes</dd>
+      <dt>Watch</dt><dd>No lifespan number, no warranty, no other brand</dd>
+    </dl>
+    <div class="clips"><span class="lbl">Your clips for ROUX</span>
+      <label class="ck"><input type="checkbox" id="c5-1"><span>Photo: calipers on the 4mm wall, tight</span></label>
+      <label class="ck"><input type="checkbox" id="c5-2"><span>5–10s: a hand running along the weld bead</span></label>
+      <label class="ck"><input type="checkbox" id="c5-3"><span>Photo: the 60 QT alone, clean background</span></label>
+    </div>
+  </article>
+
+  <article class="vid">
+    <header><span class="num">2nd · Video 1</span><h3>Turkey fry · 30 QT</h3></header>
+    <dl class="plan">
+      <dt>Pot</dt><dd>30 QT Turkey Fryer · Single Upright rack · 6" Banjo Burner</dd>
+      <dt>On cam</dt><dd>Stephen</dd>
+      <dt>Hook</dt><dd class="hook">"Oil to 350°. Clock's running."</dd>
+      <dt>Shots</dt><dd>Timer + thermometer at ignition → hold at 350° → bird lowered → drain valve, lid → bird out, carved, on the table</dd>
+      <dt>Claim</dt><dd>350° in under 10 minutes</dd>
+      <dt>Watch</dt><dd><b>One bird, no retake.</b> Both cameras rolling before it goes in.</dd>
+    </dl>
+    <div class="clips"><span class="lbl">Your clips for ROUX</span>
+      <label class="ck"><input type="checkbox" id="c1-1"><span>15–30s: bird going in with the thermometer in frame. Keep rolling through the oil dip and back up. <span class="star">Post · Fri Oct 2</span></span></label>
+      <label class="ck"><input type="checkbox" id="c1-2"><span>Photo: fryer + rack set up before the oil</span></label>
+      <label class="ck"><input type="checkbox" id="c1-3"><span>5s: flame under the pot at ignition</span></label>
+      <label class="ck"><input type="checkbox" id="c1-4"><span>Photo: carved bird on the platter</span></label>
+    </div>
+  </article>
+
+  <article class="vid">
+    <header><span class="num">3rd · Video 2</span><h3>Shrimp boil · 60 QT</h3></header>
+    <dl class="plan">
+      <dt>Pot</dt><dd>60 QT Performance · Single Jet Burner</dd>
+      <dt>On cam</dt><dd>Stephen (hands) + the clock</dd>
+      <dt>Food</dt><dd>Head-on shrimp · red potatoes · corn · sausage · Brussels sprouts · HPC seasoning in frame</dd>
+      <dt>Hook</dt><dd class="hook">"Everybody thinks the 7-minute thing is marketing. Here's the clock."</dd>
+      <dt>Shots</dt><dd>One unbroken take, cold water to a rolling boil · flame through the Tunnel Tubes · load the basket, back to a boil · lift, pour</dd>
+      <dt>Claim</dt><dd>Boils in under 7 minutes. Show the real clock, "Unedited. Real time."</dd>
+      <dt>Stills</dt><dd>Tunnel Tubes with flame from below · a flipped pot with a hand on the tubes</dd>
+    </dl>
+    <div class="clips"><span class="lbl">Your clips for ROUX</span>
+      <label class="ck"><input type="checkbox" id="c2-1"><span>10–15s: basket lift with the steam</span></label>
+      <label class="ck"><input type="checkbox" id="c2-2"><span>10–15s: the pour onto the table</span></label>
+      <label class="ck"><input type="checkbox" id="c2-3"><span>Photo, overhead: the whole spread after the pour</span></label>
+      <label class="ck"><input type="checkbox" id="c2-4"><span>Photo: flipped pot, hand on the Tunnel Tubes</span></label>
+    </div>
+  </article>
+
+  <div class="block">18 QT oil block</div>
+  <section class="box">
+    <h2>Fry order, one batch of oil</h2>
+    <div class="fry"><span>Funnel cake</span><b>→</b><span>Fries</span><b>→</b><span>Blooming onion</span><b>→</b><span>Hushpuppies</span><b>→</b><span>Wings</span><b>→</b><span>Shrimp</span><b>→</b><span>Catfish last</span></div>
+    <p class="tag">Funnel cake goes first in clean oil, or give it the 4-Way. Fish flavors the oil, so it goes last.</p>
+  </section>
+
+  <article class="vid">
+    <header><span class="num">4th · Video 3</span><h3>18 QT fry-it-all</h3></header>
+    <dl class="plan">
+      <dt>Pot</dt><dd>18 QT Powered</dd>
+      <dt>On cam</dt><dd>Jay</dd>
+      <dt>Food</dt><dd>Wings · fries · hushpuppies · catfish · shrimp</dd>
+      <dt>Hook</dt><dd class="hook">"350° in under 5 minutes. Clock's running."</dd>
+      <dt>Shots</dt><dd>Thermometer climbs and holds at 350° → each food out and draining</dd>
+      <dt>Claim</dt><dd>350° in under 5 minutes</dd>
+    </dl>
+    <div class="clips"><span class="lbl">Your clips for ROUX</span>
+      <label class="ck"><input type="checkbox" id="c3-1"><span>10s: thermometer at 350° next to the timer</span></label>
+      <label class="ck"><input type="checkbox" id="c3-2"><span>5–8s each: basket up and draining (wings, fries, hushpuppies, shrimp, catfish)</span></label>
+      <label class="ck"><input type="checkbox" id="c3-3"><span>Photo, overhead: everything plated together</span></label>
+    </div>
+  </article>
+
+  <article class="vid">
+    <header><span class="num">5th · Video 4</span><h3>Tailgate kit</h3></header>
+    <dl class="plan">
+      <dt>Kit</dt><dd>18 QT Powered · Leg Extensions · 5" thermometer · 20" skimmer</dd>
+      <dt>On cam</dt><dd>Jay + Stephen</dd>
+      <dt>Food</dt><dd>Wings · fries · hushpuppies · catfish, in paper boats</dd>
+      <dt>Hook</dt><dd class="hook">"Before kickoff."</dd>
+      <dt>Shots</dt><dd>Frying on the leg extensions → kit laid out → staged table, cooler, team colors</dd>
+      <dt>Watch</dt><dd>Team colors only, no logos. Turn drink labels away.</dd>
+    </dl>
+    <div class="clips"><span class="lbl">Your clips for ROUX</span>
+      <label class="ck"><input type="checkbox" id="c4-1"><span>Photo: the four kit pieces laid out, clean. Shoot it vertical and square. <span class="star">Post · Sat Oct 3</span></span></label>
+      <label class="ck"><input type="checkbox" id="c4-2"><span>10s: 18 QT on its legs frying beside the table</span></label>
+      <label class="ck"><input type="checkbox" id="c4-3"><span>Photo: food in paper boats on the team-color table</span></label>
+    </div>
+  </article>
+
+  <article class="vid">
+    <header><span class="num">6th · Video 7</span><h3>Funnel cake, blooming onion + catfish</h3></header>
+    <dl class="plan">
+      <dt>Pot</dt><dd>18 QT</dd>
+      <dt>On cam</dt><dd>Whoever's around. Loose and fun.</dd>
+      <dt>Hook</dt><dd class="hook">"We put the weirdest stuff we had in the fryer."</dd>
+    </dl>
+    <div class="clips"><span class="lbl">Your clips for ROUX</span>
+      <label class="ck"><input type="checkbox" id="c7-1"><span>10s: funnel cake batter hitting the oil</span></label>
+      <label class="ck"><input type="checkbox" id="c7-2"><span>10s: blooming onion going in, then coming out</span></label>
+      <label class="ck"><input type="checkbox" id="c7-3"><span>Photo: funnel cake with the powdered sugar on</span></label>
+    </div>
+  </article>
+
+  <article class="vid">
+    <header><span class="num">7th · Video 8</span><h3>Fried shrimp <span class="tag">(replaces Monte Cristo)</span></h3></header>
+    <dl class="plan">
+      <dt>Pot</dt><dd>18 QT or 4-Way</dd>
+      <dt>On cam</dt><dd>Whoever's around</dd>
+      <dt>Hook</dt><dd class="hook">"Shrimp. Batter. 350°. That's it."</dd>
+      <dt>Why</dt><dd>October is Seafood Month</dd>
+    </dl>
+    <div class="clips"><span class="lbl">Your clips for ROUX</span>
+      <label class="ck"><input type="checkbox" id="c8-1"><span>8s: shrimp basket up and draining</span></label>
+      <label class="ck"><input type="checkbox" id="c8-2"><span>Photo: plated shrimp with lemon and sauce</span></label>
+    </div>
+  </article>
+
+  <div class="block">Any gap in the day</div>
+
+  <article class="vid">
+    <header><span class="num">Fill-in · Video 6</span><h3>Shop crew at work</h3></header>
+    <dl class="plan">
+      <dt>On cam</dt><dd>Welders and staff who are OK being filmed, answering while they work</dd>
+      <dt>Hook</dt><dd class="hook">"Meet the hands that build it."</dd>
+      <dt>Watch</dt><dd>No sit-down interviews. Nobody says "Made in USA."</dd>
+    </dl>
+    <div class="clips"><span class="lbl">Your clips for ROUX</span>
+      <label class="ck"><input type="checkbox" id="c6-1"><span>Photo: the crew working with Garrett's lights or camera in the shot <span class="star">Post · Tue Sept 29</span></span></label>
+      <label class="ck"><input type="checkbox" id="c6-2"><span>Photo, wide: Garrett filming in the shop</span></label>
+      <label class="ck"><input type="checkbox" id="c6-3"><span>5–10s: sparks or a weld up close</span></label>
+    </div>
+  </article>
+
+  <section class="box">
+    <h2>After the shoot</h2>
+    <ul>
+      <li>Drop everything in <b>my-inbox (new inputs)</b>. ROUX sorts it and upgrades the Sept 28 week.</li>
+      <li>Send Jay the UpPromote text (as drafted).</li>
+      <li>Friday Oct 2's reel needs a turkey clip by <b>Thu Oct 1, noon</b>, or it gets dropped.</li>
+    </ul>
+    <button class="reset" id="reset" type="button">Clear all checkmarks</button>
+  </section>
+</div>
+
+<script>
+(function(){
+  var KEY="hpc-shoot-0923";
+  var boxes=[].slice.call(document.querySelectorAll('input[type=checkbox]'));
+  var clips=boxes.filter(function(b){return b.id.charAt(0)==='c'});
+  var saved={};
+  try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){}
+  boxes.forEach(function(b){ if(saved[b.id]) b.checked=true; b.addEventListener('change',save); });
+  function save(){
+    var s={}; boxes.forEach(function(b){ if(b.checked) s[b.id]=1; });
+    try{localStorage.setItem(KEY,JSON.stringify(s))}catch(e){}
+    draw();
+  }
+  function draw(){
+    var n=clips.filter(function(b){return b.checked}).length;
+    document.getElementById('count').textContent=n+' / '+clips.length;
+    document.getElementById('fill').style.width=(clips.length?n/clips.length*100:0)+'%';
+  }
+  document.getElementById('reset').addEventListener('click',function(){ boxes.forEach(function(b){b.checked=false}); save(); });
+  draw();
+})();
+</script>

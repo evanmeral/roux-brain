@@ -2,6 +2,23 @@
 
 > ⚠️ **Moved to Wednesday, Sept 23** (Evan, 2026-09-18). Everything else below stands, except the tailgate kit contents. The kit as built is 18 QT Powered + Leg Extensions + 5" thermometer + 20" skimmer, with no wind shield (what-we-sell.md). → [shopping list](2026-09-18-garrett-shoot-shopping-list.md)
 
+> 🍳 **v5, shoot-day food (Evan, 2026-09-23). This overrides the food below.** On hand: 1 turkey kit for the
+> 30 QT · pre-battered wings, fries, funnel cake, catfish, shrimp · hushpuppy mix · 2 sweet onions · for the boil, head-on shrimp,
+> small red potatoes, corn, sausage, Brussels sprouts. **Not bought:** a second turkey, soft-shell crab, okra,
+> steak fingers, and anything for the Monte Cristo.
+> - **V1 turkey: one bird, no retake.** Two cameras rolling from the lowering on. Heat-up and 350° hold can be re-shot; the drop can't.
+> - **V2 boil:** shrimp, potatoes, corn, **sausage**, **Brussels sprouts** (green in the pour). HPC seasoning on camera.
+> - **V3 18 QT fry-it-all:** wings, fries, hushpuppies, catfish, shrimp. Okra and steak fingers are out.
+> - **V4 tailgate:** wings, fries, hushpuppies, catfish, in paper boats on the staged table.
+> - **V7:** funnel cake + blooming onion + catfish. **Soft-shell crab is out** (not bought).
+> - **V8: Monte Cristo is out** (nothing bought). **Replacement, ROUX's pick, Evan can swap it:** a fried-shrimp piece
+>   in the same loose, native style, built for October's Seafood Month (fall-moments calendar). Hook to try: *"Shrimp. Batter. 350°. That's it."*
+> - **Run order:** V5 "Buy it once" first, while the 60 QT is dry and clean → V1 turkey → V2 boil + Tunnel Tube stills →
+>   one 18 QT oil block: V3 → V4 → V7 → V8 → V6 shop crew fills any gap (it needs no food).
+> - **18 QT fry order, same oil:** funnel cake first (clean oil, or give it the 4-Way) → fries → onion → hushpuppies → wings → shrimp → catfish last (fish flavors the oil).
+> - ⚠️ **Check before starting:** the blooming onion needs a batter or dredge (flour, eggs, milk), since only the other foods came pre-battered · peanut oil for **both** the 30 QT and the 18 QT · full propane.
+> - **Garrett-facing doc for today (v5, new, 2026-09-23):** [HPC × Frazier Media — Shoot Day Plan, Wed Sept 23](https://docs.google.com/document/d/11UpuWNvPU3FR-0kH2h2iEcLTPlvtDCcqKW3aoRuOrN8/edit). Not shared yet; sharing is Evan's click. The Sept 22 doc and sheet below are left as they were. Evan's own run sheet: [2026-09-23-shoot-day-sheet.html](2026-09-23-shoot-day-sheet.html).
+
 **Status: all 8 videos defined and ready for Evan's final read.** One open detail — which seafood for Video
 7 (shrimp/fish/soft-shell crab) — is Evan's call, closer to the day. Built from the Sept 11 call-prep doc,
 the Sept 14 Fathom recap, and four rounds of Evan corrections/decisions the same day. Both the Google Sheet
