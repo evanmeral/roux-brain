@@ -52,6 +52,7 @@ it: report the read-back, list anything `failed` and whether Evan has handled it
 1. `my-business (context)/hpc-standing-rules.md` and `SAFETY.md` — the copy non-negotiables apply.
 2. `my-business (context)/how-we-sound.md` — voice, banned words, the creative rules.
 3. `weekly-format.md` — the slots and the banks.
+   Also `my-files (knowledge)/hpc-reference/what-worked.md` — **Patterns** first: build on what the results say worked.
 4. `my-desk (now)/BOARD.md` — Running, Now, Landmines. **What is live or launching this week** is
    what the Offer slot may carry, and only if its condition is met (a kit gated on a landmine is not
    live). `my-desk (now)/key-dates.md` for anything landing inside the week.
@@ -110,8 +111,9 @@ python3 check-centering.py drafts/<name>    # ⛔ never skip on product frames; 
 ```
 
 - Eyebrow on every graphic: `SEGMENT · DAY MM.DD`. Shield logo top-left, white on dark.
-- Raw photo posts: crop only, no type, no logo. Story repost of a raw photo uses the blurred-cover
-  band described in the ad-creative instructions, so a landscape photo is not cropped to a sliver.
+- Shop-floor photo posts get **short copy on the image** — nothing crazy, but never a bare iPhone
+  photo ("it just looks lazy", Evan, 2026-09-24). Stories of a photo: **no blurred fade band** top and
+  bottom (Evan, 2026-09-24); fill the frame another way, with short copy on it.
 - **Pre-flight every graphic** against the visual checks in `weekly-format.md`: product centred (measured), no gray box around a cutout, right pixel size for the slot, readable at phone size.
 - **Look at every PNG** before it goes in the plan. Blank render, type touching product, a crop that
   misses the subject — obvious on sight, invisible in a log.
@@ -165,8 +167,12 @@ State anything missing and the fallback used. Never quiet a gap.
 
 Evan locks pieces, gives reasoned line notes, and sometimes reverts to an earlier version
 (see the creative-review memory). Fold each note in without re-explaining, re-render **only** that
-piece, update its status in `PLAN.md` (`approved` · `revised` · `dropped`), show the changed piece
-again. A piece he does not mention is approved once he says "approved."
+piece, update its status in `PLAN.md` (`approved` · `revised` · `dropped`), then **put it in ROUX OS
+→ Posts** and tell Evan only: "The content is now ready for review in Posts." No previews or caption
+dumps in chat (Evan, 2026-09-24). Putting it in Posts = the new files in the week folder, `PLAN.md`
+updated, `node "$PS" build` + `preflight` clean. An option B goes in the piece's `alternates`; Posts
+shows it under the card, and Evan picks by approving (A) or sending back "B". A piece he does not
+mention is approved once he says "approved."
 
 **Record it in the manifest, in his words.** After a revision, rebuild first (`build` sends a changed
 piece back to draft on its own). Then:

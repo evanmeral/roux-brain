@@ -97,6 +97,10 @@ if the session is ending.
 **If a skill was used this session and Evan corrected how it ran, fold the correction into its
 `instructions.md` now**, so the next run starts right.
 
+**Every correction Evan made this session has a row in `my-skills/improve/lessons.md`.** Add any
+that are missing. A row whose source is still `no`: fix the source now if it is quick, or leave
+it `no` so Friday's `/improve` proposes the fix.
+
 A procedure that ran once and will not run again is not a skill. Do not propose one just to
 fill the line.
 

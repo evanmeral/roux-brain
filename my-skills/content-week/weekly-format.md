@@ -9,7 +9,7 @@ Times are Central. Both platforms unless the row says otherwise.
 | Day | Time | Segment | Pillar | Format | Where |
 |---|---|---|---|---|---|
 | **Mon** | 12:00 | **Boil Math Monday** — one number, made visual | The Proof | one 4:5 graphic (1080×1350) | FB + IG feed |
-| **Tue** | 5:30 pm | **Shop Floor Tuesday** — the Covington shop, the crew, the welds | The People | one raw photo, 4:5, no type · reposted to stories | FB + IG feed, + story |
+| **Tue** | 5:30 pm | **Shop Floor Tuesday** — the Covington shop, the crew, the welds | The People | one real shop photo, 4:5, short copy on it · reposted to stories (no blurred band) | FB + IG feed, + story |
 | **Wed** | 12:00 | **How-To Wednesday** — one thing worth saving | The How | carousel, 5–7 frames, 4:5 | IG carousel + FB multi-photo |
 | **Thu** | 5:30 pm | **Word of Mouth Thursday** — a real customer, verbatim | Proof + People | review card, 4:5 | FB + IG feed |
 | **Fri** | 12:00 | **Friday Fire** — steam, fire, oil, the clock | The Boil | reel, 9:16, sound on | FB + IG reels |
@@ -25,9 +25,9 @@ mix (30 · 25 · 20 · 15 · 10). If a week drifts past one offer slot, it is ou
 
 1. **The segment name is the first line of every caption** ("Boil Math Monday." / "Friday Fire.")
    and the mono eyebrow on every graphic (`BOIL MATH · MON 09.21`). That repetition is the point.
-2. **One look.** Shield logo top-left, eyebrow top-right, charcoal ground for graphics. Raw photos
-   stay raw: no type, no logo (deliberately omitted, the one exception to the logo rule). Over-produced
-   organic underperforms; the Labor Day pack proved the raw posts held their own.
+2. **One look.** Shield logo top-left, eyebrow top-right, charcoal ground for graphics. Real photos
+   stay real (no heavy treatment), but carry short copy: a bare iPhone photo "looks lazy" (Evan,
+   2026-09-24, overriding the earlier no-type rule). Stories never use the blurred fade band.
 3. **The Offer slot is a passenger, never a driver.** When a promo, kit or sale is live it rides in
    Thursday's caption tail and Saturday's story. One dedicated offer post a week at most, and only
    inside a live window. Nothing on Monday or Tuesday ever sells.

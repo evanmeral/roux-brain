@@ -42,6 +42,11 @@ produces, what it reads. Evan decides; on a yes, build it in `my-skills/` and wi
 skill ran, update its `instructions.md` in the same session. `/wrap` step 5 is only the
 backstop (Evan, 2026-09-21).
 
+**Corrections fix the source.** When Evan corrects a piece, also fix the skill, rule or
+check that produced the mistake, and log a row in `my-skills/improve/lessons.md`. `/improve`
+(Fridays 1:00) reads that log and proposes changes to Approvals; it never builds on its own
+(Evan, 2026-09-24).
+
 ---
 
 ## Communication rules

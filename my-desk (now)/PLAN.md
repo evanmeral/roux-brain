@@ -98,6 +98,7 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 ## Off-plan log
 *Work Evan asks for that isn't in this plan: date · what · who.*
 
+- **2026-09-24 · Self-improvement loop** (Evan): `/improve` weekly review (Fri 1:00, propose-only), corrections log, results log `what-worked.md`; content-week photo rule corrected. → [decisions](decisions.md)
 - **2026-09-22 · Full Meta ad review with per-product CAC** (Evan) — every campaign and ad read against the incremental-rule ceilings; Beau's three calls approved (rolling-boil trigger, `18qt-004` off Sept 25, the no-sale kill rule above). → [Finn](../my-work%20(outputs)/internal/reports/2026-09-22-meta-ad-review-finn.md) · [Beau](../my-work%20(outputs)/internal/reports/2026-09-22-meta-calls-beau.md)
 - **2026-09-17 · Kits rebuilt in the Shopify Bundles app** (Jay via Evan) — Evan created the three bundles, ROUX finished them; prices moved to ~6% off the parts total. Not in the plan, which assumed the Sept 16 drafts were final.
 - **2026-09-17 · Discount-code exposure read** (Evan/Jay) — 70 active codes checked because the 6% sits inside the kit price. → [code exposure](../my-work%20(outputs)/internal/2026-09-17-kit-discount-code-exposure.md)

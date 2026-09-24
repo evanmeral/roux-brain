@@ -204,6 +204,7 @@ ROUX/
 | [/hand-off](../my-skills/hand-off/instructions.md) | Save your place so a fresh conversation can continue |
 | [/support](../my-skills/support/instructions.md) | Get help if something is not working |
 | [/tidy-brain](../my-skills/tidy-brain/instructions.md) | Free disk space: finds duplicate images, superseded render rounds, helper files and old exports, shows you the list by size, and moves only what you approve to the Trash (you empty it). Text history gets archived, never deleted. Suggested monthly, first Monday |
+| [/improve](../my-skills/improve/instructions.md) | The weekly self-improvement review, Fridays 1:00 (scheduled). Reads the week's corrections, approvals, results and work, then puts up to three system changes (new skill, new check, merge, cut) and up to three business ideas in Approvals, each with evidence. Proposes only; nothing is built until you approve. Keeps the corrections log (`lessons.md`) and the results log (`what-worked.md`) |
 
 ---
 

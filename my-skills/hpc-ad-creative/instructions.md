@@ -11,6 +11,7 @@ Renders HTML/CSS → PNG at exact ad pixel sizes via headless Chrome. No design 
 - `my-files (knowledge)/hpc-reference/customer-language.md` — the objection, the Yeti frame, real verbatims
 - `my-business (context)/what-we-sell.md` — prices, sizes, **Powered vs Performance**, priority tiers
 - `my-business (context)/how-we-sound.md` — voice rules and banned phrasing
+- `my-files (knowledge)/hpc-reference/what-worked.md` — **Patterns**: which hooks, formats and products actually got tagged customers
 - `work/creative/README.md` — the system
 
 ## Build
@@ -19,6 +20,8 @@ Renders HTML/CSS → PNG at exact ad pixel sizes via headless Chrome. No design 
 cd "my-skills/hpc-ad-creative/work/creative"
 ./build.sh templates/<template>.html 1080x1350 drafts/<name>.png
 ```
+
+Renders run in **chrome-headless-shell** (`~/Library/Application Support/ROUX/`, installed 2026-09-24): same engine as Chrome, no Dock icon per render. `build.sh`, `rubric_check.py`, `check-centering.py` and `heights.py` fall back to the Chrome app if it's missing. It doesn't auto-update; refresh it from Chrome for Testing now and then.
 
 Author templates at **true ad pixel size** (1 CSS px = 1 output px). Import `../brand.css`.
 
