@@ -10,7 +10,9 @@
       "does": "Closes the open gap on the board: the brain has had no off-machine copy since it left iCloud. If the Mac dies, you lose nothing, and every past version stays readable.",
       "cost": "Free",
       "costSource": "GitHub Free plan: unlimited private repos (github.com/pricing, Scout, 2026-09-24)",
-      "status": "new"
+      "status": "yes",
+      "note": null,
+      "decided": "2026-09-24"
     },
     {
       "id": "p-2026-09-24-post-results",
@@ -22,7 +24,9 @@
       "does": "Closes the loop on content: Sage sees which slots and formats earn attention, and the next content week is planned from results, not guesses.",
       "cost": "Free",
       "costSource": "Uses the Meta connector read-only. First step is checking it can read organic post results; if it cannot, Metricool (paid, below) can.",
-      "status": "new"
+      "status": "yes",
+      "note": null,
+      "decided": "2026-09-24"
     },
     {
       "id": "p-2026-09-24-review-language",
@@ -34,7 +38,9 @@
       "does": "Maya and Sage write ads and captions in customers' own words. Real phrases usually beat ones we invent.",
       "cost": "Free",
       "costSource": "Runs on your Claude plan",
-      "status": "new"
+      "status": "yes",
+      "note": null,
+      "decided": "2026-09-24"
     },
     {
       "id": "p-2026-09-24-30qt-ceiling",
@@ -46,7 +52,9 @@
       "does": "Two live ads (Video_Jay 30qt and Heavy Duty Heat.30qt) can't be read against a kill line today. This lets the kill table cover them.",
       "cost": "Free",
       "costSource": "Beau, from margin data already on file",
-      "status": "new"
+      "status": "yes",
+      "note": null,
+      "decided": "2026-09-24"
     },
     {
       "id": "p-2026-09-24-canva-connect",
@@ -58,7 +66,9 @@
       "does": "ROUX can resize a design for each placement, check it against the brand kit, and pull your Canva work into Posts without downloads.",
       "cost": "Free (you already pay for Canva)",
       "costSource": "Canva $18/mo already on the budget; the connector adds nothing",
-      "status": "new"
+      "status": "yes",
+      "note": null,
+      "decided": "2026-09-24"
     },
     {
       "id": "p-2026-09-24-metricool",
@@ -94,7 +104,9 @@
       "does": "Read the board, the plan and any report from your phone at a trade show or in the shop. It is not a backup.",
       "cost": "$5/mo, or $4/mo yearly (Standard, 1 GB). Plus: $10/mo, or $8/mo yearly (10 GB)",
       "costSource": "obsidian.md/sync (Scout, 2026-09-24)",
-      "status": "new"
+      "status": "no",
+      "note": "not really needing this on my phone, maybe we reconsider this at a later date if i end up wanting to use my phone to do some stuff",
+      "decided": "2026-09-24"
     },
     {
       "id": "p-2026-09-24-ahrefs",
@@ -106,7 +118,9 @@
       "does": "Lets us check Coalition's SEO reports against a second source, and see what search terms competitors win on.",
       "cost": "$29/mo (Starter); Lite is $129/mo",
       "costSource": "ahrefs.com/pricing (Scout, 2026-09-24). Yearly prices not confirmed.",
-      "status": "new"
+      "status": "no",
+      "note": "we could look at this later, if we end up taking over the SEO work way later down the line",
+      "decided": "2026-09-24"
     },
     {
       "id": "p-2026-09-24-claude-max20",
@@ -118,7 +132,9 @@
       "does": "Room for long runs (content week, full ad reviews, scheduling) on the same day without hitting a usage cap. Skip it if you never hit one.",
       "cost": "$200/mo ($100 more than today)",
       "costSource": "support.claude.com Max plan article (Scout, 2026-09-24)",
-      "status": "new"
+      "status": "no",
+      "note": "we don't need this, i don't seem to hit the usage limit but if we ever do hit it a couple of times then i will get it",
+      "decided": "2026-09-24"
     },
     {
       "id": "p-2026-09-24-triple-whale",
@@ -132,5 +148,6 @@
       "costSource": "apps.shopify.com/triplewhale-1 (Scout, 2026-09-24). Triple Whale's own page blocked the check.",
       "status": "new"
     }
-  ]
+  ],
+  "updatedAt": "2026-09-24T19:00:25.509Z"
 }

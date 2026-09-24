@@ -12,6 +12,7 @@
 const fs = require('fs');
 const path = require('path');
 const { cleanStr, HttpError } = require('./util');
+const postResults = require('./post-results'); // organic results per piece, read by a button session (never by this server)
 
 const WEEK_ID = /^\d{4}-\d{2}-\d{2}$/;
 const PIECE_ID = /^\d{1,2}-[a-z]{2,12}$/;
@@ -61,7 +62,7 @@ module.exports = function makePosts({ todayIso, desk }) {
     try { w = m.getWeek(id); } catch (e) { throw new HttpError(404, e.message); }
     try { pf = m.preflight(id); } catch (e) { pf = { error: e.message, pieces: [], summary: null, referenceErrors: [] }; }
     const checksById = new Map((pf.pieces || []).map((p) => [p.id, p]));
-    const sent = notesSent();
+    const sent = notesSent(); const R = postResults.read();
     const pieces = w.pieces.map((p) => {
       const c = checksById.get(p.id) || null;
       return {
@@ -72,6 +73,7 @@ module.exports = function makePosts({ todayIso, desk }) {
         // Alternates (an option B for Evan to pick) carry media URLs so the panel can show them under the piece.
         alternates: (p.alternates || []).map((alt) => ({ label: alt.label || '', media: (alt.media || []).map((f) => { let exists = false; try { exists = fs.existsSync(m.mediaPath(id, f)); } catch (_) {} return { file: f, exists, url: `/api/posts/media?week=${encodeURIComponent(id)}&file=${encodeURIComponent(f)}` }; }) })),
         notesSent: sent.get(id + '|' + p.id) || [],
+        results: postResults.forPiece(R, id, p), // null = nothing to say (never read, or had not run by the read)
         notes: p.notes || [], commercial: !!p.commercial,
         evidence: (p.evidence || []).map((e) => ({ at: e.at, source: e.source, platform: e.platform, readBack: e.readBack })),
         media: (p.media || []).map((f, i) => { const ext = path.extname(f).toLowerCase(); let exists = false; try { exists = fs.existsSync(m.mediaPath(id, f)); } catch (_) {} return { file: f, n: i + 1, kind: ext === '.mp4' || ext === '.mov' ? 'video' : 'image', exists, url: `/api/posts/media?week=${encodeURIComponent(id)}&file=${encodeURIComponent(f)}` }; }),
@@ -80,7 +82,7 @@ module.exports = function makePosts({ todayIso, desk }) {
         canApprove: p.status === 'draft' && !!c && c.badge !== 'fail',
       };
     });
-    return { week: w.week, from: w.from, to: w.to, timezone: w.timezone, updatedAt: w.updatedAt, builtAt: w.builtAt, days: w.days, pieces, preflight: { ok: pf.ok, ranAt: pf.ranAt, summary: pf.summary, referenceErrors: pf.referenceErrors || [], error: pf.error || null } };
+    return { week: w.week, from: w.from, to: w.to, timezone: w.timezone, updatedAt: w.updatedAt, builtAt: w.builtAt, days: w.days, pieces, results: resultsMeta(R), preflight: { ok: pf.ok, ranAt: pf.ranAt, summary: pf.summary, referenceErrors: pf.referenceErrors || [], error: pf.error || null } };
   }
 
   // Home-screen count: pieces waiting on Evan's approval, and pieces failing preflight, in weeks that have not ended.
@@ -139,7 +141,7 @@ module.exports = function makePosts({ todayIso, desk }) {
 
   // Planner: every piece in every week, flat, for the calendar view. Media is the first frame only.
   function planner() {
-    const m = need(); const out = [];
+    const m = need(); const out = []; const R = postResults.read();
     for (const w of m.listWeeks()) {
       if (!w.hasManifest) continue;
       let wk; try { wk = m.getWeek(w.id); } catch (_) { continue; }
@@ -148,11 +150,19 @@ module.exports = function makePosts({ todayIso, desk }) {
         let exists = false; if (first) { try { exists = fs.existsSync(m.mediaPath(w.id, first)); } catch (_) {} }
         out.push({ week: w.id, id: p.id, segment: p.segment || '', type: p.type, placements: p.placements || [], status: p.status, approved: !!p.approved,
           date: p.scheduledFor ? p.scheduledFor.date : null, time: p.scheduledFor ? p.scheduledFor.time : null, when: p.when || null,
-          frames: (p.media || []).length, caption: ((p.caption && (p.caption.instagram || p.caption.facebook)) || '').slice(0, 280),
+          frames: (p.media || []).length, results: postResults.forPiece(R, w.id, p), caption: ((p.caption && (p.caption.instagram || p.caption.facebook)) || '').slice(0, 280),
           thumb: first && exists ? { url: `/api/posts/media?week=${encodeURIComponent(w.id)}&file=${encodeURIComponent(first)}`, kind: ext === '.mp4' || ext === '.mov' ? 'video' : 'image' } : null });
       }
     }
-    return { today: todayIso(), pieces: out };
+    return { today: todayIso(), pieces: out, results: resultsMeta(R) };
+  }
+
+  // The header line for results: when the last read was, which feeds could not be read, and a
+  // parse error in plain words. present:false means no read has ever run.
+  function resultsMeta(R) {
+    if (!R.present) return { present: false, error: R.error || null };
+    const down = Object.entries(R.feeds || {}).filter(([, f]) => f && !f.ok).map(([k, f]) => ({ feed: k, error: f.error }));
+    return { present: true, error: R.error || null, readAt: R.readAt || null, source: R.source || null, down, unmatched: (R.unmatched || []).length };
   }
 
   // Counts the two session buttons need: notes not yet worked (still in capture.md), and approved

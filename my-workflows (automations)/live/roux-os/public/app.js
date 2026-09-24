@@ -385,7 +385,9 @@ function renderRoutine() {
   btn.disabled = false;
   if (p.last) {
     const t = new Date(p.last.at).toLocaleString('en-US', { timeZone: STATE ? STATE.timezone : undefined, month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
-    el.textContent = `pulse ${p.last.status} ${t} · ${p.schedule}`;
+    const why = p.last.status === 'failed' ? (p.last.detail || '').split(' · ')[1] || '' : '';
+    const hint = /authenticate|logged in|login/i.test(why) ? ' — run `claude auth login` in a terminal' : '';
+    el.textContent = `pulse ${p.last.status} ${t}` + (why ? `: ${why}${hint}` : ` · ${p.schedule}`);
     el.title = p.last.detail || '';
   } else el.textContent = `pulse: never run · ${p.schedule}`;
 }
@@ -425,7 +427,8 @@ function refreshOpenTab(what) {
   if (what === 'graph') GRAPH.refresh(!!on('home'));
   else if (on('home') && what && /\.md$/.test(what)) GRAPH.refresh(true);
   if (what && /reminders\.md/.test(what)) loadReminders();
-  if (on('planner') && (what === 'posts' || /capture\.md/.test(what || ''))) loadPlanner();
+  if (on('planner') && (what === 'posts' || /capture\.md|post-results\.json/.test(what || ''))) loadPlanner();
+  if (on('posts') && /post-results\.json/.test(what || '') && !document.querySelector('#posts-body [data-note]:focus')) loadPosts(true);
   if ((on('budget') || on('paidmedia')) && (what === 'budget' || /BOARD\.md/.test(what || '')) && !document.querySelector('#budget-body input:focus')) loadBudget();
   if (on('proposals') && /proposals\.json/.test(what || '') && !document.querySelector('#proposals-body input:focus')) loadProposals();
   if (on('posts') && /capture\.md/.test(what || '') && !document.querySelector('#posts-body [data-note]:focus')) loadPosts(true);

@@ -53,6 +53,8 @@ line (`- [ ] short note · added YYYY-MM-DD by ROUX`) for anything Evan must rem
 board row. In `my-desk (now)/proposals.json`, a `yes` becomes work (board line or Nova's queue), a
 `no` goes to `decisions.md` with Evan's note so it is never re-proposed the same way, and a `later`
 stays put. Add any new idea ROUX had this session as a `new` item, free or paid, with a sourced cost.
+Before proposing a connector or tool, **call it first**: the "needs authorization" list can name a
+duplicate of a connector that already works (Canva, 2026-09-24).
 **Keep `my-desk (now)/launches.md` current** too: tick nothing yourself, but add gates for a new
 launch (each with owner, due date and source) and move a launch that has passed to `archive/`.
 

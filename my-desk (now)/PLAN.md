@@ -77,7 +77,7 @@ Ceiling **$350/day**. These are caps, not spend targets. No new money. Moment ad
 | Retargeting pots / 18 QT | Frequency > 3.5 → cut ⅓ · > $60 per purchase after 4 days → pause | Day 14+: frequency ≤ 2.5 · ≤ $40 / $30 · tagged orders > 0 |
 | **Any ad, no-sale rule** *(Evan, 2026-09-22)* | Spend reaches **3× its incremental ceiling with 0 Shopify-tagged new customers**, or **2×** if Meta's purchase count is also 0. Taggable ads only — an ad whose ad ID does not reach Shopify is read on Meta's count alone | — |
 
-Ceilings for that rule: 18 QT $73–$100 · 120 QT Powered $195.34 · Platinum bundle $194.58 · Performance pots $189.23 · Triple Jet alone $130.06 *(incremental rule, [overhead-method-options](../my-work%20(outputs)/internal/reports/2026-09-10-overhead-method-options.md), 2026-09-10)*.
+Ceilings for that rule: 18 QT $73–$100 · 120 QT Powered $195.34 · Platinum bundle $194.58 · Performance pots $189.23 · Triple Jet alone $130.06 *(incremental rule, [overhead-method-options](../my-work%20(outputs)/internal/reports/2026-09-10-overhead-method-options.md), 2026-09-10)*. · **30 QT Powered $105.06** ($95.58–$105.06; kill at $315.18 = 3×, $210.12 = 2×) *(incremental rule, same method, Jun–Aug order mean; [Beau 2026-09-24](../my-work%20(outputs)/internal/reports/2026-09-24-30qt-cac-ceiling-beau.md), approved via Evan's proposal yes)*.
 
 A kill that fires goes to Evan within 4 days. One edit per ad set per checkpoint. Every new ad: full UTMs, Shop off, Messenger off.
 

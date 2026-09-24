@@ -41,7 +41,7 @@ function renderPosts() {
       <button class="btn ${A.pendingNotes ? 'is-primary' : ''}" id="posts-review" title="Opens a Claude session: Sage works every note and approval for this week, reloads the pieces here, and says 'ready for review in Posts'. Schedules nothing.">Have ROUX review notes${A.pendingNotes ? ` · ${A.pendingNotes}` : ''}</button>
       <button class="btn ${A.toSchedule.length ? 'is-primary' : ''}" id="posts-schedule" ${A.toSchedule.length ? '' : 'disabled'} title="${A.toSchedule.length ? `Opens a Claude session that schedules ${esc(A.toSchedule.join(', '))} in Business Suite and reads each one back` : 'Nothing approved is waiting to be scheduled'}">Schedule approved posts${A.toSchedule.length ? ` · ${A.toSchedule.length}` : ''}</button>
       <span class="mono stamp" id="posts-act-status"></span></div>` : '';
-  let html = `<div class="board-sec posts-top"><div><span class="eyebrow">Posts</span><span class="mono stamp">approve or send back here · the two buttons open a Claude session to do the work · this page never posts anything itself</span></div>${withManifest.length ? picker : ''}${bar}</div>`;
+  let html = `<div class="board-sec posts-top"><div><span class="eyebrow">Posts</span><span class="mono stamp">approve or send back here · the two buttons open a Claude session to do the work · this page never posts anything itself</span></div>${withManifest.length ? picker : ''}${bar}${d && !d.error ? resultsBar(d.results, 'posts') : ''}</div>`;
   if (!withManifest.length) { box.innerHTML = html + '<div class="board-sec empty">No week has a schedule.json yet. A content-week session builds one from the plan.</div>'; return; }
   if (!d) { box.innerHTML = html + '<div class="empty">Loading…</div>'; wirePosts(); return; }
   if (d.error) { box.innerHTML = html + `<div class="board-sec bad">${esc(d.error)}</div>`; wirePosts(); return; }
@@ -91,6 +91,7 @@ function postCard(p, inner) {
     <div class="post-main">
       <div class="post-head"><strong>${esc(p.segment || p.id)}</strong><span class="pill">${esc(p.type)}${p.media.length > 1 ? ` · ${p.media.length} frames` : ''}</span><span class="pill">${esc(p.placements.join(' + '))}</span><span class="pill is-st-${esc(p.status)}">${esc(p.status)}</span><span class="pf is-${esc(badge)}">preflight ${esc(badge === 'warn' ? 'to check' : badge)}</span><span class="mono stamp">${esc(p.id)}</span></div>
       <div class="post-when">${esc(p.when || 'no time set')}${pf && pf.manualUpload ? ' · <span class="warn">over the browser upload limit: you upload this one by hand</span>' : ''}</div>
+      ${resultsHtml(p.results, false)}
       ${p.conditional ? `<div class="post-cond">${esc(typeof p.conditional === 'string' ? p.conditional : JSON.stringify(p.conditional))}</div>` : ''}
       ${hasCaption ? `<div class="post-caps">${cap('Facebook', p.caption.facebook)}${cap('Instagram', p.caption.instagram)}</div>` : '<div class="dim post-nocap">A story: no caption.</div>'}
       ${p.firstComment ? `<div class="post-cap"><span class="mono stamp">First comment</span><div class="post-cap-t">${esc(p.firstComment)}</div></div>` : ''}
@@ -108,6 +109,7 @@ function postCard(p, inner) {
 }
 
 function wirePosts() {
+  wireResultsButton($('posts-body'));
   const sel = $('posts-week');
   if (sel) sel.addEventListener('change', () => { POSTS.weekId = sel.value; POSTS.data = null; renderPosts(); loadPostWeek(); });
   const sessionBtn = (id, url, okMsg) => { const b = $(id); if (!b) return; b.addEventListener('click', async () => {
@@ -136,4 +138,48 @@ function wirePosts() {
       if (j) { toast('Sent back. Sage sees your note next session. The piece stays unapproved.'); noteEl.value = ''; loadState().catch(() => {}); }
     });
   });
+}
+
+// ---- Post results (shared with the Planner) ----
+// How a post did after it ran, from my-desk (now)/pulse/post-results.json. A button-started session
+// fills that file from Business Suite (read-only); this page never reaches Meta. No read = nothing
+// on the card, never zeros. A feed that could not be read says so in red.
+const PR_LABEL = { reach: 'reach', views: 'views', likes: 'likes', comments: 'comments', shares: 'shares', saves: 'saves' };
+const prLabel = (k, n) => (n === 1 && k !== 'reach' ? PR_LABEL[k].replace(/s$/, '') : PR_LABEL[k]);
+const prDate = (iso) => { const t = Date.parse(iso); return Number.isNaN(t) ? '' : new Date(t).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }); };
+function resultsHtml(r, compact) {
+  if (!r) return '';
+  if (r.error) return `<div class="pr bad">Results: ${esc(r.error)}</div>`;
+  const keys = compact ? ['reach', 'likes', 'comments', 'saves'] : ['reach', 'views', 'likes', 'comments', 'shares', 'saves'];
+  // Same error on every platform (a story feed that could not be read): say it once.
+  const ents = Object.entries(r.platforms); const errs = ents.map(([, v]) => v.error || null);
+  if (ents.length > 1 && errs.every((e) => e && e === errs[0])) {
+    const tags = ents.map(([plat]) => `<span class="pl-plat is-${esc(plat)}">${plat === 'facebook' ? 'FB' : 'IG'}</span>`).join('');
+    return `<div class="pr ${compact ? 'is-compact' : ''}"><div class="pr-row">${tags}<span class="bad" title="${esc(errs[0])}">${compact ? 'not readable' : 'not readable: ' + esc(errs[0])}</span></div><div class="pr-read mono">read ${esc(prDate(r.readAt))}</div></div>`;
+  }
+  const rows = ents.map(([plat, v]) => {
+    const tag = `<span class="pl-plat is-${esc(plat)}">${plat === 'facebook' ? 'FB' : 'IG'}</span>`;
+    if (v.missing) return `<div class="pr-row">${tag}<span class="warn" title="The post had run by the read, but no row in Business Suite matched its date and time">not found in the read</span></div>`;
+    if (v.error) return `<div class="pr-row">${tag}<span class="bad" title="${esc(v.error)}">${compact ? 'not readable' : 'not readable: ' + esc(v.error)}</span></div>`;
+    const cells = keys.filter((k) => typeof v[k] === 'number').map((k) => `<span class="pr-m"><b>${v[k].toLocaleString('en-US')}</b> ${prLabel(k, v[k])}</span>`);
+    return `<div class="pr-row">${tag}${cells.join('') || '<span class="dim">no numbers reported</span>'}</div>`;
+  }).join('');
+  return `<div class="pr ${compact ? 'is-compact' : ''}">${rows}<div class="pr-read mono">read ${esc(prDate(r.readAt))}</div></div>`;
+}
+// The line above the cards: last read, feeds that could not be read, and the button.
+function resultsBar(meta, where) {
+  const m = meta || { present: false };
+  let say;
+  if (m.error) say = `<span class="bad">${esc(m.error)}</span>`;
+  else if (!m.present) say = '<span class="dim">No post results read yet.</span>';
+  else say = `<span class="mono stamp" title="${esc(m.source || '')}">results read ${esc(prDate(m.readAt))} ${esc(new Date(m.readAt).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }))}</span>${(m.down || []).map((d) => `<span class="bad" title="${esc(d.error || '')}">${esc(d.feed[0].toUpperCase() + d.feed.slice(1))}: not readable</span>`).join('')}${m.unmatched ? `<span class="warn">${m.unmatched} row${m.unmatched === 1 ? '' : 's'} matched no post</span>` : ''}`;
+  return `<div class="pr-bar"><button class="btn btn-sm" data-read-results="${esc(where)}" title="Opens a Claude session that reads each post's reach, likes, comments, shares and saves from Business Suite (read-only) and puts them on these cards. Runs only when pressed.">Read post results</button>${say}</div>`;
+}
+function wireResultsButton(root) {
+  root.querySelectorAll('[data-read-results]').forEach((b) => b.addEventListener('click', async () => {
+    b.disabled = true;
+    const j = await postJson('/api/posts/results/read', {});
+    if (j) toast('Reading post results in a session. The cards fill in when it writes the file.');
+    setTimeout(() => { b.disabled = false; }, 4000);
+  }));
 }

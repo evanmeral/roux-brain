@@ -27,6 +27,7 @@ comments and DMs.
 2. `my-business (context)/how-we-sound.md`
 3. `my-workflows (automations)/playbooks/content-engine.md` — the pillar mix and format rules
 4. `my-files (knowledge)/hpc-reference/customer-language.md`
+   Then the **latest monthly swipe file** linked from `my-files (knowledge)/hpc-reference/customer-language/README.md` — read it before writing any copy; its guardrails and do-not-use list apply
 5. `my-desk (now)/BOARD.md` — what is already scheduled, and the Landmines
 6. `my-skills/content-week/weekly-format.md` — the six standing weekly slots. **Every organic piece
    belongs to one of them**; `my-work (outputs)/content/social/LOG.md` says what has already run.

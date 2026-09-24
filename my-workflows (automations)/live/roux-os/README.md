@@ -90,6 +90,7 @@ Shopify (ShopifyQL), both calendars, the board, key dates, capture. Writes `toda
 | `…/affiliates/flags.json` | Affiliates evidence flags, top referrer, returning, the calc rate (drop-in) | yes | no |
 | `…/affiliates/uppromote-import.json` | Paid column, Paid out and Approved tiles (Referrals export, commission by status), approved balance, UpPromote site / sign-up / socials / status, On UpPromote flag check | yes | **yes**, from an UpPromote export Evan made (.xlsx or CSV) |
 | `my-inbox (new inputs)/*.xlsx`, `*.csv` | Offered for import on the Affiliates tab. Read, never moved | names | no |
+| `my-desk (now)/pulse/post-results.json` | Planner and Posts cards: reach · views · likes · comments · shares · saves per piece and platform, "read <date>", feeds that could not be read in red. Written by `post-results.js write`, run by the **Read post results** session (Business Suite through Chrome, read-only; runbook `my-skills/content-week/post-results.md`). No file = nothing on the cards | yes | no |
 | `my-work (outputs)/content/social/<Monday>-week/schedule.json` | Posts tab and tile, **through `live/post-scheduler/` only** | yes | **`approve()` only** |
 
 Every write is a temp file plus rename, so a crash cannot leave half a file. Nothing is ever deleted:
@@ -119,6 +120,7 @@ field checked and length-capped on the server. A refusal comes back as `{error}`
 | `GET /api/approvals` · `POST /api/approvals/resolve` | `{id, decision: approve, reject or reopen, note}`; a reject needs a note; a `live-write` becomes `queued`, never `approved` |
 | `GET /api/posts` · `/api/posts/week?id=` · `/api/posts/media?week=&file=` | weeks · one week with preflight · media, served only via the scheduler's `mediaPath()` and only for files a piece lists |
 | `POST /api/posts/approve` · `/api/posts/sendback` | `approve(week, piece, note, {via:'os'})`, refused for a non-draft or a piece failing preflight · a "Content note, … — Sage" capture line; the piece is left as it is |
+| `POST /api/posts/results/read` | Opens the **Read post results** session in Terminal (button-only, like Pulse). The server itself never reaches Meta |
 | `GET /api/score` | PLAN.md's pace line, scoreboard and kill rules as written, plus the kill-line drop-in |
 
 **For agents:** `node approvals.js add '<json>'` · `list` · `archive` (run from anywhere; never hand-edit
@@ -129,7 +131,7 @@ field checked and length-capped on the server. A refusal comes back as `{error}`
 `server.js` (http, guard, routes, SSE file watch, capture, sessions) · `util.js` (atomic write,
 rolling backup, input cleaning) · `board.js` (board parser) · `affiliates.js` (roster, sales / flags /
 import join) · `uppromote.js` (CSV parser and tolerant column mapper) · `xlsx.js` (.xlsx reader on built-in zlib, no dependency) · `launches.js` · `approvals.js`
-(queue + the agents' CLI) · `posts.js` (thin wrapper over `../post-scheduler`) · `score.js` ·
+(queue + the agents' CLI) · `posts.js` (thin wrapper over `../post-scheduler`) · `post-results.js` (matches Business Suite rows to pieces, writes and reads `pulse/post-results.json`; also a CLI) · `score.js` ·
 `md.js` (markdown to HTML; relative links become `obsidian://`) · `ics.js` (calendars, cached 5 min) ·
 `public/` (one page, vanilla JS, one script per tab: `app.js`, `affiliates.js`, `launches.js`,
 `approvals.js`, `posts.js`, `score.js`). Still one dependency: `node-ical`, pinned. After any change:

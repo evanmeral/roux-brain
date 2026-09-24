@@ -479,6 +479,15 @@ const server = http.createServer(async (req, res) => {
       return send(res, 200, { ok: true, week: a.week, count: p === '/api/posts/review' ? a.pendingNotes : a.toSchedule.length });
     }
     if (p === '/api/planner' && req.method === 'GET') return send(res, 200, posts.planner());
+    // Read post results: button-only, like Pulse. Opens a session that reads Business Suite (read-only,
+    // Claude in Chrome; the Ads connector cannot read organic results) and writes pulse/post-results.json
+    // through post-results.js. This server never reaches Meta itself.
+    if (p === '/api/posts/results/read' && req.method === 'POST') {
+      const prompt = `Read post results, from the ROUX OS button. Follow my-skills/content-week/post-results.md exactly: Meta Business Suite through Claude in Chrome, read-only (open no composer, no Edit panel, no Boost, change no setting), the Published posts table and Stories, every post since the oldest week that has a schedule.json. Write the rows to your scratchpad and run node "my-workflows (automations)/live/roux-os/post-results.js" write <file>. Report what matched, what ran but was not found, and any feed you could not read, in plain words. Never write a 0 for a number you did not read.`;
+      try { await startSession(prompt); } catch (e) { return send(res, 500, { error: 'Could not open Terminal: ' + e.message }); }
+      appendCapture('', 'Asked ROUX to read post results from Business Suite (Planner/Posts button).');
+      return send(res, 200, { ok: true });
+    }
     // ---- reminders (Home) ----
     if (p === '/api/reminders' && req.method === 'GET') return send(res, 200, reminders.view());
     if (p === '/api/reminders/add' && req.method === 'POST') { const r = reminders.add(await readBody(req)); log('reminder add', r.text.slice(0, 60)); return send(res, 200, r); }

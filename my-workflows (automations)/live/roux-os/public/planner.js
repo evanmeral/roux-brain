@@ -18,6 +18,13 @@ function pMonday(iso) { const d = pDate(iso); const dow = (d.getUTCDay() + 6) % 
 const P_STATUS = { verified: ['is-ok', 'Scheduled'], scheduled: ['is-ok', 'Scheduled'], queued: ['is-ok', 'Queued'], approved: ['is-appr', 'Approved'], draft: ['is-draft', 'Draft'], dropped: ['is-drop', 'Dropped'] };
 function p12(t) { if (!t) return ''; const [h, m] = t.split(':').map(Number); return `${((h + 11) % 12) + 1}:${String(m).padStart(2, '0')} ${h < 12 ? 'am' : 'pm'}`; }
 
+// Month view has no room for numbers: one line of reach per platform, the rest in Posts.
+function resultsDot(r) {
+  if (!r) return '';
+  if (r.error) return '<div class="pr-dot bad">results unreadable</div>';
+  const bits = Object.entries(r.platforms).map(([plat, v]) => `${plat === 'facebook' ? 'FB' : 'IG'} ${v.missing ? '?' : v.error ? '—' : typeof v.reach === 'number' ? v.reach.toLocaleString('en-US') : '—'}`);
+  return `<div class="pr-dot mono" title="reach · read ${esc(prDate(r.readAt))}">${esc(bits.join(' · '))}</div>`;
+}
 function renderPlanner() {
   const box = $('planner-body'); const v = PLANNER.data;
   if (!v) { box.innerHTML = '<div class="empty">Loading…</div>'; return; }
@@ -44,7 +51,7 @@ function renderPlanner() {
   let html = `<div class="board-sec pl-top">
     <div class="pl-nav"><button class="btn btn-sm" data-step="-1" aria-label="Back">‹</button><span class="pl-title">${esc(title)}</span><button class="btn btn-sm" data-step="1" aria-label="Forward">›</button><button class="btn btn-sm" data-step="0">Today</button></div>
     <div class="pl-tools">${seg('platform', [['all', 'All'], ['facebook', 'Facebook'], ['instagram', 'Instagram']], PLANNER.platform)}${seg('view', [['week', 'Week'], ['month', 'Month']], PLANNER.view)}</div>
-    <div class="mono stamp pl-sum">${inRange.length} post${inRange.length === 1 ? '' : 's'} in view · from the post queue, read-only · click a post to open it in Posts</div></div>`;
+    <div class="mono stamp pl-sum">${inRange.length} post${inRange.length === 1 ? '' : 's'} in view · from the post queue, read-only · click a post to open it in Posts</div>${resultsBar(v.results, 'planner')}</div>`;
 
   const card = (p, big) => {
     const st = P_STATUS[p.status] || ['', p.status];
@@ -52,7 +59,7 @@ function renderPlanner() {
     const thumb = p.thumb ? (p.thumb.kind === 'video' ? `<video src="${esc(p.thumb.url)}#t=0.5" muted preload="metadata"></video>` : `<img src="${esc(p.thumb.url)}" alt="" loading="lazy">`) : '<div class="pl-nothumb">no media</div>';
     return `<button class="pl-card ${st[0]} ${big ? 'is-big' : ''} is-${esc(p.type)}" data-week="${esc(p.week)}" data-piece="${esc(p.id)}" title="${esc((p.segment ? p.segment + ' · ' : '') + p.type + ' · ' + st[1])}">
       <div class="pl-thumb">${thumb}${p.frames > 1 ? `<span class="pl-frames">${p.frames}</span>` : ''}</div>
-      <div class="pl-meta"><div class="pl-time">${esc(p12(p.time))}${plats}</div><div class="pl-name">${esc(p.segment || p.id)}</div><div class="pl-type">${esc(p.type)} · <span class="pl-st">${esc(st[1])}</span></div>${big && p.caption ? `<div class="pl-cap">${esc(p.caption)}</div>` : ''}</div></button>`;
+      <div class="pl-meta"><div class="pl-time">${esc(p12(p.time))}${plats}</div><div class="pl-name">${esc(p.segment || p.id)}</div><div class="pl-type">${esc(p.type)} · <span class="pl-st">${esc(st[1])}</span></div>${big ? resultsHtml(p.results, true) : resultsDot(p.results)}${big && p.caption && !p.results ? `<div class="pl-cap">${esc(p.caption)}</div>` : ''}</div></button>`;
   };
 
   if (PLANNER.view === 'week') {
@@ -62,6 +69,7 @@ function renderPlanner() {
   }
   if (!v.pieces.length) html += '<div class="board-sec empty">No week has a schedule.json yet. A content-week session builds one from the plan.</div>';
   box.innerHTML = html;
+  wireResultsButton(box);
 
   box.querySelectorAll('[data-step]').forEach((b) => b.addEventListener('click', () => {
     const n = Number(b.dataset.step);

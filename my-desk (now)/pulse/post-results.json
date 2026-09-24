@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "readAt": "2026-09-24T14:05:00-05:00",
+  "source": "Meta Business Suite → Content → Posts & reels → Published, Last 90 days (Jun 26 – Sep 23), read by Nova via Claude in Chrome, read-only",
+  "by": "Nova, 2026-09-24 (first read)",
+  "feeds": {
+    "facebook": {
+      "ok": true,
+      "error": null
+    },
+    "instagram": {
+      "ok": true,
+      "error": null
+    },
+    "stories": {
+      "ok": false,
+      "error": "Business Suite shows no stories for the last 90 days (Stories → Active and Archived both read \"No activity\"), and Facebook story insights are switched off on the Page. Turning them on is Evan's call in Business Suite."
+    }
+  },
+  "results": {
+    "2026-09-21|3-carousel": {
+      "instagram": {
+        "platform": "instagram",
+        "kind": "post",
+        "published": "2026-09-23 12:00",
+        "caption": "How-To Wednesday. Powered or Performance? Swipe.",
+        "postId": null,
+        "reach": 68,
+        "views": 159,
+        "interactions": 1,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0
+      },
+      "facebook": {
+        "platform": "facebook",
+        "kind": "post",
+        "published": "2026-09-23 12:00",
+        "caption": "How-To Wednesday. Powered or Performance? The question we get most",
+        "postId": null,
+        "reach": 109,
+        "views": 163,
+        "interactions": 2,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0
+      }
+    },
+    "2026-09-21|2-feed": {
+      "instagram": {
+        "platform": "instagram",
+        "kind": "post",
+        "published": "2026-09-22 17:30",
+        "caption": "Shop Floor Tuesday. Every tunnel tube, welded by hand",
+        "postId": null,
+        "reach": 97,
+        "views": 166,
+        "interactions": 2,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0
+      },
+      "facebook": {
+        "platform": "facebook",
+        "kind": "post",
+        "published": "2026-09-22 17:30",
+        "caption": "Shop Floor Tuesday. This is where the seven-minute boil",
+        "postId": null,
+        "reach": 177,
+        "views": 230,
+        "interactions": 2,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0
+      }
+    },
+    "2026-09-21|1-feed": {
+      "facebook": {
+        "platform": "facebook",
+        "kind": "post",
+        "published": "2026-09-21 12:00",
+        "caption": "Boil Math Monday. The speed isn't in the burner. It's in the pot. Flip one",
+        "postId": null,
+        "reach": 213,
+        "views": 313,
+        "interactions": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0
+      },
+      "instagram": {
+        "platform": "instagram",
+        "kind": "post",
+        "published": "2026-09-21 12:00",
+        "caption": "Boil Math Monday. The speed isn't in the burner. It's in the pot. 🔥",
+        "postId": "17959442330997400",
+        "reach": 221,
+        "views": 346,
+        "interactions": 2,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0
+      }
+    }
+  },
+  "notFound": [],
+  "unmatched": [],
+  "writtenAt": "2026-09-24T19:08:11.511Z"
+}

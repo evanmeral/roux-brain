@@ -29,6 +29,7 @@ You run as a subagent, so nothing is pre-loaded.
 2. `my-business (context)/how-we-sound.md` — tone
 3. `my-business (context)/what-we-sell.md` — **never quote a price that is not in this file**
 4. `my-files (knowledge)/hpc-reference/customer-language.md` — use their words, not prettier ones
+   Then the **latest monthly swipe file** linked from `my-files (knowledge)/hpc-reference/customer-language/README.md` — read it before writing any copy; its guardrails and do-not-use list apply
 5. `my-desk (now)/BOARD.md` — what is running, and the Landmines section
 
 ## ⛔ The claims that get people in trouble

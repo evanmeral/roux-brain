@@ -53,6 +53,7 @@ it: report the read-back, list anything `failed` and whether Evan has handled it
 2. `my-business (context)/how-we-sound.md` — voice, banned words, the creative rules.
 3. `weekly-format.md` — the slots and the banks.
    Also `my-files (knowledge)/hpc-reference/what-worked.md` — **Patterns** first: build on what the results say worked.
+   Also **last week's post results**: `my-desk (now)/pulse/post-results.json` (reach, likes, comments, shares, saves per piece, on the ROUX OS Planner cards). Check its `readAt`. If it is older than last week's final post, ask Evan to press **Read post results** before you propose slots. Runbook: `post-results.md`.
 4. `my-desk (now)/BOARD.md` — Running, Now, Landmines. **What is live or launching this week** is
    what the Offer slot may carry, and only if its condition is met (a kit gated on a landmine is not
    live). `my-desk (now)/key-dates.md` for anything landing inside the week.

@@ -849,3 +849,12 @@ details.board-sec > summary { cursor: pointer; }
 /* reminders: remove */
 .rem-x { flex: 0 0 auto; width: 20px; height: 20px; margin-top: -1px; border-radius: 5px; color: var(--dim); font-size: 17px; line-height: 18px; text-align: center; }
 .rem-x:hover { color: var(--flame); background: rgba(255,90,60,.1); }
+/* Post results on Posts and Planner cards (post-results.json). Numbers only where read; never zeros for "not read". */
+.pr { margin: 6px 0 8px; display: flex; flex-direction: column; gap: 3px; }
+.pr-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 13px; color: var(--muted); }
+.pr-m b { color: var(--text); font-weight: 700; }
+.pr.is-compact { margin: 5px 0 0; gap: 2px; }
+.pr.is-compact .pr-row { font-size: 12px; gap: 2px 7px; }
+.pr-read { font-size: 11px; color: var(--dim); }
+.pr-dot { font-size: 11px; color: var(--muted); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pr-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 8px; font-size: 13px; }

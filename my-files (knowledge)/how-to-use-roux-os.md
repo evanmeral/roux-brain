@@ -54,6 +54,16 @@ model. None of it sends anything. None of it touches Shopify, Meta or Google.
   would do and what it costs (sourced). Yes, Later or No with a line. A yes on a paid one is not a
   purchase; you buy it.
 
+**New on 2026-09-24: post results on the cards.** Once a FB or IG post has run, its Planner and
+Posts cards show reach, likes, comments and saves (Posts also shows views and shares), one line
+per platform, with "read <date>". **Read post results** (top of Planner and Posts) opens a session
+that reads the numbers from Business Suite, read-only, and fills the cards. It runs only when you
+press it, like Pulse. The Meta connector cannot read organic posts, so the session reads Business
+Suite. A post with no read shows nothing, never zeros. A feed that could not be read shows in red:
+stories do right now, because Business Suite has no story data and Facebook story insights are
+switched off on the Page. Turning them on is your call. Sage reads last week's results before
+proposing slots.
+
 ## The two-minute morning
 
 1. Open ROUX. Glance at the top bar: the clock, the countdown chips, the dot on the right.
