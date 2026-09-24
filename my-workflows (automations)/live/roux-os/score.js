@@ -6,8 +6,11 @@
 // Reads:  my-desk (now)/PLAN.md                 (tables under "**Pace line**", "## Scoreboard", "## Paid media")
 //         my-desk (now)/pulse/kill-lines.json   (optional drop-in, written by the Thursday scoreboard task)
 //           { "read_at": "2026-09-24", "source": "Meta connector + Shopify, Finn", "window": "last 14 days",
-//             "rows": [ { "name": "ad or campaign", "id": "...", "metric": "Meta cost per purchase",
-//                         "value": "$52.62", "kill_at": "> $189", "status": "under", "note": "" } ] }
+//             "rows": [ { "name": "ad or campaign", "id": "...", "campaign": "18qt-TOF-Prospecting",
+//                         "rule": "18 QT kill line", "spend": "$212.40", "meta_purchases": "4", "tagged": "1",
+//                         "metric": "Meta cost per purchase", "value": "$52.62", "kill_at": "> $189",
+//                         "status": "ok | near | fired | not read", "note": "" } ] }
+//         The status is written by the task. This page never works one out.
 'use strict';
 const fs = require('fs');
 const path = require('path');
@@ -75,7 +78,8 @@ module.exports = function makeScore({ desk, vault, vaultName, todayIso }) {
     if (k.error && k.error !== 'missing') out.killRead = { present: false, error: 'kill-lines.json will not parse: ' + k.error };
     else if (k.data && Array.isArray(k.data.rows)) {
       const s = (v) => (v == null ? '' : String(v).slice(0, 300));
-      out.killRead = { present: true, read_at: s(k.data.read_at), source: s(k.data.source), window: s(k.data.window), rows: k.data.rows.filter((r) => r && typeof r === 'object').slice(0, 60).map((r) => ({ name: s(r.name), id: s(r.id), metric: s(r.metric), value: s(r.value), kill_at: s(r.kill_at), status: s(r.status), note: s(r.note) })) };
+      out.killRead = { present: true, read_at: s(k.data.read_at), source: s(k.data.source), window: s(k.data.window), rows: k.data.rows.filter((r) => r && typeof r === 'object').slice(0, 60).map((r) => ({ name: s(r.name), id: s(r.id), campaign: s(r.campaign), rule: s(r.rule), spend: s(r.spend), meta_purchases: s(r.meta_purchases), tagged: s(r.tagged), metric: s(r.metric), value: s(r.value), kill_at: s(r.kill_at), status: s(r.status), note: s(r.note) })) };
+      out.killRead.ageDays = /^\d{4}-\d{2}-\d{2}/.test(out.killRead.read_at) ? daysBetween(out.killRead.read_at.slice(0, 10), today) : null;
     }
     return out;
   }

@@ -158,10 +158,9 @@ pulse headless (button-only, when Evan presses Pulse now; it is not scheduled). 
 Meta rule in `.claude/settings.json` is now carried under both namings, so publish is denied and
 writes prompt in a Terminal session too. Any new permission rule must be added in both forms.
 
-⚠️ **The n8n "HPC Meta and Google AD Assistant" is still connected at the account level** (the
-CLI lists `ask_marketing_agent`), despite the deletion recorded above on 2026-09-01. It is now
-**denied** in `settings.json` under both namings. Evan can remove it for good in the Claude
-connector settings; Venon is also still listed there, unauthenticated, and should go with it.
+✅ **The n8n "HPC Meta and Google AD Assistant" and Venon are both removed from the Claude
+connector settings** (Evan, 2026-09-24; `ask_marketing_agent` dropped out of the session the same
+day). The deny rules for it in `settings.json` stay as a backstop.
 
 ## 🐙 GitHub
 

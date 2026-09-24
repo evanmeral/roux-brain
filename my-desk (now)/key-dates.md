@@ -6,11 +6,12 @@
 
 | Date | What | Source |
 |---|---|---|
-| 2026-09-24 | Thursday scoreboard #1 · tailgate kit go/no-go · Finn reads `rolling-boil` lifetime spend (trigger $389) | PLAN.md · Evan 2026-09-17 · board note Evan 2026-09-22 |
+| 2026-09-24 | Thursday scoreboard #1 (run 10:16, after the routine repoint) · tailgate kit go/no-go | PLAN.md · Evan 2026-09-17 |
 | 2026-09-25 | First `/improve` weekly review, 1:00 (scheduled; proposals to Approvals) | decisions.md · Evan 2026-09-24 |
-| 2026-09-25 | `18qt-004` pauses in the same Meta edit as Tailgate A + B; Finn's second `rolling-boil` read | Beau's call, Evan 2026-09-22 |
+| 2026-09-25 | `18qt-004` pauses in the same Meta edit as Tailgate A + B; Finn reads `rolling-boil` spend + tagged (trigger now $583.74) | Beau's call, Evan 2026-09-22 · 2026-09-24 |
 | 2026-09-25 | Tailgate kit goes live — built in the Bundles app and finished; photos on, `HIGH15` off (2026-09-22); needs Evan's activate + the checkout test | board, Running · Jay's prices 2026-09-11 · rebuilt 2026-09-17 |
 | 2026-09-28 | Retargeting launch (Evan's click) | PLAN.md · Evan 2026-09-17 |
+| 2026-09-28 | Finn's second `rolling-boil` read ($583.74 trigger, ~Sept 29 at pace) | decisions.md, Evan 2026-09-24 |
 | 2026-09-28 | Content week Sept 28–Oct 4 starts (all six scheduled and verified 2026-09-24; Friday dropped) | content-week plan · schedule.json read-back 2026-09-24 |
 | 2026-09-28 | Look into Metricool for scheduling FB/IG without Chrome (reminder task 8:30) | Evan 2026-09-24 |
 | 2026-09-30 | Turkey kit go/no-go | PLAN.md · Evan 2026-09-17 |

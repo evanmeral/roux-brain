@@ -123,6 +123,11 @@ note** leaves the piece alone and puts your note in front of Sage next session.
 
 **Score.** The plan's pace line next to the Thursday scoreboard, straight from `PLAN.md`, plus the
 kill and scale rules as written. It shows "First score Thu Sept 24" until a Thursday is filled in.
+**Kill lines, latest read** lists every live ad against each kill rule that applies to it: spend, Meta
+purchases, Shopify-tagged new customers, the line, and a status. Fired rows sit on top in red, near
+(within 20%, or on pace to cross before next Thursday) in gold, then OK. The Thursday 7:00 task
+writes it; the date shows at the top and turns gold after a week. A fired row is a recommendation
+for your click. Nothing on the page pauses an ad.
 It works nothing out on its own.
 
 ## What the panels mean

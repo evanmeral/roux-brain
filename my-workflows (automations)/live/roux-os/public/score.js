@@ -35,10 +35,28 @@ function renderScore() {
   } else html += `<div class="board-sec is-wide bad">PLAN.md has no ${v.pace ? 'Scoreboard' : 'Pace line'} table I can read.</div>`;
 
   // kill lines: the latest read (drop-in) and the rules as written
+  // Status comes from the file as written; the page only sorts and colours it.
   const k = v.killRead || {};
-  html += `<div class="board-sec"><span class="eyebrow">Kill lines, latest read</span>${k.error ? `<div class="bad">${esc(k.error)}</div>` : k.present
-    ? `<div class="mono stamp">read ${esc(k.read_at)} · ${esc(k.window)} · ${esc(k.source)}</div><table><thead><tr><th>Ad or campaign</th><th>Metric</th><th>Value</th><th>Kill at</th><th>Status</th></tr></thead><tbody>${k.rows.map((r) => `<tr title="${esc(r.note)}"><td>${esc(r.name)}${r.id ? `<br><span class="dim">${esc(r.id)}</span>` : ''}</td><td>${esc(r.metric)}</td><td>${esc(r.value)}</td><td>${esc(r.kill_at)}</td><td>${esc(r.status)}</td></tr>`).join('')}</tbody></table>`
-    : `<div class="empty">No kill-line read on file yet. When the Thursday scoreboard task writes <code>my-desk (now)/pulse/kill-lines.json</code>, it shows here with its source and date.</div>`}</div>`;
+  const stKey = (st) => { const t = (st || '').toLowerCase(); return /fired|over|kill/.test(t) ? 'fired' : /near|close|watch/.test(t) ? 'near' : /^(ok|under|fine)/.test(t) ? 'ok' : 'unread'; };
+  const stLabel = { fired: 'Fired', near: 'Near', ok: 'OK', unread: 'Not read' };
+  const order = { fired: 0, near: 1, unread: 2, ok: 3 };
+  let killHtml;
+  if (k.error) killHtml = `<div class="bad">${esc(k.error)}</div>`;
+  else if (!k.present) killHtml = `<div class="empty">No kill-line read on file yet. The Thursday 7:00 scoring task writes <code>my-desk (now)/pulse/kill-lines.json</code>; it shows here with its source and date.</div>`;
+  else {
+    const rows = k.rows.map((r) => ({ ...r, key: stKey(r.status) })).sort((a, b) => order[a.key] - order[b.key]);
+    const n = (key) => rows.filter((r) => r.key === key).length;
+    const age = k.ageDays == null ? '' : k.ageDays === 0 ? 'today' : `${k.ageDays} day${k.ageDays === 1 ? '' : 's'} ago`;
+    killHtml = `<div class="mono stamp ${k.ageDays > 7 ? 'warn' : ''}">read ${esc(k.read_at)}${age ? ` (${esc(age)})` : ''} · ${esc(k.window)} · ${esc(k.source)}</div>
+      <div class="kill-sum">${['fired', 'near', 'ok', 'unread'].filter((x) => n(x)).map((x) => `<span class="pill is-kill-${x}">${n(x)} ${stLabel[x]}</span>`).join(' ')}</div>
+      <div class="score-wrap"><table class="kill-table"><thead><tr><th>Status</th><th>Ad</th><th>Rule</th><th class="num">Spend</th><th class="num">Meta buys</th><th class="num">Tagged</th><th>Reads</th><th>Kill at</th><th>Note</th></tr></thead><tbody>${rows.map((r) => `<tr class="is-kill-${r.key}">
+        <td><span class="pill is-kill-${r.key}">${esc(stLabel[r.key])}</span></td>
+        <td><strong>${esc(r.name)}</strong>${r.campaign ? `<br><span class="dim">${esc(r.campaign)}</span>` : ''}${r.id ? `<br><span class="dim mono">${esc(r.id)}</span>` : ''}</td>
+        <td>${esc(r.rule)}</td><td class="num">${esc(r.spend)}</td><td class="num">${esc(r.meta_purchases)}</td><td class="num">${esc(r.tagged)}</td>
+        <td>${r.metric ? `<span class="dim">${esc(r.metric)}</span><br>` : ''}${esc(r.value)}</td><td>${esc(r.kill_at)}</td><td class="kill-note">${esc(r.note)}</td></tr>`).join('')}</tbody></table></div>
+      <div class="dr-src">A fired line is a recommendation for Evan's click. Nothing on this page pauses an ad.</div>`;
+  }
+  html += `<div class="board-sec is-wide"><span class="eyebrow">Kill lines, latest read</span>${killHtml}</div>`;
   html += `<div class="board-sec"><span class="eyebrow">Kill and scale rules, as the plan states them</span>${v.killRules ? `<table><thead><tr>${v.killRules.head.map((h) => `<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${v.killRules.rows.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>` : '<div class="empty bad">PLAN.md has no kill-rule table I can read.</div>'}</div>`;
   box.innerHTML = html;
 }

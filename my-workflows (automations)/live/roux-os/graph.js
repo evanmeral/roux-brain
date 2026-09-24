@@ -143,6 +143,8 @@ module.exports = function makeGraph({ vault, home }) {
       if (!/^(App|System)$/.test(tableHead) || /^-+$/.test(cells[0])) continue;
       const name = cells[0].replace(/[*⭐`]/g, '').replace(/\s*\(digit-software\.com\)/, '').trim();
       if (!name) continue;
+      // an app marked removed or deleted is not connected, so it is not drawn (Venon, Evan 2026-09-24)
+      if (cells.slice(1).some((c) => /^\**(removed|deleted)\b/i.test(c))) continue;
       const desc = (cells[2] || cells[1] || '').replace(/\*\*|`|\[([^\]]+)\]\([^)]+\)/g, '$1').slice(0, 220);
       add({ id: 'p:' + name.toLowerCase(), kind: 'app', group: 'apps', label: name, desc, rel: 'my-connections (MCP)/connected-apps.md', noRel: true });
       tree(P, 'p:' + name.toLowerCase());

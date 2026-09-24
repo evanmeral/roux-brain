@@ -73,7 +73,7 @@ Ceiling **$350/day**. These are caps, not spend targets. No new money. Moment ad
 | Any 18 QT ad | Meta cost per purchase, last 14 days > $189 | ≤ $30 last 7 days · frequency ≤ 2.5 · +20% max per 3 days · `18qt-TOF` ≤ $86/day · inside the 52% hold |
 | BPM collection video | > $128.09 | Never (frequency 5.05) |
 | Turkey kit ad 30 QT / 60 QT | > $198 / > $232 | ≤ $41.79 / ≤ $51.22 **and** Oct 15 turkey sales ≥ last year |
-| IW 120 QT ads, **Oct 2** | **Pause:** 0 Shopify-tagged pot, Triple Jet or kit orders, or Meta cost per purchase > $365 · **Hold** to Oct 16: ≥ 1 tagged and $189–$365 | **Continue:** ≥ 1 tagged and ≤ $189 |
+| IW 120 QT ads, **Oct 2**, **scored per ad** (campaign read shown beside, context only; Evan 2026-09-24) · `rolling-boil` pauses sooner at $583.74 lifetime with 0 tagged | **Pause:** 0 Shopify-tagged pot, Triple Jet or kit orders, or Meta cost per purchase > $365 · **Hold** to Oct 16: ≥ 1 tagged and $189–$365 | **Continue:** ≥ 1 tagged and ≤ $189 |
 | Retargeting pots / 18 QT | Frequency > 3.5 → cut ⅓ · > $60 per purchase after 4 days → pause | Day 14+: frequency ≤ 2.5 · ≤ $40 / $30 · tagged orders > 0 |
 | **Any ad, no-sale rule** *(Evan, 2026-09-22)* | Spend reaches **3× its incremental ceiling with 0 Shopify-tagged new customers**, or **2×** if Meta's purchase count is also 0. Taggable ads only — an ad whose ad ID does not reach Shopify is read on Meta's count alone | — |
 
@@ -86,7 +86,7 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 
 | Thursday | Consumer | Total | Turkey | Buyable | Kit share | Pots | Meta | Rules fired | Late jobs |
 |---|---|---|---|---|---|---|---|---|---|
-| Sept 24 | | | | — | — | set | set | | |
+| Sept 24 | **Ahead** +$7,280: $22,026.87 vs $14,747 (over stretch) | **Ahead** +$6,109: $26,459.62 · 52 orders vs $20,351 | **Behind** −$1,029: $2,146.59 · 5 orders vs $3,176 | — | — (kit DRAFT, 0 orders) | **Set:** week 1 $8,130.33 · 12 orders (pots $4,878.61 + Triple Jet $3,251.72); weeks 2–6 need ≥ $6,504/wk | **Set:** $2,194.89 · $313.56/day, max $348.93, 0 days > $350 · Meta $68.59 (32) · tagged $199.54 (11, 9 new) vs $40.44 / $156.90 · `18qt-TOF` $71.58 vs $30 | `18qt-004` no-sale (pauses Sept 25, approved) · `rolling-boil` per-ad Oct 2 pause condition met today (0 tagged); $583.74 line ~Sept 29 | Turkey kit ad (Maya) not started, due by Sept 30 · Garrett turkey cut due Sept 28–29 |
 | Oct 1 | | | | | — | | | | |
 | Oct 8 | | | | | — | | | | |
 | Oct 15 | | | | | | | | | |
@@ -98,6 +98,7 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 ## Off-plan log
 *Work Evan asks for that isn't in this plan: date · what · who.*
 
+- **2026-09-24 · ROUX OS kill-line table + routines repointed** (Evan): Score tab shows every live ad against each kill rule (Thursday task writes `pulse/kill-lines.json`); Venon off the globe; three routines moved off the deleted Desktop path (the 7:00 scoreboard had not run; re-run 10:16). → [decisions](decisions.md)
 - **2026-09-24 · Shoot-day phone media filed; Sept 28 content week reworked three rounds and scheduled; render + video tooling** (Evan): 16 files into `assets/lifestyle/shoot-2026-09-23/`; Friday dropped; chrome-headless-shell + ffmpeg installed; Metricool to look at Mon Sept 28. → [decisions](decisions.md)
 - **2026-09-24 · Self-improvement loop** (Evan): `/improve` weekly review (Fri 1:00, propose-only), corrections log, results log `what-worked.md`; content-week photo rule corrected. → [decisions](decisions.md)
 - **2026-09-22 · Full Meta ad review with per-product CAC** (Evan) — every campaign and ad read against the incremental-rule ceilings; Beau's three calls approved (rolling-boil trigger, `18qt-004` off Sept 25, the no-sale kill rule above). → [Finn](../my-work%20(outputs)/internal/reports/2026-09-22-meta-ad-review-finn.md) · [Beau](../my-work%20(outputs)/internal/reports/2026-09-22-meta-calls-beau.md)

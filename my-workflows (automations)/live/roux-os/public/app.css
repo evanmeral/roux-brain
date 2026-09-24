@@ -694,3 +694,15 @@ body.on-home .chip { background: rgba(18,17,16,.7); backdrop-filter: blur(8px); 
 .post-alt-l{margin:4px 0 8px}
 .post-alt-m{display:flex;gap:8px;flex-wrap:wrap}
 .post-alt-m img{width:180px;height:auto;border-radius:6px;display:block}
+
+/* score: kill-line read (v0.4) */
+.kill-sum { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 10px; }
+.pill.is-kill-fired { color: var(--flame); border-color: #4A2320; }
+.pill.is-kill-near { color: var(--gold); border-color: #4A3A20; }
+.pill.is-kill-ok { color: #4CC38A; border-color: #1E4A36; }
+.pill.is-kill-unread { color: var(--dim); border-style: dashed; }
+.kill-table td { vertical-align: top; }
+.kill-table tr.is-kill-fired td { background: rgba(255, 90, 60, .07); }
+.kill-table tr.is-kill-fired td:first-child { box-shadow: inset 3px 0 0 var(--flame); }
+.kill-table tr.is-kill-near td:first-child { box-shadow: inset 3px 0 0 var(--gold); }
+.kill-note { max-width: 320px; color: var(--muted); }

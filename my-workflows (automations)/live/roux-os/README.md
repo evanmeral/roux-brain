@@ -84,7 +84,7 @@ Shopify (ShopifyQL), both calendars, the board, key dates, capture. Writes `toda
 | `my-desk (now)/capture.md` | Tell ROUX · Done · Draft nudge · Add to Jay batch · Draft a check-in · launch ticks · approval results · post approvals and send-backs | count | **appends** |
 | `my-desk (now)/launches.md` | Launches tab and the Next launch tile | yes | **one checkbox per tick** (and its `· done <date>`) |
 | `my-desk (now)/approvals.json` | Approvals tab and tile | yes | **status, note, resolved_at** on the item decided |
-| `my-desk (now)/pulse/kill-lines.json` | Score tab, latest kill-line read (optional drop-in from the Thursday task) | yes | no |
+| `my-desk (now)/pulse/kill-lines.json` | Score tab, kill-line read: every active ad against each kill rule that applies, fired/near first. Written by the Thursday 7:00 scoring task (step 5; shape in `score.js`). The status is the task's; the page only sorts and colours it | yes | no |
 | `my-files (knowledge)/hpc-reference/affiliates/affiliates.json` | Affiliates tab | yes | **yes**: atomic, last five versions in `backups/` |
 | `…/affiliates/sales-by-affiliate.json` | Affiliates money columns and header tiles (Finn's drop-in) | yes | no |
 | `…/affiliates/flags.json` | Affiliates evidence flags, top referrer, returning, the calc rate (drop-in) | yes | no |
