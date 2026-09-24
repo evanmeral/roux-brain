@@ -127,3 +127,4 @@ Filled every Thursday morning by the scoreboard task. Status = ahead / on pace /
 - **2026-09-22 · Creative rubric check + `/tidy-brain` built; Mac disk freed** (Evan, after Anthropic's Managed Agents talk): rubric-check gates paid/carousel builds and approvals; `/tidy-brain` trashed 246 brain files (166 MB); Mac went from 6.8 GB to 64 GB free (Dropbox online-only, macOS 27, app leftovers). → decisions.md
 - **2026-09-22 · Obsidian graph cleaned up** (Evan): archive links fixed, skills linked, graph settings; CLAUDE.md left unlinked. → decisions.md
 - **2026-09-22 · ROUX OS 0.3** (Evan): left menu + color key, Home = the brain globe, This Month's Plan tab, bigger type. → decisions.md
+- **2026-09-24 · Pulse fixed (claude CLI was logged out; page now shows why a run failed) · UpPromote questions answered by Jay in person, program stays as is** (Evan). → decisions.md

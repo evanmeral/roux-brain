@@ -5,6 +5,5 @@
 
 - [ ] Set the tailgate kit active Fri 9/25, then tell ROUX (checkout test) · added 2026-09-24 by ROUX
 - [ ] Build the rolling-boil Meta rule: lifetime spend > $583.74, off + notify · added 2026-09-24 by ROUX
-- [ ] Send Jay the UpPromote text (drafted) · added 2026-09-24 by ROUX
 - [ ] Metricool: take the look Mon 9/28 · added 2026-09-24 by ROUX
 - [ ] Re-check the $404 tailgate price the morning of Sat 10/3 · added 2026-09-24 by ROUX
