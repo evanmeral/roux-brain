@@ -145,11 +145,13 @@ just gets sharper. It keeps the Jay text to one message.
 >
 > 3. Most of the commission isn't going to creators. All time: our 4 real creators $1,586.24, deal and coupon sites $4,716.05, marketplace sign-ups with no website $3,986.88, form sign-ups with no website $2,293.05. Keep or remove the deal sites and the no-website accounts going forward? I'd remove the deal sites and go through the rest one by one.
 >
-> 4. UpPromote flagged 193 orders since December as coming through Google Ads, $4,821.14 in commission, and paid every one. OK to stop paying on those going forward until we know if they were our own ads?
+> 4. UpPromote flagged 193 orders since December as coming through Google Ads, $4,821.14 in commission, and $4,679.09 of it is already paid. OK to stop paying on those going forward until we know if they were our own ads?
 >
-> 5. There's $203.11 owed to 18 affiliates that hasn't been paid yet. OK to pay what's owed and just change the rules going forward?
+> 5. UpPromote lists 31 referrals as approved but not marked paid, $44.11 net, mostly small balances from June to now. Is there a payout step or minimum I'm missing, or do we just not pay those?
 >
 > 6. Did you or anyone else ever make a deal directly with any of these affiliates or sites, like a set rate or a contract? I don't want to cut off something you agreed to.
+
+**Corrected 2026-09-24 (ROUX, Evan questioned Q5):** Q5 called $203.11 "owed"; that is the positive lines only of the Approved-status export (net $44.11), and Approved status does not show anything is owed. Q4 said "paid every one"; 176 are Paid ($4,679.09), 17 Approved ($142.05). Both recomputed from the raw exports.
 
 **Checked:** every number is Finn's or Jay's own. No em-dashes, no exclamation marks, "Hey",
 no sign-off, numbered, one message. The last line assumes Evan makes change 1 before sending;

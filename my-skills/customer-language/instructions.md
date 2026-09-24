@@ -88,3 +88,5 @@ Photos and videos not viewed · stars taken from the feed rather than product pa
 Keep it short: reviews read (in the window and in total), the date range, the file path, the top 3 lines, anything that could not be read, and any not-for-copy flags (Biljana items, product fixes customers asked for).
 
 > **Next:** Maya / Sage. The new file is linked from the README.
+
+**Already routed (Evan, 2026-09-24): don't list these again under "for Evan to route":** the fish-fryer drain spout (a no; valves too big for the pot), shorter leg extensions (with Jay), a 20" skimmer handle (parked, no supplier). Check `my-desk (now)/decisions.md` before listing any product ask.

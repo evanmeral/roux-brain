@@ -55,7 +55,7 @@
 
 - **Evan: `evan@highperformancecookers.com`** — the canonical address, and the one he types out in full. `evan@hpcookers.com` appears to route to the same mailbox (Basecamp uses it), but **always write the full one**.
 - **Robert: `robert@lapeyre.dev`** — the address to send to. He also appears as `robert@theboilboss.com`; **ignore that one.**
-- Jay: `jay@highperformancecookers.com` · Stephen: `stephen@highperformancecookers.com` · Alexis: `alexis@highperformancecookers.com`
+- Jay: `jay@highperformancecookers.com` · Stephen: `stephen@highperformancecookers.com` · Alexis: `alexis@highperformancecookers.com` · Rhonda (accounting, QuickBooks): `rhonda@highperformancecookers.com` (Jay, 2026-09-24)
 
 ---
 

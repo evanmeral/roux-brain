@@ -119,8 +119,8 @@ returning `name` for all 41 tags, diffed against the export's `order_name` (stri
 
 It is **exactly the 31 referrals with status Approved, summed per affiliate.** 21 names; every
 name's rows, sales and commission match the Approved rows to the cent; no Approved referral is
-missing from it. Totals: **31 referrals, $881.64 sales, $44.11 commission** ($203.11 owed to 18
-affiliates, −$159.00 owed back by 3).
+missing from it. Totals: **31 referrals, $881.64 sales, $44.11 commission** ($203.11 in positive lines across 18
+affiliates, −$159.00 across 3; "Approved" status does not show anything is owed, corrected 2026-09-24).
 
 - Negative lines: Coupon Reals −$140.24 (two return rows on order #15392, June 2026), Michelle Solomon −$13.25, Hernan Slodowicz −$5.51 net. These are clawbacks netted against future payouts.
 - So ROUX's README label, "approved, not yet paid", **fits the data**: none of these rows is `Paid`. What the file does not show is whether a payout run is due. Several balances are old and tiny: Roddy Davis $5.80 since 2026-03-27, Lisa Trúc $3.07 since 2026-06-12, Brittany Sansone $0.80 since 2026-06-23. **Conclusion, not read:** there is probably a minimum payout threshold, or those affiliates have no payout set. The settings screenshots don't show one.
