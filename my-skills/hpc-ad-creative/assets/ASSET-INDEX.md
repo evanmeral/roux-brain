@@ -39,7 +39,34 @@ that holds on the thermometer.
 
 The shield yard sign reads "patent pending". That's fine: it's real signage in a photo, and the patent-pending rule covers copy we write, not photos (Evan, 2026-09-18). It shows **six people, not the team of 12**, so don't caption it as the whole team.
 
+### 🎬 Garrett shoot day, Evan's phone — `lifestyle/shoot-2026-09-23/` (added 2026-09-23)
+All from Evan's iPhone at the HPC shop, Sept 23 2026 (photo metadata). Photos are full-res JPEG. Videos are
+H.264 + AAC, rewrapped MOV→MP4 with no re-encode (no quality loss). Video descriptions come from four frames
+per clip (5/35/65/95%), not a full watch. The turkey fryer is the **30 QT** (Evan, 2026-09-24). Nobody in frame is named (no permission on file). The videographer is Garrett's crew.
+
+| File | Size | What it is | Best for |
+|---|---|---|---|
+| ⭐ **`turkey-fry-drop-into-oil-vertical-2026-09-23.mp4`** | 1080×1920 · 19.2s | Seasoned turkey on the hanger lowered into the fryer pot, oil foams up, hook pulled away. Windscreen, red valve, HPC shield on the pot. | Raw reference only. Evan passed on it for the Oct 2 reel; Garrett's pro cut and raw footage are coming (Evan, 2026-09-24). 30 QT. |
+| ⭐ **`turkey-fry-lift-out-vertical-2026-09-23.mp4`** | 1080×1920 · 28.2s | The finished bird lifted out, dark and crisp, set down on the red drip tray. | Raw reference only, same as the drop (Evan, 2026-09-24). 30 QT. |
+| **`fried-turkey-closeup-on-rack-2026-09-23.jpg`** | 4284×5712 | Tight on the fried turkey on its rack, red tray, pot leg in frame, blue sky. | ⭐ Turkey hero still: feed, turkey carousel cover, turkey kit ad. |
+| `fried-turkey-carved-platter-2026-09-23.jpg` | 4032×3024 | Carved turkey on the red tray, juicy white meat; pots on the showroom rack behind. | "Juicy inside" proof, carousel end frame. |
+| `fried-turkey-bts-on-camera-2026-09-23.jpg` | 4284×5712 | Garrett's crew filming the host beside the fried bird and fryer, under the tent. | Behind-the-scenes, "videos coming soon". |
+| `turkey-prep-bts-under-tent-2026-09-23.jpg` | 4284×5712 | Host preparing the raw bird at the HPC table, crew filming, tent canopy slogan visible. | BTS, Tuesday crew post swap. |
+| `turkey-prep-bts-shopfront-2026-09-23.jpg` | 4284×5712 | Same, wider: shop front with the big HPC shield on the wall. | ⭐ BTS with the building: "made here" story. |
+| `turkey-prep-bts-two-on-camera-2026-09-23.jpg` | 4284×5712 | Two hosts at the prep table, crew filming. | BTS, krewe post. |
+| **`tunnel-tubes-underside-burner-horizontal-2026-09-23.mp4`** | 1920×1080 · 5.9s | Low, ground-level shot of the Tunnel Tubes under a pot, burner in front. Burner **not lit**. | Tech B-roll, 1.91:1 / YouTube. |
+| **`tunnel-tubes-tilt-up-vertical-2026-09-23.mp4`** | 1080×1920 · 7.4s | Tilt up from the concrete to the burner and Tunnel Tubes under the pot. Not lit. | Tech B-roll for reels. Still no blue flame. |
+| **`shrimp-boil-tray-showroom-2026-09-23.jpg`** | 3024×4032 | Heaped shrimp boil tray (shrimp, corn, potatoes, sausage, greens), HPC shield sign and pots behind. | ⭐ Seafood Month, food hero with the brand in frame. |
+| `shrimp-boil-tray-pan-vertical-2026-09-23.mp4` | 1080×1920 · 6.2s | Slow pan over the shrimp boil tray. | Stories / reels. |
+| `boil-veggies-sausage-tray-prep-2026-09-23.jpg` | 3024×4032 | Raw Brussels sprouts, green beans and sausage on a tray outside; torch lighter in hand. | Prep / "what goes in" frame. |
+| `hushpuppies-2026-09-23.jpg` | 3024×4032 | Hushpuppies on paper towel, carved turkey behind. | Fried-food payoff (which fryer not confirmed). |
+| `funnel-cake-powdered-sugar-2026-09-23.jpg` | 3024×4032 | Funnel cake under powdered sugar on paper towel. | "Fry anything" / dessert post (which fryer not confirmed). |
+| `food-spread-pan-horizontal-2026-09-23.mp4` | 1920×1080 · 13.7s | Pan across the spread in the showroom: turkey, hushpuppies, funnel cake, shrimp boil. | The feed-a-crowd payoff shot. Some handheld tilt. |
+
+The canopy slogan and shop signage are real signage in photos, fine as is (Evan, 2026-09-18).
+
 ### Product-in-scene (studio lifestyle)
+`powered-pot-lineup-patio-jet-tube-fixed-2026-09-24.png` (928×1152): a copy of `hf_20260716_195203_*.png` with **one jet tube added under the far-left (smallest) pot**, which had none. Cloned from the second pot's tube and scaled to fit (Evan, 2026-09-24: "it should only be one jet tube not a double or triple"). **Use this one, not the original, whenever the lineup shows.**
 `60-quart-lifestyle.png` · `80-quart-lifestlye.png` *(sic)* · `100-quart-lifestyle.png` ·
 `120-quart-lifestyle.png` · `BB-burner-lifestyle.png` · `BB-paddle-lifestyle.png` ·
 `BB-ring-lifestyle.png` · `Ultimate Boiling Bundle.png` · `boilboss-ultimate-combo.jpeg` (5712×4284) ·
@@ -51,16 +78,16 @@ Most are **928×1152** — fine for 4:5 and 1:1, **too small for 1080×1920 stor
 - **The team of 12**, on camera. Partly filled: six of them at the Apr 2026 cookoff booth (above). A full-team shop shot is still missing
 - ✅ ~~Fried food~~ — covered by the wings set (2026-08-28)
 - **Finished fried food** — wings/fish *out* of the oil, plated or draining. The current set is all
-  in-the-oil; there's no payoff shot.
-- A **higher-res tunnel-tube/blue-flame** shot (current one is 640×323)
-- More **vertical (9:16) originals** — now `Crawfish.jpg` plus the wings video
+  in-the-oil; there's no payoff shot. ✅ Partly filled 2026-09-23: fried turkey, hushpuppies, funnel cake (shoot folder)
+- A **higher-res tunnel-tube/blue-flame** shot (current one is 640×323). 2026-09-23 clips show the tubes up close but **unlit**. Evan tried a blue-flame shot that day; it may not have come out clear. He'll reshoot it the next time the pots are in use (Evan, 2026-09-24). Check Garrett's footage too
+- More **vertical (9:16) originals** — now `Crawfish.jpg`, the wings video, and five 9:16 clips from the 2026-09-23 shoot
 
 > ✅ Renamed to `120qt-with-steam.png` by Evan — colon gone, no encoding needed.
 
 ### Video handling
-Beau can pull a **poster frame** from video using macOS `qlmanage`, and read duration, dimensions and
-codec. It **cannot watch video or scrub to a timestamp** — `ffmpeg` isn't installed. If pulling
-stills from video footage becomes routine, installing ffmpeg (`brew install ffmpeg`) would unlock it.
+**`ffmpeg` / `ffprobe` installed 2026-09-24** (Homebrew, 9.0.2; Evan's yes). Frame-accurate trims, stills from
+any timestamp, text on reels, speed ramps, audio checks and re-encodes to a target size all go through it now.
+iPhone clips carry an extra Apple spatial-audio track (APAC); map only the AAC track when exporting for Meta.
 
 ## ⭐ Product cutouts — `assets/product-cutouts/` (added 2026-08-27)
 **39 transparent PNGs, background removed, faint drop shadow.** Prepared by Evan. High resolution

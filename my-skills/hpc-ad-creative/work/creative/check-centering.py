@@ -22,7 +22,10 @@ driving either to zero. Fix by setting "nudge": [x, y] on that frame in the conf
 """
 import json, os, subprocess, sys, tempfile
 
-CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# chrome-headless-shell first: same engine, but no Dock icon per render (Evan, 2026-09-24).
+# Falls back to the full Chrome app if the shell is missing.
+_SHELL = os.path.expanduser("~/Library/Application Support/ROUX/chrome-headless-shell-mac-arm64/chrome-headless-shell")
+CHROME = _SHELL if os.path.exists(_SHELL) else "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 # metal is bright and near-neutral; the orange glow is bright but saturated
 LUM_MIN, SAT_MAX = 95, 42
 # start below the logo or it drags the measurement left

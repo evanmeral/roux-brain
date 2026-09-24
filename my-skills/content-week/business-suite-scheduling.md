@@ -146,6 +146,33 @@ label. That counts as the one retry.
 - **Cost control:** read with scripts that return a few fields; screenshot only at scale 0.5 and only
   when a check fails for a reason the fields cannot show.
 
+## What the UI taught us (second run, 2026-09-24): Meta changed the composer
+
+All six pieces scheduled and verified, but the helpers needed help. Use this until the helpers are rewritten.
+
+- **Hidden duplicate controls.** The composer now keeps hidden copies of the switches and tabs (a
+  "Reel details" section among them). `__A`'s `sw()` / `tab()` grabbed the hidden ones: it reported
+  *Customize* on while the visible switch was off, and pasted the IG caption into the FB box. **Do it by
+  hand, visible-only:** real-click *Customize*, paste FB, real-click the *Instagram* tab, check it is
+  selected and the box is empty, paste IG. Final check with `__go2` (a visible-only `__go`, pasted into
+  the page that day; the logic is `__go` with every selector filtered to visible elements, plus a
+  `custom` check). Run it with `true` first (dry), then `false`.
+- **Clicks by ref, not coordinates.** A WhatsApp banner pops in and out and shifts the layout under
+  coordinate clicks (it cost a Publish-labelled footer scare, never clicked). Use `find` refs for the
+  schedule switch, the story-share switch and all six spinbuttons.
+- **Dates in next month:** `__pick` returns `no cell` (the picker has no month arrows exposed). Triple-click
+  the date input, `cmd+a`, type `10/01/2026`, Tab. Reads back "Oct 1, 2026". Works for any date.
+- **Story-share Confirm hangs half-faded almost every time.** Real-click Confirm at about (896, 379), then
+  again at (892, 377) if a `[role=dialog]` is still in the DOM. Do this **before** the times: the hung
+  dialog swallows typing (it ate one full set of times on Tuesday).
+- **The footer button reads "Publish" / "Share" until *Set date and time* (or the story's *Schedule*
+  toggle) is on.** Never click the footer until it reads exactly *Schedule*. Stories have two buttons
+  labelled Schedule: the toggle (`aria-pressed`) and the footer submit (bottom right).
+- "Create post" from Content → Scheduled opens a *Schedule post* dialog first: Cancel it; the inline
+  schedule section is below. From the Planner it opens a normal composer and the helpers survive.
+- The Stories link in Content's left menu did nothing; the Planner week view shows story tiles with a
+  platform badge, which is the read-back.
+
 **Editing a scheduled post** (proven 2026-09-16, fixing the Wednesday carousel). Only on Evan's go
 for that edit, and only a post the runner scheduled: Content → Scheduled → click the row's caption →
 *Post details* → the **⋯ Actions** button → **Edit post** (never *Publish now*, which sits next to it

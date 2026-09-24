@@ -9,7 +9,8 @@ Gates, all of them things that fail silently on the printed card:
   every what  <= 100px   no price-row label wrapped and clipped its own note
 """
 import json, os, subprocess, sys, tempfile
-CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+_SHELL=os.path.expanduser("~/Library/Application Support/ROUX/chrome-headless-shell-mac-arm64/chrome-headless-shell")  # no Dock icon (2026-09-24)
+CHROME=_SHELL if os.path.exists(_SHELL) else "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 f=os.path.abspath(sys.argv[1])
 js = """<!doctype html><html><body><pre id=o>x</pre><script>
 (async()=>{const fr=document.createElement('iframe');

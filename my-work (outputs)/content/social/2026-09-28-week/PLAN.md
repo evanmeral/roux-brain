@@ -6,8 +6,8 @@
 **Planner hint:** not read. Business Suite → Content → Scheduled, read 2026-09-21: **nothing is scheduled after Fri Sep 25** (the six Sept 21–26 items are all there), so no clashes.
 
 **Missing this week, and the fallback used:**
-- **No new video yet.** Friday Fire depends on Garrett's 30 QT turkey demo or Evan's phone clips from the Sept 23 shoot. If neither arrives by Thu Oct 1 noon, **Friday is dropped** rather than re-running last week's wings clip or recycling a photo from two weeks ago (rule 9).
-- **No shop photo yet.** Tuesday is built on the team cook-off booth photo (Apr 2026) as the fallback. A shoot-day phone photo from Sept 23 replaces it if Evan sends one.
+- ➖ **Friday is dropped** (Evan, 2026-09-24: "we can drop this post entirely since we will probably do this one closer to thanksgiving"). The week runs five. The turkey reel moves to November, from Garrett's cut.
+- ✅ **Shop photo in (2026-09-24).** Tuesday uses Evan's Sept 23 shoot-day photo (Evan: "we can use that for the krewe post"). The booth-photo fallback is kept in `fallback/`.
 
 ---
 
@@ -16,10 +16,10 @@
 | # | Day · time (CT) | Segment | Format | FB | IG | Piece | Status |
 |---|---|---|---|---|---|---|---|
 | 1 | Mon 28 · 12:00 | Boil Math Monday | graphic 4:5 | ✅ | ✅ | `01_MON-0928_FEED_boil-math-4mm.png` | proposed |
-| 2 | Tue 29 · 5:30 pm | Shop Floor Tuesday | raw photo 4:5 + story | ✅ | ✅ | `02_TUE-0929_FEED_shop-floor-crew-RAW.png` · `02_TUE-0929_STORY_shop-floor-crew-RAW.png` | proposed (swap if a shoot photo comes) |
+| 2 | Tue 29 · 5:30 pm | Shop Floor Tuesday | raw photo 4:5 + story | ✅ | ✅ | `02_TUE-0929_CAROUSEL_1…4` · story `02_TUE-0929_STORY_shop-floor-shoot-day.png` | revised 2026-09-24 (v3, copy on the images) |
 | 3 | Wed 30 · 12:00 | How-To Wednesday | carousel ×7 | ✅ | ✅ | `03_WED-0930_CAROUSEL_1-cover.png` … `_7-cta.png` | proposed |
 | 4 | Thu Oct 1 · 5:30 pm | Word of Mouth Thursday | review card 4:5 | ✅ | ✅ | `04_THU-1001_FEED_review-robert-60qt-turkey.png` | proposed |
-| 5 | Fri Oct 2 · 12:00 | Friday Fire | reel 9:16 | ✅ | ✅ | `05_FRI-1002_REEL_turkey-30qt.mp4`, not yet delivered | **conditional:** dropped if no footage by Thu noon |
+| 5 | Fri Oct 2 · 12:00 | Friday Fire | reel 9:16 | ✅ | ✅ | — | **dropped** (Evan, 2026-09-24): turkey reel moves closer to Thanksgiving |
 | 6 | Sat Oct 3 · 9:00 am | Game Day | story 9:16 | ✅ | ✅ | `06_SAT-1003_STORY_game-day-KIT.png` (default; the plain version is the backup) | proposed |
 
 Sunday dark. Pillars: Proof 1½ (Mon, Thu) · People 1 (Tue) · How 1 (Wed) · Boil 1–2 (Fri, Sat) · Offer 0–1 (passengers on 4 and 6 only). Turkey runs Wed → Thu → Fri to set up the Oct 1 kit launch. It is not in Monday's or Tuesday's posts, because those two never sell.
@@ -44,13 +44,13 @@ Sunday dark. Pillars: Proof 1½ (Mon, Thu) · People 1 (Tue) · How 1 (Wed) · B
  ],
  "graphicText": [
   "4mm",
-  "Thin pots warp. Ours are 4mm.",
+  "Thin pots warp. Ours don’t.",
   "Hand-welded in Louisiana."
  ]
 }
 ```
 ![](01_MON-0928_FEED_boil-math-4mm.png)
-**Visual:** the four-pot Powered lineup on a patio (`assets/lifestyle/hf_20260716_…png`), faded into charcoal. Big "4mm" stat, headline "Thin pots warp. Ours are 4mm." Foot line "Hand-welded in Louisiana." Shield logo; no patent number written anywhere. Template `templates/cw-2026-09-28/mon-boilmath-4x5.html`. This is a new layout: a photo band over a stat, unlike last Monday's full-bleed photo with a spec strip.
+**Visual (v2, 2026-09-24):** the four-pot Powered lineup on a patio (`assets/lifestyle/powered-pot-lineup-patio-jet-tube-fixed-2026-09-24.png`: the original with the missing single jet tube added under the far-left pot, Evan 2026-09-24), now shown whole (lids to stands and hoses) in a taller photo band, fading into charcoal only below the pots (Evan: the black backdrop was covering the pots). Big "4mm" stat with the BOIL MATH kicker beside it, headline "Thin pots warp. Ours don’t." (v3, Evan 2026-09-24: the 4mm is already up top, so the headline says something else). Foot line "Hand-welded in Louisiana." The sub line came off the graphic; the caption carries it. v1 is in `fallback/`. Shield logo; no patent number written anywhere. Template `templates/cw-2026-09-28/mon-boilmath-4x5.html`. This is a new layout: a photo band over a stat, unlike last Monday's full-bleed photo with a spec strip.
 **Caption — Facebook**
 ```
 Boil Math Monday.
@@ -72,13 +72,13 @@ Take care of it and your kids will boil in it.
 #louisiana #seafoodboil #outdoorcooking #builtinlouisiana #cajuncooking #highperformancecookers
 ```
 **Why this one:** the Monday bank has two angles that haven't run: 4mm and crowd math. Crowd math is about crawfish sacks, which reads off-season in October and duplicates the live IW ad. 4mm is Proof that argues quality instead of price, which is why 80% of buyers choose HPC (reviews.io survey, customer-language.md).
-**Claims check:** "4mm aluminum", never "cast" (standing rules). "With good care, these last generations" is Evan's register (how-we-sound); no specific lifespan is claimed. The ice-chest idea is used without naming the brand. No warranty (four pots in frame), no price, no time claim, so no legal line. "Hand-welded in Louisiana", not "Made in USA."
+**Claims check:** "Ours don’t [warp]" is Evan’s line (2026-09-24). "4mm aluminum", never "cast" (standing rules). "With good care, these last generations" is Evan's register (how-we-sound); no specific lifespan is claimed. The ice-chest idea is used without naming the brand. No warranty (four pots in frame), no price, no time claim, so no legal line. "Hand-welded in Louisiana", not "Made in USA."
 
 ### 2 · Tue Sep 29 · 5:30 pm · Shop Floor Tuesday
 ```schedule
 {
  "id": "2-feed",
- "type": "feed",
+ "type": "carousel",
  "placements": [
   "facebook",
   "instagram"
@@ -86,10 +86,19 @@ Take care of it and your kids will boil in it.
  "date": "2026-09-29",
  "time": "17:30",
  "media": [
-  "02_TUE-0929_FEED_shop-floor-crew-RAW.png"
+  "02_TUE-0929_CAROUSEL_1-shopfront.jpg",
+  "02_TUE-0929_CAROUSEL_2-two-on-camera.jpg",
+  "02_TUE-0929_CAROUSEL_3-fried-turkey-on-camera.jpg",
+  "02_TUE-0929_CAROUSEL_4-shrimp-boil-showroom.jpg"
  ],
  "notes": [
-  "Fallback photo (team cook-off booth, Apr 2026). If a Sept 23 shoot photo replaces it, the media AND the caption change (swap caption is in PLAN.md): update PLAN.md, rebuild, and Evan approves the new version."
+  "v3 2026-09-24: copy on every frame (Evan: \"it looks lazy that we're posting a standard image off an iPhone\"). Shield on each frame; SHOP FLOOR / TUE 09.29 kicker on the cover."
+ ],
+ "graphicText": [
+  "SHOP FLOOR", "TUE 09.29", "Shoot day at the shop.", "COVINGTON, LA · SEPT 23",
+  "Bird on the table. Cameras rolling.", "PREP, ON CAMERA",
+  "Fresh out of the oil.", "TURKEY FRY · ON CAMERA",
+  "Best part of shoot day.", "SHRIMP BOIL · THE SHOWROOM"
  ]
 }
 ```
@@ -104,45 +113,42 @@ Take care of it and your kids will boil in it.
  "date": "2026-09-29",
  "time": "17:30",
  "media": [
-  "02_TUE-0929_STORY_shop-floor-crew-RAW.png"
+  "02_TUE-0929_STORY_shop-floor-shoot-day.png"
  ],
  "notes": [
-  "Story repost of the Tuesday photo, blurred band. Swaps with the feed photo."
+  "v3 2026-09-24: full-bleed 9:16, no blurred band, short copy inside the safe zone (Evan: no fade top and bottom, add short copy)."
+ ],
+ "graphicText": [
+  "SHOP FLOOR · TUE 09.29", "Shoot day at the shop.", "VIDEOS COMING SOON"
  ]
 }
 ```
-![](02_TUE-0929_FEED_shop-floor-crew-RAW.png)
-**Visual:** the team cook-off booth photo (Apr 2026, six of the krewe in red shirts, all HPC employees (Evan, 2026-09-21) under the HPC tent). **Raw: no type, no logo.** The story repost `02_TUE-0929_STORY_shop-floor-crew-RAW.png` uses the blurred band. **Preferred swap:** a phone photo from the Sept 23 shoot (the crew, a pot on the bench, Garrett's lights). The scheduled post's media gets replaced, and so does the caption (swap version below).
-**Caption — Facebook (fallback photo)**
+![](02_TUE-0929_CAROUSEL_1-shopfront.jpg)
+**Visual (v3, 2026-09-24):** a 4-frame carousel of Evan's shoot-day photos, each with the shield and a short line on a dark fade at the bottom (Evan: "Put some copy on the images... it looks lazy that we're posting a standard image off an iPhone"). 1 shop front, crew filming: "Shoot day at the shop." + SHOP FLOOR / TUE 09.29, COVINGTON, LA · SEPT 23 · 2 prep table: "Bird on the table. Cameras rolling." · 3 fried turkey on camera: "Fresh out of the oil." · 4 shrimp boil in the showroom: "Best part of shoot day." (frames 1, 4 and the story reworded 2026-09-24 after Evan's note) Story: the shop-front photo full-bleed 9:16, no blurred band, "Shoot day at the shop." + VIDEOS COMING SOON inside the safe zone (Evan: no fade, short copy). Weekly-format rule 2 (raw photos stay raw) is set aside for this post on Evan's call. v2 (raw carousel, option B) in `fallback/v2/`.
+**v1:** Evan's phone photo from the Sept 23 shoot (`turkey-prep-bts-shopfront-2026-09-23.jpg`): Garrett's crew filming at the HPC table outside the Covington shop, the big HPC shield on the wall, a raw turkey being prepped. Cropped to 4:5 (a strip of sky-free wall off the top, pavement off the bottom). **Raw: no type, no logo.** The story repost uses the blurred band. Swapped in 2026-09-24 (Evan: "we can use that for the krewe post").
+**Caption — Facebook**
 ```
 Shop Floor Tuesday.
 
-Off the shop floor for this one. That's part of our krewe at a crawfish cook-off this spring, tent up, table ready.
-
-We're a krewe of about twelve in Covington, Louisiana. The same people who weld the tunnel tubes also pack your freight, answer the phone and show up at the cook-offs.
-
-Last week a camera crew spent a day in the shop with us. You'll see what they caught soon.
-```
-**Caption — Instagram (fallback photo)**
-```
-Shop Floor Tuesday.
-
-Part of the krewe, cook-off season. About twelve of us in Covington, Louisiana, doing everything from the welds to the phones. 🔥
-
-Camera crew was in the shop last week. More soon.
-
-#builtinlouisiana #louisiana #outdoorcooking #cajuncooking #highperformancecookers
-```
-**Swap caption, if a Sept 23 shoot photo comes in (FB; IG trims the same way)**
-```
-Shop Floor Tuesday.
-
-Last Wednesday a camera crew spent the day in our Covington shop. This is what it looked like from our side of the lights.
+Last Wednesday a camera crew spent the day at our Covington shop. This is what it looked like from our side of the camera.
 
 We're a krewe of about twelve. The same people who weld the tunnel tubes also pack your freight and answer the phone. Now you'll get to see them work. Videos coming soon.
 ```
+**Caption — Instagram**
+```
+Shop Floor Tuesday.
+
+Camera crew at the Covington shop last week. This is our side of the camera. About twelve of us, doing everything from the welds to the phones. Videos coming soon. 🔥
+
+#builtinlouisiana #louisiana #outdoorcooking #cajuncooking #highperformancecookers
+```
+**Fallback (booth photo, not in use):** `fallback/02_TUE-0929_FEED_shop-floor-crew-RAW.png` + story. Its captions, if Evan reverts:
+```
+FB: Shop Floor Tuesday. / Off the shop floor for this one. That's part of our krewe at a crawfish cook-off this spring, tent up, table ready. / We're a krewe of about twelve in Covington, Louisiana. The same people who weld the tunnel tubes also pack your freight, answer the phone and show up at the cook-offs. / Last week a camera crew spent a day in the shop with us. You'll see what they caught soon.
+IG: Shop Floor Tuesday. / Part of the krewe, cook-off season. About twelve of us in Covington, Louisiana, doing everything from the welds to the phones. 🔥 / Camera crew was in the shop last week. More soon.
+```
 **Why this one:** People pillar. It is the first Tuesday after the shoot, and the payoff to last Tuesday's "more of these folks soon."
-**Claims check:** "about twelve" is Evan's wording (who-we-are); "krewe" for our own people (Evan, 2026-09-21). "Camera crew" stays "crew", since that's Garrett's team. Everyone in the booth photo is an HPC employee (Evan, 2026-09-21). Nobody is named (no permission on file). The shoot date (Sept 23) is from the board. Nothing sells on Tuesday.
+**Claims check:** "about twelve" is Evan's wording (who-we-are); "krewe" for our own people (Evan, 2026-09-21). "Camera crew" stays "crew", since that's Garrett's team. Nobody is named (no permission on file); the man at the table is not identified in the caption. "Last Wednesday" = Sept 23, from the photo's metadata, and true on Tue Sept 29. Garrett's videographer is "camera crew", not krewe. "Our side of the camera" replaces "of the lights": the photo shows a camera, no lights. Nothing sells on Tuesday.
 
 ### 3 · Wed Sep 30 · 12:00 · How-To Wednesday: carousel, 7 frames in this order
 ```schedule
@@ -257,7 +263,7 @@ The Turkey Fry Kits are live. Link in bio. 🔥
 **Why this one:** Evan's pick (2026-09-21, over SamTC). It's a turkey customer's proof on the day the turkey kits launch.
 **Claims check:** verbatim from reviews.io: Robert, 60 Qt Dual Turkey Fryer Pot, 2023-11-26 (Scout, 2026-09-21; the star came from the data feed, not the page, so none is shown). ⚠️ **Trimmed with "…": the dropped words are "Fast heating time (35-40 min)"**, since 35–40 minutes to heat reads against our "350° in under 10 minutes" line. Nothing is reworded. ⚠️ The 16.5 lb bird is over USDA's 12 lb guidance on Wednesday's frame 5; Evan chose this review knowing that (2026-09-21). Kit contents are from what-we-sell. No price in the tail. The kit line runs by default because the plan has the turkey kits live Oct 1; it comes out only if the Sept 30 go/no-go says no.
 
-### 5 · Fri Oct 2 · 12:00 · Friday Fire (conditional)
+### 5 · Fri Oct 2 · 12:00 · Friday Fire — ➖ DROPPED (Evan, 2026-09-24)
 ```schedule
 {
  "id": "5-reel",
@@ -271,21 +277,20 @@ The Turkey Fry Kits are live. Link in bio. 🔥
  "media": [
   "05_FRI-1002_REEL_turkey-30qt.mp4"
  ],
- "conditional": "Footage not delivered yet. No footage by Thu Oct 1 noon → mark dropped and the week runs five.",
  "notes": [
-  "Captions are drafts; re-read every line against the clip before approval.",
+  "Garrett's 30 QT turkey cut only; not Evan's phone clips (Evan, 2026-09-24).",
+  "Captions are drafts; re-read every line against Garrett's cut before approval.",
   "Over 10 MB is Evan's upload."
- ]
+ ],
+ "conditional": "Waiting on Garrett's turkey cut. Not in by Thu Oct 1 noon → mark dropped and the week runs five."
 }
 ```
-**Visual:** Garrett's 30 QT turkey demo cut to 9:16, under 30 s, with the bird going in and the thermometer in frame. **Or** Evan's phone clip from the Sept 23 shoot. Over 10 MB is Evan's upload. **No footage by Thu Oct 1 noon → dropped, and the week runs five.**
-**Caption — Facebook (draft; checked against the clip before scheduling)**
+**Visual:** Garrett's professional 30 QT turkey cut, 9:16, under 30 s (asked for Sept 28–29). **Not Evan's phone clips** (Evan, 2026-09-24: Garrett's cut and better raw footage are coming). No cut by Thu Oct 1 noon → dropped, and the week runs five.
+**Caption — Facebook**
 ```
 Friday Fire.
 
-Turkey going into 350° oil in the 30 QT. Sound on.
-
-Watch the thermometer. The bird goes in, the oil dips, and the tunnel tubes on the bottom of the pot pull it right back up.
+One turkey, one 30 QT. In it goes, the oil comes up rolling, and out comes a dark, crispy bird.
 
 Who's frying this year?
 
@@ -295,14 +300,14 @@ The Turkey Fry Kits are live at highperformancecookers.com.
 ```
 Friday Fire. 🔥
 
-Turkey into 350° oil, 30 QT. Sound on. Watch it dip and come right back.
+One turkey, one 30 QT. In it goes, oil rolling, out comes a crispy bird.
 
 Who's frying this year?
 
 #turkeyfry #outdoorcooking #louisiana #builtinlouisiana #highperformancecookers
 ```
-**Why this one:** Friday is the Boil pillar, and the shoot's first priority video is the turkey demo.
-**Claims check:** no time figure unless the clip shows the clock. Every line is re-read against what the footage actually shows.
+**Why this one:** Friday is the Boil pillar, and the shoot's first priority video is the turkey demo. The day after the kits launch.
+**Claims check:** drafts, written against Evan's phone clips 2026-09-24; re-read every line against Garrett's cut before approval. **Out:** "350°" (the thermometer is in frame but its reading can't be made out), "Sound on" (the audio hasn't been listened to), and "the oil dips and the tunnel tubes pull it right back up" (the clip doesn't show a temperature drop or recovery). **In:** only what's on screen: the bird goes in, the oil rolls, a dark crisp bird comes out. 30 QT is Evan's (2026-09-24). No cook time is shown, so none is claimed. The kit line runs by default because the plan has the turkey kits live Oct 1; it comes out if the Sept 30 go/no-go says no.
 
 ### 6 · Sat Oct 3 · 9:00 am · Game Day story
 ```schedule
@@ -359,9 +364,9 @@ Who's frying this year?
 
 | # | Scheduled for (CT) | Read back in Planner | Notes |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
+| 1 | Mon Sep 28 · 12:00 PM · FB + IG | ✅ Content → Scheduled: Mon Sep 28, 12:00pm, both | scheduled by ROUX 2026-09-24 |
+| 2 | Tue Sep 29 · 5:30 PM · FB + IG carousel ×4 + story | ✅ Scheduled list (feed) + Planner (story tiles), both | scheduled by ROUX 2026-09-24 |
+| 3 | Wed Sep 30 · 12:00 PM · FB + IG carousel ×7 | ✅ Content → Scheduled: Wed Sep 30, 12:00pm, both | scheduled by ROUX 2026-09-24 |
+| 4 | Thu Oct 1 · 5:30 PM · FB + IG | ✅ Content → Scheduled: Thu Oct 1, 5:30pm, both | scheduled by ROUX 2026-09-24. Turkey kit line: comes out only if the Sept 30 go/no-go says no (edit the scheduled post) |
+| 5 | — | — | ➖ dropped (Evan, 2026-09-24): turkey reel moves toward Thanksgiving |
+| 6 | Sat Oct 3 · 9:00 AM · FB + IG story | ✅ Planner week view: 9:00 AM story tiles, both | scheduled by ROUX 2026-09-24. Re-check the $404 kit price on Shopify that morning |

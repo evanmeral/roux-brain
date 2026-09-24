@@ -3,7 +3,9 @@
 # Author templates at TRUE ad pixel size (1 CSS px = 1 output px).
 # usage: ./build.sh <template.html> <WIDTHxHEIGHT> <output.png>
 set -e
-CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# chrome-headless-shell first: same engine, no Dock icon per render (Evan, 2026-09-24). Falls back to the Chrome app.
+CHROME="$HOME/Library/Application Support/ROUX/chrome-headless-shell-mac-arm64/chrome-headless-shell"
+[ -x "$CHROME" ] || CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 TPL="$1"; SIZE="$2"; OUT="$3"
 W="${SIZE%x*}"; H="${SIZE#*x}"
 DIR="$(cd "$(dirname "$TPL")" && pwd)"

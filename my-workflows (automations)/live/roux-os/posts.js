@@ -45,7 +45,10 @@ module.exports = function makePosts({ todayIso }) {
         id: p.id, slot: p.slot, segment: p.segment, type: p.type, placements: p.placements, when: p.when, scheduledFor: p.scheduledFor,
         status: p.status, approved: !!p.approved, approval: p.approval ? { by: p.approval.by, at: p.approval.at, via: p.approval.via, words: p.approval.words } : null,
         caption: { facebook: (p.caption && p.caption.facebook) || '', instagram: (p.caption && p.caption.instagram) || '' }, firstComment: p.firstComment || null,
-        conditional: p.conditional || null, alternates: p.alternates || [], notes: p.notes || [], commercial: !!p.commercial,
+        conditional: p.conditional || null,
+        // Alternates (an option B for Evan to pick) carry media URLs so the panel can show them under the piece.
+        alternates: (p.alternates || []).map((alt) => ({ label: alt.label || '', media: (alt.media || []).map((f) => { let exists = false; try { exists = fs.existsSync(m.mediaPath(id, f)); } catch (_) {} return { file: f, exists, url: `/api/posts/media?week=${encodeURIComponent(id)}&file=${encodeURIComponent(f)}` }; }) })),
+        notes: p.notes || [], commercial: !!p.commercial,
         evidence: (p.evidence || []).map((e) => ({ at: e.at, source: e.source, platform: e.platform, readBack: e.readBack })),
         media: (p.media || []).map((f, i) => { const ext = path.extname(f).toLowerCase(); let exists = false; try { exists = fs.existsSync(m.mediaPath(id, f)); } catch (_) {} return { file: f, n: i + 1, kind: ext === '.mp4' || ext === '.mov' ? 'video' : 'image', exists, url: `/api/posts/media?week=${encodeURIComponent(id)}&file=${encodeURIComponent(f)}` }; }),
         preflight: c ? { badge: c.badge, runnable: c.runnable, manualUpload: c.manualUpload, checks: c.checks.map((k) => ({ check: k.check, level: k.level, message: k.message, rule: k.rule || null, field: k.field || null, source: k.source || null })) } : null,
@@ -100,7 +103,8 @@ module.exports = function makePosts({ todayIso }) {
     const m = need(); const id = weekArg(weekId);
     if (typeof file !== 'string' || !file || file.length > 300) throw new HttpError(400, 'Which file?');
     let w; try { w = m.getWeek(id); } catch (e) { throw new HttpError(404, 'not found'); }
-    if (!w.pieces.some((p) => (p.media || []).includes(file))) throw new HttpError(404, 'not found');
+    // Only files a piece lists (its media, or an alternate's) are served.
+    if (!w.pieces.some((p) => (p.media || []).includes(file) || (p.alternates || []).some((alt) => (alt.media || []).includes(file)))) throw new HttpError(404, 'not found');
     let abs; try { abs = m.mediaPath(id, file); } catch (_) { throw new HttpError(404, 'not found'); }
     const type = MEDIA_MIME[path.extname(abs).toLowerCase()];
     if (!type) throw new HttpError(404, 'not found');

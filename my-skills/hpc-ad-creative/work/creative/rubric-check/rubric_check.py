@@ -30,7 +30,10 @@ CREATIVE = os.path.dirname(HERE)                         # work/creative
 VAULT = os.path.abspath(os.path.join(CREATIVE, "..", "..", "..", ".."))
 LINT_JS = os.path.join(VAULT, "my-workflows (automations)", "live", "post-scheduler", "lint.js")
 LIBRARY = os.path.join(CREATIVE, "library")
-CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# chrome-headless-shell first: same engine, but no Dock icon per render (Evan, 2026-09-24).
+# Falls back to the full Chrome app if the shell is missing.
+_SHELL = os.path.expanduser("~/Library/Application Support/ROUX/chrome-headless-shell-mac-arm64/chrome-headless-shell")
+CHROME = _SHELL if os.path.exists(_SHELL) else "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 INDEX = ".rubric-sources.tsv"                            # written by build.sh next to each render
 
 sys.path.insert(0, CREATIVE)

@@ -3,7 +3,7 @@
   "week": "2026-09-28",
   "timezone": "America/Chicago",
   "source": "PLAN.md",
-  "builtAt": "2026-09-21T17:56:17.866Z",
+  "builtAt": "2026-09-24T14:00:16.438Z",
   "createdAt": "2026-09-21T17:56:17.866Z",
   "pieces": [
     {
@@ -30,21 +30,36 @@
         "iso": "2026-09-28T12:00:00-05:00",
         "epoch": 1790614800
       },
-      "approved": false,
-      "approval": null,
-      "status": "draft",
-      "scheduledBy": null,
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-24T14:02:27.938Z",
+        "recordedAt": "2026-09-24T14:02:27.938Z",
+        "via": "os",
+        "words": "(Approve button in ROUX OS)",
+        "contentHash": "74f0e2714eef2ba032e30d2577596fea637cea5d91b0cf0ca8a300132ea05f7c"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
       "conditional": null,
       "alternates": [],
       "notes": [],
       "commercial": false,
       "graphicText": [
         "4mm",
-        "Thin pots warp. Ours are 4mm.",
+        "Thin pots warp. Ours don’t.",
         "Hand-welded in Louisiana."
       ],
       "waivers": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "at": "2026-09-24T14:33:31.610Z",
+          "source": "Content → Scheduled, read 2026-09-24",
+          "platform": "both",
+          "readBack": "Mon Sep 28, 12:00pm (FB + IG rows)",
+          "note": null
+        }
+      ],
       "history": [
         {
           "at": "2026-09-21T17:56:17.853Z",
@@ -52,6 +67,34 @@
           "to": "draft",
           "by": "build-manifest",
           "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-24T14:02:27.941Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "(Approve button in ROUX OS)"
+        },
+        {
+          "at": "2026-09-24T14:06:23.488Z",
+          "from": "approved",
+          "to": "queued",
+          "by": "ROUX",
+          "note": null
+        },
+        {
+          "at": "2026-09-24T14:11:28.314Z",
+          "from": "queued",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "You scheduled a post through Meta Business Suite (Sep 28 12:00 PM, FB+IG)"
+        },
+        {
+          "at": "2026-09-24T14:33:31.613Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": null
         }
       ]
     },
@@ -59,17 +102,20 @@
       "id": "2-feed",
       "slot": 2,
       "segment": "Shop Floor Tuesday",
-      "type": "feed",
+      "type": "carousel",
       "placements": [
         "facebook",
         "instagram"
       ],
       "media": [
-        "02_TUE-0929_FEED_shop-floor-crew-RAW.png"
+        "02_TUE-0929_CAROUSEL_1-shopfront.jpg",
+        "02_TUE-0929_CAROUSEL_2-two-on-camera.jpg",
+        "02_TUE-0929_CAROUSEL_3-fried-turkey-on-camera.jpg",
+        "02_TUE-0929_CAROUSEL_4-shrimp-boil-showroom.jpg"
       ],
       "caption": {
-        "facebook": "Shop Floor Tuesday.\n\nOff the shop floor for this one. That's part of our krewe at a crawfish cook-off this spring, tent up, table ready.\n\nWe're a krewe of about twelve in Covington, Louisiana. The same people who weld the tunnel tubes also pack your freight, answer the phone and show up at the cook-offs.\n\nLast week a camera crew spent a day in the shop with us. You'll see what they caught soon.",
-        "instagram": "Shop Floor Tuesday.\n\nPart of the krewe, cook-off season. About twelve of us in Covington, Louisiana, doing everything from the welds to the phones. 🔥\n\nCamera crew was in the shop last week. More soon.\n\n#builtinlouisiana #louisiana #outdoorcooking #cajuncooking #highperformancecookers"
+        "facebook": "Shop Floor Tuesday.\n\nLast Wednesday a camera crew spent the day at our Covington shop. This is what it looked like from our side of the camera.\n\nWe're a krewe of about twelve. The same people who weld the tunnel tubes also pack your freight and answer the phone. Now you'll get to see them work. Videos coming soon.",
+        "instagram": "Shop Floor Tuesday.\n\nCamera crew at the Covington shop last week. This is our side of the camera. About twelve of us, doing everything from the welds to the phones. Videos coming soon. 🔥\n\n#builtinlouisiana #louisiana #outdoorcooking #cajuncooking #highperformancecookers"
       },
       "firstComment": null,
       "scheduledFor": {
@@ -79,19 +125,45 @@
         "iso": "2026-09-29T17:30:00-05:00",
         "epoch": 1790721000
       },
-      "approved": false,
-      "approval": null,
-      "status": "draft",
-      "scheduledBy": null,
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-24T14:02:03.050Z",
+        "recordedAt": "2026-09-24T14:02:03.050Z",
+        "via": "os",
+        "words": "(Approve button in ROUX OS)",
+        "contentHash": "35fbe20aa3945af6e752000018f5b36ce51f326dc018c795030675396425eeaa"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
       "conditional": null,
       "alternates": [],
       "notes": [
-        "Fallback photo (team cook-off booth, Apr 2026). If a Sept 23 shoot photo replaces it, the media AND the caption change (swap caption is in PLAN.md): update PLAN.md, rebuild, and Evan approves the new version."
+        "v3 2026-09-24: copy on every frame (Evan: \"it looks lazy that we're posting a standard image off an iPhone\"). Shield on each frame; SHOP FLOOR / TUE 09.29 kicker on the cover."
       ],
       "commercial": false,
-      "graphicText": [],
+      "graphicText": [
+        "SHOP FLOOR",
+        "TUE 09.29",
+        "Shoot day at the shop.",
+        "COVINGTON, LA · SEPT 23",
+        "Bird on the table. Cameras rolling.",
+        "PREP, ON CAMERA",
+        "Fresh out of the oil.",
+        "TURKEY FRY · ON CAMERA",
+        "Best part of shoot day.",
+        "SHRIMP BOIL · THE SHOWROOM"
+      ],
       "waivers": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "at": "2026-09-24T14:33:31.662Z",
+          "source": "Content → Scheduled, read 2026-09-24",
+          "platform": "both",
+          "readBack": "Tue Sep 29, 5:30pm (FB + IG rows)",
+          "note": null
+        }
+      ],
       "history": [
         {
           "at": "2026-09-21T17:56:17.853Z",
@@ -99,6 +171,34 @@
           "to": "draft",
           "by": "build-manifest",
           "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-24T14:02:03.053Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "(Approve button in ROUX OS)"
+        },
+        {
+          "at": "2026-09-24T14:11:28.425Z",
+          "from": "approved",
+          "to": "queued",
+          "by": "ROUX",
+          "note": null
+        },
+        {
+          "at": "2026-09-24T14:16:33.177Z",
+          "from": "queued",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "Your post is scheduled (Sep 29 5:30 PM, FB+IG, 4 frames)"
+        },
+        {
+          "at": "2026-09-24T14:33:31.662Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": null
         }
       ]
     },
@@ -112,7 +212,7 @@
         "instagram"
       ],
       "media": [
-        "02_TUE-0929_STORY_shop-floor-crew-RAW.png"
+        "02_TUE-0929_STORY_shop-floor-shoot-day.png"
       ],
       "caption": null,
       "firstComment": null,
@@ -123,19 +223,38 @@
         "iso": "2026-09-29T17:30:00-05:00",
         "epoch": 1790721000
       },
-      "approved": false,
-      "approval": null,
-      "status": "draft",
-      "scheduledBy": null,
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-24T14:02:15.236Z",
+        "recordedAt": "2026-09-24T14:02:15.236Z",
+        "via": "os",
+        "words": "(Approve button in ROUX OS)",
+        "contentHash": "174a4a5c6670d5825f5363fae0e3331ec7231859963f1180f15fd0d01c1027f5"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
       "conditional": null,
       "alternates": [],
       "notes": [
-        "Story repost of the Tuesday photo, blurred band. Swaps with the feed photo."
+        "v3 2026-09-24: full-bleed 9:16, no blurred band, short copy inside the safe zone (Evan: no fade top and bottom, add short copy)."
       ],
       "commercial": false,
-      "graphicText": [],
+      "graphicText": [
+        "SHOP FLOOR · TUE 09.29",
+        "Shoot day at the shop.",
+        "VIDEOS COMING SOON"
+      ],
       "waivers": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "at": "2026-09-24T14:34:43.076Z",
+          "source": "Planner week view, read 2026-09-24",
+          "platform": "both",
+          "readBack": "Tue 29 5:30 PM story, FB + IG tiles",
+          "note": null
+        }
+      ],
       "history": [
         {
           "at": "2026-09-21T17:56:17.853Z",
@@ -143,6 +262,34 @@
           "to": "draft",
           "by": "build-manifest",
           "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-24T14:02:15.239Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "(Approve button in ROUX OS)"
+        },
+        {
+          "at": "2026-09-24T14:16:33.298Z",
+          "from": "approved",
+          "to": "queued",
+          "by": "ROUX",
+          "note": null
+        },
+        {
+          "at": "2026-09-24T14:19:11.389Z",
+          "from": "queued",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "Your story has been successfully scheduled for publishing (Sep 29 5:30 PM, FB+IG)"
+        },
+        {
+          "at": "2026-09-24T14:34:43.085Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": null
         }
       ]
     },
@@ -176,10 +323,17 @@
         "iso": "2026-09-30T12:00:00-05:00",
         "epoch": 1790787600
       },
-      "approved": false,
-      "approval": null,
-      "status": "draft",
-      "scheduledBy": null,
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-24T13:21:10.454Z",
+        "recordedAt": "2026-09-24T13:21:10.454Z",
+        "via": "os",
+        "words": "(Approve button in ROUX OS)",
+        "contentHash": "bb2a08dabd481874221f68a4cbef26a62edfc302e2db3d88ff99c88d7d21fe20"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
       "conditional": null,
       "alternates": [],
       "notes": [],
@@ -217,7 +371,15 @@
         "HAND-WELDED IN LOUISIANA MOST ORDERS SHIP IN 1 2 BUSINESS DAYS"
       ],
       "waivers": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "at": "2026-09-24T14:33:31.711Z",
+          "source": "Content → Scheduled, read 2026-09-24",
+          "platform": "both",
+          "readBack": "Wed Sep 30, 12:00pm (FB + IG rows)",
+          "note": null
+        }
+      ],
       "history": [
         {
           "at": "2026-09-21T17:56:17.853Z",
@@ -225,6 +387,34 @@
           "to": "draft",
           "by": "build-manifest",
           "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-24T13:21:10.473Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "(Approve button in ROUX OS)"
+        },
+        {
+          "at": "2026-09-24T14:19:11.503Z",
+          "from": "approved",
+          "to": "queued",
+          "by": "ROUX",
+          "note": null
+        },
+        {
+          "at": "2026-09-24T14:24:04.106Z",
+          "from": "queued",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "Your post is scheduled (Sep 30 12:00 PM, FB+IG, 7 frames)"
+        },
+        {
+          "at": "2026-09-24T14:33:31.711Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": null
         }
       ]
     },
@@ -252,10 +442,17 @@
         "iso": "2026-10-01T17:30:00-05:00",
         "epoch": 1790893800
       },
-      "approved": false,
-      "approval": null,
-      "status": "draft",
-      "scheduledBy": null,
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-24T13:21:35.201Z",
+        "recordedAt": "2026-09-24T13:21:35.201Z",
+        "via": "os",
+        "words": "(Approve button in ROUX OS)",
+        "contentHash": "320c82808d75097bccae76f68026595bbe2a09f09243d33a5bf264672d94f4dd"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
       "conditional": null,
       "alternates": [],
       "notes": [
@@ -264,7 +461,15 @@
       "commercial": false,
       "graphicText": [],
       "waivers": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "at": "2026-09-24T14:33:31.757Z",
+          "source": "Content → Scheduled, read 2026-09-24",
+          "platform": "both",
+          "readBack": "Thu Oct 1, 5:30pm (FB + IG rows)",
+          "note": null
+        }
+      ],
       "history": [
         {
           "at": "2026-09-21T17:56:17.855Z",
@@ -272,6 +477,34 @@
           "to": "draft",
           "by": "build-manifest",
           "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-24T13:21:35.205Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "(Approve button in ROUX OS)"
+        },
+        {
+          "at": "2026-09-24T14:24:04.219Z",
+          "from": "approved",
+          "to": "queued",
+          "by": "ROUX",
+          "note": null
+        },
+        {
+          "at": "2026-09-24T14:30:04.617Z",
+          "from": "queued",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "Your post is scheduled (Oct 1 5:30 PM, FB+IG)"
+        },
+        {
+          "at": "2026-09-24T14:33:31.758Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": null
         }
       ]
     },
@@ -288,8 +521,8 @@
         "05_FRI-1002_REEL_turkey-30qt.mp4"
       ],
       "caption": {
-        "facebook": "Friday Fire.\n\nTurkey going into 350° oil in the 30 QT. Sound on.\n\nWatch the thermometer. The bird goes in, the oil dips, and the tunnel tubes on the bottom of the pot pull it right back up.\n\nWho's frying this year?\n\nThe Turkey Fry Kits are live at highperformancecookers.com.",
-        "instagram": "Friday Fire. 🔥\n\nTurkey into 350° oil, 30 QT. Sound on. Watch it dip and come right back.\n\nWho's frying this year?\n\n#turkeyfry #outdoorcooking #louisiana #builtinlouisiana #highperformancecookers"
+        "facebook": "Friday Fire.\n\nOne turkey, one 30 QT. In it goes, the oil comes up rolling, and out comes a dark, crispy bird.\n\nWho's frying this year?\n\nThe Turkey Fry Kits are live at highperformancecookers.com.",
+        "instagram": "Friday Fire. 🔥\n\nOne turkey, one 30 QT. In it goes, oil rolling, out comes a crispy bird.\n\nWho's frying this year?\n\n#turkeyfry #outdoorcooking #louisiana #builtinlouisiana #highperformancecookers"
       },
       "firstComment": null,
       "scheduledFor": {
@@ -301,12 +534,13 @@
       },
       "approved": false,
       "approval": null,
-      "status": "draft",
+      "status": "dropped",
       "scheduledBy": null,
-      "conditional": "Footage not delivered yet. No footage by Thu Oct 1 noon → mark dropped and the week runs five.",
+      "conditional": "Waiting on Garrett's turkey cut. Not in by Thu Oct 1 noon → mark dropped and the week runs five.",
       "alternates": [],
       "notes": [
-        "Captions are drafts; re-read every line against the clip before approval.",
+        "Garrett's 30 QT turkey cut only; not Evan's phone clips (Evan, 2026-09-24).",
+        "Captions are drafts; re-read every line against Garrett's cut before approval.",
         "Over 10 MB is Evan's upload."
       ],
       "commercial": false,
@@ -320,6 +554,13 @@
           "to": "draft",
           "by": "build-manifest",
           "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-24T13:27:24.623Z",
+          "from": "draft",
+          "to": "dropped",
+          "by": "Evan",
+          "note": "Evan 2026-09-24: we can drop this post entirely since we will probably do this one closer to thanksgiving"
         }
       ]
     },
@@ -344,10 +585,17 @@
         "iso": "2026-10-03T09:00:00-05:00",
         "epoch": 1791036000
       },
-      "approved": false,
-      "approval": null,
-      "status": "draft",
-      "scheduledBy": null,
+      "approved": true,
+      "approval": {
+        "by": "Evan",
+        "at": "2026-09-24T13:22:30.512Z",
+        "recordedAt": "2026-09-24T13:22:30.512Z",
+        "via": "os",
+        "words": "(Approve button in ROUX OS)",
+        "contentHash": "1d214deb0a755fe4cc541ca6e4b98f50dce8b1b4112e2bd903caa26f6a90ca8d"
+      },
+      "status": "verified",
+      "scheduledBy": "ROUX",
       "conditional": null,
       "alternates": [
         {
@@ -369,7 +617,15 @@
         "18 QT TAILGATE KIT · FROM $404 · LINK IN BIO"
       ],
       "waivers": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "at": "2026-09-24T14:34:43.142Z",
+          "source": "Planner week view, read 2026-09-24",
+          "platform": "both",
+          "readBack": "Sat 3 9:00 AM story, FB + IG tiles",
+          "note": null
+        }
+      ],
       "history": [
         {
           "at": "2026-09-21T17:56:17.855Z",
@@ -377,9 +633,37 @@
           "to": "draft",
           "by": "build-manifest",
           "note": "built from PLAN.md"
+        },
+        {
+          "at": "2026-09-24T13:22:30.514Z",
+          "from": "draft",
+          "to": "approved",
+          "by": "Evan",
+          "note": "(Approve button in ROUX OS)"
+        },
+        {
+          "at": "2026-09-24T14:30:04.739Z",
+          "from": "approved",
+          "to": "queued",
+          "by": "ROUX",
+          "note": null
+        },
+        {
+          "at": "2026-09-24T14:32:53.136Z",
+          "from": "queued",
+          "to": "scheduled",
+          "by": "ROUX",
+          "note": "Your story has been successfully scheduled for publishing (Oct 3 9:00 AM, FB+IG)"
+        },
+        {
+          "at": "2026-09-24T14:34:43.144Z",
+          "from": "scheduled",
+          "to": "verified",
+          "by": "ROUX",
+          "note": null
         }
       ]
     }
   ],
-  "updatedAt": "2026-09-21T17:56:17.866Z"
+  "updatedAt": "2026-09-24T14:34:43.144Z"
 }
