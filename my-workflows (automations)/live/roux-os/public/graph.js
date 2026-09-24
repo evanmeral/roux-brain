@@ -29,6 +29,7 @@ const GRAPH = (() => {
   let yaw = 0.4, pitch = -0.28, zoom = 1, target = null, lastTouch = -10;
   let hover = null, selected = null, query = '', showLinks = true;
   const hidden = new Set();
+  let newSet = new Set(), showNew = false;   // nodes made since the score before the latest Thursday score
   let loop = null, loaded = false, loading = false, lastFrame = 0, T = 0, prevT = 0;
   let pulses = [], nextPulse = 0, dust = [], grid = [];
 
@@ -195,7 +196,7 @@ const GRAPH = (() => {
 
     const focus = selected || hover;
     const near = new Set(); if (focus) { near.add(focus.id); for (const m of adj.get(focus.id) || []) near.add(m.id); }
-    const hits = query ? new Set(nodes.filter(matches).map((n) => n.id)) : null;
+    const hits = query ? new Set(nodes.filter(matches).map((n) => n.id)) : showNew && newSet.size ? newSet : null;
     const dim = !!(focus || hits);
     const lit = (n) => !dim || near.has(n.id) || (hits && hits.has(n.id));
 
@@ -261,6 +262,13 @@ const GRAPH = (() => {
       n.pr = r;
     }
     ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+    // new since the last score: a thin white ring that breathes
+    if (newSet.size) for (const n of order) {
+      if (!newSet.has(n.id) || n.p.z < -0.2) continue;
+      ctx.globalAlpha = (showNew ? .95 : .55) * (0.6 + 0.4 * Math.sin(T * 2.2 + n.tw)) * Math.max(.3, light(n.p.z));
+      ctx.beginPath(); ctx.arc(n.p.x, n.p.y, n.pr * 1.6 + 4, 0, Math.PI * 2); ctx.strokeStyle = '#FFFFFF'; ctx.lineWidth = 1.1; ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
     if (selected && visible(selected) && selected.p) { ctx.beginPath(); ctx.arc(selected.p.x, selected.p.y, selected.pr * 2 + 6, 0, Math.PI * 2); ctx.strokeStyle = 'rgba(255,255,255,.75)'; ctx.lineWidth = 1.2; ctx.stroke(); }
 
     // labels: the six regions always (front side), anything else only in focus or when found
@@ -412,13 +420,14 @@ const GRAPH = (() => {
     try {
       const r = await fetch('/api/graph', { cache: 'no-store' }); data = await r.json();
       if (!r.ok) throw new Error(data.error || r.status);
+      newSet = new Set(data.newIds || []);
       nodes = data.nodes; edges = data.edges; byId = new Map(nodes.map((n) => [n.id, n])); adj = new Map();
       for (const e of edges) { if (!adj.has(e.a)) adj.set(e.a, []); if (!adj.has(e.b)) adj.set(e.b, []); adj.get(e.a).push(byId.get(e.b)); adj.get(e.b).push(byId.get(e.a)); }
       layout();
       if (selected) selected = byId.get(selected.id) || null;
       const c = data.counts;
-      $('graph-sub').textContent = `${c.agent || 0} agents · ${c.skill || 0} skills · ${c.routine || 0} routines · ${c.app || 0} apps · ${(c.file || 0) + (c.skill || 0)} notes and files · ${edges.filter((e) => e.t === 'link').length} links between them`;
-      loaded = true; resize();
+      $('graph-sub').textContent = `${c.agent || 0} agents · ${c.skill || 0} skills · ${c.routine || 0} routines · ${c.app || 0} apps · ${(c.file || 0) + (c.skill || 0)} notes and files · ${edges.filter((e) => e.t === 'link').length} links between them${data.period && newSet.size ? ` · ${newSet.size} new since ${new Date(data.period.from + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}` : ''}`;
+      loaded = true; if (typeof renderKey === 'function' && TAB === 'home') renderKey(); resize();
       if (selected) showInfo(selected);
     } catch (e) {
       $('graph-sub').innerHTML = `<span class="bad">Cannot build the map: ${esc(e.message)}</span>`;
@@ -430,7 +439,10 @@ const GRAPH = (() => {
   function keyRows() {
     return ['agents', 'skills', 'routines', 'apps', 'work', 'business', 'desk', 'knowledge'].map((g) => ({ group: g, color: GROUPS[g].color, label: GROUPS[g].label, sub: GROUPS[g].sub, off: hidden.has(g) }));
   }
+  function toggleNew() { showNew = !showNew; renderKey(); }
   function toggleGroup(g) { if (hidden.has(g)) hidden.delete(g); else hidden.add(g); if (selected && !visible(selected)) select(null); renderKey(); }
 
-  return { load, wire, keyRows, toggleGroup, redraw: () => frame(performance.now() / 1000), invalidate: () => { loaded = false; } };
+  // A score landed or a file changed: fetch the map again. Off Home, just mark it stale for next time.
+  function refresh(now) { if (now) load(true); else loaded = false; }
+  return { load, wire, keyRows, toggleGroup, refresh, toggleNew, newInfo: () => ({ count: newSet.size, period: data && data.period, on: showNew }), redraw: () => frame(performance.now() / 1000), invalidate: () => { loaded = false; } };
 })();

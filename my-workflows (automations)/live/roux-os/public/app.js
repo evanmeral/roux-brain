@@ -19,8 +19,7 @@ function tickClock() {
   const tz = (STATE && STATE.timezone) || 'America/Chicago';
   const p = tzParts(new Date(), tz);
   $('clock-time').innerHTML = `${p.time}<span style="font-size:.45em;font-weight:600;color:var(--muted);margin-left:4px">${p.ampm}</span>`;
-  const rhythm = STATE && STATE.rhythm ? STATE.rhythm[String(p.dowNum)] : '';
-  $('clock-date').innerHTML = `${esc(p.date)}${rhythm ? ` · <span class="rhythm">${esc(rhythm)}</span>` : ''}`;
+  $('clock-date').textContent = p.date;
 }
 setInterval(tickClock, 1000);
 
@@ -159,6 +158,7 @@ function renderDeskStrip() {
   $('desk-strip').querySelectorAll('[data-goto]').forEach((b) => b.addEventListener('click', () => showTab(b.dataset.goto)));
   const n = $('tab-approvals-n'); n.textContent = A.pending || ''; n.classList.toggle('is-hidden', !A.pending);
   const pn = $('tab-posts-n'); pn.textContent = P.waiting || ''; pn.classList.toggle('is-hidden', !P.waiting);
+  const PR = d.proposals || {}; const prn = $('tab-proposals-n'); prn.textContent = PR.waiting || ''; prn.classList.toggle('is-hidden', !PR.waiting);
 }
 
 function renderRunning() {
@@ -258,6 +258,14 @@ function wireActions() {
     if (!text) return;
     if (await capture('', text)) { inp.value = ''; loadState().catch(() => {}); }
   });
+  $('rem-form').addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const inp = $('rem-text'); const text = inp.value.trim();
+    if (!text) { toast('Type the reminder first.', true); inp.focus(); return; }
+    const j = await postJson('/api/reminders/add', { text });
+    if (j) { inp.value = ''; toast('Reminder added.'); loadReminders(); }
+  });
+  window.addEventListener('resize', placeHomeCol);
   $('capture-form-home').addEventListener('submit', async (ev) => {
     ev.preventDefault();
     const inp = $('capture-text-home'); const text = inp.value.trim();
@@ -283,7 +291,7 @@ function wireActions() {
 }
 
 // ---- tabs, links, recent, board, files ----
-const TAB_TITLES = { home: 'Home', today: 'Today', plan: "This Month's Plan", launches: 'Launches', approvals: 'Approvals', posts: 'Posts', affiliates: 'Affiliates', score: 'Score', board: 'Board', files: 'Files' };
+const TAB_TITLES = { home: 'Home', today: 'Today', plan: "This Month's Plan", launches: 'Launches', approvals: 'Approvals', planner: 'Planner', posts: 'Posts', affiliates: 'Affiliates', score: 'Score', budget: 'Marketing Budget', paidmedia: 'Paid Media', proposals: "ROUX's Proposals", board: 'Board', files: 'Files' };
 let TAB = 'home';
 function showTab(name) {
   if (!TAB_TITLES[name]) name = 'home';
@@ -295,7 +303,10 @@ function showTab(name) {
   window.scrollTo(0, 0);
   renderKey();
   try { localStorage.setItem('roux.tab3', name); } catch (_) {}
-  if (name === 'home') GRAPH.load();
+  if (name === 'home') { GRAPH.load(); loadReminders(); requestAnimationFrame(placeHomeCol); }
+  if (name === 'planner') loadPlanner();
+  if (name === 'budget' || name === 'paidmedia') loadBudget();
+  if (name === 'proposals') loadProposals();
   if (name === 'plan') loadPlan();
   if (name === 'board') renderBoard();
   if (name === 'launches') loadLaunches();
@@ -411,7 +422,13 @@ function refreshOpenTab(what) {
   if (on('approvals')) loadApprovals();
   if (on('score')) loadScore();
   if (what && /PLAN\.md/.test(what)) loadPlan();
-  if (on('home') && what && /\.md$/.test(what)) { GRAPH.invalidate(); }
+  if (what === 'graph') GRAPH.refresh(!!on('home'));
+  else if (on('home') && what && /\.md$/.test(what)) GRAPH.refresh(true);
+  if (what && /reminders\.md/.test(what)) loadReminders();
+  if (on('planner') && (what === 'posts' || /capture\.md/.test(what || ''))) loadPlanner();
+  if ((on('budget') || on('paidmedia')) && (what === 'budget' || /BOARD\.md/.test(what || '')) && !document.querySelector('#budget-body input:focus')) loadBudget();
+  if (on('proposals') && /proposals\.json/.test(what || '') && !document.querySelector('#proposals-body input:focus')) loadProposals();
+  if (on('posts') && /capture\.md/.test(what || '') && !document.querySelector('#posts-body [data-note]:focus')) loadPosts(true);
   if (on('posts') && what === 'posts' && !document.querySelector('#posts-body [data-note]:focus')) loadPosts(true);
   if (on('affiliates') && what === 'affiliates' && !$('aff-drawer').classList.contains('is-on')) loadAffiliates();
 }
@@ -427,7 +444,7 @@ async function boot() {
   setInterval(loadWeek, 5 * 60 * 1000);
   setInterval(() => loadState().catch(() => {}), 10 * 60 * 1000);
   const es = new EventSource('/api/events');
-  es.onmessage = (m) => { if (m.data === 'hello') return; if (m.data === 'runs') { loadRuns(); return; } loadState().catch(() => {}); loadRecent(); refreshOpenTab(m.data); if (m.data === 'config') loadWeek(); };
+  es.onmessage = (m) => { if (m.data === 'hello') return; if (m.data === 'runs') { loadRuns(); return; } if (m.data === 'graph') { refreshOpenTab('graph'); return; } loadState().catch(() => {}); loadRecent(); refreshOpenTab(m.data); if (m.data === 'config') loadWeek(); };
   es.onerror = () => { $('status').insertAdjacentHTML('beforeend', '<span class="bad">live updates disconnected, retrying</span>'); };
 }
 boot();
@@ -436,25 +453,8 @@ boot();
 // ---- Home widgets (v0.3) ----
 function renderHome() {
   if (!STATE) return;
-  // today's schedule: key dates + calendar events for today
-  const tb = $('w-today-body');
-  if (!WEEK) tb.innerHTML = '<div class="w-empty">Loading the calendar…</div>';
-  else {
-    const keys = (STATE.keyDates || []).filter((k) => k.date === STATE.today).map((k) => `<div class="w-row"><span class="t" style="color:var(--flame)">KEY</span><span class="x">${esc(k.what)}</span></div>`);
-    const evs = (WEEK.byDay[STATE.today] || []).map((e) => `<div class="w-row"><span class="t">${e.allDay ? 'all day' : esc(e.time)}</span><span class="x" style="border-left:3px solid ${esc(e.color)};padding-left:8px">${esc(e.summary)}</span></div>`);
-    const broken = (WEEK.feeds || []).filter((f) => f.error && f.error !== 'not configured');
-    tb.innerHTML = (keys.concat(evs).join('') || '<div class="w-empty">Nothing on the calendar today.</div>')
-      + broken.map((f) => `<div class="bad" style="margin-top:8px">Cannot read the ${esc(f.name)} calendar.</div>`).join('');
-  }
-  // waiting on you
-  const wb = $('w-waiting-body'); const b = STATE.board;
-  if (!b || !b.waiting) wb.innerHTML = `<div class="bad">${esc(STATE.health.board || 'Cannot read the board')}</div>`;
-  else {
-    const me = b.waiting.filter((w) => w.isEvan);
-    wb.innerHTML = me.length ? `<div style="display:flex;align-items:center;margin-bottom:6px"><span class="w-count">${me.length}</span><span class="w-sub" style="margin:0">item${me.length === 1 ? '' : 's'} need you</span></div>`
-      + me.slice(0, 3).map((w) => `<div class="w-row"><span class="x">${esc(shortAsk(w.what))}</span>${w.ageDays != null ? `<span class="t" style="min-width:0">${w.ageDays}d</span>` : ''}</div>`).join('')
-      : '<div class="w-empty">Nothing waiting on you.</div>';
-  }
+  const b = STATE.board;
+  placeHomeCol();
   // plan pace (what PLAN.md says; nothing computed)
   const pb = $('w-plan-body'); const v = typeof PLANV !== 'undefined' ? PLANV : null;
   if (!pb) { /* plan pace widget not on the page */ }
@@ -516,10 +516,32 @@ function keyItems(tab) {
       R('#4CC38A', 'Approved'),
       R('#8C8681', 'Rejected'),
     ];
+    case 'planner': return [
+      R('#4CC38A', 'Scheduled · verified', 'in Business Suite, read back', 'box'),
+      R('#F69329', 'Approved', 'waiting on the Schedule button', 'box'),
+      R('#FFA41C', 'Draft', 'waiting on your approval', 'box'),
+      R('#FF6A4D', 'Dropped', 'not going out', 'box'),
+      R('#F69329', 'Today', 'outlined day', 'ring'),
+    ];
+    case 'budget': return [
+      R('#F69329', 'Monthly cost', 'from the source beside it'),
+      R('#FFA41C', 'Not on file', 'nobody has read the cost yet'),
+      R('#8C8681', 'Ended or free', ''),
+    ];
+    case 'paidmedia': return [
+      R('#F69329', 'Live daily caps', "the board's Running section", 'line'),
+      R('#E13418', 'Over the ceiling', '$350/day for the account', 'line'),
+      R('#FFA41C', 'Old read', 'a spend figure over a week old'),
+    ];
+    case 'proposals': return [
+      R('#4CC38A', 'Free', 'runs on what you already have'),
+      R('#F69329', 'Paid', 'a yes is not a purchase; you buy it'),
+      R('#FFA41C', 'Price not confirmed', 'check before paying'),
+    ];
     case 'posts': return [
       R('#4CC38A', 'Pass · approved · scheduled', 'preflight and status'),
       R('#FFA41C', 'Warning · queued', 're-check before it posts'),
-      R('#FF6A4D', 'Fail', 'blocks scheduling'),
+      R('#FF6A4D', 'Fail · dropped', 'fail blocks scheduling; a dropped post is folded'),
     ];
     case 'affiliates': return [
       R('#4CC38A', 'Active · sold in 30 days', 'green pill and dot'),
@@ -548,10 +570,58 @@ function renderKey() {
   $('key-page').textContent = TAB_TITLES[TAB] || '';
   if (TAB === 'home') {
     body.innerHTML = GRAPH.keyRows().map((r) => `<div class="key-row is-toggle ${r.off ? 'is-off' : ''}" data-group="${r.group}" title="Click to ${r.off ? 'show' : 'hide'}"><span class="sw" style="background:${r.color}"></span><span>${esc(r.label)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}</span></div>`).join('')
+      + (() => { const nw = GRAPH.newInfo(); if (!nw.period) return ''; const since = new Date(nw.period.from + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+        return `<div class="key-row is-toggle ${nw.on ? '' : 'is-dimmed'}" id="key-new" title="Click to ${nw.on ? 'stop highlighting' : 'highlight'} them"><span class="sw is-ring" style="border-color:#FFFFFF"></span><span>New since ${esc(since)} · ${nw.count}<small>made since the score before the last Thursday score; refreshes when a score lands</small></span></div>`; })()
       + `<div class="key-note">ROUX glows at the core; the six named lights are the hubs. Arcs over the surface are real links between files. Click a color to hide or show it.</div>`;
     body.querySelectorAll('[data-group]').forEach((el) => el.addEventListener('click', () => GRAPH.toggleGroup(el.dataset.group)));
+    const kn = $('key-new'); if (kn) kn.addEventListener('click', () => GRAPH.toggleNew());
     return;
   }
   const items = keyItems(TAB);
   body.innerHTML = items.length ? items.map((r) => `<div class="key-row"><span class="sw ${r.kind ? 'is-' + r.kind : ''}" style="${r.kind === 'ring' ? 'border-color' : 'background'}:${r.color}"></span><span>${esc(r.label)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}</span></div>`).join('') : '<div class="key-note">No colors on this page.</div>';
+}
+
+
+// ---- Reminders (Home): short notes for Evan, from my-desk (now)/reminders.md ----
+let REMINDERS = null;
+async function loadReminders() {
+  try { const r = await fetch('/api/reminders', { cache: 'no-store' }); REMINDERS = await r.json(); if (!r.ok) throw new Error(REMINDERS.error || r.status); }
+  catch (e) { REMINDERS = { error: e.message, items: [] }; }
+  renderReminders();
+}
+function renderReminders() {
+  const el = $('w-rem-body'); const v = REMINDERS;
+  if (!v) { el.innerHTML = '<div class="w-empty">Loading…</div>'; return; }
+  if (v.error) { el.innerHTML = `<div class="bad">Cannot read reminders: ${esc(v.error)}</div>`; return; }
+  const open = v.items.filter((i) => !i.done); const doneToday = v.items.filter((i) => i.done).slice(-3);
+  $('rem-stamp').textContent = open.length ? `${open.length} open` : '';
+  el.innerHTML = (open.length ? open.map((i) => remRow(i)).join('') : '<div class="w-empty">No reminders. Add one below.</div>')
+    + (doneToday.length ? `<div class="rem-done-h">Done, cleared at wrap</div>${doneToday.map((i) => remRow(i)).join('')}` : '');
+  el.querySelectorAll('[data-rem-x]').forEach((b) => b.addEventListener('click', async () => {
+    const i = v.items[Number(b.dataset.remX)]; b.disabled = true;
+    const j = await postJson('/api/reminders/remove', { line: i.line, text: i.text });
+    if (j) toast('Removed. It is kept in the reminders archive.');
+    loadReminders();
+  }));
+  el.querySelectorAll('[data-rem]').forEach((b) => b.addEventListener('click', async () => {
+    const i = v.items[Number(b.dataset.rem)]; b.disabled = true;
+    const j = await postJson('/api/reminders/toggle', { line: i.line, text: i.text, done: !i.done });
+    if (j) toast(j.done ? 'Done. It clears at the next wrap.' : 'Back on the list.');
+    loadReminders();
+  }));
+  placeHomeCol();
+}
+function remRow(i) {
+  const idx = REMINDERS.items.indexOf(i);
+  return `<div class="rem-row ${i.done ? 'is-done' : ''}"><button class="rem-box" data-rem="${idx}" title="${i.done ? 'Put it back on the list' : 'Mark done'}" aria-label="${i.done ? 'Undo' : 'Done'}">${i.done ? '✓' : ''}</button><span class="rem-t">${esc(i.text)}</span>${i.by && !/evan/i.test(i.by) ? `<span class="rem-by">${esc(i.by)}</span>` : ''}<button class="rem-x" data-rem-x="${idx}" title="Remove this note (kept in the archive)" aria-label="Remove">×</button></div>`;
+}
+
+// Home widgets sit below the countdown chips, whatever height the chips wrap to, so nothing covers them.
+function placeHomeCol() {
+  if (!document.body.classList.contains('on-home')) return;
+  const chips = $('countdowns'); const col = $('home-right'); const info = $('graph-info');
+  if (!chips || !col) return;
+  const r = chips.getBoundingClientRect();
+  const top = Math.max(20, Math.round((chips.children.length ? r.bottom : 0) + 14));
+  col.style.top = top + 'px'; if (info) { info.style.top = top + 'px'; info.style.maxHeight = `calc(100% - ${top + 20}px)`; }
 }

@@ -24,6 +24,9 @@ If /setup has been completed, do the following:
    `rejected` or `queued` are Evan's answers from ROUX OS since the last wrap; his `note` is the
    reason. Brief them under "From your approvals". ⛔ `queued` (a `live-write`) is **not**
    permission to change Shopify, Meta or Google: still ask Evan in this conversation first.
+   **Then read `my-desk (now)/reminders.md`** (Evan's short notes; brief only the open ones if he asks)
+   **and the decided items in `my-desk (now)/proposals.json`** (a `yes` is work to pick up; a yes on a
+   paid item is never a purchase).
    **Then, if `my-desk (now)/PLAN.md` exists, read it.** It is the locked month plan: the
    targets the work is heading toward (`my-skills/month-plan/instructions.md`).
 2. `CLAUDE.md` is already in context (it loads every turn). Do not re-read it.

@@ -1,6 +1,6 @@
 # How to use ROUX OS
 
-**For Evan.** Three pages now. Read once, then keep it in the Links strip on the page.
+**For Evan.** Read once, then keep it in the Links strip on the page.
 Address: `localhost:4242`, or the ROUX icon in your Dock.
 
 ---
@@ -29,6 +29,30 @@ fast and you had become the bottleneck, because every yes cost a chat session. S
 take one click on the page and no session: tick a launch gate, approve or reject what an agent
 proposes, approve a post, ask for a drafted nudge, and keep the affiliate list. None of it runs a
 model. None of it sends anything. None of it touches Shopify, Meta or Google.
+
+**New on 2026-09-24 (v0.5), from your list:**
+- **Home:** Today's schedule and Waiting on you are gone. **Reminders** took their place: short
+  notes for you, a box to type a new one, and **Add Note**. Tick the box when it's done; done ones
+  clear at the next wrap. ROUX adds reminders too. The widgets now always sit below the date chips.
+- **The globe keeps up with the score.** When the Thursday score lands (PLAN.md's scoreboard or
+  the kill-line read), the map rebuilds itself. Anything made since the score before that one gets
+  a white ring; "New since …" in the color key highlights them. The dates come from git.
+- **Menu:** the logo, clock, date, Home, Today and This Month's Plan stay fixed; the rest scrolls.
+  The date is bigger and orange; the day-theme tag is gone. Launches has a rocket.
+- **Planner:** every FB and IG post on a calendar, week (with the graphics) or month, filtered to
+  Facebook or Instagram. Replaces opening Business Suite to look. Click a post to open it in Posts.
+- **Posts:** **Have ROUX review notes** opens a session where Sage works every note and approval
+  for the week, then says "ready for review in Posts". **Schedule approved posts** opens a session
+  that schedules the approved pieces in Business Suite and reads each back. Under each post,
+  **Short notes sent** lists every note you sent on it, with the time. A dropped post folds to one
+  line with red **Dropped**.
+- **Marketing Budget:** what HPC pays month to month (tools, agencies, contractors), each with its
+  source. "Not on file" means nobody has read that cost; fill it in with Edit. No ad spend here.
+- **Paid Media:** Meta and Google on their own page: who runs them, the live Meta caps from the
+  board, and the last spend read (Finn updates it).
+- **ROUX's Proposals:** ideas to make ROUX better, split free and paid, with what each is, what it
+  would do and what it costs (sourced). Yes, Later or No with a line. A yes on a paid one is not a
+  purchase; you buy it.
 
 ## The two-minute morning
 
@@ -155,7 +179,9 @@ It works nothing out on its own.
   go to `capture.md`, which is an inbox, and to four files the page owns: `launches.md`,
   `approvals.json`, the affiliates list, and the approved mark on a post.
 - Send anything to anyone. "Draft" buttons leave a note for the next session. You send it.
-- Schedule or publish a post, or stand in for your yes on a live change. See the hard rule above.
+- Schedule or publish a post by itself, or stand in for your yes on a live change. The Schedule
+  button opens a Claude session that does the scheduling, under the content-week gates. See the hard
+  rule above.
 - Cost money. The page is local code. The pulse and the buttons run on your Claude plan, same as
   chatting, and the pulse only runs when you press it.
 - Show a number it did not read. A dead feed is red text that says which one.

@@ -1,0 +1,137 @@
+{
+  "note": "What HPC pays month to month for marketing. Ad spend is NOT here: Meta and Google live under paidMedia. A null cost means nobody has read it; the page shows 'not on file' and never fills one in. Edited on ROUX OS > Marketing Budget; Finn updates paidMedia in a session.",
+  "subscriptions": [
+    {
+      "id": "coalition",
+      "name": "Coalition Technologies",
+      "what": "Google Ads management + SEO (ad spend separate)",
+      "cost": 4800,
+      "cadence": "month",
+      "status": "active",
+      "owner": "Coalition (Connor)",
+      "source": "Evan, 2026-09-24, confirmed with Jay; also our-team.md",
+      "note": "The $6,800/mo agencies line in Jay's overhead doesn't match. Jay and Evan don't know where the $2,000 gap came from (2026-09-24).",
+      "updated": "2026-09-24 · Evan"
+    },
+    {
+      "id": "claude",
+      "name": "Claude (Anthropic)",
+      "what": "Max 5x plan: ROUX, the agents, the pulse and ROUX OS sessions",
+      "cost": 100,
+      "cadence": "month",
+      "status": "active",
+      "owner": "Evan",
+      "source": "channels-and-accounts.md (Claude $100/mo); Max 5x list price $100/mo, support.claude.com (Scout, 2026-09-24)",
+      "note": null
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "what": "Design tool",
+      "cost": 18,
+      "cadence": "month",
+      "status": "active",
+      "owner": "Evan",
+      "source": "channels-and-accounts.md (Subscriptions: Canva $18/mo)",
+      "note": null
+    },
+    {
+      "id": "intentwave",
+      "name": "IntentWave (Persistent.id)",
+      "what": "Meta advisory, identity pixel + audience syncs, site cookie consent",
+      "cost": 0,
+      "cadence": "month",
+      "status": "free",
+      "owner": "IntentWave",
+      "source": "our-team.md (Free)",
+      "note": null
+    },
+    {
+      "id": "biljana",
+      "name": "Biljana (contract)",
+      "what": "Klaviyo / email and SMS. Her lane entirely; listed here for cost only",
+      "cost": 2000,
+      "cadence": "month",
+      "status": "active",
+      "owner": "Biljana",
+      "source": "Evan, 2026-09-24",
+      "note": null,
+      "updated": "2026-09-24 · Evan"
+    },
+    {
+      "id": "klaviyo",
+      "name": "Klaviyo",
+      "what": "Email and SMS platform (Biljana's lane)",
+      "cost": 1100,
+      "cadence": "month",
+      "status": "active",
+      "owner": "Biljana",
+      "source": "Evan, 2026-09-24 (roughly)",
+      "note": "Varies a little with how many people are on the mailing list.",
+      "updated": "2026-09-24 · Evan"
+    },
+    {
+      "id": "uppromote",
+      "name": "UpPromote",
+      "what": "Affiliate program app. Plan fee only; commissions are separate",
+      "cost": 75,
+      "cadence": "month",
+      "status": "active",
+      "owner": "Evan",
+      "source": "Evan, 2026-09-24. Commissions are separate: $11,718.37 marked Paid Sept 11 2025 to Sept 10 2026 (UpPromote export, Finn, 2026-09-21)",
+      "note": "Paid yearly for a discount; the yearly amount isn't on file.",
+      "updated": "2026-09-24 · Evan"
+    },
+    {
+      "id": "reviews-io",
+      "name": "reviews.io",
+      "what": "Product reviews",
+      "cost": 5360,
+      "cadence": "year",
+      "status": "active",
+      "owner": null,
+      "source": "Evan, 2026-09-24",
+      "note": null,
+      "updated": "2026-09-24 · Evan"
+    },
+    {
+      "id": "frazier-media",
+      "name": "Frazier Media (Garrett)",
+      "what": "Video. Sept 23 shoot: 8-video pack",
+      "cost": 2500,
+      "cadence": "one-time",
+      "status": "active",
+      "owner": "Garrett",
+      "source": "BOARD.md (shoot done Wed Sept 23, 8 videos, $2,500); list $500/video or $2,500 for 8, our-team.md",
+      "note": "Aug 19: 2 videos, $1,000 (Evan, 2026-09-11)"
+    }
+  ],
+  "paidMedia": {
+    "channels": [
+      {
+        "id": "meta",
+        "name": "Meta Ads",
+        "runBy": "Evan, in-house since 2026-07-20",
+        "ceiling": "$350/day for the whole account (hpc-standing-rules + board)",
+        "lastRead": {
+          "period": "Sept 15 to 21, 2026",
+          "amount": 2192.91,
+          "source": "Finn, Meta connector + Shopify, 2026-09-22 (2026-09-22-meta-ad-review-finn.md)"
+        },
+        "note": "Live daily caps come straight from the board's Running section."
+      },
+      {
+        "id": "google",
+        "name": "Google Ads",
+        "runBy": "Coalition (read-only for us; their lane)",
+        "ceiling": null,
+        "lastRead": {
+          "period": "Jul 20 to Aug 20, 2026",
+          "amount": 17435.94,
+          "source": "Google Ads interface, read 2026-08-26 (2026-08-26-paid-media-baseline.md)"
+        },
+        "note": "One month, a month old. No newer Google spend on file; Coalition can send the current figure."
+      }
+    ]
+  }
+}

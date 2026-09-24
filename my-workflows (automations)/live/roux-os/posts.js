@@ -17,7 +17,29 @@ const WEEK_ID = /^\d{4}-\d{2}-\d{2}$/;
 const PIECE_ID = /^\d{1,2}-[a-z]{2,12}$/;
 const MEDIA_MIME = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.gif': 'image/gif', '.mp4': 'video/mp4', '.mov': 'video/quicktime' };
 
-module.exports = function makePosts({ todayIso }) {
+// "Short notes sent": every note Evan sent on a piece, read back from capture.md and its archive, so the
+// history survives /wrap. Lines look like
+//   - 2026-09-24 08:20 · Content note, 2026-09-28 1-feed (Boil Math Monday): <note> — Sage  → folded: ...
+//   - 2026-09-24 09:10 · Approval: APPROVED post 2026-09-28 1-feed ... · Evan's note: <note> · Approval only...
+const NOTE_LINE = /^- (\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}) · (?:Content note, (\d{4}-\d{2}-\d{2}) (\d{1,2}-[a-z]{2,12})(?: \([^)]*\))?: (.+?)(?: — Sage)?(?:\s+→ folded.*)?|Approval: APPROVED post (\d{4}-\d{2}-\d{2}) (\d{1,2}-[a-z]{2,12}).*?· Evan's note: (.+?) · Approval only.*)$/;
+
+module.exports = function makePosts({ todayIso, desk }) {
+  function notesSent() {
+    const by = new Map(); const seen = new Set();
+    for (const f of [path.join(desk, 'archive', 'captures.md'), path.join(desk, 'capture.md')]) {
+      let text = ''; try { text = fs.readFileSync(f, 'utf8'); } catch (_) { continue; }
+      for (const line of text.split('\n')) {
+        const m = NOTE_LINE.exec(line.trim()); if (!m) continue;
+        const [week, piece, note, kind] = m[3] ? [m[3], m[4], m[5], 'sent back'] : [m[6], m[7], m[8], 'with approval'];
+        const key = `${week}|${piece}|${m[1]} ${m[2]}|${note}`; if (seen.has(key)) continue; seen.add(key);
+        const k = week + '|' + piece; if (!by.has(k)) by.set(k, []);
+        by.get(k).push({ at: `${m[1]} ${m[2]}`, kind, note: note.trim(), pending: f.endsWith('capture.md') && !f.includes('archive') });
+      }
+    }
+    for (const list of by.values()) list.sort((a, b) => b.at.localeCompare(a.at));
+    return by;
+  }
+
   let mod = null, loadError = null;
   try { mod = require('../post-scheduler'); } catch (e) { loadError = 'The post scheduler module will not load: ' + e.message; }
   const need = () => { if (!mod) throw new HttpError(500, loadError); return mod; };
@@ -39,6 +61,7 @@ module.exports = function makePosts({ todayIso }) {
     try { w = m.getWeek(id); } catch (e) { throw new HttpError(404, e.message); }
     try { pf = m.preflight(id); } catch (e) { pf = { error: e.message, pieces: [], summary: null, referenceErrors: [] }; }
     const checksById = new Map((pf.pieces || []).map((p) => [p.id, p]));
+    const sent = notesSent();
     const pieces = w.pieces.map((p) => {
       const c = checksById.get(p.id) || null;
       return {
@@ -48,6 +71,7 @@ module.exports = function makePosts({ todayIso }) {
         conditional: p.conditional || null,
         // Alternates (an option B for Evan to pick) carry media URLs so the panel can show them under the piece.
         alternates: (p.alternates || []).map((alt) => ({ label: alt.label || '', media: (alt.media || []).map((f) => { let exists = false; try { exists = fs.existsSync(m.mediaPath(id, f)); } catch (_) {} return { file: f, exists, url: `/api/posts/media?week=${encodeURIComponent(id)}&file=${encodeURIComponent(f)}` }; }) })),
+        notesSent: sent.get(id + '|' + p.id) || [],
         notes: p.notes || [], commercial: !!p.commercial,
         evidence: (p.evidence || []).map((e) => ({ at: e.at, source: e.source, platform: e.platform, readBack: e.readBack })),
         media: (p.media || []).map((f, i) => { const ext = path.extname(f).toLowerCase(); let exists = false; try { exists = fs.existsSync(m.mediaPath(id, f)); } catch (_) {} return { file: f, n: i + 1, kind: ext === '.mp4' || ext === '.mov' ? 'video' : 'image', exists, url: `/api/posts/media?week=${encodeURIComponent(id)}&file=${encodeURIComponent(f)}` }; }),
@@ -113,5 +137,35 @@ module.exports = function makePosts({ todayIso }) {
     return { abs, type, size: st.size };
   }
 
-  return { weeks, week, summary, approve, sendBack, media, socialDir: mod ? mod.paths.SOCIAL : null };
+  // Planner: every piece in every week, flat, for the calendar view. Media is the first frame only.
+  function planner() {
+    const m = need(); const out = [];
+    for (const w of m.listWeeks()) {
+      if (!w.hasManifest) continue;
+      let wk; try { wk = m.getWeek(w.id); } catch (_) { continue; }
+      for (const p of wk.pieces) {
+        const first = (p.media || [])[0]; const ext = first ? path.extname(first).toLowerCase() : '';
+        let exists = false; if (first) { try { exists = fs.existsSync(m.mediaPath(w.id, first)); } catch (_) {} }
+        out.push({ week: w.id, id: p.id, segment: p.segment || '', type: p.type, placements: p.placements || [], status: p.status, approved: !!p.approved,
+          date: p.scheduledFor ? p.scheduledFor.date : null, time: p.scheduledFor ? p.scheduledFor.time : null, when: p.when || null,
+          frames: (p.media || []).length, caption: ((p.caption && (p.caption.instagram || p.caption.facebook)) || '').slice(0, 280),
+          thumb: first && exists ? { url: `/api/posts/media?week=${encodeURIComponent(w.id)}&file=${encodeURIComponent(first)}`, kind: ext === '.mp4' || ext === '.mov' ? 'video' : 'image' } : null });
+      }
+    }
+    return { today: todayIso(), pieces: out };
+  }
+
+  // Counts the two session buttons need: notes not yet worked (still in capture.md), and approved
+  // pieces that are not yet queued or scheduled.
+  function actions(id) {
+    const m = need(); weekArg(id);
+    let w; try { w = m.getWeek(id); } catch (e) { throw new HttpError(404, e.message); }
+    const sent = notesSent(); let notes = 0;
+    for (const p of w.pieces) notes += (sent.get(id + '|' + p.id) || []).filter((n) => n.pending).length;
+    const toSchedule = w.pieces.filter((p) => p.status === 'approved').map((p) => p.id);
+    const drafts = w.pieces.filter((p) => p.status === 'draft').map((p) => p.id);
+    return { week: id, pendingNotes: notes, toSchedule, drafts };
+  }
+
+  return { weeks, week, summary, approve, sendBack, media, planner, actions, socialDir: mod ? mod.paths.SOCIAL : null };
 };

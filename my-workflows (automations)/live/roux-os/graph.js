@@ -14,6 +14,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const DRAW_EXT = new Set(['.md', '.html', '.pdf', '.csv', '.xlsx', '.docx', '.pptx', '.json']);
 const SKIP = new Set(['.git', '.obsidian', 'node_modules', 'logs', 'work', 'templates', 'assets', 'test', 'public', 'launchd', 'pulse']);
@@ -23,6 +24,28 @@ module.exports = function makeGraph({ vault, home }) {
   let cache = { at: 0, data: null };
 
   function read(p) { try { return fs.readFileSync(p, 'utf8'); } catch (_) { return ''; } }
+  // The day a file or folder was first made (YYYY-MM-DD), for "new since the last score". Git's first
+  // commit of the path is the source: disk birth times were all reset when the vault moved (2026-09-21).
+  // A folder is as old as the oldest file in it. A path git has never seen falls back to the disk date.
+  let firstAdd = new Map(), dirAdd = new Map();
+  function loadGitDates() {
+    firstAdd = new Map(); dirAdd = new Map();
+    let out = '';
+    try { out = execFileSync('git', ['-C', vault, '-c', 'core.quotepath=off', 'log', '--diff-filter=A', '--name-only', '--format=@%as'], { encoding: 'utf8', maxBuffer: 32 * 1024 * 1024, timeout: 8000 }); } catch (_) { return; }
+    let d = null;
+    for (const line of out.split('\n')) {       // newest first, so the last date seen for a path is its first add
+      if (line.startsWith('@')) { d = line.slice(1); continue; }
+      if (!line || !d) continue;
+      firstAdd.set(line, d);
+      const parts = line.split('/');
+      for (let i = 1; i < parts.length; i++) { const dir = parts.slice(0, i).join('/'); const cur = dirAdd.get(dir); if (!cur || d < cur) dirAdd.set(dir, d); }
+    }
+  }
+  function born(abs) {
+    const rel = path.relative(vault, abs).split(path.sep).join('/');
+    if (!rel.startsWith('..')) { const g = firstAdd.get(rel) || dirAdd.get(rel); if (g) return g; }
+    try { const st = fs.statSync(abs); const t = st.birthtimeMs > 0 ? st.birthtimeMs : st.ctimeMs; return new Date(t).toISOString().slice(0, 10); } catch (_) { return null; }
+  }
   function ls(p) { try { return fs.readdirSync(p, { withFileTypes: true }).filter((e) => !e.name.startsWith('.') && !e.name.startsWith('~$')); } catch (_) { return []; } }
   const frontDesc = (t) => { const m = t.match(/^---\n[\s\S]*?\bdescription:\s*(.+)\n[\s\S]*?---/); return m ? m[1].trim().replace(/^["']|["']$/g, '') : ''; };
   function firstLine(t) {
@@ -38,20 +61,21 @@ module.exports = function makeGraph({ vault, home }) {
   const pretty = (name) => name.replace(/\.[a-z0-9]+$/i, '').replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/[-_]+/g, ' ');
 
   function build() {
+    loadGitDates();
     const nodes = []; const byId = new Map(); const edges = []; const byRel = new Map();
     const add = (n) => { if (byId.has(n.id)) return byId.get(n.id); byId.set(n.id, n); nodes.push(n); if (n.rel) byRel.set(n.rel, n); return n; };
     const tree = (a, b) => edges.push({ a, b, t: 'tree' });
     const fileNode = (rel, group, parent, extra = {}) => {
       const ext = path.extname(rel).toLowerCase();
       const t = ext === '.md' ? read(path.join(vault, rel)) : '';
-      const n = add({ id: 'f:' + rel, kind: 'file', group, rel, ext, label: pretty(path.basename(rel)), desc: t ? (frontDesc(t) || firstLine(t)) : '', ...extra });
+      const n = add({ id: 'f:' + rel, kind: 'file', group, rel, ext, label: pretty(path.basename(rel)), desc: t ? (frontDesc(t) || firstLine(t)) : '', born: born(path.join(vault, rel)), ...extra });
       tree(parent, n.id);
       return n;
     };
     // A folder of files: a folder node, its files, its subfolders. Undrawn files are counted.
     function folder(absDir, rel, group, parent, label, depth = 0) {
       const id = 'd:' + rel;
-      add({ id, kind: 'folder', group, rel, label: label || path.basename(rel).replace(/\s*\(.*\)$/, ''), desc: '', count: 0, hidden: 0 });
+      add({ id, kind: 'folder', group, rel, label: label || path.basename(rel).replace(/\s*\(.*\)$/, ''), desc: '', count: 0, hidden: 0, born: born(absDir) });
       tree(parent, id);
       let count = 0, hidden = 0;
       for (const e of ls(absDir)) {
@@ -80,7 +104,7 @@ module.exports = function makeGraph({ vault, home }) {
       if (!e.name.endsWith('.md')) continue;
       const t = read(path.join(vault, '.claude/agents', e.name));
       const name = e.name.replace(/\.md$/, '');
-      add({ id: 'a:' + name, kind: 'agent', group: 'agents', label: name[0].toUpperCase() + name.slice(1), desc: frontDesc(t), text: t, obsidianRel: null });
+      add({ id: 'a:' + name, kind: 'agent', group: 'agents', label: name[0].toUpperCase() + name.slice(1), desc: frontDesc(t), text: t, obsidianRel: null, born: born(path.join(vault, '.claude/agents', e.name)) });
       tree(A, 'a:' + name);
     }
 
@@ -93,7 +117,7 @@ module.exports = function makeGraph({ vault, home }) {
       const t = read(path.join(vault, rel));
       const cmd = read(path.join(vault, '.claude/commands', e.name + '.md'));
       const hasCmd = !!cmd;
-      const n = add({ id: 's:' + e.name, kind: 'skill', group: 'skills', label: (hasCmd ? '/' : '') + e.name, rel: fs.existsSync(path.join(vault, rel)) ? rel : null, desc: frontDesc(cmd) || frontDesc(t) || firstLine(t), text: t });
+      const n = add({ id: 's:' + e.name, kind: 'skill', group: 'skills', label: (hasCmd ? '/' : '') + e.name, rel: fs.existsSync(path.join(vault, rel)) ? rel : null, desc: frontDesc(cmd) || frontDesc(t) || firstLine(t), text: t, born: born(dir) });
       if (n.rel) byRel.set(n.rel, n);
       tree(S, n.id);
       // the skill's other notes (not its templates, drafts or code)
@@ -125,7 +149,7 @@ module.exports = function makeGraph({ vault, home }) {
       if (!e.isDirectory()) continue;
       const t = read(path.join(TASKS, e.name, 'SKILL.md'));
       if (!t) continue;
-      add({ id: 'r:' + e.name, kind: 'routine', group: 'routines', label: e.name.replace(/-/g, ' '), desc: frontDesc(t), text: t, where: '~/.claude/scheduled-tasks/' + e.name });
+      add({ id: 'r:' + e.name, kind: 'routine', group: 'routines', label: e.name.replace(/-/g, ' '), desc: frontDesc(t), text: t, where: '~/.claude/scheduled-tasks/' + e.name, born: born(path.join(TASKS, e.name)) });
       tree(R, 'r:' + e.name);
     }
     add({ id: 'r:pulse', kind: 'routine', group: 'routines', label: 'morning pulse', desc: 'Button-only: runs when Evan presses Pulse now. Writes my-desk (now)/today.md.', text: read(path.join(vault, '.claude/commands/pulse.md')) });
@@ -197,5 +221,5 @@ module.exports = function makeGraph({ vault, home }) {
     if (!cache.data || Date.now() - cache.at > 60000) cache = { at: Date.now(), data: build() };
     return cache.data;
   }
-  return { view };
+  return { view, invalidate: () => { cache = { at: 0, data: null }; } };
 };

@@ -1,9 +1,11 @@
 // ROUX OS — Posts tab. The week's organic posts as the post scheduler holds them: media, both
 // captions in full, date and time, status, and the preflight checks.
 // Two actions per piece: Approve (marks schedule.json only) and Send back with a note (one line in
-// capture.md for Sage). There is no button here that schedules or publishes anything, on purpose.
+// capture.md for Sage). Two actions per week, each of which opens a Claude session in Terminal:
+// "Have ROUX review notes" (Sage works the notes and approvals) and "Schedule approved posts" (the
+// content-week runner, under its own gates). The page itself never schedules or publishes.
 'use strict';
-const POSTS = { weeks: null, weekId: null, data: null };
+const POSTS = { weeks: null, weekId: null, data: null, actions: null };
 const POST_LEVEL = { fail: ['is-fail', 'fail'], warn: ['is-warn', 'check'], waived: ['is-waived', 'waived'], info: ['is-info', 'info'], pass: ['is-pass', 'ok'] };
 
 async function loadPosts(keepWeek) {
@@ -21,6 +23,8 @@ async function loadPostWeek() {
     const r = await fetch('/api/posts/week?id=' + encodeURIComponent(POSTS.weekId), { cache: 'no-store' }); const j = await r.json();
     if (!r.ok) throw new Error(j.error || r.status);
     POSTS.data = j;
+    const a = await fetch('/api/posts/actions?week=' + encodeURIComponent(POSTS.weekId), { cache: 'no-store' });
+    POSTS.actions = a.ok ? await a.json() : null;
   } catch (e) { POSTS.data = { error: e.message }; }
   renderPosts();
 }
@@ -32,7 +36,12 @@ function renderPosts() {
   if (W.error) { box.innerHTML = `<div class="board-sec bad">${esc(W.error)}</div>`; return; }
   const withManifest = W.weeks.filter((w) => w.hasManifest);
   const picker = `<select id="posts-week">${withManifest.map((w) => `<option value="${esc(w.id)}" ${w.id === POSTS.weekId ? 'selected' : ''}>Week of ${esc(postDay(w.from).replace(/^\w+, /, ''))} · ${w.approved} of ${w.pieces} approved${w.counts.verified ? ` · ${w.counts.verified} verified` : ''}</option>`).join('')}</select>`;
-  let html = `<div class="board-sec posts-top"><div><span class="eyebrow">Posts</span><span class="mono stamp">approve here, schedule in a session · approving marks the queue only · nothing on this page schedules or publishes</span></div>${withManifest.length ? picker : ''}</div>`;
+  const A = POSTS.actions;
+  const bar = A ? `<div class="posts-acts">
+      <button class="btn ${A.pendingNotes ? 'is-primary' : ''}" id="posts-review" title="Opens a Claude session: Sage works every note and approval for this week, reloads the pieces here, and says 'ready for review in Posts'. Schedules nothing.">Have ROUX review notes${A.pendingNotes ? ` · ${A.pendingNotes}` : ''}</button>
+      <button class="btn ${A.toSchedule.length ? 'is-primary' : ''}" id="posts-schedule" ${A.toSchedule.length ? '' : 'disabled'} title="${A.toSchedule.length ? `Opens a Claude session that schedules ${esc(A.toSchedule.join(', '))} in Business Suite and reads each one back` : 'Nothing approved is waiting to be scheduled'}">Schedule approved posts${A.toSchedule.length ? ` · ${A.toSchedule.length}` : ''}</button>
+      <span class="mono stamp" id="posts-act-status"></span></div>` : '';
+  let html = `<div class="board-sec posts-top"><div><span class="eyebrow">Posts</span><span class="mono stamp">approve or send back here · the two buttons open a Claude session to do the work · this page never posts anything itself</span></div>${withManifest.length ? picker : ''}${bar}</div>`;
   if (!withManifest.length) { box.innerHTML = html + '<div class="board-sec empty">No week has a schedule.json yet. A content-week session builds one from the plan.</div>'; return; }
   if (!d) { box.innerHTML = html + '<div class="empty">Loading…</div>'; wirePosts(); return; }
   if (d.error) { box.innerHTML = html + `<div class="board-sec bad">${esc(d.error)}</div>`; wirePosts(); return; }
@@ -47,9 +56,24 @@ function renderPosts() {
   if (undated.length) html += `<div class="post-day"><div class="post-day-h"><span class="eyebrow">No date inside this week</span></div>${undated.map(postCard).join('')}</div>`;
   box.innerHTML = html;
   wirePosts();
+  // Opened from the Planner: bring that piece into view once.
+  if (POSTS.focus) {
+    const el = box.querySelector(`[data-piece="${CSS.escape(POSTS.focus)}"]`); POSTS.focus = null;
+    if (el) { if (el.tagName === 'DETAILS') el.open = true; [60, 450, 1100].forEach((ms) => setTimeout(() => el.scrollIntoView({ block: 'start' }), ms)); /* again as the images above it load */ el.classList.add('is-flash'); setTimeout(() => el.classList.remove('is-flash'), 1800); }
+  }
 }
 
-function postCard(p) {
+// A dropped post folds to one line with red "Dropped"; open it to see what it was.
+function droppedCard(p) {
+  return `<details class="post-card is-dropped" data-piece="${esc(p.id)}"><summary><span class="post-dropped">Dropped</span><strong>${esc(p.segment || p.id)}</strong><span class="pill">${esc(p.type)}</span><span class="mono stamp">${esc(p.when || '')} · ${esc(p.id)}</span></summary>${postCard(p, true)}</details>`;
+}
+function notesSentHtml(p) {
+  const list = p.notesSent || [];
+  const when = (at) => new Date(at.replace(' ', 'T') + ':00').toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+  return `<div class="post-sent"><div class="mono stamp">Short notes sent${list.length ? ` · ${list.length}` : ''}</div>${list.length ? list.map((n) => `<div class="sent-row"><span class="sent-at">${esc(when(n.at))}</span><span class="sent-k ${n.kind === 'sent back' ? '' : 'is-ok'}">${esc(n.kind)}</span>${n.pending ? '<span class="sent-k is-wait" title="Still in capture.md: the next review session works it">not worked yet</span>' : ''}<span class="sent-t">${esc(n.note)}</span></div>`).join('') : '<div class="dim sent-none">No notes sent on this post.</div>'}</div>`;
+}
+function postCard(p, inner) {
+  if (p.status === 'dropped' && !inner) return droppedCard(p);
   const pf = p.preflight; const badge = pf ? pf.badge : 'none';
   const media = p.media.map((m) => !m.exists
     ? `<div class="post-missing" title="${esc(m.file)}">missing file<br><span>${esc(m.file)}</span></div>`
@@ -62,7 +86,7 @@ function postCard(p) {
   const cap = (label, text) => `<div class="post-cap"><span class="mono stamp">${label}${text ? ` · ${text.length} characters` : ''}</span>${text ? `<div class="post-cap-t">${esc(text)}</div>` : '<div class="dim">no caption for this placement</div>'}</div>`;
   const hasCaption = p.caption.facebook || p.caption.instagram;
   const canSendBack = !['scheduled', 'verified', 'dropped'].includes(p.status);
-  return `<article class="post-card is-${esc(badge)}" data-piece="${esc(p.id)}">
+  return `<article class="post-card is-${esc(badge)} ${inner ? 'is-inner' : ''}" data-piece="${esc(p.id)}">
     <div class="post-media ${p.media.length > 1 ? 'is-strip' : ''} is-${esc(p.type)}">${media || '<div class="post-missing">no media listed</div>'}</div>
     <div class="post-main">
       <div class="post-head"><strong>${esc(p.segment || p.id)}</strong><span class="pill">${esc(p.type)}${p.media.length > 1 ? ` · ${p.media.length} frames` : ''}</span><span class="pill">${esc(p.placements.join(' + '))}</span><span class="pill is-st-${esc(p.status)}">${esc(p.status)}</span><span class="pf is-${esc(badge)}">preflight ${esc(badge === 'warn' ? 'to check' : badge)}</span><span class="mono stamp">${esc(p.id)}</span></div>
@@ -79,12 +103,21 @@ function postCard(p) {
         ${p.status === 'draft' ? `<button class="btn is-primary" data-approve ${p.canApprove ? '' : 'disabled'} title="${p.canApprove ? 'Marks this piece approved in the queue. It schedules nothing.' : 'Failing preflight. It cannot be approved until that is fixed.'}">Approve</button>` : ''}
         ${canSendBack ? '<button class="btn" data-sendback title="Leaves the piece as it is and puts your note in front of Sage next session">Send back with a note</button>' : ''}</div>
         ${p.status === 'draft' && !p.canApprove ? '<div class="post-blocked">Failing preflight, so it cannot be approved from here. Send it back with a note, or drop it in a session.</div>' : ''}` : ''}
+      ${notesSentHtml(p)}
     </div></article>`;
 }
 
 function wirePosts() {
   const sel = $('posts-week');
   if (sel) sel.addEventListener('change', () => { POSTS.weekId = sel.value; POSTS.data = null; renderPosts(); loadPostWeek(); });
+  const sessionBtn = (id, url, okMsg) => { const b = $(id); if (!b) return; b.addEventListener('click', async () => {
+    b.disabled = true; $('posts-act-status').textContent = 'opening a session…';
+    const j = await postJson(url, { week: POSTS.weekId });
+    $('posts-act-status').textContent = j ? 'session opened in Terminal' : '';
+    if (j) toast(okMsg(j)); setTimeout(() => { b.disabled = false; const st = $('posts-act-status'); if (st) st.textContent = ''; }, 4000);
+  }); };
+  sessionBtn('posts-review', '/api/posts/review', (j) => `ROUX is on it${j.count ? `: ${j.count} note${j.count === 1 ? '' : 's'}` : ''}. It says "ready for review in Posts" when the pieces are back.`);
+  sessionBtn('posts-schedule', '/api/posts/schedule', (j) => `Scheduling ${j.count} post${j.count === 1 ? '' : 's'} in a session. Each is read back in Business Suite before it counts as done.`);
   document.querySelectorAll('#posts-body .post-card').forEach((card) => {
     const piece = card.dataset.piece, noteEl = card.querySelector('[data-note]');
     const a = card.querySelector('[data-approve]'), b = card.querySelector('[data-sendback]');

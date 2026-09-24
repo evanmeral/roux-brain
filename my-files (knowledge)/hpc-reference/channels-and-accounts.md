@@ -94,8 +94,8 @@ Evan took Meta in-house; Coalition took Google. Any performance data spanning th
 | **Coalition** | Google Ads management + SEO | **$4,800/month** (~$57,600/yr) |
 | Frazier Media (Garrett) | Video, ad hoc | $500/video or $2,500 for 8 |
 | IntentWave | Meta advisory | **Free** |
-| Biljana | Klaviyo/email | Contract — rate unknown <!-- TBD --> |
-| Subscriptions | Claude $100/mo · Canva $18/mo | |
+| Biljana | Klaviyo/email | **$2,000/month** (Evan, 2026-09-24) |
+| Subscriptions | Claude $100/mo · Canva $18/mo · Klaviyo ~$1,100/mo (varies with list size) · UpPromote $75/mo (paid yearly) · reviews.io $5,360/yr (Evan, 2026-09-24) | Full list: `my-business (context)/hpc-marketing-budget.json` |
 
 > **Coalition: $4,800/mo is MANAGEMENT ONLY** — ad spend is separate (Evan, 2026-08-28).
 > That's ~27.5% of the ~$17.4K/mo Google spend, which is above the usual 10–20% for pure ad

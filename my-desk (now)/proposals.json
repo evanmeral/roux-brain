@@ -1,0 +1,136 @@
+{
+  "items": [
+    {
+      "id": "p-2026-09-24-github-backup",
+      "added": "2026-09-24",
+      "category": "free",
+      "area": "Safety",
+      "title": "Back the brain up to a private GitHub repo",
+      "what": "The brain is already a git repo. Add one private GitHub remote and push at every /wrap.",
+      "does": "Closes the open gap on the board: the brain has had no off-machine copy since it left iCloud. If the Mac dies, you lose nothing, and every past version stays readable.",
+      "cost": "Free",
+      "costSource": "GitHub Free plan: unlimited private repos (github.com/pricing, Scout, 2026-09-24)",
+      "status": "new"
+    },
+    {
+      "id": "p-2026-09-24-post-results",
+      "added": "2026-09-24",
+      "category": "free",
+      "area": "Organic social",
+      "title": "Show each post's results in the Planner",
+      "what": "After a post runs, read its reach, saves and comments back into the Planner and Posts cards.",
+      "does": "Closes the loop on content: Sage sees which slots and formats earn attention, and the next content week is planned from results, not guesses.",
+      "cost": "Free",
+      "costSource": "Uses the Meta connector read-only. First step is checking it can read organic post results; if it cannot, Metricool (paid, below) can.",
+      "status": "new"
+    },
+    {
+      "id": "p-2026-09-24-review-language",
+      "added": "2026-09-24",
+      "category": "free",
+      "area": "Creative",
+      "title": "Monthly customer-language file from reviews.io",
+      "what": "Scout pulls the month's reviews and keeps the exact phrases buyers use (speed, crowd size, how it compares to their old pot) in one swipe file.",
+      "does": "Maya and Sage write ads and captions in customers' own words. Real phrases usually beat ones we invent.",
+      "cost": "Free",
+      "costSource": "Runs on your Claude plan",
+      "status": "new"
+    },
+    {
+      "id": "p-2026-09-24-30qt-ceiling",
+      "added": "2026-09-24",
+      "category": "free",
+      "area": "Paid media",
+      "title": "Set a 30 QT CAC ceiling",
+      "what": "Beau works out the break-even cost per customer for the 30 QT fryers, the same way as the other products.",
+      "does": "Two live ads (Video_Jay 30qt and Heavy Duty Heat.30qt) can't be read against a kill line today. This lets the kill table cover them.",
+      "cost": "Free",
+      "costSource": "Beau, from margin data already on file",
+      "status": "new"
+    },
+    {
+      "id": "p-2026-09-24-canva-connect",
+      "added": "2026-09-24",
+      "category": "free",
+      "area": "Creative",
+      "title": "Connect Canva to Claude",
+      "what": "Authorize the Canva connector that is already installed but not signed in.",
+      "does": "ROUX can resize a design for each placement, check it against the brand kit, and pull your Canva work into Posts without downloads.",
+      "cost": "Free (you already pay for Canva)",
+      "costSource": "Canva $18/mo already on the budget; the connector adds nothing",
+      "status": "new"
+    },
+    {
+      "id": "p-2026-09-24-metricool",
+      "added": "2026-09-24",
+      "category": "paid",
+      "area": "Organic social",
+      "title": "Metricool for scheduling FB and IG",
+      "what": "A scheduling tool with a Claude connector. Posts get scheduled by API instead of by driving Business Suite in Chrome.",
+      "does": "The Schedule button runs faster and stops breaking when Meta changes the composer. It can also report each post's results.",
+      "cost": "$25/mo, or $20/mo billed yearly (Starter)",
+      "costSource": "metricool.com/pricing (Scout, 2026-09-24). Not confirmed: whether the Claude connector needs the Advanced plan ($67/mo, or $53/mo yearly). Check before paying. Already on your list for Mon 9/28.",
+      "status": "new"
+    },
+    {
+      "id": "p-2026-09-24-backblaze",
+      "added": "2026-09-24",
+      "category": "paid",
+      "area": "Safety",
+      "title": "Backblaze backup for the whole Mac",
+      "what": "Continuous offsite backup of the Mac, including the photo and video library, which is too big for a GitHub repo.",
+      "does": "Protects the lifestyle photos, the shoot footage and the renders, not just the brain's text files.",
+      "cost": "$9/mo, or $99/yr",
+      "costSource": "backblaze.com/cloud-backup/personal (Scout, 2026-09-24)",
+      "status": "new"
+    },
+    {
+      "id": "p-2026-09-24-obsidian-sync",
+      "added": "2026-09-24",
+      "category": "paid",
+      "area": "Access",
+      "title": "Obsidian Sync for the brain on your phone",
+      "what": "Syncs the vault to your phone and laptop, with version history.",
+      "does": "Read the board, the plan and any report from your phone at a trade show or in the shop. It is not a backup.",
+      "cost": "$5/mo, or $4/mo yearly (Standard, 1 GB). Plus: $10/mo, or $8/mo yearly (10 GB)",
+      "costSource": "obsidian.md/sync (Scout, 2026-09-24)",
+      "status": "new"
+    },
+    {
+      "id": "p-2026-09-24-ahrefs",
+      "added": "2026-09-24",
+      "category": "paid",
+      "area": "Research",
+      "title": "Ahrefs Starter for competitor and keyword checks",
+      "what": "Read-only keyword and competitor lookups for Scout. SEO work stays Coalition's lane.",
+      "does": "Lets us check Coalition's SEO reports against a second source, and see what search terms competitors win on.",
+      "cost": "$29/mo (Starter); Lite is $129/mo",
+      "costSource": "ahrefs.com/pricing (Scout, 2026-09-24). Yearly prices not confirmed.",
+      "status": "new"
+    },
+    {
+      "id": "p-2026-09-24-claude-max20",
+      "added": "2026-09-24",
+      "category": "paid",
+      "area": "Capacity",
+      "title": "Claude Max 20x, only if you hit limits",
+      "what": "Moves the plan from Max 5x to Max 20x: four times the usage.",
+      "does": "Room for long runs (content week, full ad reviews, scheduling) on the same day without hitting a usage cap. Skip it if you never hit one.",
+      "cost": "$200/mo ($100 more than today)",
+      "costSource": "support.claude.com Max plan article (Scout, 2026-09-24)",
+      "status": "new"
+    },
+    {
+      "id": "p-2026-09-24-triple-whale",
+      "added": "2026-09-24",
+      "category": "paid",
+      "area": "Measurement",
+      "title": "Triple Whale attribution (Beau to weigh first)",
+      "what": "An attribution dashboard that joins Shopify orders to ad clicks across Meta and Google.",
+      "does": "One view of which ads bring new buyers. We already get most of this from Shopify-tagged orders, so Beau should say if the gap is worth it.",
+      "cost": "Not confirmed. The Shopify App Store shows $219/mo (Foundation); the price scales with store sales",
+      "costSource": "apps.shopify.com/triplewhale-1 (Scout, 2026-09-24). Triple Whale's own page blocked the check.",
+      "status": "new"
+    }
+  ]
+}

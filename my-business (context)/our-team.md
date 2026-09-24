@@ -24,7 +24,7 @@
 
 | Who | Scope | Cost |
 |---|---|---|
-| **Biljana** | Contract — Klaviyo / email | Rate unknown |
+| **Biljana** | Contract — Klaviyo / email | **$2,000/month** (Evan, 2026-09-24) |
 | **IntentWave** | Meta ads advisory. Also runs an **identity pixel** on the site and syncs audiences into Meta. | **Free** |
 | **Coalition** | **Google Ads** (revamp began ~mid-Aug 2026) + **HPC SEO for 2+ years**. On **Meta, a read-only secondary advisor, like IntentWave** — no changes, no settings *(Evan, 2026-09-11)* | **$4,800/month** (management only — ad spend separate) |
 | **IntentWave** *(operates as **Persistent.id**)* | Meta advisory, identity pixel + Meta audience syncs, and the **site cookie-consent tool**. Pixel shown to be **CIPA compliant** — IntentWave proved it, Coalition in contact *(Evan, 2026-09-11)* | Free |

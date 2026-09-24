@@ -47,6 +47,12 @@ Nothing from capture is deleted, only moved.
 whichever it is, with his note as the why. Then run
 `node "my-workflows (automations)/live/roux-os/approvals.js" archive`, which moves them to
 `my-desk (now)/archive/approvals.md`. A `queued` live-write that was not carried out stays a board line.
+**Fold in reminders and proposals.** Move every `- [x]` line in `my-desk (now)/reminders.md` to
+`my-desk (now)/archive/reminders.md` (append, dated); leave open lines alone, and add a reminder
+line (`- [ ] short note · added YYYY-MM-DD by ROUX`) for anything Evan must remember that isn't a
+board row. In `my-desk (now)/proposals.json`, a `yes` becomes work (board line or Nova's queue), a
+`no` goes to `decisions.md` with Evan's note so it is never re-proposed the same way, and a `later`
+stays put. Add any new idea ROUX had this session as a `new` item, free or paid, with a sourced cost.
 **Keep `my-desk (now)/launches.md` current** too: tick nothing yourself, but add gates for a new
 launch (each with owner, due date and source) and move a launch that has passed to `archive/`.
 

@@ -4,6 +4,9 @@
 //   my-desk (now)/launches.md     (a gate's checkbox, from the Launches tab)
 //   my-desk (now)/approvals.json  (Evan's approve / reject / note, from the Approvals tab)
 //   my-files (knowledge)/hpc-reference/affiliates/affiliates.json (+ backups/), from the Affiliates tab
+//   my-desk (now)/reminders.md    (the Reminders widget on Home: Add Note, tick done)
+//   my-desk (now)/proposals.json  (Evan's yes / later / no on ROUX's Proposals)
+//   my-business (context)/hpc-marketing-budget.json (+ backups/), subscriptions edited on Marketing Budget
 // It holds no Shopify, Meta or Google credentials and no code path here may call them.
 'use strict';
 const http = require('http');
@@ -48,7 +51,10 @@ const uppromote = require('./uppromote')({ vault: VAULT });
 const affiliates = require('./affiliates')({ vault: VAULT, todayIso, uppromote });
 const launches = require('./launches')({ desk: DESK, vault: VAULT, vaultName: CONFIG.vaultName, todayIso });
 const approvals = require('./approvals')({ desk: DESK, todayIso });
-const posts = require('./posts')({ todayIso });
+const posts = require('./posts')({ todayIso, desk: DESK });
+const reminders = require('./reminders')({ desk: DESK, todayIso });
+const budget = require('./budget')({ vault: VAULT, todayIso });
+const proposals = require('./proposals')({ desk: DESK, todayIso });
 const score = require('./score')({ desk: DESK, vault: VAULT, vaultName: CONFIG.vaultName, todayIso });
 const plan = require('./plan')({ desk: DESK, vault: VAULT, vaultName: CONFIG.vaultName, todayIso });
 const graph = require('./graph')({ vault: VAULT, home: process.env.HOME || require('os').homedir() });
@@ -110,8 +116,29 @@ function buildState() {
     captureLines,
     calendars,
     health,
-    desk: { launches: launches.summary(), approvals: approvals.summary(), affiliates: affiliates.summary(), posts: posts.summary() },
+    desk: { launches: launches.summary(), approvals: approvals.summary(), affiliates: affiliates.summary(), posts: posts.summary(), proposals: proposals.summary() },
   };
+}
+
+function currentBoard() {
+  const t = readText(path.join(DESK, 'BOARD.md'));
+  if (!t.text) return null;
+  try { return parseBoard(t.text, { baseDir: DESK, vaultDir: VAULT, vaultName: CONFIG.vaultName }, todayIso()); } catch (_) { return null; }
+}
+
+// The brain map, with what is new in the latest scoring period marked. The period runs from the
+// score before the latest filled Thursday score (or 7 days before it, if it is the first) to now,
+// so a Thursday score refreshes the globe with everything made since the last one.
+function graphView() {
+  const g = graph.view();
+  let rows = [];
+  try { const sv = score.view(); rows = ((sv.scoreboard && sv.scoreboard.rows) || []).filter((r) => r.filled && r.date).map((r) => r.date).sort(); } catch (_) {}
+  const last = rows[rows.length - 1] || null;
+  let from = rows.length > 1 ? rows[rows.length - 2] : null;
+  if (!from && last) { const d = new Date(last + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() - 7); from = d.toISOString().slice(0, 10); }
+  if (!from) return { ...g, period: null, newIds: [] };
+  const newIds = g.nodes.filter((n) => n.born && n.born > from && n.kind !== 'hub' && n.kind !== 'core').map((n) => n.id);
+  return { ...g, period: { from, lastScore: last }, newIds };
 }
 
 // ---- capture.md: the only brain file the OS writes ----
@@ -258,6 +285,8 @@ function broadcast(what) { for (const res of clients) res.write(`data: ${what}\n
 let watchTimer = null;
 function onDeskChange(evt, file) {
   if (!file || /\.(swp|tmp)$|~$|^\./.test(path.basename(file))) return;
+  // A score landing (PLAN.md's scoreboard, or the Thursday kill-line read) rebuilds the brain map now.
+  if (/PLAN\.md$|kill-lines\.json$/.test(file)) { graph.invalidate(); setTimeout(() => broadcast('graph'), 350); }
   clearTimeout(watchTimer);
   watchTimer = setTimeout(() => broadcast('desk:' + file), 300);
 }
@@ -268,6 +297,7 @@ let affTimer = null;
 try { fs.watch(affiliates.DIR, (evt, file) => { if (!file || file.startsWith('.') || !/\.json$/.test(file)) return; clearTimeout(affTimer); affTimer = setTimeout(() => broadcast('affiliates'), 300); }); } catch (e) { log('affiliates watch failed', e.message); }
 let postTimer = null;
 if (posts.socialDir) { try { fs.watch(posts.socialDir, { recursive: true }, (evt, file) => { if (!file || !/schedule\.json$/.test(file)) return; clearTimeout(postTimer); postTimer = setTimeout(() => broadcast('posts'), 400); }); } catch (e) { log('posts watch failed', e.message); } }
+try { fs.watch(path.dirname(budget.FILE), (evt, file) => { if (file === path.basename(budget.FILE)) broadcast('budget'); }); } catch (e) { log('budget watch failed', e.message); }
 try { fs.watch(ROOT, (evt, file) => { if (file === 'config.local.json') { ics.invalidate(); broadcast('config'); } if (file === 'runs.log') broadcast('runs'); }); } catch (_) {}
 
 
@@ -430,11 +460,45 @@ const server = http.createServer(async (req, res) => {
       r.line = appendCapture('', r.capture);
       return send(res, 200, r);
     }
+    if (p === '/api/posts/actions' && req.method === 'GET') return send(res, 200, posts.actions(url.searchParams.get('week') || ''));
+    // The two session buttons. Each opens a Claude session in Terminal with the job written out; the
+    // page itself still schedules nothing. Scheduling runs in that session, under its own gates.
+    if ((p === '/api/posts/review' || p === '/api/posts/schedule') && req.method === 'POST') {
+      const body = await readBody(req);
+      const a = posts.actions(body.week);
+      const monday = new Date(a.week + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+      let prompt;
+      if (p === '/api/posts/review') {
+        prompt = `Posts review, week of ${monday} (${a.week}), from the ROUX OS button. Read my content notes and approvals for this week first: the "Content note, ${a.week} ..." and "APPROVED post ${a.week} ..." lines in my-desk (now)/capture.md (${a.pendingNotes} not yet worked). For every piece I sent back, have Sage revise it exactly as the note says; if a note corrects how a skill works, fix the skill too and log it in my-skills/improve/lessons.md. Rebuild the week with the post-scheduler and run preflight, load the adjusted pieces into ROUX OS Posts, then just tell me "ready for review in Posts". Schedule nothing.`;
+      } else {
+        if (!a.toSchedule.length) return send(res, 409, { error: 'Nothing approved is waiting to be scheduled in this week. Approve a piece first.' });
+        prompt = `/content-week schedule the approved pieces for the week of ${monday} (${a.week}), from the ROUX OS button. Approved and not yet scheduled: ${a.toSchedule.join(', ')}.${a.drafts.length ? ` Still drafts, leave them alone: ${a.drafts.join(', ')}.` : ''} Follow my-skills/content-week/business-suite-scheduling.md exactly: the post-scheduler gate first, then Business Suite through Claude in Chrome (never the Ads connector), read each one back in Planner, and mark it verified. Tell me when it is done.`;
+      }
+      try { await startSession(prompt); } catch (e) { return send(res, 500, { error: 'Could not open Terminal: ' + e.message }); }
+      appendCapture('', p === '/api/posts/review' ? `Asked ROUX to review the notes and approvals for the ${a.week} week (Posts button).` : `Asked ROUX to schedule ${a.toSchedule.join(', ')} for the ${a.week} week (Posts button).`);
+      return send(res, 200, { ok: true, week: a.week, count: p === '/api/posts/review' ? a.pendingNotes : a.toSchedule.length });
+    }
+    if (p === '/api/planner' && req.method === 'GET') return send(res, 200, posts.planner());
+    // ---- reminders (Home) ----
+    if (p === '/api/reminders' && req.method === 'GET') return send(res, 200, reminders.view());
+    if (p === '/api/reminders/add' && req.method === 'POST') { const r = reminders.add(await readBody(req)); log('reminder add', r.text.slice(0, 60)); return send(res, 200, r); }
+    if (p === '/api/reminders/remove' && req.method === 'POST') { const r = reminders.remove(await readBody(req)); log('reminder removed', r.text.slice(0, 60)); return send(res, 200, r); }
+    if (p === '/api/reminders/toggle' && req.method === 'POST') { const r = reminders.toggle(await readBody(req)); log('reminder', r.done ? 'done' : 'reopened', r.text.slice(0, 60)); return send(res, 200, r); }
+    // ---- marketing budget + paid media ----
+    if (p === '/api/budget' && req.method === 'GET') return send(res, 200, budget.view(currentBoard(), CONFIG.metaDailyCeiling));
+    if (p === '/api/budget/save' && req.method === 'POST') { const r = budget.save(await readBody(req)); log('budget save', r.id); return send(res, 200, r); }
+    // ---- ROUX's proposals ----
+    if (p === '/api/proposals' && req.method === 'GET') return send(res, 200, proposals.view());
+    if (p === '/api/proposals/decide' && req.method === 'POST') {
+      const r = proposals.decide(await readBody(req));
+      r.line = appendCapture('', r.capture);
+      return send(res, 200, r);
+    }
     // ---- score (read-only) ----
     if (p === '/api/score' && req.method === 'GET') return send(res, 200, score.view());
     // ---- this month's plan + the brain graph (read-only) ----
     if (p === '/api/plan' && req.method === 'GET') return send(res, 200, plan.view());
-    if (p === '/api/graph' && req.method === 'GET') return send(res, 200, graph.view());
+    if (p === '/api/graph' && req.method === 'GET') return send(res, 200, graphView());
     if (p === '/logo.png') return send(res, 200, fs.readFileSync(LOGO), 'image/png');
     if (p === '/health') return send(res, 200, { ok: true, version: VERSION, vault: VAULT });
     // static
