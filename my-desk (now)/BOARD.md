@@ -1,4 +1,4 @@
-# Board — 2026-09-24 (Thursday · Sept 28 week scheduled · scoreboard #1 run · ROUX OS v0.5 · routines repointed · pulse logged back in · UpPromote settled with Jay)
+# Board — 2026-09-24 (proposal yeses built · GitHub backup live · Thursday · Sept 28 week scheduled · scoreboard #1 run · ROUX OS v0.5 · routines repointed · pulse logged back in · UpPromote settled with Jay)
 
 > The one page. What is live, what is next, who is blocking, what must not be shipped.
 > **Rewritten in place at every `/wrap` — never appended.** Hard cap: 120 lines.

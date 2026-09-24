@@ -11,6 +11,8 @@
 
 ## 2026-09
 
+**Brain backed up to a private GitHub repo** · Evan, 2026-09-24 (proposal yes; he created the repo and ran the first push, verified local = GitHub). Why: no off-machine copy since the brain left iCloud. Open: making `/wrap` push on its own (see board, Nova's queue).
+
 **Three paid proposals declined for now: Obsidian Sync, Ahrefs Starter, Claude Max 20x** · Evan, 2026-09-24 (ROUX OS Proposals). Obsidian Sync: no need for the brain on his phone; reconsider if he starts working from the phone. Ahrefs: only if HPC takes over SEO work from Coalition later. Max 20x: he doesn't hit usage limits; he'll buy it if he hits them a couple of times. Don't re-propose on the same grounds. Yeses (GitHub backup, post results in Planner, monthly reviews.io customer-language) go to Nova's queue.
 
 **Pulse failures show their reason on the page** · ROUX, 2026-09-24, on Evan's "pulse button doesn't seem to be working". Cause (tested): the headless `claude` CLI was logged out (`claude auth status` loggedIn false; runs.log "OAuth session expired"); Evan ran `claude auth login`, the 14:09 run finished in 111s. The status now reads the failure reason and, for a login error, says to run `claude auth login`.
