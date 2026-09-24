@@ -11,6 +11,8 @@
 
 ## 2026-09
 
+**UpPromote is $900/yr ($75/mo)** · Evan, 2026-09-24. Recorded on the Marketing Budget page; the monthly total stays $8,540.
+
 **Marketing costs on file; Coalition is $4,800/mo, the $2,000 gap is unexplained** · Evan, 2026-09-24 (asked Jay). Biljana $2,000/mo · Klaviyo ~$1,100/mo (varies with list size) · reviews.io $5,360/yr · UpPromote $75/mo, paid yearly at a discount (yearly amount not on file). Known marketing run-rate now $8,540/mo, ad spend excluded (→ `my-business (context)/hpc-marketing-budget.json`). ROUX OS reminders get a × that moves a line to `archive/reminders.md`.
 
 **ROUX OS v0.5: Planner, Posts review + schedule buttons, notes history, Reminders, Marketing Budget, Paid Media, ROUX's Proposals** · Evan, 2026-09-24 (his list, "lets implement these changes"). The two Posts buttons open a Claude session; the page itself still never schedules. Notes history is read back from `capture.md` + `archive/captures.md`, so it survives wrap. Budget costs carry sources; unread ones stay "not on file" (Biljana, Klaviyo, UpPromote plan, reviews.io). ⚠️ Coalition is $4,800/mo in `our-team.md` but the Sept 14 decision calls the $6,800/mo agencies line "the Coalition retainer"; the $2,000 gap is not reconciled. "New since the last score" on the globe uses git's first-add dates, because disk dates were reset by the vault move. Proposal prices checked by Scout 2026-09-24; Triple Whale's and Ahrefs' yearly prices not confirmed. → [manual](../my-files%20(knowledge)/how-to-use-roux-os.md)

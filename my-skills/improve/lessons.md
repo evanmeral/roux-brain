@@ -15,3 +15,4 @@
 | 2026-09-24 | Tuesday cover/last slide and story wording: "come up with something else" (twice) | copy | yes | no (taste call; no rule to write yet) | — |
 | 2026-09-24 | After adjusting content, update Posts in ROUX OS and just say it's ready for review there | workflow | yes | yes | `content-week/instructions.md` → Approve; memory `content-review-goes-to-posts` |
 | 2026-09-24 | (found, not a correction) routines never started after the brain moved: their working folder still pointed at the deleted Desktop path | system | yes | yes | memory `brain-home-and-history`: after any folder move, check every routine's cwd in the app's scheduled-tasks.json |
+| 2026-09-24 | UpPromote yearly is $900, "since i told you it was 75 per month" | data | yes | yes | memory `derive-before-flagging-missing` (was: flagged a figure derivable from his own numbers) |
