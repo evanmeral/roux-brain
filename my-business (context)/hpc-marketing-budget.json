@@ -74,12 +74,12 @@
       "id": "uppromote",
       "name": "UpPromote",
       "what": "Affiliate program app. Plan fee only; commissions are separate",
-      "cost": 75,
-      "cadence": "month",
+      "cost": 900,
+      "cadence": "year",
       "status": "active",
       "owner": "Evan",
       "source": "Evan, 2026-09-24. Commissions are separate: $11,718.37 marked Paid Sept 11 2025 to Sept 10 2026 (UpPromote export, Finn, 2026-09-21)",
-      "note": "Paid yearly for a discount; the yearly amount isn't on file.",
+      "note": "Paid yearly ($75/mo).",
       "updated": "2026-09-24 · Evan"
     },
     {
