@@ -18,7 +18,10 @@
 //
 // Agents: do not hand-edit the JSON. From the vault root run
 //   node "my-workflows (automations)/live/roux-os/approvals.js" add '{"from":"Maya","kind":"creative","recommendation":"...","change":"...","source":"..."}'
+//   node "my-workflows (automations)/live/roux-os/approvals.js" edit '{"id":"...","recommendation":"..."}'   (reword a pending item)
 //   node "my-workflows (automations)/live/roux-os/approvals.js" list
+//   Keep cards short: recommendation = one plain sentence; change = up to three short lines; evidence goes
+//   in source, which the card folds under "Why · evidence" (Evan, 2026-09-25).
 //   node "my-workflows (automations)/live/roux-os/approvals.js" archive      (at /wrap: moves resolved items to archive/approvals.md)
 'use strict';
 const fs = require('fs');
@@ -72,7 +75,7 @@ function makeApprovals({ desk, todayIso }) {
     item.status = body.decision === 'reject' ? 'rejected' : item.kind === LIVE_WRITE ? 'queued' : 'approved';
     item.note = note;
     item.resolved_at = new Date().toISOString();
-    item.resolved_by = 'Evan (OS)';
+    item.resolved_by = body.by === 'Evan (session)' ? 'Evan (session)' : 'Evan (OS)';
     persist(data);
     const word = { approved: 'APPROVED', rejected: 'REJECTED', queued: 'QUEUED, CONFIRM IN SESSION' }[item.status];
     const what = String(item.recommendation || '').replace(/\s+/g, ' ').slice(0, 220);
@@ -92,8 +95,19 @@ function makeApprovals({ desk, todayIso }) {
     const slug = from.toLowerCase().replace(/[^a-z0-9]+/g, '-');
     let n = 1, id;
     do { id = `${today}-${slug}-${n++}`; } while (data.items.some((i) => i.id === id));
-    const item = { id, created: today, from, kind, recommendation: need('recommendation', 400), change: need('change', 1200, true), source: need('source', 400), status: 'pending', note: null, resolved_at: null };
+    const item = { id, created: today, from, kind, recommendation: need('recommendation', 200), change: need('change', 500, true), source: need('source', 1200, true), status: 'pending', note: null, resolved_at: null };
     data.items.push(item);
+    persist(data);
+    return item;
+  }
+  // Reword a pending item (shorter, clearer). Resolved items are on record and are not rewritten.
+  function edit(raw) {
+    const data = load();
+    const item = data.items.find((i) => i && i.id === raw.id);
+    if (!item) throw new Error('No item with that id');
+    if (item.status !== 'pending') throw new Error('Only a pending item can be reworded');
+    const limits = { recommendation: [200, false], change: [500, true], source: [1200, true] };
+    for (const [k, [max, multi]] of Object.entries(limits)) if (raw[k] !== undefined) { const v = cleanStr(raw[k], max, multi); if (!v) throw new Error(`"${k}" cannot be empty`); item[k] = v; }
     persist(data);
     return item;
   }
@@ -112,7 +126,7 @@ function makeApprovals({ desk, todayIso }) {
     return done.length;
   }
 
-  return { view, summary, resolve, add, archiveResolved, FILE, KINDS };
+  return { view, summary, resolve, add, edit, archiveResolved, FILE, KINDS };
 }
 
 module.exports = makeApprovals;
@@ -127,8 +141,10 @@ if (require.main === module) {
   const [cmd, arg] = process.argv.slice(2);
   try {
     if (cmd === 'add') { const item = a.add(JSON.parse(arg || '{}')); console.log('added', item.id); }
+    else if (cmd === 'edit') { const item = a.edit(JSON.parse(arg || '{}')); console.log('edited', item.id); }
+    else if (cmd === 'decide') { const j = a.resolve(JSON.parse(arg || '{}')); console.log(j.status || 'unchanged'); if (j.capture) console.log(j.capture); }
     else if (cmd === 'list') { for (const i of a.view().items) console.log(`${i.status}\t${i.id}\t${i.kind}\t${String(i.recommendation).slice(0, 100)}${i.note ? `\tnote: ${i.note}` : ''}`); }
     else if (cmd === 'archive') console.log('archived', a.archiveResolved(), 'resolved item(s)');
-    else { console.log('usage: approvals.js add \'<json>\' | list | archive'); process.exit(2); }
+    else { console.log('usage: approvals.js add \'<json>\' | edit \'{"id":…,"recommendation"?:…,"change"?:…,"source"?:…}\' | decide \'{"id":…,"decision":"approve|reject","note":…}\' | list | archive'); process.exit(2); }
   } catch (e) { console.error('approvals:', e.message); process.exit(1); }
 }

@@ -116,10 +116,13 @@ fill the line.
 
 ```
 git add -A && git commit -m "<what changed this session>"
+git push origin main
 ```
 
 The repo is the undo button. A session that changed files and did not commit leaves no
-way back.
+way back. The push sends it to the private GitHub backup (`evanmeral/roux-brain`), so the
+brain survives if this Mac doesn't. **If the push fails, say so in the report** ("committed,
+not pushed: <reason>"). Never report a failed push as a backup.
 
 ---
 

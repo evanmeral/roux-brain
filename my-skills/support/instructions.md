@@ -111,11 +111,9 @@ Show the full list:
 **Operations**
 /chase-payment - send a friendly payment reminder
 /meeting-notes - turn messy notes into clear actions
-/weekly-check - see how your week went
 
 **Marketing**
 /write-a-post - write a social media post
-/write-an-ad - write ad copy with hooks and headlines
 /ask-for-review - ask a happy customer for a review (Google, Facebook, etc.)
 
 **Team**
@@ -136,11 +134,6 @@ Or just talk to me normally. You do not have to use these names. Just tell me wh
 **"Can you do [something not in the list]?"**
 - If it is reasonable: "I do not have a specific skill for that, but I can still do it. Just tell me what you need."
 - If it is something that could be a skill: "I can do that. And if you want me to remember how to do it your way every time, type /teach-me and I will learn it as a new skill."
-
-**"/weekly-check is not showing revenue" / "The numbers are wrong"**
-1. Check if Stripe is connected. If not: "I cannot pull revenue automatically because Stripe is not connected. Want to connect it now? Or you can just tell me your numbers and I will build the snapshot."
-2. If connected: try pulling the data. If it fails, suggest reconnecting via /connect.
-3. If connected and working but numbers look wrong: "These numbers come straight from Stripe. If they look wrong, it might be worth checking your Stripe dashboard directly. Want me to pull a more detailed breakdown?"
 
 **"It sent something I did not approve" / "Did it email my client?"**
 - First check what their email connector is allowed to do (Claude app, Settings, Connectors). If sending is off: "Your email connection is set to draft only, so nothing can have gone out from me. What you saw was a draft or a preview. Check your Drafts folder." If sending is on: "Sending is switched on for your email connection, so it is possible if you asked me to send. Let me check the Sent folder with you." Then, either way: "You control this in the connector settings. Turn sending off if you would rather I only ever draft."

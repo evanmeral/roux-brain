@@ -1,4 +1,53 @@
 {
   "_format": "The approvals queue behind the Approvals tab in ROUX OS. One source of truth. Agents add items with: node \"my-workflows (automations)/live/roux-os/approvals.js\" add '<json>' (never hand-edit). Evan resolves them on the page. kind is one of creative, content, recommendation, rule, live-write. A live-write is only ever 'queued': it does NOT authorize a Shopify, Meta or Google write; the session still asks Evan. Full format: my-files (knowledge)/how-this-brain-works.md.",
-  "items": []
+  "items": [
+    {
+      "id": "2026-09-25-roux-weekly-review-1",
+      "created": "2026-09-25",
+      "from": "ROUX weekly review",
+      "kind": "rule",
+      "recommendation": "Update the rulebook to match two calls you already made.",
+      "change": "Patent number: \"prefer the shield logo\", not \"never write it\" (your 9/22 call).\nWarranty: drop the note saying SAFETY.md has no exception. It has one since 9/14.",
+      "source": "decisions.md 2026-09-22 'Patent-number rule softened to a preference' (commit 74bc51b updated creative instructions, how-we-sound, linter, board, memory, but not standing rules; its last change is 87e054a, 2026-09-21). SAFETY.md warranty Exception bullet, added 2026-09-14. lessons.md row 2026-09-25.",
+      "status": "pending",
+      "note": null,
+      "resolved_at": null
+    },
+    {
+      "id": "2026-09-25-roux-weekly-review-2",
+      "created": "2026-09-25",
+      "from": "ROUX weekly review",
+      "kind": "recommendation",
+      "recommendation": "Add a check that flags text covering the product, before you see a draft.",
+      "change": "One new check in rubric-check: warns when a text panel covers part of the product, blocks when it covers a lot.",
+      "source": "lessons.md 2026-09-24: 'Boil Math: black copy backdrop covers the pots; make the product visible', marked source fixed: no, 'not in rubric-check'. Evan's note in archive/captures.md 2026-09-24 08:20.",
+      "status": "pending",
+      "note": null,
+      "resolved_at": null
+    },
+    {
+      "id": "2026-09-25-beau-1",
+      "created": "2026-09-25",
+      "from": "Beau",
+      "kind": "recommendation",
+      "recommendation": "Pause BPM Tailgate Video on Oct 1 and give its budget to the turkey kit ad.",
+      "change": "Your click at the Oct 1 BPM edit. No new money.\nFinn checks its latest numbers Monday first.",
+      "source": "Facts: $741.60 Sept 1–21 for 1 tagged new customer vs 18 QT ceiling $73–$100 (Finn, 2026-09-22); Sept 18–24: 1 tagged order, $119, 0 new (Finn, Shopify, 2026-09-25); turkey fryers $2,146.59 vs $3,176 pace (Scoreboard #1, 2026-09-24). Board already lists it for the Oct 1 BPM edit.",
+      "status": "pending",
+      "note": null,
+      "resolved_at": null
+    },
+    {
+      "id": "2026-09-25-beau-2",
+      "created": "2026-09-25",
+      "from": "Beau",
+      "kind": "creative",
+      "recommendation": "Make a tailgate kit version of Jay's 18 QT demo video, our best-selling ad.",
+      "change": "Maya writes kit copy for the existing video.\nIt replaces 18qt-002 + 003 if those pause Tuesday. Same $50/day.",
+      "source": "Video_Jay 18qt demo: 4 of 10 tagged Meta orders, 2 new, $1,101.46; 18qt-002/003/004: 0 (floor, Facebook_UA tagging) (Finn, Shopify, Sept 18–24, read 2026-09-25). Kit orders 0; kit live Sept 25. Caveat: no kit CAC ceiling on file; tagged 18 QT CAC $118.01 vs $73–$100 (Finn, 2026-09-22).",
+      "status": "pending",
+      "note": null,
+      "resolved_at": null
+    }
+  ]
 }

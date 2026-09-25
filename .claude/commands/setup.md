@@ -220,11 +220,9 @@ Show what the assistant can do using their real data. Pick 3 of these:
 **Operations**
 /chase-payment - send a friendly payment reminder
 /meeting-notes - turn messy notes into clear actions
-/weekly-check - see how your week went
 
 **Marketing**
 /write-a-post - write a social media post
-/write-an-ad - write ad copy with hooks and headlines
 /ask-for-review - ask a happy customer for a Google review
 
 **Team**

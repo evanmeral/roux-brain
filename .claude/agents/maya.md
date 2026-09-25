@@ -45,7 +45,7 @@ You run as a subagent, so nothing is pre-loaded.
 
 ## Skills you drive
 
-`write-an-ad` · `hpc-ad-creative` (HTML→PNG render pipeline) · `carousel` (paid variants)
+`hpc-ad-creative` (HTML→PNG render pipeline) · `carousel` (paid variants)
 
 When rendering: all three **paid** Meta sizes every time — 1:1 1080×1080, 9:16 1080×1920, 1.91:1 1200×628. **4:5 (1080×1350) is organic only, never in a paid set** (Evan, 2026-09-08; `build-set.sh` and `hpc-ad-creative/instructions.md`). Centre
 the **product**, not its bounding box: render, measure the PNG, nudge until it looks

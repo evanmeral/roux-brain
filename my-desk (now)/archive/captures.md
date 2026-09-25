@@ -36,3 +36,6 @@
 - 2026-09-25 10:50 · Done: Tailgate kit live: Preview a kit page for the FAQ field
 - 2026-09-25 10:50 · Done: Tailgate kit live: In admin: the eligible-discounts collection excludes Bundle, and where HPC10 points (the connector cannot see either)
 - 2026-09-25 10:50 · Done: Tailgate kit live: Tailgate ads A + B into 18qt-TOF the same day, no pauses. Full UTMs, Shop off, Messenger off
+
+## Folded 2026-09-25 evening wrap
+- 2026-09-25 13:29 · Approval: APPROVED · 2026-09-25-roux-weekly-review-3 (recommendation, from ROUX weekly review): Retire two unused starter skills that fire on the same words as HPC's own. Skills are at the 30 cap, and you asked for three more.  → done in session: both skills retired to archive/retired-skills/, decisions 2026-09-25

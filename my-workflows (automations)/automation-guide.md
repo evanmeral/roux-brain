@@ -24,7 +24,7 @@ A workflow is anything you do the same way every time. Write it down here and yo
 
 ## Ideas to steal
 
-- Monday morning: pull last week's numbers and brief me (/weekly-check already does this)
+- Monday morning: pull last week's numbers and brief me (the Thursday month-plan scoreboard does this)
 - New client signed: create their folder and an onboarding checklist
 - End of month: list unpaid invoices and draft the reminders (/chase-payment helps here)
 - Before a meeting: pull everything we know about the person I am meeting

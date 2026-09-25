@@ -14,7 +14,8 @@ you better all by yourself").
 **Mode: propose, Evan approves** (Evan, 2026-09-24, option 2). This skill never edits a skill, a
 rule, CLAUDE.md or memory. It writes proposals to Approvals; the next session builds the approved
 ones. It may write only its own three files: the report, `lessons.md` status marks, and
-`what-worked.md`. Revisit the mode after four reviews using the track record (step 7).
+`what-worked.md`. One exception (Evan, 2026-09-25): it retires an old starter skill that overlaps a
+newer one (step 5), and says so. Revisit the mode after four reviews using the track record (step 7).
 
 **Growth has a cost.** Every rule costs attention; overlapping skills get picked wrong;
 contradicting rules get followed at random. So:
@@ -22,7 +23,8 @@ contradicting rules get followed at random. So:
 - **Every addition names what it replaces or merges**, or says plainly "nothing, and here is why
   no existing skill or rule covers it."
 - **Every review looks for something to cut** (step 5), not only things to add.
-- **Skill cap: 30** in `my-skills/`. Over it, nothing new is proposed until something merges or goes.
+- **No cap on the number of skills** (Evan, 2026-09-25: "we will make a lot of these"). What costs is
+  overlap: two skills that would fire on the same request. Those get cleaned up (step 5).
 
 ## Inputs (the week = the last 7 days, through today)
 - `my-skills/improve/lessons.md`: the corrections log
@@ -63,9 +65,14 @@ copy should live. Evan's newer, dated word wins unless SAFETY.md says otherwise.
 
 ### 5. What to cut
 - Skills with no sign of use in 60 days (no git change under the folder, no mention in commits
-  or transcripts). The starter templates from Sept 1 (`weekly-check`, `quote`, `chase-payment`,
-  `support`, …) are the first to check: HPC-shaped or not, used or not.
-- Two skills whose descriptions would both fire on the same request.
+  or transcripts). The starter templates from Sept 1 (`quote`, `chase-payment`, `support`, …) are
+  the first to check: HPC-shaped or not, used or not. Unused alone is a proposal, not a removal.
+- **Two skills whose descriptions would both fire on the same request: retire the older, generic one
+  now, without waiting for Approvals** (Evan, 2026-09-25: "if things start overlapping… go ahead and
+  clean up/remove old ones"). Move its folder and its `.claude/commands/` file (as `command.md`) into
+  `my-desk (now)/archive/retired-skills/<name>/`, add a row to that folder's README, drop it from agent
+  skill lists and `how-this-brain-works.md`, and say so in the report and the reply. Never deleted.
+  If the overlap is between two HPC-built skills, it is a merge: propose it instead.
 - Memory files that contradict a newer decision, or that a skill or check now enforces (the
   memory can shrink to a pointer).
 - `CLAUDE.md` over ~150 lines, or a rule in it that is restated elsewhere.
@@ -97,6 +104,11 @@ itself still needs Evan's yes in a session.
 ### 9. Propose
 Pick the best (at most 3 system + 3 ideas). Each goes to Approvals:
 
+**Write them short** (Evan, 2026-09-25: "way too much info… make the verbiage short and to the point"):
+- `recommendation`: one plain sentence, under ~20 words, saying what you want to do. No evidence, no IDs.
+- `change`: up to three short lines, what gets added, changed or removed. Plain words, few file paths.
+- `source`: the evidence. It sits folded under **Details** on the card, so it can be full.
+
 ```bash
 node "my-workflows (automations)/live/roux-os/approvals.js" add '{"from":"ROUX weekly review","kind":"recommendation","recommendation":"<one or two lines, plain words>","change":"<the exact change: files, what is added, what is removed or merged>","source":"<evidence: dates, files, notes>"}'
 ```
@@ -116,4 +128,6 @@ if it added something, do the named cut or merge in the same change.
 - ≤ 3 system proposals, ≤ 3 ideas, each with dated evidence and a named replace/merge
 - At least one cut considered, even if none proposed
 - Every figure sourced; anything unread says "not read" and why
-- Nothing edited outside the report, `lessons.md` and `what-worked.md`
+- Nothing edited outside the report, `lessons.md` and `what-worked.md`, except retiring an overlapping
+  starter skill (step 5)
+- Every Approvals card readable in five seconds: one-sentence recommendation, short change

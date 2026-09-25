@@ -168,7 +168,6 @@ ROUX/
 | [/sort-my-inbox](../my-skills/sort-my-inbox/instructions.md) | Go through your unread email and draft replies for the ones waiting on you |
 | [/chase-payment](../my-skills/chase-payment/instructions.md) | Send a friendly payment reminder |
 | [/meeting-notes](../my-skills/meeting-notes/instructions.md) | Turn messy notes into actions and deadlines |
-| [/weekly-check](../my-skills/weekly-check/instructions.md) | See how your week went (revenue, appointments, highlights) |
 
 ### Marketing
 | Type this | What it does |
@@ -176,7 +175,7 @@ ROUX/
 | [/content-week](../my-skills/content-week/instructions.md) | Plan the week's Facebook + Instagram posts in one Monday session, approve them, and have them scheduled in Meta Business Suite. Also fires on its own every Monday at 8:00. |
 | [/hpc-campaign-checkpoint](../my-skills/hpc-campaign-checkpoint/instructions.md) | Re-read a live paid campaign at its checkpoint: Meta's numbers, Shopify's tagged orders, the gap between them, and Beau's continue / hold / cut call. The decision stays Evan's. |
 | [/write-a-post](../my-skills/write-a-post/instructions.md) | Write a social media post |
-| [/write-an-ad](../my-skills/write-an-ad/instructions.md) | Write ad copy with hooks, headlines, and CTA |
+| [/meta-ad-build](../my-skills/meta-ad-build/instructions.md) | Turn approved creative + copy into a build sheet for a paid Meta image ad (sizes by the ad set's real placements, UTMs, AI settings off, ad to duplicate), check the publish list, then read the ad back. Evan builds and publishes in Ads Manager |
 | [/carousel](../my-skills/carousel/instructions.md) | Build a multi-frame Instagram/Facebook swipe post |
 | [/file-product-photos](../my-skills/file-product-photos/instructions.md) | Name and file a product photo drop (cutout folder + studio folder): pair them, name them, copy them to the asset library with bounds and index, and rename Evan's originals to match |
 | [/hpc-showroom-cards](../my-skills/hpc-showroom-cards/instructions.md) | Reprint, add, change or retire the showroom product cards: prices checked against Shopify, every card rendered and measured, then handed to Alexis to print |

@@ -15,7 +15,7 @@
       "value": "$293.58 · 0 tagged",
       "kill_at": "$583.74 lifetime (3x $194.58 Platinum ceiling) with 0 tagged",
       "status": "near",
-      "note": "Replaces the retired $389 / 0-Meta-purchase trigger. $290.16 to go. At the Sept 21-23 pace ($58.72/day) lifetime passes $583.74 around Sept 29, before Oct 1. Meta purchases are not a condition (Meta cannot see Shopify tags). Finn reads spend + tagged orders Fri Sept 25 and Mon Sept 28 and confirms Evan's automated rule is active; a tagged pot, Triple Jet or kit order first means Evan turns the rule off."
+      "note": "Replaces the retired $389 / 0-Meta-purchase trigger. $290.16 to go. At the Sept 21-23 pace ($58.72/day) lifetime passes $583.74 around Sept 29, before Oct 1. Meta purchases are not a condition (Meta cannot see Shopify tags). Finn reads spend + tagged orders Fri Sept 25 and Mon Sept 28 and confirms Evan's automated rule is active; a tagged pot, Triple Jet or kit order first means Evan turns the rule off. ✅ Meta automated rule built 2026-09-25: turns the ad off at $583.74 lifetime spend."
     },
     {
       "name": "120qt-crowd-math",
@@ -43,7 +43,7 @@
       "value": "0 tagged · $198.89 Meta CPP",
       "kill_at": "Pause: 0 tagged or Meta CPP > $365 · Hold: >=1 tagged and $189-$365 · Continue: >=1 tagged and <= $189",
       "status": "fired",
-      "note": "Scored per ad (the rule since Evan's 2026-09-24 yes), the 0-tagged Pause condition is met today; Meta CPP $198.89 is under $365. Campaign read, context only: $559.08 · 5 Meta ($111.82) · 1 tagged (crowd-math's). The $583.74 one-off will likely pause it ~Sept 29, before the Oct 2 read. No Sept 24 tagged order seen to 10:20 CT."
+      "note": "Scored per ad (the rule since Evan's 2026-09-24 yes), the 0-tagged Pause condition is met today; Meta CPP $198.89 is under $365. Campaign read, context only: $559.08 · 5 Meta ($111.82) · 1 tagged (crowd-math's). The $583.74 one-off will likely pause it ~Sept 29, before the Oct 2 read. No Sept 24 tagged order seen to 10:20 CT. ✅ Meta automated rule built 2026-09-25: turns the ad off at $583.74 lifetime spend."
     },
     {
       "name": "120qt-crowd-math",
@@ -71,7 +71,7 @@
       "value": "$279.91 · 0 tagged new",
       "kill_at": "$583.74 (3x $194.58); was $389.16 (2x) while Meta read 0",
       "status": "near",
-      "note": "Same line as the one-off above ($583.74, 3x Platinum; Meta shows 1 purchase so 3x applies). At the Sept 21-23 pace ($58.72/day) crossed around Sept 29, before Oct 1."
+      "note": "Same line as the one-off above ($583.74, 3x Platinum; Meta shows 1 purchase so 3x applies). At the Sept 21-23 pace ($58.72/day) crossed around Sept 29, before Oct 1. ✅ Meta automated rule built 2026-09-25: turns the ad off at $583.74 lifetime spend."
     },
     {
       "name": "18qt-001",
@@ -127,7 +127,7 @@
       "value": "$598.57 · 0 tagged new",
       "kill_at": "$300.00 (3x $100; Meta purchases 8, so 3x)",
       "status": "fired",
-      "note": "Crossed $300 before this read. Taggable (its ID reaches Shopify: first visit on #17499). Already decided: 18qt-004 pauses Thu Sept 25 in the same edit that adds Tailgate A + B (Evan approved Beau's call 2026-09-22)."
+      "note": "Crossed $300 before this read. Taggable (its ID reaches Shopify: first visit on #17499). Already decided: 18qt-004 pauses Thu Sept 25 in the same edit that adds Tailgate A + B (Evan approved Beau's call 2026-09-22). ✅ Paused 2026-09-25 (Evan)."
     },
     {
       "name": "Video_Jay 18qt Fryer Demo",
@@ -281,7 +281,7 @@
       "value": "$146.96",
       "kill_at": "> $189.00",
       "status": "near",
-      "note": "Within 20% of $189, and 0 Meta purchases on $64.23 Sept 21-23. At that pace the 14-day window to Sept 30 reads ~$332 spend, 1 purchase, over $189 before Oct 1. Already decided: 18qt-004 pauses Thu Sept 25 in the same edit that adds Tailgate A + B (Evan approved Beau's call 2026-09-22)."
+      "note": "Within 20% of $189, and 0 Meta purchases on $64.23 Sept 21-23. At that pace the 14-day window to Sept 30 reads ~$332 spend, 1 purchase, over $189 before Oct 1. Already decided: 18qt-004 pauses Thu Sept 25 in the same edit that adds Tailgate A + B (Evan approved Beau's call 2026-09-22). ✅ Paused 2026-09-25 (Evan)."
     },
     {
       "name": "Video_UGC/Review18qt Fryer (LAL 1%)",
@@ -352,6 +352,34 @@
       "kill_at": "n/a",
       "status": "ok",
       "note": "Confirmed none live: every ACTIVE ad sits in IW Lookalike, 18qt-TOF-Prospecting or BPM_TOF_Manual. Retargeting launch is planned Sept 28 (PLAN.md)."
+    },
+    {
+      "name": "18qt-tailgate-kit-lineup",
+      "id": "52511818941191",
+      "campaign": "18qt-TOF-Prospecting",
+      "rule": "New ad",
+      "spend": "not read",
+      "meta_purchases": "not read",
+      "tagged": "not read",
+      "metric": "",
+      "value": "",
+      "kill_at": "",
+      "status": "not read",
+      "note": "Live 2026-09-25 (after this read). Tue 9/29: if A + B spent under $50 together, pause 18qt-002 + 003 (Beau). First scored at the next Thursday read."
+    },
+    {
+      "name": "18qt-tailgate-kit-payoff",
+      "id": "52511820288791",
+      "campaign": "18qt-TOF-Prospecting",
+      "rule": "New ad",
+      "spend": "not read",
+      "meta_purchases": "not read",
+      "tagged": "not read",
+      "metric": "",
+      "value": "",
+      "kill_at": "",
+      "status": "not read",
+      "note": "Live 2026-09-25 (after this read). Tue 9/29: if A + B spent under $50 together, pause 18qt-002 + 003 (Beau). First scored at the next Thursday read."
     }
   ]
 }

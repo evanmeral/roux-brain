@@ -24,10 +24,10 @@ function renderApprovals() {
   const card = (i) => {
     const isPending = i.status === 'pending';
     return `<div class="board-sec approval is-${esc(i.status)} ${i.isLiveWrite ? 'is-live' : ''}" data-id="${esc(i.id)}">
-      <div class="approval-head"><span class="pill is-kind">${esc(i.kind)}</span><span class="mono stamp">from ${esc(i.from)} · ${esc(i.created)} · ${esc(i.id)}</span>${isPending ? '' : `<span class="pill is-${esc(i.status)}">${esc(statusWord[i.status] || i.status)}</span>`}</div>
+      <div class="approval-head"><span class="pill is-kind">${esc(i.kind)}</span><span class="mono stamp">from ${esc(i.from)}</span>${isPending ? '' : `<span class="pill is-${esc(i.status)}">${esc(statusWord[i.status] || i.status)}</span>`}</div>
       <div class="approval-rec">${esc(i.recommendation)}</div>
-      <div class="approval-change"><span class="mono stamp">the exact change</span><div>${esc(i.change).replace(/\n/g, '<br>')}</div></div>
-      <div class="mono stamp">source: ${approvalSource(i.source)}</div>
+      <div class="approval-change"><span class="mono stamp">what changes</span><div>${esc(i.change).replace(/\n/g, '<br>')}</div></div>
+      <details class="approval-more"><summary>Why · evidence</summary><div>${approvalSource(i.source)}</div><div class="mono stamp">${esc(i.created)} · ${esc(i.id)}</div></details>
       ${i.isLiveWrite ? `<div class="approval-warn">This would change a live system. Approving here only queues it. ROUX still asks for your yes in the session before anything is written.</div>` : ''}
       ${isPending ? `<div class="approval-act"><input type="text" maxlength="600" placeholder="Your note. Needed for a reject; the why is what stops a repeat" data-note><button class="btn is-primary" data-decide="approve">${i.isLiveWrite ? 'Queue it' : 'Approve'}</button><button class="btn" data-decide="reject">Reject</button></div>`
         : `<div class="approval-note">${i.note ? `<span class="mono stamp">your note</span> ${esc(i.note)}` : '<span class="dim">no note</span>'} <span class="mono stamp">· ${esc(String(i.resolved_at || '').slice(0, 10))}</span> <button class="ghost" data-decide="reopen">reopen</button></div>`}

@@ -6,3 +6,4 @@
 - [ ] Metricool: take the look Mon 9/28 · added 2026-09-24 by ROUX
 - [ ] Re-check the $404 tailgate price the morning of Sat 10/3 · added 2026-09-24 by ROUX
 - [ ] Turn on Facebook Page story insights if you want story results in the Planner (off today) · added 2026-09-24 by ROUX
+- [ ] Refresh the HPC Meta Ads connector in Settings before Mon 9/28 (Meta reads failing) · added 2026-09-25 by ROUX

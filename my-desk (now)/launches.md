@@ -12,10 +12,11 @@
 ## Retargeting live · 2026-09-28
 > $20/day pots + $10/day 18 QT, which takes the caps to $344 of $350 (PLAN.md, paid media). `RT - Viewed 18 QT - 30D` was built on the old pixel, so it can serve as the Pots set's exclusion (BOARD.md, Parked). The launch is a Meta write: Evan's yes at the moment (PLAN.md).
 
-- [ ] Read the size of `RT - Viewed 18 QT - 30D` `52510298205791` first · **Finn** · due 2026-09-28 · _source: BOARD.md Now #3 "Read its size before Sept 28"; owner by lane, reads are Finn's_
-- [ ] Tailgate C replaces `rt-18qt-fry-it-all` in `RT 30D - 18QT` (kit live 2026-09-25) · **Evan** · due 2026-09-28 · _source: BOARD.md Now #3_
-- [ ] Pot statics A + B into `RT 30D - Pots`, both linking to the Platinum Boiling Bundle · **Evan** · due 2026-09-28 · _source: BOARD.md Now #3_
-- [ ] Every new ad: full UTMs, Shop off, Messenger off · **Evan** · due 2026-09-28 · _source: BOARD.md Now #3; PLAN.md paid media_
+- [x] Read the size of `RT - Viewed 18 QT - 30D` `52510298205791` first · **Finn** · due 2026-09-28 · _source: BOARD.md Now #1 "Read its size before Sept 28"; owner by lane, reads are Finn's_ · done 2026-09-25 (1,000–1,100 → 18 QT $5, Pots $25 per plan §9)
+- [ ] Tailgate C replaces `rt-18qt-fry-it-all` in `RT 30D - 18QT` (kit live 2026-09-25) · **Evan** · due 2026-09-28 · _source: BOARD.md Now #1_
+- [ ] Pot statics A + B into `RT 30D - Pots`, both linking to the Platinum Boiling Bundle · **Evan** · due 2026-09-28 · _source: BOARD.md Now #1_
+- [ ] Every new ad: full UTMs, Shop off, Messenger off · **Evan** · due 2026-09-28 · _source: BOARD.md Now #1; PLAN.md paid media_
+- [ ] Build sheet from `/meta-ad-build`, and "Review and publish" lists only the new ads before Evan publishes · **ROUX** · due 2026-09-28 · _source: BOARD.md Now #1; decisions 2026-09-25 (skill built)_
 
 ## Turkey kits live · 2026-10-01
 > Turkey kit + ad live Oct 1; go/no-go Wed Sept 30 (PLAN.md, weeks 2 and 3). Turkey buyability checks start Oct 1, Monday + Thursday (PLAN.md). No kit goes live while `HIGH15` is active (BOARD.md, Landmines).
