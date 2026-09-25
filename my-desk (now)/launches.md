@@ -9,20 +9,11 @@
 > **Nothing here authorizes a write.** Every Shopify, Meta and Google change is still Evan's yes at the time.
 > Seeded 2026-09-21 from [PLAN.md](PLAN.md), [BOARD.md](BOARD.md) and [key-dates.md](key-dates.md).
 
-## Tailgate kit live · 2026-09-25
-> Go/no-go Thu Sept 24 (PLAN.md, week 2 gates). No kit goes live while `HIGH15` is active (BOARD.md, Landmines). After launch: if A + B have spent under $50 by Sept 29, pause `002` + `003` (Beau, BOARD.md Now #3).
-
-- [x] `HIGH15` off, the one real blocker · **Biljana** · due 2026-09-24 · _source: BOARD.md Now #1 and Waiting on, 2026-09-21; due = go/no-go day_ · done 2026-09-22
-- [ ] Checkout test: a kit plus an ordinary item, with `FIRSTR10OFF` and one influence.io reward code · **Evan** · due 2026-09-24 · _source: BOARD.md Now #1; due = go/no-go day_
-- [ ] Preview a kit page for the FAQ field · **Evan** · due 2026-09-24 · _source: BOARD.md Now #1; due = go/no-go day_
-- [ ] In admin: the eligible-discounts collection excludes `Bundle`, and where `HPC10` points (the connector cannot see either) · **Evan** · due 2026-09-24 · _source: BOARD.md Now #1; due = go/no-go day_
-- [ ] Tailgate ads A + B into `18qt-TOF` the same day, no pauses. Full UTMs, Shop off, Messenger off · **Evan** · due 2026-09-25 · _source: BOARD.md Now #3; PLAN.md paid media_
-
 ## Retargeting live · 2026-09-28
 > $20/day pots + $10/day 18 QT, which takes the caps to $344 of $350 (PLAN.md, paid media). `RT - Viewed 18 QT - 30D` was built on the old pixel, so it can serve as the Pots set's exclusion (BOARD.md, Parked). The launch is a Meta write: Evan's yes at the moment (PLAN.md).
 
 - [ ] Read the size of `RT - Viewed 18 QT - 30D` `52510298205791` first · **Finn** · due 2026-09-28 · _source: BOARD.md Now #3 "Read its size before Sept 28"; owner by lane, reads are Finn's_
-- [ ] Tailgate C replaces `rt-18qt-fry-it-all` in `RT 30D - 18QT`. Fry-it-all stays until the kit is live · **Evan** · due 2026-09-28 · _source: BOARD.md Now #3_
+- [ ] Tailgate C replaces `rt-18qt-fry-it-all` in `RT 30D - 18QT` (kit live 2026-09-25) · **Evan** · due 2026-09-28 · _source: BOARD.md Now #3_
 - [ ] Pot statics A + B into `RT 30D - Pots`, both linking to the Platinum Boiling Bundle · **Evan** · due 2026-09-28 · _source: BOARD.md Now #3_
 - [ ] Every new ad: full UTMs, Shop off, Messenger off · **Evan** · due 2026-09-28 · _source: BOARD.md Now #3; PLAN.md paid media_
 

@@ -30,3 +30,9 @@
 - 2026-09-24 13:58 · Proposal NO: "Obsidian Sync for the brain on your phone" (paid, $5/mo, or $4/mo yearly (Standard, 1 GB). Plus: $10/mo, or $8/mo yearly (10 GB)) · Evan's note: not really needing this on my phone, maybe we reconsider this at a later date if i end up wanting to use my phone to do some stuff — Nova  → folded: decisions 2026-09-24
 - 2026-09-24 13:59 · Proposal NO: "Ahrefs Starter for competitor and keyword checks" (paid, $29/mo (Starter); Lite is $129/mo) · Evan's note: we could look at this later, if we end up taking over the SEO work way later down the line — Nova  → folded: decisions 2026-09-24
 - 2026-09-24 14:00 · Proposal NO: "Claude Max 20x, only if you hit limits" (paid, $200/mo ($100 more than today)) · Evan's note: we don't need this, i don't seem to hit the usage limit but if we ever do hit it a couple of times then i will get it — Nova  → folded: decisions 2026-09-24
+
+## Folded 2026-09-25 wrap
+- 2026-09-25 10:50 · Done: Tailgate kit live: Checkout test: a kit plus an ordinary item, with FIRSTR10OFF and one influence.io reward code
+- 2026-09-25 10:50 · Done: Tailgate kit live: Preview a kit page for the FAQ field
+- 2026-09-25 10:50 · Done: Tailgate kit live: In admin: the eligible-discounts collection excludes Bundle, and where HPC10 points (the connector cannot see either)
+- 2026-09-25 10:50 · Done: Tailgate kit live: Tailgate ads A + B into 18qt-TOF the same day, no pauses. Full UTMs, Shop off, Messenger off

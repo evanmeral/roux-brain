@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-25",
+  "runAt": "2026-09-25T07:34:00-05:00",
+  "meta": {
+    "total": 336.29,
+    "byCampaign": [
+      { "name": "IW Lookalike 1% - Cold Prospecting - Sept 2026", "id": "52507989521191", "spend": 120.12 },
+      { "name": "BPM_TOF_Manual", "id": "6772105419387", "spend": 162.21 },
+      { "name": "18qt-TOF-Prospecting", "id": "6998161993987", "spend": 53.96 },
+      { "name": "BM | TOF | ABO | Open | External Whitelisting", "id": "6870130501387", "spend": 0 },
+      { "name": "BM | TOF | HP Cookers | ABO | Offer Testing", "id": "6859139261187", "spend": 0 }
+    ],
+    "source": "Meta connector, HP Cookers ADs (4392736013287), date_preset=yesterday"
+  },
+  "shopify": {
+    "orders": 12,
+    "net": 1967.58,
+    "source": "ShopifyQL: FROM sales SHOW orders, net_sales SINCE 2026-09-24 UNTIL 2026-09-24"
+  },
+  "problems": []
+}
